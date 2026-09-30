@@ -2,6 +2,8 @@
 
 Lista de trabajo para la próxima sesión. Las tres primeras son pedidos de Cristian; el resto son propuestas del equipo según lo que salió en la prueba. Se aplican de a una y se comprueba cada una con una tanda corta a 480P.
 
+**Estado:** todas entran en la prueba v2 (`../cap01_montaje_v2/plan.md`). La #1 y la #2 se resolvieron con el sistema de actuación y las reglas nuevas de cámara. Las #4–#8 son candados de la skill `director-de-prompts`. La #13 cambió: ahora son dos tomas como **máximo** por bloque.
+
 El feedback de Cristian sobre el proceso (cámara, actuación, set, FL y control de calidad de video) y las herramientas que propone para cada rol están en `feedback_proceso.md`.
 
 ## Pedidos de Cristian
