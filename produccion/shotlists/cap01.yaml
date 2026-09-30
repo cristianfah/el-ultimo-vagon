@@ -210,6 +210,15 @@ bloques:
     costo_estimado_usd: 0.40
     nota: "Primer y último fotograma: el último fija la orientación de la mano (hc21) y el vidrio con que se reutiliza el plano a las 0:45; los dos golpes se piden entre 0,3 y 1,5 s y luego la mano queda quieta. Ese último fotograma será el primero del plano de la cara de Diego en la escena 4 (encadenado C)."
     estado: pendiente
+    prompt_video:
+      motor: h3_max
+      endpoint: minimax/h3-max/image-to-video
+      params: { duration: 5, resolution: "768P", prompt_expansion_mode: disabled }
+      entradas:
+        image_url: "keyframe_entrada c01_p01 (aprobado): mano abierta a pocos centímetros del vidrio, sin huella"
+        end_image_url: "keyframe c01_p01 (aprobado): palma derecha apoyada, pulgar a la derecha del cuadro"
+      texto: |
+        Within the first 2 seconds, the wet right hand knocks twice on the glass, two dry palm hits between 0.3 and 1.5s with a human rhythm, no clawing; then the palm stays flat on the glass, fingers spread up, thumb toward frame right, still until the end. Locked-off, static camera; it does not react to the knocks. Keep the framing, lighting, hand and soaked grey cuff exactly as in the first and last frames. The dry dark stains stay in the upper-right corner of the glass; the red corridor behind stays empty, no face. Sound: train rumble, two dry palm thuds on glass. No music. No on-screen text.
   - id: c01_b02
     planos: [c01_p02]
     estrategia: B
@@ -221,6 +230,14 @@ bloques:
     costo_estimado_usd: 0.40
     nota: "Solo primer fotograma: es un plano de quietud y la salida es casi igual a la entrada. El «Diego…» se pide en el primer segundo y medio. Keyframe con Nano Banana Pro para responder la prueba pendiente de motores.md: ¿H3 Max mantiene la identidad desde un keyframe de Nano Banana Pro bajo luz roja? target_audio_url queda para cuando exista la voz de Martina en ElevenLabs."
     estado: pendiente
+    prompt_video:
+      motor: h3_max
+      endpoint: minimax/h3-max/image-to-video
+      params: { duration: 5, resolution: "768P", prompt_expansion_mode: disabled }
+      entradas:
+        image_url: "keyframe c01_p02 (aprobado)"
+      texto: |
+        Martina stands completely still, eyes fixed on the door window off-screen left. Within the first 1.5 seconds her lips part just enough to say, almost voiceless, barely audible, in neutral Latin American Spanish: "Diego…" Her breath catches. She does not blink and does not step forward. Handheld, subtle breathing, no reframing. Keep the framing, lighting, face and wardrobe exactly as in the still: loose strands around her face, sweat sheen on her forehead, dry clean cream sweater, nobody else in frame. Sound: one knock on glass off-screen, her whisper, then dry silence. No music. No on-screen text.
   - id: c01_b03
     planos: [c01_p03, c01_p04, c01_p06, c01_p07, c01_p08]
     estrategia: A
@@ -237,6 +254,27 @@ bloques:
     costo_estimado_usd: 1.02
     nota: "Un keyframe por beat, porque la primera prueba solo con hojas y placa tuvo errores de continuidad: cada beat se ancla a su keyframe y el bloque conserva la identidad entre cortes. Las hojas de Martina y Tomás van porque ellos aparecen en tres beats. Son 7 imágenes en vez de 4: unos 0,06 USD extra de tokens (0,96 + 0,06). c01_p05 sale del bloque: es un inserto de encuadre exacto (c01_b04)."
     estado: pendiente
+    prompt_video:
+      motor: h3_max
+      endpoint: minimax/h3-max/reference-to-video
+      params: { duration: 12, resolution: "768P", prompt_expansion_mode: disabled, aspect_ratio: "9:16" }
+      entradas:
+        reference_image_urls:
+          - "Image 1 = keyframe c01_p03 (aprobado)"
+          - "Image 2 = keyframe c01_p04 (aprobado)"
+          - "Image 3 = keyframe c01_p06 (aprobado)"
+          - "Image 4 = keyframe c01_p07 (aprobado)"
+          - "Image 5 = keyframe c01_p08 (aprobado)"
+          - "Image 6 = martina (hoja)"
+          - "Image 7 = tomas (hoja)"
+      texto: |
+        Images 1 to 5 are the keyframes of beats 1 to 5. Image 6 is Martina. Image 7 is Tomás. Keep every person, the carriage and the light as in their images in every beat.
+        0.0 to 3.5s: two-shot, slow push-in on Tomás. Tomás, olive jacket, turned toward Martina, cream sweater, not touching her, asks calm and quiet: "Este viaje es para arreglarlo, ¿cierto?" then waits, still. She watches the rainy window. CUT.
+        3.5 to 5.5s: close-up, handheld, no reframing. Martina, cream sweater, eyes on the window, says flat, without turning her head: "Sí." She swallows; her jaw tightens. CUT.
+        5.5 to 7.0s: locked-off. Martina, cream sweater, flips the lit phone face down on her left thigh, left hand on top. Tomás, olive jacket, looks at the aisle. CUT.
+        7.0 to 9.5s: locked-off. Carmen sleeps against the window, hands crossed on her bag, head nodding with the train. CUT.
+        9.5 to 12.0s: locked-off. Iván, arms crossed, still; only his eyes move across the seats, ending frame right.
+        Neutral Latin American Spanish. Sound: rain on the windows, train rumble; phone brushing fabric at 5.5s. No music. No on-screen text.
   - id: c01_b04
     planos: [c01_p05]
     estrategia: B
@@ -248,6 +286,15 @@ bloques:
     costo_estimado_usd: 0.40
     nota: "Primer y último fotograma: fijan que la mano sea la izquierda y entre desde la ventana (hc26) y que la pantalla termine legible. Si el texto no sale legible, se reemplaza en After Effects con la hora 23:38 (hc27)."
     estado: pendiente
+    prompt_video:
+      motor: h3_max
+      endpoint: minimax/h3-max/image-to-video
+      params: { duration: 5, resolution: "768P", prompt_expansion_mode: disabled }
+      entradas:
+        image_url: "keyframe_entrada c01_p05 (aprobado): pantalla apagada, sin mano"
+        end_image_url: "keyframe c01_p05 (aprobado): pantalla encendida con 23:38 y «Estoy en el tren.», mano izquierda entrando por la derecha"
+      texto: |
+        Within the first 2 seconds, the phone lying face up on the black trousers vibrates once and its screen lights up; then Martina's left hand enters from the right edge of frame, the window side, and stops at the edge. Locked-off, static camera. Keep the framing, lighting, phone and trousers exactly as in the first and last frames: plain terracotta case with no logo, and the screen ends showing the time 23:38 and one notification from "D": "Estoy en el tren." The hand never enters from the left. Sound: soft rain and train rumble, one short phone vibration muffled by the trousers. No music. No on-screen text.
   - id: c01_b05
     planos: [c01_p09]
     estrategia: B
@@ -259,6 +306,14 @@ bloques:
     costo_estimado_usd: 0.40
     nota: "Bloque aparte porque invierte el eje (alerta del Director de fotografía). Solo primer fotograma: si se fija el último, el agachado se estira en los 5 s y pierde el ritmo gastado del personaje. Es un bloque de 5 s igual que el de c01_p10, pero se separan para que el inserto del revólver tenga encuadre exacto."
     estado: pendiente
+    prompt_video:
+      motor: h3_max
+      endpoint: minimax/h3-max/image-to-video
+      params: { duration: 5, resolution: "768P", prompt_expansion_mode: disabled }
+      entradas:
+        image_url: "keyframe c01_p09 (aprobado)"
+      texto: |
+        Within the first 3 seconds, Don Hugo slowly bends toward the sleeping passenger and reaches his right hand for the ticket on the passenger's thigh, worn and unhurried, without looking at his jacket. As he crouches, the right side of his jacket starts to open toward camera. He ends crouched, holding the ticket. Handheld, subtle breathing, no tilt, no reframing; he lowers within the frame and the camera does not follow. Keep the framing, lighting, face and uniform exactly as in the still: grey cap on, no insignia, no revolver or keys visible. Sound: soft rain and train rumble, knee creak, cloth rustle, ticket paper. No music. No on-screen text.
   - id: c01_b06
     planos: [c01_p10]
     estrategia: B
@@ -270,6 +325,15 @@ bloques:
     costo_estimado_usd: 0.40
     nota: "Primer y último fotograma: el último fija el revólver del prop (hc28) sin balas ni cartuchera (hc29), que es lo que los modelos suelen agregar. La chaqueta se abre entre 0,2 y 1,2 s y luego queda quieta."
     estado: pendiente
+    prompt_video:
+      motor: h3_max
+      endpoint: minimax/h3-max/image-to-video
+      params: { duration: 5, resolution: "768P", prompt_expansion_mode: disabled }
+      entradas:
+        image_url: "keyframe_entrada c01_p10 (aprobado): chaqueta apenas abierta, cinturón negro a la vista, sin revólver"
+        end_image_url: "keyframe c01_p10 (aprobado): culata y tambor cerrado en la funda café, sin balas"
+      texto: |
+        Within the first 1.2 seconds, the right side of Don Hugo's grey jacket swings open, between 0.2 and 1.2s, revealing on his right hip the dark wooden grip and closed cylinder of the old revolver in its short brown leather holster; then the jacket stays still until the end. No hand enters the frame. Locked-off, static camera. Keep the framing, lighting and cloth exactly as in the first and last frames. The revolver matches the last frame: cylinder closed, no bullets visible, no cartridges on the belt, no markings. Sound: soft rain and train rumble, rustle of jacket cloth. No music. No on-screen text.
 
 planos:
   # ============================ COLD OPEN ============================
@@ -329,6 +393,9 @@ planos:
         - "Asistente de dirección: falta la referencia de la mano de Diego desde afuera y bajo luz roja. La hoja de Diego está seca, con luz neutra y las mangas limpias, así que el keyframe tiene que inventar la palma mojada, las manchas (hc20) y el puño empapado (hc19). Propongo aprobar primero una hoja de detalle de la mano derecha y el puño; si no, Control de calidad revisa la mano en las 3 tomas."
         - "Asistente de dirección: en la placa loc_ultimo_vagon_rojo el vidrio de la ventanita está limpio y negro. El keyframe tiene que agregar las manchas secas arriba a la derecha (hc23) y el pasillo rojo vacío del otro lado (hc24)."
         - "Asistente de dirección: este plano lleva dos keyframes: el principal (salida, palma apoyada) y una variante de entrada que sale de editar el principal ya aprobado (mano separada del vidrio, sin huella). Van como último y primer fotograma de c01_b01."
+        - "Prompter: el Director de fotografía no declara cuerpo de cámara ni serie de lentes. En todos los keyframes uso los del ejemplo aprobado de la plantilla de rodaje (ARRI Alexa 35 y Cooke S4 esféricos), con la focal y la apertura de cada plano. Si el DP prefiere otros, se cambian en todos a la vez."
+        - "Prompter: las variantes de entrada (keyframe_entrada de c01_p01, c01_p05 y c01_p10) son prompts de edición cortos sobre el keyframe aprobado, no los siete bloques: cambian solo lo que difiere entre entrada y salida, para no arriesgar el resto del cuadro. Llevan num_images: 2, según las 2 tomas por variante del resumen del Asistente."
+        - "Prompter: los keyframes miden entre 380 y 580 palabras (el ejemplo aprobado de la plantilla, unas 370), y la plantilla advierte que GPT Image se deforma con prompts largos. Los más largos son c01_p01, c01_p02, c01_p03 y c01_p09, porque cada fuente de luz del DP y cada hecho frágil entra completo. Si en la primera tanda GPT deforma la mano o la composición, se corre el mismo prompt en Nano Banana Pro, como pide la plantilla, antes de recortar campos."
 
     # --- Asistente de dirección ---
     bloque: c01_b01
@@ -337,6 +404,35 @@ planos:
     motor_video: h3_max
     metodo_video: FL
     tomas_objetivo: 3
+
+    # --- Prompter ---
+    prompts:
+      keyframe:
+        motor: gpt_image_2_5_edit
+        endpoint: openai/gpt-image-2.5/flare/edit
+        params: { image_size: { width: 1088, height: 1920 }, quality: high, num_images: 3 }
+        referencias: ["Image 1 = diego (hoja)", "Image 2 = loc_ultimo_vagon_rojo"]
+        texto: |
+          FILM STILL: Film still from a feature film, not an illustration. Image 1 is Diego: match his skin tone, his hands and his light grey canvas jacket; only his right hand and the cuff of his right sleeve are in frame. Image 2 is the last carriage under red emergency light: match its connecting door, the vertical rectangular window with a plain metal frame at adult head height, and the fluorescent tube above the door.
+
+          MOMENT: Seen from inside the last carriage, a man's right hand has just knocked twice on the door window from outside and now rests flat on the glass: palm toward camera, fingers spread and pointing up, thumb toward frame right. Only the palm is visible through the glass. Behind it, the corridor on the other side is lit red and empty. No face, no other people.
+
+          COMPOSITION: 9:16 vertical insert. Camera inside the carriage at window height, about 1.65 m, level, 2.5 m from the door, slightly left of the window's axis and almost square to the glass. The window fills the central width, with its metal frame at both sides; its top edge sits about 13% from the top of the frame and its bottom edge runs out of the bottom of the frame. The palm sits in the lower-left half of the visible glass, centred about 40% from the left and 55% from the top. The wrist and the start of the soaked cuff stay above 77% from the top; the sleeve continues out of the bottom edge. The upper half of the glass, from 13% to 47% from the top, stays empty, showing only the red corridor.
+
+          LENS: Shot on ARRI Alexa 35 with a Cooke S4 65mm spherical lens at T2. Focus on the palm and on the dry stains on the glass, which lie in the same plane. The red corridor beyond is heavily out of focus; the metal window frame is slightly soft. No anamorphic streaks.
+
+          LIGHT: Only practical sources. A ceiling fluorescent tube just above the door, inside, out of frame and almost vertical over the glass: cold white 6500K (#E8F1F2), medium and hard, steady with no flicker; it falls on the palm through the glass and leaves a cold sheen on the wet skin and on the top edge of the frame. Red emergency lights (#B3001B) at the far end of the empty corridor behind the glass, low: a backlight that rims the fingers and fills the background with out-of-focus red. Low red emergency lights at floor level inside the carriage, out of frame below, very low: they only tint the metal of the door around the window. The amber reading lamps are off. Contrast ratio 8:1, one stop underexposed. The palm is the brightest thing in the frame; the stains read black under the red.
+
+          TEXTURE: The hand is wet with rain. Wet dark red-black stains run down from the wrist onto the heel of the palm and the base of the fingers, mixed with rainwater; the fingertips are almost clean. No rings, watch or bracelets. The light grey cuff is soaked dark red-black. Around the palm, the glass is smeared with dark marks and water. Dry dark stains in the upper-right corner of the glass. Nothing else on the glass.
+
+          FINISH: Kodak Vision3 500T film scan look, fine organic grain, soft natural micro-contrast, no digital sharpening, no HDR look. Color separation limited to deep red, cold cyan-white and near-black. No text, no logos.
+      keyframe_entrada:
+        motor: gpt_image_2_5_edit
+        endpoint: openai/gpt-image-2.5/flare/edit
+        params: { image_size: { width: 1088, height: 1920 }, quality: high, num_images: 2 }
+        referencias: ["Image 1 = keyframe c01_p01 (aprobado)"]
+        texto: |
+          Edit Image 1, the approved frame. Change only the hand and the glass around it: the same wet right hand, open, now hangs a few centimetres behind the glass without touching it, palm toward camera, fingers spread and pointing up, thumb toward frame right. Remove the palm print and the fresh dark smears and water around it; the glass keeps only the dry dark stains in the upper-right corner. Keep everything else exactly as in Image 1: camera position, framing, 65mm lens and focus, the red and cold-white light, the empty red corridor, the soaked light grey cuff entering from the bottom edge, the dark red-black stains on the hand, grain and color. No text, no logos.
 
   - id: c01_p02
     escena: cold_open
@@ -397,6 +493,7 @@ planos:
         - "Continuista: revisé la información. Martina dice «Diego…» viendo solo la palma. Tiene con qué deducirlo: recibió «Estoy en el tren.» y «¿Dónde estás?», los golpes son de persona y reconoce la manga de la chaqueta (hc20). Si la manga no entra en c01_p01, la reacción se apoya solo en los mensajes."
         - "Continuista: cuando este plano se reutilice a las 0:45, el sonido tiene que ser el de la escena 4, no el de este corte: sin el silencio seco ni la entrada anticipada de la lluvia y el traqueteo de la escena 1. Se reutiliza la imagen; el sonido del cold open y el de las 0:45 se mezclan por separado."
         - "Asistente de dirección: la hoja de Martina tiene la cola baja ordenada. Los mechones sueltos y el sudor (hc10) salen solo del prompt; el keyframe aprobado de c01_p01 entra como referencia para que la luz roja y el tubo frío sean los mismos."
+        - "Prompter: el «silencio seco y entrada anticipada de la lluvia y el traqueteo de la escena 1» es un efecto de mezcla, no de generación: el clip dura 5 s y el plano se corta en el segundo 1. El prompt de c01_b02 pide solo el golpe fuera de campo, el susurro y el silencio; la entrada anticipada la arma el Montajista."
 
     # --- Asistente de dirección ---
     bloque: c01_b02
@@ -405,6 +502,28 @@ planos:
     motor_video: h3_max
     metodo_video: FF
     tomas_objetivo: 3
+
+    # --- Prompter ---
+    prompts:
+      keyframe:
+        motor: nano_banana_pro_edit
+        endpoint: fal-ai/nano-banana-pro/edit
+        params: { aspect_ratio: "9:16", resolution: "2K", num_images: 3 }
+        referencias: ["Image 1 = martina (hoja)", "Image 2 = loc_ultimo_vagon_rojo", "Image 3 = keyframe c01_p01 (aprobado)"]
+        texto: |
+          FILM STILL: Film still from a feature film, not an illustration. Image 1 is Martina: match her face, her dark brown hair tied in a low ponytail and her cream crew-neck wool sweater exactly. Image 2 is the last carriage under red emergency light: match its seats, the low red lights at floor level and the cold fluorescent tube. Image 3 is the approved reverse shot of the door window she is looking at: match its red emergency light and cold-white tube exactly.
+
+          MOMENT: A split second before she whispers a name. Martina stands alone in the last carriage, about three metres from the door, facing it, staring at the small door window. Total stillness: she does not blink, lips closed, breath held. Her low ponytail has come loose, with strands around her face, and there is a light sheen of sweat on her forehead after running. Her phone is in her left hand, low, out of frame.
+
+          COMPOSITION: 9:16 vertical close-up. Camera at her standing eye height, level, 1.2 m to her left and slightly in front of her toward the door, hugging her eyeline: she looks toward frame left, almost grazing the lens. Her face sits in the middle third, slightly right of centre, leaving air on the left where she looks; her eyes are about 36% from the top. The sweater neckline ends above 77% from the top and the area below falls to dark. The top 11% holds only hair and out-of-focus red. Nobody else in frame; the carriage behind her shows no recognisable figures, only red shapes.
+
+          LENS: Shot on ARRI Alexa 35 with a Cooke S4 85mm spherical lens at T1.8. Focus on her left eye, nearest to camera. Ear, ponytail and background fall out of focus; the carriage behind her dissolves into red bokeh from the low lights. No anamorphic streaks.
+
+          LIGHT: Only practical sources, the same as in Image 3. Low red emergency lights (#B3001B) at floor level along the seat bases on both sides of her, out of frame below, medium: bounced off the floor, the red rises onto her face from below, stronger on her right side. The fluorescent tube above the door, ahead of her and above, about 3 m away, out of frame toward frame left: cold white 6500K (#E8F1F2), low, steady with no flicker; it leaves a cold sheen on the sweat of her forehead, a catchlight in her eyes and a thin edge on the loose strands. Low red lights at the far end of the carriage behind her, low: background bokeh only. The amber reading lamps are off. Contrast ratio 8:1, one stop underexposed; the side of her face turned away from the door falls almost to black.
+
+          TEXTURE: Real skin with pores; a light sheen of sweat on the forehead only, matte elsewhere. The cream sweater is dry and clean. No rain and no stains on her clothes, hair or skin. No coat, bag, scarf or rings. She wears nothing blue.
+
+          FINISH: Kodak Vision3 500T film scan look, fine organic grain, soft natural micro-contrast, no digital sharpening, no HDR look. Color separation limited to deep red, cold cyan-white and near-black. No text, no logos.
 
   # ============================ ESCENA 1 ============================
   - id: c01_p03
@@ -465,6 +584,9 @@ planos:
         - "Director de fotografía: la placa provisoria loc_vagon_pasajeros_ambar muestra puntos de luz cálidos y fijos detrás de la lluvia. En esc01 la ventana tiene que leerse azul de noche (hc02); si hay luces de afuera, que sean pocas, lejanas y pasando, sin competir con el ámbar de las lámparas. Conviene corregirlo en la placa definitiva."
         - "Director de fotografía: c01_p03–c01_p08 comparten locación, eje y luz (lámparas de lectura sobre cada ventana, ventana azul con lluvia) y pueden ir en el mismo bloque de generación. Regla de luz de toda la escena: cada pasajero recibe la lámpara desde arriba y del lado de su ventana."
         - "Asistente de dirección: este keyframe es el ancla de la escena 1 y se genera y aprueba primero. Una vez aprobado entra como referencia en los keyframes de c01_p04 a c01_p09, para que los asientos, las lámparas, la ventana y el color sean los mismos en toda la escena."
+        - "Prompter: la placa loc_vagon_pasajeros_ambar (v2) está tomada mirando hacia el frente del tren: se ven los respaldos de los asientos. En c01_p03–c01_p08 la cámara mira hacia la cola y ve el frente de los asientos y las caras. En esos prompts la placa se declara solo como referencia de diseño de asientos, lámparas y ventanas, con la aclaración de que la cámara mira en sentido contrario; si el modelo copia la orientación, los pasajeros salen de espaldas. Solo c01_p09 mira en el mismo sentido que la placa. Conviene tener una placa hacia la cola."
+        - "Prompter: el prompt de video de c01_b03 tiene unas 188 palabras y la receta pide 90–160. No se puede recortar más sin quitar campos de otros roles: son cinco beats con sus tiempos, dos líneas de diálogo, la descripción repetida de Martina y Tomás en cada beat y siete referencias. Si en la prueba se pierde adherencia, propongo al Asistente dividirlo en dos bloques: c01_p03–c01_p04 (diálogo, 6 s) y c01_p06–c01_p08 (7 s). Cuesta 1 s más de video y deja cada prompt dentro de la receta."
+        - "Prompter: el Director no da tono a la línea de Tomás. Uso «calm and quiet», de biblia/personajes.md («Tranquilo hasta que duda»). El acento es «neutral Latin American Spanish», porque la biblia fija español neutro (premisa.md)."
 
     # --- Asistente de dirección ---
     bloque: c01_b03
@@ -473,6 +595,28 @@ planos:
     motor_video: h3_max
     metodo_video: REF
     tomas_objetivo: 3
+
+    # --- Prompter ---
+    prompts:
+      keyframe:
+        motor: gpt_image_2_5_edit
+        endpoint: openai/gpt-image-2.5/flare/edit
+        params: { image_size: { width: 1088, height: 1920 }, quality: high, num_images: 3 }
+        referencias: ["Image 1 = martina (hoja)", "Image 2 = tomas (hoja)", "Image 3 = celular_martina", "Image 4 = loc_vagon_pasajeros_ambar"]
+        texto: |
+          FILM STILL: Film still from a feature film, not an illustration. Image 1 is Martina: match her face, dark brown hair, cream crew-neck wool sweater and black trousers. Image 2 is Tomás: match his face, short dark hair, stubble and olive green cotton zip jacket, closed, over a dark grey T-shirt. Image 3 is her phone: plain terracotta case, no logo. Image 4 is the night-train passenger carriage: match the navy fabric seats with grey headrest covers, the small amber reading lamps under the luggage racks and the rain on the dark blue windows; here the camera faces the other way, toward the front of the seats.
+
+          MOMENT: A night train in motion. Martina and Tomás sit side by side, not touching; the armrest between them is empty. Tomás has just asked her a question and keeps looking at her profile, body turned toward her, still, waiting. Martina looks at the rainy window. Her phone lies face up on her left thigh, on the window side, screen off.
+
+          COMPOSITION: 9:16 vertical medium two-shot. Camera at their seated chest height, about 1.1 m, level, over the seatback of the row in front, looking toward the rear of the carriage, shifted toward the aisle so Tomás is closer to camera and larger in frame. Tomás on the left, aisle side; Martina and the window on the right; the empty armrest in the centre. Both heads in the middle third, between 34% and 44% from the top. The band from 12% to 27% from the top is the dark luggage rack above Tomás, left empty. The out-of-focus top of the seatback in front fills the bottom of the frame as a dark foreground occluder. Behind them the carriage recedes toward the rear.
+
+          LENS: Shot on ARRI Alexa 35 with a Cooke S4 32mm spherical lens at T2. Focus on Tomás's right eye, nearest to camera. Martina is slightly soft; the rain on the window is out of focus; the seatback edge in front is blurred at the bottom. No anamorphic streaks.
+
+          LIGHT: Only practical sources. The reading lamp above their window, under the luggage rack, upper right of frame: amber 2700K, medium, a downward cone; Tomás, turned toward her, takes it full on his face and reads warm. The rainy window at frame right, beside Martina: night blue (#0E2A33), low; a cold fill on her face as she looks at the glass, and glints on the drops. The row of reading lamps down the rest of the carriage, receding toward the rear: amber 2700K, low, bokeh points for depth. No red light. Contrast ratio 4:1: Tomás warmer and brighter, Martina cooler and in half-shadow.
+
+          TEXTURE: Real skin with pores, dry and matte. Rain only on the outside of the window glass, drops and streaks, out of focus. Nobody is wet and there are no stains anywhere. Her hair is in a neat low ponytail. Dry clothes with natural folds. No rings. Neither of them wears blue. The phone shows no brand or logo.
+
+          FINISH: Kodak Vision3 500T film scan look, fine organic grain, soft natural micro-contrast, no digital sharpening, no HDR look. Color separation limited to warm amber, night blue and near-black. No text, no logos.
 
   - id: c01_p04
     escena: esc01
@@ -528,6 +672,28 @@ planos:
     metodo_video: REF
     tomas_objetivo: 3
 
+    # --- Prompter ---
+    prompts:
+      keyframe:
+        motor: gpt_image_2_5_edit
+        endpoint: openai/gpt-image-2.5/flare/edit
+        params: { image_size: { width: 1088, height: 1920 }, quality: high, num_images: 3 }
+        referencias: ["Image 1 = martina (hoja)", "Image 2 = loc_vagon_pasajeros_ambar", "Image 3 = keyframe c01_p03 (aprobado)"]
+        texto: |
+          FILM STILL: Film still from a feature film, not an illustration. Image 1 is Martina: match her face, dark brown hair and cream crew-neck wool sweater. Image 2 is the passenger carriage: match the amber reading lamps and the rainy dark blue window. Image 3 is the approved two-shot of this scene: match its light, color, window and her neat hair exactly; this is a closer shot of her, taken from Tomás's side.
+
+          MOMENT: One second after she answers with a single word. Martina sits by the window and keeps looking at it; she has not turned her head. She has just swallowed and her jaw is tight.
+
+          COMPOSITION: 9:16 vertical close-up. Camera at her seated eye height, about 1.15 m, level, from the row in front on the aisle side, 1 m away: a three-quarter profile of her looking at the window. Tomás is not in frame. Her face sits in the middle third, slightly right of centre, eyes about 37% from the top, with air toward the window at frame right. The band from 12% to 27% from the top, on the left, is dark aisle-side background, left empty and clear of her eyes. Below, the sweater neckline and shadow.
+
+          LENS: Shot on ARRI Alexa 35 with a Cooke S4 75mm spherical lens at T1.8. Focus on her right eye, nearest to camera. The rainy window at the right falls into bokeh. No anamorphic streaks.
+
+          LIGHT: Only practical sources, the same as in Image 3. The reading lamp above her window, upper right of frame, almost above her: amber 2700K, medium; a top light that marks her forehead, cheekbone and tied hair. The rainy window at frame right, in front of her face: night blue (#0E2A33), low; a cold frontal fill, with shadows of moving drops on her cheek. No red light. Contrast ratio 4:1: the cheek facing camera falls into warm half-shadow; the jaw line reads clearly.
+
+          TEXTURE: Real skin with pores, dry and matte. Rain only on the outside of the window glass. Hair in a neat low ponytail. Dry sweater, no stains. She wears nothing blue.
+
+          FINISH: Kodak Vision3 500T film scan look, fine organic grain, soft natural micro-contrast, no digital sharpening, no HDR look. Color separation limited to warm amber, night blue and near-black. No text, no logos.
+
   - id: c01_p05
     escena: esc01
     tiempo: "0:07–0:08"
@@ -577,6 +743,7 @@ planos:
         - "Director: el mensaje tiene que ocupar el centro de la pantalla con letra grande para leerse en 1 s. La interfaz del celular es genérica y sin marca; si el modelo no deja el texto legible, se reemplaza en After Effects."
         - "Continuista: la hora de la pantalla también es continuidad. Aquí marca 23:38 y en el inserto de las 0:40 tiene que marcar 23:57 (hc27). Si la pantalla se reemplaza en After Effects, se reemplaza con esa hora."
         - "Asistente de dirección: este plano lleva dos keyframes: el principal (salida, pantalla encendida y mano entrando) y una variante de entrada que sale de editar el principal ya aprobado (pantalla apagada, sin mano). GPT Image 2.5 se elige también porque escribe mejor el texto de la pantalla."
+        - "Prompter: la receta de H3 Max cierra con «No music. No on-screen text.», y aquí el texto de la pantalla del celular sí debe verse. El prompt de c01_b04 lo protege con el último fotograma («the screen ends showing…»), pero el modelo puede borrarlo o deformarlo durante el clip. Si pasa, se reemplaza en After Effects como ya está previsto (hc27). La nota grave de la música no entra al prompt: va en post."
 
     # --- Asistente de dirección ---
     bloque: c01_b04
@@ -585,6 +752,35 @@ planos:
     motor_video: h3_max
     metodo_video: FL
     tomas_objetivo: 3
+
+    # --- Prompter ---
+    prompts:
+      keyframe:
+        motor: gpt_image_2_5_edit
+        endpoint: openai/gpt-image-2.5/flare/edit
+        params: { image_size: { width: 1088, height: 1920 }, quality: high, num_images: 3 }
+        referencias: ["Image 1 = martina (hoja)", "Image 2 = celular_martina", "Image 3 = keyframe c01_p03 (aprobado)"]
+        texto: |
+          FILM STILL: Film still from a feature film, not an illustration. Image 1 is Martina: match her black trousers and the skin tone of her hand. Image 2 is her phone: match the plain terracotta case and the black glass exactly, no logo. Image 3 is the approved two-shot of this scene: match its amber reading-lamp light and color.
+
+          MOMENT: The phone lying face up on Martina's left thigh has just lit up with a notification. At that instant her left hand enters at the right edge of the frame, from the window side. The screen is a plain dark lock screen, a generic interface with no brand: the time "23:38" at the top and one single notification in large text in the centre, sender "D", message "Estoy en el tren."
+
+          COMPOSITION: 9:16 vertical insert. Steep high angle, almost overhead, about 50 cm above her thigh, with the window toward frame right. The phone is vertical in the centre, its screen spanning from 29% to 73% from the top; the notification sits in the centre, between 42% and 57% from the top. The hand enters at the right edge at mid-height. Black trouser fabric fills the rest. Nothing important in the top 11% or below 77% from the top.
+
+          LENS: Shot on ARRI Alexa 35 with a Cooke S4 50mm spherical lens at T2.8. Focus on the notification text. The trouser fabric falls out of focus toward the edges; the entering hand is soft. No anamorphic streaks.
+
+          LIGHT: Only practical sources. The reading lamp above her window, upper right, behind camera: amber 2700K, medium; it paints the black fabric and the terracotta case, and its reflection falls outside the screen, never over the text. The phone screen: cold white 6500K, low to medium, not clipped; the time and the message stay readable, with a short cold halo on the fabric. Contrast ratio 4:1; the screen is the brightest thing in the frame without blowing out.
+
+          TEXTURE: Matte black trouser fabric with natural folds, dry. The hand is dry, with no rings. The case is plain and clean. No brand or logo anywhere.
+
+          FINISH: Kodak Vision3 500T film scan look, fine organic grain, soft natural micro-contrast, no digital sharpening, no HDR look. Color separation limited to warm amber, cold white and near-black. No text other than the phone screen, no logos.
+      keyframe_entrada:
+        motor: gpt_image_2_5_edit
+        endpoint: openai/gpt-image-2.5/flare/edit
+        params: { image_size: { width: 1088, height: 1920 }, quality: high, num_images: 2 }
+        referencias: ["Image 1 = keyframe c01_p05 (aprobado)"]
+        texto: |
+          Edit Image 1, the approved frame. Change only two things: the phone screen is off, plain black glass with no light, no time and no notification; and there is no hand in the frame, only black trouser fabric at the right edge. Without the screen glow, the fabric around the phone is lit only by the amber reading lamp. Keep everything else exactly as in Image 1: camera, framing, 50mm lens and focus, the phone face up on her left thigh, the plain terracotta case, the amber light, grain and color. No text, no logos.
 
   - id: c01_p06
     escena: esc01
@@ -644,6 +840,28 @@ planos:
     metodo_video: REF
     tomas_objetivo: 3
 
+    # --- Prompter ---
+    prompts:
+      keyframe:
+        motor: gpt_image_2_5_edit
+        endpoint: openai/gpt-image-2.5/flare/edit
+        params: { image_size: { width: 1088, height: 1920 }, quality: high, num_images: 3 }
+        referencias: ["Image 1 = martina (hoja)", "Image 2 = tomas (hoja)", "Image 3 = celular_martina", "Image 4 = loc_vagon_pasajeros_ambar", "Image 5 = keyframe c01_p03 (aprobado)"]
+        texto: |
+          FILM STILL: Film still from a feature film, not an illustration. Image 1 is Martina: match her face, dark brown hair, cream crew-neck wool sweater and black trousers. Image 2 is Tomás: match his face and olive green zip jacket over a dark grey T-shirt. Image 3 is her phone: plain terracotta case, no logo. Image 4 is the passenger carriage: match the seats, the amber reading lamps and the rainy windows. Image 5 is the approved two-shot of this scene: match its seats, light, color and the positions of both of them exactly; this frame is taken from the same spot, one step further back and slightly higher.
+
+          MOMENT: A split second before the phone lands. With one short movement of her left hand, Martina is turning the lit phone face down onto her left thigh, without looking at it; the screen faces her trousers and its glow lights her fingers from below. Tomás, beside her on the aisle side, is looking away at the aisle, unaware. They do not touch.
+
+          COMPOSITION: 9:16 vertical medium shot. Camera over the seatback of the row in front, shifted toward the aisle, at about 1.3 m, with a slight high angle so their faces and her lap fit. Faces in the upper middle third, between 29% and 40% from the top: Tomás on the left, head turned toward frame left; Martina on the right. Her hand and the phone in the lower middle third, between 60% and 73% from the top, above 77%.
+
+          LENS: Shot on ARRI Alexa 35 with a Cooke S4 32mm spherical lens at T2.8. Focus on Martina's left hand and the phone. Tomás is slightly soft, but it reads clearly that he is looking at the aisle. No anamorphic streaks.
+
+          LIGHT: Only practical sources, the same as in Image 5. The reading lamp above their window, upper right of frame: amber 2700K, medium; it bathes her lap and hands. The rainy window at frame right: night blue (#0E2A33), low; a cold fill on Martina. The phone screen on her left thigh: cold white 6500K, low; it lights her fingers from below and is about to be smothered against the trousers. No red light. Contrast ratio 4:1.
+
+          TEXTURE: Real skin with pores, dry and matte. Rain only on the outside of the window glass. Her hair in a neat low ponytail. Dry clothes with natural folds. No rings. Neither of them wears blue. No brand or logo on the phone.
+
+          FINISH: Kodak Vision3 500T film scan look, fine organic grain, soft natural micro-contrast, no digital sharpening, no HDR look. Color separation limited to warm amber, night blue and near-black. No text, no logos.
+
   - id: c01_p07
     escena: esc01
     tiempo: "0:09–0:11"
@@ -701,6 +919,28 @@ planos:
     metodo_video: REF
     tomas_objetivo: 3
 
+    # --- Prompter ---
+    prompts:
+      keyframe:
+        motor: gpt_image_2_5_edit
+        endpoint: openai/gpt-image-2.5/flare/edit
+        params: { image_size: { width: 1088, height: 1920 }, quality: high, num_images: 3 }
+        referencias: ["Image 1 = carmen (hoja)", "Image 2 = loc_vagon_pasajeros_ambar", "Image 3 = keyframe c01_p03 (aprobado)"]
+        texto: |
+          FILM STILL: Film still from a feature film, not an illustration. Image 1 is Carmen: match her face, grey hair in a bun, long dark charcoal wool coat, seafoam-green scrub top with a V-neck and matching scrub trousers, and her brown leather bag with a short handle. Image 2 is the passenger carriage: match the navy fabric seats, the amber reading lamps under the luggage racks and the rainy dark blue windows; here the camera faces the other way, toward the front of the seats. Image 3 is the approved first shot of this scene: match its light and color exactly.
+
+          MOMENT: Carmen dozes alone in a window seat, her head resting to her right against the rainy window, mouth closed, breathing slowly, hands crossed on the bag on her lap. Her coat is open and the V-neck of the scrub top shows on her chest.
+
+          COMPOSITION: 9:16 vertical medium shot. Camera in the aisle in front of her row, at her seated shoulder height, about 1.1 m, level, looking toward the rear of the carriage and slightly diagonal so her face against the window is visible. The window and her head are on the left of frame; her head sits in the middle third, left of centre, between 34% and 42% from the top. The V-neck and her hands on the bag sit lower, above 77% from the top. The band from 12% to 27% from the top, on the right, is the dark luggage rack on the aisle side, left empty.
+
+          LENS: Shot on ARRI Alexa 35 with a Cooke S4 35mm spherical lens at T2. Focus on her face, on the nearest closed eye. The V-neck and her hands on the bag are almost sharp; the rain on the glass and the background are out of focus. No anamorphic streaks.
+
+          LIGHT: Only practical sources. The reading lamp above her window, upper left of frame: amber 2700K, medium-low; it falls on her head, the scrub collar and her hands. The rainy window at frame left, behind her head: night blue (#0E2A33), low; it rims her profile against the glass. The row of reading lamps down the carriage, receding toward the rear: amber 2700K, low, bokeh. No red light. Contrast ratio 4:1.
+
+          TEXTURE: Real skin with pores, dry and matte. Rain only on the outside of the window glass. Worn leather bag. Dry clothes with natural folds. She wears nothing blue. No badges or logos on the scrubs.
+
+          FINISH: Kodak Vision3 500T film scan look, fine organic grain, soft natural micro-contrast, no digital sharpening, no HDR look. Color separation limited to warm amber, night blue and near-black. No text, no logos.
+
   - id: c01_p08
     escena: esc01
     tiempo: "0:11–0:13"
@@ -751,6 +991,7 @@ planos:
         - "Continuista: si detrás de Iván se ve la puerta al último vagón, es la misma puerta del cold open vista desde el otro lado. Tiene que tener la misma forma de ventanita (hc22) y el vidrio limpio (hc23), sin las manchas ni la huella que aparecen después."
         - "Director de fotografía: las placas provisorias no cumplen hc22. En loc_vagon_pasajeros_ambar la ventanita de la puerta del fondo es chica y de esquinas redondeadas; en loc_ultimo_vagon_rojo es un rectángulo vertical alto con marco metálico. Si este plano se genera con la placa ámbar como referencia, la puerta detrás de Iván va a salir distinta de la del cold open. Hay que unificar la puerta en las placas antes de generar."
         - "Asistente de dirección: mientras no se unifique la puerta en las placas, este keyframe recibe también loc_ultimo_vagon_rojo, solo como referencia de la forma de la puerta y la ventanita (hc22). El prompt tiene que aclarar que de esa imagen se toma la forma y no la luz roja: aquí la ventanita se ve limpia y con luz ámbar."
+        - "Prompter: en la placa loc_vagon_pasajeros_ambar v2 (la que figura en assets), la puerta del fondo ya parece tener una ventanita rectangular vertical y alta; la alerta del Director de fotografía podría referirse a la v1. Si el DP confirma que la v2 cumple hc22, se puede quitar loc_ultimo_vagon_rojo de este keyframe: queda una referencia menos y desaparece la aclaración «ignore its red light», que es la frase más frágil del prompt."
 
     # --- Asistente de dirección ---
     bloque: c01_b03
@@ -759,6 +1000,28 @@ planos:
     motor_video: h3_max
     metodo_video: REF
     tomas_objetivo: 3
+
+    # --- Prompter ---
+    prompts:
+      keyframe:
+        motor: gpt_image_2_5_edit
+        endpoint: openai/gpt-image-2.5/flare/edit
+        params: { image_size: { width: 1088, height: 1920 }, quality: high, num_images: 3 }
+        referencias: ["Image 1 = ivan (hoja)", "Image 2 = loc_vagon_pasajeros_ambar", "Image 3 = loc_ultimo_vagon_rojo (solo forma de la puerta)", "Image 4 = keyframe c01_p03 (aprobado)"]
+        texto: |
+          FILM STILL: Film still from a feature film, not an illustration. Image 1 is Iván: match his face, cropped greying hair, stubble, and his heavy brown canvas work jacket with a dark corduroy collar, zipped up to the chest over a dark grey T-shirt. Image 2 is the passenger carriage: match the navy fabric seats, the amber reading lamps and the rainy dark blue windows. Image 3 is used only for the shape of the connecting door and its tall vertical rectangular window with a plain metal frame; ignore its red light: here the window is clean and glows dim amber. Image 4 is the approved first shot of this scene: match its light and color exactly.
+
+          MOMENT: Iván sits upright in the aisle seat of the last row, arms crossed; only his eyes move, sweeping over the passengers without stopping on anyone. His gaze has just passed the lens and ends slightly to frame right, on the aisle.
+
+          COMPOSITION: 9:16 vertical medium shot. Camera in the aisle two rows in front of him, slightly below his seated eye height, about 1 m, a slight low angle, looking toward the rear. Behind him, at frame right, the closed door to the last carriage, with its window above his head, between 23% and 39% from the top. His head in the middle third, slightly left of centre, eyes about 40% from the top; his crossed arms above 77% from the top. The band from 12% to 27% from the top, on the left, is dark luggage rack, left empty and clear of the door window.
+
+          LENS: Shot on ARRI Alexa 35 with a Cooke S4 50mm spherical lens at T2. Focus on his eyes. The door behind him is soft, but the shape of its window is readable. No anamorphic streaks.
+
+          LIGHT: Only practical sources. The reading lamp above the window of his row, upper left of frame, far from him in the aisle seat: amber 2700K, medium-low; it lights the side of his face toward the window and leaves the other side in shadow. The door window behind him, at frame right above his head: dim amber 2700K, low, because the last carriage is also on travel light; a background glow that separates his silhouette. The rainy window at frame left: night blue (#0E2A33), very low. No red light. Contrast ratio 5:1, half of his face in shadow.
+
+          TEXTURE: Real weathered skin with pores, dry and matte. The door glass is clean: no stains, no marks. Worn canvas jacket. Rain only on the outside of the side windows. He wears nothing blue. No logos.
+
+          FINISH: Kodak Vision3 500T film scan look, fine organic grain, soft natural micro-contrast, no digital sharpening, no HDR look. Color separation limited to warm amber, night blue and near-black. No text, no logos.
 
   - id: c01_p09
     escena: esc01
@@ -814,6 +1077,8 @@ planos:
         - "Director de fotografía: acepto el contracampo. La luz no cambia de lógica (lámparas sobre las ventanas de los dos lados, fuga de lámparas en el fondo), así que el corte se sostiene. Como invierte el eje, c01_p09–c01_p10 conviene generarlos en un bloque aparte del de c01_p03–c01_p08, con la misma descripción de fuentes."
         - "Asistente de dirección: bloqueado por assets. El asset boletos está pendiente (hc31) y el pasajero dormido (extra, hombre mayor, de espaldas) no tiene referencia. Para esta prueba, los dos pueden salir solo del prompt si Cristian lo acepta; si no, hay que aprobar antes una hoja del extra y el prop del boleto."
         - "Asistente de dirección: en la hoja de Hugo la chaqueta es larga y está cerrada, y no se ven el cinturón ni la funda. El keyframe tiene que mantener la chaqueta cerrada (hc30, hc33); el cinturón aparece recién en c01_p10."
+        - "Prompter: boletos no tiene imagen (está pendiente), así que no entra en image_urls: las referencias quedan en 3 y no en 4. El boleto (hc31) y el pasajero dormido salen solo del prompt, a la espera de que Cristian lo acepte (bloqueo del Asistente)."
+        - "Prompter: la hoja de Don Hugo muestra camisa blanca y corbata oscura bajo la chaqueta, y hc16 no las menciona. El prompt describe la hoja tal como está; el Continuista tiene que confirmarlas o pedir otra hoja."
 
     # --- Asistente de dirección ---
     bloque: c01_b05
@@ -822,6 +1087,28 @@ planos:
     motor_video: h3_max
     metodo_video: FF
     tomas_objetivo: 3
+
+    # --- Prompter ---
+    prompts:
+      keyframe:
+        motor: gpt_image_2_5_edit
+        endpoint: openai/gpt-image-2.5/flare/edit
+        params: { image_size: { width: 1088, height: 1920 }, quality: high, num_images: 3 }
+        referencias: ["Image 1 = don_hugo (hoja)", "Image 2 = loc_vagon_pasajeros_ambar", "Image 3 = keyframe c01_p03 (aprobado)"]
+        texto: |
+          FILM STILL: Film still from a feature film, not an illustration. Image 1 is Don Hugo: match his face, grey moustache and grey hair, grey peaked cap with a black band, and his charcoal-grey conductor uniform with plain metal buttons, matching trousers, white shirt and dark tie; no insignia, badges or logos. Image 2 is the passenger carriage seen toward the front, as in this shot: match the navy fabric seats with grey headrest covers, the amber reading lamps under the luggage racks and the rainy dark blue windows. Image 3 is the approved first shot of this scene: match its light and color exactly.
+
+          MOMENT: Don Hugo, walking down the aisle toward camera, has just started to bend toward an elderly sleeping passenger in the aisle seat to his right, who has his back to camera. A slow, worn movement of someone who has done it thousands of times: his right hand reaches for a small cream paper ticket on the passenger's thigh, without looking at his jacket. His jacket is still closed and covers his belt.
+
+          COMPOSITION: 9:16 vertical medium shot. Camera at the rear of the carriage, next to the last-row aisle seat, at a seated passenger's eye height, about 1.15 m: a slight low angle on Hugo standing. It looks toward the front along the aisle. The sleeping passenger's shoulder and grey-haired head, back to camera, enter from the left as a dark out-of-focus foreground. Hugo is in the centre, his head about 34% from the top; his right hip and the edge of his jacket sit left of centre, between 60% and 70% from the top. The band from 12% to 27% from the top, on the right, is dark luggage rack, left empty and clear of his cap. Behind him the aisle recedes toward the front.
+
+          LENS: Shot on ARRI Alexa 35 with a Cooke S4 35mm spherical lens at T2.8. Focus on Hugo's chest and face. The foreground passenger is out of focus; the aisle behind opens in perspective with the lamps in bokeh. No anamorphic streaks.
+
+          LIGHT: Only practical sources. The reading lamp above the window of the sleeping passenger's row, upper left of frame: amber 2700K, medium; as Hugo bends into its cone it starts to reach under his visor and glints on the metal buttons on the right side of his jacket. The lamp of the opposite row, upper right: amber 2700K, low; a fill on his left shoulder. The row of reading lamps receding toward the front: amber 2700K, low, bokeh. The rainy windows on both sides of the background: night blue (#0E2A33), very low. No red light. Contrast ratio 4:1; the visor keeps his eyes in shadow.
+
+          TEXTURE: Real skin with pores, dry and matte. Rain only on the outside of the windows. Grey wool uniform with natural folds; the cap stays on. No revolver, holster, belt or keys visible. The ticket is plain cream paper with no logo. Nobody wears blue.
+
+          FINISH: Kodak Vision3 500T film scan look, fine organic grain, soft natural micro-contrast, no digital sharpening, no HDR look. Color separation limited to warm amber, night blue and near-black. No text, no logos.
 
   - id: c01_p10
     escena: esc01
@@ -882,6 +1169,35 @@ planos:
     motor_video: h3_max
     metodo_video: FL
     tomas_objetivo: 3
+
+    # --- Prompter ---
+    prompts:
+      keyframe:
+        motor: gpt_image_2_5_edit
+        endpoint: openai/gpt-image-2.5/flare/edit
+        params: { image_size: { width: 1088, height: 1920 }, quality: high, num_images: 3 }
+        referencias: ["Image 1 = don_hugo (hoja)", "Image 2 = revolver_hugo", "Image 3 = keyframe c01_p09 (aprobado)"]
+        texto: |
+          FILM STILL: Film still from a feature film, not an illustration. Image 1 is Don Hugo: match his charcoal-grey conductor jacket with plain metal buttons and matching trousers. Image 2 is the revolver in its holster: match the worn blued steel, the dark checkered wooden grip, the cylinder and the short brown leather holster exactly. Image 3 is the approved previous shot: match the cloth, the buttons and the amber light exactly.
+
+          MOMENT: For an instant, as Don Hugo crouches, the right side of his grey jacket has swung open. On his right hip, on a black leather belt, a short brown leather holster shows the dark wooden grip and the closed cylinder of an old revolver, grip toward his back. His hands are out of frame, still on the ticket.
+
+          COMPOSITION: 9:16 vertical insert. Camera at his crouched hip height, about 0.9 m, level, on the same side as Image 3 but closer, facing his right hip, which sits on the left of frame. The grip and cylinder in the centre, between 42% and 62% from the top; the holster and the black belt cross the middle third. Nothing important in the top 11% or below 77% from the top.
+
+          LENS: Shot on ARRI Alexa 35 with a Cooke S4 65mm spherical lens at T2.8. Focus on the grip and cylinder. The belt going back and the edge of the jacket fall softly out of focus. No anamorphic streaks.
+
+          LIGHT: Only practical sources. The reading lamp above the window of the sleeping passenger's row, upper left of frame, grazing the hip: amber 2700K, medium; it enters through the opening of the jacket, warms the wood of the grip and leaves a thin highlight on the blued steel of the cylinder. The lamp of the opposite row, upper right: amber 2700K, very low; it barely separates the grey cloth from the background. Contrast ratio 5:1; the inside of the jacket falls into shadow and the revolver appears as it enters the light.
+
+          TEXTURE: Worn blued steel and dark wood with a used finish. Worn brown leather holster with stitching. The cylinder is closed; no bullets visible anywhere, no cartridge loops and no ammunition on the belt. No markings, engravings or logos on the revolver. No hand in frame. Grey wool jacket with natural folds, plain metal buttons, no insignia.
+
+          FINISH: Kodak Vision3 500T film scan look, fine organic grain, soft natural micro-contrast, no digital sharpening, no HDR look. Color separation limited to warm amber and near-black. No text, no logos.
+      keyframe_entrada:
+        motor: gpt_image_2_5_edit
+        endpoint: openai/gpt-image-2.5/flare/edit
+        params: { image_size: { width: 1088, height: 1920 }, quality: high, num_images: 2 }
+        referencias: ["Image 1 = keyframe c01_p10 (aprobado)"]
+        texto: |
+          Edit Image 1, the approved frame. Change only the jacket: the right side of the grey jacket is barely open, just enough to show a strip of the black leather belt; the revolver, its grip and the holster are not visible yet, still covered by the cloth. Keep everything else exactly as in Image 1: camera, framing, 65mm lens and focus, the amber light from the upper left, the plain metal buttons, grain and color. No hand in frame. No text, no logos.
 
 resumen_produccion:
   # Asistente de dirección. Tarifas: GPT Image 2.5 edit ~0,05 USD por imagen (high), Nano Banana Pro edit 0,15 USD, H3 Max 768P 0,08 USD/s.
