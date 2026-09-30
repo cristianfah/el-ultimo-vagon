@@ -35,7 +35,7 @@ Los modelos no hacen clips de 1 s (H3 Max: 5–15 s; Kling: 3 s o más). Tu tare
 - **Agrupa por locación y luz:** los planos con la misma locación y la misma luz se generan juntos y con las mismas referencias.
 - **Reutiliza:** si un plano se repite (el cold open y su momento en la escena 4), es una sola generación.
 - **Bloqueo:** un plano no puede generarse si alguno de sus assets no está `aprobado`. Márcalo en `alertas`.
-- **Tomas:** 3 por plano en exploración; 2 en Kling.
+- **Tomas:** 2 por bloque como máximo, en cualquier motor. Si fallan las dos, el bloque vuelve a la revisión previa (ver `produccion/pipeline.md`).
 
 ## Checklist antes de entregar
 - [ ] ¿Cada plano tiene motor, método y referencias?

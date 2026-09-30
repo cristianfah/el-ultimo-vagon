@@ -32,7 +32,8 @@ Guion aprobado (guion/capNN)          + Assets bloqueados (Weavy: personajes, lo
 ```
 
 ## Reglas del proceso
-- **Nada pasa a video sin keyframe aprobado.** El video es lo caro.
+- **Se define antes de generar.** El objetivo es que cada bloque salga bien en una o dos tomas. Si dos tomas fallan, no se genera una tercera: el bloque vuelve a la revisión previa con lo que faltaba definir.
+- **Nada pasa a video sin keyframe aprobado ni revisión previa `lista`.** El video es lo caro.
 - **Una corrección por vez.** Si una toma falla, se cambia una variable (luz, encuadre, referencia, seed) y se vuelve a generar.
 - **Todo queda en el guion técnico:** qué motor, qué seed, qué toma se eligió y por qué. Si no está escrito, no se puede repetir.
 - **Los archivos generados no van a git.** Se guardan en `renders/capNN/<id_plano>/` (ignorado) y el YAML guarda la URL y el nombre.

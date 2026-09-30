@@ -32,7 +32,7 @@ Todos escriben en el guion técnico (`produccion/shotlists/capNN.yaml`), cada un
 3. **Director → Productor de impacto → Director de fotografía → Continuista → Asistente de dirección:** arman el guion técnico, en ese orden. El Director acepta o descarta las propuestas de impacto antes de que pasen a fotografía.
 4. **Cristian aprueba el guion técnico.**
 5. **Prompter:** escribe los prompts. **Pipeline:** genera los keyframes. **Control de calidad:** filtra. **Cristian elige** un keyframe por plano.
-6. **Pipeline:** genera las tomas de video. **Control de calidad:** filtra. **Cristian elige** la toma de cada plano.
+6. **Control de calidad:** revisión previa de cada bloque; si hay un hueco, vuelve al rol que corresponde. **Pipeline:** genera como máximo dos tomas por bloque. **Control de calidad:** revisa el clip completo. **Cristian elige** la toma de cada plano.
 7. **Montajista:** plan de montaje. Upscale, audio y edición (Cristian y el plan). **Se publica** y se abre la votación.
 
 El detalle de cada paso está en `produccion/pipeline.md`.
