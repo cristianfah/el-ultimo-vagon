@@ -1,6 +1,6 @@
 # Plan de montaje: capítulo 1, prueba de cold open y escena 1
 
-Armado de prueba v1: `renders/cap01/montaje/cap01_prueba_montaje_v1.mp4` (480×854, 24 fps, 20,4 s). Tiene el audio que generó el modelo, sin música, sin textos ni sobreimpresiones. Lo arma ffmpeg desde `renders/cap01/montaje/edl.txt`.
+Armado de prueba v1: `produccion/pruebas/cap01_montaje_v1/cap01_prueba_montaje_v1.mp4` (480×854, 24 fps, 20,4 s). Tiene el audio que generó el modelo, sin música, sin textos ni sobreimpresiones. Lo arma ffmpeg desde `edl.txt`, en la misma carpeta. Las URLs de los keyframes y videos elegidos están en `urls.json`; las de fal pueden vencer, así que conviene descargar lo que se quiera conservar.
 
 ## 1. Línea de tiempo
 
