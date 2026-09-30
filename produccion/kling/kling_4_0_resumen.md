@@ -26,7 +26,7 @@ La versión completa está en el proyecto Fahren.tv (`Kling_VIDEO_4_0_Guia_Promp
 - **Omitir antes que negar** en el prompt positivo.
 - **Declarar el rol de cada referencia** al inicio: `@Image1 is…`, `@Element1 is…`.
 - **Diálogo:** `[Character: Nombre, tono, acento]: "línea"`. La acción física va antes del diálogo. El acento se indica explícito, por ejemplo *Chilean Spanish accent*.
-- **Actuación:** quietud y mirada. Nada de palabras de emoción, porque el modelo sobreactúa.
+- **Actuación:** conducta bajo presión según `produccion/actuacion.md` (beats con tiempo, miradas con destino). Nada de palabras de emoción, porque el modelo sobreactúa.
 - **Voz vinculada al personaje:** no describir el tono.
 - Con `prefer_multi_shots` en la API, confirmar si hay que ponerlo en false.
 
