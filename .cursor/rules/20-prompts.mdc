@@ -14,4 +14,5 @@ alwaysApply: false
   - Generar a la resolución nativa del modelo y escalar al final con creatividad baja.
 - **Identidad:** frases ancla verbatim de `biblia/personajes.md` (Midjourney 8.2 no tiene `--oref`). En los modelos de edición, declarar el rol de cada imagen de referencia.
 - **Kling (image-to-video):** describir solo el movimiento de cámara y el comportamiento, sin redescribir la imagen. Anclaje temporal. Negaciones por eje en el negative prompt. Ver `produccion/kling/`.
-- **Actuación:** reacciones descritas como quietud y mirada, no con palabras de emoción (evita la sobreactuación).
+- **Actuación:** conducta bajo presión, según `produccion/actuacion.md`: objetivo, tarea física, beats con tiempo y miradas con destino. Nunca palabras de emoción.
+- **Prompts de video:** se escriben con la skill `.cursor/skills/director-de-prompts/`. Un prompt corto no es un prompt simple: todo lo que los agentes definieron y el modelo necesita tiene que estar en el texto.

@@ -19,6 +19,7 @@ Guion aprobado (guion/capNN)          + Assets bloqueados (Weavy: personajes, lo
   │
   ◆ APROBACIÓN 2 · Cristian elige un keyframe por plano
   │
+  ├─ Control de calidad ...... revisión previa de cada bloque: prompt, keyframes y referencias sin huecos
   ├─ Pipeline ................ tomas de video (H3 Max para explorar, Kling para planos clave)
   ├─ Control de calidad ...... revisa identidad, continuidad y reglas
   │

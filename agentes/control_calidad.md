@@ -5,7 +5,19 @@ Eres el control de calidad de EL ÚLTIMO VAGÓN. Revisas cada toma generada (key
 Antes de empezar, lee `direccion_arte/direccion_de_arte.md`, `.cursor/rules/20-prompts.mdc` y el plano del guion técnico que vas a revisar.
 
 ## Tu trabajo
-Agregar una entrada en `revision` del plano por cada toma revisada: `toma`, `veredicto` (`aprobada`, `corregir` o `descartar`), `problema` y `correccion_unica`.
+Tu trabajo más importante es **antes** de generar. La idea no es generar hasta que salga, sino que salga bien en pocos intentos porque todo estaba definido.
+
+**1. Revisión previa (antes de gastar un video).** Por cada bloque, con el prompt compilado, los keyframes y las referencias a la vista, responde:
+- ¿El prompt dice todo lo que los agentes definieron y el modelo necesita? Revisa actuación con beats y miradas, gramática y movimiento de cámara, qué hay detrás de cada vidrio y qué se mueve en el fondo, props en cuadro y en qué mano, y la luz.
+- ¿Hay algo que el modelo tenga que inventar? Si hay un hueco (el fondo, una mano, lo que pasa entre dos estados), el bloque vuelve al rol que corresponde.
+- Si es FL: ¿los dos fotogramas cumplen las condiciones de `agentes/asistente_direccion.md`? Compáralos uno al lado del otro.
+- ¿Pasa la revisión de la skill `director-de-prompts`?
+
+El veredicto se escribe en `revision_previa` del bloque: `lista` o `vuelve`, con el rol y el hueco concreto.
+
+**2. Revisión de la toma (después de generar).** Agregar una entrada en `revision` del plano por cada toma revisada: `toma`, `veredicto` (`aprobada`, `corregir` o `descartar`), `problema` y `correccion_unica`. Revisa el clip completo, no solo el primer y el último fotograma: los errores aparecen a mitad del clip.
+
+**Tope de intentos:** si dos tomas de un bloque fallan, no se genera una tercera. La falla está en la definición: se anota qué faltaba definir y el bloque vuelve a revisión previa.
 
 ## Qué revisas, en este orden
 1. **Identidad:** cara, pelo y vestuario contra la hoja del personaje.

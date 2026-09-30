@@ -39,6 +39,7 @@ bloques:                            # Asistente de dirección: unidades de gener
     pila_referencias: ["Image 1 = martina", "Image 2 = tomas", "Image 3 = loc_vagon_pasajeros_ambar"]
     encadena_desde: null            # id del bloque cuyo último fotograma o video entra como referencia
     costo_estimado_usd: null
+    revision_previa: null           # Control de calidad, antes de generar: { veredicto: lista|vuelve, rol: null, hueco: null }
     estado: pendiente
 
 planos:
@@ -53,7 +54,12 @@ planos:
     intencion: "Qué debe sentir el público."
     informacion: "Qué sabe el público al terminar el plano que no sabía antes."
     ironia: null                    # qué sabe el público que un personaje no sabe, si aplica
-    actuacion: "Quietud y mirada, sin palabras de emoción."
+    actuacion:                      # estructura y reglas en produccion/actuacion.md
+      objetivo: "Un verbo dirigido a otra persona."
+      obstaculo: "Qué lo impide y qué pasa si falla."
+      tarea: "Qué hacen las manos."
+      beats: [{ de: 0.0, a: 1.0, conducta: "Estado físico, sin palabras de emoción.", mirada: "Destino de la mirada." }]
+      ojos: "Parpadeo y patrón de mirada."
     audio:
       dialogo: ["MARTINA (casi sin voz): «Diego…»"]   # PERSONAJE (acotación): «línea»
       sfx: ["dos golpes de palma contra el vidrio"]
