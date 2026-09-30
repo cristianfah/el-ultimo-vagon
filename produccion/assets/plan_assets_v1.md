@@ -7,7 +7,7 @@ Documentos que salen de este plan:
 - `direccion_arte/personajes/fichas_personajes_v1.md`: una ficha por personaje, con los prompts de Midjourney, GPT Image y Nano Banana Pro.
 - `direccion_arte/sets/set_ultimo_vagon_v1.md`: plano del vagón, estados de luz y prompts de los sets y props.
 
-**Copia de lectura en Google Drive** (carpeta [EL ÚLTIMO VAGÓN — Assets v1](https://drive.google.com/drive/folders/1k6qZp9R2WelrOqcd_ZRsrzW1kzXWxBBl), dentro de Fahren.tv). Si cambia un archivo del repo, se actualiza también el Doc.
+**Copia de lectura en Google Drive** (carpeta privada [EL ÚLTIMO VAGÓN — Assets v1](https://drive.google.com/drive/folders/15r7vIdVliV0BZuFz8Lm13amwKVpM8z3s), en «Mi unidad» de Cristian). Si cambia un archivo del repo, se actualiza también el Doc.
 
 ---
 
