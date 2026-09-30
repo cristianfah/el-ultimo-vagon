@@ -21,6 +21,7 @@ Formato: fecha · decisión · motivo.
 - **Don Hugo tiene un revólver con dos balas.**
 - **Reglas del mundo: opción 1, primer día.** Nadie sabe las reglas. Se descartó un tren de evacuación con control sanitario porque resolvía todo demasiado bien.
 - **El tren se detiene más adelante** por el freno de emergencia. Motivo: da razones para entrar y salir del vagón y lo aleja de Snowpiercer.
+- **Guion cap01_v4:** se aplica la opción 1 en diálogo (Carmen duda). Conteo: cinco adentro al cerrar; Diego es el sexto desde el vagón 4. Martina le pasó el tren a Diego (pista del triángulo). La llave va a Martina porque Diego la nombra. Carmen carga culpa de no haber salvado a alguien en el pasillo. Rama NO: Diego no se confirma muerto. Motivo: cerrar agujeros del reporte de mejora sin matar el motor de temporada.
 
 ### Producción (herramientas y proceso)
 - **Weavy queda solo para crear assets:** hojas de personaje, locaciones y props. Los keyframes y videos por plano salen de fal.ai, Kling y Comfy Cloud. Motivo: Weavy es cómodo para el trabajo creativo, pero no se puede automatizar por plano.
@@ -51,3 +52,8 @@ Detalle en `produccion/pruebas/cap01_montaje_v1/feedback_proceso.md`.
 - **Primer y último fotograma solo con control total:** el último fotograma tiene que ser una edición del primero y el cambio tiene que ser de estado. Por defecto se usan referencias. Motivo: en b06 el modelo inventó la chaqueta al interpolar dos fotogramas distintos. Aprobado por Cristian.
 - **Se define antes de generar.** Control de calidad hace una revisión previa de cada bloque y hay un tope de dos tomas por bloque. Si fallan las dos, se vuelve a la definición. Motivo: Cristian no quiere generar hasta que salga, sino que salga en pocos intentos.
 - **La biblia del set se detalla con los assets definitivos.** Motivo: decisión de Cristian.
+
+## 2026-10-01
+- **cap01_v5:** mezcla de la v4 de Cursor y la v4 de Claude. El hombre de camisa azul llega desde adelante y Carmen lo atiende (ve los dientes) e Iván la salva. En la puerta, primero la pregunta de Iván y después el «Vine por ti» de Diego. Tomás: «Quiero verle la cara». Motivo: que el grupo aprenda por acción y que la culpa de Carmen sea concreta.
+- **cap01_v6:** Diego: «Si no estás segura, no abras» (ambigua: ¿honesto o manipulador?). Carmen comprimida. «Muy rápido» en vez de «en segundos». Manchas sin heridas. Se mantiene «O sea que no hay cómo saber» de Iván. Hugo se acorta a «Te llama a ti. Tú decides» (amenaza en gesto del arma). La semilla del corte en la palma de Carmen sale del guion y queda en preguntas abiertas. Motivo: no sesgar el voto, menos texto en vertical, coherencia con las reglas, no confundir a producción.
+- **cap01_v7 (FINAL):** sale «Había gente viva» para ~90 s; Hugo solo «Te llama a ti. Tú decides», amenaza en gesto; Martina mira a Tomás, a Diego y aprieta la llave; el «Diego…» del cold open ocurre en la escena 4 (mismo plano); acuerdo Carmen–Iván filmable (ella baja la vista, él asiente); se mantiene «O sea que no hay cómo saber». Semilla del corte fuera del cap. 1.

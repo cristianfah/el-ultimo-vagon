@@ -14,12 +14,10 @@ Todo agente que trabaje en este repo (Cursor, Claude, cualquier otro) lee este a
 
 ## Estado actual (actualizar con cada decisión)
 
-- **Premisa en desarrollo:** seis pasajeros encerrados en el último vagón de un tren nocturno el primer día de un brote. Hay un triángulo amoroso en el centro (Martina, Tomás y Diego).
-- **Guion vigente:** `guion/cap01/cap01_v3.md`.
-- **Decisión pendiente de aplicar (v4):**
-  - Opción 1 de reglas: es el primer día, nadie conoce las reglas, los personajes solo saben lo que vieron y las deducciones pueden estar mal.
-  - El tren se detiene más adelante (capítulo 2 o 3) porque alguien tira el freno de emergencia.
-  - Ver `biblia/decisiones.md`.
+- **Premisa en desarrollo:** cinco se encierran en el último vagón el primer día del brote; el sexto (Diego) pide entrar. Triángulo en el centro (Martina, Tomás y Diego).
+- **Guion vigente:** `guion/cap01/cap01_v7.md` (**FINAL**).
+- **Aplicado hasta v7 FINAL:** opción 1; conteo 5+Diego; Carmen atiende; Diego ambiguo; Hugo corto; Iván «no hay cómo saber»; gesto final de Martina; continuidad del «Diego…» cold open = escena 4; semilla del corte fuera del guion.
+- **Pendiente de temporada:** el tren se detiene más adelante (cap. 2 o 3) por el freno de emergencia. Ver `biblia/decisiones.md`.
 - **Producción:** equipo técnico de agentes definido en `agentes/roles.md`. El guion técnico del capítulo 1 está en prueba en `produccion/shotlists/cap01.yaml` (cold open y escena 1).
 - **Producción:** la siguiente es la prueba de montaje v2 del capítulo 1, con assets nuevos y el flujo corregido. Plan en `produccion/pruebas/cap01_montaje_v2/plan.md`. Los prompts se escriben con la skill `.cursor/skills/director-de-prompts/`.
 - **Proyecto anterior archivado:** VAGÓN 7, de agentes y traición, en `archivo/vagon7/`. Su dirección de arte y sus assets se reutilizan.

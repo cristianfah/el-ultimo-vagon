@@ -1,7 +1,10 @@
 # Premisa y formato
 
 ## En una línea
-Seis pasajeros encerrados en el último vagón de un tren nocturno, el primer día de un brote. Entre ellos hay una pareja que viaja a arreglar su relación. Afuera, golpeando la puerta, está el tercero. Y el público decide.
+Cinco pasajeros se encierran en el último vagón de un tren nocturno, el primer día de un brote. Entre ellos hay una pareja que viaja a arreglar su relación. Afuera, golpeando la puerta, está el sexto: el tercero del triángulo. Y el público decide.
+
+## Elenco de temporada (seis)
+Martina, Tomás, Diego, Carmen, Iván y Don Hugo. Al cerrar la puerta del capítulo 1 hay **cinco adentro**; Diego pide entrar desde el pasillo.
 
 ## Por qué funciona
 - **El vagón es la «villa»** del reality: un lugar cerrado del que no se puede salir.
