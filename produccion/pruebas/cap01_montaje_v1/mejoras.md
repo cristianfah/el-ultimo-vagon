@@ -2,6 +2,8 @@
 
 Lista de trabajo para la próxima sesión. Las tres primeras son pedidos de Cristian; el resto son propuestas del equipo según lo que salió en la prueba. Se aplican de a una y se comprueba cada una con una tanda corta a 480P.
 
+El feedback de Cristian sobre el proceso (cámara, actuación, set, FL y control de calidad de video) y las herramientas que propone para cada rol están en `feedback_proceso.md`.
+
 ## Pedidos de Cristian
 1. **Prompts más dirigidos.** Hoy el Prompter compila bien los hechos, pero la dirección llega diluida: actuación genérica, sin ritmo interno del plano. Propuesta: que cada prompt de video tenga un «beat de actuación» con tiempos (qué hace el cuerpo en 0–1 s, 1–2 s…), una sola intención y el subtexto traducido a conducta visible.
 2. **Más trabajo de cámara.** Casi todo salió fijo o con cámara en mano sutil. Propuesta: que el Director de fotografía defina por escena una «gramática de cámara» (qué se mueve, cuándo y por qué), con al menos un movimiento con motivo por escena. Hay que probar en H3 Max qué movimientos obedece: empuje, travelling lateral, grúa y seguimiento.
