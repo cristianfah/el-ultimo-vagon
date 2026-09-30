@@ -124,6 +124,6 @@ Requisitos: `FAL_KEY` conectada, hojas de personaje mínimas (aunque sean provis
 | Detalles prohibidos que aparecen durante el clip | **Falla:** en b06 salen balas en el cinturón aunque el primer y el último fotograma no las tienen. El prompt negativo no alcanza a mitad del clip |
 | Mano y lado en los gestos | **Falla sistemática:** las tres tomas de p06 usaron la mano equivocada. Hay que nombrar la mano y el lado del cuadro |
 | Encuadres cerrados | El modelo abre de más los PMC (p02). Hay que decir dónde corta el cuadro |
-| Dirección de los prompts | **Débil** (observación de Cristian): los prompts salen poco dirigidos y con poco trabajo de cámara. Se revisa antes de la prueba final |
+| Dirección de los prompts | **Débil** (observación de Cristian): los prompts salen poco dirigidos y con poco trabajo de cámara. Causa: los prompts de video eran demasiado cortos (60–160 palabras por bloque, contra las 350–500 que pide la guía oficial de H3 para un bloque con referencias). Ver `produccion/prompting/investigacion.md` |
 
 **Pendiente de la lista de pruebas:** encadenado, video de referencia, `target_audio_url`, plano suelto B (palma en el vidrio), Kling 4.0 Flash y una comparación contra los mismos planos sueltos.

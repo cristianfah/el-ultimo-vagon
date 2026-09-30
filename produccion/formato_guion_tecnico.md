@@ -64,7 +64,7 @@ planos:
     corte: "Por qué se corta aquí y a qué plano."
 
     # --- Director de fotografía ---
-    camara: { altura: null, posicion: null, movimiento: null }
+    camara: { gramatica_escena: null, altura: null, posicion: null, movimiento: null, motivo: null }   # gramatica_escena solo en el primer plano de cada escena
     lente: { focal_mm: null, apertura: null, foco: null }
     luz: { dominante: null, fuentes: [], contraste: null }
     zona_segura_9x16: null          # dónde van los sujetos y qué queda libre para subtítulos, tarjeta e interfaz
