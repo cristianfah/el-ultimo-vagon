@@ -434,6 +434,24 @@ planos:
         texto: |
           Edit Image 1, the approved frame. Change only the hand and the glass around it: the same wet right hand, open, now hangs a few centimetres behind the glass without touching it, palm toward camera, fingers spread and pointing up, thumb toward frame right. Remove the palm print and the fresh dark smears and water around it; the glass keeps only the dry dark stains in the upper-right corner. Keep everything else exactly as in Image 1: camera position, framing, 65mm lens and focus, the red and cold-white light, the empty red corridor, the soaked light grey cuff entering from the bottom edge, the dark red-black stains on the hand, grain and color. No text, no logos.
 
+    # --- Control de calidad ---
+    revision:
+      - toma: "keyframe 0"
+        veredicto: "descartar"
+        problema: "Orientación de la mano correcta (palma, pulgar a la derecha, hc21), pero: (1) hc23: el vidrio está embarrado en casi toda la mitad izquierda y el centro, no solo alrededor de la palma; con la mancha grande de arriba a la derecha, el vidrio entero se lee como pintura. (2) hc20: las manchas suben hasta las falanges medias de índice y medio. (3) hc19 y hc17: el puño gris solo tiene regueros; no está empapado de oscuro del codo al puño y se ve seco. (4) 9:16: el borde superior de la ventanita queda al 2 % (se pedía al 13 %) y el inferior no sale por abajo del cuadro. (5) hc24 y luz: detrás del vidrio se ve un tubo blanco frío en el techo del pasillo, que debe ser solo rojo."
+        correccion_unica: "No se corrige esta toma: la base para la siguiente pasada es el keyframe 1. Si se regenera desde cero, mismo prompt con otra seed."
+      - toma: "keyframe 1"
+        veredicto: "corregir"
+        problema: "Es la más cercana al plano: palma derecha con pulgar a la derecha (hc21), posición en la mitad inferior izquierda (x≈34 %, y≈53 %), muñeca por encima del 77 %, manchas en el talón de la palma y la base de los dedos con las puntas limpias (hc20), manchas secas arriba a la derecha y pasillo rojo vacío (hc23, hc24). Falla: (1) hc19 (frágil) y hc17: la manga gris tiene regueros sueltos pero no está empapada de casi negro del codo al puño, y se ve seca, sin lluvia; es lo que Martina reconoce. (2) hc22: la ventanita es más ancha que en la placa loc_ultimo_vagon_rojo (proporción ≈0,58 contra ≈0,41); si se aprueba, este keyframe fija la forma para todos los planos de la ventanita. (3) El borde inferior del vidrio queda dentro del cuadro (al 86 %) en vez de salir por abajo. (4) El tubo fluorescente entra arriba del cuadro (0–3 %); queda en la zona de la interfaz y es fuente visible, se tolera. (5) Bajo el blanco frío, las manchas de la mano se leen rojo oscuro, no casi negras."
+        correccion_unica: "Editar el keyframe 1 con openai/gpt-image-2.5/flare/edit (Image 1 = keyframe 1), cambiando solo la manga: «Edit Image 1. Change only the sleeve: the light grey canvas sleeve of the right arm is soaked through with dark red-black stains from the elbow to the edge of the cuff, and wet with rain, darker and heavier where the fabric folds at the wrist. Keep the hand, the stains on the hand, the glass, the stains on the glass, the window, the red corridor, the light, framing, focus, grain and color exactly as in Image 1. No text, no logos.»"
+      - toma: "keyframe 2"
+        veredicto: "corregir"
+        problema: "Orientación correcta (hc21) y manchas secas arriba a la derecha con pasillo rojo vacío (hc23, hc24). Falla: (1) hc19 (frágil) y hc17: igual que las otras, la manga gris está salpicada pero no empapada del codo al puño, y se ve seca. (2) hc20: las manchas suben hasta la mitad de los dedos. (3) 9:16: el borde superior de la ventanita queda al 3 % (se pedía al 13 %) y el inferior dentro del cuadro. (4) Más subexpuesta que la 1; el brillo frío en la piel mojada es débil."
+        correccion_unica: "Misma edición de manga que el keyframe 1, sobre esta imagen, solo si Cristian la prefiere a la 1; si no, no se corrige."
+      - toma: "recomendacion"
+        recomienda: "ninguna tal cual; aprobar el keyframe 1 después de la edición de manga"
+        motivo: "La 1 es la única con las puntas de los dedos limpias, el vidrio limpio fuera de la palma y margen superior; solo le falta la manga empapada (hc19), que se corrige editándola sin tocar el resto."
+
   - id: c01_p02
     escena: cold_open
     tiempo: "0:01–0:02"
@@ -617,6 +635,23 @@ planos:
           TEXTURE: Real skin with pores, dry and matte. Rain only on the outside of the window glass, drops and streaks, out of focus. Nobody is wet and there are no stains anywhere. Her hair is in a neat low ponytail. Dry clothes with natural folds. No rings. Neither of them wears blue. The phone shows no brand or logo.
 
           FINISH: Kodak Vision3 500T film scan look, fine organic grain, soft natural micro-contrast, no digital sharpening, no HDR look. Color separation limited to warm amber, night blue and near-black. No text, no logos.
+
+    # --- Control de calidad ---
+    revision:
+      - toma: "keyframe 0"
+        veredicto: "aprobada"
+        problema: "Identidad y vestuario de los dos según las hojas; asientos de frente a cámara (hc04), lluvia solo en el vidrio (hc03), ámbar y azul (hc02), cola ordenada (hc10), celular terracota sin logo sobre el muslo izquierdo con la pantalla apagada hacia arriba (hc25, hc26), apoyabrazos libre (hc05) y cabezas al 36–38 %. Detalles que se toleran: Tomás tiene el torso casi frontal (solo gira la cabeza) y no queda más grande que Martina; Martina está igual de nítida que él y recibe casi el mismo ámbar (el 4:1 se lee poco); hay algunos puntos cálidos detrás de la lluvia; los hombros de los dos quedan muy juntos, aunque sin contacto visible. El jean de Tomás casi no se ve (ver keyframe 2)."
+      - toma: "keyframe 1"
+        veredicto: "corregir"
+        problema: "(1) hc05 (frágil): el hombro izquierdo de Tomás toca el hombro derecho de Martina; el apoyabrazos está libre, pero se tocan. (2) 9:16: las cabezas quedan al 32 % y el pelo de Tomás entra hasta el 23 %, dentro de la franja de la tarjeta (12–27 %); con el empuje, la invade más. Lo mejor de la toma: Tomás girado hacia ella, mirándola de perfil, y Martina más fría que él."
+        correccion_unica: "Mismo prompt con otra seed, agregando al final de MOMENT: «A clear gap of a hand's width separates his left shoulder from her right shoulder; their arms and shoulders do not touch.»"
+      - toma: "keyframe 2"
+        veredicto: "descartar"
+        problema: "(1) hc18: Tomás lleva jeans azul oscuro bien visibles; ningún personaje con nombre puede vestir de azul. El jean viene de la hoja tomas_v2. (2) hc12: la chaqueta está abierta, sin cerrar. (3) 9:16: cabezas al 29–30 % y el pelo de Tomás entra en la franja de la tarjeta (21 %). (4) Puntos cálidos detrás de la lluvia en la ventana. Lo bueno: hay aire entre los dos y Tomás la mira de perfil."
+        correccion_unica: "Cambiar la referencia de Tomás: regenerar la hoja como tomas_v3 con pantalón gris carbón que no sea de mezclilla (en vez del jean azul de tomas_v2) y usarla en esta toma y en c01_p04–c01_p08."
+      - toma: "recomendacion"
+        recomienda: "keyframe 0"
+        motivo: "Cumple todos los hechos frágiles del plano y deja libres la franja de la tarjeta y la zona del subtítulo. El giro de Tomás y el empuje lento se piden en el video (c01_b03). Queda pendiente el jean azul de la hoja tomas_v2 (hc18) antes de los planos donde se ven sus piernas."
 
   - id: c01_p04
     escena: esc01
