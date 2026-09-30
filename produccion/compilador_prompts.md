@@ -49,13 +49,13 @@ Estructura, en inglés y en este orden. Entre 60 y 110 palabras:
 ```
 [Action, physical verbs first, one beat]. [Camera: one movement, or "locked-off"].
 Keep the framing, lighting, faces and wardrobe exactly as in the still. [Fragile facts if any].
-Sound: [ambience], [2-3 specific effects], [dialogue in quotes with delivery direction if any]. No music. No on-screen text.
+Sound: [ambience], [2-3 specific effects], [dialogue in quotes with delivery direction if any]. No music. No subtitles, no captions, no on-screen text.
 ```
 
 Reglas propias de este modelo:
 - Sonido concreto («knuckles on glass, rain, train rumble»), nunca «tense atmosphere».
 - El diálogo va en comillas con la dirección de tono («quiet, barely audible»).
-- Cerrar con «No music. No on-screen text.» (la música y los textos se ponen en post).
+- Cerrar con «No music. No subtitles, no captions, no on-screen text.» (la música, los subtítulos y los textos se ponen en edición). «No on-screen text» solo no basta: en la prueba, H3 Max dibujó el diálogo como subtítulo; hay que nombrar *subtitles* y *captions*.
 - Si el plano es muy corto, pedir la acción en los primeros 2 s del clip de 5 s, para que el montaje corte ahí.
 - `prompt_expansion_mode`: **`disabled`**. En la prueba del 2026-09-30, `balanced` reescribió el prompt e invirtió la acción (ver `investigacion_referencias.md`).
 - Secuencia multi-beat (solo si el grupo lo pide): `0.0 to 2.0s: … CUT. 2.0 to 4.0s: …`, describiendo a cada personaje idéntico en cada beat.
@@ -79,7 +79,7 @@ Image 1 is <character A>. Image 2 is <character B>. Image 3 is <location and lig
 0.0 to 3.0s: [shot type, camera, one physical action, dialogue in quotes with delivery]. CUT.
 3.0 to 5.0s: [shot type, camera, one physical action]. CUT.
 5.0 to 8.0s: ...
-Sound: [continuous ambience], [effects per beat]. No music. No on-screen text.
+Sound: [continuous ambience], [effects per beat]. No music. No subtitles, no captions, no on-screen text.
 ```
 - Los beats suman la `duracion_s` del bloque; el último beat puede sobrar 1 s para recortar.
 - Cada personaje se describe **igual en cada beat** (misma frase de vestuario).

@@ -218,7 +218,7 @@ bloques:
         image_url: "keyframe_entrada c01_p01 (aprobado): mano abierta a pocos centímetros del vidrio, sin huella"
         end_image_url: "keyframe c01_p01 (aprobado): palma derecha apoyada, pulgar a la derecha del cuadro"
       texto: |
-        Within the first 2 seconds, the wet right hand knocks twice on the glass, two dry palm hits between 0.3 and 1.5s with a human rhythm, no clawing; then the palm stays flat on the glass, fingers spread up, thumb toward frame right, still until the end. Locked-off, static camera; it does not react to the knocks. Keep the framing, lighting, hand and soaked grey cuff exactly as in the first and last frames. The dry dark stains stay in the upper-right corner of the glass; the red corridor behind stays empty, no face. Sound: train rumble, two dry palm thuds on glass. No music. No on-screen text.
+        Within the first 2 seconds, the wet right hand knocks twice on the glass, two dry palm hits between 0.3 and 1.5s with a human rhythm, no clawing; then the palm stays flat on the glass, fingers spread up, thumb toward frame right, still until the end. Locked-off, static camera; it does not react to the knocks. Keep the framing, lighting, hand and soaked grey cuff exactly as in the first and last frames. The dry dark stains stay in the upper-right corner of the glass; the red corridor behind stays empty, no face. Sound: train rumble, two dry palm thuds on glass. No music. No subtitles, no captions, no on-screen text.
   - id: c01_b02
     planos: [c01_p02]
     estrategia: B
@@ -237,7 +237,7 @@ bloques:
       entradas:
         image_url: "keyframe c01_p02 (aprobado)"
       texto: |
-        Martina stands completely still, eyes fixed on the door window off-screen left. Within the first 1.5 seconds her lips part just enough to say, almost voiceless, barely audible, in neutral Latin American Spanish: "Diego…" Her breath catches. She does not blink and does not step forward. Handheld, subtle breathing, no reframing. Keep the framing, lighting, face and wardrobe exactly as in the still: loose strands around her face, sweat sheen on her forehead, dry clean cream sweater, nobody else in frame. Sound: one knock on glass off-screen, her whisper, then dry silence. No music. No on-screen text.
+        Martina stands completely still, eyes fixed on the door window off-screen left. Within the first 1.5 seconds her lips part just enough to say, almost voiceless, barely audible, in neutral Latin American Spanish: "Diego…" Her breath catches. She does not blink and does not step forward. Handheld, subtle breathing, no reframing. Keep the framing, lighting, face and wardrobe exactly as in the still: loose strands around her face, sweat sheen on her forehead, dry clean cream sweater, nobody else in frame. Sound: one knock on glass off-screen, her whisper, then dry silence. No music. No subtitles, no captions, no on-screen text.
   - id: c01_b03
     planos: [c01_p03, c01_p04, c01_p06, c01_p07, c01_p08]
     estrategia: A
@@ -274,7 +274,7 @@ bloques:
         5.5 to 7.0s: locked-off. Martina, cream sweater, flips the lit phone face down on her left thigh, left hand on top. Tomás, olive jacket, looks at the aisle. CUT.
         7.0 to 9.5s: locked-off. Carmen sleeps against the window, hands crossed on her bag, head nodding with the train. CUT.
         9.5 to 12.0s: locked-off. Iván, arms crossed, still; only his eyes move across the seats, ending frame right.
-        Neutral Latin American Spanish. Sound: rain on the windows, train rumble; phone brushing fabric at 5.5s. No music. No on-screen text.
+        Neutral Latin American Spanish. Sound: rain on the windows, train rumble; phone brushing fabric at 5.5s. No music. No subtitles, no captions, no on-screen text.
   - id: c01_b04
     planos: [c01_p05]
     estrategia: B
@@ -294,7 +294,7 @@ bloques:
         image_url: "keyframe_entrada c01_p05 (aprobado): pantalla apagada, sin mano"
         end_image_url: "keyframe c01_p05 (aprobado): pantalla encendida con 23:38 y «Estoy en el tren.», mano izquierda entrando por la derecha"
       texto: |
-        Within the first 2 seconds, the phone lying face up on the black trousers vibrates once and its screen lights up; then Martina's left hand enters from the right edge of frame, the window side, and stops at the edge. Locked-off, static camera. Keep the framing, lighting, phone and trousers exactly as in the first and last frames: plain terracotta case with no logo, and the screen ends showing the time 23:38 and one notification from "D": "Estoy en el tren." The hand never enters from the left. Sound: soft rain and train rumble, one short phone vibration muffled by the trousers. No music. No on-screen text.
+        Within the first 2 seconds, the phone lying face up on the black trousers vibrates once and its screen lights up; then Martina's left hand enters from the right edge of frame, the window side, and stops at the edge. Locked-off, static camera. Keep the framing, lighting, phone and trousers exactly as in the first and last frames: plain terracotta case with no logo, and the screen ends showing the time 23:38 and one notification from "D": "Estoy en el tren." The hand never enters from the left. Sound: soft rain and train rumble, one short phone vibration muffled by the trousers. No music. No subtitles, no captions, no on-screen text.
   - id: c01_b05
     planos: [c01_p09]
     estrategia: B
@@ -313,7 +313,7 @@ bloques:
       entradas:
         image_url: "keyframe c01_p09 (aprobado)"
       texto: |
-        Within the first 3 seconds, Don Hugo slowly bends toward the sleeping passenger and reaches his right hand for the ticket on the passenger's thigh, worn and unhurried, without looking at his jacket. As he crouches, the right side of his jacket starts to open toward camera. He ends crouched, holding the ticket. Handheld, subtle breathing, no tilt, no reframing; he lowers within the frame and the camera does not follow. Keep the framing, lighting, face and uniform exactly as in the still: grey cap on, no insignia, no revolver or keys visible. Sound: soft rain and train rumble, knee creak, cloth rustle, ticket paper. No music. No on-screen text.
+        Within the first 3 seconds, Don Hugo slowly bends toward the sleeping passenger and reaches his right hand for the ticket on the passenger's thigh, worn and unhurried, without looking at his jacket. As he crouches, the right side of his jacket starts to open toward camera. He ends crouched, holding the ticket. Handheld, subtle breathing, no tilt, no reframing; he lowers within the frame and the camera does not follow. Keep the framing, lighting, face and uniform exactly as in the still: grey cap on, no insignia, no revolver or keys visible. Sound: soft rain and train rumble, knee creak, cloth rustle, ticket paper. No music. No subtitles, no captions, no on-screen text.
   - id: c01_b06
     planos: [c01_p10]
     estrategia: B
@@ -333,7 +333,7 @@ bloques:
         image_url: "keyframe_entrada c01_p10 (aprobado): chaqueta apenas abierta, cinturón negro a la vista, sin revólver"
         end_image_url: "keyframe c01_p10 (aprobado): culata y tambor cerrado en la funda café, sin balas"
       texto: |
-        Within the first 1.2 seconds, the right side of Don Hugo's grey jacket swings open, between 0.2 and 1.2s, revealing on his right hip the dark wooden grip and closed cylinder of the old revolver in its short brown leather holster; then the jacket stays still until the end. No hand enters the frame. Locked-off, static camera. Keep the framing, lighting and cloth exactly as in the first and last frames. The revolver matches the last frame: cylinder closed, no bullets visible, no cartridges on the belt, no markings. Sound: soft rain and train rumble, rustle of jacket cloth. No music. No on-screen text.
+        Within the first 1.2 seconds, the right side of Don Hugo's grey jacket swings open, between 0.2 and 1.2s, revealing on his right hip the dark wooden grip and closed cylinder of the old revolver in its short brown leather holster; then the jacket stays still until the end. No hand enters the frame. Locked-off, static camera. Keep the framing, lighting and cloth exactly as in the first and last frames. The revolver matches the last frame: cylinder closed, no bullets visible, no cartridges on the belt, no markings. Sound: soft rain and train rumble, rustle of jacket cloth. No music. No subtitles, no captions, no on-screen text.
 
 planos:
   # ============================ COLD OPEN ============================
@@ -451,6 +451,11 @@ planos:
       - toma: "recomendacion"
         recomienda: "ninguna tal cual; aprobar el keyframe 1 después de la edición de manga"
         motivo: "La 1 es la única con las puntas de los dedos limpias, el vidrio limpio fuera de la palma y margen superior; solo le falta la manga empapada (hc19), que se corrige editándola sin tocar el resto."
+      - toma: "keyframe_entrada 1"
+        veredicto: "aprobada"
+        problema: "Mano de forma igual al ancla, manga empapada, manchas arriba a la derecha y pasillo rojo; la palma aún no toca el vidrio y no hay huella. La toma 0 también sirve; la 1 calza mejor con la posición de los dedos del ancla."
+      - toma: "elegida"
+        recomienda: "keyframe 1 con edición de manga, versión A; keyframe_entrada 1"
 
   - id: c01_p02
     escena: cold_open
@@ -544,6 +549,16 @@ planos:
           FINISH: Kodak Vision3 500T film scan look, fine organic grain, soft natural micro-contrast, no digital sharpening, no HDR look. Color separation limited to deep red, cold cyan-white and near-black. No text, no logos.
 
   # ============================ ESCENA 1 ============================
+
+    # --- Control de calidad ---
+    revision:
+      - toma: "keyframe 0"
+        veredicto: "corregir"
+        problema: "Luz roja (hc01), pelo suelto con sudor (hc10) y suéter crema bien. El encuadre salió más abierto que un PMC: se ven la mano con el teléfono y reflejos de más en la puerta."
+        correccion_unica: "Recortar a 9:16 centrado en el rostro hasta sacar la mano con el teléfono. En esta prueba se acepta sin corregir (post opcional)."
+      - toma: "elegida"
+        recomienda: "keyframe 0"
+
   - id: c01_p03
     escena: esc01
     tiempo: "0:02–0:05"
@@ -729,6 +744,14 @@ planos:
 
           FINISH: Kodak Vision3 500T film scan look, fine organic grain, soft natural micro-contrast, no digital sharpening, no HDR look. Color separation limited to warm amber, night blue and near-black. No text, no logos.
 
+    # --- Control de calidad ---
+    revision:
+      - toma: "keyframe 0"
+        veredicto: "aprobada"
+        problema: "Ámbar y azul noche coinciden con el ancla p03; cola ordenada y suéter crema (hc09, hc10); mirada a la ventana."
+      - toma: "elegida"
+        recomienda: "keyframe 0"
+
   - id: c01_p05
     escena: esc01
     tiempo: "0:07–0:08"
@@ -778,7 +801,7 @@ planos:
         - "Director: el mensaje tiene que ocupar el centro de la pantalla con letra grande para leerse en 1 s. La interfaz del celular es genérica y sin marca; si el modelo no deja el texto legible, se reemplaza en After Effects."
         - "Continuista: la hora de la pantalla también es continuidad. Aquí marca 23:38 y en el inserto de las 0:40 tiene que marcar 23:57 (hc27). Si la pantalla se reemplaza en After Effects, se reemplaza con esa hora."
         - "Asistente de dirección: este plano lleva dos keyframes: el principal (salida, pantalla encendida y mano entrando) y una variante de entrada que sale de editar el principal ya aprobado (pantalla apagada, sin mano). GPT Image 2.5 se elige también porque escribe mejor el texto de la pantalla."
-        - "Prompter: la receta de H3 Max cierra con «No music. No on-screen text.», y aquí el texto de la pantalla del celular sí debe verse. El prompt de c01_b04 lo protege con el último fotograma («the screen ends showing…»), pero el modelo puede borrarlo o deformarlo durante el clip. Si pasa, se reemplaza en After Effects como ya está previsto (hc27). La nota grave de la música no entra al prompt: va en post."
+        - "Prompter: la receta de H3 Max cierra con «No music. No subtitles, no captions, no on-screen text.», y aquí el texto de la pantalla del celular sí debe verse. El prompt de c01_b04 lo protege con el último fotograma («the screen ends showing…»), pero el modelo puede borrarlo o deformarlo durante el clip. Si pasa, se reemplaza en After Effects como ya está previsto (hc27). La nota grave de la música no entra al prompt: va en post."
 
     # --- Asistente de dirección ---
     bloque: c01_b04
@@ -816,6 +839,15 @@ planos:
         referencias: ["Image 1 = keyframe c01_p05 (aprobado)"]
         texto: |
           Edit Image 1, the approved frame. Change only two things: the phone screen is off, plain black glass with no light, no time and no notification; and there is no hand in the frame, only black trouser fabric at the right edge. Without the screen glow, the fabric around the phone is lit only by the amber reading lamp. Keep everything else exactly as in Image 1: camera, framing, 50mm lens and focus, the phone face up on her left thigh, the plain terracotta case, the amber light, grain and color. No text, no logos.
+
+    # --- Control de calidad ---
+    revision:
+      - toma: "keyframe 2"
+        veredicto: "corregir"
+        problema: "Funda terracota, muslo izquierdo, 23:38 y «Estoy en el tren.» de «D» bien (hc25–hc27); es la toma más legible. En las tres tomas la pantalla tiene una muesca que recuerda a un teléfono de marca."
+        correccion_unica: "Reemplazar la pantalla en post por el gráfico propio, sin muesca. En esta prueba se acepta sin corregir (post opcional)."
+      - toma: "elegida"
+        recomienda: "keyframe 2"
 
   - id: c01_p06
     escena: esc01
@@ -897,6 +929,15 @@ planos:
 
           FINISH: Kodak Vision3 500T film scan look, fine organic grain, soft natural micro-contrast, no digital sharpening, no HDR look. Color separation limited to warm amber, night blue and near-black. No text, no logos.
 
+    # --- Control de calidad ---
+    revision:
+      - toma: "keyframe 0"
+        veredicto: "corregir"
+        problema: "Asientos según hc05, sin contacto; chaqueta oliva de Tomás y luz del ancla. En las tres tomas Martina da vuelta el teléfono con la mano derecha; debe ser la izquierda."
+        correccion_unica: "Editar la toma 0 para que dé vuelta el teléfono con la mano izquierda (lado ventana)."
+      - toma: "elegida"
+        recomienda: "keyframe 0 con edición de mano"
+
   - id: c01_p07
     escena: esc01
     tiempo: "0:09–0:11"
@@ -975,6 +1016,14 @@ planos:
           TEXTURE: Real skin with pores, dry and matte. Rain only on the outside of the window glass. Worn leather bag. Dry clothes with natural folds. She wears nothing blue. No badges or logos on the scrubs.
 
           FINISH: Kodak Vision3 500T film scan look, fine organic grain, soft natural micro-contrast, no digital sharpening, no HDR look. Color separation limited to warm amber, night blue and near-black. No text, no logos.
+
+    # --- Control de calidad ---
+    revision:
+      - toma: "keyframe 0"
+        veredicto: "aprobada"
+        problema: "Uniforme verde agua con escote en V, abrigo carbón abierto y bolso café (hc13, hc14); duerme contra la ventana; luz del ancla."
+      - toma: "elegida"
+        recomienda: "keyframe 0"
 
   - id: c01_p08
     escena: esc01
@@ -1057,6 +1106,14 @@ planos:
           TEXTURE: Real weathered skin with pores, dry and matte. The door glass is clean: no stains, no marks. Worn canvas jacket. Rain only on the outside of the side windows. He wears nothing blue. No logos.
 
           FINISH: Kodak Vision3 500T film scan look, fine organic grain, soft natural micro-contrast, no digital sharpening, no HDR look. Color separation limited to warm amber, night blue and near-black. No text, no logos.
+
+    # --- Control de calidad ---
+    revision:
+      - toma: "keyframe 2"
+        veredicto: "aprobada"
+        problema: "Asiento de pasillo, chaqueta de lona café cerrada (hc15), brazos cruzados, ventanita de la puerta arriba a la derecha con luz ámbar, medio rostro en sombra y mirada hacia el pasillo. La toma 0 lo sienta en la ventana y la 1 mira a cámara."
+      - toma: "elegida"
+        recomienda: "keyframe 2"
 
   - id: c01_p09
     escena: esc01
@@ -1144,6 +1201,15 @@ planos:
           TEXTURE: Real skin with pores, dry and matte. Rain only on the outside of the windows. Grey wool uniform with natural folds; the cap stays on. No revolver, holster, belt or keys visible. The ticket is plain cream paper with no logo. Nobody wears blue.
 
           FINISH: Kodak Vision3 500T film scan look, fine organic grain, soft natural micro-contrast, no digital sharpening, no HDR look. Color separation limited to warm amber, night blue and near-black. No text, no logos.
+
+    # --- Control de calidad ---
+    revision:
+      - toma: "keyframe 1"
+        veredicto: "corregir"
+        problema: "Hugo centrado y agachándose, visera sombreando los ojos, mano derecha hacia el boleto, chaqueta cerrada y sin insignias, pasajero dormido de espaldas y bokeh ámbar. La gorra sale casi negra; hc16 pide gris."
+        correccion_unica: "Etalonar solo la gorra al gris oscuro del uniforme. En esta prueba se acepta sin corregir (post opcional)."
+      - toma: "elegida"
+        recomienda: "keyframe 1"
 
   - id: c01_p10
     escena: esc01
