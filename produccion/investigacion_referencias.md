@@ -109,4 +109,21 @@ Requisitos: `FAL_KEY` conectada, hojas de personaje mínimas (aunque sean provis
 | ¿Sale audio? | Sí, ambos videos traen pista de audio de 8 s. Falta escucharla: diálogo, acento y lip sync |
 | Ritmo de generación | ~2 s de inferencia para 8 s de video a 480P |
 
+## 8. Resultados de la prueba de montaje (2026-09-30)
+
+**Montaje de la prueba:** cold open y escena 1 completos desde el guion técnico (`tools/generar_desde_yaml.py`). Hubo 33 keyframes con GPT Image 2.5 Flare edit y Nano Banana Pro edit, más correcciones puntuales, y 7 videos de H3 Max a 480P (6 bloques y una toma rehecha). Costo aproximado: 2,1 USD en imágenes y 2,4 USD en video. Armado de 20 s en `renders/cap01/montaje/cap01_prueba_montaje_v1.mp4`; plan en `produccion/montaje/cap01.md`.
+
+| Qué | Resultado |
+|---|---|
+| Keyframes con ancla aprobada (p03 → p04–p09) | **Funciona.** Luz, vagón y vestuario se sostienen entre planos. Control de calidad aprobó cuatro tal cual y pidió una corrección en otros cuatro; ninguno hubo que rehacerlo |
+| Edición de una sola variable (manga en p01, mano en p06) | **Funciona.** GPT Image 2.5 edit cambia solo lo pedido |
+| Bloque multi-beat de 12 s con 7 referencias (b03) | **Funciona.** Cinco planos con cortes propios del modelo en 3,58, 5,38, 7,88 y 10,54 s, cerca de los beats pedidos (3,5, 5,5, 7,0 y 9,5 s). Identidad y luz estables |
+| Primer y último fotograma (b01, b04, b06) | **Funciona** para acciones cortas: la mano llega al vidrio, el celular se enciende, la chaqueta se abre |
+| Texto dentro del plano (celular en p05) | Se lee bien, pero el modelo pone una muesca de teléfono de marca. Hay que agregar «no notch, no dynamic island» |
+| Subtítulos | **Falla:** con «No on-screen text», H3 Max igual dibujó «Diego…» como subtítulo. Se arregló nombrando *subtitles* y *captions* en el cierre |
+| Detalles prohibidos que aparecen durante el clip | **Falla:** en b06 salen balas en el cinturón aunque el primer y el último fotograma no las tienen. El prompt negativo no alcanza a mitad del clip |
+| Mano y lado en los gestos | **Falla sistemática:** las tres tomas de p06 usaron la mano equivocada. Hay que nombrar la mano y el lado del cuadro |
+| Encuadres cerrados | El modelo abre de más los PMC (p02). Hay que decir dónde corta el cuadro |
+| Dirección de los prompts | **Débil** (observación de Cristian): los prompts salen poco dirigidos y con poco trabajo de cámara. Se revisa antes de la prueba final |
+
 **Pendiente de la lista de pruebas:** encadenado, video de referencia, `target_audio_url`, plano suelto B (palma en el vidrio), Kling 4.0 Flash y una comparación contra los mismos planos sueltos.

@@ -17,6 +17,7 @@ Todos escriben en el guion técnico (`produccion/shotlists/capNN.yaml`), cada un
 | Rol | Pregunta que responde | Campos que escribe |
 |---|---|---|
 | **Director** (`director.md`) | ¿Qué ve el público, en qué orden y para qué? | Planos, acción, intención, información, actuación, audio, corte |
+| **Productor de impacto** (`impacto.md`, borrador) | ¿Por qué el público no desliza el dedo? | Propuestas de gancho, ritmo, espectacularidad de cámara y final, como alertas «Impacto:». El Director decide |
 | **Director de fotografía** (`director_fotografia.md`) | ¿Cómo se ve? | Cámara, lente, luz, zona segura 9:16 |
 | **Continuista** (`continuista.md`) | ¿Qué debe seguir igual de un plano al siguiente? | Hechos de continuidad; entrada, salida y eje de cada plano |
 | **Asistente de dirección** (`asistente_direccion.md`) | ¿Qué necesitamos, con qué motor, en qué orden y cuánto cuesta? | Assets, referencias, motor, método, costo, grupos de generación |
@@ -28,7 +29,7 @@ Todos escriben en el guion técnico (`produccion/shotlists/capNN.yaml`), cada un
 ## Ciclo de un capítulo
 1. **Showrunner:** define la decisión del capítulo según la votación anterior.
 2. **Guionista:** escribe la v1. **Abogado del diablo:** revisa. El guionista corrige hasta que Cristian aprueba.
-3. **Director → Director de fotografía → Continuista → Asistente de dirección:** arman el guion técnico, en ese orden.
+3. **Director → Productor de impacto → Director de fotografía → Continuista → Asistente de dirección:** arman el guion técnico, en ese orden. El Director acepta o descarta las propuestas de impacto antes de que pasen a fotografía.
 4. **Cristian aprueba el guion técnico.**
 5. **Prompter:** escribe los prompts. **Pipeline:** genera los keyframes. **Control de calidad:** filtra. **Cristian elige** un keyframe por plano.
 6. **Pipeline:** genera las tomas de video. **Control de calidad:** filtra. **Cristian elige** la toma de cada plano.

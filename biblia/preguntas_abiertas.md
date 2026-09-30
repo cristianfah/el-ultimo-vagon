@@ -17,4 +17,6 @@ Detalle en las alertas de `produccion/shotlists/cap01.yaml`.
 - [x] **«20 MINUTOS ANTES»:** resuelto, sin sobreimpresión; el salto se hace por corte. Falta que la v4 quite el texto del guion y que el corte se apoye en la hora del celular y en la luz.
 - [ ] **Tiempos de la escena 1:** con cinco tarjetas de nombre no sobra ni un segundo. Propuesta del Director: pasar la tarjeta de Carmen al plano en que despierta con el primer grito.
 - [ ] **Hablar del prompting antes de la prueba final** (pedido de Cristian, 30-sep): los prompts de la prueba salen poco dirigidos. Hay que revisar cómo el Prompter traduce la dirección (actuación, cámara, luz, ritmo) antes de generar la versión final. Por ahora la prueba sigue con la receta actual.
+- [ ] **Trabajar mucho más la cámara en las escenas** (pedido de Cristian, 30-sep): en la prueba casi todo es fijo o cámara en mano sutil. Antes de la prueba final, el Director de fotografía y el Productor de impacto proponen movimientos con motivo por escena, y el Prompter los traduce.
+- [ ] **Probar el rol de Productor de impacto** (`agentes/impacto.md`, borrador) en la próxima pasada del guion técnico.
 - [ ] **Vestuario y props:** el Continuista propuso vestuario, lado del revólver, brazo herido de Diego y posiciones en el vagón. Hay que aprobarlos o reemplazarlos por lo que definan las hojas de personaje.
