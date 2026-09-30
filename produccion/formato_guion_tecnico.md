@@ -82,7 +82,7 @@ planos:
     bloque: c01_b01                 # bloque de generación al que pertenece
     motor_keyframe: nano_banana_pro # nano_banana_pro / ninguno (tarjeta o plano cubierto solo por bloque multi-beat)
     motor_video: h3_max             # h3_max / kling / ninguno (plano fijo o tarjeta)
-    metodo_video: FF                # FF (primer fotograma) · FL (primer y último) · REF (referencias) · FF+E (Kling con elements)
+    metodo_video: FF                # FF (primer fotograma) · FL (primer y último; solo con las condiciones de agentes/asistente_direccion.md) · REF (referencias, por defecto) · FF+E (Kling con elements)
     tomas_objetivo: 3
     costo_estimado_usd: null
     grupo_generacion: null          # planos que comparten locación y luz se generan juntos

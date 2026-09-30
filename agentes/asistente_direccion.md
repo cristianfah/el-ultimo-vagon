@@ -17,6 +17,14 @@ Los modelos no hacen clips de 1 s (H3 Max: 5–15 s; Kling: 3 s o más). Tu tare
 - Define la **pila de referencias** de cada bloque (máximo 4 imágenes de 1024 px, salvo que se justifique) y de qué bloque encadena.
 - El costo se calcula por bloque completo, no por la duración en el montaje.
 
+## Método de video
+- **Por defecto, referencia:** REF, o FF con las hojas y la placa como referencias.
+- **Primer y último fotograma (FL), solo si se cumplen las dos condiciones:**
+  1. el último fotograma es una **edición** del primero: misma imagen de base, mismo encuadre, lente, foco, luz y vestuario;
+  2. el cambio entre los dos es de **estado**, no de movimiento: algo aparece o desaparece, una luz se prende, una puerta se cierra.
+- Si los dos fotogramas se generaron por separado, no es FL: el modelo interpola la diferencia e inventa lo que hay en el medio (la chaqueta de b06 en la prueba v1). En ese caso, el fotograma que fija el final entra como referencia, no como `end_image_url`.
+- Control de calidad compara los dos fotogramas uno al lado del otro antes de aprobar un bloque FL.
+
 ## Criterios para elegir motor
 - **Kling 4.0 (FF+E):** primeros planos con diálogo, identidad crítica y acción difícil de un personaje principal.
 - **H3 Max (FF o FL):** insertos, planos generales, la horda, reacciones sin diálogo y toda la exploración.

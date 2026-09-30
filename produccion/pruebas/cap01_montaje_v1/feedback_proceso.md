@@ -4,6 +4,19 @@
 
 Cada observación tiene la causa en el proceso (con evidencia del repo), la herramienta o regla que falta y el rol responsable. Se aplican de a una, como el resto de `mejoras.md`.
 
+## Respuesta de Cristian (2026-09-30)
+
+| Punto | Decisión |
+|---|---|
+| 1. Cámara | **Sin catálogo.** El movimiento varía según la escena y lo decide un subagente, el Director de fotografía. Se cambian sus reglas, no se arma un catálogo. |
+| 2. Actuación | **De acuerdo:** falta mucho más detalle. Se adopta un sistema de actuación (`produccion/actuacion.md`). |
+| 3. Set | La biblia del set se detalla **cuando se hagan los assets definitivos**. |
+| 5. Primer y último fotograma | **Aprobado** tal como está propuesto. |
+| 6. Control de calidad | **No se trata de generar hasta que salga.** Todo tiene que estar definido antes de generar, para que salga bien en pocos intentos. El control fuerte pasa a ser **antes** de generar. |
+| Prompting (nuevo) | **Los prompts son muy cortos.** Los agentes hacen mucho trabajo que después no llega al prompt. Hay que investigar cómo se está escribiendo prompts hoy, conocer la guía oficial de cada modelo y armar una skill propia. Ver `produccion/prompting/investigacion.md` y `.cursor/skills/director-de-prompts/`. |
+
+Los puntos 4 (ritmo) y la tira de fotogramas del 6 quedan como apoyo, no como método: si un plano necesita retiming o varias tandas, la falla está en la definición.
+
 ---
 
 ## 1. La cámara no trabaja
@@ -98,19 +111,17 @@ Cada observación tiene la causa en el proceso (con evidencia del repo), la herr
 |---|---|---|
 | Director | Actuación con objetivo y verbo; miradas con destino y tiempo | Referencia de actuación en video (a probar) |
 | Productor de impacto | Revisa que ningún plano quede fijo sin motivo | — |
-| Director de fotografía | Sin cámara fija por defecto; gramática de cámara por escena | Catálogo de movimientos probados |
+| Director de fotografía | Sin cámara fija por defecto; gramática de cámara por escena | — (Cristian descartó el catálogo) |
 | Continuista | Tabla de vidrios y posiciones en cada plano | Biblia del set |
 | Asistente de dirección | La referencia por defecto; FL solo con las dos condiciones | Hoja de props clave, placas del set desde varios ángulos |
 | Prompter | La acción termina en un tiempo fijo | — |
 | Control de calidad | Chequeo de FL antes de generar; checklist de video | Tira de fotogramas, revisión con modelo de video |
 | Montajista | Puede acelerar y agregar movimiento digital, anotado en el plan | Retiming y reencuadre con ffmpeg o After Effects |
 
-## Orden sugerido
+## Orden (actualizado con la respuesta de Cristian)
 
-1. **Catálogo de movimientos:** es lo que más se nota y es una prueba barata.
-2. **Biblia del set y tabla de vidrios:** evita errores de mundo en todos los capítulos siguientes.
-3. **Actuación con objetivo y miradas:** cambia el prompt del Director y del Prompter.
-4. **Regla de FL:** cuando Cristian la confirme.
-5. **Tiras de fotogramas y checklist de video en Control de calidad.**
-6. **Retiming y movimiento digital en el Montajista.**
-7. **Referencia de actuación en video:** cuando haya un plano clave para probarla.
+1. **Hecho:** regla de FL, reglas de cámara, sistema de actuación, revisión antes de generar y skill de prompting v1.
+2. **Siguiente:** probar la skill en una tanda corta (b02 y b03 a 480P) contra los prompts de la v1.
+3. **Con los assets definitivos:** biblia del set, tabla de vidrios y hoja de props.
+4. **Cuando haya un plano clave:** referencia de actuación en video.
+5. **Solo como apoyo:** retiming, movimiento digital y tira de fotogramas.

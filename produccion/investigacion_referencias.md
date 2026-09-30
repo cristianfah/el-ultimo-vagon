@@ -118,7 +118,7 @@ Requisitos: `FAL_KEY` conectada, hojas de personaje mínimas (aunque sean provis
 | Keyframes con ancla aprobada (p03 → p04–p09) | **Funciona.** Luz, vagón y vestuario se sostienen entre planos. Control de calidad aprobó cuatro tal cual y pidió una corrección en otros cuatro; ninguno hubo que rehacerlo |
 | Edición de una sola variable (manga en p01, mano en p06) | **Funciona.** GPT Image 2.5 edit cambia solo lo pedido |
 | Bloque multi-beat de 12 s con 7 referencias (b03) | **Funciona.** Cinco planos con cortes propios del modelo en 3,58, 5,38, 7,88 y 10,54 s, cerca de los beats pedidos (3,5, 5,5, 7,0 y 9,5 s). Identidad y luz estables |
-| Primer y último fotograma (b01, b04, b06) | **Funciona** para acciones cortas: la mano llega al vidrio, el celular se enciende, la chaqueta se abre |
+| Primer y último fotograma (b01, b04, b06) | **Funciona solo con control total de las dos imágenes** (corregido tras la revisión de Cristian). La acción llega al final, pero en b06 los dos fotogramas tenían encuadre y foco distintos y la chaqueta del primero estaba mal: al interpolar, el modelo inventa otra chaqueta. Regla nueva en `agentes/asistente_direccion.md` |
 | Texto dentro del plano (celular en p05) | Se lee bien, pero el modelo pone una muesca de teléfono de marca. Hay que agregar «no notch, no dynamic island» |
 | Subtítulos | **Falla:** con «No on-screen text», H3 Max igual dibujó «Diego…» como subtítulo. Se arregló nombrando *subtitles* y *captions* en el cierre |
 | Detalles prohibidos que aparecen durante el clip | **Falla:** en b06 salen balas en el cinturón aunque el primer y el último fotograma no las tienen. El prompt negativo no alcanza a mitad del clip |
