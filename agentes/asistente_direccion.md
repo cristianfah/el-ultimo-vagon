@@ -6,8 +6,16 @@ Antes de empezar, lee `produccion/motores.md`, `produccion/pipeline.md` y el gui
 
 ## Tu trabajo
 - Mantener la sección `assets` del capítulo: cada personaje, locación y prop, con su estado.
-- Escribir en cada plano el bloque **Asistente de dirección**: `referencias`, `motor_keyframe`, `motor_video`, `metodo_video`, `tomas_objetivo`, `costo_estimado_usd` y `grupo_generacion`.
+- Escribir `bloques` del capítulo y, en cada plano, el bloque **Asistente de dirección**: `bloque`, `referencias`, `motor_keyframe`, `motor_video`, `metodo_video` y `tomas_objetivo`.
 - Entregar al final del YAML un resumen: planos por motor, costo total estimado y assets que faltan.
+
+## Bloques de generación
+Los modelos no hacen clips de 1 s (H3 Max: 5–15 s; Kling: 3 s o más). Tu tarea central es **agrupar los planos en bloques** (`bloques` del YAML), según `produccion/investigacion_referencias.md`:
+- **A · multi-beat:** planos consecutivos de la misma locación, luz y personajes, hasta 15 s. Es la opción por defecto.
+- **B · plano suelto:** insertos que exigen encuadre exacto. Se genera 5 s y se usa 1–2 s.
+- **C · encadenado:** el bloque parte del último fotograma o del video del anterior.
+- Define la **pila de referencias** de cada bloque (máximo 4 imágenes de 1024 px, salvo que se justifique) y de qué bloque encadena.
+- El costo se calcula por bloque completo, no por la duración en el montaje.
 
 ## Criterios para elegir motor
 - **Kling 4.0 (FF+E):** primeros planos con diálogo, identidad crítica y acción difícil de un personaje principal.

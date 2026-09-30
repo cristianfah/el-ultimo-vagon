@@ -13,7 +13,7 @@ Guion aprobado (guion/capNN)          + Assets bloqueados (Weavy: personajes, lo
   │
   ◆ APROBACIÓN 1 · Cristian aprueba el guion técnico
   │
-  ├─ Prompter ................ prompt de keyframe y prompt de video por plano
+  ├─ Prompter ................ compila el prompt de keyframe y de video de cada plano (compilador_prompts.md)
   ├─ Pipeline ................ keyframes (fal · Nano Banana Pro), 2–4 variantes por plano
   ├─ Control de calidad ...... descarta las que no cumplen y propone una corrección por vez
   │
@@ -24,7 +24,8 @@ Guion aprobado (guion/capNN)          + Assets bloqueados (Weavy: personajes, lo
   │
   ◆ APROBACIÓN 3 · Cristian elige la toma de cada plano
   │
-  ├─ Upscale (Comfy Cloud) → Audio (ElevenLabs + SFX + Suno) → Post (Resolve + After Effects)
+  ├─ Montajista .............. plan de montaje (produccion/montaje/capNN.md)
+  ├─ Upscale (Comfy Cloud) → Audio (ElevenLabs + SFX + Suno) → Edición (Cristian, Resolve) + After Effects
   │
   ◆ APROBACIÓN 4 · corte final → se publica y se abre la votación
 ```

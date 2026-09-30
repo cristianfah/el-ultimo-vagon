@@ -28,6 +28,19 @@ hechos_continuidad:                 # Continuista: lo que debe mantenerse entre 
     desde: c01_p01
     hasta: null                     # null = hasta nuevo aviso
 
+bloques:                            # Asistente de dirección: unidades de generación (ver investigacion_referencias.md)
+  - id: c01_b01
+    planos: [c01_p03, c01_p04, c01_p05]   # planos que cubre, en orden de montaje
+    estrategia: A                   # A multi-beat · B plano suelto recortado · C encadenado
+    motor: h3_max
+    ruta: reference-to-video        # text-to-video / image-to-video / reference-to-video
+    duracion_s: 8                   # 5–15 en H3 Max; incluye el tiempo de los planos y holgura
+    beats: [{ plano: c01_p03, de: 0.0, a: 3.0 }, { plano: c01_p04, de: 3.0, a: 5.0 }]
+    pila_referencias: ["Image 1 = martina", "Image 2 = tomas", "Image 3 = loc_vagon_pasajeros_ambar"]
+    encadena_desde: null            # id del bloque cuyo último fotograma o video entra como referencia
+    costo_estimado_usd: null
+    estado: pendiente
+
 planos:
   - id: c01_p01
     escena: cold_open
@@ -66,16 +79,18 @@ planos:
 
     # --- Asistente de dirección ---
     referencias: []                 # ids de assets que entran como imagen de referencia
-    motor_keyframe: nano_banana_pro # nano_banana_pro / ninguno (tarjeta)
+    bloque: c01_b01                 # bloque de generación al que pertenece
+    motor_keyframe: nano_banana_pro # nano_banana_pro / ninguno (tarjeta o plano cubierto solo por bloque multi-beat)
     motor_video: h3_max             # h3_max / kling / ninguno (plano fijo o tarjeta)
     metodo_video: FF                # FF (primer fotograma) · FL (primer y último) · REF (referencias) · FF+E (Kling con elements)
     tomas_objetivo: 3
     costo_estimado_usd: null
     grupo_generacion: null          # planos que comparten locación y luz se generan juntos
 
-    # --- Prompter ---
-    prompt_keyframe: null           # ruta: produccion/prompts/capNN/<id>.md
-    prompt_video: null
+    # --- Prompter ---  (estructura en produccion/compilador_prompts.md)
+    prompts:
+      keyframe: { motor: nano_banana_pro, params: {}, referencias: [], texto: "" }
+      video: { motor: h3_max, params: {}, texto: "", negativo: null }
 
     # --- Pipeline ---
     tomas: []                       # { tipo: keyframe|video, motor, seed, url, archivo, fecha }
@@ -92,7 +107,10 @@ planos:
 - **Tiempos:** los del guion. Si el desglose no calza con la duración objetivo, el Director lo anota en `alertas` del primer plano de la escena.
 - **Un plano, un momento.** Si una línea de acción pide dos momentos, son dos planos.
 - **Tarjetas de personaje:** van **sobreimpresas** en el plano donde se presenta el personaje (`texto_pantalla`), no son planos propios. Ese plano dura lo necesario para leer la frase: al menos 2 s.
-- **Textos a pantalla completa** («20 MINUTOS ANTES», la votación): son planos con `tipo_plano: tarjeta`, sin keyframe ni video; el texto va en `texto_pantalla` y se hacen en After Effects.
+- **Textos a pantalla completa** (la tarjeta de votación): son planos con `tipo_plano: tarjeta`, sin keyframe ni video; el texto va en `texto_pantalla` y se hacen en After Effects.
+- **Saltos de tiempo por corte:** los saltos («20 minutos antes») no llevan sobreimpresión: los resuelve el corte del montaje, apoyado por la hora del celular y la luz. No es un plano.
+- **`estado_motor: exploracion`:** el plano usa un motor todavía no oficial (Kling 4.0 Flash); no se da por final.
+- **Plano ≠ bloque.** `duracion_s` de un plano es lo que dura en el montaje. El modelo genera **bloques** (H3 Max 5–15 s, Kling 3 s o más) que agrupan varios planos; el costo se calcula sobre el bloque completo.
 - **`intencion` e `informacion` son obligatorios** en todo plano. `ironia` se omite cuando no hay.
 - **Hechos de continuidad:** lo que manda es la lista `hechos` de cada plano; `desde` y `hasta` son orientativos (orden de montaje) y `hasta: null` se escribe explícito. Un hecho que el guion no define se marca «(propuesta)» hasta que Cristian lo aprueba, y los que los modelos suelen perder llevan `fragil: true`.
 - **Extras sin nombre** (el pasajero del boleto, la esposa del hombre de camisa azul) se describen en `accion`; no van en `personajes`.

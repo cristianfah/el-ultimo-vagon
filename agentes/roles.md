@@ -20,9 +20,10 @@ Todos escriben en el guion técnico (`produccion/shotlists/capNN.yaml`), cada un
 | **Director de fotografía** (`director_fotografia.md`) | ¿Cómo se ve? | Cámara, lente, luz, zona segura 9:16 |
 | **Continuista** (`continuista.md`) | ¿Qué debe seguir igual de un plano al siguiente? | Hechos de continuidad; entrada, salida y eje de cada plano |
 | **Asistente de dirección** (`asistente_direccion.md`) | ¿Qué necesitamos, con qué motor, en qué orden y cuánto cuesta? | Assets, referencias, motor, método, costo, grupos de generación |
-| **Prompter** | ¿Cómo se le pide al modelo? | Prompts de keyframe y de video en `produccion/prompts/capNN/`, con la plantilla de rodaje y las reglas de `produccion/kling/` y `produccion/motores.md` |
+| **Prompter** (`prompter.md`) | ¿Cómo se le pide al modelo? | Bloque `prompts` de cada plano, **compilado** desde los campos de los demás roles con las recetas de `produccion/compilador_prompts.md` |
 | **Pipeline** | ¿Qué se generó y en qué estado está? | Tomas, toma elegida y estado. Ejecuta con los MCP de fal y Kling (o el orquestador) y guarda en `renders/` |
 | **Control de calidad** (`control_calidad.md`) | ¿La toma cumple lo que se pidió? | Revisión de cada toma, con una sola corrección |
+| **Montajista** (`montajista.md`) | ¿Cómo se ensamblan las tomas en 75–90 s? | `produccion/montaje/capNN.md`: línea de tiempo, cortes, sonido, textos y tareas de post. Cristian también edita; el plan es su punto de partida |
 
 ## Ciclo de un capítulo
 1. **Showrunner:** define la decisión del capítulo según la votación anterior.
@@ -31,6 +32,6 @@ Todos escriben en el guion técnico (`produccion/shotlists/capNN.yaml`), cada un
 4. **Cristian aprueba el guion técnico.**
 5. **Prompter:** escribe los prompts. **Pipeline:** genera los keyframes. **Control de calidad:** filtra. **Cristian elige** un keyframe por plano.
 6. **Pipeline:** genera las tomas de video. **Control de calidad:** filtra. **Cristian elige** la toma de cada plano.
-7. Upscale, audio y montaje. **Se publica** y se abre la votación.
+7. **Montajista:** plan de montaje. Upscale, audio y edición (Cristian y el plan). **Se publica** y se abre la votación.
 
 El detalle de cada paso está en `produccion/pipeline.md`.
