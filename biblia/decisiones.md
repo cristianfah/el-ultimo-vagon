@@ -21,3 +21,7 @@ Formato: fecha · decisión · motivo.
 - **Don Hugo tiene un revólver con dos balas.**
 - **Reglas del mundo: opción 1, primer día.** Nadie sabe las reglas. Se descartó un tren de evacuación con control sanitario porque resolvía todo demasiado bien.
 - **El tren se detiene más adelante** por el freno de emergencia. Motivo: da razones para entrar y salir del vagón y lo aleja de Snowpiercer.
+- **Método de assets:** en Midjourney 8.2 la cara y el vestuario se exploran por separado, y se unen en GPT Image 2.5 (en paralelo con Nano Banana Pro) en Weavy. Motivo: MJ 8.2 no sostiene una cara entre imágenes; separadas, la cara no cambia con cada variación de ropa. Plan en `produccion/assets/plan_assets_v1.md`.
+- **Los sets salen de una plancha maestra:** los estados de luz y los ángulos se editan sobre la misma imagen, no se generan de cero. Motivo: en la prueba 1 el vagón cambiaba de un plano a otro.
+- **La manija del freno de emergencia se planta desde el capítulo 1** en el set, junto a la puerta. Motivo: cuando alguien la tire en el capítulo 3, el público tiene que poder decir que estaba ahí.
+- **Propuestas de casting visual pendientes de aprobación** (`direccion_arte/personajes/fichas_personajes_v1.md`): herida de Diego en el antebrazo izquierdo, reloj de enfermera para Carmen y sin hacha en el último vagón.

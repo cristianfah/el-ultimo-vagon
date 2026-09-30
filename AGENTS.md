@@ -20,6 +20,7 @@ Todo agente que trabaje en este repo (Cursor, Claude, cualquier otro) lee este a
   - Opción 1 de reglas: es el primer día, nadie conoce las reglas, los personajes solo saben lo que vieron y las deducciones pueden estar mal.
   - El tren se detiene más adelante (capítulo 2 o 3) porque alguien tira el freno de emergencia.
   - Ver `biblia/decisiones.md`.
+- **Assets en preparación (v1):** plan en `produccion/assets/plan_assets_v1.md`, fichas de personajes en `direccion_arte/personajes/` y set del último vagón en `direccion_arte/sets/`. Próximo paso: casting en Midjourney 8.2 y referencias del set de Cristian.
 - **Proyecto anterior archivado:** VAGÓN 7, de agentes y traición, en `archivo/vagon7/`. Su dirección de arte y sus assets se reutilizan.
 
 ## Mapa del repo
