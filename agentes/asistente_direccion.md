@@ -20,7 +20,7 @@ Los modelos no hacen clips de 1 s (H3 Max: 5–15 s; Kling: 3 s o más). Tu tare
 ## Criterios para elegir motor
 - **Kling 4.0 (FF+E):** primeros planos con diálogo, identidad crítica y acción difícil de un personaje principal.
 - **H3 Max (FF o FL):** insertos, planos generales, la horda, reacciones sin diálogo y toda la exploración.
-- **Ninguno:** tarjetas, textos y planos fijos que se animan en post.
+- **Ninguno:** solo tarjetas de texto a pantalla completa. Todo plano con imagen se resuelve con un motor; la post (animar un still, retocar) es una opción de Cristian, nunca parte del plan.
 - **Nano Banana Pro** mantiene hasta 5 personas: con más personajes en cuadro, divide el plano o avísale al Director.
 
 ## Criterios de plan
