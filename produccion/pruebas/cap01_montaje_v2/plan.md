@@ -23,6 +23,7 @@ Se registran en la sección `assets` de `produccion/shotlists/cap01.yaml`, con `
 
 Cada paso usa las reglas nuevas. Entre paréntesis va dónde está escrita cada una.
 
+0. **Actualizar el guion técnico a la v7 FINAL.** Hoy `cap01.yaml` desglosa `guion/cap01/cap01_v3.md`. El Director compara el cold open y la escena 1 de la v7 con lo desglosado y corrige los planos que cambien; el campo `guion` pasa a `guion/cap01/cap01_v7.md`. Varias alertas del guion técnico ya quedaron resueltas en la v7 (por ejemplo, el «Diego…» del cold open es el mismo plano de la escena 4).
 1. **Director:** reescribe `actuacion` de cada plano con objetivo, obstáculo, tarea, beats con tiempo, miradas con destino y ojos (`produccion/actuacion.md`). Escribe los perfiles de actuación de los personajes que aparecen (`produccion/actuacion/perfiles.md`) desde `biblia/personajes.md`.
 2. **Productor de impacto:** revisa el desglose y propone gancho, caídas de atención y cámara. El Director acepta o descarta (`mejoras.md` #3).
 3. **Director de fotografía:** escribe la `gramatica_escena` del cold open y de la escena 1. Da a cada plano un movimiento con tipo, amplitud, velocidad y motivo. Ningún plano queda fijo sin motivo escrito (`agentes/director_fotografia.md`).
