@@ -1,28 +1,44 @@
 # Pipeline de producción
 
+El proceso es automático desde que el guion y los assets están aprobados. La creatividad está antes (guion, casting visual, hojas de personaje) y en las aprobaciones. Qué motor se usa para cada paso está en `produccion/motores.md`.
+
 ```
-Guion aprobado (guion/capNN)
-  → Shot list (produccion/shotlists/capNN.md): un plano por fila
-  → Prompts por plano (produccion/prompts/capNN/NN.md): plantilla de rodaje y prompt de Kling
-  → Weavy: keyframes 9:16 (GPT Image 2.5 o Nano Banana Pro con referencias de personajes y locaciones)
-  → Kling 4.0: image-to-video con elements de personajes (identidad y voz)
-  → Audio: ElevenLabs (voces fijas por personaje) + SFX + Suno
-  → Post: Resolve (montaje y color) + After Effects (sangre, subtítulos, tarjetas)
+Guion aprobado (guion/capNN)          + Assets bloqueados (Weavy: personajes, locaciones, props)
+  │
+  ├─ Director ................ desglose dramático: planos, intención, qué sabe el público
+  ├─ Director de fotografía .. cámara, lente y luz de cada plano
+  ├─ Continuista ............. estado de entrada y salida de cada plano
+  ├─ Asistente de dirección .. assets por plano, orden de generación, costo
+  │     → produccion/shotlists/capNN.yaml  (guion técnico)
+  │
+  ◆ APROBACIÓN 1 · Cristian aprueba el guion técnico
+  │
+  ├─ Prompter ................ prompt de keyframe y prompt de video por plano
+  ├─ Pipeline ................ keyframes (fal · Nano Banana Pro), 2–4 variantes por plano
+  ├─ Control de calidad ...... descarta las que no cumplen y propone una corrección por vez
+  │
+  ◆ APROBACIÓN 2 · Cristian elige un keyframe por plano
+  │
+  ├─ Pipeline ................ tomas de video (H3 Max para explorar, Kling para planos clave)
+  ├─ Control de calidad ...... revisa identidad, continuidad y reglas
+  │
+  ◆ APROBACIÓN 3 · Cristian elige la toma de cada plano
+  │
+  ├─ Upscale (Comfy Cloud) → Audio (ElevenLabs + SFX + Suno) → Post (Resolve + After Effects)
+  │
+  ◆ APROBACIÓN 4 · corte final → se publica y se abre la votación
 ```
 
-## Formato de shot list (una fila por plano)
+## Reglas del proceso
+- **Nada pasa a video sin keyframe aprobado.** El video es lo caro.
+- **Una corrección por vez.** Si una toma falla, se cambia una variable (luz, encuadre, referencia, seed) y se vuelve a generar.
+- **Todo queda en el guion técnico:** qué motor, qué seed, qué toma se eligió y por qué. Si no está escrito, no se puede repetir.
+- **Los archivos generados no van a git.** Se guardan en `renders/capNN/<id_plano>/` (ignorado) y el YAML guarda la URL y el nombre.
 
-| Campo | Ejemplo |
-|---|---|
-| id | `c01_p07` |
-| tiempo | `0:19–0:23` |
-| plano | PP / PM / general / inserto / POV |
-| acción | qué pasa, en una línea |
-| audio y diálogo | quién dice qué |
-| personajes | martina, tomas… |
-| locación | `loc_vagon_rojo` |
-| método Kling | FF (first frame) · FF+E (con elements) · FL (first y last frame) |
-| estado | pendiente / keyframe ok / video ok / montado |
+## Guion técnico
+Formato en `produccion/formato_guion_tecnico.md`. Un archivo por capítulo: `produccion/shotlists/capNN.yaml`.
+
+**Estados de un plano:** `pendiente` → `prompt ok` → `keyframe ok` → `video ok` → `montado`.
 
 ## Assets reutilizables
 - Weavy: flujo «VAGÓN 7 — Assets base» (`app.weavy.ai/flow/WI36yqNHek7HlgrUH3IFBP`). Tiene locaciones del tren, infectados y props.
@@ -33,4 +49,6 @@ Guion aprobado (guion/capNN)
 - Producción del capítulo ganador en 3–4 días.
 - Un capítulo por semana.
 
-Para lograrlo, los flujos de Weavy tienen que estar **plantillados por plano**.
+## Por construir
+- **Orquestador (`tools/orquestador`):** script que lea el YAML y mande cada plano al motor que indica, guarde los resultados en `renders/` y actualice el estado. Mientras no exista, el agente Pipeline trabaja con los MCP de fal y Kling.
+- **Adaptador de Weavy:** el `weavy_builder` pendiente pasa a ser un adaptador más que lee el mismo YAML.

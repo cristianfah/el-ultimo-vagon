@@ -20,6 +20,7 @@ Todo agente que trabaje en este repo (Cursor, Claude, cualquier otro) lee este a
   - Opción 1 de reglas: es el primer día, nadie conoce las reglas, los personajes solo saben lo que vieron y las deducciones pueden estar mal.
   - El tren se detiene más adelante (capítulo 2 o 3) porque alguien tira el freno de emergencia.
   - Ver `biblia/decisiones.md`.
+- **Producción:** equipo técnico de agentes definido en `agentes/roles.md`. El guion técnico del capítulo 1 está en prueba en `produccion/shotlists/cap01.yaml` (cold open y escena 1).
 - **Proyecto anterior archivado:** VAGÓN 7, de agentes y traición, en `archivo/vagon7/`. Su dirección de arte y sus assets se reutilizan.
 
 ## Mapa del repo
@@ -29,7 +30,7 @@ Todo agente que trabaje en este repo (Cursor, Claude, cualquier otro) lee este a
 | `biblia/` | Premisa, personajes, reglas del mundo, arco de temporada, decisiones y preguntas abiertas. **Es la fuente de verdad.** |
 | `guion/capNN/` | Guiones por capítulo, versionados (`capNN_vX.md`). Las ramas del capítulo siguiente van al final de cada guion |
 | `direccion_arte/` | Look, guion de color, reglas contra la estética genérica de IA, referencias visuales |
-| `produccion/` | Pipeline, plantilla de prompt de rodaje, guía de Weavy, guía de Kling 4.0, shot lists y prompts por plano |
+| `produccion/` | Pipeline, motores de generación, formato del guion técnico, plantilla de prompt de rodaje, guías de Weavy y Kling 4.0, guiones técnicos (`shotlists/`) y prompts por plano |
 | `agentes/` | Roles y responsabilidades de cada agente |
 | `archivo/` | Versiones y proyectos descartados. Solo se consultan, nunca se editan |
 
@@ -46,10 +47,13 @@ Todo agente que trabaje en este repo (Cursor, Claude, cualquier otro) lee este a
 
 ## Herramientas del pipeline
 
+Qué motor se usa para qué está en `produccion/motores.md`.
+
 - **Midjourney 8.2:** solo exploración de arte.
-- **Weavy (Figma Weave):** imágenes finales. Hay que capturar la estructura de los nodos del canvas y armar los flujos como JSON para pegarlos; ver `produccion/weavy/`.
-- **GPT Image 2.5 y Nano Banana Pro:** los dos están disponibles en Weavy.
-- **Kling 4.0:** video. Todavía no está en Weavy; ver `produccion/kling/`.
+- **Weavy (Figma Weave):** solo creación de assets (hojas de personaje, locaciones, props). Los flujos se arman como JSON para pegarlos; ver `produccion/weavy/`.
+- **fal.ai (API y MCP):** motor base de tomas. MiniMax H3 Max para video y Nano Banana Pro para keyframes.
+- **Kling 4.0:** video de planos clave, por el MCP oficial con la suscripción propia; ver `produccion/kling/`.
+- **Comfy Cloud (API):** upscale final, correcciones puntuales y nodos pagados con créditos de Comfy.
 - **ElevenLabs:** voces.
 - **Suno:** música.
 - **DaVinci Resolve y After Effects:** post.
