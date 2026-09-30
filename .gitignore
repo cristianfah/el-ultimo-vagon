@@ -2,3 +2,4 @@
 *.mp4
 *.mov
 renders/
+!produccion/pruebas/**/*.mp4
