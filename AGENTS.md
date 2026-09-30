@@ -15,8 +15,8 @@ Todo agente que trabaje en este repo (Cursor, Claude, cualquier otro) lee este a
 ## Estado actual (actualizar con cada decisión)
 
 - **Premisa en desarrollo:** cinco se encierran en el último vagón el primer día del brote; el sexto (Diego) pide entrar. Triángulo en el centro (Martina, Tomás y Diego).
-- **Guion vigente:** `guion/cap01/cap01_v4.md`.
-- **Aplicado en v4:** opción 1 de reglas (Carmen duda); conteo 5+Diego; Martina le pasó el tren; llave motivada; rama NO sin matar a Diego.
+- **Guion vigente:** `guion/cap01/cap01_v6.md`.
+- **Aplicado hasta v6:** opción 1; conteo 5+Diego; Carmen atiende al de camisa azul; Diego ambiguo; Hugo corto; Iván «no hay cómo saber»; semilla del corte fuera del guion (preguntas abiertas).
 - **Pendiente de temporada:** el tren se detiene más adelante (cap. 2 o 3) por el freno de emergencia. Ver `biblia/decisiones.md`.
 - **Proyecto anterior archivado:** VAGÓN 7, de agentes y traición, en `archivo/vagon7/`. Su dirección de arte y sus assets se reutilizan.
 
