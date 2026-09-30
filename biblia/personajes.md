@@ -12,7 +12,7 @@ Cada personaje tiene una **postura** en el debate. El público debe poder decir 
 | **DON HUGO**, 62 | «Revisor. Este es mi tren.» | La ley: tiene la llave y un revólver con dos balas | Pausado, de pocas palabras. Le tiembla la mano | 32 años en ese tren y nunca había sacado el arma |
 
 ## Líneas que los definen (capítulo 1)
-- **Martina:** «Solo nosotros.»
+- **Martina:** «Solo nosotros.» Gesto final: mira a Tomás, mira a Diego, aprieta la llave.
 - **Diego:** «Me pasaste el tren. Vine por ti.» / «Si no estás segura, no abras.»
 - **Iván:** «O sea que no hay cómo saber.» / «Mi hijo no está golpeando esa puerta.»
 - **Carmen:** «No alcancé a hacer nada por el otro.» / «Si fuera tu hijo, ¿no le abrirías?»
