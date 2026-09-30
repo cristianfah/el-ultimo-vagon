@@ -1,12 +1,17 @@
 # EL ÚLTIMO VAGÓN — Capítulo 1
-### Borrador v7 · 90 s · 9:16 · serie donde el público decide
+### Borrador v7 · 90 s · FINAL · 9:16 · serie donde el público decide
 
 **La idea en una línea:** cinco pasajeros se encierran en el último vagón de un tren nocturno el primer día del brote. Entre ellos, una pareja que viaja a arreglar su relación. Afuera, golpeando la puerta, está el sexto: el tercero del triángulo.
 
-**Cambios de la v7** (tres detalles de la revisión de Claude sobre la v6):
+**Cambios de la v7** (sobre la v6):
 - Tabla de votación: la fila de Hugo ya no cita una frase eliminada; habla del gesto del arma.
 - Timing: se saca «Había gente viva… Todavía puede haber» de la escena 3 (la postura de Carmen ya queda en la puerta) para caber en ~90 s.
 - Martina gana un gesto antes del negro: mira a Tomás, mira a Diego, aprieta la llave.
+- Hugo se acorta: «Te llama a ti. Tú decides.» La amenaza va en el gesto del arma.
+- La semilla del corte en la palma de Carmen **no va en este guion**: queda en `biblia/preguntas_abiertas.md`.
+- **Continuidad:** el «Diego…» del cold open ahora ocurre en la escena 4, cuando él aparece en la ventanita.
+- **Dirección filmable:** en la escena 3, el acuerdo tácito entre Carmen e Iván se ve en un gesto (ella baja la vista, él asiente), no en una nota interna.
+- Se mantiene el cierre de Iván: «O sea que no hay cómo saber.»
 
 *(Base: v6.)*
 
@@ -117,7 +122,7 @@ Cinco personas jadeando bajo la luz roja. Los golpes en la puerta se van apagand
 > **IVÁN**
 > Nadie abre esa puerta. A nadie.
 
-Carmen mira la puerta. No contesta. Iván lee el silencio como acuerdo.
+Carmen mira la puerta, después sus manos manchadas, y baja la vista sin contestar. Iván asiente, como si eso fuera un sí.
 
 **0:36 · INSERTO**
 
@@ -141,7 +146,11 @@ En la ventanita aparece la cara de **DIEGO**: vivo, empapado, con la manga de la
 > **DIEGO**
 > ¡Martina! ¡Martina, ábreme!
 
-Todos se dan vuelta a mirarla.
+> **MARTINA**
+> (casi sin voz)
+> Diego…
+
+*(Es el mismo plano del cold open.)* Todos se dan vuelta a mirarla.
 
 **0:48**
 
