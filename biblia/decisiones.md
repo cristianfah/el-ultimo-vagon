@@ -21,3 +21,4 @@ Formato: fecha · decisión · motivo.
 - **Don Hugo tiene un revólver con dos balas.**
 - **Reglas del mundo: opción 1, primer día.** Nadie sabe las reglas. Se descartó un tren de evacuación con control sanitario porque resolvía todo demasiado bien.
 - **El tren se detiene más adelante** por el freno de emergencia. Motivo: da razones para entrar y salir del vagón y lo aleja de Snowpiercer.
+- **Guion cap01_v4:** se aplica la opción 1 en diálogo (Carmen duda). Conteo: cinco adentro al cerrar; Diego es el sexto desde el vagón 4. Martina le pasó el tren a Diego (pista del triángulo). La llave va a Martina porque Diego la nombra. Carmen carga culpa de no haber salvado a alguien en el pasillo. Rama NO: Diego no se confirma muerto. Motivo: cerrar agujeros del reporte de mejora sin matar el motor de temporada.

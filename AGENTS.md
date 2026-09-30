@@ -14,12 +14,10 @@ Todo agente que trabaje en este repo (Cursor, Claude, cualquier otro) lee este a
 
 ## Estado actual (actualizar con cada decisión)
 
-- **Premisa en desarrollo:** seis pasajeros encerrados en el último vagón de un tren nocturno el primer día de un brote. Hay un triángulo amoroso en el centro (Martina, Tomás y Diego).
-- **Guion vigente:** `guion/cap01/cap01_v3.md`.
-- **Decisión pendiente de aplicar (v4):**
-  - Opción 1 de reglas: es el primer día, nadie conoce las reglas, los personajes solo saben lo que vieron y las deducciones pueden estar mal.
-  - El tren se detiene más adelante (capítulo 2 o 3) porque alguien tira el freno de emergencia.
-  - Ver `biblia/decisiones.md`.
+- **Premisa en desarrollo:** cinco se encierran en el último vagón el primer día del brote; el sexto (Diego) pide entrar. Triángulo en el centro (Martina, Tomás y Diego).
+- **Guion vigente:** `guion/cap01/cap01_v4.md`.
+- **Aplicado en v4:** opción 1 de reglas (Carmen duda); conteo 5+Diego; Martina le pasó el tren; llave motivada; rama NO sin matar a Diego.
+- **Pendiente de temporada:** el tren se detiene más adelante (cap. 2 o 3) por el freno de emergencia. Ver `biblia/decisiones.md`.
 - **Proyecto anterior archivado:** VAGÓN 7, de agentes y traición, en `archivo/vagon7/`. Su dirección de arte y sus assets se reutilizan.
 
 ## Mapa del repo

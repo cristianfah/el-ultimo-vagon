@@ -1,9 +1,10 @@
 # Arco de temporada (borrador)
 
 ## Etapa 1 · Tren en marcha (capítulos 1–2)
-- Los sobrevivientes llegan desde otros vagones por el pasillo.
+- Los sobrevivientes llegan desde otros vagones por el pasillo (Diego viene del vagón 4).
 - La puerta es la decisión.
-- El triángulo se enciende: Tomás descubre el secreto de Martina (las dos ramas del capítulo 1 convergen ahí).
+- El triángulo se enciende: Tomás descubre que Martina le pasó el tren a Diego (las dos ramas del capítulo 1 convergen ahí).
+- Si la rama es NO, Diego no se confirma muerto: puede reaparecer.
 
 ## Etapa 2 · El tren se detiene (capítulo 3)
 - **Por qué:** un pasajero tira el freno de emergencia en pleno pánico. El que lo tiró puede estar dentro del vagón y esconderlo. *(Otras opciones que se descartaron: un derrumbe por la tormenta, el maquinista convertido.)*
