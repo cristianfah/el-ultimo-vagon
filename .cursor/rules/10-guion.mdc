@@ -1,0 +1,20 @@
+---
+description: Reglas para escribir y revisar guiones de capítulos
+globs: ["guion/**", "biblia/**"]
+alwaysApply: false
+---
+
+Formato de cada capítulo (75–90 s, 9:16):
+1. **Cold open (0–3 s):** una imagen que plantee una pregunta. Nunca un plano de ubicación.
+2. **Desde el capítulo 2:** primeros segundos para el resultado de la votación anterior y su consecuencia inmediata.
+3. **Desarrollo:** acción y tensión, con un solo giro. Un momento fuerte cada ~15 s.
+4. **Cierre:** una **decisión** con dos opciones válidas y ninguna correcta. Se corta un beat antes de decidir.
+5. **Tarjeta de votación:** pregunta corta y dos palabras.
+
+Reglas de escritura:
+- **El diálogo es corto.** Cada línea revela una postura o algo de la vida del personaje. Nunca explica lo que ya se ve.
+- **Cada personaje defiende su postura desde lo que es,** no desde la lógica. Ver `biblia/personajes.md`.
+- **El público debe saber algo que un personaje no sabe** (ironía dramática) al menos una vez por capítulo.
+- **Respetar `biblia/reglas_del_mundo.md`.** Los personajes solo saben lo que vieron; la verdad completa es solo para los guionistas.
+- **Revisar agujeros de lógica:** ¿por qué no hacen lo obvio? Si hay una salida obvia, el dilema no sirve.
+- **Al final de cada guion,** incluir las ramas del capítulo siguiente (una por opción) y dónde convergen.

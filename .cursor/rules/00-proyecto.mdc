@@ -1,0 +1,11 @@
+---
+description: Contexto base del proyecto EL ÚLTIMO VAGÓN
+alwaysApply: true
+---
+
+- Lee `AGENTS.md` antes de cualquier tarea. La fuente de verdad de la historia es `biblia/`.
+- Escribe en español neutro (no rioplatense). Los prompts para modelos van en inglés, en bloques de código, siempre completos.
+- No sobreescribas versiones aprobadas: crea `vN+1`. Registra cada decisión de historia en `biblia/decisiones.md`, con fecha y motivo.
+- Nada de propiedad intelectual ajena: ni franquicias, logos ni personajes existentes.
+- La serie vive de generar debate. Pregúntate siempre: ¿esta escena divide a la audiencia? ¿Con quién conecta?
+- El usuario prefiere respuestas concisas y correcciones puntuales, de una variable a la vez, antes que reescrituras completas.
