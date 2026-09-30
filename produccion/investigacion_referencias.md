@@ -95,3 +95,18 @@ Todas a 480P (0,05 USD/s), unos 0,25 USD por prueba de 5 s. Total estimado: meno
 | 9 | Misma escena en Kling 4.0 Flash por MCP | ¿Vale la pena para planos clave? |
 
 Requisitos: `FAL_KEY` conectada, hojas de personaje mínimas (aunque sean provisorias) y una placa del vagón.
+
+## 7. Resultados de la primera prueba (2026-09-30)
+
+**Montaje de la prueba:** hojas provisorias (`produccion/prompts/sheets_provisorios.md`) hechas con GPT Image 2.5 Flare (calidad alta, ~20 s, centavos por imagen) y un bloque de 8 s con 4 beats de la escena 1 (incluye un beat de 1 s), en `reference-to-video`, 9:16, 480P, 3 imágenes de referencia. Costo: 0,40 USD por video. Archivos en `renders/pruebas/` (ignorados por git).
+
+| Pregunta | Resultado |
+|---|---|
+| ¿Se sostienen identidad, vestuario y locación entre cortes en un bloque? | **Sí.** Suéter crema, chaqueta oliva, asientos azules y lámparas ámbar se mantienen en los 8 fotogramas |
+| ¿Respeta el orden de los beats y los cortes? | **Sí** en ambas variantes: plano de dos, primer plano de Martina, inserto del celular apagado y luego encendido, plano de dos |
+| ¿Sirve un beat de 1 s? | Sí, se generó un plano propio; falta comprobar con el video en movimiento que el «Sí.» ocurra en ese segundo |
+| `prompt_expansion_mode` | **`disabled` obedece mejor.** Con `balanced` el modelo reescribió el prompt (usa «Subject/Picture») e invirtió la acción: Martina giró hacia Tomás en vez de mirar la ventana. Regla: usar `disabled` en prompts estructurados |
+| ¿Sale audio? | Sí, ambos videos traen pista de audio de 8 s. Falta escucharla: diálogo, acento y lip sync |
+| Ritmo de generación | ~2 s de inferencia para 8 s de video a 480P |
+
+**Pendiente de la lista de pruebas:** encadenado, video de referencia, `target_audio_url`, plano suelto B (palma en el vidrio), Kling 4.0 Flash y una comparación contra los mismos planos sueltos.

@@ -57,7 +57,7 @@ Reglas propias de este modelo:
 - El diálogo va en comillas con la dirección de tono («quiet, barely audible»).
 - Cerrar con «No music. No on-screen text.» (la música y los textos se ponen en post).
 - Si el plano es muy corto, pedir la acción en los primeros 2 s del clip de 5 s, para que el montaje corte ahí.
-- `prompt_expansion_mode`: `balanced` mientras no se pruebe apagado (ver `motores.md`).
+- `prompt_expansion_mode`: **`disabled`**. En la prueba del 2026-09-30, `balanced` reescribió el prompt e invirtió la acción (ver `investigacion_referencias.md`).
 - Secuencia multi-beat (solo si el grupo lo pide): `0.0 to 2.0s: … CUT. 2.0 to 4.0s: …`, describiendo a cada personaje idéntico en cada beat.
 
 ### Video · Kling 4.0 / 4.0 Flash (image-to-video)
