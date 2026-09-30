@@ -7,19 +7,20 @@ duracion_objetivo_s: 90
 estado: desglose
 
 assets:
+  # Provisorios de prueba (GPT Image 2.5 Flare, fal). No son casting final. Prompts en produccion/prompts/sheets_provisorios.md
   personajes:
-    martina: { estado: pendiente }
-    tomas: { estado: pendiente }
-    diego: { estado: pendiente }
-    carmen: { estado: pendiente }
-    ivan: { estado: pendiente }
-    don_hugo: { estado: pendiente }
+    martina: { estado: provisorio, hoja: "https://v3b.fal.media/files/b/0aac72dd/kKqOI8dkCPWyyqtAIJ7_T_uWqSgH9g.png", hechos: [hc09, hc10] }
+    tomas: { estado: provisorio, hoja: "https://v3b.fal.media/files/b/0aac7306/LTe0Ioos3fCiPpVZCkP3i_lzRVqClL.png", hechos: [hc12] }
+    diego: { estado: provisorio, hoja: "https://v3b.fal.media/files/b/0aac72dd/sBwFDZvRL1AtoeQmMcujf_mBTAVWnO.png", hechos: [hc17] }
+    carmen: { estado: provisorio, hoja: "https://v3b.fal.media/files/b/0aac7306/e5SqCDZcMBWKDZ6RI_s9m_ajO1qadM.png", hechos: [hc13] }
+    ivan: { estado: provisorio, hoja: "https://v3b.fal.media/files/b/0aac7306/GudHSkePi5h2Q_rvf1AF2_0n6RAU6D.png", hechos: [hc15] }
+    don_hugo: { estado: provisorio, hoja: "https://v3b.fal.media/files/b/0aac7306/NYbHUFUUY4BhNBpgL2KN4_4Lrmuecr.png", hechos: [hc16] }
   locaciones:
-    loc_ultimo_vagon: { estado: pendiente }
-    loc_vagon_pasajeros: { estado: pendiente }
+    loc_vagon_pasajeros_ambar: { estado: provisorio, ref: "https://v3b.fal.media/files/b/0aac7330/nsRBOVZGcJ_NYgPgvsSiG_8yDerU9H.png", nota: "Luz de viaje (hc02). Vista por el pasillo central. v2: ventanas azul noche y puerta del fondo según hc22." }
+    loc_ultimo_vagon_rojo: { estado: provisorio, ref: "https://v3b.fal.media/files/b/0aac7306/XpxNO2Gqn7XDT2FCoXTCM_VIdKpyHY.png", nota: "Luz de emergencia (hc01). Vista hacia la puerta con ventanita (hc22)." }
   props:
-    celular_martina: { estado: pendiente }
-    revolver_hugo: { estado: pendiente }
+    celular_martina: { estado: provisorio, ref: "https://v3b.fal.media/files/b/0aac7306/FvE56Ybb8JXuFu_TQ09Tg_z9oDPSBq.png", hechos: [hc25] }
+    revolver_hugo: { estado: provisorio, ref: "https://v3b.fal.media/files/b/0aac7306/B9m16fi3DSdLMziDk7ckQ_eNKIGnfJ.png", hechos: [hc28] }
     boletos: { estado: pendiente }
 
 hechos_continuidad:
@@ -195,6 +196,81 @@ hechos_continuidad:
     desde: c01_p02
     hasta: null
 
+bloques:
+  # Asistente de dirección. Prueba a 768P (0,08 USD/s), prompt_expansion_mode: disabled en todos.
+  # En `pila_referencias`, «keyframe c01_pNN» es el keyframe aprobado de ese plano. Costo por bloque = una toma de video.
+  - id: c01_b01
+    planos: [c01_p01]
+    estrategia: B
+    motor: h3_max
+    ruta: image-to-video
+    duracion_s: 5
+    beats: [{ plano: c01_p01, de: 0.0, a: 2.0 }]
+    pila_referencias: ["image_url = keyframe c01_p01, variante de entrada: mano abierta a pocos centímetros del vidrio, todavía sin huella", "end_image_url = keyframe c01_p01: palma derecha apoyada, pulgar a la derecha del cuadro, huella húmeda y manchas secas arriba a la derecha"]
+    costo_estimado_usd: 0.40
+    nota: "Primer y último fotograma: el último fija la orientación de la mano (hc21) y el vidrio con que se reutiliza el plano a las 0:45; los dos golpes se piden entre 0,3 y 1,5 s y luego la mano queda quieta. Ese último fotograma será el primero del plano de la cara de Diego en la escena 4 (encadenado C)."
+    estado: pendiente
+  - id: c01_b02
+    planos: [c01_p02]
+    estrategia: B
+    motor: h3_max
+    ruta: image-to-video
+    duracion_s: 5
+    beats: [{ plano: c01_p02, de: 0.0, a: 2.0 }]
+    pila_referencias: ["image_url = keyframe c01_p02: Martina de pie bajo luz roja, labios cerrados, mechones sueltos y sudor"]
+    costo_estimado_usd: 0.40
+    nota: "Solo primer fotograma: es un plano de quietud y la salida es casi igual a la entrada. El «Diego…» se pide en el primer segundo y medio. Keyframe con Nano Banana Pro para responder la prueba pendiente de motores.md: ¿H3 Max mantiene la identidad desde un keyframe de Nano Banana Pro bajo luz roja? target_audio_url queda para cuando exista la voz de Martina en ElevenLabs."
+    estado: pendiente
+  - id: c01_b03
+    planos: [c01_p03, c01_p04, c01_p06, c01_p07, c01_p08]
+    estrategia: A
+    motor: h3_max
+    ruta: reference-to-video
+    duracion_s: 12
+    beats:
+      - { plano: c01_p03, de: 0.0, a: 3.5 }
+      - { plano: c01_p04, de: 3.5, a: 5.5 }
+      - { plano: c01_p06, de: 5.5, a: 7.0 }
+      - { plano: c01_p07, de: 7.0, a: 9.5 }
+      - { plano: c01_p08, de: 9.5, a: 12.0 }
+    pila_referencias: ["Image 1 = keyframe c01_p03", "Image 2 = keyframe c01_p04", "Image 3 = keyframe c01_p06", "Image 4 = keyframe c01_p07", "Image 5 = keyframe c01_p08", "Image 6 = martina (hoja)", "Image 7 = tomas (hoja)"]
+    costo_estimado_usd: 1.02
+    nota: "Un keyframe por beat, porque la primera prueba solo con hojas y placa tuvo errores de continuidad: cada beat se ancla a su keyframe y el bloque conserva la identidad entre cortes. Las hojas de Martina y Tomás van porque ellos aparecen en tres beats. Son 7 imágenes en vez de 4: unos 0,06 USD extra de tokens (0,96 + 0,06). c01_p05 sale del bloque: es un inserto de encuadre exacto (c01_b04)."
+    estado: pendiente
+  - id: c01_b04
+    planos: [c01_p05]
+    estrategia: B
+    motor: h3_max
+    ruta: image-to-video
+    duracion_s: 5
+    beats: [{ plano: c01_p05, de: 0.0, a: 2.0 }]
+    pila_referencias: ["image_url = keyframe c01_p05, variante de entrada: pantalla apagada y sin mano", "end_image_url = keyframe c01_p05: pantalla encendida con 23:38 y «Estoy en el tren.», mano izquierda entrando por la derecha"]
+    costo_estimado_usd: 0.40
+    nota: "Primer y último fotograma: fijan que la mano sea la izquierda y entre desde la ventana (hc26) y que la pantalla termine legible. Si el texto no sale legible, se reemplaza en After Effects con la hora 23:38 (hc27)."
+    estado: pendiente
+  - id: c01_b05
+    planos: [c01_p09]
+    estrategia: B
+    motor: h3_max
+    ruta: image-to-video
+    duracion_s: 5
+    beats: [{ plano: c01_p09, de: 0.0, a: 3.0 }]
+    pila_referencias: ["image_url = keyframe c01_p09: Hugo de pie empezando a agacharse, chaqueta cerrada, pasajero dormido en primer término"]
+    costo_estimado_usd: 0.40
+    nota: "Bloque aparte porque invierte el eje (alerta del Director de fotografía). Solo primer fotograma: si se fija el último, el agachado se estira en los 5 s y pierde el ritmo gastado del personaje. Es un bloque de 5 s igual que el de c01_p10, pero se separan para que el inserto del revólver tenga encuadre exacto."
+    estado: pendiente
+  - id: c01_b06
+    planos: [c01_p10]
+    estrategia: B
+    motor: h3_max
+    ruta: image-to-video
+    duracion_s: 5
+    beats: [{ plano: c01_p10, de: 0.0, a: 2.0 }]
+    pila_referencias: ["image_url = keyframe c01_p10, variante de entrada: chaqueta apenas abierta, se ve el cinturón negro y todavía no el revólver", "end_image_url = keyframe c01_p10: culata y tambor cerrado a la vista en la funda café, sin balas"]
+    costo_estimado_usd: 0.40
+    nota: "Primer y último fotograma: el último fija el revólver del prop (hc28) sin balas ni cartuchera (hc29), que es lo que los modelos suelen agregar. La chaqueta se abre entre 0,2 y 1,2 s y luego queda quieta."
+    estado: pendiente
+
 planos:
   # ============================ COLD OPEN ============================
   - id: c01_p01
@@ -211,8 +287,26 @@ planos:
     audio:
       sfx: ["dos golpes secos de palma contra el vidrio", "traqueteo del tren de fondo"]
     personajes: [diego]
-    locacion: loc_ultimo_vagon
+    locacion: loc_ultimo_vagon_rojo
     corte: "Se corta con la palma quieta en el vidrio para pasar a quien la mira desde adentro (c01_p02). Es el mismo plano de la escena 4 (ver c01_p02)."
+
+    # --- Director de fotografía ---
+    camara:
+      altura: "A la altura de la ventanita (unos 1,65 m), a nivel, sin picado ni contrapicado."
+      posicion: "Adentro del último vagón, a unos 2,5 m de la puerta, apenas a la izquierda del eje de la ventanita y casi frontal al vidrio: es la distancia y el lado desde donde mira Martina."
+      movimiento: "Fija: \"locked-off, static camera\". Solo se mueve la mano; la cámara no reacciona a los golpes."
+    lente:
+      focal_mm: 65
+      apertura: T2
+      foco: "En la palma y en las manchas secas del vidrio, que están en el mismo plano. El pasillo rojo del otro lado queda muy desenfocado; el marco metálico de la ventanita, apenas blando."
+    luz:
+      dominante: "Rojo de emergencia #B3001B de los dos lados de la puerta; lámparas ámbar apagadas (hc01)."
+      fuentes:
+        - { fuente: "Tubo fluorescente del techo, justo sobre la puerta (adentro)", posicion: "Arriba del cuadro, fuera de campo, casi vertical sobre el vidrio", color: "Blanco frío #E8F1F2, unos 6500 K", intensidad: "Media, dura; encendido fijo, sin parpadeo. Cae sobre la palma a través del vidrio y deja un brillo frío en la piel mojada y en el borde superior del marco" }
+        - { fuente: "Luces rojas de emergencia del pasillo del otro lado", posicion: "Detrás del vidrio, al fondo del pasillo vacío", color: "Rojo #B3001B", intensidad: "Baja; contraluz que recorta los dedos y llena el fondo de rojo desenfocado" }
+        - { fuente: "Luces rojas bajas del último vagón, a ras del piso", posicion: "Abajo, fuera de campo, en la base de los asientos a ambos lados de la puerta", color: "Rojo #B3001B", intensidad: "Muy baja; solo tiñe de rojo la chapa de la puerta alrededor del vidrio" }
+      contraste: "8:1, un punto subexpuesto. La palma es lo más claro del cuadro; las manchas se leen negras bajo el rojo."
+    zona_segura_9x16: "La ventanita ocupa el ancho central con su marco metálico a los lados; su borde superior queda cerca de y≈250 y el inferior sale por abajo del cuadro. La palma va en la mitad inferior izquierda del vidrio visible (centro hacia x≈430, y≈1050); la muñeca y el comienzo del puño gris empapado deben quedar por encima de y≈1470, y el resto de la manga sigue hacia la zona de la interfaz. La mitad superior del vidrio (y≈250–900) queda libre, con el pasillo rojo vacío: ahí aparece la cara de Diego cuando el plano se reutiliza a las 0:45. Sin texto en pantalla."
 
     # --- Continuista ---
     continuidad:
@@ -232,6 +326,17 @@ planos:
         - "Continuista: como este plano es el de las 0:45, el vidrio ya tiene las manchas del infectado de las 0:26 (hc23). Si se genera limpio, al reutilizarlo contradice la escena 2. La huella que deja la palma tiene que seguir en el vidrio en todos los planos de la ventanita hasta el final del capítulo."
         - "Continuista: vista desde adentro, una mano derecha apoyada con la palma en el vidrio tiene el pulgar hacia la derecha del cuadro (hc21). Los modelos suelen dibujar el dorso o invertir la mano: Control de calidad lo tiene que revisar."
         - "Continuista: esto es una excepción a la regla de sangre seca, porque el guion dice «manga empapada». En la manga y en la palma de Diego la sangre está húmeda, pero sigue casi negra (#1A0505) y bajo luz roja se lee negra. En el prompt va «dark red-black stains», nunca «blood»."
+        - "Asistente de dirección: falta la referencia de la mano de Diego desde afuera y bajo luz roja. La hoja de Diego está seca, con luz neutra y las mangas limpias, así que el keyframe tiene que inventar la palma mojada, las manchas (hc20) y el puño empapado (hc19). Propongo aprobar primero una hoja de detalle de la mano derecha y el puño; si no, Control de calidad revisa la mano en las 3 tomas."
+        - "Asistente de dirección: en la placa loc_ultimo_vagon_rojo el vidrio de la ventanita está limpio y negro. El keyframe tiene que agregar las manchas secas arriba a la derecha (hc23) y el pasillo rojo vacío del otro lado (hc24)."
+        - "Asistente de dirección: este plano lleva dos keyframes: el principal (salida, palma apoyada) y una variante de entrada que sale de editar el principal ya aprobado (mano separada del vidrio, sin huella). Van como último y primer fotograma de c01_b01."
+
+    # --- Asistente de dirección ---
+    bloque: c01_b01
+    referencias: [diego, loc_ultimo_vagon_rojo]
+    motor_keyframe: gpt_image_2_5_edit
+    motor_video: h3_max
+    metodo_video: FL
+    tomas_objetivo: 3
 
   - id: c01_p02
     escena: cold_open
@@ -248,8 +353,26 @@ planos:
       dialogo: ["MARTINA (casi sin voz): «Diego…»"]
       sfx: ["un tercer golpe en el vidrio, fuera de campo", "en el último instante, silencio seco y entrada anticipada de la lluvia y el traqueteo de la escena 1"]
     personajes: [martina]
-    locacion: loc_ultimo_vagon
+    locacion: loc_ultimo_vagon_rojo
     corte: "Se corta sobre el nombre, sin respuesta, con un corte seco a la escena 1 (c01_p03): el salto de veinte minutos hacia atrás lo hace el corte, sin texto. Sonido: al cortar cae el silencio y la lluvia y el traqueteo entran antes que la imagen. Decisión: c01_p01 y c01_p02 son los mismos planos de la escena 4. Se generan una sola vez y se vuelven a usar a las 0:45, justo antes de que aparezca la cara de Diego, para que el público reconozca el momento del inicio."
+
+    # --- Director de fotografía ---
+    camara:
+      altura: "A la altura de los ojos de Martina de pie, a nivel."
+      posicion: "A su izquierda y un poco por delante de ella, hacia la puerta, a 1,2 m, pegada a su línea de mirada: ella mira hacia la izquierda del cuadro, casi rozando el lente."
+      movimiento: "Cámara en mano casi fija: \"handheld, subtle breathing, no reframing\"."
+    lente:
+      focal_mm: 85
+      apertura: T1.8
+      foco: "En el ojo izquierdo de Martina (el más cercano a cámara). Oreja, cola de pelo y fondo fuera de foco; el último vagón se reduce a manchas rojas de las luces bajas, sin figuras reconocibles."
+    luz:
+      dominante: "Rojo de emergencia #B3001B; lámparas ámbar apagadas (hc01). Mismas fuentes y dirección que c01_p01."
+      fuentes:
+        - { fuente: "Luces rojas bajas de emergencia, a ras del piso en la base de los asientos", posicion: "Abajo, a ambos lados de ella, fuera de campo", color: "Rojo #B3001B", intensidad: "Media; rebotada en el piso, sube a la cara desde abajo y la llena de rojo, sobre todo del lado derecho de ella" }
+        - { fuente: "Tubo fluorescente del techo sobre la puerta", posicion: "Delante de ella y arriba, a unos 3 m, fuera de campo hacia la izquierda del cuadro", color: "Blanco frío #E8F1F2, unos 6500 K", intensidad: "Baja, encendido fijo sin parpadeo; deja un brillo frío en el sudor de la frente, un reflejo en los ojos y un filo en los mechones sueltos" }
+        - { fuente: "Luces rojas bajas del fondo del vagón", posicion: "Detrás de ella, hacia la cola", color: "Rojo #B3001B", intensidad: "Baja; solo bokeh en el fondo" }
+      contraste: "8:1, un punto subexpuesto, igual que c01_p01. El lado de la cara que da a la cola cae casi a negro."
+    zona_segura_9x16: "Cara en el tercio medio, un poco a la derecha del centro para dejar aire hacia la izquierda, adonde mira. Ojos cerca de y≈700; el cuello del suéter termina antes de y≈1470 para que el subtítulo «Diego…» caiga sobre fondo oscuro. Arriba (0–220 px) solo pelo y fondo rojo desenfocado. Sin tarjeta."
 
     # --- Continuista ---
     continuidad:
@@ -273,6 +396,15 @@ planos:
         - "Continuista: el fondo de este primer plano es el último vagón hacia la cola, donde está Hugo desde las 0:37. Tiene que quedar sin personas reconocibles: solo formas rojas desenfocadas. Si se ve alguna figura, tiene que calzar con dónde está cada personaje a las 0:45."
         - "Continuista: revisé la información. Martina dice «Diego…» viendo solo la palma. Tiene con qué deducirlo: recibió «Estoy en el tren.» y «¿Dónde estás?», los golpes son de persona y reconoce la manga de la chaqueta (hc20). Si la manga no entra en c01_p01, la reacción se apoya solo en los mensajes."
         - "Continuista: cuando este plano se reutilice a las 0:45, el sonido tiene que ser el de la escena 4, no el de este corte: sin el silencio seco ni la entrada anticipada de la lluvia y el traqueteo de la escena 1. Se reutiliza la imagen; el sonido del cold open y el de las 0:45 se mezclan por separado."
+        - "Asistente de dirección: la hoja de Martina tiene la cola baja ordenada. Los mechones sueltos y el sudor (hc10) salen solo del prompt; el keyframe aprobado de c01_p01 entra como referencia para que la luz roja y el tubo frío sean los mismos."
+
+    # --- Asistente de dirección ---
+    bloque: c01_b02
+    referencias: [martina, loc_ultimo_vagon_rojo, c01_p01]
+    motor_keyframe: nano_banana_pro_edit
+    motor_video: h3_max
+    metodo_video: FF
+    tomas_objetivo: 3
 
   # ============================ ESCENA 1 ============================
   - id: c01_p03
@@ -291,8 +423,26 @@ planos:
       sfx: ["lluvia en la ventana", "traqueteo del tren"]
     texto_pantalla: "TOMÁS, 31 · Todavía creo en nosotros."
     personajes: [martina, tomas]
-    locacion: loc_vagon_pasajeros
+    locacion: loc_vagon_pasajeros_ambar
     corte: "Se corta cuando la tarjeta ya se leyó y él sigue esperando, para ver la respuesta en la cara de ella (c01_p04)."
+
+    # --- Director de fotografía ---
+    camara:
+      altura: "A la altura del pecho de ellos sentados (unos 1,1 m), a nivel."
+      posicion: "Sobre el respaldo de la fila de adelante, mirando hacia la cola, corrida hacia el pasillo para que Tomás quede más cerca de cámara y más grande en el cuadro."
+      movimiento: "Empuje lento hacia Tomás: \"slow push-in\", sin paneo."
+    lente:
+      focal_mm: 32
+      apertura: T2
+      foco: "En el ojo derecho de Tomás (el más cercano a cámara). Martina queda apenas blanda; la lluvia de la ventana, desenfocada. El borde del respaldo de adelante entra desenfocado por abajo."
+    luz:
+      dominante: "Ámbar tibio de las lámparas de lectura con acento azul de la noche en la ventana (hc02). Sin rojo."
+      fuentes:
+        - { fuente: "Lámpara de lectura sobre la ventana de su fila, bajo el portaequipajes", posicion: "Arriba a la derecha del cuadro, del lado de la ventana", color: "Ámbar, unos 2700 K", intensidad: "Media; cono hacia abajo. Tomás, girado hacia ella, la recibe de frente y queda tibio" }
+        - { fuente: "Ventana con lluvia", posicion: "Derecha del cuadro, junto a Martina", color: "Azul noche, cercano a #0E2A33", intensidad: "Baja; relleno frío en la cara de Martina, que mira el vidrio, y gotas con brillo" }
+        - { fuente: "Hilera de lámparas de lectura del resto del vagón", posicion: "Fondo, en fuga hacia la cola", color: "Ámbar, unos 2700 K", intensidad: "Baja; puntos de bokeh que dan profundidad" }
+      contraste: "4:1. Tomás más tibio y más iluminado; Martina más fría y en penumbra: la distancia entre los dos también está en la luz."
+    zona_segura_9x16: "Las dos cabezas en el tercio medio, a la altura de y≈650–850: Tomás a la izquierda, Martina y la ventana a la derecha, con el apoyabrazos libre al centro. La tarjeta «TOMÁS, 31 · Todavía creo en nosotros.» va en la franja superior (y≈240–520), alineada a la izquierda sobre Tomás, contra el portaequipajes oscuro. El respaldo desenfocado de adelante ocupa la zona inferior para que el subtítulo tenga fondo oscuro. El empuje termina antes de que la cabeza de Tomás llegue a la franja de la tarjeta."
 
     # --- Continuista ---
     continuidad:
@@ -312,6 +462,17 @@ planos:
         - "Director: la escena 1 dura ahora 14 s (0:02–0:16) y el segundo extra va a este plano (3 s): la pregunta de Tomás se dice primero y su tarjeta entra al final, así que comparte pantalla con el subtítulo menos de un segundo. En c01_p04, la tarjeta de Martina coincide con un subtítulo de una sola palabra («Sí.»); lo considero legible. Respecto del guion, los tiempos internos siguen corridos: el mensaje de «D» cae a las 0:07 (el guion dice 0:08) y el resto del vagón empieza a las 0:09 (el guion dice 0:11). Si Cristian quiere que tarjeta y diálogo no se crucen nunca, sigue en pie la propuesta de pasar la tarjeta de Carmen al plano en que despierta con el primer grito (0:16–0:19)."
         - "Continuista: el celular tiene que estar ya en este plano, apagado sobre el muslo izquierdo de Martina (hc26). Si no aparece aquí, en c01_p05 salta al cuadro sin razón."
         - "Continuista: la elipsis de unos veinte minutos ya no tiene texto. El salto hacia atrás ocurre en el corte de c01_p02 a este plano, y solo se entiende si entre el cold open y la escena 1 cambian a la vista estos hechos. (1) La luz: del rojo de emergencia sin ámbar (hc01) al ámbar de las lámparas de lectura con el azul de la ventana (hc02); es la señal más fuerte. (2) La posición: Martina pasa de estar de pie y sola en el último vagón (hc35) a estar sentada junto a Tomás en el vagón de pasajeros (hc05). (3) El pelo: de mechones sueltos y brillo de sudor a cola baja ordenada (hc10). En cambio, la ropa de Martina tiene que ser idéntica (hc09): eso dice que es la misma noche y la misma persona, y no otro día. La hora del celular (hc27) no se ve en el cold open, así que confirma el salto después: 23:38 en c01_p05 y 23:57 a las 0:40; las dos horas tienen que leerse."
+        - "Director de fotografía: la placa provisoria loc_vagon_pasajeros_ambar muestra puntos de luz cálidos y fijos detrás de la lluvia. En esc01 la ventana tiene que leerse azul de noche (hc02); si hay luces de afuera, que sean pocas, lejanas y pasando, sin competir con el ámbar de las lámparas. Conviene corregirlo en la placa definitiva."
+        - "Director de fotografía: c01_p03–c01_p08 comparten locación, eje y luz (lámparas de lectura sobre cada ventana, ventana azul con lluvia) y pueden ir en el mismo bloque de generación. Regla de luz de toda la escena: cada pasajero recibe la lámpara desde arriba y del lado de su ventana."
+        - "Asistente de dirección: este keyframe es el ancla de la escena 1 y se genera y aprueba primero. Una vez aprobado entra como referencia en los keyframes de c01_p04 a c01_p09, para que los asientos, las lámparas, la ventana y el color sean los mismos en toda la escena."
+
+    # --- Asistente de dirección ---
+    bloque: c01_b03
+    referencias: [martina, tomas, celular_martina, loc_vagon_pasajeros_ambar]
+    motor_keyframe: gpt_image_2_5_edit
+    motor_video: h3_max
+    metodo_video: REF
+    tomas_objetivo: 3
 
   - id: c01_p04
     escena: esc01
@@ -329,8 +490,25 @@ planos:
       sfx: ["lluvia en la ventana"]
     texto_pantalla: "MARTINA, 29 · Vine a salvar mi relación."
     personajes: [martina]
-    locacion: loc_vagon_pasajeros
+    locacion: loc_vagon_pasajeros_ambar
     corte: "Se corta cuando traga saliva, a la pantalla del celular que se ilumina sobre su pierna (c01_p05)."
+
+    # --- Director de fotografía ---
+    camara:
+      altura: "A la altura de los ojos de Martina sentada (unos 1,15 m), a nivel."
+      posicion: "Desde la fila de adelante, del lado del pasillo (donde está Tomás), a 1 m: se ve su perfil de tres cuartos mirando la ventana."
+      movimiento: "Cámara en mano casi fija: \"handheld, subtle breathing, no reframing\"."
+    lente:
+      focal_mm: 75
+      apertura: T1.8
+      foco: "En el ojo derecho de Martina (el más cercano a cámara). La ventana con lluvia a la derecha queda en bokeh; Tomás no entra."
+    luz:
+      dominante: "Ámbar de lámpara de lectura con azul de la ventana en la cara (hc02). Mismas fuentes y dirección que c01_p03."
+      fuentes:
+        - { fuente: "Lámpara de lectura sobre su ventana", posicion: "Arriba a la derecha del cuadro, casi sobre ella", color: "Ámbar, unos 2700 K", intensidad: "Media; luz de arriba que marca frente, pómulo y el pelo recogido" }
+        - { fuente: "Ventana con lluvia", posicion: "Derecha del cuadro, delante de su cara", color: "Azul noche, cercano a #0E2A33", intensidad: "Baja; relleno frío de frente y sombras de gotas que se mueven sobre la mejilla" }
+      contraste: "4:1. La mejilla que da a cámara cae a penumbra tibia; la mandíbula se lee cuando la aprieta."
+    zona_segura_9x16: "Cara en el tercio medio, un poco a la derecha del centro, con los ojos cerca de y≈720 y aire hacia la ventana. La tarjeta «MARTINA, 29 · Vine a salvar mi relación.» va en la franja superior (y≈240–520), alineada a la izquierda, sobre el fondo oscuro del lado del pasillo, sin tapar los ojos. Abajo quedan el cuello del suéter y penumbra para el subtítulo «Sí.»."
 
     # --- Continuista ---
     continuidad:
@@ -341,6 +519,14 @@ planos:
         - "Martina tragó saliva y aprieta la mandíbula; sigue mirando la ventana y no miró a Tomás."
       eje: "Mismo lado que c01_p03: Martina mira hacia la derecha del cuadro, a la ventana. Tomás queda fuera de cuadro, a la izquierda."
       hechos: [hc02, hc03, hc05, hc09, hc10, hc18]
+
+    # --- Asistente de dirección ---
+    bloque: c01_b03
+    referencias: [martina, loc_vagon_pasajeros_ambar, c01_p03]
+    motor_keyframe: gpt_image_2_5_edit
+    motor_video: h3_max
+    metodo_video: REF
+    tomas_objetivo: 3
 
   - id: c01_p05
     escena: esc01
@@ -358,8 +544,25 @@ planos:
       sfx: ["vibración corta del celular, apagada por la ropa"]
       musica: "Una nota grave y sostenida entra con la vibración."
     personajes: [martina]
-    locacion: loc_vagon_pasajeros
+    locacion: loc_vagon_pasajeros_ambar
     corte: "Se corta cuando entra la mano, para ver si Tomás se dio cuenta (c01_p06)."
+
+    # --- Director de fotografía ---
+    camara:
+      altura: "Picado fuerte, casi cenital, a unos 50 cm sobre el muslo."
+      posicion: "Sobre el regazo de Martina, con la ventana hacia la derecha del cuadro: la mano izquierda entra por la derecha, desde el lado de la ventana."
+      movimiento: "Fija: \"locked-off, static camera\"."
+    lente:
+      focal_mm: 50
+      apertura: T2.8
+      foco: "En el texto de la notificación. La tela del pantalón se desenfoca hacia los bordes; la mano que entra llega blanda."
+    luz:
+      dominante: "Ámbar de lámpara de lectura sobre la tela (hc02); al encenderse, la pantalla suma una luz fría propia."
+      fuentes:
+        - { fuente: "Lámpara de lectura sobre su ventana", posicion: "Arriba a la derecha del cuadro, detrás de cámara", color: "Ámbar, unos 2700 K", intensidad: "Media; pinta la tela negra y la funda terracota. El reflejo de la lámpara cae fuera de la pantalla para no tapar el texto" }
+        - { fuente: "Pantalla del celular al encenderse", posicion: "En el centro del cuadro, sobre el muslo", color: "Blanco frío, unos 6500 K", intensidad: "Baja a media, sin quemar: el texto «Estoy en el tren.» y la hora 23:38 se leen; derrama un halo frío corto sobre la tela" }
+      contraste: "4:1 antes de encenderse; la pantalla pasa a ser lo más claro del cuadro, sin quemar."
+    zona_segura_9x16: "Celular vertical en el centro, con la pantalla entre y≈560 y y≈1400; la notificación, en letra grande, va en el centro (y≈800–1100). Nada importante por encima de y≈220 ni por debajo de y≈1470. La mano entra por el borde derecho a media altura. Sin tarjeta."
 
     # --- Continuista ---
     continuidad:
@@ -373,6 +576,15 @@ planos:
       alertas:
         - "Director: el mensaje tiene que ocupar el centro de la pantalla con letra grande para leerse en 1 s. La interfaz del celular es genérica y sin marca; si el modelo no deja el texto legible, se reemplaza en After Effects."
         - "Continuista: la hora de la pantalla también es continuidad. Aquí marca 23:38 y en el inserto de las 0:40 tiene que marcar 23:57 (hc27). Si la pantalla se reemplaza en After Effects, se reemplaza con esa hora."
+        - "Asistente de dirección: este plano lleva dos keyframes: el principal (salida, pantalla encendida y mano entrando) y una variante de entrada que sale de editar el principal ya aprobado (pantalla apagada, sin mano). GPT Image 2.5 se elige también porque escribe mejor el texto de la pantalla."
+
+    # --- Asistente de dirección ---
+    bloque: c01_b04
+    referencias: [martina, celular_martina, c01_p03]
+    motor_keyframe: gpt_image_2_5_edit
+    motor_video: h3_max
+    metodo_video: FL
+    tomas_objetivo: 3
 
   - id: c01_p06
     escena: esc01
@@ -390,8 +602,26 @@ planos:
       sfx: ["roce de la pantalla contra la tela"]
       musica: "Sigue la nota grave."
     personajes: [martina, tomas]
-    locacion: loc_vagon_pasajeros
+    locacion: loc_vagon_pasajeros_ambar
     corte: "La mirada de Tomás hacia el pasillo lleva al resto del vagón (c01_p07)."
+
+    # --- Director de fotografía ---
+    camara:
+      altura: "Un poco más alta que en c01_p03 (unos 1,3 m), con leve picado para que entren las caras y el regazo."
+      posicion: "La misma de c01_p03, sobre el respaldo de la fila de adelante y corrida hacia el pasillo, un paso más atrás."
+      movimiento: "Fija: \"locked-off, static camera\"."
+    lente:
+      focal_mm: 32
+      apertura: T2.8
+      foco: "En la mano izquierda de Martina y el celular. Tomás queda levemente blando pero se lee que mira el pasillo."
+    luz:
+      dominante: "Ámbar de lámpara de lectura con azul de la ventana (hc02). Mismas fuentes y dirección que c01_p03."
+      fuentes:
+        - { fuente: "Lámpara de lectura sobre su ventana", posicion: "Arriba a la derecha del cuadro", color: "Ámbar, unos 2700 K", intensidad: "Media; baña el regazo y las manos" }
+        - { fuente: "Ventana con lluvia", posicion: "Derecha del cuadro", color: "Azul noche, cercano a #0E2A33", intensidad: "Baja; relleno frío en Martina" }
+        - { fuente: "Pantalla del celular", posicion: "Sobre el muslo izquierdo de Martina", color: "Blanco frío, unos 6500 K", intensidad: "Baja; ilumina desde abajo los dedos de ella y se apaga al quedar la pantalla contra el pantalón: el gesto de esconderlo también se ve en la luz" }
+      contraste: "4:1, igual que c01_p03."
+    zona_segura_9x16: "Caras en la parte alta del tercio medio (y≈560–760): Tomás a la izquierda, mirando hacia la izquierda del cuadro; Martina a la derecha. La mano y el celular, en la parte baja del tercio medio (y≈1150–1400), por encima de y≈1470. Sin tarjeta."
 
     # --- Continuista ---
     continuidad:
@@ -405,6 +635,14 @@ planos:
       hechos: [hc02, hc03, hc05, hc09, hc10, hc12, hc18, hc25, hc26, hc32]
       alertas:
         - "Director: el guion solo dice «Tomás no lo vio». Decido que mira el pasillo para que se lea en el mismo plano; esa dirección de mirada tiene que mantenerse para que funcione el corte al resto del vagón."
+
+    # --- Asistente de dirección ---
+    bloque: c01_b03
+    referencias: [martina, tomas, celular_martina, loc_vagon_pasajeros_ambar, c01_p03]
+    motor_keyframe: gpt_image_2_5_edit
+    motor_video: h3_max
+    metodo_video: REF
+    tomas_objetivo: 3
 
   - id: c01_p07
     escena: esc01
@@ -421,8 +659,26 @@ planos:
       sfx: ["traqueteo", "lluvia"]
     texto_pantalla: "CARMEN, 54 · Enfermera. Treinta años de turnos de noche."
     personajes: [carmen]
-    locacion: loc_vagon_pasajeros
+    locacion: loc_vagon_pasajeros_ambar
     corte: "Se corta a quien sí está despierto y vigilando (c01_p08)."
+
+    # --- Director de fotografía ---
+    camara:
+      altura: "A la altura del hombro de Carmen sentada (unos 1,1 m), a nivel."
+      posicion: "En el pasillo, delante de su fila, mirando hacia la cola, un poco en diagonal para ver la cara apoyada en la ventana."
+      movimiento: "Fija, con la vibración leve del tren: \"locked-off, slight train vibration\"."
+    lente:
+      focal_mm: 35
+      apertura: T2
+      foco: "En la cara de Carmen (ojo cerrado más cercano). El escote en V verde agua y las manos sobre el bolso quedan casi nítidos; la lluvia del vidrio y el fondo, desenfocados."
+    luz:
+      dominante: "Ámbar de lámpara de lectura con azul de la ventana (hc02). La misma regla de toda la escena: cada pasajero recibe la lámpara de arriba, del lado de su ventana."
+      fuentes:
+        - { fuente: "Lámpara de lectura sobre su ventana", posicion: "Arriba a la izquierda del cuadro (su ventana está del lado derecho del tren)", color: "Ámbar, unos 2700 K", intensidad: "Media baja; cae sobre la cabeza, el cuello de la casaca y las manos" }
+        - { fuente: "Ventana con lluvia", posicion: "Izquierda del cuadro, detrás de su cabeza", color: "Azul noche, cercano a #0E2A33", intensidad: "Baja; recorta el perfil contra el vidrio" }
+        - { fuente: "Hilera de lámparas de lectura del resto del vagón", posicion: "Fondo, en fuga hacia la cola", color: "Ámbar, unos 2700 K", intensidad: "Baja; bokeh" }
+      contraste: "4:1."
+    zona_segura_9x16: "Cabeza en el tercio medio, a la izquierda del centro (y≈650–800); el escote en V y las manos sobre el bolso, más abajo, por encima de y≈1470. La tarjeta «CARMEN, 54 · Enfermera. Treinta años de turnos de noche.» va en la franja superior (y≈240–520), alineada a la derecha, sobre el portaequipajes oscuro del lado del pasillo. Sin diálogo: la zona inferior queda libre para la interfaz."
 
     # --- Continuista ---
     continuidad:
@@ -436,6 +692,14 @@ planos:
       hechos: [hc02, hc03, hc04, hc06, hc13, hc14, hc18]
       alertas:
         - "Director: el guion no dice cuánto se ve del uniforme. Tiene que asomar el cuello o el pecho del uniforme para leerse sin depender de la tarjeta."
+
+    # --- Asistente de dirección ---
+    bloque: c01_b03
+    referencias: [carmen, loc_vagon_pasajeros_ambar, c01_p03]
+    motor_keyframe: gpt_image_2_5_edit
+    motor_video: h3_max
+    metodo_video: REF
+    tomas_objetivo: 3
 
   - id: c01_p08
     escena: esc01
@@ -452,8 +716,26 @@ planos:
       sfx: ["traqueteo"]
     texto_pantalla: "IVÁN, 45 · No confío en nadie. Por eso sigo vivo."
     personajes: [ivan]
-    locacion: loc_vagon_pasajeros
+    locacion: loc_vagon_pasajeros_ambar
     corte: "Su mirada termina en el pasillo, por donde viene el revisor (c01_p09)."
+
+    # --- Director de fotografía ---
+    camara:
+      altura: "Un poco por debajo de sus ojos sentado (unos 1 m), con leve contrapicado."
+      posicion: "En el pasillo, dos filas delante de él, mirando hacia la cola. Detrás de él, a la derecha del cuadro, se ve la puerta al último vagón con su ventanita."
+      movimiento: "Fija: \"locked-off, static camera\". Solo se mueven sus ojos."
+    lente:
+      focal_mm: 50
+      apertura: T2
+      foco: "En sus ojos. La puerta del fondo queda blanda, pero la forma de la ventanita se reconoce."
+    luz:
+      dominante: "Ámbar de lámpara de lectura (hc02). Mismas fuentes que c01_p03–c01_p07."
+      fuentes:
+        - { fuente: "Lámpara de lectura sobre la ventana de su fila", posicion: "Arriba a la izquierda del cuadro; él está en el asiento de pasillo, lejos de la lámpara", color: "Ámbar, unos 2700 K", intensidad: "Media baja; le ilumina el lado de la cara que da a la ventana y deja el otro en sombra" }
+        - { fuente: "Ventanita de la puerta del último vagón", posicion: "Detrás de él, a la derecha del cuadro, sobre su cabeza", color: "Ámbar tenue, unos 2700 K (el último vagón también tiene luz de viaje)", intensidad: "Baja; brillo de fondo que separa su silueta" }
+        - { fuente: "Ventana con lluvia", posicion: "Izquierda del cuadro", color: "Azul noche, cercano a #0E2A33", intensidad: "Muy baja" }
+      contraste: "5:1: más duro que el resto de la escena porque está lejos de su lámpara; medio rostro en sombra."
+    zona_segura_9x16: "Cabeza en el tercio medio, un poco a la izquierda del centro (ojos en y≈760); los brazos cruzados, por encima de y≈1470. La ventanita, arriba a la derecha y detrás de él (y≈450–750). La tarjeta «IVÁN, 45 · No confío en nadie. Por eso sigo vivo.» va en la franja superior izquierda (y≈240–520), sobre el portaequipajes, para no tapar la ventanita."
 
     # --- Continuista ---
     continuidad:
@@ -467,6 +749,16 @@ planos:
       alertas:
         - "Director: el guion dice que Iván «mira a todos», pero no aclara si ve el celular de Martina o el revólver de Hugo. Hago que no se detenga en nadie, para no darle un conocimiento que el guion no le da (reglas del mundo, sección B). Si se quiere que haya visto algo, es una decisión de historia."
         - "Continuista: si detrás de Iván se ve la puerta al último vagón, es la misma puerta del cold open vista desde el otro lado. Tiene que tener la misma forma de ventanita (hc22) y el vidrio limpio (hc23), sin las manchas ni la huella que aparecen después."
+        - "Director de fotografía: las placas provisorias no cumplen hc22. En loc_vagon_pasajeros_ambar la ventanita de la puerta del fondo es chica y de esquinas redondeadas; en loc_ultimo_vagon_rojo es un rectángulo vertical alto con marco metálico. Si este plano se genera con la placa ámbar como referencia, la puerta detrás de Iván va a salir distinta de la del cold open. Hay que unificar la puerta en las placas antes de generar."
+        - "Asistente de dirección: mientras no se unifique la puerta en las placas, este keyframe recibe también loc_ultimo_vagon_rojo, solo como referencia de la forma de la puerta y la ventanita (hc22). El prompt tiene que aclarar que de esa imagen se toma la forma y no la luz roja: aquí la ventanita se ve limpia y con luz ámbar."
+
+    # --- Asistente de dirección ---
+    bloque: c01_b03
+    referencias: [ivan, loc_vagon_pasajeros_ambar, loc_ultimo_vagon_rojo, c01_p03]
+    motor_keyframe: gpt_image_2_5_edit
+    motor_video: h3_max
+    metodo_video: REF
+    tomas_objetivo: 3
 
   - id: c01_p09
     escena: esc01
@@ -483,8 +775,27 @@ planos:
       sfx: ["crujido de rodilla y de la tela al agacharse", "papel del boleto"]
     texto_pantalla: "DON HUGO, 62 · Revisor. Este es mi tren."
     personajes: [don_hugo]
-    locacion: loc_vagon_pasajeros
+    locacion: loc_vagon_pasajeros_ambar
     corte: "Se corta en el instante en que la chaqueta se abre, al detalle del cinturón (c01_p10)."
+
+    # --- Director de fotografía ---
+    camara:
+      altura: "A la altura de los ojos de Iván sentado (unos 1,15 m): leve contrapicado sobre Hugo de pie."
+      posicion: "En la cola del vagón, junto al asiento de Iván, mirando hacia el frente por el pasillo. El hombro y la cabeza del pasajero dormido entran por la izquierda como primer término oscuro."
+      movimiento: "Cámara en mano casi fija: \"handheld, subtle breathing, no tilt, no reframing\". Hugo baja dentro del cuadro; la cámara no lo sigue."
+    lente:
+      focal_mm: 35
+      apertura: T2.8
+      foco: "En Hugo, en el plano del pecho y la cara. El pasajero de primer término queda desenfocado; el pasillo del fondo se abre en fuga con las lámparas en bokeh."
+    luz:
+      dominante: "Ámbar de lámpara de lectura (hc02). Mismas fuentes que el resto de la escena, vistas desde el contracampo."
+      fuentes:
+        - { fuente: "Lámpara de lectura sobre la ventana de la fila del pasajero dormido", posicion: "Arriba a la izquierda del cuadro (lado izquierdo del tren)", color: "Ámbar, unos 2700 K", intensidad: "Media; al agacharse, Hugo entra en el cono: le entra luz bajo la visera y brillan los botones metálicos del lado derecho de la chaqueta" }
+        - { fuente: "Lámpara de lectura de la fila de enfrente", posicion: "Arriba a la derecha del cuadro", color: "Ámbar, unos 2700 K", intensidad: "Baja; relleno en su hombro izquierdo" }
+        - { fuente: "Hilera de lámparas de lectura del resto del vagón", posicion: "Fondo, en fuga hacia el frente", color: "Ámbar, unos 2700 K", intensidad: "Baja; bokeh" }
+        - { fuente: "Ventanas con lluvia", posicion: "A los dos lados del fondo", color: "Azul noche, cercano a #0E2A33", intensidad: "Muy baja" }
+      contraste: "4:1, igual que c01_p03–c01_p07. De pie, la visera le deja los ojos en sombra."
+    zona_segura_9x16: "Hugo en el centro: la cabeza empieza cerca de y≈650 y baja a y≈850 al agacharse; la cadera derecha y el borde de la chaqueta quedan a la izquierda del centro, cerca de y≈1150–1350, por encima de y≈1470. La tarjeta «DON HUGO, 62 · Revisor. Este es mi tren.» va en la franja superior derecha (y≈240–520), sobre el portaequipajes, lejos de la gorra."
 
     # --- Continuista ---
     continuidad:
@@ -500,6 +811,17 @@ planos:
       alertas:
         - "Continuista: es el único plano de esc01 que mira hacia el frente del tren, así que la ventana con lluvia cambia de lado respecto de c01_p03–c01_p08. Se justifica porque sigue la mirada de Iván. Si el Director de fotografía prefiere no invertir la cámara, el pasajero no puede quedar de espaldas a cámara, y eso lo decide el Director."
         - "Continuista: la llave cuelga del lado izquierdo del cinturón y en este plano no se ve (hc30). Si el modelo agrega un llavero a la vista, hay que corregirlo."
+        - "Director de fotografía: acepto el contracampo. La luz no cambia de lógica (lámparas sobre las ventanas de los dos lados, fuga de lámparas en el fondo), así que el corte se sostiene. Como invierte el eje, c01_p09–c01_p10 conviene generarlos en un bloque aparte del de c01_p03–c01_p08, con la misma descripción de fuentes."
+        - "Asistente de dirección: bloqueado por assets. El asset boletos está pendiente (hc31) y el pasajero dormido (extra, hombre mayor, de espaldas) no tiene referencia. Para esta prueba, los dos pueden salir solo del prompt si Cristian lo acepta; si no, hay que aprobar antes una hoja del extra y el prop del boleto."
+        - "Asistente de dirección: en la hoja de Hugo la chaqueta es larga y está cerrada, y no se ven el cinturón ni la funda. El keyframe tiene que mantener la chaqueta cerrada (hc30, hc33); el cinturón aparece recién en c01_p10."
+
+    # --- Asistente de dirección ---
+    bloque: c01_b05
+    referencias: [don_hugo, boletos, loc_vagon_pasajeros_ambar, c01_p03]
+    motor_keyframe: gpt_image_2_5_edit
+    motor_video: h3_max
+    metodo_video: FF
+    tomas_objetivo: 3
 
   - id: c01_p10
     escena: esc01
@@ -517,8 +839,25 @@ planos:
       sfx: ["roce de la tela de la chaqueta"]
       musica: "La nota grave sube medio tono y se corta con el plano."
     personajes: [don_hugo]
-    locacion: loc_vagon_pasajeros
+    locacion: loc_vagon_pasajeros_ambar
     corte: "Fin de la escena 1. Se corta en seco al primer grito lejano del brote (0:16, fuera de esta prueba)."
+
+    # --- Director de fotografía ---
+    camara:
+      altura: "A la altura de la cadera de Hugo agachado (unos 0,9 m), a nivel."
+      posicion: "Desde el mismo lado que c01_p09, más cerca, frente a su cadera derecha, que queda a la izquierda del cuadro."
+      movimiento: "Fija: \"locked-off, static camera\". Solo se abre la chaqueta."
+    lente:
+      focal_mm: 65
+      apertura: T2.8
+      foco: "En la culata y el tambor. El cinturón hacia atrás y el borde de la chaqueta se desenfocan suave."
+    luz:
+      dominante: "Ámbar de lámpara de lectura (hc02). Misma fuente principal que c01_p09."
+      fuentes:
+        - { fuente: "Lámpara de lectura sobre la ventana de la fila del pasajero dormido", posicion: "Arriba a la izquierda del cuadro, rasante sobre la cadera", color: "Ámbar, unos 2700 K", intensidad: "Media; entra por la abertura de la chaqueta, calienta la madera de la culata y deja un filo de brillo en el acero pavonado del tambor" }
+        - { fuente: "Lámpara de lectura de la fila de enfrente", posicion: "Arriba a la derecha del cuadro", color: "Ámbar, unos 2700 K", intensidad: "Muy baja; apenas separa el paño gris del fondo" }
+      contraste: "5:1: el interior de la chaqueta cae a sombra y el revólver aparece al entrar en la luz."
+    zona_segura_9x16: "Culata y tambor en el centro del cuadro (y≈800–1200), con la funda café y el cinturón negro cruzando el tercio medio. Nada importante por encima de y≈220 ni por debajo de y≈1470. Sin tarjeta."
 
     # --- Continuista ---
     continuidad:
@@ -534,3 +873,37 @@ planos:
         - "Continuista: propongo el lado derecho y que Hugo sea diestro (hc28). Eso rige para el inserto de las 0:37 y para cuando lo saca con la mano derecha a las 1:10; con la izquierda le da la llave a Martina a las 1:12 (hc30)."
         - "Continuista: el tambor se ve cerrado y no puede verse ninguna bala, ni cartuchera ni balas en el cinturón. Las dos balas se revelan recién a las 0:37 (hc29). Los modelos suelen agregar cartuchos a la vista."
         - "Continuista: en la historia, los veinte minutos pasan en el corte de este plano al primer grito (0:16): la escena 1 termina cerca de las 23:39 y el brote empieza unos minutos antes de las 23:57 (hc27). Cada cambio entre este plano y el cold open ocurre en cuadro o tiene una razón fuera de campo: la luz cambia a rojo en cuadro a las 0:16 (hc01), el pelo de Martina se desordena en la carrera de las 0:23 (hc10) y ella queda sola al separarse del abrazo antes de las 0:45 (hc35). Al empezar la escena 2, las posiciones de la escena 1 pueden haber cambiado: Hugo ya no está agachado junto al pasajero dormido."
+        - "Asistente de dirección: este plano lleva dos keyframes: el principal (salida, revólver a la vista) y una variante de entrada que sale de editar el principal ya aprobado (chaqueta apenas abierta, sin revólver). El keyframe aprobado de c01_p09 entra como referencia para que el paño, los botones y la luz sean los mismos."
+
+    # --- Asistente de dirección ---
+    bloque: c01_b06
+    referencias: [don_hugo, revolver_hugo, c01_p09]
+    motor_keyframe: gpt_image_2_5_edit
+    motor_video: h3_max
+    metodo_video: FL
+    tomas_objetivo: 3
+
+resumen_produccion:
+  # Asistente de dirección. Tarifas: GPT Image 2.5 edit ~0,05 USD por imagen (high), Nano Banana Pro edit 0,15 USD, H3 Max 768P 0,08 USD/s.
+  planos_por_motor:
+    keyframe: { gpt_image_2_5_edit: 9, nano_banana_pro_edit: 1 }
+    video: { h3_max: 10, kling: 0 }
+  keyframes: 36
+  keyframes_desglose: "30 principales (10 planos × 3 tomas) + 6 variantes de entrada para primer y último fotograma (c01_p01, c01_p05 y c01_p10, 2 tomas cada una, editando el keyframe aprobado). Cristian aprueba 13: uno por plano y las 3 variantes."
+  bloques: 6
+  segundos_video: 74
+  segundos_desglose: "37 s por pasada (cinco bloques de 5 s y uno de 12 s) × 2 tomas por bloque, con seed distinto."
+  costo_keyframes_usd: 2.10
+  costo_keyframes_desglose: "GPT Image: 27 principales × 0,05 = 1,35 y 6 variantes × 0,05 = 0,30. Nano Banana Pro: 3 × 0,15 = 0,45."
+  costo_video_usd: 6.04
+  costo_video_desglose: "Por pasada: cinco bloques de 5 s × 0,40 = 2,00 y c01_b03 (12 s) = 0,96 + 0,06 de referencias extra = 1,02. Total por pasada, 3,02; con 2 tomas por bloque, 6,04."
+  costo_total_usd: 8.14
+  orden_generacion: "1) Keyframes: c01_p01 → c01_p02 (con p01 aprobado); c01_p03 (ancla) → c01_p04, c01_p06, c01_p05, c01_p07, c01_p08, c01_p09 (con p03 aprobado) → c01_p10 (con p09 aprobado); al final, las variantes de entrada de p01, p05 y p10. 2) Aprobación de Cristian. 3) Video: c01_b03 primero (es el que más arriesga), luego c01_b01, c01_b02, c01_b04, c01_b05 y c01_b06."
+  bloqueos:
+    - "Todos los assets están en estado provisorio. La regla es que no se genera con assets sin aprobar: esta prueba se autoriza como exploración y ningún keyframe se da por final."
+    - "boletos está pendiente (hc31) y el pasajero dormido de c01_p09 no tiene referencia. Bloquean c01_p09 salvo que Cristian acepte generarlos solo con prompt."
+    - "Falta la mano derecha de Diego mojada, con manchas y el puño empapado, vista desde adentro con luz roja (c01_p01). La hoja de Diego está seca y limpia."
+    - "Las puertas no coinciden entre placas (hc22, alerta del Director de fotografía en c01_p08). Se mitiga con loc_ultimo_vagon_rojo como referencia de forma, pero hay que unificarlas en las placas definitivas."
+    - "Las placas miden 608×1088, menos que un cuadro de 768P. Los keyframes se piden en 9:16 a no menos de 768×1366; si el motor entrega menos, se escalan antes del video."
+    - "No hay variante de Martina después de la carrera (mechones y sudor, hc10) ni placa del vagón de pasajeros con luz roja para el fondo de c01_p01. Por ahora salen del prompt."
+    - "No hay voz de Martina en ElevenLabs para usar target_audio_url en c01_b02. No bloquea: el «Diego…» se genera con el video y se puede reemplazar en post."
