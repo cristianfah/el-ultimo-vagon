@@ -5,7 +5,8 @@ Uso:
   python3 tools/generar_desde_yaml.py keyframe c01_p03 [keyframe|keyframe_entrada]
   python3 tools/generar_desde_yaml.py video c01_b03
 
-Los keyframes aprobados se leen de renders/<cap>/aprobados.json ({"c01_p03": "<url>"}). FAL_KEY viene del entorno.
+Los keyframes aprobados se leen de renders/<cap>/aprobados.json ({"c01_p03": "<url>", "c01_p01_entrada": "<url>"}).
+FAL_KEY viene del entorno.
 """
 import json
 import os
@@ -26,11 +27,10 @@ ENDPOINTS = {
 
 
 def resolver(ref, assets, aprobados):
-    m = re.match(r"Image \d+ = (.+)", ref)
-    nombre = m.group(1).strip()
-    k = re.match(r"keyframe (c\d+_p\d+\w*)", nombre)
+    nombre = re.sub(r"^Image \d+ = ", "", ref).strip()
+    k = re.match(r"keyframe(_entrada)? (c\d+_p\d+)", nombre)
     if k:
-        return aprobados[k.group(1)]
+        return aprobados[k.group(2) + (k.group(1) or "")]
     clave = nombre.split(" ")[0]
     for grupo in assets.values():
         if clave in grupo:

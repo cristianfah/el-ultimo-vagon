@@ -197,7 +197,7 @@ hechos_continuidad:
     hasta: null
 
 bloques:
-  # Asistente de dirección. Prueba a 768P (0,08 USD/s), prompt_expansion_mode: disabled en todos.
+  # Asistente de dirección. Prueba a 480P (0,05 USD/s; bajado desde 768P el 30-sep por pedido de Cristian), prompt_expansion_mode: disabled en todos.
   # En `pila_referencias`, «keyframe c01_pNN» es el keyframe aprobado de ese plano. Costo por bloque = una toma de video.
   - id: c01_b01
     planos: [c01_p01]
@@ -207,13 +207,13 @@ bloques:
     duracion_s: 5
     beats: [{ plano: c01_p01, de: 0.0, a: 2.0 }]
     pila_referencias: ["image_url = keyframe c01_p01, variante de entrada: mano abierta a pocos centímetros del vidrio, todavía sin huella", "end_image_url = keyframe c01_p01: palma derecha apoyada, pulgar a la derecha del cuadro, huella húmeda y manchas secas arriba a la derecha"]
-    costo_estimado_usd: 0.40
+    costo_estimado_usd: 0.25
     nota: "Primer y último fotograma: el último fija la orientación de la mano (hc21) y el vidrio con que se reutiliza el plano a las 0:45; los dos golpes se piden entre 0,3 y 1,5 s y luego la mano queda quieta. Ese último fotograma será el primero del plano de la cara de Diego en la escena 4 (encadenado C)."
     estado: pendiente
     prompt_video:
       motor: h3_max
       endpoint: minimax/h3-max/image-to-video
-      params: { duration: 5, resolution: "768P", prompt_expansion_mode: disabled }
+      params: { duration: 5, resolution: "480P", prompt_expansion_mode: disabled }
       entradas:
         image_url: "keyframe_entrada c01_p01 (aprobado): mano abierta a pocos centímetros del vidrio, sin huella"
         end_image_url: "keyframe c01_p01 (aprobado): palma derecha apoyada, pulgar a la derecha del cuadro"
@@ -227,13 +227,13 @@ bloques:
     duracion_s: 5
     beats: [{ plano: c01_p02, de: 0.0, a: 2.0 }]
     pila_referencias: ["image_url = keyframe c01_p02: Martina de pie bajo luz roja, labios cerrados, mechones sueltos y sudor"]
-    costo_estimado_usd: 0.40
+    costo_estimado_usd: 0.25
     nota: "Solo primer fotograma: es un plano de quietud y la salida es casi igual a la entrada. El «Diego…» se pide en el primer segundo y medio. Keyframe con Nano Banana Pro para responder la prueba pendiente de motores.md: ¿H3 Max mantiene la identidad desde un keyframe de Nano Banana Pro bajo luz roja? target_audio_url queda para cuando exista la voz de Martina en ElevenLabs."
     estado: pendiente
     prompt_video:
       motor: h3_max
       endpoint: minimax/h3-max/image-to-video
-      params: { duration: 5, resolution: "768P", prompt_expansion_mode: disabled }
+      params: { duration: 5, resolution: "480P", prompt_expansion_mode: disabled }
       entradas:
         image_url: "keyframe c01_p02 (aprobado)"
       texto: |
@@ -251,13 +251,13 @@ bloques:
       - { plano: c01_p07, de: 7.0, a: 9.5 }
       - { plano: c01_p08, de: 9.5, a: 12.0 }
     pila_referencias: ["Image 1 = keyframe c01_p03", "Image 2 = keyframe c01_p04", "Image 3 = keyframe c01_p06", "Image 4 = keyframe c01_p07", "Image 5 = keyframe c01_p08", "Image 6 = martina (hoja)", "Image 7 = tomas (hoja)"]
-    costo_estimado_usd: 1.02
+    costo_estimado_usd: 0.66
     nota: "Un keyframe por beat, porque la primera prueba solo con hojas y placa tuvo errores de continuidad: cada beat se ancla a su keyframe y el bloque conserva la identidad entre cortes. Las hojas de Martina y Tomás van porque ellos aparecen en tres beats. Son 7 imágenes en vez de 4: unos 0,06 USD extra de tokens (0,96 + 0,06). c01_p05 sale del bloque: es un inserto de encuadre exacto (c01_b04)."
     estado: pendiente
     prompt_video:
       motor: h3_max
       endpoint: minimax/h3-max/reference-to-video
-      params: { duration: 12, resolution: "768P", prompt_expansion_mode: disabled, aspect_ratio: "9:16" }
+      params: { duration: 12, resolution: "480P", prompt_expansion_mode: disabled, aspect_ratio: "9:16" }
       entradas:
         reference_image_urls:
           - "Image 1 = keyframe c01_p03 (aprobado)"
@@ -283,13 +283,13 @@ bloques:
     duracion_s: 5
     beats: [{ plano: c01_p05, de: 0.0, a: 2.0 }]
     pila_referencias: ["image_url = keyframe c01_p05, variante de entrada: pantalla apagada y sin mano", "end_image_url = keyframe c01_p05: pantalla encendida con 23:38 y «Estoy en el tren.», mano izquierda entrando por la derecha"]
-    costo_estimado_usd: 0.40
+    costo_estimado_usd: 0.25
     nota: "Primer y último fotograma: fijan que la mano sea la izquierda y entre desde la ventana (hc26) y que la pantalla termine legible. Si el texto no sale legible, se reemplaza en After Effects con la hora 23:38 (hc27)."
     estado: pendiente
     prompt_video:
       motor: h3_max
       endpoint: minimax/h3-max/image-to-video
-      params: { duration: 5, resolution: "768P", prompt_expansion_mode: disabled }
+      params: { duration: 5, resolution: "480P", prompt_expansion_mode: disabled }
       entradas:
         image_url: "keyframe_entrada c01_p05 (aprobado): pantalla apagada, sin mano"
         end_image_url: "keyframe c01_p05 (aprobado): pantalla encendida con 23:38 y «Estoy en el tren.», mano izquierda entrando por la derecha"
@@ -303,13 +303,13 @@ bloques:
     duracion_s: 5
     beats: [{ plano: c01_p09, de: 0.0, a: 3.0 }]
     pila_referencias: ["image_url = keyframe c01_p09: Hugo de pie empezando a agacharse, chaqueta cerrada, pasajero dormido en primer término"]
-    costo_estimado_usd: 0.40
+    costo_estimado_usd: 0.25
     nota: "Bloque aparte porque invierte el eje (alerta del Director de fotografía). Solo primer fotograma: si se fija el último, el agachado se estira en los 5 s y pierde el ritmo gastado del personaje. Es un bloque de 5 s igual que el de c01_p10, pero se separan para que el inserto del revólver tenga encuadre exacto."
     estado: pendiente
     prompt_video:
       motor: h3_max
       endpoint: minimax/h3-max/image-to-video
-      params: { duration: 5, resolution: "768P", prompt_expansion_mode: disabled }
+      params: { duration: 5, resolution: "480P", prompt_expansion_mode: disabled }
       entradas:
         image_url: "keyframe c01_p09 (aprobado)"
       texto: |
@@ -322,13 +322,13 @@ bloques:
     duracion_s: 5
     beats: [{ plano: c01_p10, de: 0.0, a: 2.0 }]
     pila_referencias: ["image_url = keyframe c01_p10, variante de entrada: chaqueta apenas abierta, se ve el cinturón negro y todavía no el revólver", "end_image_url = keyframe c01_p10: culata y tambor cerrado a la vista en la funda café, sin balas"]
-    costo_estimado_usd: 0.40
+    costo_estimado_usd: 0.25
     nota: "Primer y último fotograma: el último fija el revólver del prop (hc28) sin balas ni cartuchera (hc29), que es lo que los modelos suelen agregar. La chaqueta se abre entre 0,2 y 1,2 s y luego queda quieta."
     estado: pendiente
     prompt_video:
       motor: h3_max
       endpoint: minimax/h3-max/image-to-video
-      params: { duration: 5, resolution: "768P", prompt_expansion_mode: disabled }
+      params: { duration: 5, resolution: "480P", prompt_expansion_mode: disabled }
       entradas:
         image_url: "keyframe_entrada c01_p10 (aprobado): chaqueta apenas abierta, cinturón negro a la vista, sin revólver"
         end_image_url: "keyframe c01_p10 (aprobado): culata y tambor cerrado en la funda café, sin balas"
@@ -812,7 +812,7 @@ planos:
       keyframe_entrada:
         motor: gpt_image_2_5_edit
         endpoint: openai/gpt-image-2.5/flare/edit
-        params: { image_size: { width: 1088, height: 1920 }, quality: high, num_images: 2 }
+        params: { image_size: { width: 720, height: 1280 }, quality: high, num_images: 2 }
         referencias: ["Image 1 = keyframe c01_p05 (aprobado)"]
         texto: |
           Edit Image 1, the approved frame. Change only two things: the phone screen is off, plain black glass with no light, no time and no notification; and there is no hand in the frame, only black trouser fabric at the right edge. Without the screen glow, the fabric around the phone is lit only by the amber reading lamp. Keep everything else exactly as in Image 1: camera, framing, 50mm lens and focus, the phone face up on her left thigh, the plain terracotta case, the amber light, grain and color. No text, no logos.
@@ -1210,7 +1210,7 @@ planos:
       keyframe:
         motor: gpt_image_2_5_edit
         endpoint: openai/gpt-image-2.5/flare/edit
-        params: { image_size: { width: 1088, height: 1920 }, quality: high, num_images: 3 }
+        params: { image_size: { width: 720, height: 1280 }, quality: high, num_images: 3 }
         referencias: ["Image 1 = don_hugo (hoja)", "Image 2 = revolver_hugo", "Image 3 = keyframe c01_p09 (aprobado)"]
         texto: |
           FILM STILL: Film still from a feature film, not an illustration. Image 1 is Don Hugo: match his charcoal-grey conductor jacket with plain metal buttons and matching trousers. Image 2 is the revolver in its holster: match the worn blued steel, the dark checkered wooden grip, the cylinder and the short brown leather holster exactly. Image 3 is the approved previous shot: match the cloth, the buttons and the amber light exactly.
@@ -1229,13 +1229,13 @@ planos:
       keyframe_entrada:
         motor: gpt_image_2_5_edit
         endpoint: openai/gpt-image-2.5/flare/edit
-        params: { image_size: { width: 1088, height: 1920 }, quality: high, num_images: 2 }
+        params: { image_size: { width: 720, height: 1280 }, quality: high, num_images: 2 }
         referencias: ["Image 1 = keyframe c01_p10 (aprobado)"]
         texto: |
           Edit Image 1, the approved frame. Change only the jacket: the right side of the grey jacket is barely open, just enough to show a strip of the black leather belt; the revolver, its grip and the holster are not visible yet, still covered by the cloth. Keep everything else exactly as in Image 1: camera, framing, 65mm lens and focus, the amber light from the upper left, the plain metal buttons, grain and color. No hand in frame. No text, no logos.
 
 resumen_produccion:
-  # Asistente de dirección. Tarifas: GPT Image 2.5 edit ~0,05 USD por imagen (high), Nano Banana Pro edit 0,15 USD, H3 Max 768P 0,08 USD/s.
+  # Asistente de dirección. Tarifas: GPT Image 2.5 edit ~0,05 USD por imagen (high), Nano Banana Pro edit 0,15 USD, H3 Max 480P 0,05 USD/s (la prueba bajó de 768P a 480P el 30-sep; los keyframes que faltaban, a 720×1280).
   planos_por_motor:
     keyframe: { gpt_image_2_5_edit: 9, nano_banana_pro_edit: 1 }
     video: { h3_max: 10, kling: 0 }
@@ -1246,15 +1246,15 @@ resumen_produccion:
   segundos_desglose: "37 s por pasada (cinco bloques de 5 s y uno de 12 s) × 2 tomas por bloque, con seed distinto."
   costo_keyframes_usd: 2.10
   costo_keyframes_desglose: "GPT Image: 27 principales × 0,05 = 1,35 y 6 variantes × 0,05 = 0,30. Nano Banana Pro: 3 × 0,15 = 0,45."
-  costo_video_usd: 6.04
-  costo_video_desglose: "Por pasada: cinco bloques de 5 s × 0,40 = 2,00 y c01_b03 (12 s) = 0,96 + 0,06 de referencias extra = 1,02. Total por pasada, 3,02; con 2 tomas por bloque, 6,04."
-  costo_total_usd: 8.14
+  costo_video_usd: 3.82
+  costo_video_desglose: "Por pasada a 480P: cinco bloques de 5 s × 0,25 = 1,25 y c01_b03 (12 s) = 0,60 + 0,06 de referencias extra = 0,66. Total por pasada, 1,91; con 2 tomas por bloque, 3,82."
+  costo_total_usd: 5.92
   orden_generacion: "1) Keyframes: c01_p01 → c01_p02 (con p01 aprobado); c01_p03 (ancla) → c01_p04, c01_p06, c01_p05, c01_p07, c01_p08, c01_p09 (con p03 aprobado) → c01_p10 (con p09 aprobado); al final, las variantes de entrada de p01, p05 y p10. 2) Aprobación de Cristian. 3) Video: c01_b03 primero (es el que más arriesga), luego c01_b01, c01_b02, c01_b04, c01_b05 y c01_b06."
   bloqueos:
     - "Todos los assets están en estado provisorio. La regla es que no se genera con assets sin aprobar: esta prueba se autoriza como exploración y ningún keyframe se da por final."
     - "boletos está pendiente (hc31) y el pasajero dormido de c01_p09 no tiene referencia. Bloquean c01_p09 salvo que Cristian acepte generarlos solo con prompt."
     - "Falta la mano derecha de Diego mojada, con manchas y el puño empapado, vista desde adentro con luz roja (c01_p01). La hoja de Diego está seca y limpia."
     - "Las puertas no coinciden entre placas (hc22, alerta del Director de fotografía en c01_p08). Se mitiga con loc_ultimo_vagon_rojo como referencia de forma, pero hay que unificarlas en las placas definitivas."
-    - "Las placas miden 608×1088, menos que un cuadro de 768P. Los keyframes se piden en 9:16 a no menos de 768×1366; si el motor entrega menos, se escalan antes del video."
+    - "Las placas miden 608×1088. Para la prueba a 480P bastan keyframes de 720×1280; en la versión final (768P o 1080P) se piden a no menos de 1088×1920."
     - "No hay variante de Martina después de la carrera (mechones y sudor, hc10) ni placa del vagón de pasajeros con luz roja para el fondo de c01_p01. Por ahora salen del prompt."
     - "No hay voz de Martina en ElevenLabs para usar target_audio_url en c01_b02. No bloquea: el «Diego…» se genera con el video y se puede reemplazar en post."
