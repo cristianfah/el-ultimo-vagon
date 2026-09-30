@@ -85,6 +85,7 @@ Sound: [continuous ambience], [effects per beat]. No music. No on-screen text.
 - Cada personaje se describe **igual en cada beat** (misma frase de vestuario).
 - Un beat de menos de 2 s se pide como acción única; si el modelo lo estira, se recorta en el montaje.
 - Con `end_image_url` o `target_audio_url` (ruta `image-to-video`) se controla el final o la voz.
+- **Versión final:** todo plano con diálogo se genera con su audio de ElevenLabs (`target_audio_url` o `Audio 1`) para el lipsync. En pruebas se omite.
 
 ## Reglas de actuación (todas las recetas)
 - Se describe lo que **hace el cuerpo**: dónde mira, qué mano se mueve, cuánto dura la quietud.
