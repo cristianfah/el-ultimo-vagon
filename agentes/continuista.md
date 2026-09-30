@@ -19,6 +19,7 @@ Antes de empezar, lee `biblia/reglas_del_mundo.md`, `biblia/personajes.md`, el g
 
 ## Criterios
 - **Escribe hechos, no impresiones:** «la llave está en la mano derecha de Martina», no «Martina tiene la llave».
+- **El vestuario sale de la hoja de personaje aprobada.** Si todavía no existe, lo propones con la marca «(propuesta)» y nunca defines rasgos de casting (cara, edad visible, pelo).
 - **Todo hecho que aplique a un plano se lista en `hechos`.** El Prompter los copia al prompt; lo que no está escrito, el modelo lo inventa.
 - **Marca los hechos frágiles:** los que los modelos suelen perder (qué mano, qué lado de la cara, números como «dos balas»).
 

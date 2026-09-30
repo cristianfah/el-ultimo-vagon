@@ -1,0 +1,553 @@
+# Prueba del equipo técnico: solo el cold open (0:00–0:03) y la escena 1 (0:03–0:16), basado en guion/cap01/cap01_v3.md.
+# Están los campos del Director y del Continuista. Faltan Director de fotografía, Asistente de dirección, Prompter y Pipeline.
+
+capitulo: 1
+guion: guion/cap01/cap01_v3.md
+duracion_objetivo_s: 90
+estado: desglose
+
+assets:
+  personajes:
+    martina: { estado: pendiente }
+    tomas: { estado: pendiente }
+    diego: { estado: pendiente }
+    carmen: { estado: pendiente }
+    ivan: { estado: pendiente }
+    don_hugo: { estado: pendiente }
+  locaciones:
+    loc_ultimo_vagon: { estado: pendiente }
+    loc_vagon_pasajeros: { estado: pendiente }
+  props:
+    celular_martina: { estado: pendiente }
+    revolver_hugo: { estado: pendiente }
+    boletos: { estado: pendiente }
+
+hechos_continuidad:
+  # Los rangos desde/hasta siguen el orden de montaje. El cold open (c01_p01–c01_p02) es el momento de las 0:45:
+  # cada hecho aclara en su texto a qué momentos de la historia aplica, y la lista `hechos` de cada plano es la que manda.
+
+  # --- Luz y entorno ---
+  - id: hc01
+    hecho: "Luz de emergencia: desde el brote (0:16) hasta el final del capítulo, los dos vagones están iluminados de rojo de emergencia (#B3001B) y las lámparas de lectura ámbar están apagadas. Aplica al cold open (c01_p01–c01_p02), que es el momento de las 0:45, tanto adentro del último vagón como del otro lado de la ventanita. No aplica a esc01 (c01_p04–c01_p11)."
+    desde: c01_p01
+    hasta: null
+  - id: hc02
+    hecho: "Luz de viaje normal en esc01: lámparas de lectura ámbar encendidas sobre los asientos y azul de la noche en las ventanas. No hay luz roja ni tubos parpadeando hasta el primer grito (0:16)."
+    desde: c01_p04
+    hasta: c01_p11
+  - id: hc03
+    hecho: "Llueve durante todo el capítulo. En el vagón de pasajeros, las ventanas tienen gotas y regueros de agua por fuera. La única persona mojada es Diego (hc17)."
+    desde: c01_p04
+    hasta: null
+  - id: hc04
+    hecho: "Vagón de pasajeros: pasillo central con asientos de a dos a cada lado, todos mirando hacia el frente del tren. La puerta al último vagón está en la cola del vagón; en esc01 está cerrada y su ventanita está limpia (propuesta)."
+    desde: c01_p04
+    hasta: null
+
+  # --- Posiciones en esc01 ---
+  - id: hc05
+    hecho: "En esc01, Martina va en el asiento de ventana del lado izquierdo del tren y Tomás a su derecha, en el asiento de pasillo de la misma fila. No se tocan: el apoyabrazos entre los dos queda libre. Siguen sentados así hasta que se levantan en la carrera (0:23) (propuesta)."
+    desde: c01_p04
+    hasta: null
+    fragil: true
+  - id: hc06
+    hecho: "Carmen va sola en el asiento de ventana del lado derecho del tren, dos filas delante de Martina y Tomás, dormida con la cabeza apoyada a su derecha contra la ventana (propuesta)."
+    desde: c01_p08
+    hasta: null
+  - id: hc07
+    hecho: "Iván va en el asiento de pasillo del lado derecho del tren, en la última fila, con la espalda hacia la puerta al último vagón: desde ahí ve todo el vagón (propuesta)."
+    desde: c01_p09
+    hasta: null
+  - id: hc08
+    hecho: "Don Hugo avanza por el pasillo desde el frente hacia la cola, mirando hacia la cola. El pasajero dormido del boleto (extra, hombre mayor) va en el asiento de pasillo del lado izquierdo del tren, a la derecha de Hugo; Hugo se agacha hacia él (propuesta)."
+    desde: c01_p10
+    hasta: null
+
+  # --- Vestuario y cuerpo ---
+  - id: hc09
+    hecho: "Vestuario de Martina: suéter de lana color crema de cuello redondo y pantalón negro. No lleva abrigo, bolso, bufanda ni anillos. Es la misma ropa en todo el capítulo, cold open incluido (propuesta)."
+    desde: c01_p02
+    hasta: null
+    fragil: true
+  - id: hc10
+    hecho: "Pelo de Martina: recogido en una cola baja. En esc01 está ordenado. Desde la carrera (0:23) tiene mechones sueltos alrededor de la cara y brillo de sudor en la frente; así se ve en el cold open (c01_p02), que ocurre después de la carrera (propuesta)."
+    desde: c01_p02
+    hasta: null
+    fragil: true
+  - id: hc11
+    hecho: "Desde el brote (0:16) hasta el final del capítulo, Martina, Tomás, Carmen, Iván y Don Hugo están secos y sin manchas de sangre: corren al último vagón por dentro del tren y el ataque de 0:19 se corta en el impacto. En el cold open, Martina no tiene lluvia ni manchas en la ropa, el pelo ni la piel (propuesta)."
+    desde: c01_p02
+    hasta: null
+    fragil: true
+  - id: hc12
+    hecho: "Vestuario de Tomás: chaqueta de algodón verde oliva, cerrada, sobre una camiseta gris oscuro. No lleva anillos (propuesta)."
+    desde: c01_p04
+    hasta: null
+  - id: hc13
+    hecho: "Vestuario de Carmen: uniforme de enfermera de dos piezas (casaca y pantalón) color verde agua, bajo un abrigo de paño gris oscuro largo hasta la rodilla y abierto adelante. El escote en V de la casaca se ve en el pecho (propuesta)."
+    desde: c01_p08
+    hasta: null
+  - id: hc14
+    hecho: "Carmen tiene sobre las piernas un bolso de cuero café de asa corta, con las manos cruzadas encima. Lo pierde al tropezar en la carrera (0:23): en el último vagón ya no lo tiene (propuesta)."
+    desde: c01_p08
+    hasta: null
+  - id: hc15
+    hecho: "Vestuario de Iván: chaqueta de trabajo de lona gruesa color café, cerrada hasta el pecho (propuesta)."
+    desde: c01_p09
+    hasta: null
+  - id: hc16
+    hecho: "Vestuario de Don Hugo: uniforme de revisor con chaqueta gris oscuro de botones metálicos lisos, pantalón del mismo gris, cinturón de cuero negro y gorra de visera gris. Nada tiene insignias, escudos, logos ni nombres de empresa. Lleva la gorra puesta todo el capítulo (propuesta)."
+    desde: c01_p10
+    hasta: null
+    fragil: true
+  - id: hc17
+    hecho: "Vestuario de Diego: chaqueta de lona gris claro. El tono claro es necesario para que la manga oscura de sangre se lea bajo la luz roja. Diego está empapado de lluvia: pelo, cara, chaqueta y manos mojados (propuesta)."
+    desde: c01_p01
+    hasta: null
+  - id: hc18
+    hecho: "Ningún personaje con nombre viste de azul: el azul queda reservado para la camisa del hombre de camisa azul (0:19), para que se lo identifique de un vistazo (propuesta)."
+    desde: c01_p02
+    hasta: null
+  - id: hc19
+    hecho: "La herida de Diego está en el antebrazo derecho y queda bajo la manga: no se ve en todo el capítulo 1. La manga derecha de la chaqueta está empapada de sangre casi negra (#1A0505) desde el codo hasta el puño. La manga izquierda y la mano izquierda están limpias, solo mojadas de lluvia (propuesta)."
+    desde: c01_p01
+    hasta: null
+    fragil: true
+  - id: hc20
+    hecho: "La mano del cold open es la mano derecha de Diego. La sangre le baja desde la muñeca y mancha sobre todo el talón de la palma y la base de los dedos, mezclada con agua de lluvia; las puntas de los dedos están casi limpias. No lleva anillos, reloj ni pulseras. El puño de la manga derecha, gris claro empapado de oscuro, entra al cuadro por el borde inferior (propuesta)."
+    desde: c01_p01
+    hasta: null
+    fragil: true
+  - id: hc21
+    hecho: "Vista desde adentro del último vagón, la mano derecha de Diego se ve por la palma, con los dedos abiertos hacia arriba y el pulgar hacia la derecha del cuadro (propuesta)."
+    desde: c01_p01
+    hasta: null
+    fragil: true
+
+  # --- La puerta y la ventanita ---
+  - id: hc22
+    hecho: "La ventanita de la puerta del último vagón es un rectángulo vertical de vidrio simple con marco metálico, a la altura de la cabeza de un adulto. Tiene la misma forma y el mismo tamaño en todos los planos, vista desde cualquiera de los dos lados (propuesta)."
+    desde: c01_p01
+    hasta: null
+    fragil: true
+  - id: hc23
+    hecho: "Estado del vidrio de la ventanita: limpio hasta 0:26. Desde que el infectado se estrella contra la puerta (0:26), tiene manchas oscuras secas en la esquina superior derecha (vista desde adentro). Desde el golpe de Diego (0:45) suma, por fuera, la huella oscura y húmeda de su palma en la mitad inferior izquierda (vista desde adentro), y sigue ahí hasta el final del capítulo. La cara de Diego se ve por el centro de la mitad superior (propuesta)."
+    desde: c01_p01
+    hasta: null
+    fragil: true
+  - id: hc24
+    hecho: "En el momento del cold open (c01_p01, 0:45), por la ventanita solo se ve la palma de Diego y, detrás, el pasillo del otro lado iluminado de rojo y vacío. No se ven la cara de Diego ni infectados: la cara aparece después de la palma y los infectados recién doblan la esquina al fondo del pasillo a las 1:08."
+    desde: c01_p01
+    hasta: null
+    fragil: true
+
+  # --- Props ---
+  - id: hc25
+    hecho: "El celular de Martina es genérico: sin marca ni logo visibles, con funda lisa color terracota y cámaras sin diseño reconocible (propuesta)."
+    desde: c01_p04
+    hasta: null
+    fragil: true
+  - id: hc26
+    hecho: "El celular está sobre el muslo izquierdo de Martina, del lado de la ventana y lejos de Tomás, con la pantalla hacia arriba. En c01_p07 lo da vuelta con la mano izquierda y deja esa mano encima. Desde ahí lo lleva en la mano izquierda hasta el final del capítulo: lo sostiene en la carrera (tira de Tomás con la derecha), lo mira a las 0:40 y en el cold open lo tiene abajo, fuera de cuadro (propuesta)."
+    desde: c01_p02
+    hasta: null
+    fragil: true
+  - id: hc27
+    hecho: "Pantalla del celular: pantalla de bloqueo con fondo oscuro liso, la hora arriba y notificaciones con remitente «D». En c01_p06 marca 23:38 y hay una sola notificación: «Estoy en el tren.». A las 0:40 marca 23:57 y la notificación nueva, «¿Dónde estás?», queda sobre «Estoy en el tren.». Martina no responde: no hay mensajes suyos (propuesta)."
+    desde: c01_p06
+    hasta: null
+    fragil: true
+  - id: hc28
+    hecho: "El revólver de Don Hugo es viejo y genérico, sin marcas: acero pavonado gastado, cañón corto y cachas de madera oscura. Va en el lado derecho del cinturón, sobre la cadera, en una funda corta de cuero café que deja a la vista la culata y el tambor; la chaqueta lo tapa salvo cuando se abre. Hugo es diestro: lo saca con la mano derecha a las 1:10 y lo sostiene con esa mano hasta el final del capítulo (propuesta)."
+    desde: c01_p10
+    hasta: null
+    fragil: true
+  - id: hc29
+    hecho: "El revólver tiene un tambor de seis recámaras con solo dos balas. Las balas se ven únicamente en el inserto de las 0:37. En c01_p11 el tambor está cerrado y no se ve ninguna bala; tampoco hay balas ni cartuchera en el cinturón (propuesta)."
+    desde: c01_p11
+    hasta: null
+    fragil: true
+  - id: hc30
+    hecho: "La llave vieja es de hierro oscuro, larga y de paletón simple. Cuelga de una argolla en el lado izquierdo del cinturón de Hugo, tapada por la chaqueta: en esc01 no se ve. Hugo la usa para cerrar la puerta entre 0:23 y 0:26 y la vuelve a colgar fuera de campo antes de 0:31. A las 1:12 la descuelga con la mano izquierda (en la derecha tiene el revólver) y se la pone a Martina en la mano derecha, donde queda hasta el final del capítulo (propuesta)."
+    desde: c01_p10
+    hasta: null
+    fragil: true
+  - id: hc31
+    hecho: "El boleto del pasajero dormido es un boleto de papel pequeño, color crema y sin logos, apoyado sobre su muslo; Hugo lo toma con la mano derecha (propuesta)."
+    desde: c01_p10
+    hasta: c01_p11
+
+  # --- Información ---
+  - id: hc32
+    hecho: "Tomás no sabe de los mensajes de «D» en todo el capítulo 1: no ve la pantalla en c01_p06, no ve que Martina da vuelta el celular en c01_p07 y a las 0:40 el celular queda detrás de su espalda. Ninguna reacción suya puede depender de eso."
+    desde: c01_p06
+    hasta: null
+  - id: hc33
+    hecho: "Ningún pasajero ve el revólver de Hugo antes de 1:10: en c01_p10–c01_p11 nadie mira hacia su cintura, Iván no se detiene en él y a las 0:37 Hugo revisa el tambor de espaldas al grupo. Solo lo sabe el público."
+    desde: c01_p10
+    hasta: null
+  - id: hc34
+    hecho: "Nadie más oye el «Diego…» de Martina (c01_p02 y 0:45). Los demás se enteran de que ella conoce a Diego cuando él grita «¡Martina!», y la pregunta de Tomás (0:49) sale de ese grito (propuesta)."
+    desde: c01_p02
+    hasta: null
+  - id: hc35
+    hecho: "En el momento del cold open (0:45), Martina está de pie en el último vagón, a unos tres metros de la puerta y de frente a ella, sola en el cuadro. Tomás ya soltó el abrazo de 0:40 y está un paso detrás de ella, a su derecha, fuera del primer plano. Don Hugo está al fondo del vagón, donde revisó el tambor a las 0:37 (propuesta)."
+    desde: c01_p02
+    hasta: null
+
+planos:
+  # ============================ COLD OPEN ============================
+  - id: c01_p01
+    escena: cold_open
+    tiempo: "0:00–0:01"
+    duracion_s: 1
+
+    # --- Director ---
+    tipo_plano: inserto
+    accion: "Desde afuera, una palma abierta con manchas oscuras golpea dos veces la ventanita de la puerta y queda apoyada en el vidrio."
+    intencion: "Momento fuerte: sobresalto en el primer fotograma. Alguien herido quiere entrar."
+    informacion: "Hay una persona herida afuera de una puerta cerrada, golpeando para que le abran."
+    actuacion: "La mano no araña ni se crispa: golpea con ritmo de persona, dos golpes, y la palma queda pegada al vidrio con los dedos abiertos."
+    audio:
+      sfx: ["dos golpes secos de palma contra el vidrio", "traqueteo del tren de fondo"]
+    personajes: [diego]
+    locacion: loc_ultimo_vagon
+    corte: "Se corta con la palma quieta en el vidrio para pasar a quien la mira desde adentro (c01_p02). Es el mismo plano de la escena 4 (ver c01_p02)."
+
+    # --- Continuista ---
+    continuidad:
+      entrada:
+        - "Ventanita vista desde adentro del último vagón, con manchas oscuras secas en la esquina superior derecha y todavía sin huella de palma."
+        - "Detrás del vidrio, el pasillo del otro lado iluminado de rojo y vacío."
+        - "La mano derecha de Diego, abierta y mojada, a pocos centímetros del vidrio; el puño de la manga gris claro empapado de oscuro entra por el borde inferior del cuadro."
+      salida:
+        - "La palma derecha de Diego queda apoyada en la mitad inferior izquierda del vidrio, con los dedos abiertos hacia arriba y el pulgar hacia la derecha del cuadro."
+        - "Alrededor de la palma, el vidrio queda manchado de oscuro y de agua."
+        - "No se ven la cara de Diego ni infectados."
+      eje: "Cámara adentro del último vagón, del lado izquierdo de Martina, mirando de frente la puerta (hacia el frente del tren). Es el contracampo de c01_p02: la mano está donde mira Martina. Cuando aparezca la cara de Diego en la escena 4, él mira hacia la derecha del cuadro."
+      hechos: [hc01, hc17, hc19, hc20, hc21, hc22, hc23, hc24]
+      alertas:
+        - "Director: el guion no dice qué mano es ni si la sangre de la mano viene del corte del brazo. Tiene que calzar con la manga oscura de Diego a las 0:45 y con el brazo que muestra a las 0:51."
+        - "Continuista: propongo que sea la mano derecha y que la sangre baje del corte del antebrazo derecho, con el puño de esa manga dentro del cuadro (hc19, hc20). Así calza con la manga oscura de las 0:45 y con el brazo que muestra a las 0:51, y le da a Martina algo reconocible además de la palma."
+        - "Continuista: como este plano es el de las 0:45, el vidrio ya tiene las manchas del infectado de las 0:26 (hc23). Si se genera limpio, al reutilizarlo contradice la escena 2. La huella que deja la palma tiene que seguir en el vidrio en todos los planos de la ventanita hasta el final del capítulo."
+        - "Continuista: vista desde adentro, una mano derecha apoyada con la palma en el vidrio tiene el pulgar hacia la derecha del cuadro (hc21). Los modelos suelen dibujar el dorso o invertir la mano: Control de calidad lo tiene que revisar."
+        - "Continuista: esto es una excepción a la regla de sangre seca, porque el guion dice «manga empapada». En la manga y en la palma de Diego la sangre está húmeda, pero sigue casi negra (#1A0505) y bajo luz roja se lee negra. En el prompt va «dark red-black stains», nunca «blood»."
+
+  - id: c01_p02
+    escena: cold_open
+    tiempo: "0:01–0:02"
+    duracion_s: 1
+
+    # --- Director ---
+    tipo_plano: PP
+    accion: "Adentro, bajo la luz de la escena 4, Martina mira la ventanita y dice «Diego…» casi sin voz."
+    intencion: "Plantear la pregunta del capítulo en un segundo: ella conoce a esa persona. ¿Quién es y por qué no le abre?"
+    informacion: "La persona herida se llama Diego y Martina lo reconoce solo por la mano."
+    actuacion: "Quietud total. No parpadea; los labios apenas se separan para decir el nombre y se le corta el aire."
+    audio:
+      dialogo: ["MARTINA (casi sin voz): «Diego…»"]
+      sfx: ["un tercer golpe en el vidrio, fuera de campo"]
+    personajes: [martina]
+    locacion: loc_ultimo_vagon
+    corte: "Se corta sobre el nombre, sin respuesta, a negro (c01_p03). Decisión: c01_p01 y c01_p02 son los mismos planos de la escena 4. Se generan una sola vez y se vuelven a usar a las 0:45, justo antes de que aparezca la cara de Diego, para que el público reconozca el momento del inicio."
+
+    # --- Continuista ---
+    continuidad:
+      entrada:
+        - "Martina de pie en el último vagón, sola en el cuadro, a unos tres metros de la puerta y de frente a ella, mirando la ventanita."
+        - "Luz roja de emergencia en la cara; no hay luz ámbar."
+        - "Pelo recogido en cola baja con mechones sueltos alrededor de la cara y brillo de sudor en la frente, por la carrera de las 0:23."
+        - "Suéter crema, seco y sin manchas."
+        - "El celular está en su mano izquierda, abajo, fuera del cuadro."
+        - "Al fondo, detrás de ella, el último vagón en rojo y desenfocado, sin personas reconocibles."
+      salida:
+        - "Martina en la misma posición, con los labios apenas separados después de decir «Diego…»; no dio ningún paso hacia la puerta."
+        - "Nadie más entró al cuadro."
+      eje: "Línea entre los ojos de Martina y la ventanita. La cámara está del lado izquierdo de Martina, así que ella mira hacia la izquierda del cuadro, casi a la altura del lente. Tomás queda detrás de ella, a su derecha, tapado y fuera de cuadro. En toda la escena 4 se mantiene: Martina mira hacia la izquierda del cuadro y Diego, por la ventanita, hacia la derecha."
+      hechos: [hc01, hc09, hc10, hc11, hc18, hc26, hc34, hc35]
+      alertas:
+        - "Director (para Cristian): usar el mismo plano obliga a cambiar el guion en la v4. A las 0:45, antes de que aparezca la cara de Diego, tienen que ir la palma en el vidrio y el «Diego…» de Martina casi sin voz. Nadie más la oye, así que la pregunta de Tomás («¿Quién es, Martina?», 0:49) sigue en pie."
+        - "Director: el guion dice «se pone pálida», algo que no se puede filmar en un segundo. Lo traduzco a quietud y respiración cortada."
+        - "Continuista: como este plano se vuelve a usar a las 0:45, muestra a Martina después de la carrera y bajo luz roja: la misma ropa de esc01, seca y sin manchas, pero con el pelo desordenado y brillo de sudor (hc09, hc10, hc11). No puede verse como en esc01, peinada y bajo luz ámbar."
+        - "Continuista (para la v4): a las 0:40 Tomás la está abrazando. Para reutilizar este plano, el abrazo tiene que terminar antes de los golpes de las 0:45 (propongo que ella se separe al leer «¿Dónde estás?») y Tomás tiene que quedar un paso detrás de ella, a su derecha, fuera de cuadro (hc35). Si no, el plano tendría que mostrar el hombro de Tomás y dejaría de ser el mismo."
+        - "Continuista: el fondo de este primer plano es el último vagón hacia la cola, donde está Hugo desde las 0:37. Tiene que quedar sin personas reconocibles: solo formas rojas desenfocadas. Si se ve alguna figura, tiene que calzar con dónde está cada personaje a las 0:45."
+        - "Continuista: revisé la información. Martina dice «Diego…» viendo solo la palma. Tiene con qué deducirlo: recibió «Estoy en el tren.» y «¿Dónde estás?», los golpes son de persona y reconoce la manga de la chaqueta (hc20). Si la manga no entra en c01_p01, la reacción se apoya solo en los mensajes."
+
+  - id: c01_p03
+    escena: cold_open
+    tiempo: "0:02–0:03"
+    duracion_s: 1
+
+    # --- Director ---
+    tipo_plano: tarjeta
+    accion: "Corte a negro con el texto a pantalla completa."
+    intencion: "Dejar la pregunta abierta y prometer la respuesta: el público se queda para saber cómo se llegó a esa puerta."
+    informacion: "Lo que viene es el camino hacia ese momento, veinte minutos antes."
+    audio:
+      sfx: ["los golpes se cortan en seco con el negro", "la lluvia y el traqueteo entran al final, antes de la imagen"]
+    texto_pantalla: "20 MINUTOS ANTES"
+    corte: "Se corta cuando entra el sonido de la lluvia, al vagón de pasajeros (c01_p04)."
+
+    # --- Continuista ---
+    continuidad:
+      alertas:
+        - "Continuista: «20 MINUTOS ANTES» obliga a que entre esc01 y el momento del cold open (0:45) pasen unos veinte minutos de historia, pero el guion va continuo de la escena 1 al brote (0:16) y de ahí a las 0:45. Propongo que la elipsis esté en el corte de c01_p11 al primer grito: el celular marca 23:38 en c01_p06 y 23:57 a las 0:40 (hc27). Con esa elipsis, al empezar la escena 2 Hugo ya no está agachado junto al pasajero dormido."
+
+  # ============================ ESCENA 1 ============================
+  - id: c01_p04
+    escena: esc01
+    tiempo: "0:03–0:05"
+    duracion_s: 2
+
+    # --- Director ---
+    tipo_plano: PM
+    accion: "Martina y Tomás sentados juntos, sin tocarse, con lluvia en la ventana; el cuadro favorece a Tomás, que le pregunta si el viaje es para arreglarlo."
+    intencion: "Incomodidad de pareja: están a centímetros y hay distancia entre ellos."
+    informacion: "Son pareja, están en crisis, este viaje es un intento de arreglarlo y él es quien lo empuja."
+    actuacion: "Tomás la mira de perfil con el cuerpo girado hacia ella. Martina mira la ventana. Entre sus brazos queda libre el apoyabrazos."
+    audio:
+      dialogo: ["TOMÁS: «Este viaje es para arreglarlo, ¿cierto?»"]
+      sfx: ["lluvia en la ventana", "traqueteo del tren"]
+    texto_pantalla: "TOMÁS, 31 · Todavía creo en nosotros."
+    personajes: [martina, tomas]
+    locacion: loc_vagon_pasajeros
+    corte: "Se corta al terminar la pregunta, para ver la respuesta en la cara de ella (c01_p05)."
+
+    # --- Continuista ---
+    continuidad:
+      entrada:
+        - "Martina en el asiento de ventana del lado izquierdo del tren, mirando la ventana con lluvia; Tomás a su derecha, en el asiento de pasillo, con el cuerpo girado hacia ella."
+        - "El apoyabrazos entre los dos está libre; no se tocan."
+        - "Luz ámbar de lámpara de lectura; la ventana se ve azul oscuro con gotas."
+        - "Martina con suéter crema, pantalón negro y el pelo recogido y ordenado; Tomás con chaqueta verde oliva."
+        - "El celular de Martina está sobre su muslo izquierdo, con la pantalla hacia arriba y apagada."
+      salida:
+        - "Tomás terminó la pregunta y sigue mirándola; Martina sigue mirando la ventana."
+        - "El celular sigue apagado sobre el muslo izquierdo de Martina."
+      eje: "Eje de esc01: cámara en el lado del frente del vagón, mirando hacia la cola. El lado izquierdo del tren queda a la derecha del cuadro: Martina y la ventana a la derecha, Tomás y el pasillo a la izquierda. Tomás mira hacia la derecha del cuadro (a ella) y Martina también mira hacia la derecha (a la ventana)."
+      hechos: [hc02, hc03, hc04, hc05, hc09, hc10, hc12, hc18, hc25, hc26]
+      alertas:
+        - "Director: para que las cinco tarjetas duren 2 s, los tiempos internos se corren respecto del guion: el mensaje de «D» cae a las 0:07 (el guion dice 0:08) y el resto del vagón empieza a las 0:09 (el guion dice 0:11). El total sigue siendo 0:03–0:16, pero sin un segundo de holgura."
+        - "Director: en c01_p04 y c01_p05 la tarjeta comparte pantalla con el subtítulo del diálogo; son dos textos en 2 s. Propuesta: pasar la tarjeta de Carmen al plano en que despierta con el primer grito (escena 2, 0:16–0:19) y dejar su plano de la escena 1 en 1 s. El segundo que se libera va a c01_p05 (3 s), para que la tarjeta de Martina entre después del «Sí» y no encima."
+        - "Continuista: el celular tiene que estar ya en este plano, apagado sobre el muslo izquierdo de Martina (hc26). Si no aparece aquí, en c01_p06 salta al cuadro sin razón."
+
+  - id: c01_p05
+    escena: esc01
+    tiempo: "0:05–0:07"
+    duracion_s: 2
+
+    # --- Director ---
+    tipo_plano: PP
+    accion: "Martina responde «Sí» sin mirarlo."
+    intencion: "Que el público note que el «sí» no convence, justo mientras la tarjeta dice lo contrario."
+    informacion: "Martina no está tan convencida como Tomás, aunque dice que vino a salvar la relación."
+    actuacion: "Sigue mirando la ventana. Dice la palabra sin girar la cabeza; después traga saliva y aprieta la mandíbula."
+    audio:
+      dialogo: ["MARTINA (sin mirarlo): «Sí.»"]
+      sfx: ["lluvia en la ventana"]
+    texto_pantalla: "MARTINA, 29 · Vine a salvar mi relación."
+    personajes: [martina]
+    locacion: loc_vagon_pasajeros
+    corte: "Se corta cuando traga saliva, a la pantalla del celular que se ilumina sobre su pierna (c01_p06)."
+
+    # --- Continuista ---
+    continuidad:
+      entrada:
+        - "Martina mirando la ventana, con luz ámbar de lectura en la cara y el reflejo azul de la ventana con lluvia."
+        - "Pelo recogido y ordenado; suéter crema."
+      salida:
+        - "Martina tragó saliva y aprieta la mandíbula; sigue mirando la ventana y no miró a Tomás."
+      eje: "Mismo lado que c01_p04: Martina mira hacia la derecha del cuadro, a la ventana. Tomás queda fuera de cuadro, a la izquierda."
+      hechos: [hc02, hc03, hc05, hc09, hc10, hc18]
+
+  - id: c01_p06
+    escena: esc01
+    tiempo: "0:07–0:08"
+    duracion_s: 1
+
+    # --- Director ---
+    tipo_plano: inserto
+    accion: "Sobre la pierna de Martina, el celular se ilumina con un mensaje de «D»: «Estoy en el tren.»"
+    intencion: "Momento fuerte: el público pasa a guardar el secreto de Martina."
+    informacion: "Alguien llamado «D» le escribe y está en este mismo tren. El público puede unirlo con el «Diego…» del cold open."
+    ironia: "El público lee el mensaje; Tomás, sentado al lado, no."
+    actuacion: "Solo se ven la pantalla y la tela del pantalón. La mano de Martina entra al borde del cuadro en el último instante."
+    audio:
+      sfx: ["vibración corta del celular, apagada por la ropa"]
+      musica: "Una nota grave y sostenida entra con la vibración."
+    personajes: [martina]
+    locacion: loc_vagon_pasajeros
+    corte: "Se corta cuando entra la mano, para ver si Tomás se dio cuenta (c01_p07)."
+
+    # --- Continuista ---
+    continuidad:
+      entrada:
+        - "Celular boca arriba sobre el muslo izquierdo de Martina, con la pantalla apagada, funda terracota lisa y pantalón negro."
+      salida:
+        - "Pantalla encendida con la hora 23:38 y una sola notificación, de «D»: «Estoy en el tren.»."
+        - "La mano izquierda de Martina entra al borde del cuadro."
+      eje: "El muslo es el izquierdo de Martina y la mano que entra es la izquierda, desde el lado de la ventana; nunca desde el lado de Tomás."
+      hechos: [hc02, hc09, hc25, hc26, hc27, hc32]
+      alertas:
+        - "Director: el mensaje tiene que ocupar el centro de la pantalla con letra grande para leerse en 1 s. La interfaz del celular es genérica y sin marca; si el modelo no deja el texto legible, se reemplaza en After Effects."
+        - "Continuista: la hora de la pantalla también es continuidad. Aquí marca 23:38 y en el inserto de las 0:40 tiene que marcar 23:57 (hc27). Si la pantalla se reemplaza en After Effects, se reemplaza con esa hora."
+
+  - id: c01_p07
+    escena: esc01
+    tiempo: "0:08–0:09"
+    duracion_s: 1
+
+    # --- Director ---
+    tipo_plano: PM
+    accion: "Martina da vuelta el celular sobre su pierna mientras Tomás, a su lado, mira el pasillo."
+    intencion: "Complicidad incómoda: el público ve cómo lo esconde y que él no se entera."
+    informacion: "Martina esconde el mensaje: «D» es un secreto para Tomás."
+    ironia: "Tomás no ve el gesto; el público sí."
+    actuacion: "Ella da vuelta el celular con un solo movimiento corto, sin mirarlo, y deja la mano encima. Tomás mira el pasillo, ajeno."
+    audio:
+      sfx: ["roce de la pantalla contra la tela"]
+      musica: "Sigue la nota grave."
+    personajes: [martina, tomas]
+    locacion: loc_vagon_pasajeros
+    corte: "La mirada de Tomás hacia el pasillo lleva al resto del vagón (c01_p08)."
+
+    # --- Continuista ---
+    continuidad:
+      entrada:
+        - "Celular boca arriba y encendido sobre el muslo izquierdo de Martina, con su mano izquierda sobre el borde."
+        - "Tomás a su derecha, en el asiento de pasillo, ya mirando el pasillo: giró la cabeza fuera de campo mientras duraban c01_p05 y c01_p06."
+      salida:
+        - "Celular boca abajo sobre el muslo izquierdo de Martina, con la pantalla contra el pantalón y la mano izquierda de ella encima."
+        - "Tomás sigue mirando el pasillo; no vio el gesto."
+      eje: "Mismo eje de esc01: Martina a la derecha del cuadro y Tomás a la izquierda. Tomás mira hacia la izquierda del cuadro, al pasillo; esa dirección lleva el corte a Carmen, que está del lado derecho del tren, a la izquierda del cuadro."
+      hechos: [hc02, hc03, hc05, hc09, hc10, hc12, hc18, hc25, hc26, hc32]
+      alertas:
+        - "Director: el guion solo dice «Tomás no lo vio». Decido que mira el pasillo para que se lea en el mismo plano; esa dirección de mirada tiene que mantenerse para que funcione el corte al resto del vagón."
+
+  - id: c01_p08
+    escena: esc01
+    tiempo: "0:09–0:11"
+    duracion_s: 2
+
+    # --- Director ---
+    tipo_plano: PM
+    accion: "Carmen dormita con la cabeza contra la ventana y el uniforme de enfermera asomando bajo el abrigo."
+    intencion: "Presentar a alguien confiable y cansado, ajeno al drama de la pareja."
+    informacion: "Hay una enfermera en el vagón: si alguien sale herido, ella sabrá qué mirar."
+    actuacion: "Respiración lenta, boca cerrada, manos cruzadas sobre el bolso. Un leve cabeceo con el traqueteo."
+    audio:
+      sfx: ["traqueteo", "lluvia"]
+    texto_pantalla: "CARMEN, 54 · Enfermera. Treinta años de turnos de noche."
+    personajes: [carmen]
+    locacion: loc_vagon_pasajeros
+    corte: "Se corta a quien sí está despierto y vigilando (c01_p09)."
+
+    # --- Continuista ---
+    continuidad:
+      entrada:
+        - "Carmen dormida en el asiento de ventana del lado derecho del tren, con la cabeza apoyada a su derecha contra la ventana con lluvia."
+        - "Abrigo gris oscuro abierto; el escote en V de la casaca verde agua se ve en el pecho."
+        - "Manos cruzadas sobre el bolso de cuero café, que está en sus piernas."
+      salida:
+        - "Carmen sigue dormida, en la misma posición; no abrió los ojos."
+      eje: "Mismo eje de esc01 (cámara hacia la cola): el lado derecho del tren queda a la izquierda del cuadro, así que la ventana y la cabeza de Carmen quedan a la izquierda."
+      hechos: [hc02, hc03, hc04, hc06, hc13, hc14, hc18]
+      alertas:
+        - "Director: el guion no dice cuánto se ve del uniforme. Tiene que asomar el cuello o el pecho del uniforme para leerse sin depender de la tarjeta."
+
+  - id: c01_p09
+    escena: esc01
+    tiempo: "0:11–0:13"
+    duracion_s: 2
+
+    # --- Director ---
+    tipo_plano: PM
+    accion: "Iván, con su chaqueta de obrero, recorre con la mirada a los pasajeros desde su asiento."
+    intencion: "Presentar una amenaza posible: alguien que vigila a todos y no se relaja."
+    informacion: "En el vagón hay un hombre desconfiado que observa al resto."
+    actuacion: "Espalda recta, brazos cruzados. Solo mueven los ojos, que van de un asiento a otro sin detenerse en nadie."
+    audio:
+      sfx: ["traqueteo"]
+    texto_pantalla: "IVÁN, 45 · No confío en nadie. Por eso sigo vivo."
+    personajes: [ivan]
+    locacion: loc_vagon_pasajeros
+    corte: "Su mirada termina en el pasillo, por donde viene el revisor (c01_p10)."
+
+    # --- Continuista ---
+    continuidad:
+      entrada:
+        - "Iván sentado en el asiento de pasillo de la última fila, del lado derecho del tren, de brazos cruzados y con la chaqueta de lona café cerrada."
+        - "Si se ve detrás de él, la puerta al último vagón está cerrada y su ventanita está limpia, con luz ámbar."
+      salida:
+        - "Su mirada termina en el pasillo, delante de él, sin fijarse en nadie."
+      eje: "Mismo eje de esc01 (cámara hacia la cola). Iván mira hacia el lente y la mirada termina un poco a la derecha del cuadro, hacia el pasillo, que está a su izquierda y por donde viene Hugo."
+      hechos: [hc02, hc04, hc07, hc15, hc18, hc22, hc23, hc33]
+      alertas:
+        - "Director: el guion dice que Iván «mira a todos», pero no aclara si ve el celular de Martina o el revólver de Hugo. Hago que no se detenga en nadie, para no darle un conocimiento que el guion no le da (reglas del mundo, sección B). Si se quiere que haya visto algo, es una decisión de historia."
+        - "Continuista: si detrás de Iván se ve la puerta al último vagón, es la misma puerta del cold open vista desde el otro lado. Tiene que tener la misma forma de ventanita (hc22) y el vidrio limpio (hc23), sin las manchas ni la huella que aparecen después."
+
+  - id: c01_p10
+    escena: esc01
+    tiempo: "0:13–0:15"
+    duracion_s: 2
+
+    # --- Director ---
+    tipo_plano: PM
+    accion: "Don Hugo avanza por el pasillo y se agacha a revisar el boleto de un pasajero extra (hombre mayor dormido, de espaldas a cámara); al agacharse, la chaqueta empieza a abrirse hacia cámara."
+    intencion: "Rutina de viaje que prepara la sorpresa: no debe parecer importante."
+    informacion: "Se llama Don Hugo, es el revisor y siente el tren como suyo."
+    actuacion: "Movimiento lento y gastado de quien lo ha hecho miles de veces. Estira la mano hacia el boleto sin mirarse la chaqueta."
+    audio:
+      sfx: ["crujido de rodilla y de la tela al agacharse", "papel del boleto"]
+    texto_pantalla: "DON HUGO, 62 · Revisor. Este es mi tren."
+    personajes: [don_hugo]
+    locacion: loc_vagon_pasajeros
+    corte: "Se corta en el instante en que la chaqueta se abre, al detalle del cinturón (c01_p11)."
+
+    # --- Continuista ---
+    continuidad:
+      entrada:
+        - "Hugo en el pasillo, de frente a cámara (mirando hacia la cola), con el uniforme gris y la gorra, empezando a agacharse hacia el pasajero dormido, que está a su derecha y de espaldas a cámara."
+        - "El boleto de papel crema está sobre el muslo del pasajero."
+        - "La chaqueta de Hugo está cerrada y tapa el revólver y la llave."
+      salida:
+        - "Hugo agachado, tomando el boleto con la mano derecha."
+        - "El lado derecho de la chaqueta empieza a abrirse hacia cámara; el revólver todavía no se ve."
+      eje: "Contracampo del eje de esc01: la cámara está en la cola del vagón mirando hacia el frente, del lado de Iván, que es quien mira en c01_p09. Aquí el lado izquierdo del tren queda a la izquierda del cuadro: el pasajero dormido y la cadera derecha de Hugo quedan a la izquierda."
+      hechos: [hc02, hc04, hc08, hc16, hc18, hc28, hc30, hc31, hc33]
+      alertas:
+        - "Continuista: es el único plano de esc01 que mira hacia el frente del tren, así que la ventana con lluvia cambia de lado respecto de c01_p04–c01_p09. Se justifica porque sigue la mirada de Iván. Si el Director de fotografía prefiere no invertir la cámara, el pasajero no puede quedar de espaldas a cámara, y eso lo decide el Director."
+        - "Continuista: la llave cuelga del lado izquierdo del cinturón y en este plano no se ve (hc30). Si el modelo agrega un llavero a la vista, hay que corregirlo."
+
+  - id: c01_p11
+    escena: esc01
+    tiempo: "0:15–0:16"
+    duracion_s: 1
+
+    # --- Director ---
+    tipo_plano: inserto
+    accion: "Por un instante, entre la chaqueta abierta, se ven la culata y el tambor de un revólver viejo en el cinturón de Hugo."
+    intencion: "Momento fuerte: justo después de «Este es mi tren», el público descubre que hay un arma en el vagón y que nadie más lo sabe."
+    informacion: "El revisor va armado."
+    ironia: "El público ve el revólver; ningún pasajero lo ve."
+    actuacion: "La mano de Hugo no va hacia el arma: sigue en el boleto, fuera de cuadro."
+    audio:
+      sfx: ["roce de la tela de la chaqueta"]
+      musica: "La nota grave sube medio tono y se corta con el plano."
+    personajes: [don_hugo]
+    locacion: loc_vagon_pasajeros
+    corte: "Fin de la escena 1. Se corta en seco al primer grito lejano del brote (0:16, fuera de esta prueba)."
+
+    # --- Continuista ---
+    continuidad:
+      entrada:
+        - "La chaqueta gris de Hugo se abre por el lado derecho y deja ver el cinturón de cuero negro."
+      salida:
+        - "La culata de madera oscura y el tambor cerrado del revólver se ven en la cadera derecha, dentro de la funda corta de cuero café, con la culata hacia atrás."
+        - "La mano derecha de Hugo sigue fuera de cuadro, en el boleto."
+      eje: "Mismo lado que c01_p10: la cadera derecha de Hugo queda en el lado izquierdo del cuadro."
+      hechos: [hc02, hc16, hc28, hc29, hc33]
+      alertas:
+        - "Director: el revólver tiene que ser genérico, sin marcas, y reconocible en menos de un segundo. El guion no dice de qué lado lo lleva; tiene que calzar con el inserto de las 0:37 y con cómo lo saca a las 1:10."
+        - "Continuista: propongo el lado derecho y que Hugo sea diestro (hc28). Eso rige para el inserto de las 0:37 y para cuando lo saca con la mano derecha a las 1:10; con la izquierda le da la llave a Martina a las 1:12 (hc30)."
+        - "Continuista: el tambor se ve cerrado y no puede verse ninguna bala, ni cartuchera ni balas en el cinturón. Las dos balas se revelan recién a las 0:37 (hc29). Los modelos suelen agregar cartuchos a la vista."

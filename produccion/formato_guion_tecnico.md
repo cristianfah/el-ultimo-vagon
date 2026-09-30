@@ -2,7 +2,9 @@
 
 Un archivo YAML por capítulo: `produccion/shotlists/capNN.yaml`. Es la **única fuente de datos** de la producción: los agentes escriben sus campos y los motores (fal, Kling, Comfy, Weavy) leen de ahí.
 
-**Regla de propiedad:** cada rol escribe solo sus campos. Si un rol ve un problema en un campo ajeno, lo anota en `alertas` y no lo corrige.
+**Regla de propiedad:** cada rol escribe solo sus campos. Si un rol ve un problema en un campo ajeno, lo anota en `alertas` con su nombre como prefijo («Director: …») y no lo corrige.
+
+**Campos vacíos:** se omiten. Cada rol agrega su bloque al plano cuando hace su parte; la plantilla de abajo muestra todos los campos posibles.
 
 ## Estructura
 
@@ -33,14 +35,18 @@ planos:
     duracion_s: 2
 
     # --- Director ---
-    tipo_plano: PP                  # GPG / PG / PM / PMC / PP / PPP / inserto / POV
+    tipo_plano: PP                  # GPG / PG / PM / PMC / PP / PPP / inserto / POV / tarjeta
     accion: "Una línea: qué pasa en el plano."
     intencion: "Qué debe sentir el público."
     informacion: "Qué sabe el público al terminar el plano que no sabía antes."
     ironia: null                    # qué sabe el público que un personaje no sabe, si aplica
     actuacion: "Quietud y mirada, sin palabras de emoción."
-    audio: { dialogo: [], sfx: [], musica: null }
-    personajes: [martina]
+    audio:
+      dialogo: ["MARTINA (casi sin voz): «Diego…»"]   # PERSONAJE (acotación): «línea»
+      sfx: ["dos golpes de palma contra el vidrio"]
+      musica: null                  # texto libre o null
+    texto_pantalla: null            # tarjeta sobreimpresa: «MARTINA, 29 · Vine a salvar mi relación.»
+    personajes: [martina]           # elenco visible, aunque sea en parte (una mano cuenta)
     locacion: loc_ultimo_vagon
     corte: "Por qué se corta aquí y a qué plano."
 
@@ -48,7 +54,7 @@ planos:
     camara: { altura: null, posicion: null, movimiento: null }
     lente: { focal_mm: null, apertura: null, foco: null }
     luz: { dominante: null, fuentes: [], contraste: null }
-    zona_segura_9x16: "Dónde van los sujetos y qué queda libre para subtítulos e interfaz."
+    zona_segura_9x16: null          # dónde van los sujetos y qué queda libre para subtítulos, tarjeta e interfaz
 
     # --- Continuista ---
     continuidad:
@@ -60,7 +66,7 @@ planos:
 
     # --- Asistente de dirección ---
     referencias: []                 # ids de assets que entran como imagen de referencia
-    motor_keyframe: nano_banana_pro
+    motor_keyframe: nano_banana_pro # nano_banana_pro / ninguno (tarjeta)
     motor_video: h3_max             # h3_max / kling / ninguno (plano fijo o tarjeta)
     metodo_video: FF                # FF (primer fotograma) · FL (primer y último) · REF (referencias) · FF+E (Kling con elements)
     tomas_objetivo: 3
@@ -82,7 +88,12 @@ planos:
 
 ## Convenciones
 - **Ids de plano:** `cNN_pNN`, en orden de montaje. Si se inserta un plano, se usa sufijo (`c01_p04b`); nunca se renumera.
-- **Tipos de plano:** GPG (gran plano general), PG (plano general), PM (plano medio), PMC (plano medio corto), PP (primer plano), PPP (primerísimo primer plano), inserto, POV.
+- **Tipos de plano:** GPG (gran plano general), PG (plano general), PM (plano medio), PMC (plano medio corto), PP (primer plano), PPP (primerísimo primer plano), inserto, POV, tarjeta.
 - **Tiempos:** los del guion. Si el desglose no calza con la duración objetivo, el Director lo anota en `alertas` del primer plano de la escena.
 - **Un plano, un momento.** Si una línea de acción pide dos momentos, son dos planos.
-- **Tarjetas y textos** (nombres, «20 MINUTOS ANTES», votación) son planos con `motor_video: ninguno`; se hacen en After Effects.
+- **Tarjetas de personaje:** van **sobreimpresas** en el plano donde se presenta el personaje (`texto_pantalla`), no son planos propios. Ese plano dura lo necesario para leer la frase: al menos 2 s.
+- **Textos a pantalla completa** («20 MINUTOS ANTES», la votación): son planos con `tipo_plano: tarjeta`, sin keyframe ni video; el texto va en `texto_pantalla` y se hacen en After Effects.
+- **`intencion` e `informacion` son obligatorios** en todo plano. `ironia` se omite cuando no hay.
+- **Hechos de continuidad:** lo que manda es la lista `hechos` de cada plano; `desde` y `hasta` son orientativos (orden de montaje) y `hasta: null` se escribe explícito. Un hecho que el guion no define se marca «(propuesta)» hasta que Cristian lo aprueba, y los que los modelos suelen perder llevan `fragil: true`.
+- **Extras sin nombre** (el pasajero del boleto, la esposa del hombre de camisa azul) se describen en `accion`; no van en `personajes`.
+- **Comillas:** los textos libres van entre comillas dobles; los ids y valores fijos (`PP`, `pendiente`, `martina`) no las necesitan.
