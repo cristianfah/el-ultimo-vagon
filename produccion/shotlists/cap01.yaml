@@ -7,21 +7,28 @@ duracion_objetivo_s: 90
 estado: desglose
 
 assets:
-  # Provisorios de prueba (GPT Image 2.5 Flare, fal). No son casting final. Prompts en produccion/prompts/sheets_provisorios.md
+  # Aprobados por Cristian 2026-10-01 (v1). Registro: produccion/assets/aprobados_v1.md. URLs fal: produccion/assets/fal_urls_v1.json.
   personajes:
-    martina: { estado: provisorio, hoja: "https://v3b.fal.media/files/b/0aac72dd/kKqOI8dkCPWyyqtAIJ7_T_uWqSgH9g.png", hechos: [hc09, hc10] }
-    tomas: { estado: provisorio, hoja: "https://v3b.fal.media/files/b/0aac7306/LTe0Ioos3fCiPpVZCkP3i_lzRVqClL.png", hechos: [hc12] }
-    diego: { estado: provisorio, hoja: "https://v3b.fal.media/files/b/0aac72dd/sBwFDZvRL1AtoeQmMcujf_mBTAVWnO.png", hechos: [hc17] }
-    carmen: { estado: provisorio, hoja: "https://v3b.fal.media/files/b/0aac7306/e5SqCDZcMBWKDZ6RI_s9m_ajO1qadM.png", hechos: [hc13] }
-    ivan: { estado: provisorio, hoja: "https://v3b.fal.media/files/b/0aac7306/GudHSkePi5h2Q_rvf1AF2_0n6RAU6D.png", hechos: [hc15] }
-    don_hugo: { estado: provisorio, hoja: "https://v3b.fal.media/files/b/0aac7306/NYbHUFUUY4BhNBpgL2KN4_4Lrmuecr.png", hechos: [hc16] }
+    martina: { estado: aprobado, hoja: "https://v3b.fal.media/files/b/0aaca77b/gxJvG_NylXQWPnPye25qY_HOJA_martina.png", ref: "https://v3b.fal.media/files/b/0aaca77b/EeghL8u1JzqJrnHc8NphQ_REF_martina.png", hechos: [hc09, hc10], drive: "HOJA_martina.png" }
+    tomas: { estado: aprobado, hoja: "https://v3b.fal.media/files/b/0aaca77b/QIGG8k0Xlw4BBGntsymsW_HOJA_tomas.png", ref: "https://v3b.fal.media/files/b/0aaca77b/8t5RTXNE8Q-3DCiQVnYhw_REF_tomas.png", hechos: [hc12], drive: "HOJA_tomas.png" }
+    diego: { estado: aprobado, hoja: "https://v3b.fal.media/files/b/0aaca77b/pWC2LbPmSFhdVQl7vDgPe_HOJA_diego.png", ref: "https://v3b.fal.media/files/b/0aaca77b/6Rz9gzckJ1u7iHtlSM2X9_REF_diego.png", hechos: [hc17], drive: "HOJA_diego.png" }
+    diego_mojado: { estado: aprobado, hoja: "https://v3b.fal.media/files/b/0aaca77b/Dlr-0SUAUfXHALRdZ1H2Y_ESTADO_diego_mojado_herido.png", hechos: [hc17, hc19, hc20], drive: "ESTADO_diego_mojado_herido.png", nota: "Estado para cold open / 0:45: empapado, manga derecha oscura." }
+    carmen: { estado: aprobado, hoja: "https://v3b.fal.media/files/b/0aaca77b/h4Q1Ei5g6JWNhFmrLCnu__HOJA_carmen.png", hechos: [hc13], drive: "HOJA_carmen.png" }
+    ivan: { estado: aprobado, hoja: "https://v3b.fal.media/files/b/0aaca77b/jKxRb5IV8dbedLGy4_Kdq_HOJA_ivan.png", hechos: [hc15], drive: "HOJA_ivan.png" }
+    don_hugo: { estado: aprobado, hoja: "https://v3b.fal.media/files/b/0aaca77b/Y0NtlR1O9i2eW4avjrp79_HOJA_hugo.png", hechos: [hc16], drive: "HOJA_hugo.png" }
   locaciones:
-    loc_vagon_pasajeros_ambar: { estado: provisorio, ref: "https://v3b.fal.media/files/b/0aac7330/nsRBOVZGcJ_NYgPgvsSiG_8yDerU9H.png", nota: "Luz de viaje (hc02). Vista por el pasillo central. v2: ventanas azul noche y puerta del fondo según hc22." }
-    loc_ultimo_vagon_rojo: { estado: provisorio, ref: "https://v3b.fal.media/files/b/0aac7306/XpxNO2Gqn7XDT2FCoXTCM_VIdKpyHY.png", nota: "Luz de emergencia (hc01). Vista hacia la puerta con ventanita (hc22)." }
+    loc_vagon_pasajeros_ambar: { estado: aprobado, ref: "https://v3b.fal.media/files/b/0aaca77b/vgqFytQvyrQx4kWSLF2fi_F08_ambar_pasajeros_hacia_puerta.png", nota: "F08. Luz de viaje (hc02). Vista hacia la puerta/cola: caras y frente de asientos (p03–p08).", drive: "F08_ambar_pasajeros_hacia_puerta.png" }
+    loc_asiento_pareja_ambar: { estado: aprobado, ref: "https://v3b.fal.media/files/b/0aaca77b/PzOwbqmC0cGCK6rcDZl44_F09_ambar_asiento_pareja.png", nota: "F09. Asiento de ventana + pasillo para Martina y Tomás.", drive: "F09_ambar_asiento_pareja.png" }
+    loc_ultimo_vagon_rojo: { estado: aprobado, ref: "https://v3b.fal.media/files/b/0aaca77b/cjnHyHuvZXot98Es7F2wd_F01_rojo_ultimo_vagon_hacia_puerta.png", nota: "F01. Luz de emergencia (hc01). Vista hacia la puerta con ventanita (hc22).", drive: "F01_rojo_ultimo_vagon_hacia_puerta.png" }
+    loc_puerta_ultimo_vagon: { estado: aprobado, ref: "https://v3b.fal.media/files/b/0aaca77b/I6kNLxhGD5kjj6UWzbGV0_F03_rojo_puerta_desde_dentro_0-45.png", nota: "F03. Puerta y ventanita desde adentro (cold open / 0:45).", drive: "F03_rojo_puerta_desde_dentro_0-45.png" }
+    loc_fuelle_rojo: { estado: aprobado, ref: "https://v3b.fal.media/files/b/0aaca77b/c73vbo2QXGczuqRsrS3Yx_F04_rojo_puerta_desde_fuelle.png", nota: "F04. Lo que se ve por la ventanita desde adentro: fuelle/vestíbulo quieto respecto del tren.", drive: "F04_rojo_puerta_desde_fuelle.png" }
   props:
-    celular_martina: { estado: provisorio, ref: "https://v3b.fal.media/files/b/0aac7306/FvE56Ybb8JXuFu_TQ09Tg_z9oDPSBq.png", hechos: [hc25] }
-    revolver_hugo: { estado: provisorio, ref: "https://v3b.fal.media/files/b/0aac7306/B9m16fi3DSdLMziDk7ckQ_eNKIGnfJ.png", hechos: [hc28] }
+    celular_martina: { estado: aprobado, ref: "https://v3b.fal.media/files/b/0aaca77b/r3WbQbNgxSZH0Wyd6wxtl_PROP_celular_martina.png", hechos: [hc25], drive: "PROP_celular_martina.png" }
+    revolver_hugo: { estado: aprobado, ref: "https://v3b.fal.media/files/b/0aaca77b/JiNjNdZeE79Pi4lI2_aQh_PROP_revolver_dos_balas.png", hechos: [hc28, hc29], drive: "PROP_revolver_dos_balas.png", nota: "Incluye las dos balas visibles. En p10 el tambor debe salir cerrado (hc29); el prompt lo fija." }
     boletos: { estado: pendiente }
+  frames_prueba:
+    kf01_pareja_ambar: { estado: aprobado, ref: "https://v3b.fal.media/files/b/0aaca77a/x9CL3tsVLIy0B1ZqDCOaD_KF01_0-03_pareja_ambar.png", nota: "0:03 pareja ámbar. Ancla visual para p03/p04.", drive: "KF01_0-03_pareja_ambar.png" }
+    kf02_diego_ventanita: { estado: aprobado, ref: "https://v3b.fal.media/files/b/0aaca77a/65_3gw6JtkxcmJylu6ycl_KF02_0-45_diego_ventanita.png", nota: "0:45 cara de Diego en ventanita (escena 4; no es p01, que es solo la mano).", drive: "KF02_0-45_diego_ventanita.png" }
 
 hechos_continuidad:
   # Los rangos desde/hasta siguen el orden de montaje. El cold open (c01_p01–c01_p02) es el momento de las 0:45:
@@ -399,21 +406,21 @@ planos:
 
     # --- Asistente de dirección ---
     bloque: c01_b01
-    referencias: [diego, loc_ultimo_vagon_rojo]
+    referencias: [diego_mojado, loc_puerta_ultimo_vagon, loc_fuelle_rojo]
     motor_keyframe: gpt_image_2_5_edit
     motor_video: h3_max
     metodo_video: FL
-    tomas_objetivo: 3
+    tomas_objetivo: 2
 
     # --- Prompter ---
     prompts:
       keyframe:
         motor: gpt_image_2_5_edit
         endpoint: openai/gpt-image-2.5/flare/edit
-        params: { image_size: { width: 1088, height: 1920 }, quality: high, num_images: 3 }
-        referencias: ["Image 1 = diego (hoja)", "Image 2 = loc_ultimo_vagon_rojo"]
+        params: { image_size: { width: 720, height: 1280 }, quality: high, num_images: 2 }
+        referencias: ["Image 1 = diego_mojado (hoja)", "Image 2 = loc_puerta_ultimo_vagon", "Image 3 = loc_fuelle_rojo"]
         texto: |
-          FILM STILL: Film still from a feature film, not an illustration. Image 1 is Diego: match his skin tone, his hands and his light grey canvas jacket; only his right hand and the cuff of his right sleeve are in frame. Image 2 is the last carriage under red emergency light: match its connecting door, the vertical rectangular window with a plain metal frame at adult head height, and the fluorescent tube above the door.
+          FILM STILL: Film still from a feature film, not an illustration. Image 1 is Diego wet and wounded: match his skin tone, his wet right hand and his light grey canvas jacket with the right sleeve soaked dark red-black; only his right hand and the cuff of his right sleeve are in frame. Image 2 is the connecting door of the last carriage under red emergency light: match its vertical rectangular window with a plain metal frame at adult head height. Image 3 is the empty red vestibule beyond the glass; that corridor stays still relative to the train.
 
           MOMENT: Seen from inside the last carriage, a man's right hand has just knocked twice on the door window from outside and now rests flat on the glass: palm toward camera, fingers spread and pointing up, thumb toward frame right. Only the palm is visible through the glass. Behind it, the corridor on the other side is lit red and empty. No face, no other people.
 
@@ -429,7 +436,7 @@ planos:
       keyframe_entrada:
         motor: gpt_image_2_5_edit
         endpoint: openai/gpt-image-2.5/flare/edit
-        params: { image_size: { width: 1088, height: 1920 }, quality: high, num_images: 2 }
+        params: { image_size: { width: 720, height: 1280 }, quality: high, num_images: 2 }
         referencias: ["Image 1 = keyframe c01_p01 (aprobado)"]
         texto: |
           Edit Image 1, the approved frame. Change only the hand and the glass around it: the same wet right hand, open, now hangs a few centimetres behind the glass without touching it, palm toward camera, fingers spread and pointing up, thumb toward frame right. Remove the palm print and the fresh dark smears and water around it; the glass keeps only the dry dark stains in the upper-right corner. Keep everything else exactly as in Image 1: camera position, framing, 65mm lens and focus, the red and cold-white light, the empty red corridor, the soaked light grey cuff entering from the bottom edge, the dark red-black stains on the hand, grain and color. No text, no logos.
@@ -524,14 +531,14 @@ planos:
     motor_keyframe: nano_banana_pro_edit
     motor_video: h3_max
     metodo_video: FF
-    tomas_objetivo: 3
+    tomas_objetivo: 2
 
     # --- Prompter ---
     prompts:
       keyframe:
         motor: nano_banana_pro_edit
         endpoint: fal-ai/nano-banana-pro/edit
-        params: { aspect_ratio: "9:16", resolution: "2K", num_images: 3 }
+        params: { aspect_ratio: "9:16", resolution: "1K", num_images: 2 }
         referencias: ["Image 1 = martina (hoja)", "Image 2 = loc_ultimo_vagon_rojo", "Image 3 = keyframe c01_p01 (aprobado)"]
         texto: |
           FILM STILL: Film still from a feature film, not an illustration. Image 1 is Martina: match her face, her dark brown hair tied in a low ponytail and her cream crew-neck wool sweater exactly. Image 2 is the last carriage under red emergency light: match its seats, the low red lights at floor level and the cold fluorescent tube. Image 3 is the approved reverse shot of the door window she is looking at: match its red emergency light and cold-white tube exactly.
@@ -623,21 +630,21 @@ planos:
 
     # --- Asistente de dirección ---
     bloque: c01_b03
-    referencias: [martina, tomas, celular_martina, loc_vagon_pasajeros_ambar]
+    referencias: [martina, tomas, celular_martina, loc_vagon_pasajeros_ambar, loc_asiento_pareja_ambar, kf01_pareja_ambar]
     motor_keyframe: gpt_image_2_5_edit
     motor_video: h3_max
     metodo_video: REF
-    tomas_objetivo: 3
+    tomas_objetivo: 2
 
     # --- Prompter ---
     prompts:
       keyframe:
         motor: gpt_image_2_5_edit
         endpoint: openai/gpt-image-2.5/flare/edit
-        params: { image_size: { width: 1088, height: 1920 }, quality: high, num_images: 3 }
-        referencias: ["Image 1 = martina (hoja)", "Image 2 = tomas (hoja)", "Image 3 = celular_martina", "Image 4 = loc_vagon_pasajeros_ambar"]
+        params: { image_size: { width: 720, height: 1280 }, quality: high, num_images: 2 }
+        referencias: ["Image 1 = martina (hoja)", "Image 2 = tomas (hoja)", "Image 3 = celular_martina", "Image 4 = loc_vagon_pasajeros_ambar", "Image 5 = loc_asiento_pareja_ambar", "Image 6 = kf01_pareja_ambar"]
         texto: |
-          FILM STILL: Film still from a feature film, not an illustration. Image 1 is Martina: match her face, dark brown hair, cream crew-neck wool sweater and black trousers. Image 2 is Tomás: match his face, short dark hair, stubble and olive green cotton zip jacket, closed, over a dark grey T-shirt. Image 3 is her phone: plain terracotta case, no logo. Image 4 is the night-train passenger carriage: match the navy fabric seats with grey headrest covers, the small amber reading lamps under the luggage racks and the rain on the dark blue windows; here the camera faces the other way, toward the front of the seats.
+          FILM STILL: Film still from a feature film, not an illustration. Image 1 is Martina: match her face, dark brown hair, cream crew-neck wool sweater and black trousers. Image 2 is Tomás: match his face, short dark hair, stubble and olive green cotton zip jacket, closed, over a dark grey T-shirt. Image 3 is her phone: plain terracotta case, no logo. Image 4 is the night-train passenger carriage looking toward the connecting door: match the navy fabric seats with grey headrest covers, the small amber reading lamps under the luggage racks and the rain on the dark blue windows. Image 5 is their pair of seats. Image 6 is the approved still of this couple in this carriage: match its amber light, seat fabric and the two of them facing camera.
 
           MOMENT: A night train in motion. Martina and Tomás sit side by side, not touching; the armrest between them is empty. Tomás has just asked her a question and keeps looking at her profile, body turned toward her, still, waiting. Martina looks at the rainy window. Her phone lies face up on her left thigh, on the window side, screen off.
 
@@ -720,14 +727,14 @@ planos:
     motor_keyframe: gpt_image_2_5_edit
     motor_video: h3_max
     metodo_video: REF
-    tomas_objetivo: 3
+    tomas_objetivo: 2
 
     # --- Prompter ---
     prompts:
       keyframe:
         motor: gpt_image_2_5_edit
         endpoint: openai/gpt-image-2.5/flare/edit
-        params: { image_size: { width: 1088, height: 1920 }, quality: high, num_images: 3 }
+        params: { image_size: { width: 720, height: 1280 }, quality: high, num_images: 2 }
         referencias: ["Image 1 = martina (hoja)", "Image 2 = loc_vagon_pasajeros_ambar", "Image 3 = keyframe c01_p03 (aprobado)"]
         texto: |
           FILM STILL: Film still from a feature film, not an illustration. Image 1 is Martina: match her face, dark brown hair and cream crew-neck wool sweater. Image 2 is the passenger carriage: match the amber reading lamps and the rainy dark blue window. Image 3 is the approved two-shot of this scene: match its light, color, window and her neat hair exactly; this is a closer shot of her, taken from Tomás's side.
@@ -809,14 +816,14 @@ planos:
     motor_keyframe: gpt_image_2_5_edit
     motor_video: h3_max
     metodo_video: FL
-    tomas_objetivo: 3
+    tomas_objetivo: 2
 
     # --- Prompter ---
     prompts:
       keyframe:
         motor: gpt_image_2_5_edit
         endpoint: openai/gpt-image-2.5/flare/edit
-        params: { image_size: { width: 1088, height: 1920 }, quality: high, num_images: 3 }
+        params: { image_size: { width: 720, height: 1280 }, quality: high, num_images: 2 }
         referencias: ["Image 1 = martina (hoja)", "Image 2 = celular_martina", "Image 3 = keyframe c01_p03 (aprobado)"]
         texto: |
           FILM STILL: Film still from a feature film, not an illustration. Image 1 is Martina: match her black trousers and the skin tone of her hand. Image 2 is her phone: match the plain terracotta case and the black glass exactly, no logo. Image 3 is the approved two-shot of this scene: match its amber reading-lamp light and color.
@@ -905,14 +912,14 @@ planos:
     motor_keyframe: gpt_image_2_5_edit
     motor_video: h3_max
     metodo_video: REF
-    tomas_objetivo: 3
+    tomas_objetivo: 2
 
     # --- Prompter ---
     prompts:
       keyframe:
         motor: gpt_image_2_5_edit
         endpoint: openai/gpt-image-2.5/flare/edit
-        params: { image_size: { width: 1088, height: 1920 }, quality: high, num_images: 3 }
+        params: { image_size: { width: 720, height: 1280 }, quality: high, num_images: 2 }
         referencias: ["Image 1 = martina (hoja)", "Image 2 = tomas (hoja)", "Image 3 = celular_martina", "Image 4 = loc_vagon_pasajeros_ambar", "Image 5 = keyframe c01_p03 (aprobado)"]
         texto: |
           FILM STILL: Film still from a feature film, not an illustration. Image 1 is Martina: match her face, dark brown hair, cream crew-neck wool sweater and black trousers. Image 2 is Tomás: match his face and olive green zip jacket over a dark grey T-shirt. Image 3 is her phone: plain terracotta case, no logo. Image 4 is the passenger carriage: match the seats, the amber reading lamps and the rainy windows. Image 5 is the approved two-shot of this scene: match its seats, light, color and the positions of both of them exactly; this frame is taken from the same spot, one step further back and slightly higher.
@@ -993,14 +1000,14 @@ planos:
     motor_keyframe: gpt_image_2_5_edit
     motor_video: h3_max
     metodo_video: REF
-    tomas_objetivo: 3
+    tomas_objetivo: 2
 
     # --- Prompter ---
     prompts:
       keyframe:
         motor: gpt_image_2_5_edit
         endpoint: openai/gpt-image-2.5/flare/edit
-        params: { image_size: { width: 1088, height: 1920 }, quality: high, num_images: 3 }
+        params: { image_size: { width: 720, height: 1280 }, quality: high, num_images: 2 }
         referencias: ["Image 1 = carmen (hoja)", "Image 2 = loc_vagon_pasajeros_ambar", "Image 3 = keyframe c01_p03 (aprobado)"]
         texto: |
           FILM STILL: Film still from a feature film, not an illustration. Image 1 is Carmen: match her face, grey hair in a bun, long dark charcoal wool coat, seafoam-green scrub top with a V-neck and matching scrub trousers, and her brown leather bag with a short handle. Image 2 is the passenger carriage: match the navy fabric seats, the amber reading lamps under the luggage racks and the rainy dark blue windows; here the camera faces the other way, toward the front of the seats. Image 3 is the approved first shot of this scene: match its light and color exactly.
@@ -1083,14 +1090,14 @@ planos:
     motor_keyframe: gpt_image_2_5_edit
     motor_video: h3_max
     metodo_video: REF
-    tomas_objetivo: 3
+    tomas_objetivo: 2
 
     # --- Prompter ---
     prompts:
       keyframe:
         motor: gpt_image_2_5_edit
         endpoint: openai/gpt-image-2.5/flare/edit
-        params: { image_size: { width: 1088, height: 1920 }, quality: high, num_images: 3 }
+        params: { image_size: { width: 720, height: 1280 }, quality: high, num_images: 2 }
         referencias: ["Image 1 = ivan (hoja)", "Image 2 = loc_vagon_pasajeros_ambar", "Image 3 = loc_ultimo_vagon_rojo (solo forma de la puerta)", "Image 4 = keyframe c01_p03 (aprobado)"]
         texto: |
           FILM STILL: Film still from a feature film, not an illustration. Image 1 is Iván: match his face, cropped greying hair, stubble, and his heavy brown canvas work jacket with a dark corduroy collar, zipped up to the chest over a dark grey T-shirt. Image 2 is the passenger carriage: match the navy fabric seats, the amber reading lamps and the rainy dark blue windows. Image 3 is used only for the shape of the connecting door and its tall vertical rectangular window with a plain metal frame; ignore its red light: here the window is clean and glows dim amber. Image 4 is the approved first shot of this scene: match its light and color exactly.
@@ -1178,14 +1185,14 @@ planos:
     motor_keyframe: gpt_image_2_5_edit
     motor_video: h3_max
     metodo_video: FF
-    tomas_objetivo: 3
+    tomas_objetivo: 2
 
     # --- Prompter ---
     prompts:
       keyframe:
         motor: gpt_image_2_5_edit
         endpoint: openai/gpt-image-2.5/flare/edit
-        params: { image_size: { width: 1088, height: 1920 }, quality: high, num_images: 3 }
+        params: { image_size: { width: 720, height: 1280 }, quality: high, num_images: 2 }
         referencias: ["Image 1 = don_hugo (hoja)", "Image 2 = loc_vagon_pasajeros_ambar", "Image 3 = keyframe c01_p03 (aprobado)"]
         texto: |
           FILM STILL: Film still from a feature film, not an illustration. Image 1 is Don Hugo: match his face, grey moustache and grey hair, grey peaked cap with a black band, and his charcoal-grey conductor uniform with plain metal buttons, matching trousers, white shirt and dark tie; no insignia, badges or logos. Image 2 is the passenger carriage seen toward the front, as in this shot: match the navy fabric seats with grey headrest covers, the amber reading lamps under the luggage racks and the rainy dark blue windows. Image 3 is the approved first shot of this scene: match its light and color exactly.
@@ -1269,14 +1276,14 @@ planos:
     motor_keyframe: gpt_image_2_5_edit
     motor_video: h3_max
     metodo_video: FL
-    tomas_objetivo: 3
+    tomas_objetivo: 2
 
     # --- Prompter ---
     prompts:
       keyframe:
         motor: gpt_image_2_5_edit
         endpoint: openai/gpt-image-2.5/flare/edit
-        params: { image_size: { width: 720, height: 1280 }, quality: high, num_images: 3 }
+        params: { image_size: { width: 720, height: 1280 }, quality: high, num_images: 2 }
         referencias: ["Image 1 = don_hugo (hoja)", "Image 2 = revolver_hugo", "Image 3 = keyframe c01_p09 (aprobado)"]
         texto: |
           FILM STILL: Film still from a feature film, not an illustration. Image 1 is Don Hugo: match his charcoal-grey conductor jacket with plain metal buttons and matching trousers. Image 2 is the revolver in its holster: match the worn blued steel, the dark checkered wooden grip, the cylinder and the short brown leather holster exactly. Image 3 is the approved previous shot: match the cloth, the buttons and the amber light exactly.
@@ -1305,22 +1312,20 @@ resumen_produccion:
   planos_por_motor:
     keyframe: { gpt_image_2_5_edit: 9, nano_banana_pro_edit: 1 }
     video: { h3_max: 10, kling: 0 }
-  keyframes: 36
-  keyframes_desglose: "30 principales (10 planos × 3 tomas) + 6 variantes de entrada para primer y último fotograma (c01_p01, c01_p05 y c01_p10, 2 tomas cada una, editando el keyframe aprobado). Cristian aprueba 13: uno por plano y las 3 variantes."
+  keyframes: 26
+  keyframes_desglose: "20 principales (10 planos × 2 tomas) + 6 variantes de entrada (c01_p01, c01_p05 y c01_p10, 2 tomas cada una). Cristian aprueba 13: uno por plano y las 3 variantes."
   bloques: 6
   segundos_video: 74
   segundos_desglose: "37 s por pasada (cinco bloques de 5 s y uno de 12 s) × 2 tomas por bloque, con seed distinto."
-  costo_keyframes_usd: 2.10
-  costo_keyframes_desglose: "GPT Image: 27 principales × 0,05 = 1,35 y 6 variantes × 0,05 = 0,30. Nano Banana Pro: 3 × 0,15 = 0,45."
+  costo_keyframes_usd: 1.50
+  costo_keyframes_desglose: "GPT Image 720×1280: 18 principales × ~0,05 = 0,90 y 6 variantes × 0,05 = 0,30. Nano Banana Pro 1K: 2 × 0,15 = 0,30. Total ~1,50 (más si hay muchas referencias por imagen)."
   costo_video_usd: 3.82
   costo_video_desglose: "Por pasada a 480P: cinco bloques de 5 s × 0,25 = 1,25 y c01_b03 (12 s) = 0,60 + 0,06 de referencias extra = 0,66. Total por pasada, 1,91; con 2 tomas por bloque, 3,82."
-  costo_total_usd: 5.92
+  costo_total_usd: 5.32
   orden_generacion: "1) Keyframes: c01_p01 → c01_p02 (con p01 aprobado); c01_p03 (ancla) → c01_p04, c01_p06, c01_p05, c01_p07, c01_p08, c01_p09 (con p03 aprobado) → c01_p10 (con p09 aprobado); al final, las variantes de entrada de p01, p05 y p10. 2) Aprobación de Cristian. 3) Video: c01_b03 primero (es el que más arriesga), luego c01_b01, c01_b02, c01_b04, c01_b05 y c01_b06."
   bloqueos:
-    - "Todos los assets están en estado provisorio. La regla es que no se genera con assets sin aprobar: esta prueba se autoriza como exploración y ningún keyframe se da por final."
-    - "boletos está pendiente (hc31) y el pasajero dormido de c01_p09 no tiene referencia. Bloquean c01_p09 salvo que Cristian acepte generarlos solo con prompt."
-    - "Falta la mano derecha de Diego mojada, con manchas y el puño empapado, vista desde adentro con luz roja (c01_p01). La hoja de Diego está seca y limpia."
-    - "Las puertas no coinciden entre placas (hc22, alerta del Director de fotografía en c01_p08). Se mitiga con loc_ultimo_vagon_rojo como referencia de forma, pero hay que unificarlas en las placas definitivas."
-    - "Las placas miden 608×1088. Para la prueba a 480P bastan keyframes de 720×1280; en la versión final (768P o 1080P) se piden a no menos de 1088×1920."
-    - "No hay variante de Martina después de la carrera (mechones y sudor, hc10) ni placa del vagón de pasajeros con luz roja para el fondo de c01_p01. Por ahora salen del prompt."
-    - "No hay voz de Martina en ElevenLabs para usar target_audio_url en c01_b02. No bloquea: el «Diego…» se genera con el video y se puede reemplazar en post."
+    - "Assets v1 aprobados (2026-10-01) registrados en assets y en produccion/assets/aprobados_v1.md. Keyframes de esta tanda: GPT Image 2.5 a 720×1280, 2 tomas."
+    - "boletos sigue pendiente (hc31) y el pasajero dormido de c01_p09 no tiene hoja. Se genera p09 solo con prompt + Hugo + F08."
+    - "No hay variante de Martina después de la carrera (mechones y sudor, hc10) como asset aparte: en p02 sale del prompt sobre HOJA_martina."
+    - "El prop del revólver muestra dos balas; en p10 el prompt fija tambor cerrado sin balas a la vista (hc29)."
+    - "No hay voz de Martina en ElevenLabs para target_audio_url en c01_b02. No bloquea el keyframe."

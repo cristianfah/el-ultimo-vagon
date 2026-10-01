@@ -1,5 +1,6 @@
+assets_local/
 .DS_Store
-*.mp4
 *.mov
-renders/
+*.mp4
 !produccion/pruebas/**/*.mp4
+renders/
