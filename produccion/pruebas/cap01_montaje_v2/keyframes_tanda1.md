@@ -24,10 +24,24 @@ Generados 2026-10-01 con assets v1 aprobados. GPT Image 2.5 Flare edit a 720×12
 | c01_p10 | GPT | Revólver en funda. Vigilar: tambor cerrado sin balas a la vista (hc29). |
 | c01_p10_entrada | GPT edit | Chaqueta apenas abierta, sin revólver. |
 
-Las anclas de trabajo en `urls_keyframes.json` son la toma 0 de cada plano, solo para encadenar. **Cristian elige** la toma final de cada uno antes del video.
+**Elegidas por Cristian (2026-10-01):** las 13 aprobadas. Registro en `decisiones_keyframes_tanda1.json` y `aprobados_keyframes.json`.
+
+| Plano | Toma |
+|---|---|
+| p01 | 1 |
+| p01 entrada | 1 |
+| p02 | 1 |
+| p03 | 0 |
+| p04 | 0 |
+| p05 | 0 |
+| p05 entrada | 0 |
+| p06 | 1 |
+| p07 | 0 |
+| p08 | 1 |
+| p09 | 0 |
+| p10 | 1 |
+| p10 entrada | 0 |
 
 ## Siguiente
 
-1. Cristian elige toma (o pide una corrección de una variable).
-2. Se actualiza `renders/cap01/aprobados.json` / el registro del repo.
-3. Video H3 Max a 480p, máximo dos tomas por bloque.
+Video H3 Max a 480p (orden: b03 → b01 → b02 → b04 → b05 → b06).
