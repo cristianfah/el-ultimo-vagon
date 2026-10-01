@@ -25,3 +25,12 @@ Formato: fecha · decisión · motivo.
 - **Los sets salen de una plancha maestra:** los estados de luz y los ángulos se editan sobre la misma imagen, no se generan de cero. Motivo: en la prueba 1 el vagón cambiaba de un plano a otro.
 - **La manija del freno de emergencia se planta desde el capítulo 1** en el set, junto a la puerta. Motivo: cuando alguien la tire en el capítulo 3, el público tiene que poder decir que estaba ahí.
 - **Propuestas de casting visual pendientes de aprobación** (`direccion_arte/personajes/fichas_personajes_v1.md`): herida de Diego en el antebrazo izquierdo, reloj de enfermera para Carmen y sin hacha en el último vagón.
+- **fal.ai entra al pipeline** para las ediciones con GPT Image 2.5 (Flare y Sunburst) y Nano Banana Pro, con `tools/fal_gen.py`. Weavy se mantiene para los flujos de nodos. Motivo: es más rápido, se puede automatizar y cada corrección queda guardada como archivo de prompt.
+- **El repositorio de imágenes vive en Drive**, en la carpeta privada del proyecto, y se sube con `tools/drive_sync.py`. Motivo: falta de espacio en disco local.
+- **Ninguna imagen se propone para aprobación sin pasar por el equipo de agentes** (continuidad y DP/arte). Las correcciones son de una sola variable. Motivo: lo pidió Cristian, para cuidar la continuidad.
+- **Set del último vagón, v2** (`direccion_arte/sets/set_ultimo_vagon_v2.md`). Pendiente de la aprobación de Cristian.
+  - Son 6 filas de 2 + 2.
+  - El compartimento del revisor es una cabina construida en la esquina trasera, del mismo lado que el freno.
+  - No hay llave en las placas.
+  - La cinta va en la fila 5 izquierda.
+  - Motivo: la revisión de continuidad encontró la puerta del revisor dando al exterior, la llave en planos donde no corresponde y la cinta en filas distintas.
