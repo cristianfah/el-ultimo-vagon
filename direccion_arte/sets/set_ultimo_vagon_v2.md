@@ -68,7 +68,7 @@ Cada archivo de prompt en `prompts_fal/` está completo y listo para pegar. Se c
 
 1. **Aprobación de Cristian** de V01 a V05.
 2. Revisar en resolución completa la pieza arriba a la izquierda del marco en V03: debe leerse como pestillo, no como bisagra.
-3. **Decidir la fuente de la luz roja:** las rejillas del cielo o una tira de emergencia agregada. Hay que resolverlo antes de reiluminar.
+3. ~~Decidir la fuente de la luz roja.~~ Decidido: una **tira de emergencia** en el centro del cielo. Las vistas V01 a V05 quedan como **plano técnico** (distribución y continuidad); las planchas finales se rehacen en una sola pasada (ver `prompts_fal/h01_plancha_heroe_ambar.txt` y `biblia/decisiones.md`).
 4. Vistas que faltan, en este orden:
    1. Tres cuartos hacia la puerta, desde la fila 3, con espacio para seis personas (0:31–1:19).
    2. La esquina trasera, en tres cuartos hacia la cabina y la ventana trasera, para el 0:37.
