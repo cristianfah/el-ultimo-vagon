@@ -1,7 +1,7 @@
 # Set: el último vagón — v2
 
 Reemplaza la distribución y la tabla de continuidad de `set_ultimo_vagon_v1.md`. Los estados de luz (sección 3), los props (4.5) y las pruebas en situación (sección 6) de la v1 siguen vigentes.
-**Estado:** cinco vistas revisadas por el equipo de agentes (continuidad y DP/arte), **pendientes de la aprobación de Cristian**.
+**Estado:** las vistas técnicas (V01 a V05), los dos cuadros de look y las once planchas finales (F01 a F11) pasaron la revisión de continuidad del equipo de agentes. **Están pendientes de la aprobación de Cristian.**
 Imágenes: carpeta de Drive `imagenes/03_para_aprobacion/set_ultimo_vagon` ([enlace](https://drive.google.com/drive/folders/1qGwhdUIiicH_7pHZB8UsnI6cPB0Fkw7K)). Las rondas anteriores están en `imagenes/02_candidatos_fal/set_ultimo_vagon/`.
 
 ## 1. Cambios respecto de la v1
@@ -76,29 +76,45 @@ Todas las planchas finales salen de estas dos: imagen 1 = el cuadro de look del 
 
 ## 4c. Planchas finales (revisadas por los agentes)
 
-| Archivo en Drive | Modelo | Prompts | Uso |
-|---|---|---|---|
-| `look_rojo_plancha_heroe.png` | Flare | `h02` → `h03` | Hacia la puerta, rojo (también es el cuadro de look) |
-| `final_rojo_p02_eje_fondo_cabina.png` | Sunburst | `p02_eje_fondo_rojo` (una pasada: look rojo + V02) | Hacia el fondo, rojo: Hugo y la cabina |
-| `final_rojo_p03_puerta_interior.png` | Flare | `p03_puerta_interior_rojo` (una pasada: look rojo + V03) → `p03b_puerta_interior_bisagra` | Puerta desde dentro, 0:45 (PS-02) |
+Carpeta de Drive: `imagenes/03_para_aprobacion/set_ultimo_vagon/finales` ([enlace](https://drive.google.com/drive/folders/1ryV_s6_TSgVIUrEWwPDLpdNFTFo_6EcB)), con la hoja de contactos `00_hoja_contactos_set.jpg`. Las candidatas descartadas están en `imagenes/02_candidatos_fal/set_ultimo_vagon/planchas_finales_rojo`.
 
-Bisagras de la puerta: solo a la derecha vistas desde dentro (a la izquierda desde fuera).
+| Archivo | Modelo | Prompts (`prompts_fal/`) | Lente | Uso en el cap. 1 |
+|---|---|---|---|---|
+| `F01_rojo_ultimo_vagon_hacia_puerta` | Flare | `h02` → `h03` | 24 mm | Plano general hacia la puerta, 0:23–1:19 |
+| `F02_rojo_ultimo_vagon_hacia_fondo_cabina` | Sunburst | `p02_eje_fondo_rojo` | 24 mm | Contraplano hacia el fondo, Hugo y la cabina |
+| `F03_rojo_puerta_desde_dentro_0-45` | Flare | `p03_puerta_interior_rojo` → `p03b_puerta_interior_bisagra` | 35 mm T2.8 | Diego en la ventanita, 0:45 (PS-02), Carmen en el 0:58 |
+| `F04_rojo_puerta_desde_fuelle` | NBP | `p04_puerta_exterior_rojo` → `p04b_puerta_ext_ventanita_rojo` | 35 mm T2.8 | Contraplano de Diego desde fuera |
+| `F05_rojo_tres_cuartos_hacia_puerta` | NBP | `p05_tres_cuartos_puerta_rojo` → `p05b_tres_cuartos_artefacto` | 35 mm T2.8 | Grupo frente a la puerta, 0:31–1:19 |
+| `F06_rojo_esquina_trasera_0-37` | Sunburst | `p06_esquina_trasera_rojo` | 50 mm T2 | Inserto de Hugo y el revólver, 0:37 |
+| `F07_rojo_fuelle_vestibulo` | Sunburst | `p07_fuelle_vestibulo_rojo` | 35 mm T2.8 | Lo que se ve por la ventanita, 0:28, 0:45 y 1:08 (la esquina por donde aparecen los infectados) |
+| `F08_ambar_pasajeros_hacia_puerta` | Flare | `p08_vagon_pasajeros_ambar` | 32 mm T4 | Vagón de pasajeros, 0:03–0:11 |
+| `F09_ambar_asiento_pareja` | Sunburst | `p09_asiento_pareja_ambar` | 50 mm T2 | Martina y Tomás, 0:03 (PS-01) |
+| `F10_rojo_pasajeros_hacia_puerta` | Flare | `p08` → `p11_vagon_pasajeros_rojo` | 32 mm T4 | Cambio de luz del 0:16 y el hombre de camisa azul del 0:19 |
+| `F11_rojo_pasajeros_hacia_atras` | Sunburst | `p10b_vagon_pasajeros_fondo_rojo` | 32 mm T2.8 | Contraplano de Iván (0:19) y la huida hacia el último vagón (0:23) |
+| `F12_rojo_detalle_llave_0-23` | Flare | `p12_detalle_llave_rojo` (imagen 1 = F03) | 75 mm T2.8 | Hugo gira la llave, 0:23; Martina con la llave, 1:10–1:19 |
+
+### Props (carpeta `imagenes/03_para_aprobacion/props`, [enlace](https://drive.google.com/drive/folders/1aft6jqtrHR-Xm2NPCJItu552niCaSSSf))
+
+| Archivo | Modelo | Prompt | Nota |
+|---|---|---|---|
+| `PROP_llave_y_cerradura` | Flare | `prop_llave` (imagen 1 = F03) | La misma llave de F12 y la placa de F03 |
+| `PROP_freno_emergencia` | Flare | `prop_freno_emergencia` (imagen 1 = F03) | La palanca roja hacia arriba, como en F01, F03 y F05 |
+| `PROP_revolver_dos_balas` | NBP | `prop_revolver` | Dos vainas y cuatro recámaras vacías, sin marcas |
+| `PROP_celular_martina` | NBP | `prop_celular_martina_v3` | Teléfono económico genérico. Las v1 y v2 se descartaron porque la cámara recordaba modelos de marca |
+
+Reglas de rodaje que siguen todas las planchas:
+- Cada plancha sale de una pasada limpia (imagen 1 = el look aprobado, imagen 2 = la distribución) y tiene como máximo una corrección.
+- Lente, diafragma, foco y altura de cámara van definidos en cada plano.
+- Contención: sin niebla densa, sin resplandores, sin destellos de lente y sin saturación exagerada.
+
+Bisagras de la puerta: solo a la derecha vistas desde dentro (a la izquierda desde fuera). En el vagón de pasajeros, los asientos miran hacia su puerta delantera, igual que en el último vagón.
 
 ## 5. Pendientes
 
-1. **Aprobación de Cristian** de V01 a V05.
-2. Revisar en resolución completa la pieza arriba a la izquierda del marco en V03: debe leerse como pestillo, no como bisagra.
-3. ~~Decidir la fuente de la luz roja.~~ Decidido: una **tira de emergencia** en el centro del cielo. Las vistas V01 a V05 quedan como **plano técnico** (distribución y continuidad); las planchas finales se rehacen en una sola pasada (ver `prompts_fal/h01_plancha_heroe_ambar.txt` y `biblia/decisiones.md`).
-4. Vistas que faltan, en este orden:
-   1. Tres cuartos hacia la puerta, desde la fila 3, con espacio para seis personas (0:31–1:19).
-   2. La esquina trasera, en tres cuartos hacia la cabina y la ventana trasera, para el 0:37.
-   3. El vestíbulo y el fuelle, con la «esquina» del vagón anterior; tiene que coincidir con lo que se ve por la ventanita de V03.
-   4. El vagón de pasajeros, editado sobre V01: puerta en los dos extremos, sin cabina ni ventana trasera. Más su contraplano para Iván (0:19).
-   5. La cinta en la fila 5 izquierda, sobre la base aprobada.
-5. **Estados de luz:**
-   - Ámbar solo para el vagón de pasajeros (0:03–0:16).
-   - Rojo para todas las vistas del último vagón (desde el 0:23).
-   - En la versión roja de V04 se apaga el tubo blanco del lado del fuelle.
+1. **Aprobación de Cristian** de F01 a F12 y de los cuatro props.
+2. ~~Decidir la fuente de la luz roja.~~ Decidido: una **tira de emergencia** en el centro del cielo.
+3. La cinta de la fila 5 izquierda todavía no está en ninguna plancha. Se agrega cuando haya un plano que la muestre.
+4. El último vagón no tiene estado ámbar en el capítulo 1. `look_ambar_plancha_heroe` sirve solo como referencia de look.
 
 ## 6. Regla de revisión
 

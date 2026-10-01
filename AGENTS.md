@@ -20,7 +20,7 @@ Todo agente que trabaje en este repo (Cursor, Claude, cualquier otro) lee este a
   - Opción 1 de reglas: es el primer día, nadie conoce las reglas, los personajes solo saben lo que vieron y las deducciones pueden estar mal.
   - El tren se detiene más adelante (capítulo 2 o 3) porque alguien tira el freno de emergencia.
   - Ver `biblia/decisiones.md`.
-- **Assets en preparación:** plan en `produccion/assets/plan_assets_v1.md`, fichas de personajes en `direccion_arte/personajes/` y set vigente en `direccion_arte/sets/set_ultimo_vagon_v2.md`. Cinco vistas del set ya pasaron la revisión de los agentes y esperan la aprobación de Cristian.
+- **Assets en preparación:** plan en `produccion/assets/plan_assets_v1.md`, fichas de personajes en `direccion_arte/personajes/` y set vigente en `direccion_arte/sets/set_ultimo_vagon_v2.md`. Ya pasaron la revisión de los agentes y esperan la aprobación de Cristian: las doce planchas finales del set (F01 a F12, en rojo y ámbar) y los cuatro props. Falta el casting: las correcciones de personajes y las rondas de Midjourney que hace Cristian.
 - **Imágenes:** viven en la carpeta privada de Drive y se suben con `tools/drive_sync.py`. Las ediciones se corren con `tools/fal_gen.py`. Ninguna imagen se propone para aprobación sin pasar antes por la revisión de continuidad de los agentes.
 - **Proyecto anterior archivado:** VAGÓN 7, de agentes y traición, en `archivo/vagon7/`. Su dirección de arte y sus assets se reutilizan.
 

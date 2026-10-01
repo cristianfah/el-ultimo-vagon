@@ -21,6 +21,8 @@ ENDPOINTS = {
     "sunburst": "openai/gpt-image-2.5/sunburst/edit",
 }
 
+TEXT_ENDPOINTS = {"nbp": "fal-ai/nano-banana-pro"}
+
 # GPT Image 2.5 pide tamaños en múltiplos de 16.
 GPT_SIZES = {
     "9:16": {"width": 1152, "height": 2048},
@@ -39,7 +41,14 @@ def build_args(model, prompt, urls, ar, n):
 
 
 def run(model, prompt, urls, ar, n, out):
-    result = fal_client.subscribe(ENDPOINTS[model], arguments=build_args(model, prompt, urls, ar, n))
+    endpoint = ENDPOINTS[model]
+    args = build_args(model, prompt, urls, ar, n)
+    if not urls:
+        if model not in TEXT_ENDPOINTS:
+            raise ValueError("sin imágenes de referencia solo funciona con nbp")
+        endpoint = TEXT_ENDPOINTS[model]
+        args.pop("image_urls")
+    result = fal_client.subscribe(endpoint, arguments=args)
     paths = []
     for i, img in enumerate(result["images"]):
         path = pathlib.Path(f"{out}_{model}_{i}.png")

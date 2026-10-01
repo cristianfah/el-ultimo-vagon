@@ -35,4 +35,6 @@ Formato: fecha · decisión · motivo.
   - La cinta va en la fila 5 izquierda.
   - Motivo: la revisión de continuidad encontró la puerta del revisor dando al exterior, la llave en planos donde no corresponde y la cinta en filas distintas.
 - **La luz roja sale de una tira de emergencia en el centro del cielo del vagón.** Motivo: Cristian la prefiere; tiene más sentido que las rejillas.
+- **En el vagón de pasajeros, los asientos miran hacia su puerta delantera, igual que en el último vagón.** Motivo: es el mismo modelo de vagón, y en los contraplanos los asientos tienen que verse de frente.
+- **La cámara de la utilería no puede parecerse a la de un modelo de marca** (por ejemplo, el celular de Martina). Motivo: es propiedad intelectual ajena; la revisión descartó dos versiones del celular.
 - **Las vistas con luz neutra pasan a ser el plano técnico del set, no planchas finales.** La dirección de arte se fija antes de las planchas finales, con un cuadro de referencia por estado de luz. Cada plancha final se genera en una sola pasada (referencia de look más plano técnico) y admite como máximo una corrección, siempre sobre la pasada limpia. Motivo: con las ediciones en cadena aparece el ruido típico de la IA y se pierde el look cinematográfico de la referencia ámbar y azul.
