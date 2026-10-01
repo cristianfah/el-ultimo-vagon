@@ -1,3 +1,5 @@
+__pycache__/
+*.pyc
 assets_local/
 .DS_Store
 *.mov
