@@ -2,6 +2,8 @@
 
 Generados 2026-10-01 con assets v1 aprobados. GPT Image 2.5 Flare edit a 720×1280 (2 tomas) y Nano Banana Pro 1K en `c01_p02`. URLs en `urls_keyframes.json`.
 
+**Ver en el celular (Drive):** [imagenes/05_keyframes_montaje_v2/tanda1](https://drive.google.com/drive/folders/1zBQhcsJaoeyvKlsp0rD3LA6NMxx1sHso) — 26 PNG, nombres `c01_pNN_keyframe_toma0/1.png`.
+
 **Costo de esta tanda:** 26 imágenes. Orden de magnitud ~1,5–2,5 USD.
 
 ## Estado
