@@ -1,0 +1,106 @@
+[
+  {
+    "id": "c01_p01_keyframe",
+    "label": "p01 · mano en ventanita",
+    "scene": "Cold open",
+    "toma_0": "https://v3b.fal.media/files/b/0aaca78b/dFndWggJyP88W3MUqXzqa_4kOrktKS.png",
+    "toma_1": "https://v3b.fal.media/files/b/0aaca78b/4hAUzLJ3aVDiQdyWNp34d_gnK0QeXo.png",
+    "drive_folder": "https://drive.google.com/drive/folders/1zBQhcsJaoeyvKlsp0rD3LA6NMxx1sHso"
+  },
+  {
+    "id": "c01_p01_keyframe_entrada",
+    "label": "p01 entrada · mano sin tocar",
+    "scene": "Cold open",
+    "toma_0": "https://v3b.fal.media/files/b/0aaca79e/s0m7a8UmRwvvGrxdt2dwT_eSYSYQ6S.png",
+    "toma_1": "https://v3b.fal.media/files/b/0aaca79e/CaYCYqowgz2ig7_INRHTo_Hb0Wh0Nr.png",
+    "drive_folder": "https://drive.google.com/drive/folders/1zBQhcsJaoeyvKlsp0rD3LA6NMxx1sHso"
+  },
+  {
+    "id": "c01_p02_keyframe",
+    "label": "p02 · Martina «Diego…»",
+    "scene": "Cold open",
+    "toma_0": "https://v3b.fal.media/files/b/0aaca791/C_5vh2q5sYRhu97UDxQQc_0FFVQKzI.png",
+    "toma_1": "https://v3b.fal.media/files/b/0aaca791/zkTo6py4_lIvr8_RuCOOa_xKqEjgDl.png",
+    "drive_folder": "https://drive.google.com/drive/folders/1zBQhcsJaoeyvKlsp0rD3LA6NMxx1sHso"
+  },
+  {
+    "id": "c01_p03_keyframe",
+    "label": "p03 · pareja en el tren",
+    "scene": "Escena 1",
+    "toma_0": "https://v3b.fal.media/files/b/0aaca792/cwZNU1PF9uWAkjCYeJbnM_L2TZv7my.png",
+    "toma_1": "https://v3b.fal.media/files/b/0aaca792/1uHeZKyQVoHD2iMdNoOfP_7fAzD535.png",
+    "drive_folder": "https://drive.google.com/drive/folders/1zBQhcsJaoeyvKlsp0rD3LA6NMxx1sHso"
+  },
+  {
+    "id": "c01_p04_keyframe",
+    "label": "p04 · close Martina",
+    "scene": "Escena 1",
+    "toma_0": "https://v3b.fal.media/files/b/0aaca796/4gtnbh9if0wuAJrSIMipA_h5lv9Oe3.png",
+    "toma_1": "https://v3b.fal.media/files/b/0aaca796/8g5SGiA1gm6vPy8S1MZCl_7s8WDLMS.png",
+    "drive_folder": "https://drive.google.com/drive/folders/1zBQhcsJaoeyvKlsp0rD3LA6NMxx1sHso"
+  },
+  {
+    "id": "c01_p05_keyframe",
+    "label": "p05 · celular 23:38",
+    "scene": "Escena 1",
+    "toma_0": "https://v3b.fal.media/files/b/0aaca797/ZJ-JPrgp7xOcIUwqpfNxL_vUOaKjLW.png",
+    "toma_1": "https://v3b.fal.media/files/b/0aaca797/M6fbdisYJ0E-jfFOvz_y3_T9NVrFOp.png",
+    "drive_folder": "https://drive.google.com/drive/folders/1zBQhcsJaoeyvKlsp0rD3LA6NMxx1sHso"
+  },
+  {
+    "id": "c01_p05_keyframe_entrada",
+    "label": "p05 entrada · pantalla apagada",
+    "scene": "Escena 1",
+    "toma_0": "https://v3b.fal.media/files/b/0aaca79e/LkErQpLi_nle-6xwXIhKN_u28dMHlc.png",
+    "toma_1": "https://v3b.fal.media/files/b/0aaca79e/zpeQcjBKj-n5x7_o3IV_O_0PKRcYFx.png",
+    "drive_folder": "https://drive.google.com/drive/folders/1zBQhcsJaoeyvKlsp0rD3LA6NMxx1sHso"
+  },
+  {
+    "id": "c01_p06_keyframe",
+    "label": "p06 · celular boca abajo",
+    "scene": "Escena 1",
+    "toma_0": "https://v3b.fal.media/files/b/0aaca797/i4ogPyVjEzu6RyTZVh3S0_WYpHwGCX.png",
+    "toma_1": "https://v3b.fal.media/files/b/0aaca797/Bril8nial9li31HpoL5dW_UF5qPyLC.png",
+    "drive_folder": "https://drive.google.com/drive/folders/1zBQhcsJaoeyvKlsp0rD3LA6NMxx1sHso"
+  },
+  {
+    "id": "c01_p07_keyframe",
+    "label": "p07 · Carmen dormida",
+    "scene": "Escena 1",
+    "toma_0": "https://v3b.fal.media/files/b/0aaca796/TwFI1IFkhFDeASRfdK_PS_BjsBlwcS.png",
+    "toma_1": "https://v3b.fal.media/files/b/0aaca796/oUCQRZAyHhjmbbZW7NSA7_teFew0pt.png",
+    "drive_folder": "https://drive.google.com/drive/folders/1zBQhcsJaoeyvKlsp0rD3LA6NMxx1sHso"
+  },
+  {
+    "id": "c01_p08_keyframe",
+    "label": "p08 · Iván",
+    "scene": "Escena 1",
+    "toma_0": "https://v3b.fal.media/files/b/0aaca796/RGQxFn-TmrRUGooOpKkn7_tKBCXUNz.png",
+    "toma_1": "https://v3b.fal.media/files/b/0aaca797/x8jVnGiMDo3MkfG9rp_tT_WrhH3lUO.png",
+    "drive_folder": "https://drive.google.com/drive/folders/1zBQhcsJaoeyvKlsp0rD3LA6NMxx1sHso"
+  },
+  {
+    "id": "c01_p09_keyframe",
+    "label": "p09 · Hugo y boleto",
+    "scene": "Escena 1",
+    "toma_0": "https://v3b.fal.media/files/b/0aaca796/KMpvXSBcC5WspO9u9BN99_9XAsIntO.png",
+    "toma_1": "https://v3b.fal.media/files/b/0aaca796/PL3c-rQ9Mv1P4sZcRtCm-_hKTXsZbB.png",
+    "drive_folder": "https://drive.google.com/drive/folders/1zBQhcsJaoeyvKlsp0rD3LA6NMxx1sHso"
+  },
+  {
+    "id": "c01_p10_keyframe",
+    "label": "p10 · revólver",
+    "scene": "Escena 1",
+    "toma_0": "https://v3b.fal.media/files/b/0aaca79c/mG7MkXkqWac4RwqVK2fh8_Igl9Aphu.png",
+    "toma_1": "https://v3b.fal.media/files/b/0aaca79c/yyCDwUp5rCDpTmnQuhMwk_nGWYPZCy.png",
+    "drive_folder": "https://drive.google.com/drive/folders/1zBQhcsJaoeyvKlsp0rD3LA6NMxx1sHso"
+  },
+  {
+    "id": "c01_p10_keyframe_entrada",
+    "label": "p10 entrada · chaqueta cerrada",
+    "scene": "Escena 1",
+    "toma_0": "https://v3b.fal.media/files/b/0aaca79f/wCy5IohzxH05jNWOqoxX7_ejMSYl8P.png",
+    "toma_1": "https://v3b.fal.media/files/b/0aaca79f/c0ZyQRoyc8zTHseNBsESJ_FuEztGCt.png",
+    "drive_folder": "https://drive.google.com/drive/folders/1zBQhcsJaoeyvKlsp0rD3LA6NMxx1sHso"
+  }
+]

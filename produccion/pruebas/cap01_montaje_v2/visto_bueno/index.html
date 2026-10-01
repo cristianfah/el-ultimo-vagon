@@ -1,0 +1,511 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+<meta name="apple-mobile-web-app-capable" content="yes" />
+<meta name="theme-color" content="#0e0c0b" />
+<title>EL ÚLTIMO VAGÓN · Visto bueno</title>
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Instrument+Sans:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet" />
+<style>
+  :root {
+    --bg: #0e0c0b;
+    --panel: #1a1614;
+    --panel-2: #241f1c;
+    --ink: #f3ebe3;
+    --muted: #a89a8c;
+    --line: rgba(243,235,227,.12);
+    --ok: #3d9b6a;
+    --fix: #c9852a;
+    --no: #b04545;
+    --accent: #e8c39a;
+    --safe-b: env(safe-area-inset-bottom, 0px);
+    --safe-t: env(safe-area-inset-top, 0px);
+  }
+  * { box-sizing: border-box; -webkit-tap-highlight-color: transparent; }
+  html, body { height: 100%; margin: 0; background: var(--bg); color: var(--ink);
+    font-family: "Instrument Sans", system-ui, sans-serif; overflow: hidden; }
+  button, textarea { font: inherit; color: inherit; }
+  #app { height: 100%; display: flex; flex-direction: column; padding-top: var(--safe-t); }
+
+  header {
+    display: flex; align-items: center; justify-content: space-between;
+    padding: 10px 14px 8px; gap: 10px; border-bottom: 1px solid var(--line);
+    background: linear-gradient(180deg, #171311 0%, var(--bg) 100%);
+  }
+  .brand { display: flex; flex-direction: column; gap: 2px; min-width: 0; }
+  .brand strong { font-size: 13px; letter-spacing: .08em; text-transform: uppercase; color: var(--accent); }
+  .brand span { font-size: 12px; color: var(--muted); white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+  .progress { font-family: "IBM Plex Mono", monospace; font-size: 12px; color: var(--muted); flex-shrink: 0; }
+
+  .stage {
+    flex: 1; min-height: 0; position: relative;
+    display: flex; align-items: center; justify-content: center;
+    background:
+      radial-gradient(120% 80% at 50% 20%, rgba(232,195,154,.06), transparent 55%),
+      #090807;
+  }
+  .stage img {
+    max-width: 100%; max-height: 100%; width: auto; height: auto;
+    object-fit: contain; display: block;
+    box-shadow: 0 12px 40px rgba(0,0,0,.55);
+  }
+  .nav-hit {
+    position: absolute; top: 0; bottom: 0; width: 28%; border: 0; background: transparent; padding: 0;
+  }
+  .nav-hit.prev { left: 0; }
+  .nav-hit.next { right: 0; }
+  .badge {
+    position: absolute; top: 12px; left: 12px;
+    background: rgba(14,12,11,.72); backdrop-filter: blur(8px);
+    border: 1px solid var(--line); border-radius: 999px;
+    padding: 6px 10px; font-size: 12px; color: var(--ink);
+  }
+  .status-pill {
+    position: absolute; top: 12px; right: 12px;
+    border-radius: 999px; padding: 6px 10px; font-size: 12px; font-weight: 600;
+    display: none;
+  }
+  .status-pill.show { display: inline-flex; }
+  .status-pill.ok { background: rgba(61,155,106,.2); color: #7ed0a5; border: 1px solid rgba(61,155,106,.45); }
+  .status-pill.fix { background: rgba(201,133,42,.2); color: #f0c07a; border: 1px solid rgba(201,133,42,.45); }
+  .status-pill.no { background: rgba(176,69,69,.2); color: #ef9a9a; border: 1px solid rgba(176,69,69,.45); }
+
+  .dock {
+    background: var(--panel);
+    border-top: 1px solid var(--line);
+    padding: 12px 14px calc(12px + var(--safe-b));
+    display: flex; flex-direction: column; gap: 10px;
+  }
+  .meta { display: flex; flex-direction: column; gap: 2px; }
+  .meta .scene { font-size: 11px; letter-spacing: .06em; text-transform: uppercase; color: var(--muted); }
+  .meta .label { font-size: 16px; font-weight: 600; line-height: 1.25; }
+
+  .toma-row { display: grid; grid-template-columns: 1fr 1fr; gap: 8px; }
+  .toma-btn {
+    border: 1px solid var(--line); background: var(--panel-2); border-radius: 12px;
+    padding: 12px 10px; min-height: 48px; font-weight: 600;
+  }
+  .toma-btn.active { border-color: var(--accent); color: var(--accent); background: rgba(232,195,154,.08); }
+
+  .actions { display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 8px; }
+  .act {
+    border: 0; border-radius: 14px; min-height: 52px; font-weight: 700; font-size: 15px;
+  }
+  .act.ok { background: var(--ok); color: #04150c; }
+  .act.fix { background: var(--fix); color: #1a1003; }
+  .act.no { background: var(--no); color: #1a0707; }
+
+  details.note {
+    border: 1px solid var(--line); border-radius: 12px; background: var(--panel-2); padding: 0 12px;
+  }
+  details.note summary {
+    list-style: none; cursor: pointer; padding: 12px 0; color: var(--muted); font-size: 13px;
+  }
+  details.note summary::-webkit-details-marker { display: none; }
+  details.note textarea {
+    width: 100%; border: 0; background: transparent; resize: none; min-height: 72px;
+    padding: 0 0 12px; outline: none; color: var(--ink);
+  }
+
+  .footer-row { display: flex; gap: 8px; }
+  .ghost {
+    flex: 1; border: 1px solid var(--line); background: transparent; border-radius: 12px;
+    min-height: 44px; color: var(--muted); font-size: 13px; font-weight: 600;
+  }
+
+  .strip {
+    display: flex; gap: 6px; overflow-x: auto; padding-bottom: 2px;
+    scrollbar-width: none;
+  }
+  .strip::-webkit-scrollbar { display: none; }
+  .dot {
+    flex: 0 0 auto; width: 28px; height: 28px; border-radius: 8px;
+    border: 1px solid var(--line); background: var(--panel-2);
+    font-family: "IBM Plex Mono", monospace; font-size: 10px; color: var(--muted);
+  }
+  .dot.on { border-color: var(--accent); color: var(--accent); }
+  .dot.ok { background: rgba(61,155,106,.25); color: #7ed0a5; }
+  .dot.fix { background: rgba(201,133,42,.25); color: #f0c07a; }
+  .dot.no { background: rgba(176,69,69,.25); color: #ef9a9a; }
+
+  #done {
+    display: none; position: fixed; inset: 0; background: var(--bg); z-index: 20;
+    padding: calc(16px + var(--safe-t)) 16px calc(16px + var(--safe-b));
+    overflow: auto;
+  }
+  #done.show { display: block; }
+  #done h1 { font-size: 28px; margin: 8px 0 6px; letter-spacing: -0.02em; }
+  #done p { color: var(--muted); margin: 0 0 16px; line-height: 1.4; }
+  #done pre {
+    white-space: pre-wrap; word-break: break-word; background: var(--panel);
+    border: 1px solid var(--line); border-radius: 14px; padding: 14px;
+    font-family: "IBM Plex Mono", monospace; font-size: 11px; line-height: 1.45;
+  }
+  #done .big {
+    width: 100%; margin-top: 12px; border: 0; border-radius: 14px; min-height: 52px;
+    background: var(--accent); color: #1a120a; font-weight: 700;
+  }
+  #toast {
+    position: fixed; left: 50%; bottom: calc(18px + var(--safe-b)); transform: translateX(-50%);
+    background: rgba(243,235,227,.95); color: #1a120a; padding: 10px 14px; border-radius: 999px;
+    font-size: 13px; font-weight: 600; opacity: 0; pointer-events: none; transition: opacity .2s;
+    z-index: 40;
+  }
+  #toast.show { opacity: 1; }
+</style>
+</head>
+<body>
+<div id="app">
+  <header>
+    <div class="brand">
+      <strong>El último vagón</strong>
+      <span id="headerSub">Visto bueno · keyframes v2</span>
+    </div>
+    <div class="progress" id="progress">1 / 13</div>
+  </header>
+
+  <div class="stage" id="stage">
+    <img id="frame" alt="Keyframe" />
+    <button class="nav-hit prev" id="hitPrev" aria-label="Toma anterior"></button>
+    <button class="nav-hit next" id="hitNext" aria-label="Toma siguiente"></button>
+    <div class="badge" id="tomaBadge">Toma 0</div>
+    <div class="status-pill" id="statusPill"></div>
+  </div>
+
+  <div class="dock">
+    <div class="strip" id="strip"></div>
+    <div class="meta">
+      <div class="scene" id="scene">Cold open</div>
+      <div class="label" id="label">p01</div>
+    </div>
+    <div class="toma-row">
+      <button class="toma-btn active" id="toma0">Toma 0</button>
+      <button class="toma-btn" id="toma1">Toma 1</button>
+    </div>
+    <div class="actions">
+      <button class="act ok" id="btnOk">Aprobar</button>
+      <button class="act fix" id="btnFix">Corregir</button>
+      <button class="act no" id="btnNo">Descartar</button>
+    </div>
+    <details class="note" id="noteBox">
+      <summary>Nota (opcional)</summary>
+      <textarea id="note" placeholder="Una variable a la vez…"></textarea>
+    </details>
+    <div class="footer-row">
+      <button class="ghost" id="btnBack">Anterior</button>
+      <button class="ghost" id="btnSkip">Saltar</button>
+      <button class="ghost" id="btnSummary">Resumen</button>
+    </div>
+  </div>
+</div>
+
+<div id="done">
+  <div class="brand"><strong>El último vagón</strong></div>
+  <h1>Visto bueno listo</h1>
+  <p>Copiá el JSON y pegalo en el chat del agente, o guardalo. Tus votos quedan en este celular.</p>
+  <pre id="out"></pre>
+  <button class="big" id="btnCopy">Copiar JSON</button>
+  <button class="big" id="btnBackReview" style="background:transparent;color:var(--accent);border:1px solid var(--line);margin-top:8px;">Seguir revisando</button>
+</div>
+<div id="toast"></div>
+
+<script>
+const SHOTS = [
+  {
+    "id": "c01_p01_keyframe",
+    "label": "p01 · mano en ventanita",
+    "scene": "Cold open",
+    "toma_0": "https://v3b.fal.media/files/b/0aaca78b/dFndWggJyP88W3MUqXzqa_4kOrktKS.png",
+    "toma_1": "https://v3b.fal.media/files/b/0aaca78b/4hAUzLJ3aVDiQdyWNp34d_gnK0QeXo.png",
+    "drive_folder": "https://drive.google.com/drive/folders/1zBQhcsJaoeyvKlsp0rD3LA6NMxx1sHso"
+  },
+  {
+    "id": "c01_p01_keyframe_entrada",
+    "label": "p01 entrada · mano sin tocar",
+    "scene": "Cold open",
+    "toma_0": "https://v3b.fal.media/files/b/0aaca79e/s0m7a8UmRwvvGrxdt2dwT_eSYSYQ6S.png",
+    "toma_1": "https://v3b.fal.media/files/b/0aaca79e/CaYCYqowgz2ig7_INRHTo_Hb0Wh0Nr.png",
+    "drive_folder": "https://drive.google.com/drive/folders/1zBQhcsJaoeyvKlsp0rD3LA6NMxx1sHso"
+  },
+  {
+    "id": "c01_p02_keyframe",
+    "label": "p02 · Martina «Diego…»",
+    "scene": "Cold open",
+    "toma_0": "https://v3b.fal.media/files/b/0aaca791/C_5vh2q5sYRhu97UDxQQc_0FFVQKzI.png",
+    "toma_1": "https://v3b.fal.media/files/b/0aaca791/zkTo6py4_lIvr8_RuCOOa_xKqEjgDl.png",
+    "drive_folder": "https://drive.google.com/drive/folders/1zBQhcsJaoeyvKlsp0rD3LA6NMxx1sHso"
+  },
+  {
+    "id": "c01_p03_keyframe",
+    "label": "p03 · pareja en el tren",
+    "scene": "Escena 1",
+    "toma_0": "https://v3b.fal.media/files/b/0aaca792/cwZNU1PF9uWAkjCYeJbnM_L2TZv7my.png",
+    "toma_1": "https://v3b.fal.media/files/b/0aaca792/1uHeZKyQVoHD2iMdNoOfP_7fAzD535.png",
+    "drive_folder": "https://drive.google.com/drive/folders/1zBQhcsJaoeyvKlsp0rD3LA6NMxx1sHso"
+  },
+  {
+    "id": "c01_p04_keyframe",
+    "label": "p04 · close Martina",
+    "scene": "Escena 1",
+    "toma_0": "https://v3b.fal.media/files/b/0aaca796/4gtnbh9if0wuAJrSIMipA_h5lv9Oe3.png",
+    "toma_1": "https://v3b.fal.media/files/b/0aaca796/8g5SGiA1gm6vPy8S1MZCl_7s8WDLMS.png",
+    "drive_folder": "https://drive.google.com/drive/folders/1zBQhcsJaoeyvKlsp0rD3LA6NMxx1sHso"
+  },
+  {
+    "id": "c01_p05_keyframe",
+    "label": "p05 · celular 23:38",
+    "scene": "Escena 1",
+    "toma_0": "https://v3b.fal.media/files/b/0aaca797/ZJ-JPrgp7xOcIUwqpfNxL_vUOaKjLW.png",
+    "toma_1": "https://v3b.fal.media/files/b/0aaca797/M6fbdisYJ0E-jfFOvz_y3_T9NVrFOp.png",
+    "drive_folder": "https://drive.google.com/drive/folders/1zBQhcsJaoeyvKlsp0rD3LA6NMxx1sHso"
+  },
+  {
+    "id": "c01_p05_keyframe_entrada",
+    "label": "p05 entrada · pantalla apagada",
+    "scene": "Escena 1",
+    "toma_0": "https://v3b.fal.media/files/b/0aaca79e/LkErQpLi_nle-6xwXIhKN_u28dMHlc.png",
+    "toma_1": "https://v3b.fal.media/files/b/0aaca79e/zpeQcjBKj-n5x7_o3IV_O_0PKRcYFx.png",
+    "drive_folder": "https://drive.google.com/drive/folders/1zBQhcsJaoeyvKlsp0rD3LA6NMxx1sHso"
+  },
+  {
+    "id": "c01_p06_keyframe",
+    "label": "p06 · celular boca abajo",
+    "scene": "Escena 1",
+    "toma_0": "https://v3b.fal.media/files/b/0aaca797/i4ogPyVjEzu6RyTZVh3S0_WYpHwGCX.png",
+    "toma_1": "https://v3b.fal.media/files/b/0aaca797/Bril8nial9li31HpoL5dW_UF5qPyLC.png",
+    "drive_folder": "https://drive.google.com/drive/folders/1zBQhcsJaoeyvKlsp0rD3LA6NMxx1sHso"
+  },
+  {
+    "id": "c01_p07_keyframe",
+    "label": "p07 · Carmen dormida",
+    "scene": "Escena 1",
+    "toma_0": "https://v3b.fal.media/files/b/0aaca796/TwFI1IFkhFDeASRfdK_PS_BjsBlwcS.png",
+    "toma_1": "https://v3b.fal.media/files/b/0aaca796/oUCQRZAyHhjmbbZW7NSA7_teFew0pt.png",
+    "drive_folder": "https://drive.google.com/drive/folders/1zBQhcsJaoeyvKlsp0rD3LA6NMxx1sHso"
+  },
+  {
+    "id": "c01_p08_keyframe",
+    "label": "p08 · Iván",
+    "scene": "Escena 1",
+    "toma_0": "https://v3b.fal.media/files/b/0aaca796/RGQxFn-TmrRUGooOpKkn7_tKBCXUNz.png",
+    "toma_1": "https://v3b.fal.media/files/b/0aaca797/x8jVnGiMDo3MkfG9rp_tT_WrhH3lUO.png",
+    "drive_folder": "https://drive.google.com/drive/folders/1zBQhcsJaoeyvKlsp0rD3LA6NMxx1sHso"
+  },
+  {
+    "id": "c01_p09_keyframe",
+    "label": "p09 · Hugo y boleto",
+    "scene": "Escena 1",
+    "toma_0": "https://v3b.fal.media/files/b/0aaca796/KMpvXSBcC5WspO9u9BN99_9XAsIntO.png",
+    "toma_1": "https://v3b.fal.media/files/b/0aaca796/PL3c-rQ9Mv1P4sZcRtCm-_hKTXsZbB.png",
+    "drive_folder": "https://drive.google.com/drive/folders/1zBQhcsJaoeyvKlsp0rD3LA6NMxx1sHso"
+  },
+  {
+    "id": "c01_p10_keyframe",
+    "label": "p10 · revólver",
+    "scene": "Escena 1",
+    "toma_0": "https://v3b.fal.media/files/b/0aaca79c/mG7MkXkqWac4RwqVK2fh8_Igl9Aphu.png",
+    "toma_1": "https://v3b.fal.media/files/b/0aaca79c/yyCDwUp5rCDpTmnQuhMwk_nGWYPZCy.png",
+    "drive_folder": "https://drive.google.com/drive/folders/1zBQhcsJaoeyvKlsp0rD3LA6NMxx1sHso"
+  },
+  {
+    "id": "c01_p10_keyframe_entrada",
+    "label": "p10 entrada · chaqueta cerrada",
+    "scene": "Escena 1",
+    "toma_0": "https://v3b.fal.media/files/b/0aaca79f/wCy5IohzxH05jNWOqoxX7_ejMSYl8P.png",
+    "toma_1": "https://v3b.fal.media/files/b/0aaca79f/c0ZyQRoyc8zTHseNBsESJ_FuEztGCt.png",
+    "drive_folder": "https://drive.google.com/drive/folders/1zBQhcsJaoeyvKlsp0rD3LA6NMxx1sHso"
+  }
+];
+const STORE_KEY = "euv_visto_bueno_keyframes_v2_tanda1";
+
+const state = {
+  i: 0,
+  toma: 0,
+  votes: loadVotes(),
+};
+
+function loadVotes() {
+  try { return JSON.parse(localStorage.getItem(STORE_KEY) || "{}"); } catch { return {}; }
+}
+function saveVotes() {
+  localStorage.setItem(STORE_KEY, JSON.stringify(state.votes));
+}
+
+const els = {
+  frame: document.getElementById("frame"),
+  progress: document.getElementById("progress"),
+  scene: document.getElementById("scene"),
+  label: document.getElementById("label"),
+  toma0: document.getElementById("toma0"),
+  toma1: document.getElementById("toma1"),
+  tomaBadge: document.getElementById("tomaBadge"),
+  statusPill: document.getElementById("statusPill"),
+  note: document.getElementById("note"),
+  strip: document.getElementById("strip"),
+  done: document.getElementById("done"),
+  out: document.getElementById("out"),
+  toast: document.getElementById("toast"),
+};
+
+function current() { return SHOTS[state.i]; }
+function voteOf(id) { return state.votes[id] || null; }
+
+function toast(msg) {
+  els.toast.textContent = msg;
+  els.toast.classList.add("show");
+  clearTimeout(toast._t);
+  toast._t = setTimeout(() => els.toast.classList.remove("show"), 1400);
+}
+
+function buildStrip() {
+  els.strip.innerHTML = "";
+  SHOTS.forEach((s, idx) => {
+    const b = document.createElement("button");
+    b.className = "dot";
+    b.textContent = String(idx + 1).padStart(2, "0");
+    b.onclick = () => { state.i = idx; const v = voteOf(s.id); state.toma = v?.toma ?? 0; render(); };
+    els.strip.appendChild(b);
+  });
+}
+
+function render() {
+  const s = current();
+  const v = voteOf(s.id);
+  if (v && typeof v.toma === "number") {
+    // keep selected toma unless just arrived without vote
+  }
+  els.frame.src = state.toma === 0 ? s.toma_0 : s.toma_1;
+  els.progress.textContent = `${state.i + 1} / ${SHOTS.length}`;
+  els.scene.textContent = s.scene;
+  els.label.textContent = s.label;
+  els.tomaBadge.textContent = `Toma ${state.toma}`;
+  els.toma0.classList.toggle("active", state.toma === 0);
+  els.toma1.classList.toggle("active", state.toma === 1);
+  els.note.value = v?.nota || "";
+
+  const pill = els.statusPill;
+  if (v?.veredicto) {
+    pill.className = `status-pill show ${v.veredicto === "aprobar" ? "ok" : v.veredicto === "corregir" ? "fix" : "no"}`;
+    pill.textContent = v.veredicto === "aprobar" ? "Aprobada" : v.veredicto === "corregir" ? "Corregir" : "Descartada";
+  } else {
+    pill.className = "status-pill";
+    pill.textContent = "";
+  }
+
+  [...els.strip.children].forEach((b, idx) => {
+    const vv = voteOf(SHOTS[idx].id);
+    b.className = "dot" + (idx === state.i ? " on" : "") + (vv?.veredicto === "aprobar" ? " ok" : vv?.veredicto === "corregir" ? " fix" : vv?.veredicto === "descartar" ? " no" : "");
+  });
+}
+
+function setToma(n) {
+  state.toma = n;
+  const s = current();
+  const prev = voteOf(s.id) || {};
+  state.votes[s.id] = { ...prev, id: s.id, toma: n, url: n === 0 ? s.toma_0 : s.toma_1 };
+  saveVotes();
+  render();
+}
+
+function decide(veredicto) {
+  const s = current();
+  state.votes[s.id] = {
+    id: s.id,
+    label: s.label,
+    scene: s.scene,
+    toma: state.toma,
+    url: state.toma === 0 ? s.toma_0 : s.toma_1,
+    veredicto,
+    nota: els.note.value.trim(),
+  };
+  saveVotes();
+  toast(veredicto === "aprobar" ? "Aprobada" : veredicto === "corregir" ? "Marcada para corregir" : "Descartada");
+  if (state.i < SHOTS.length - 1) {
+    state.i += 1;
+    const next = voteOf(current().id);
+    state.toma = next?.toma ?? 0;
+    render();
+  } else {
+    showSummary();
+  }
+}
+
+function summaryPayload() {
+  const decisions = SHOTS.map(s => state.votes[s.id] || { id: s.id, label: s.label, veredicto: "sin_revisar" });
+  return {
+    prueba: "cap01_montaje_v2",
+    tanda: "keyframes_tanda1",
+    fecha: new Date().toISOString(),
+    decisions,
+    pendientes: decisions.filter(d => !d.veredicto || d.veredicto === "sin_revisar").map(d => d.id),
+    aprobadas: decisions.filter(d => d.veredicto === "aprobar").length,
+    corregir: decisions.filter(d => d.veredicto === "corregir").length,
+    descartadas: decisions.filter(d => d.veredicto === "descartar").length,
+  };
+}
+
+function showSummary() {
+  els.out.textContent = JSON.stringify(summaryPayload(), null, 2);
+  els.done.classList.add("show");
+}
+
+els.toma0.onclick = () => setToma(0);
+els.toma1.onclick = () => setToma(1);
+els.hitPrev = document.getElementById("hitPrev");
+els.hitNext = document.getElementById("hitNext");
+els.hitPrev.onclick = () => setToma(0);
+els.hitNext.onclick = () => setToma(1);
+document.getElementById("btnOk").onclick = () => decide("aprobar");
+document.getElementById("btnFix").onclick = () => decide("corregir");
+document.getElementById("btnNo").onclick = () => decide("descartar");
+document.getElementById("btnBack").onclick = () => {
+  if (state.i > 0) { state.i -= 1; state.toma = voteOf(current().id)?.toma ?? 0; render(); }
+};
+document.getElementById("btnSkip").onclick = () => {
+  if (state.i < SHOTS.length - 1) { state.i += 1; state.toma = voteOf(current().id)?.toma ?? 0; render(); }
+  else showSummary();
+};
+document.getElementById("btnSummary").onclick = showSummary;
+document.getElementById("btnBackReview").onclick = () => els.done.classList.remove("show");
+document.getElementById("btnCopy").onclick = async () => {
+  const text = JSON.stringify(summaryPayload(), null, 2);
+  try {
+    await navigator.clipboard.writeText(text);
+    toast("JSON copiado");
+  } catch {
+    els.out.focus();
+    const range = document.createRange();
+    range.selectNodeContents(els.out);
+    const sel = window.getSelection();
+    sel.removeAllRanges();
+    sel.addRange(range);
+    toast("Seleccioná y copiá");
+  }
+};
+els.note.addEventListener("change", () => {
+  const s = current();
+  const prev = voteOf(s.id) || { id: s.id, toma: state.toma, url: state.toma === 0 ? s.toma_0 : s.toma_1 };
+  state.votes[s.id] = { ...prev, nota: els.note.value.trim() };
+  saveVotes();
+});
+
+// swipe between tomas
+let x0 = null;
+document.getElementById("stage").addEventListener("touchstart", e => { x0 = e.touches[0].clientX; }, { passive: true });
+document.getElementById("stage").addEventListener("touchend", e => {
+  if (x0 == null) return;
+  const dx = e.changedTouches[0].clientX - x0;
+  if (Math.abs(dx) > 40) setToma(dx < 0 ? 1 : 0);
+  x0 = null;
+}, { passive: true });
+
+buildStrip();
+const first = voteOf(SHOTS[0].id);
+state.toma = first?.toma ?? 0;
+render();
+</script>
+</body>
+</html>
