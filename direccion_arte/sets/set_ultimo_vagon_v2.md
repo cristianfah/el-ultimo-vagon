@@ -1,7 +1,7 @@
 # Set: el último vagón — v2
 
 Reemplaza la distribución y la tabla de continuidad de `set_ultimo_vagon_v1.md`. Los estados de luz (sección 3), los props (4.5) y las pruebas en situación (sección 6) de la v1 siguen vigentes.
-**Estado:** las vistas técnicas (V01 a V05), los dos cuadros de look y las once planchas finales (F01 a F11) pasaron la revisión de continuidad del equipo de agentes. **Están pendientes de la aprobación de Cristian.**
+**Estado:** las vistas técnicas (V01 a V05), los dos cuadros de look y las once planchas finales (F01 a F11) pasaron la revisión de continuidad del equipo de agentes. **Aprobadas por Cristian el 2026-10-01** (ver `produccion/assets/aprobados_v1.md`).
 Imágenes: carpeta de Drive `imagenes/03_para_aprobacion/set_ultimo_vagon` ([enlace](https://drive.google.com/drive/folders/1qGwhdUIiicH_7pHZB8UsnI6cPB0Fkw7K)). Las rondas anteriores están en `imagenes/02_candidatos_fal/set_ultimo_vagon/`.
 
 ## 1. Cambios respecto de la v1
