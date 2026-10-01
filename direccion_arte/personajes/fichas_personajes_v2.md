@@ -22,8 +22,13 @@ Drive: `imagenes/03_para_aprobacion/personajes` ([enlace](https://drive.google.c
 | Don Hugo | `REF_hugo` (Flare) | `HOJA_hugo` (NBP) | Gorra con una rueda simple sin letras; chaqueta bajo la cadera que tapa el cinturón (para el inserto del revólver del 0:11) | La hoja NBP es la más fiel a la cara |
 | Pareja extra | `REF_extra_pareja_camisa_azul` (Flare) | `HOJA_extra_pareja_camisa_azul` (Flare) | Camisa azul cobalto fuerte | Bajo luz roja la camisa se vuelve negra. Ver la pregunta abierta sobre el 0:19 |
 
+## Estados
+
+| Archivo | Prompts | Nota |
+|---|---|---|
+| `ESTADO_diego_mojado_herido` | `e_diego_mojado` (sobre `REF_diego`) → `c_diego_mojado_chaqueta` | Manga izquierda rojo negruzco del codo al puño, antebrazo contra el pecho, sin herida visible. La chaqueta está limpia y la lluvia solo oscurece los hombros, para que la manga se lea a través del vidrio |
+
 ## Pendientes
 
-- Aprobación de Cristian de las siete referencias.
-- Estado «Diego mojado y herido» (prompt en v1). Se genera desde `REF_diego` cuando se apruebe.
+- Aprobación de Cristian de las siete referencias y del estado de Diego.
 - Decidir si «South American» se cambia por «Chilean» en los prompts.
