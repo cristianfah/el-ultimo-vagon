@@ -109,9 +109,21 @@ Reglas de rodaje que siguen todas las planchas:
 
 Bisagras de la puerta: solo a la derecha vistas desde dentro (a la izquierda desde fuera). En el vagón de pasajeros, los asientos miran hacia su puerta delantera, igual que en el último vagón.
 
+## 4d. Keyframes de prueba del reel (revisados por los agentes)
+
+Carpeta de Drive: `imagenes/03_para_aprobacion/frames` ([enlace](https://drive.google.com/drive/folders/1XaAcHvDPOYH_Hzya-PEeecQ3vRBAamS3)). Las candidatas están en `imagenes/02_candidatos_fal/frames`. Cada keyframe sale de una pasada limpia, sin correcciones, usando las hojas de personaje y las planchas finales como referencia.
+
+| Archivo | Modelo | Prompt (`prompts_fal/frames/`) | Referencias | Lente | Nota de revisión |
+|---|---|---|---|---|---|
+| `KF01_0-03_pareja_ambar` | Flare | `kf01_0-03_pareja_ambar` | Hojas de Martina y Tomás, F09 | 50 mm T2 | Aprobado. Hay que confirmar el lunar de Martina en el plano final, y el pelo de Tomás sale más revuelto que en la hoja |
+| `KF02_0-45_diego_ventanita` | Flare | `kf02_0-45_diego_ventanita` | Estado de Diego, F03 | 35 mm T2.8 | Aprobado con nota: tiene la boca algo abierta, en el límite de la sobreactuación |
+| `KF03_1-19_martina_llave` | Flare | `kf03_1-19_martina_llave` | Hojas de Martina, Tomás y Hugo, estado de Diego, F05 | 40 mm T2 | Es la única con el freno a la derecha de la puerta. Sunburst lo puso a la izquierda y NBP cambió el color de la puerta y el pelo de Martina. Hugo queda en segundo término, no de nuca en primer plano |
+
+Nota para el 1:10: pedir la placa de bronce colgando de la llave (prop aprobado), que no aparece en KF03.
+
 ## 5. Pendientes
 
-1. **Aprobación de Cristian** de F01 a F12 y de los cuatro props.
+1. **Aprobación de Cristian** de F01 a F12, de los cuatro props y de los keyframes KF01 a KF03.
 2. ~~Decidir la fuente de la luz roja.~~ Decidido: una **tira de emergencia** en el centro del cielo.
 3. La cinta de la fila 5 izquierda todavía no está en ninguna plancha. Se agrega cuando haya un plano que la muestre.
 4. El último vagón no tiene estado ámbar en el capítulo 1. `look_ambar_plancha_heroe` sirve solo como referencia de look.
