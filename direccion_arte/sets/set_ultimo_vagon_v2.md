@@ -38,7 +38,8 @@ Mirando hacia el fondo, la cabina queda **a la izquierda**; mirando hacia la pue
 | Elemento | Se fija como |
 |---|---|
 | Distribución | 6 filas, 2 + 2. Todos los asientos miran hacia la puerta delantera |
-| Puerta delantera | Metal gris verdoso remachado, ventanita con vidrio de malla de alambre, tubo fluorescente encima |
+| Puerta delantera | Metal gris verdoso remachado, ventanita con vidrio de malla de alambre **romboidal** (como la referencia de Cristian), tubo fluorescente encima. En la plancha del 0:45 el vidrio tiene que dejar ver una cara del otro lado |
+| Tira de emergencia | Angosta y continua, en el centro del cielo, de punta a punta; difusor rojo oscuro. Apagada en ámbar, rojo profundo en el estado rojo |
 | Cerradura | Placa de bronce gastada: **bocallave arriba, manija abajo**, por dentro y por fuera. A la izquierda desde dentro y a la derecha desde fuera. Bisagras a la izquierda desde fuera |
 | Freno de emergencia | Manija roja, a la derecha de la puerta mirando hacia adelante |
 | Cabina del revisor | Volumen remachado del piso al techo, con puerta de madera barnizada que mira al pasillo. Mirando al fondo, a la izquierda |
@@ -63,6 +64,15 @@ Aparte, para el plano detalle de la llave (0:23) se usa `cand_set_puerta_ventani
 Descartadas: la planta (proyección imposible) y C02 sin cabina, que queda reemplazada por V02.
 
 Cada archivo de prompt en `prompts_fal/` está completo y listo para pegar. Se corre con `tools/fal_gen.py` (la imagen 1 es la primera de `--images`).
+
+## 4b. Cuadros de referencia de look (revisados por los agentes)
+
+| Archivo en Drive | Modelo | Prompt | Uso |
+|---|---|---|---|
+| `look_ambar_plancha_heroe.png` | GPT Image 2.5 Sunburst | `h02_plancha_heroe_ambar` (una pasada: imagen 1 = referencia de Cristian, imagen 2 = V01) | Look ámbar y azul; vagón de pasajeros 0:03–0:16 |
+| `look_rojo_plancha_heroe.png` | GPT Image 2.5 Flare | `h03_plancha_heroe_rojo` (una reiluminación sobre la ámbar) | Look rojo del último vagón, desde el 0:23 |
+
+Todas las planchas finales salen de estas dos: imagen 1 = el cuadro de look del estado que corresponde, imagen 2 = la vista técnica (V01 a V05).
 
 ## 5. Pendientes
 
