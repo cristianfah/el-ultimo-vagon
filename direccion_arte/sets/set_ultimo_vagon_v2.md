@@ -74,6 +74,16 @@ Cada archivo de prompt en `prompts_fal/` está completo y listo para pegar. Se c
 
 Todas las planchas finales salen de estas dos: imagen 1 = el cuadro de look del estado que corresponde, imagen 2 = la vista técnica (V01 a V05).
 
+## 4c. Planchas finales (revisadas por los agentes)
+
+| Archivo en Drive | Modelo | Prompts | Uso |
+|---|---|---|---|
+| `look_rojo_plancha_heroe.png` | Flare | `h02` → `h03` | Hacia la puerta, rojo (también es el cuadro de look) |
+| `final_rojo_p02_eje_fondo_cabina.png` | Sunburst | `p02_eje_fondo_rojo` (una pasada: look rojo + V02) | Hacia el fondo, rojo: Hugo y la cabina |
+| `final_rojo_p03_puerta_interior.png` | Flare | `p03_puerta_interior_rojo` (una pasada: look rojo + V03) → `p03b_puerta_interior_bisagra` | Puerta desde dentro, 0:45 (PS-02) |
+
+Bisagras de la puerta: solo a la derecha vistas desde dentro (a la izquierda desde fuera).
+
 ## 5. Pendientes
 
 1. **Aprobación de Cristian** de V01 a V05.
