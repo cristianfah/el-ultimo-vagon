@@ -123,7 +123,7 @@ Nota para el 1:10: pedir la placa de bronce colgando de la llave (prop aprobado)
 
 ## 5. Pendientes
 
-1. **Aprobación de Cristian** de F01 a F12, de los cuatro props y de los keyframes KF01 a KF03.
+1. ~~Aprobación de Cristian de F01 a F12, de los cuatro props y de los keyframes KF01 a KF03.~~ **Aprobados el 2026-10-01.** Los archivos se movieron a `imagenes/04_aprobados` (las URLs no cambian); el registro está en `produccion/assets/aprobados_v1.md`. Las rutas `03_para_aprobacion` de este documento son anteriores a la aprobación.
 2. ~~Decidir la fuente de la luz roja.~~ Decidido: una **tira de emergencia** en el centro del cielo.
 3. La cinta de la fila 5 izquierda todavía no está en ninguna plancha. Se agrega cuando haya un plano que la muestre.
 4. El último vagón no tiene estado ámbar en el capítulo 1. `look_ambar_plancha_heroe` sirve solo como referencia de look.

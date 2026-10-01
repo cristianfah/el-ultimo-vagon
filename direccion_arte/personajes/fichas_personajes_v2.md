@@ -1,7 +1,7 @@
 # Fichas de personajes — v2 (referencias generadas)
 
 Base: `fichas_personajes_v1.md`. Las anclas, el vestuario y lo que hay que evitar siguen vigentes; esta versión registra las referencias generadas y las correcciones aplicadas.
-**Estado:** revisadas por el revisor de casting y continuidad. **Pendientes de la aprobación de Cristian.**
+**Estado:** revisadas por el revisor de casting y continuidad. **Aprobadas por Cristian el 2026-10-01** (ver `produccion/assets/aprobados_v1.md`).
 Drive: `imagenes/03_para_aprobacion/personajes` ([enlace](https://drive.google.com/drive/folders/14lyjcAAE0JPnAqUGUhNvdLl9mWNCm1Jr)), con la fila del elenco `00_elenco.jpg`. Las candidatas descartadas están en `imagenes/02_candidatos_fal/personajes`.
 
 ## Método
@@ -30,5 +30,5 @@ Drive: `imagenes/03_para_aprobacion/personajes` ([enlace](https://drive.google.c
 
 ## Pendientes
 
-- Aprobación de Cristian de las siete referencias y del estado de Diego.
+- ~~Aprobación de Cristian de las siete referencias y del estado de Diego.~~ **Aprobados el 2026-10-01.** Los archivos están en `imagenes/04_aprobados/personajes` y las URLs en `produccion/assets/aprobados_v1.md`.
 - Decidir si «South American» se cambia por «Chilean» en los prompts.
