@@ -41,6 +41,7 @@ El primer cuadro YA es el impacto: la palma ensangrentada de **DIEGO** golpea el
 *Sonido: golpe seco, después silencio.*
 
 **P2 · 0:01,5–0:03 · Contraplano, Martina, plano medio corto, a ~3 m de la puerta.**
+*Sonido: segundo golpe fuera de campo a los 0,3 s.*
 **MARTINA** salta con el golpe y se queda congelada. No se acerca a la puerta. **TOMÁS** desenfocado detrás, a la derecha.
 
 *Cámara en mano muy leve (respiración), sin avanzar.*

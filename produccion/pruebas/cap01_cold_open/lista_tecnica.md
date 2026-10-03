@@ -153,8 +153,7 @@ non_diegetic_music: N/A
 | Acción | **0,0–0,3 s:** congelada, sin respirar, con la mirada en la ventanita. **0,3 s:** segundo golpe fuera de campo y **sobresalto de todo el cuerpo** (hombros arriba, cabeza 2 cm atrás, ojos abiertos, inspiración brusca por la boca). **0,8 s hasta el final:** rígida, hombros todavía arriba, pecho que sube rápido, sin avanzar y sin hablar. **Tomás:** se sobresalta y mira a la puerta, con la boca cerrada |
 | Continuidad | hc09–hc11 (mechones, sudor, suéter crema seco), hc12 (Tomás de oliva), hc35 (3 m, Tomás atrás a su derecha) |
 
-> **Propuesta para el guionista (solo sonido):** P1 tiene un solo golpe y P2 empieza 1,5 s después, así que el salto de Martina llegaría tarde. Propongo un **segundo golpe que solo se oye**, fuera de campo, a los 0,3 s de P2. Así ella salta en cámara, y en P3 «la mano deja de golpear» tiene sentido. P1 sigue siendo «golpe seco, después silencio» durante 1,5 s.
-> Si no se acepta, P2 entra con *acción superpuesta*: se corta al clip ya en el sobresalto, desde ~0,25 s.
+> **Decisión de Cristián (3-oct-2026, 10:33):** SÍ al segundo golpe fuera de campo, solo en audio, a los 0,3 s de P2. Martina salta en cámara con ese golpe. P1 sigue siendo «golpe seco, después silencio» durante 1,5 s; en P3 «la mano deja de golpear» tiene sentido porque el segundo golpe fue el último.
 
 **Keyframe KF2** (2 intentos). Image 1 = REF_martina, Image 2 = HOJA_martina, Image 3 = REF_tomas, Image 4 = **F02** (rojo, hacia el fondo; está en Drive `04_aprobados` y hay que subirla a fal, porque no está en `fal_urls_v1.json`).
 ```

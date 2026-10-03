@@ -60,15 +60,17 @@ Cero push-in ni dolly in. Planos de la mano: cámara fija, 65 mm. Planos de Mart
 
 Los prompts completos de keyframes y video están en `lista_tecnica.md` §2.
 
+## Decidido (Cristián)
+
+1. **Segundo golpe fuera de campo en P2: SÍ.** (3-oct-2026, 10:33) Un segundo golpe **solo en audio**, fuera de campo, a los 0,3 s de P2. Martina salta en cámara con ese golpe. P1 sigue siendo «golpe seco, después silencio» durante 1,5 s.
+
 ## Por decidir (Cristián)
 
 Los siguientes puntos quedaron **pendientes de aprobación** en la lista técnica. El PR no se mergea hasta que Cristián confirme:
 
-1. **Segundo golpe fuera de campo en P2.** En P1 hay un solo golpe; P2 empieza 1,5 s después, así que el sobresalto de Martina llegaría tarde. Propuesta del productor: agregar un segundo golpe **solo en audio**, fuera de campo, a los 0,3 s de P2, para que ella salte en cámara. Si no se acepta, P2 entra con acción superpuesta, desde ~0,25 s del clip.
+1. **Ventanita con malla de alambre (F03).** `hc22` dice «rectángulo vertical de vidrio simple» y el keyframe viejo de c01_p01 no tiene malla. F03 (aprobada) tiene rectángulo redondeado con malla fina detrás del vidrio. El plan técnico sigue F03. ¿Se mantiene o se corrige hc22?
 
-2. **Ventanita con malla de alambre (F03).** `hc22` dice «rectángulo vertical de vidrio simple» y el keyframe viejo de c01_p01 no tiene malla. F03 (aprobada) tiene rectángulo redondeado con malla fina detrás del vidrio. El plan técnico sigue F03. ¿Se mantiene o se corrige hc22?
-
-3. **Tomás en P4.** Tener a Tomás desenfocado girando la cabeza mientras Martina susurra es un **riesgo moderado**: H3 puede moverle la boca a él en vez de a ella, o cambiarle el foco. Respaldo propuesto: sacarlo del keyframe (KF4b) y cargar la culpa solo con el desvío de ojos de Martina. ¿Se prueba primero con Tomás, o se va directo a KF4b?
+2. **Tomás en P4.** Tener a Tomás desenfocado girando la cabeza mientras Martina susurra es un **riesgo moderado**: H3 puede moverle la boca a él en vez de a ella, o cambiarle el foco. Respaldo propuesto: sacarlo del keyframe (KF4b) y cargar la culpa solo con el desvío de ojos de Martina. ¿Se prueba primero con Tomás, o se va directo a KF4b?
 
 **Contradicción conocida (no se resuelve en este PR):** el YAML c01_b02 dice «door window off-screen left», pero la geografía de la v8 pone la ventanita a la derecha del cuadro. Cuando Cristián apruebe los planos, hay que corregir c01_b02.
 

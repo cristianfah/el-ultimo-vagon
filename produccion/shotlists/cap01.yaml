@@ -398,7 +398,7 @@ planos:
       apertura: f/2
     hechos: [hc01, hc09, hc10, hc11, hc12, hc35]
     bloque: c01_b02_v8
-    nota: "Clip B2. Propuesta: segundo golpe fuera de campo a 0,3 s. Ver lista_tecnica.md §P2."
+    nota: "Clip B2. Segundo golpe fuera de campo a 0,3 s (decisión 3-oct-2026). Ver lista_tecnica.md §P2."
 
   - id: c01_p02a
     escena: cold_open_v8
@@ -470,7 +470,7 @@ bloques_v8:
     tomas_objetivo: 2
     prompt_keyframe: "Ver lista_tecnica.md §P2 – KF2."
     prompt_video: "Ver lista_tecnica.md §P2 – Video B2."
-    nota: "Propuesta: segundo golpe fuera de campo a 0,3 s. Pendiente de aprobación."
+    nota: "Segundo golpe fuera de campo a 0,3 s (decisión de Cristián, 3-oct-2026). Martina salta en cámara."
 
   - id: c01_b03_v8
     estado: propuesta
