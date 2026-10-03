@@ -66,9 +66,9 @@ Los prompts completos de keyframes y video están en `lista_tecnica.md` §2.
 
 2. **Ventanita con malla de alambre (F03): SÍ.** (3-oct-2026, 10:52) Se mantiene F03 y se corrigió hc22. La ventanita es un rectángulo vertical de esquinas redondeadas con marco metálico remachado, vidrio de seguridad con malla de alambre fina en rombo, a la altura de la cabeza de un adulto. Misma forma, tamaño y malla en todos los planos y desde ambos lados.
 
-3. **Tomás SÍ va en P4, con giro de cabeza.** (3-oct-2026, 10:57) Tomás desenfocado, de tres cuartos de espalda (se le ve sobre todo la nuca y el perfil perdido), boca cerrada y apretada, nunca la abre. Gira la cabeza hacia Martina **después** de que ella termina de decir «Diego…». Solo Martina habla. KF4b (sin Tomás) queda como **plan B** si H3 le mueve la boca a él.
+3. **Tomás SÍ va en P4, con giro de cabeza.** (3-oct-2026, 10:57) Tomás desenfocado, de tres cuartos de espalda (nuca, oreja, filo de mandíbula; cara casi oculta, boca no visible). Gira apenas la cabeza (~15–20°) hacia Martina **después** de «Diego…» (2,4–3,0 s, nunca durante). Solo Martina habla. KF4b (sin Tomás) queda como **plan B** si H3 le mueve la boca o le muestra la cara.
 
-**Contradicción conocida (no se resuelve en este PR):** el YAML c01_b02 dice «door window off-screen left», pero la geografía de la v8 pone la ventanita a la derecha del cuadro. Cuando Cristián apruebe los planos, hay que corregir c01_b02.
+4. **Staging de Tomás en P2: gira hacia Hugo, no hacia la puerta.** (3-oct-2026) Después del segundo golpe, Tomás se sobresalta y gira la cabeza por sobre el hombro hacia la cola del vagón (busca a Don Hugo, que tiene la llave y el revólver). Termina de tres cuartos de espaldas a cámara, que es como lo encuentra P4.
 
 ## Notas
 

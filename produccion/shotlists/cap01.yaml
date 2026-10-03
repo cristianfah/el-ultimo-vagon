@@ -388,8 +388,8 @@ planos:
     duracion_s: 1.5
     estado: propuesta
     tipo_plano: plano_medio_corto
-    accion: "Martina salta con el golpe y se queda congelada. No se acerca. Tomás desenfocado detrás, a su derecha."
-    intencion: "Miedo puro, todavía no sabe quién es."
+    accion: "Martina salta con el golpe y se queda congelada. No se acerca. Tomás desenfocado detrás, a su derecha: se sobresalta y gira la cabeza por sobre el hombro hacia la cola del vagón (busca a Don Hugo), con la boca cerrada. Termina de tres cuartos de espaldas a cámara."
+    intencion: "Miedo puro, todavía no sabe quién es. Tomás gira hacia Hugo, no hacia la puerta: así lo encuentra P4."
     personajes: [martina, tomas]
     locacion: loc_ultimo_vagon_rojo
     camara:
@@ -398,7 +398,7 @@ planos:
       apertura: f/2
     hechos: [hc01, hc09, hc10, hc11, hc12, hc35]
     bloque: c01_b02_v8
-    nota: "Clip B2. Segundo golpe fuera de campo a 0,3 s (decisión 3-oct-2026). Ver lista_tecnica.md §P2."
+    nota: "Clip B2. Segundo golpe fuera de campo a 0,3 s. Tomás gira hacia Hugo (decisión 3-oct-2026). Ver lista_tecnica.md §P2."
 
   - id: c01_p02a
     escena: cold_open_v8
@@ -424,17 +424,17 @@ planos:
     duracion_s: 3.5
     estado: propuesta
     tipo_plano: primer_plano
-    accion: "Miedo → reconocimiento. Susurra «Diego…». Los ojos se van hacia Tomás (culpa). Tomás desenfocado, de tres cuartos de espalda, gira la cabeza hacia ella DESPUÉS del susurro, boca cerrada. Corte a negro en la respiración."
-    intencion: "Bloque de lipsync. La actuación importante es antes y después de la palabra. Solo Martina habla."
+    accion: "Miedo → reconocimiento. Susurra «Diego…». Los ojos se van hacia Tomás (culpa). Tomás arriba a la izquierda, desenfocado, de tres cuartos de espaldas (se ve la nuca, la oreja y el filo de la mandíbula; la cara casi oculta, la boca no se ve). Gira apenas la cabeza (~15–20°) hacia ella DESPUÉS de la palabra (2,4–3,0 s), nunca durante. Corte a negro en la respiración."
+    intencion: "Bloque de lipsync. La actuación importante es antes y después de la palabra. Solo Martina habla; Tomás nunca abre la boca."
     personajes: [martina, tomas]
     locacion: loc_ultimo_vagon_rojo
     camara:
-      movimiento: "En mano casi imperceptible, operador contiene la respiración. Sin push-in."
+      movimiento: "En mano casi imperceptible, operador contiene la respiración. Sin push-in, sin zoom, sin rack focus."
       focal_mm: 85
       apertura: f/1.8
     hechos: [hc01, hc09, hc10, hc11, hc26, hc34, hc35]
     bloque: c01_b03_v8
-    nota: "Clip B3. Tomás SÍ va en P4 (decisión 3-oct-2026): de tres cuartos de espalda, boca cerrada, gira la cabeza después del «Diego…». KF4b (sin Tomás) es plan B. Ver lista_tecnica.md §P4."
+    nota: "Clip B3. Tomás SÍ (decisión 3-oct): de tres cuartos de espaldas, boca oculta, gira ~15° después del «Diego…». KF4b (sin Tomás) es plan B. Ver lista_tecnica.md §P4."
 
 # ============================ BLOQUES V8 (PROPUESTA) ============================
 bloques_v8:
@@ -462,7 +462,7 @@ bloques_v8:
     endpoint: minimax/h3-max/image-to-video
     duracion_s: 3
     resolucion: "1080P"
-    descripcion: "Martina salta y se congela. Tomás desenfocado detrás."
+    descripcion: "Martina salta y se congela. Tomás gira hacia Hugo (cola del vagón), termina de tres cuartos de espaldas."
     keyframe: KF2
     keyframe_motor: nano_banana_pro
     keyframe_resolucion: "2K"
@@ -470,7 +470,7 @@ bloques_v8:
     tomas_objetivo: 2
     prompt_keyframe: "Ver lista_tecnica.md §P2 – KF2."
     prompt_video: "Ver lista_tecnica.md §P2 – Video B2."
-    nota: "Segundo golpe fuera de campo a 0,3 s (decisión de Cristián, 3-oct-2026). Martina salta en cámara."
+    nota: "Segundo golpe a 0,3 s. Tomás gira hacia Hugo (decisión 3-oct-2026), así lo encuentra P4 de espaldas."
 
   - id: c01_b03_v8
     estado: propuesta
@@ -479,7 +479,7 @@ bloques_v8:
     endpoint: minimax/h3-max/image-to-video
     duracion_s: 5
     resolucion: "1080P"
-    descripcion: "Primer plano de Martina, lipsync de «Diego…». Tomás SÍ va, de tres cuartos de espalda, boca cerrada, gira la cabeza después del susurro (decisión 3-oct-2026)."
+    descripcion: "Primer plano de Martina, lipsync de «Diego…». Tomás de tres cuartos de espaldas (nuca, oreja, filo de mandíbula; cara casi oculta, boca no visible). Gira ~15° hacia ella en 2,4–3,0 s, después de la palabra."
     keyframe: KF4
     keyframe_alternativo: KF4b
     keyframe_motor: nano_banana_pro
@@ -494,7 +494,7 @@ bloques_v8:
     tomas_objetivo: 2
     prompt_keyframe: "Ver lista_tecnica.md §P4 – KF4 y KF4b."
     prompt_video: "Ver lista_tecnica.md §P4 – Video B3."
-    nota: "Solo Martina habla; Tomás nunca abre la boca. Plan B: KF4b sin Tomás si H3 le mueve la boca. Otros respaldos: sync-3 con recorte, H3 Max Lip Sync."
+    nota: "Solo Martina habla; Tomás nunca abre la boca, su cara está casi oculta, sin rack focus, sin push-in, sin zoom. Plan B: KF4b si H3 le muestra la cara o le mueve los labios."
 
 # ============================ COLD OPEN V7 (HISTÓRICO) ============================
 # Los planos c01_p01 y c01_p02 siguientes corresponden a la v7.

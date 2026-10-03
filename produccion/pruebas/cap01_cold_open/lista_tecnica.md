@@ -3,6 +3,10 @@ fahren.tv · 3-oct-2026 · base: `guiones/vagon_cold_open_v1.md` (guionista) · 
 
 > **Decisión de Cristián (3-oct, 01:18):** los 4 planos van **solo en MiniMax H3 Max, a 1080p** (`minimax/h3-max/image-to-video`). Su Kling 4.0 Preview es solo 720p, así que **Kling queda fuera de este documento**. Los costos usan la **promo de fal: 0,096 USD/s a 1080p hasta el 15-oct-2026** (después, 0,16 USD/s). Fuente: [llms.txt de H3 Max i2v](https://fal.ai/models/minimax/h3-max/image-to-video/llms.txt): *"these are promotional rates, 40% off for a limited time. The discount ends October 15"*.
 > **Nada de esto se generó.** Son prompts y planes listos para una sesión.
+> **Decisiones resueltas (3-oct-2026, 10:58):**
+> 1. **Segundo golpe, solo sonoro**, en P2. Lo aprobó el guionista.
+> 2. **Ventanita redondeada de F03**, con malla.
+> 3. **Tomás se queda en P4**: desenfocado, de tres cuartos de espaldas (se ve sobre todo su nuca), con la boca cerrada. Gira apenas la cabeza **después** de «Diego…». KF4b, sin Tomás, queda como plan B.
 
 ## 0. Resumen
 
@@ -43,12 +47,13 @@ Vista de arriba. La puerta está al norte y Martina, a 3 m, la mira de frente. T
 
 - **La cámara de P2 y P4 va adelante y a la derecha de Martina.** Desde ahí:
   - su mirada a la puerta va hacia la **derecha del cuadro**, rozando el lente;
-  - Tomás queda en el **lado izquierdo del cuadro**, al fondo y fuera de foco;
+  - Tomás queda en el **lado izquierdo del cuadro**, al fondo y fuera de foco. Después del segundo golpe se da vuelta hacia la cola del vagón, donde está Don Hugo, así que en P4 le queda **la nuca hacia la cámara, de tres cuartos de espaldas**;
   - y el desvío de ojos «hacia Tomás» (hacia la derecha de ella) se lee como un **movimiento a la izquierda del cuadro**, en sentido contrario a la mirada a la puerta. Así se entiende de un vistazo.
 - **Las cámaras de los 4 planos están del mismo lado del eje Martina–puerta,** así que los cortes no cruzan el eje.
 - **Esto calza con lo que ya existe:** el keyframe aprobado c01_p02 y la toma b02 del v2 ya la tienen mirando a la derecha del cuadro.
 - **Ojo:** el YAML (c01_b02) todavía dice "door window off-screen left". Hay que corregirlo a *right* cuando se actualice el bloque.
-- **La puerta y la ventanita siguen la plancha aprobada F03:** rectángulo de esquinas redondeadas con marco remachado, vidrio de seguridad con malla de alambre fina en rombo (diamond wire mesh), tubo frío encima, tira roja al centro del cielo, cerradura a la izquierda y freno a la derecha. (Decisión de Cristián, 3-oct-2026: SÍ a F03, hc22 corregido.)
+- **La puerta y la ventanita siguen la plancha aprobada F03:** rectángulo de esquinas redondeadas con marco remachado, vidrio con malla de alambre, tubo frío encima, tira roja al centro del cielo, cerradura a la izquierda y freno a la derecha.
+  - **RESUELTO (3-oct):** se usa la ventanita redondeada de F03, con la malla fina detrás de la palma. Hay que corregir hc22, que todavía dice "rectángulo vertical de vidrio simple".
 - **Fondo del otro lado del vidrio (hc24):** el fuelle y el pasillo rojo, vacíos y **quietos**. Nada de vagones moviéndose ni de luces que pasen.
 
 ### Gramática de la escena (para el Director de fotografía)
@@ -131,8 +136,6 @@ overall_soundscape: A low, steady rumble of the train under the floor. One dry, 
 non_diegetic_music: N/A
 ```
 
-> **Nota sobre la malla (decisión 3-oct-2026):** el vidrio de la ventanita tiene malla de alambre fina en rombo según F03. En los prompts de video se agrega: *"The small window has fine diamond wire mesh inside the glass; the mesh stays static, consistent, no flicker, no moiré."* Si el modelo genera parpadeo o moiré en la malla, se corrige con estabilización temporal en post o se regenera con otra seed.
-
 **Tomas:** 2 como máximo (regla de `asistente_direccion.md`). La segunda depende de cómo salió la primera:
 - **Si la mano o la luz saltan, o la mano se limpia:** el mismo prompt con otra `seed`.
 - **Si en 3,2–4,2 s la mano no se abre:** FL válido. `image_url` = KF1 y `end_image_url` = **KF1b**, que es una *edición* de KF1 con Nano Banana Pro: "same image, the hand now rests flat and relaxed, fingers straight, no spray; change nothing else". El cambio es de estado, con la misma base, así que cumple las dos condiciones de FL.
@@ -151,10 +154,11 @@ non_diegetic_music: N/A
 | Soporte y movimiento | **En mano, muy leve:** un operador quieto, con el vaivén de su respiración (< 1°). Sin traslación, sin push-in, sin zoom. Al golpe, la cámara se sacude **muy poco y medio tiempo tarde**, y vuelve a asentarse |
 | Posición | ~1,8 m de Martina, a la altura del hombro (~1,55 m), 25–30° a su derecha-adelante |
 | Luz | La de §1: tira roja cenital como key y punto frío del tubo en los ojos (fuente fuera de cuadro, a la derecha) |
-| Acción | **0,0–0,3 s:** congelada, sin respirar, con la mirada en la ventanita. **0,3 s:** segundo golpe fuera de campo y **sobresalto de todo el cuerpo** (hombros arriba, cabeza 2 cm atrás, ojos abiertos, inspiración brusca por la boca). **0,8 s hasta el final:** rígida, hombros todavía arriba, pecho que sube rápido, sin avanzar y sin hablar. **Tomás:** se sobresalta y mira a la puerta, con la boca cerrada |
+| Acción | **0,0–0,3 s:** congelada, sin respirar, con la mirada en la ventanita. **0,3 s:** segundo golpe fuera de campo y **sobresalto de todo el cuerpo** (hombros arriba, cabeza 2 cm atrás, ojos abiertos, inspiración brusca por la boca). **0,8 s hasta el final:** rígida, hombros todavía arriba, pecho que sube rápido, sin avanzar y sin hablar. **Tomás:** se sobresalta y gira la cabeza por sobre el hombro hacia la cola del vagón (busca a Don Hugo), con la boca cerrada. Termina de tres cuartos de espaldas a cámara y así lo encuentra P4 |
 | Continuidad | hc09–hc11 (mechones, sudor, suéter crema seco), hc12 (Tomás de oliva), hc35 (3 m, Tomás atrás a su derecha) |
 
-> **Decisión de Cristián (3-oct-2026, 10:33):** SÍ al segundo golpe fuera de campo, solo en audio, a los 0,3 s de P2. Martina salta en cámara con ese golpe. P1 sigue siendo «golpe seco, después silencio» durante 1,5 s; en P3 «la mano deja de golpear» tiene sentido porque el segundo golpe fue el último.
+> **RESUELTO (3-oct): el guionista aprobó el segundo golpe, que solo se oye.** El razonamiento: P1 tiene un solo golpe y P2 empieza 1,5 s después, así que el salto de Martina llegaría tarde. Por eso hay un **segundo golpe que solo se oye**, fuera de campo, a los 0,3 s de P2. Así ella salta en cámara, y en P3 «la mano deja de golpear» tiene sentido. P1 sigue siendo «golpe seco, después silencio» durante 1,5 s.
+> *(La alternativa de acción superpuesta queda descartada.)*
 
 **Keyframe KF2** (2 intentos). Image 1 = REF_martina, Image 2 = HOJA_martina, Image 3 = REF_tomas, Image 4 = **F02** (rojo, hacia el fondo; está en Drive `04_aprobados` y hay que subirla a fal, porque no está en `fal_urls_v1.json`).
 ```
@@ -171,7 +175,7 @@ LIGHT: Key: the red emergency strip in the center of the ceiling, slightly in fr
 ```
 For the target video, at 0.00 seconds into the target video, <Picture 1> (from [Shot 1]) is fully referenced.
 
-integrated_multimodal_description: [Shot 1] Live-action, cinematic, a vertical medium close-up of Martina, the woman in <Picture 1>, standing in the aisle of the last carriage of a night train about three metres from the closed door, which is off-screen just past the lens on frame right. Behind her, on frame left, Tomás stands one step back, soft and out of focus. The carriage behind them is the inside of the train and stays fixed relative to the camera. The camera is handheld by an operator standing still, with only a very slight sway from his breathing; it does not travel, push in, zoom or reframe. From 0.00 to 0.30 seconds she is frozen, eyes locked on the door window at frame right, holding her breath. At 0.30 seconds a heavy blow lands on the glass off-screen: her whole body jolts, shoulders snapping up, head jerking back a couple of centimetres, eyes going wide, a sharp intake of breath through the mouth; the camera jolts very slightly, half a beat late, and settles. From 0.80 seconds to the end she stays frozen where she is, rigid, shoulders still raised, chest rising high and fast, eyes on the window; she does not step toward the door and does not speak, her lips stay almost closed. Behind her, Tomás flinches and looks toward the door; his lips stay closed and he stays out of focus. She keeps the look of <Picture 1>: loose strands around her face, sweat sheen on her forehead, dry clean cream sweater. The red top light from the ceiling strip and the cold catchlight from the tube above the door stay steady. No music. No subtitles, no captions, no on-screen text.
+integrated_multimodal_description: [Shot 1] Live-action, cinematic, a vertical medium close-up of Martina, the woman in <Picture 1>, standing in the aisle of the last carriage of a night train about three metres from the closed door, which is off-screen just past the lens on frame right. Behind her, on frame left, Tomás stands one step back, soft and out of focus. The carriage behind them is the inside of the train and stays fixed relative to the camera. The camera is handheld by an operator standing still, with only a very slight sway from his breathing; it does not travel, push in, zoom or reframe. From 0.00 to 0.30 seconds she is frozen, eyes locked on the door window at frame right, holding her breath. At 0.30 seconds a heavy blow lands on the glass off-screen: her whole body jolts, shoulders snapping up, head jerking back a couple of centimetres, eyes going wide, a sharp intake of breath through the mouth; the camera jolts very slightly, half a beat late, and settles. From 0.80 seconds to the end she stays frozen where she is, rigid, shoulders still raised, chest rising high and fast, eyes on the window; she does not step toward the door and does not speak, her lips stay almost closed. Behind her, Tomás flinches and turns his head away over his shoulder toward the rear of the carriage, ending three-quarters from behind to the camera; his lips stay closed and he stays out of focus. She keeps the look of <Picture 1>: loose strands around her face, sweat sheen on her forehead, dry clean cream sweater. The red top light from the ceiling strip and the cold catchlight from the tube above the door stay steady. No music. No subtitles, no captions, no on-screen text.
 
 overall_soundscape: A low, steady train rumble. A heavy palm blow on glass off-screen at 0.30 seconds, the door rattling. Her sharp gasp, then held breath.
 
@@ -197,25 +201,25 @@ non_diegetic_music: N/A
 
 | Campo | Valor |
 |---|---|
-| Encuadre | Primer plano, de las clavículas hacia arriba y sin manos. La cara en el tercio medio, un poco a la derecha. La mirada va a la derecha del cuadro, rozando el lente. **Tomás:** una forma blanda arriba a la izquierda, de **tres cuartos de espalda** (se le ve sobre todo la nuca y el perfil perdido), boca cerrada y apretada, muy desenfocado. (Decisión de Cristián, 3-oct-2026: SÍ a Tomás en P4, con giro de cabeza; KF4b queda como plan B.) |
-| Lente | **85 mm**, f/1.8. Foco en el ojo cercano de Martina durante todo el plano. Tomás queda en bokeh, sin detalle legible |
+| Encuadre | Primer plano, de las clavículas hacia arriba y sin manos. La cara en el tercio medio, un poco a la derecha. La mirada va a la derecha del cuadro, rozando el lente. **Tomás (versión principal):** arriba a la izquierda, al fondo y muy desenfocado, de **tres cuartos de espaldas**: se ven sobre todo la nuca, la oreja y el filo de la mandíbula, con la cara casi oculta |
+| Lente | **85 mm**, f/1.8. Foco en el ojo cercano de Martina durante todo el plano. Tomás queda en bokeh, sin detalle legible. Su boca no se ve |
 | Soporte y movimiento | **En mano, casi imperceptible:** el operador contiene la respiración. Menos que en P2. Sin traslación, sin push-in, sin zoom y sin cambio de foco |
 | Posición | ~1,1 m de Martina, en el mismo lado que P2. Tomás se *trampea* más cerca de su hombro para que entre en el borde del cuadro: a 85 mm, en su posición real quedaría fuera |
 | Luz | La de P2, idéntica |
-| Acción (tiempo del clip) | **0,0–1,0 s:** los ojos buscan en la ventanita con movimientos mínimos; miedo, sin respirar. **1,0 s:** la mirada se fija, las cejas se aflojan y la boca se abre: reconoce la mano. **1,5–2,1 s:** susurra, casi sin voz, **«Diego…»**. **2,2 s:** los ojos se van unos milímetros hacia la izquierda del cuadro (hacia Tomás, que está a la derecha de ella) sin girar la cabeza, y vuelven: culpa. **2,4–3,2 s:** Tomás gira la cabeza hacia ella **después** de que ella terminó de decir el nombre, desenfocado y con la boca **cerrada y apretada** (nunca la abre). **3,3 s:** una inspiración corta y temblorosa. **Corte a negro en ~3,5 s, en la respiración y no después.** Fuera de cuadro, ella aprieta el celular con la mano izquierda (hc26): se puede sugerir con tensión en el hombro, sin mostrar la mano. **Solo Martina habla; Tomás nunca abre la boca.** |
-| Continuidad | hc09–hc11, hc26, hc34 (nadie la oye) y hc35 |
+| Acción (tiempo del clip) | **0,0–1,0 s:** los ojos buscan en la ventanita con movimientos mínimos; miedo, sin respirar. **1,0 s:** la mirada se fija, las cejas se aflojan y la boca se abre: reconoce la mano. **1,5–2,1 s:** susurra, casi sin voz, **«Diego…»**. **2,2 s:** los ojos se van unos milímetros hacia la izquierda del cuadro (hacia Tomás, que está a la derecha de ella) sin girar la cabeza, y vuelven: culpa. **2,4–3,0 s (después de la palabra, nunca durante):** Tomás, con la mandíbula apretada y la boca cerrada, gira **apenas** la cabeza hacia ella, unos 15–20°. Deja ver un poco más de mejilla, pero la cara sigue casi oculta y él sigue desenfocado. **3,3 s:** una inspiración corta y temblorosa. **Corte a negro en ~3,5 s, en la respiración y no después.** Fuera de cuadro, ella aprieta el celular con la mano izquierda (hc26): se puede sugerir con tensión en el hombro, sin mostrar la mano |
+| Continuidad | hc09–hc11, hc26, hc34 (nadie la oye) y hc35. Tomás de espaldas viene de P2, donde se dio vuelta hacia la cola. hc34 se mantiene: su giro leve es instinto, no que haya entendido. Recién se entera con el «¡Martina!» de la escena 4 |
 | Nota del guionista | Lo que importa en la actuación es lo de antes y lo de después de la palabra. La palabra en sí no |
 
 **Keyframe KF4** (2 intentos). Image 1 = **el KF2 elegido** (fija luz, set, vestuario y lado de cámara), Image 2 = REF_martina, Image 3 = REF_tomas.
 ```
 Image 1 is the previous shot of the same scene: keep exactly the same light, set, wardrobe, sweat and loose strands, and the same side of the camera. Image 2 is Martina's face reference: keep her face exactly. Image 3 is Tomás.
 MOMENT: The same instant, closer. Martina stares at the small door window off-screen on frame right, eyes fixed and searching, lips closed, breath held, fear.
-COMPOSITION: Vertical 9:16 close-up framed from the collarbones up, hands out of frame, her face in the middle third slightly right of center, her eyeline toward frame right just past the lens. In the upper left of the frame, far behind her, Tomás is a soft, out-of-focus shape seen from three-quarter back: mostly the back of his head and his lost profile, facing the door, mouth closed and tight, jaw clenched.
-LENS: 85mm, f/1.8, focus on her eye nearest the camera; Tomás is a soft blur with no readable detail.
+COMPOSITION: Vertical 9:16 close-up framed from the collarbones up, hands out of frame, her face in the middle third slightly right of center, her eyeline toward frame right just past the lens. In the upper left of the frame, far behind her, Tomás stands three-quarters from behind, turned away from the camera toward the rear of the carriage: we see mostly the back of his head, his short hair, one ear, the edge of his jaw and the shoulder of his olive-green jacket. His face is mostly hidden, his mouth is not visible, his jaw is set. He is only a soft shape.
+LENS: 85mm, f/1.8, very shallow depth of field, focus on her eye nearest the camera; Tomás is a soft blur with no readable facial detail.
 LIGHT: Same as Image 1: the red ceiling strip as a hot top key on her forehead and cheekbones; a small cold catchlight from the tube above the door, frame right; the far side of her face near black.
 [FINISH]
 ```
-**Keyframe KF4b, sin Tomás** (1 intento; **plan B** si H3 le mueve la boca a Tomás). Se edita sobre el KF4 elegido:
+**Keyframe KF4b, sin Tomás** (1 intento; es el **plan B** de §5, si H3 le mueve los labios a Tomás o le da la cara). Se edita sobre el KF4 elegido:
 ```
 Image 1: keep everything exactly the same (face, light, framing, focus, wardrobe). Remove the man in the background on the upper left; in his place, continue the soft out-of-focus red depth of the carriage (seat backs and the ceiling strip). Change nothing else.
 ```
@@ -243,9 +247,9 @@ Image 1: keep everything exactly the same (face, light, framing, focus, wardrobe
 ```
 For the target video, at 0.00 seconds into the target video, <Picture 1> (from [Shot 1]) is fully referenced.
 
-integrated_multimodal_description: [Shot 1] Live-action, cinematic, a vertical close-up of Martina, the woman in <Picture 1>, framed from the collarbones up, hands out of frame. She stands in the aisle of the last carriage of a night train, about three metres from the closed door, which is off-screen just past the lens on frame right; she looks toward frame right, almost grazing the camera. In the upper left of the frame, far behind her, Tomás is a soft out-of-focus shape seen from three-quarter back (mostly the back of his head and lost profile); the carriage behind them stays fixed relative to the camera. Only Martina speaks in this shot; the man behind her keeps his mouth closed and tight the entire time, he never opens it, he never speaks. The camera is handheld by an operator holding his breath: only a barely perceptible sway, no travel, no push-in, no zoom, no reframing, and the focus stays on her near eye for the whole shot. From 0.00 to 1.00 seconds her eyes search the small window in tiny movements, fear in her face, breath held. At 1.00 seconds her gaze locks on one point, her brows release a little and her lips part: she has recognised the hand. At 1.50 seconds Martina (S1), a woman around 29 with a low, breathy voice in Latin American Spanish, whispers almost without voice, so that nobody behind her can hear: <d>[Spanish] Diego…</d> At 2.20 seconds, right after the name, her eyes flick a few millimetres toward frame left, toward Tomás behind her, without turning her head, and come back to the window. From 2.40 to 3.20 seconds, after she has finished whispering the name, Tomás slowly turns his head toward her, still out of focus, mouth closed and tight, jaw clenched; he does not speak. At 3.30 seconds she takes one short, shaky breath in through her parted lips, then holds still, lips slightly open, until the end. She keeps the look of <Picture 1>: loose strands, sweat sheen on her forehead, dry clean cream sweater. The red top light from the ceiling strip stays steady on her face, the cold catchlight from the tube above the door stays in her eyes, and the far side of her face stays almost black. No music. No subtitles, no captions, no on-screen text.
+integrated_multimodal_description: [Shot 1] Live-action, cinematic, a vertical close-up of Martina, the woman in <Picture 1>, framed from the collarbones up, hands out of frame. She stands in the aisle of the last carriage of a night train, about three metres from the closed door, which is off-screen just past the lens on frame right; she looks toward frame right, almost grazing the camera. In the upper left of the frame, far behind her, Tomás, the man in the background, stands three-quarters from behind, turned away from the camera toward the rear of the carriage: only the back of his head, one ear and his shoulder show, soft and out of focus; his face stays mostly hidden and his jaw is set. The carriage behind them stays fixed relative to the camera. The camera is handheld by an operator holding his breath: only a barely perceptible sway, no travel, no push-in, no zoom, no reframing, and the focus stays on her near eye for the whole shot. From 0.00 to 1.00 seconds her eyes search the small window in tiny movements, fear in her face, breath held. At 1.00 seconds her gaze locks on one point, her brows release a little and her lips part: she has recognised the hand. At 1.50 seconds Martina (S1), a woman around 29 with a low, breathy voice in Latin American Spanish, whispers almost without voice, so that nobody behind her can hear: <d>[Spanish] Diego…</d> At 2.20 seconds, right after the name, her eyes flick a few millimetres toward frame left, toward Tomás behind her, without turning her head, and come back to the window. From 2.40 to 3.00 seconds, only after the name has been spoken, Tomás turns his head very slightly toward her, about fifteen degrees, still out of focus, jaw set, his face still mostly hidden behind his own shoulder. Only the woman in the foreground speaks; the man in the background never opens his mouth, never speaks, and his face stays mostly hidden for the whole shot; he never comes into focus and never moves toward the camera. At 3.30 seconds she takes one short, shaky breath in through her parted lips, then holds still, lips slightly open, until the end. She keeps the look of <Picture 1>: loose strands, sweat sheen on her forehead, dry clean cream sweater. The red top light from the ceiling strip stays steady on her face, the cold catchlight from the tube above the door stays in her eyes, and the far side of her face stays almost black. No push-in, no zoom, no rack focus. No music. No subtitles, no captions, no on-screen text.
 
-overall_soundscape: A low, steady train rumble under the floor. Her held breath, the whisper, a soft catch in her throat, and a short shaky inhale at 3.30 seconds. A faint rustle of fabric as Tomás turns.
+overall_soundscape: A low, steady train rumble under the floor. Her held breath, the whisper, a soft catch in her throat, and a short shaky inhale at 3.30 seconds. A faint rustle of fabric as Tomás turns his head at 2.40 seconds.
 
 non_diegetic_music: N/A
 ```
@@ -259,9 +263,9 @@ non_diegetic_music: N/A
 |---|---|---|---|
 | 0 | **Preparación.** Bajar F03, F02, REF y HOJA de Martina, Tomás y Diego, y ESTADO. Espejar ESTADO con PIL. Subir todo a fal. Revisar el saldo. Bajar efectos (Freesound o la librería) | 10 min | Que F02 esté en fal |
 | 1 | **Voz de Martina** (ElevenLabs Free) y pista de 5,0 s | 15 min | Que suene a susurro real, con aire y acento chileno suave |
-| 2 | **KF1 ×2 → KF2 ×2 → KF4 ×2** (con el KF2 elegido como Image 1) → **KF4b ×1** | 25 min | Hoja de contactos con el checklist de §6: mano derecha, pulgar a la derecha, malla, mirada a la derecha del cuadro, Tomás a la izquierda |
+| 2 | **KF1 ×2 → KF2 ×2 → KF4 ×2** (con el KF2 elegido como Image 1) → **KF4b ×1** | 25 min | Hoja de contactos con el checklist de §6: mano derecha, pulgar a la derecha, malla, mirada a la derecha del cuadro, Tomás a la izquierda y de tres cuartos de espaldas, con la cara casi oculta |
 | 3 | **Primera toma de B1, B2 y B3**, lanzadas en paralelo. H3 Max tarda segundos por clip | 10 min | Revisar cuadro a cuadro en Resolve. Cámara fija de verdad: superponer el primer y el último cuadro con modo *difference* |
-| 4 | **Segundas tomas** solo donde fallaron (ver la "toma 2" de cada plano) y **sync-3** si la boca de B3 no calza. Si Tomás molesta, B3 con KF4b | 15 min | Máximo 2 tomas por bloque. Si fallan las dos, el bloque vuelve a revisión, no a una tercera toma |
+| 4 | **Segundas tomas** solo donde fallaron (ver la "toma 2" de cada plano) y **sync-3** si la boca de B3 no calza. Si H3 le mueve los labios a Tomás (o le muestra la cara, o lo enfoca), plan B: B3 con KF4b | 15 min | Máximo 2 tomas por bloque. Si fallan las dos, el bloque vuelve a revisión, no a una tercera toma |
 | 5 | **Post:** conformar, gradación, grano y sonido (§7) | 40–50 min | Verlo en el celular, con y sin sonido |
 | | **Total** | **~2 h** | |
 
@@ -278,7 +282,7 @@ non_diegetic_music: N/A
 | Voz (ElevenLabs Free) | — | 0 |
 | **Total del plan base** | | **~3,70** |
 | *Respaldo:* sync-3 sobre la mejor B3 | 5 s × 8 USD/min | +0,67 |
-| *Respaldo:* B3 desde KF4b, sin Tomás | 5 × 0,096 | +0,48 |
+| *Plan B:* B3 desde KF4b, sin Tomás | 5 × 0,096 | +0,48 |
 | *Respaldo:* H3 Max Lip Sync desde KF4b (precio de lista; que tenga promo no está confirmado) | 5 × 0,16 | +0,80 |
 | **Total con todos los respaldos** | | **~5,65** |
 
@@ -290,7 +294,9 @@ non_diegetic_music: N/A
 
 ## 5. ¿Es riesgoso el encuadre de P4, con Tomás desenfocado detrás girando la cabeza?
 
-**Sí, es un riesgo moderado.** No es tanto por la sincronía, porque «Diego…» es una palabra susurrada y sin bilabiales, fácil de sincronizar. El riesgo está en **qué cara anima el modelo y en la consistencia del plano**:
+> **Decisión (3-oct): Tomás se queda.** La versión principal lo pone **de tres cuartos de espaldas**, mostrando la nuca, con la boca fuera de vista y un giro leve **después** de la palabra. Eso baja los riesgos 1 y 3, porque casi no hay una segunda boca que el modelo o sync-3 puedan animar. Los riesgos 2 y 4 se controlan con el giro corto (15–20°) y con *no rack focus*. El análisis de abajo sigue valiendo como lista de qué revisar en la toma.
+
+**Antes de la decisión, el riesgo era moderado.** No es tanto por la sincronía, porque «Diego…» es una palabra susurrada y sin bilabiales, fácil de sincronizar. El riesgo está en **qué cara anima el modelo y en la consistencia del plano**:
 
 1. **Dos caras en cuadro con audio fijado:** H3 puede repartir el movimiento de boca y hacer que Tomás "hable" o mueva los labios. El prompt lo frena («his lips stay closed and he does not speak»), pero eso no garantiza nada.
 2. **El giro de cabeza dentro de la profundidad de campo** invita al modelo a enfocar a Tomás, a moverlo hacia adelante o a cambiarle la cara. Eso rompe la regla de que no hay cambio de foco y le resta protagonismo al ojo de Martina.
@@ -298,9 +304,9 @@ non_diegetic_music: N/A
 4. **Atención en la pantalla del celular:** a 85 mm, cualquier movimiento en el fondo compite con el desvío de ojos de Martina, que es el verdadero beat de culpa.
 
 **Respaldos, en orden:**
-- **A · Tomás quieto.** Misma toma, pero se saca la frase del giro: queda inmóvil, desenfocado y mirando a la puerta. Su reacción al nombre pasa al sonido, con un roce de chaqueta en 2,4 s. Es lo más barato: solo se cambia el prompt.
-- **B · Sin Tomás: KF4b** (+0,48 USD). La culpa la carga solo el desvío de ojos hacia la izquierda del cuadro. Que Tomás está detrás ya se estableció en P2. Es el respaldo **recomendado** si la toma 1 muestra cualquiera de los problemas 1 o 2.
-- **C · sync-3 con recorte.** Si hay que corregir la boca y Tomás está en cuadro:
+- **A · Ajuste de prompt, sin costo.** Si el giro le muestra la cara o lo trae al foco, se saca la frase del giro: Tomás queda inmóvil, de espaldas. Su reacción al nombre pasa al sonido, con un roce de chaqueta en 2,4 s.
+- **B · PLAN B, sin Tomás: KF4b** (+0,48 USD). **Va si H3 le mueve los labios a Tomás** (o el problema 2 no se arregla con A). La culpa la carga solo el desvío de ojos hacia la izquierda del cuadro, y que Tomás está detrás ya se estableció en P2.
+- **C · sync-3 con recorte de la cara** (se mantiene). Si hay que corregir la boca de Martina y Tomás está en cuadro:
   1. exportar desde Resolve un recorte de 1080×1080 solo con la cara de Martina;
   2. pasar sync-3 sobre ese recorte;
   3. componerlo de vuelta con una máscara suave.
@@ -329,7 +335,7 @@ non_diegetic_music: N/A
 - [ ] La mano no se limpia ni cambia a mitad del clip, y las manchas del vidrio no saltan (la falla FL de b01).
 - [ ] Ventanita igual a F03; manchas secas arriba a la derecha y huella abajo a la izquierda.
 - [ ] Martina igual a REF: mechones, sudor, suéter crema seco, sin manchas. Mira a la derecha del cuadro y desvía los ojos a la izquierda.
-- [ ] Tomás de oliva, desenfocado y con la boca cerrada.
+- [ ] Tomás de oliva, desenfocado y de tres cuartos de espaldas (nuca). La boca no se ve ni se mueve en ningún cuadro, y su giro leve empieza **después** de «Diego…».
 
 **Actuación**
 - [ ] P1: el primer cuadro ya es el golpe; nada se mueve antes.
@@ -365,7 +371,7 @@ non_diegetic_music: N/A
 5. **Sonido** (Fairlight; el audio de los modelos se descarta):
    - **Fondo:** retumbo de tren continuo bajo los 4 planos, **una sola pista sin cortes**.
    - **Golpe 1** (P1, cuadro 0): palmada húmeda + golpe sordo en vidrio + vibración de la puerta + sub grave corto. Después, el fondo baja ~10 dB durante 1 s («y después silencio»).
-   - **Golpe 2** (P2, +0,3 s, fuera de campo; ver la propuesta en P2): más sordo.
+   - **Golpe 2** (P2, +0,3 s, fuera de campo; aprobado por el guionista): más sordo.
    - **P3:** un chirrido muy suave de piel mojada en el vidrio cuando la palma se apoya.
    - **P4:** la pista de ElevenLabs, alineada al mismo cuadro que se usó como `target_audio_url`; un roce de la chaqueta de Tomás en 2,4 s; y la inspiración. **Corte a negro con la imagen**, con un fundido de 2 cuadros.
    - **Tarjeta:** ~0,5 s de silencio y después «20 MINUTOS ANTES», si Cristián la deja en esta pieza, en la zona segura.
@@ -380,10 +386,15 @@ non_diegetic_music: N/A
 - **En imagen, nada de *blood* ni *gore*:** se escribe *dark red-black stains*. Así se evitan bloqueos del safety checker y la estética de terror barato.
 - **También aplican:** **2 tomas por bloque como máximo**, y **una sola generación para el plano que se repite** (el cold open y su momento en la escena 4, a las 0:45).
 
-## 9. Pendientes y contradicciones que encontré (no se resolvieron aquí)
+## 9. Pendientes y contradicciones que encontré
 
-- **Ventanita:** ✅ Decidido (3-oct-2026): se mantiene F03 (rectángulo de esquinas redondeadas con malla de alambre fina en rombo) y se corrigió hc22.
-- **Tablas de set y fichas v1 corregidas en este PR.** `set_ultimo_vagon_v1.md`, `set_ultimo_vagon_v2.md`, `fichas_personajes_v1.md` y `plan_assets_v1.md` ya dicen "antebrazo derecho". Pendiente: regeneración de `ESTADO_diego_mojado_herido.png` (ver `biblia/decisiones.md` y `fichas_personajes_v2.md` línea 29).
+**Resueltas el 3-oct-2026, 10:58:**
+- ~~Segundo golpe en P2~~ → **solo sonoro**, aprobado por el guionista.
+- ~~Ventanita: hc22 contra F03~~ → **la redondeada de F03**, con malla. Falta corregir el texto de hc22 en el YAML.
+- ~~¿Tomás en P4?~~ → **se queda**, de tres cuartos de espaldas, con la boca cerrada y un giro leve después de la palabra. KF4b queda como plan B.
+
+**Abiertas:**
+- **La tabla de `set_ultimo_vagon_v2.md` todavía dice "antebrazo izquierdo"** para la herida de Diego. Hay que corregirla a derecho, junto con `fichas_personajes_v2.md` (línea 29), `preguntas_abiertas.md` y la regeneración de ESTADO_diego (ver `verificacion_2026-10-03.md`).
 - **El YAML c01_b02 tiene la puerta a la izquierda del cuadro** ("off-screen left"). Con este eje va a la derecha.
 - **El keyframe c01_p05 tiene el texto de la v3,** «Estoy en el tren.», y la v7 dice «Ya subí. Vagón 4.». No es parte del cold open, pero hay que regenerarlo antes de la escena 1.
 - **Sin verificar:** si `target_audio_url` mueve los labios en H3 Max; si funciona a 1080P; si la promo del 40 % aplica también al modo Lip Sync; y si sync-3 elige bien la cara cuando hay dos en cuadro.
