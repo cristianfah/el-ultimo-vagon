@@ -15,7 +15,7 @@ Generados 2026-10-01 con assets v1 aprobados. GPT Image 2.5 Flare edit a 720×12
 | c01_p02 | NBP | Martina bajo rojo, mechones y sudor. Vigilar: el celular no debería verse (fuera de cuadro) y la mirada a la ventanita fuera de campo. |
 | c01_p03 | GPT | Pareja ámbar, lluvia en ventana. Vigilar: celular en mano derecha (hc26 pide muslo izquierdo / mano izquierda); Tomás con gafas si la hoja las tiene. |
 | c01_p04 | GPT | Close de Martina. |
-| c01_p05 | GPT | Pantalla 23:38 y «Estoy en el tren.» de D. Mano entra por la derecha (lado ventana). Vigilar: ¿mano izquierda o derecha? |
+| c01_p05 | GPT | Pantalla 23:38 y «Estoy en el tren.» de D. Mano entra por la derecha (lado ventana). Vigilar: ¿mano izquierda o derecha? **⚠ A REGENERAR:** el texto debería ser «Ya subí. Vagón 4.» (v7). Ver `plan.md` §0. |
 | c01_p05_entrada | GPT edit | Pantalla apagada / sin mano. |
 | c01_p06 | GPT | Celular boca abajo. |
 | c01_p07 | GPT | Carmen dormida. |

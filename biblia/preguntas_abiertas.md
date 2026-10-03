@@ -6,7 +6,11 @@
 - [ ] ¿Qué dice la radio y cuándo?
 - [x] ¿Qué pasa con Martina y Diego? → Ella le pasó el horario/vagón del tren; él cree que hay una chance; Tomás no lo sabe. Detalle de la relación (¿una noche?, ¿ex?) sigue abierto.
 - [ ] Nombre definitivo de la serie. Hoy es «EL ÚLTIMO VAGÓN».
-- [ ] Casting visual del elenco nuevo.
+- [x] Casting visual del elenco nuevo. → Aprobado el 2026-10-01, ver `produccion/assets/aprobados_v1.md`.
+- [ ] ¿La serie ocurre explícitamente en Chile? Hoy los prompts dicen *South American*.
+- [x] ¿En qué brazo está la herida de Diego? → **Brazo DERECHO** (decisión de Cristian, 3-oct-2026). Ver `biblia/decisiones.md`. `ESTADO_diego_mojado_herido.png` está A REGENERAR.
+- [x] ¿Hay hacha de emergencia en el último vagón? → No (aprobado en assets v1).
+- [ ] Nombre y logo de la línea ferroviaria inventada (gorra de Hugo, placas del tren).
 - [ ] ¿Cuándo usar la mecánica de señales (el público revisa si alguien está mordido)?
 - [ ] ¿Cuántos capítulos tiene la temporada 1?
 - [ ] Detalle fino de la relación Martina–Diego (más allá de «le pasó el tren»).

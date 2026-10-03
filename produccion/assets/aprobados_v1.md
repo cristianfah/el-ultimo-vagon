@@ -63,10 +63,10 @@ Carpeta: [props](https://drive.google.com/drive/folders/1CDCHWseLKxClzfqCNY3RkNE
 
 Carpeta: [personajes](https://drive.google.com/drive/folders/1i8ZjgLEg3nCp8JXokYYmRwqyUzhtVC4u)
 
-| Archivo | URL |
-|---|---|
-| `00_elenco.jpg` | https://drive.google.com/file/d/1eMiz1t5z0aoBUNHcLSLehgWr71zEOPV4/view?usp=drivesdk |
-| `ESTADO_diego_mojado_herido.png` | https://drive.google.com/file/d/1sVeCTfYkcaoE3RyLAhHqjONQAg8LiqPp/view?usp=drivesdk |
+| Archivo | URL | Nota |
+|---|---|---|
+| `00_elenco.jpg` | https://drive.google.com/file/d/1eMiz1t5z0aoBUNHcLSLehgWr71zEOPV4/view?usp=drivesdk | |
+| `ESTADO_diego_mojado_herido.png` | https://drive.google.com/file/d/1sVeCTfYkcaoE3RyLAhHqjONQAg8LiqPp/view?usp=drivesdk | **⚠ A REGENERAR:** muestra el brazo izquierdo; debe ser el derecho (`hc19–hc21`). Ver `biblia/decisiones.md` (3-oct-2026). Revisar también keyframe c01_p01 y video b01. |
 | `HOJA_carmen.png` | https://drive.google.com/file/d/16sDUbxhR4RpybKWNbq_LXqHq5nsigL4W/view?usp=drivesdk |
 | `HOJA_diego.png` | https://drive.google.com/file/d/1gP6x_U_HAAjnU8onaEYMsk_4i6vy_vmA/view?usp=drivesdk |
 | `HOJA_extra_pareja_camisa_azul.png` | https://drive.google.com/file/d/16o91BzkjXp3y30ZowkqBaMyEN98beX52/view?usp=drivesdk |
