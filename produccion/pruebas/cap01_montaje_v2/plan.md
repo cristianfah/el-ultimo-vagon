@@ -23,7 +23,14 @@ Se registran en la sección `assets` de `produccion/shotlists/cap01.yaml`, con `
 
 Cada paso usa las reglas nuevas. Entre paréntesis va dónde está escrita cada una.
 
-0. **Actualizar el guion técnico a la v8 VIGENTE.** Hoy `cap01.yaml` apunta a `guion/cap01/cap01_v8.md`. El cold open v8 tiene 4 planos nuevos (c01_p01a, c01_p01b, c01_p02a, c01_p02b) con cámara fija en la mano y cámara en mano leve en Martina (cero push-in). El desglose del cold open v8 está en `produccion/pruebas/cap01_cold_open/plan.md`; los planos se agregan al YAML cuando el productor entregue la lista técnica. La deuda v3→v7 de la escena 1 sigue pendiente. Decisión nueva: en la escena 1, Tomás ve que Martina está con el celular y gira la cabeza a propósito para no ver (hc32 actualizado).
+0. **Actualizar el guion técnico a la v8 VIGENTE.** Hoy `cap01.yaml` apunta a `guion/cap01/cap01_v8.md`. El cold open v8 tiene 4 planos nuevos (c01_p01a, c01_p01b, c01_p02a, c01_p02b) con cámara fija en la mano y cámara en mano leve en Martina (cero push-in). El desglose del cold open v8 está en `produccion/pruebas/cap01_cold_open/plan.md`; los planos se agregan al YAML cuando el productor entregue la lista técnica. Decisión nueva: en la escena 1, Tomás ve que Martina está con el celular y gira la cabeza a propósito para no ver (hc32 actualizado).
+
+   **⚠ Deuda v3 → v8 de la escena 1 (detectada 3-oct-2026).** El cold open ya pasó a la v8; la escena 1 sigue con diferencias a corregir:
+   - **c01_p04:** agregar «Solo nosotros.» al diálogo y la acción; alargar el plano de 2 s a lo que necesite la línea nueva o reacomodar la escena.
+   - **c01_p05:** el mensaje es «Ya subí. Vagón 4.», no «Estoy en el tren.»; corregir `accion`, luz, `hc27`, `pila_referencias` y prompts del bloque **c01_b04**. **El keyframe v2 aprobado tiene el texto viejo** y hay que regenerarlo.
+   - **Tiempos:** el resto del vagón entra a las 0:12 (v8), no a las 0:11 (v3). Afecta c01_p07 a c01_p10.
+   - **`hc11`:** dice que el grupo está seco y sin manchas. En la v8, Carmen queda con mangas y dorso de las manos manchados después del brote.
+   - **`hc35`:** son cinco personas, no seis (la v3 decía seis).
 1. **Director:** reescribe `actuacion` de cada plano con objetivo, obstáculo, tarea, beats con tiempo, miradas con destino y ojos (`produccion/actuacion.md`). Escribe los perfiles de actuación de los personajes que aparecen (`produccion/actuacion/perfiles.md`) desde `biblia/personajes.md`.
 2. **Productor de impacto:** revisa el desglose y propone gancho, caídas de atención y cámara. El Director acepta o descarta (`mejoras.md` #3).
 3. **Director de fotografía:** escribe la `gramatica_escena` del cold open y de la escena 1. Da a cada plano un movimiento con tipo, amplitud, velocidad y motivo. Ningún plano queda fijo sin motivo escrito (`agentes/director_fotografia.md`).

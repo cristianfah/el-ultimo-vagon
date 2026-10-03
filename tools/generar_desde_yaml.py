@@ -32,10 +32,14 @@ def resolver(ref, assets, aprobados):
     if k:
         return aprobados[k.group(2) + (k.group(1) or "")]
     clave = nombre.split(" ")[0]
+    # Preferir hoja solo cuando la ref lo pide; si no, ref (placas, props, frames).
+    quiere_hoja = "(hoja)" in nombre
     for grupo in assets.values():
         if clave in grupo:
             a = grupo[clave]
-            return a.get("hoja") or a.get("ref")
+            if quiere_hoja:
+                return a.get("hoja") or a.get("ref")
+            return a.get("ref") or a.get("hoja")
     raise KeyError(nombre)
 
 

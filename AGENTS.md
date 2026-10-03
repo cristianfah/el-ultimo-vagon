@@ -18,8 +18,10 @@ Todo agente que trabaje en este repo (Cursor, Claude, cualquier otro) lee este a
 - **Guion vigente:** `guion/cap01/cap01_v8.md` (**VIGENTE**). La v7 queda como histórica.
 - **Aplicado hasta v8:** todo lo de la v7 + cold open reescrito en 4 planos (sin push-in, cámara fija en la mano, cámara en mano leve en Martina) + Tomás ve que Martina está con el celular y gira la cabeza a propósito para no ver.
 - **Pendiente de temporada:** el tren se detiene más adelante (cap. 2 o 3) por el freno de emergencia. Ver `biblia/decisiones.md`.
-- **Producción:** equipo técnico de agentes definido en `agentes/roles.md`. El guion técnico del capítulo 1 está en prueba en `produccion/shotlists/cap01.yaml` (cold open y escena 1).
-- **Producción:** la siguiente es la prueba de montaje v2 del capítulo 1, con assets nuevos y el flujo corregido. Plan en `produccion/pruebas/cap01_montaje_v2/plan.md`. Los prompts se escriben con la skill `.cursor/skills/director-de-prompts/`.
+- **Producción:** equipo técnico de agentes definido en `agentes/roles.md`. El guion técnico del capítulo 1 está en prueba en `produccion/shotlists/cap01.yaml` (cold open y escena 1), todavía desglosado desde la v3 (pendiente de actualizar a v7; ver deuda en `produccion/pruebas/cap01_montaje_v2/plan.md`).
+- **Producción:** la prueba de montaje v2 del capítulo 1 tiene keyframes y video tanda 1 generados (en Drive); falta el armado. Plan en `produccion/pruebas/cap01_montaje_v2/plan.md`. Los prompts se escriben con la skill `.cursor/skills/director-de-prompts/`.
+- **Assets v1 aprobados (2026-10-01):** planchas F01–F12, cuadros de look, vistas técnicas, 4 props, referencias y hojas de los 6 personajes y la pareja extra, estado de Diego y keyframes KF01–KF03. URLs en `produccion/assets/aprobados_v1.md`, archivos en `imagenes/04_aprobados` (Drive). Los cambios posteriores se hacen como v2.
+- **Imágenes:** viven en la carpeta privada de Drive y se suben con `tools/drive_sync.py`. Las ediciones se corren con `tools/fal_gen.py`. Ninguna imagen se propone para aprobación sin pasar antes por la revisión de continuidad de los agentes.
 - **Proyecto anterior archivado:** VAGÓN 7, de agentes y traición, en `archivo/vagon7/`. Su dirección de arte y sus assets se reutilizan.
 
 ## Mapa del repo

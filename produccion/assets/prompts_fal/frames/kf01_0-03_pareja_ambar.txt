@@ -1,0 +1,13 @@
+Film still from a feature film, not an illustration, not a character sheet. Image 1 is the woman, image 2 is the man: each is a reference sheet of one person; use only their faces, hair, glasses, builds and clothes exactly, and ignore the sheet layout, the grey backdrop and the poses. Image 3 is the carriage: match its seats, window, curtain, reading lamp, luggage rack, light and color exactly.
+
+MOMENT: One second after he has asked her a question. They sit side by side in the pair of seats of image 3, not touching, a hand's width of empty seat between their shoulders. He has turned his head toward her and waits, hopeful. She keeps looking at the dark window, her phone face down on her thigh under her hand, her sleeves pulled over her fingers, her charcoal coat open.
+
+COMPOSITION: 9:16 vertical. Camera at seated eye height in the aisle, one row ahead of them, looking back at a slight angle. She sits by the window on the left, her face on the upper third line; he sits on the aisle side, on the right, in three-quarter profile, slightly closer to the camera. The out-of-focus top of a seat back fills the bottom of the frame as a foreground occluder. The luggage rack above them falls into darkness at the top of the frame.
+
+LENS: Shot on ARRI Alexa 35 with a Cooke S4 50mm spherical lens at T2. Focus on her near eye; he is slightly soft. Gentle natural focus falloff, soft halation around the reading lamp only. No anamorphic streaks.
+
+LIGHT: Only practical sources. The reading lamp under the luggage rack above them, warm orange-amber 2400K, soft, lights her face from above and in front and makes a small pool on her hand and the phone; his face is half in that light and half in shadow. Behind them, the other reading lamps of the carriage recede as dim warm pools. The window beside her is deep night blue and reflects a faint copy of the lamp. Contrast ratio 6:1, slightly underexposed, deep shadows that keep detail.
+
+TEXTURE: Rain only on the outside of the window glass, the streaks blurred by depth of field. Their skin is dry and matte with real pores. Their clothes are dry, with natural creases. Nothing is dirty.
+
+FINISH: Kodak Vision3 500T film scan look, fine organic grain, soft natural micro-contrast, no digital sharpening, no HDR look. Color separation limited to warm amber, deep night blue and near-black. Restrained and naturalistic: no heavy haze, no bloom, no lens flares, no exaggerated saturation. No text, no logos.

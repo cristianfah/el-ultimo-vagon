@@ -1,0 +1,86 @@
+{
+  "prueba": "cap01_montaje_v2",
+  "tanda": "keyframes_tanda1",
+  "fecha": "2026-10-01T17:29:13.864Z",
+  "decisions": [
+    {
+      "id": "c01_p01_keyframe",
+      "toma": 1,
+      "url": "https://v3b.fal.media/files/b/0aaca78b/4hAUzLJ3aVDiQdyWNp34d_gnK0QeXo.png",
+      "veredicto": "aprobar"
+    },
+    {
+      "id": "c01_p01_keyframe_entrada",
+      "toma": 1,
+      "url": "https://v3b.fal.media/files/b/0aaca79e/CaYCYqowgz2ig7_INRHTo_Hb0Wh0Nr.png",
+      "veredicto": "aprobar"
+    },
+    {
+      "id": "c01_p02_keyframe",
+      "toma": 1,
+      "url": "https://v3b.fal.media/files/b/0aaca791/zkTo6py4_lIvr8_RuCOOa_xKqEjgDl.png",
+      "veredicto": "aprobar"
+    },
+    {
+      "id": "c01_p03_keyframe",
+      "toma": 0,
+      "url": "https://v3b.fal.media/files/b/0aaca792/cwZNU1PF9uWAkjCYeJbnM_L2TZv7my.png",
+      "veredicto": "aprobar"
+    },
+    {
+      "id": "c01_p04_keyframe",
+      "toma": 0,
+      "url": "https://v3b.fal.media/files/b/0aaca796/4gtnbh9if0wuAJrSIMipA_h5lv9Oe3.png",
+      "veredicto": "aprobar"
+    },
+    {
+      "id": "c01_p05_keyframe",
+      "toma": 0,
+      "url": "https://v3b.fal.media/files/b/0aaca797/ZJ-JPrgp7xOcIUwqpfNxL_vUOaKjLW.png",
+      "veredicto": "aprobar"
+    },
+    {
+      "id": "c01_p05_keyframe_entrada",
+      "toma": 0,
+      "url": "https://v3b.fal.media/files/b/0aaca79e/LkErQpLi_nle-6xwXIhKN_u28dMHlc.png",
+      "veredicto": "aprobar"
+    },
+    {
+      "id": "c01_p06_keyframe",
+      "toma": 1,
+      "url": "https://v3b.fal.media/files/b/0aaca797/Bril8nial9li31HpoL5dW_UF5qPyLC.png",
+      "veredicto": "aprobar"
+    },
+    {
+      "id": "c01_p07_keyframe",
+      "toma": 0,
+      "url": "https://v3b.fal.media/files/b/0aaca796/TwFI1IFkhFDeASRfdK_PS_BjsBlwcS.png",
+      "veredicto": "aprobar"
+    },
+    {
+      "id": "c01_p08_keyframe",
+      "toma": 1,
+      "url": "https://v3b.fal.media/files/b/0aaca797/x8jVnGiMDo3MkfG9rp_tT_WrhH3lUO.png",
+      "veredicto": "aprobar"
+    },
+    {
+      "id": "c01_p09_keyframe",
+      "toma": 0,
+      "url": "https://v3b.fal.media/files/b/0aaca796/KMpvXSBcC5WspO9u9BN99_9XAsIntO.png",
+      "veredicto": "aprobar"
+    },
+    {
+      "id": "c01_p10_keyframe",
+      "toma": 1,
+      "url": "https://v3b.fal.media/files/b/0aaca79c/yyCDwUp5rCDpTmnQuhMwk_nGWYPZCy.png",
+      "veredicto": "aprobar"
+    },
+    {
+      "id": "c01_p10_keyframe_entrada",
+      "toma": 0,
+      "url": "https://v3b.fal.media/files/b/0aaca79f/wCy5IohzxH05jNWOqoxX7_ejMSYl8P.png",
+      "veredicto": "aprobar"
+    }
+  ],
+  "aprobadas": 13
+}

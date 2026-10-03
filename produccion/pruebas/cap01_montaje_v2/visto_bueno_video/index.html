@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+<meta name="apple-mobile-web-app-capable" content="yes" />
+<meta name="theme-color" content="#0e0c0b" />
+<title>EL ÚLTIMO VAGÓN · Visto bueno video</title>
+<link href="https://fonts.googleapis.com/css2?family=Instrument+Sans:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet" />
+<style>
+:root{--bg:#0e0c0b;--panel:#1a1614;--panel2:#241f1c;--ink:#f3ebe3;--muted:#a89a8c;--line:rgba(243,235,227,.12);--ok:#3d9b6a;--fix:#c9852a;--no:#b04545;--accent:#e8c39a;--safe-b:env(safe-area-inset-bottom,0px);--safe-t:env(safe-area-inset-top,0px)}
+*{box-sizing:border-box;-webkit-tap-highlight-color:transparent}html,body{height:100%;margin:0;background:var(--bg);color:var(--ink);font-family:"Instrument Sans",system-ui,sans-serif;overflow:hidden}
+button,textarea{font:inherit;color:inherit}
+#app{height:100%;display:flex;flex-direction:column;padding-top:var(--safe-t)}
+header{display:flex;align-items:center;justify-content:space-between;padding:10px 14px 8px;gap:10px;border-bottom:1px solid var(--line);background:linear-gradient(180deg,#171311,#0e0c0b)}
+.brand strong{font-size:13px;letter-spacing:.08em;text-transform:uppercase;color:var(--accent);display:block}
+.brand span{font-size:12px;color:var(--muted)}
+.progress{font-family:"IBM Plex Mono",monospace;font-size:12px;color:var(--muted)}
+.stage{flex:1;min-height:0;display:flex;align-items:center;justify-content:center;background:#090807;position:relative}
+.stage video{max-width:100%;max-height:100%;width:auto;height:auto;background:#000;box-shadow:0 12px 40px rgba(0,0,0,.55)}
+.badge{position:absolute;top:12px;left:12px;background:rgba(14,12,11,.72);border:1px solid var(--line);border-radius:999px;padding:6px 10px;font-size:12px}
+.status-pill{position:absolute;top:12px;right:12px;border-radius:999px;padding:6px 10px;font-size:12px;font-weight:600;display:none}
+.status-pill.show{display:inline-flex}.status-pill.ok{background:rgba(61,155,106,.2);color:#7ed0a5;border:1px solid rgba(61,155,106,.45)}
+.status-pill.fix{background:rgba(201,133,42,.2);color:#f0c07a;border:1px solid rgba(201,133,42,.45)}
+.status-pill.no{background:rgba(176,69,69,.2);color:#ef9a9a;border:1px solid rgba(176,69,69,.45)}
+.dock{background:var(--panel);border-top:1px solid var(--line);padding:12px 14px calc(12px + var(--safe-b));display:flex;flex-direction:column;gap:10px}
+.meta .scene{font-size:11px;letter-spacing:.06em;text-transform:uppercase;color:var(--muted)}
+.meta .label{font-size:16px;font-weight:600;line-height:1.25}
+.meta .hint{font-size:12px;color:var(--muted);margin-top:2px}
+.actions{display:grid;grid-template-columns:1fr 1fr 1fr;gap:8px}
+.act{border:0;border-radius:14px;min-height:52px;font-weight:700;font-size:15px}
+.act.ok{background:var(--ok);color:#04150c}.act.fix{background:var(--fix);color:#1a1003}.act.no{background:var(--no);color:#1a0707}
+details.note{border:1px solid var(--line);border-radius:12px;background:var(--panel2);padding:0 12px}
+details.note summary{list-style:none;cursor:pointer;padding:12px 0;color:var(--muted);font-size:13px}
+details.note summary::-webkit-details-marker{display:none}
+details.note textarea{width:100%;border:0;background:transparent;resize:none;min-height:72px;padding:0 0 12px;outline:none}
+.footer-row{display:flex;gap:8px}
+.ghost{flex:1;border:1px solid var(--line);background:transparent;border-radius:12px;min-height:44px;color:var(--muted);font-size:13px;font-weight:600}
+.strip{display:flex;gap:6px;overflow-x:auto;scrollbar-width:none}
+.strip::-webkit-scrollbar{display:none}
+.dot{flex:0 0 auto;width:28px;height:28px;border-radius:8px;border:1px solid var(--line);background:var(--panel2);font-family:"IBM Plex Mono",monospace;font-size:10px;color:var(--muted)}
+.dot.on{border-color:var(--accent);color:var(--accent)}.dot.ok{background:rgba(61,155,106,.25);color:#7ed0a5}.dot.fix{background:rgba(201,133,42,.25);color:#f0c07a}.dot.no{background:rgba(176,69,69,.25);color:#ef9a9a}
+#done{display:none;position:fixed;inset:0;background:var(--bg);z-index:20;padding:calc(16px + var(--safe-t)) 16px calc(16px + var(--safe-b));overflow:auto}
+#done.show{display:block}#done h1{font-size:28px;margin:8px 0 6px}#done p{color:var(--muted);margin:0 0 16px;line-height:1.4}
+#done pre{white-space:pre-wrap;word-break:break-word;background:var(--panel);border:1px solid var(--line);border-radius:14px;padding:14px;font-family:"IBM Plex Mono",monospace;font-size:11px;line-height:1.45}
+#done .big{width:100%;margin-top:12px;border:0;border-radius:14px;min-height:52px;background:var(--accent);color:#1a120a;font-weight:700}
+#toast{position:fixed;left:50%;bottom:calc(18px + var(--safe-b));transform:translateX(-50%);background:rgba(243,235,227,.95);color:#1a120a;padding:10px 14px;border-radius:999px;font-size:13px;font-weight:600;opacity:0;pointer-events:none;transition:opacity .2s;z-index:40}
+#toast.show{opacity:1}
+</style>
+</head>
+<body>
+<div id="app">
+  <header>
+    <div class="brand"><strong>El último vagón</strong><span>Visto bueno · video H3 480p</span></div>
+    <div class="progress" id="progress">1 / 6</div>
+  </header>
+  <div class="stage">
+    <video id="player" playsinline controls autoplay loop muted></video>
+    <div class="badge" id="metaBadge">5s</div>
+    <div class="status-pill" id="statusPill"></div>
+  </div>
+  <div class="dock">
+    <div class="strip" id="strip"></div>
+    <div class="meta">
+      <div class="scene" id="scene">Cold open</div>
+      <div class="label" id="label">b01</div>
+      <div class="hint" id="hint">H3 Max · 480P · 1 toma</div>
+    </div>
+    <div class="actions">
+      <button class="act ok" id="btnOk">Aprobar</button>
+      <button class="act fix" id="btnFix">Otra toma</button>
+      <button class="act no" id="btnNo">Descartar</button>
+    </div>
+    <details class="note"><summary>Nota (opcional)</summary><textarea id="note" placeholder="Qué falló / qué pedir en la 2ª toma…"></textarea></details>
+    <div class="footer-row">
+      <button class="ghost" id="btnBack">Anterior</button>
+      <button class="ghost" id="btnMute">Sonido</button>
+      <button class="ghost" id="btnSummary">Resumen</button>
+    </div>
+  </div>
+</div>
+<div id="done">
+  <div class="brand"><strong>El último vagón</strong></div>
+  <h1>Video revisado</h1>
+  <p>Copiá el JSON y pegalo en el chat del agente.</p>
+  <pre id="out"></pre>
+  <button class="big" id="btnCopy">Copiar JSON</button>
+  <button class="big" id="btnBackReview" style="background:transparent;color:var(--accent);border:1px solid var(--line);margin-top:8px">Seguir revisando</button>
+</div>
+<div id="toast"></div>
+<script>
+const SHOTS = [{"id": "c01_b01", "label": "b01 · mano en ventanita", "scene": "Cold open", "meta": "5s · FL", "url": "https://v3b.fal.media/files/b/0aaca8e4/nr-PB3ouJexvG2TDKe_FR_minimax-h3.mp4"}, {"id": "c01_b02", "label": "b02 · Martina «Diego…»", "scene": "Cold open", "meta": "5s · FF", "url": "https://v3b.fal.media/files/b/0aaca8e4/51Drxchw1M_jKIVpRCxlN_minimax-h3.mp4"}, {"id": "c01_b03", "label": "b03 · pareja / Carmen / Iván", "scene": "Escena 1", "meta": "12s · REF multi-beat", "url": "https://v3b.fal.media/files/b/0aaca8e2/vE0BPtkaVG98DvzMW0YqF_minimax-h3.mp4"}, {"id": "c01_b04", "label": "b04 · celular 23:38", "scene": "Escena 1", "meta": "5s · FL", "url": "https://v3b.fal.media/files/b/0aaca8e4/_BUX9IrTq4aIu39w1HVuq_minimax-h3.mp4"}, {"id": "c01_b05", "label": "b05 · Hugo y boleto", "scene": "Escena 1", "meta": "5s · FF", "url": "https://v3b.fal.media/files/b/0aaca8e4/wEpxCNC-UoQG3CTXBW5SQ_minimax-h3.mp4"}, {"id": "c01_b06", "label": "b06 · revólver", "scene": "Escena 1", "meta": "5s · FL", "url": "https://v3b.fal.media/files/b/0aaca8e4/shEvpem4q35aRL7g-WCwx_minimax-h3.mp4"}];
+const STORE_KEY = "euv_visto_bueno_video_v2_tanda1";
+const state = { i: 0, votes: load() };
+function load(){ try{return JSON.parse(localStorage.getItem(STORE_KEY)||"{}")}catch{return{}} }
+function save(){ localStorage.setItem(STORE_KEY, JSON.stringify(state.votes)); }
+const els = {
+  player: document.getElementById("player"), progress: document.getElementById("progress"),
+  scene: document.getElementById("scene"), label: document.getElementById("label"), hint: document.getElementById("hint"),
+  metaBadge: document.getElementById("metaBadge"), statusPill: document.getElementById("statusPill"),
+  note: document.getElementById("note"), strip: document.getElementById("strip"),
+  done: document.getElementById("done"), out: document.getElementById("out"), toast: document.getElementById("toast"),
+};
+function cur(){ return SHOTS[state.i]; }
+function vote(id){ return state.votes[id]||null; }
+function toast(m){ els.toast.textContent=m; els.toast.classList.add("show"); clearTimeout(toast._t); toast._t=setTimeout(()=>els.toast.classList.remove("show"),1400); }
+function buildStrip(){
+  els.strip.innerHTML="";
+  SHOTS.forEach((s,idx)=>{
+    const b=document.createElement("button"); b.className="dot"; b.textContent=String(idx+1);
+    b.onclick=()=>{ state.i=idx; render(); };
+    els.strip.appendChild(b);
+  });
+}
+function render(){
+  const s=cur(), v=vote(s.id);
+  if (els.player.src !== s.url) { els.player.src = s.url; els.player.play().catch(()=>{}); }
+  els.progress.textContent = `${state.i+1} / ${SHOTS.length}`;
+  els.scene.textContent = s.scene; els.label.textContent = s.label; els.hint.textContent = s.meta + " · H3 Max 480P";
+  els.metaBadge.textContent = s.meta;
+  els.note.value = v?.nota || "";
+  const pill=els.statusPill;
+  if(v?.veredicto){
+    pill.className=`status-pill show ${v.veredicto==="aprobar"?"ok":v.veredicto==="otra_toma"?"fix":"no"}`;
+    pill.textContent=v.veredicto==="aprobar"?"Aprobado":v.veredicto==="otra_toma"?"Otra toma":"Descartado";
+  } else { pill.className="status-pill"; pill.textContent=""; }
+  [...els.strip.children].forEach((b,idx)=>{
+    const vv=vote(SHOTS[idx].id);
+    b.className="dot"+(idx===state.i?" on":"")+(vv?.veredicto==="aprobar"?" ok":vv?.veredicto==="otra_toma"?" fix":vv?.veredicto==="descartar"?" no":"");
+  });
+}
+function decide(veredicto){
+  const s=cur();
+  state.votes[s.id]={id:s.id,label:s.label,scene:s.scene,url:s.url,veredicto,nota:els.note.value.trim()};
+  save(); toast(veredicto==="aprobar"?"Aprobado":veredicto==="otra_toma"?"Pedida otra toma":"Descartado");
+  if(state.i<SHOTS.length-1){ state.i++; render(); } else showSummary();
+}
+function summaryPayload(){
+  const decisions=SHOTS.map(s=>state.votes[s.id]||{id:s.id,label:s.label,veredicto:"sin_revisar"});
+  return {prueba:"cap01_montaje_v2",tanda:"video_tanda1",fecha:new Date().toISOString(),decisions,
+    pendientes:decisions.filter(d=>!d.veredicto||d.veredicto==="sin_revisar").map(d=>d.id),
+    aprobados:decisions.filter(d=>d.veredicto==="aprobar").length,
+    otra_toma:decisions.filter(d=>d.veredicto==="otra_toma").length,
+    descartados:decisions.filter(d=>d.veredicto==="descartar").length};
+}
+function showSummary(){ els.out.textContent=JSON.stringify(summaryPayload(),null,2); els.done.classList.add("show"); }
+document.getElementById("btnOk").onclick=()=>decide("aprobar");
+document.getElementById("btnFix").onclick=()=>decide("otra_toma");
+document.getElementById("btnNo").onclick=()=>decide("descartar");
+document.getElementById("btnBack").onclick=()=>{ if(state.i>0){ state.i--; render(); } };
+document.getElementById("btnMute").onclick=()=>{ els.player.muted=!els.player.muted; document.getElementById("btnMute").textContent=els.player.muted?"Sonido":"Mute"; };
+document.getElementById("btnSummary").onclick=showSummary;
+document.getElementById("btnBackReview").onclick=()=>els.done.classList.remove("show");
+document.getElementById("btnCopy").onclick=async()=>{
+  const text=JSON.stringify(summaryPayload(),null,2);
+  try{ await navigator.clipboard.writeText(text); toast("JSON copiado"); }
+  catch{ toast("Seleccioná y copiá"); }
+};
+els.note.addEventListener("change",()=>{
+  const s=cur(); const prev=vote(s.id)||{id:s.id,url:s.url};
+  state.votes[s.id]={...prev,nota:els.note.value.trim()}; save();
+});
+buildStrip(); render();
+</script>
+</body>
+</html>

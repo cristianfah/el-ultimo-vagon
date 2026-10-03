@@ -1,0 +1,123 @@
+{
+  "keyframes": {
+    "c01_p01_keyframe": {
+      "toma_0": "https://v3b.fal.media/files/b/0aaca78b/dFndWggJyP88W3MUqXzqa_4kOrktKS.png",
+      "toma_1": "https://v3b.fal.media/files/b/0aaca78b/4hAUzLJ3aVDiQdyWNp34d_gnK0QeXo.png"
+    },
+    "c01_p01_keyframe_entrada": {
+      "toma_0": "https://v3b.fal.media/files/b/0aaca79e/s0m7a8UmRwvvGrxdt2dwT_eSYSYQ6S.png",
+      "toma_1": "https://v3b.fal.media/files/b/0aaca79e/CaYCYqowgz2ig7_INRHTo_Hb0Wh0Nr.png"
+    },
+    "c01_p02_keyframe": {
+      "toma_0": "https://v3b.fal.media/files/b/0aaca791/C_5vh2q5sYRhu97UDxQQc_0FFVQKzI.png",
+      "toma_1": "https://v3b.fal.media/files/b/0aaca791/zkTo6py4_lIvr8_RuCOOa_xKqEjgDl.png"
+    },
+    "c01_p03_keyframe": {
+      "toma_0": "https://v3b.fal.media/files/b/0aaca792/cwZNU1PF9uWAkjCYeJbnM_L2TZv7my.png",
+      "toma_1": "https://v3b.fal.media/files/b/0aaca792/1uHeZKyQVoHD2iMdNoOfP_7fAzD535.png"
+    },
+    "c01_p04_keyframe": {
+      "toma_0": "https://v3b.fal.media/files/b/0aaca796/4gtnbh9if0wuAJrSIMipA_h5lv9Oe3.png",
+      "toma_1": "https://v3b.fal.media/files/b/0aaca796/8g5SGiA1gm6vPy8S1MZCl_7s8WDLMS.png"
+    },
+    "c01_p05_keyframe": {
+      "toma_0": "https://v3b.fal.media/files/b/0aaca797/ZJ-JPrgp7xOcIUwqpfNxL_vUOaKjLW.png",
+      "toma_1": "https://v3b.fal.media/files/b/0aaca797/M6fbdisYJ0E-jfFOvz_y3_T9NVrFOp.png"
+    },
+    "c01_p05_keyframe_entrada": {
+      "toma_0": "https://v3b.fal.media/files/b/0aaca79e/LkErQpLi_nle-6xwXIhKN_u28dMHlc.png",
+      "toma_1": "https://v3b.fal.media/files/b/0aaca79e/zpeQcjBKj-n5x7_o3IV_O_0PKRcYFx.png"
+    },
+    "c01_p06_keyframe": {
+      "toma_0": "https://v3b.fal.media/files/b/0aaca797/i4ogPyVjEzu6RyTZVh3S0_WYpHwGCX.png",
+      "toma_1": "https://v3b.fal.media/files/b/0aaca797/Bril8nial9li31HpoL5dW_UF5qPyLC.png"
+    },
+    "c01_p07_keyframe": {
+      "toma_0": "https://v3b.fal.media/files/b/0aaca796/TwFI1IFkhFDeASRfdK_PS_BjsBlwcS.png",
+      "toma_1": "https://v3b.fal.media/files/b/0aaca796/oUCQRZAyHhjmbbZW7NSA7_teFew0pt.png"
+    },
+    "c01_p08_keyframe": {
+      "toma_0": "https://v3b.fal.media/files/b/0aaca796/RGQxFn-TmrRUGooOpKkn7_tKBCXUNz.png",
+      "toma_1": "https://v3b.fal.media/files/b/0aaca797/x8jVnGiMDo3MkfG9rp_tT_WrhH3lUO.png"
+    },
+    "c01_p09_keyframe": {
+      "toma_0": "https://v3b.fal.media/files/b/0aaca796/KMpvXSBcC5WspO9u9BN99_9XAsIntO.png",
+      "toma_1": "https://v3b.fal.media/files/b/0aaca796/PL3c-rQ9Mv1P4sZcRtCm-_hKTXsZbB.png"
+    },
+    "c01_p10_keyframe": {
+      "toma_0": "https://v3b.fal.media/files/b/0aaca79c/mG7MkXkqWac4RwqVK2fh8_Igl9Aphu.png",
+      "toma_1": "https://v3b.fal.media/files/b/0aaca79c/yyCDwUp5rCDpTmnQuhMwk_nGWYPZCy.png"
+    },
+    "c01_p10_keyframe_entrada": {
+      "toma_0": "https://v3b.fal.media/files/b/0aaca79f/wCy5IohzxH05jNWOqoxX7_ejMSYl8P.png",
+      "toma_1": "https://v3b.fal.media/files/b/0aaca79f/c0ZyQRoyc8zTHseNBsESJ_FuEztGCt.png"
+    }
+  },
+  "keyframes_todas": {
+    "c01_p01_keyframe": [
+      "https://v3b.fal.media/files/b/0aaca78b/dFndWggJyP88W3MUqXzqa_4kOrktKS.png",
+      "https://v3b.fal.media/files/b/0aaca78b/4hAUzLJ3aVDiQdyWNp34d_gnK0QeXo.png"
+    ],
+    "c01_p01_keyframe_entrada": [
+      "https://v3b.fal.media/files/b/0aaca79e/s0m7a8UmRwvvGrxdt2dwT_eSYSYQ6S.png",
+      "https://v3b.fal.media/files/b/0aaca79e/CaYCYqowgz2ig7_INRHTo_Hb0Wh0Nr.png"
+    ],
+    "c01_p02_keyframe": [
+      "https://v3b.fal.media/files/b/0aaca791/C_5vh2q5sYRhu97UDxQQc_0FFVQKzI.png",
+      "https://v3b.fal.media/files/b/0aaca791/zkTo6py4_lIvr8_RuCOOa_xKqEjgDl.png"
+    ],
+    "c01_p03_keyframe": [
+      "https://v3b.fal.media/files/b/0aaca792/cwZNU1PF9uWAkjCYeJbnM_L2TZv7my.png",
+      "https://v3b.fal.media/files/b/0aaca792/1uHeZKyQVoHD2iMdNoOfP_7fAzD535.png"
+    ],
+    "c01_p04_keyframe": [
+      "https://v3b.fal.media/files/b/0aaca796/4gtnbh9if0wuAJrSIMipA_h5lv9Oe3.png",
+      "https://v3b.fal.media/files/b/0aaca796/8g5SGiA1gm6vPy8S1MZCl_7s8WDLMS.png"
+    ],
+    "c01_p05_keyframe": [
+      "https://v3b.fal.media/files/b/0aaca797/ZJ-JPrgp7xOcIUwqpfNxL_vUOaKjLW.png",
+      "https://v3b.fal.media/files/b/0aaca797/M6fbdisYJ0E-jfFOvz_y3_T9NVrFOp.png"
+    ],
+    "c01_p05_keyframe_entrada": [
+      "https://v3b.fal.media/files/b/0aaca79e/LkErQpLi_nle-6xwXIhKN_u28dMHlc.png",
+      "https://v3b.fal.media/files/b/0aaca79e/zpeQcjBKj-n5x7_o3IV_O_0PKRcYFx.png"
+    ],
+    "c01_p06_keyframe": [
+      "https://v3b.fal.media/files/b/0aaca797/i4ogPyVjEzu6RyTZVh3S0_WYpHwGCX.png",
+      "https://v3b.fal.media/files/b/0aaca797/Bril8nial9li31HpoL5dW_UF5qPyLC.png"
+    ],
+    "c01_p07_keyframe": [
+      "https://v3b.fal.media/files/b/0aaca796/TwFI1IFkhFDeASRfdK_PS_BjsBlwcS.png",
+      "https://v3b.fal.media/files/b/0aaca796/oUCQRZAyHhjmbbZW7NSA7_teFew0pt.png"
+    ],
+    "c01_p08_keyframe": [
+      "https://v3b.fal.media/files/b/0aaca796/RGQxFn-TmrRUGooOpKkn7_tKBCXUNz.png",
+      "https://v3b.fal.media/files/b/0aaca797/x8jVnGiMDo3MkfG9rp_tT_WrhH3lUO.png"
+    ],
+    "c01_p09_keyframe": [
+      "https://v3b.fal.media/files/b/0aaca796/KMpvXSBcC5WspO9u9BN99_9XAsIntO.png",
+      "https://v3b.fal.media/files/b/0aaca796/PL3c-rQ9Mv1P4sZcRtCm-_hKTXsZbB.png"
+    ],
+    "c01_p10_keyframe": [
+      "https://v3b.fal.media/files/b/0aaca79c/mG7MkXkqWac4RwqVK2fh8_Igl9Aphu.png",
+      "https://v3b.fal.media/files/b/0aaca79c/yyCDwUp5rCDpTmnQuhMwk_nGWYPZCy.png"
+    ],
+    "c01_p10_keyframe_entrada": [
+      "https://v3b.fal.media/files/b/0aaca79f/wCy5IohzxH05jNWOqoxX7_ejMSYl8P.png",
+      "https://v3b.fal.media/files/b/0aaca79f/c0ZyQRoyc8zTHseNBsESJ_FuEztGCt.png"
+    ]
+  },
+  "anclas_trabajo": {
+    "c01_p01": "https://v3b.fal.media/files/b/0aaca78b/dFndWggJyP88W3MUqXzqa_4kOrktKS.png",
+    "c01_p02": "https://v3b.fal.media/files/b/0aaca791/C_5vh2q5sYRhu97UDxQQc_0FFVQKzI.png",
+    "c01_p03": "https://v3b.fal.media/files/b/0aaca792/cwZNU1PF9uWAkjCYeJbnM_L2TZv7my.png",
+    "c01_p04": "https://v3b.fal.media/files/b/0aaca796/4gtnbh9if0wuAJrSIMipA_h5lv9Oe3.png",
+    "c01_p05": "https://v3b.fal.media/files/b/0aaca797/ZJ-JPrgp7xOcIUwqpfNxL_vUOaKjLW.png",
+    "c01_p06": "https://v3b.fal.media/files/b/0aaca797/i4ogPyVjEzu6RyTZVh3S0_WYpHwGCX.png",
+    "c01_p07": "https://v3b.fal.media/files/b/0aaca796/TwFI1IFkhFDeASRfdK_PS_BjsBlwcS.png",
+    "c01_p08": "https://v3b.fal.media/files/b/0aaca796/RGQxFn-TmrRUGooOpKkn7_tKBCXUNz.png",
+    "c01_p09": "https://v3b.fal.media/files/b/0aaca796/KMpvXSBcC5WspO9u9BN99_9XAsIntO.png",
+    "c01_p10": "https://v3b.fal.media/files/b/0aaca79c/mG7MkXkqWac4RwqVK2fh8_Igl9Aphu.png"
+  },
+  "nota": "Tanda v2 2026-10-01. GPT Image 2.5 / NBP 720×1280 o 1K, 2 tomas. Anclas de trabajo = toma 0 para encadenar; Cristian elige."
+}

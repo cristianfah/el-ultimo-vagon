@@ -53,12 +53,35 @@ Detalle en `produccion/pruebas/cap01_montaje_v1/feedback_proceso.md`.
 - **Se define antes de generar.** Control de calidad hace una revisión previa de cada bloque y hay un tope de dos tomas por bloque. Si fallan las dos, se vuelve a la definición. Motivo: Cristian no quiere generar hasta que salga, sino que salga en pocos intentos.
 - **La biblia del set se detalla con los assets definitivos.** Motivo: decisión de Cristian.
 
+### 2026-09-30 · Assets v1 (rama `plan-assets-v1`)
+- **Método de assets:** en Midjourney 8.2 la cara y el vestuario se exploran por separado, y se unen en GPT Image 2.5 (en paralelo con Nano Banana Pro) en Weavy. Motivo: MJ 8.2 no sostiene una cara entre imágenes; separadas, la cara no cambia con cada variación de ropa. Plan en `produccion/assets/plan_assets_v1.md`.
+- **Los sets salen de una plancha maestra:** los estados de luz y los ángulos se editan sobre la misma imagen, no se generan de cero. Motivo: en la prueba 1 el vagón cambiaba de un plano a otro.
+- **La manija del freno de emergencia se planta desde el capítulo 1** en el set, junto a la puerta. Motivo: cuando alguien la tire en el capítulo 3, el público tiene que poder decir que estaba ahí.
+- **Propuestas de casting visual aprobadas** (`direccion_arte/personajes/fichas_personajes_v1.md`): reloj de enfermera para Carmen y sin hacha en el último vagón.
+- **fal.ai entra al pipeline** para las ediciones con GPT Image 2.5 (Flare y Sunburst) y Nano Banana Pro, con `tools/fal_gen.py`. Weavy se mantiene para los flujos de nodos. Motivo: es más rápido, se puede automatizar y cada corrección queda guardada como archivo de prompt.
+- **El repositorio de imágenes vive en Drive**, en la carpeta privada del proyecto, y se sube con `tools/drive_sync.py`. Motivo: falta de espacio en disco local.
+- **Ninguna imagen se propone para aprobación sin pasar por el equipo de agentes** (continuidad y DP/arte). Las correcciones son de una sola variable. Motivo: lo pidió Cristian, para cuidar la continuidad.
+- **Set del último vagón, v2** (`direccion_arte/sets/set_ultimo_vagon_v2.md`), aprobado el 2026-10-01.
+  - Son 6 filas de 2 + 2.
+  - El compartimento del revisor es una cabina construida en la esquina trasera, del mismo lado que el freno.
+  - No hay llave en las placas.
+  - La cinta va en la fila 5 izquierda.
+  - Motivo: la revisión de continuidad encontró la puerta del revisor dando al exterior, la llave en planos donde no corresponde y la cinta en filas distintas.
+- **La luz roja sale de una tira de emergencia en el centro del cielo del vagón.** Motivo: Cristian la prefiere; tiene más sentido que las rejillas.
+- **En el vagón de pasajeros, los asientos miran hacia su puerta delantera, igual que en el último vagón.** Motivo: es el mismo modelo de vagón, y en los contraplanos los asientos tienen que verse de frente.
+- **La cámara de la utilería no puede parecerse a la de un modelo de marca** (por ejemplo, el celular de Martina). Motivo: es propiedad intelectual ajena; la revisión descartó dos versiones del celular.
+- **Las vistas con luz neutra pasan a ser el plano técnico del set, no planchas finales.** La dirección de arte se fija antes de las planchas finales, con un cuadro de referencia por estado de luz. Cada plancha final se genera en una sola pasada (referencia de look más plano técnico) y admite como máximo una corrección, siempre sobre la pasada limpia. Motivo: con las ediciones en cadena aparece el ruido típico de la IA y se pierde el look cinematográfico de la referencia ámbar y azul.
+
 ## 2026-10-01
 - **cap01_v5:** mezcla de la v4 de Cursor y la v4 de Claude. El hombre de camisa azul llega desde adelante y Carmen lo atiende (ve los dientes) e Iván la salva. En la puerta, primero la pregunta de Iván y después el «Vine por ti» de Diego. Tomás: «Quiero verle la cara». Motivo: que el grupo aprenda por acción y que la culpa de Carmen sea concreta.
 - **cap01_v6:** Diego: «Si no estás segura, no abras» (ambigua: ¿honesto o manipulador?). Carmen comprimida. «Muy rápido» en vez de «en segundos». Manchas sin heridas. Se mantiene «O sea que no hay cómo saber» de Iván. Hugo se acorta a «Te llama a ti. Tú decides» (amenaza en gesto del arma). La semilla del corte en la palma de Carmen sale del guion y queda en preguntas abiertas. Motivo: no sesgar el voto, menos texto en vertical, coherencia con las reglas, no confundir a producción.
 - **cap01_v7 (FINAL):** sale «Había gente viva» para ~90 s; Hugo solo «Te llama a ti. Tú decides», amenaza en gesto; Martina mira a Tomás, a Diego y aprieta la llave; el «Diego…» del cold open ocurre en la escena 4 (mismo plano); acuerdo Carmen–Iván filmable (ella baja la vista, él asiente); se mantiene «O sea que no hay cómo saber». Semilla del corte fuera del cap. 1.
+- **Cristian aprueba los assets v1**, que pasan a `imagenes/04_aprobados` en Drive (registro con URLs en `produccion/assets/aprobados_v1.md`). Incluye las planchas F01 a F12, los cuadros de look y las vistas técnicas, los cuatro props, las referencias y hojas de los seis personajes y la pareja extra, el estado de Diego y los keyframes KF01 a KF03. Motivo: hacen falta para la prueba de video con otro agente. Los cambios posteriores se hacen como `v2`, sin reemplazar lo aprobado. Las notas de revisión abiertas (contextura de Tomás, cuello de Iván, Martina y la camisa azul bajo luz roja) quedan para esa v2.
 
 ## 2026-10-03
+
+### Continuidad
+- **Brazo herido de Diego: DERECHO.** Resuelve la contradicción entre el YAML (`hc19`, `hc20`, `hc21`) y las fichas v2. Motivo: decisión de Cristian; el YAML es la referencia de continuidad correcta. A corregir: `ESTADO_diego_mojado_herido.png` (muestra el izquierdo, hay que regenerarla), keyframe de c01_p01 y video b01.
 
 ### Dirección y calidad (feedback del montaje v2)
 - **Sin push-in ni dolly in por defecto.** Cada plano necesita una intención en la actuación y una cámara elegida a propósito. La cámara fija o en mano leve es la base; cualquier movimiento es la excepción y tiene que estar justificado (una escena, un solo movimiento con motivo). El único movimiento de cámara del capítulo 1 se reserva para cuando aparece la cara de Diego (escena 4). Motivo: el dolly in en todos los planos delata la IA y no impacta.
@@ -67,7 +90,6 @@ Detalle en `produccion/pruebas/cap01_montaje_v1/feedback_proceso.md`.
 - **Video en 1080p** para la versión final (pruebas siguen en 480p).
 - **Cámara explícita en cada prompt** (fija o en mano, «no push-in»). Control de calidad rechaza las tomas con push-in o con movimiento de fondo sin motivo.
 - **Grano agregado en edición,** no el que deja el modelo.
-- **Mano y herida de Diego en el brazo DERECHO** (continuidad confirmada).
 
 ### Cold open v8
 - **Cold open reescrito en 4 planos:** (1) la mano golpea de golpe con cámara fija a 65 mm; (2) Martina a ~3 m de la puerta salta y se congela; (3) la mano deja de golpear y se apoya plana; (4) primer plano de Martina, del miedo al reconocimiento, «Diego…» casi sin voz, los ojos se le van hacia Tomás por culpa, Tomás desenfocado gira la cabeza, corte a negro en la respiración. Motivo: que el primer cuadro sea el impacto, legible en el celular sin sonido; que Martina tenga expresión; que no haya push-in.

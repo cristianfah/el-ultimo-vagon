@@ -19,5 +19,16 @@ Cada personaje tiene una **postura** en el debate. El público debe poder decir 
 - **Hugo:** «Te llama a ti. Tú decides.» (la amenaza va en el gesto del arma)
 - **Tomás:** «Ábrele. Quiero verle la cara.»
 
-## Anclas visuales para prompts (pendiente)
-Falta definir el casting visual del nuevo elenco. Hay que hacer exploración en Midjourney y hojas de personaje en Weavy. Los infectados ya diseñados (`direccion_arte/referencias/ref_infectados.jpg`) sirven como pasajeros y como sobrevivientes: la enfermera, el obrero y el revisor.
+## Anclas visuales para prompts (aprobadas 2026-10-01)
+Casting visual aprobado. Las fichas están en `direccion_arte/personajes/fichas_personajes_v2.md` y los assets en `produccion/assets/aprobados_v1.md`.
+
+| Personaje | Ancla de identidad (propuesta) |
+|---|---|
+| Martina | Lunar pequeño en el pómulo izquierdo |
+| Tomás | Anteojos de marco metálico fino |
+| Diego | Pelo negro lacio hasta las cejas y barba de tres días |
+| Carmen | Anteojos de lectura en un cordón de cuentas; tinte con raíces canosas |
+| Iván | Nariz quebrada y cabeza rapada |
+| Don Hugo | Bigote gris tupido y gorra de revisor |
+
+Los infectados ya diseñados (`direccion_arte/referencias/ref_infectados.jpg`) se reutilizan como firma visual.
