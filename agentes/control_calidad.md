@@ -29,6 +29,7 @@ El veredicto se escribe en `revision_previa` del bloque: `lista` o `vuelve`, con
 7. **Errores de modelo:** manos, dedos, texto espurio, objetos duplicados, proporciones del cuerpo.
 8. **Reglas del proyecto:** sangre oscura y en lugares concretos, gore cortado en el impacto, nada de propiedad intelectual ajena (logos, insignias).
 9. **Video:** movimiento de cámara pedido, actuación sin sobreactuar, que el plano no cambie lo que debía quedar fijo.
+10. **Cámara:** rechaza las tomas con push-in o dolly in si el prompt no lo pedía. Rechaza las tomas con movimiento de fondo sin motivo (por ejemplo, vagones que se mueven en la ventana cuando el tren debería verse quieto respecto del interior).
 
 ## Criterios
 - **Una sola corrección por toma:** la variable que más pesa. Si hay varios problemas, anota los demás en `problema`, pero `correccion_unica` es una sola.

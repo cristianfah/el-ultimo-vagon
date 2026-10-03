@@ -1,8 +1,11 @@
-# Prueba del equipo técnico: solo el cold open (0:00–0:02) y la escena 1 (0:02–0:16), basado en guion/cap01/cap01_v3.md.
-# Están los campos del Director y del Continuista. Faltan Director de fotografía, Asistente de dirección, Prompter y Pipeline.
+# Prueba del equipo técnico: solo el cold open (0:00–0:08,5) y la escena 1 (0:08,5–0:22), basado en guion/cap01/cap01_v8.md.
+# Cold open v8: 4 planos (c01_p01a, c01_p01b, c01_p02a, c01_p02b) en vez de los 2 de la v7 (c01_p01, c01_p02).
+# Se usan sufijos para no romper las referencias del resto del YAML, que sigue desglosando la v3→v7.
+# La deuda v3→v7 de la escena 1 sigue anotada en produccion/pruebas/cap01_montaje_v2/plan.md.
+# Regla de cámara v8: cero push-in ni dolly in por defecto; cámara fija en la mano, en mano leve en Martina.
 
 capitulo: 1
-guion: guion/cap01/cap01_v3.md
+guion: guion/cap01/cap01_v8.md
 duracion_objetivo_s: 90
 estado: desglose
 
@@ -187,7 +190,7 @@ hechos_continuidad:
 
   # --- Información ---
   - id: hc32
-    hecho: "Tomás no sabe de los mensajes de «D» en todo el capítulo 1: no ve la pantalla en c01_p05, no ve que Martina da vuelta el celular en c01_p06 y a las 0:40 el celular queda detrás de su espalda. Ninguna reacción suya puede depender de eso."
+    hecho: "Tomás no lee los mensajes de «D» en todo el capítulo 1, pero ve que Martina está con el celular y gira la cabeza hacia el pasillo a propósito: elige no saber. Tensión callada entre los dos. En c01_p06 él ya mira el pasillo cuando ella da vuelta el celular. A las 0:40 el celular queda detrás de su espalda. Ninguna reacción suya puede depender de haber leído el mensaje."
     desde: c01_p05
     hasta: null
   - id: hc33
@@ -206,6 +209,12 @@ hechos_continuidad:
 bloques:
   # Asistente de dirección. Prueba a 480P (0,05 USD/s; bajado desde 768P el 30-sep por pedido de Cristian), prompt_expansion_mode: disabled en todos.
   # En `pila_referencias`, «keyframe c01_pNN» es el keyframe aprobado de ese plano. Costo por bloque = una toma de video.
+  #
+  # COLD OPEN V8: los bloques c01_b01 y c01_b02 siguientes corresponden a la v7 (2 planos). La v8 tiene 4 planos
+  # (c01_p01a, c01_p01b, c01_p02a, c01_p02b) según produccion/pruebas/cap01_cold_open/plan.md.
+  # Los bloques del cold open v8 se agregan cuando el productor entregue la lista técnica (modelo, lente, luz, movimiento, prompts).
+  # Regla de cámara v8: cámara fija en los planos de la mano (65 mm), cámara en mano leve en los de Martina, cero push-in.
+  #
   - id: c01_b01
     planos: [c01_p01]
     estrategia: B
@@ -343,7 +352,13 @@ bloques:
         Within the first 1.2 seconds, the right side of Don Hugo's grey jacket swings open, between 0.2 and 1.2s, revealing on his right hip the dark wooden grip and closed cylinder of the old revolver in its short brown leather holster; then the jacket stays still until the end. No hand enters the frame. Locked-off, static camera. Keep the framing, lighting and cloth exactly as in the first and last frames. The revolver matches the last frame: cylinder closed, no bullets visible, no cartridges on the belt, no markings. Sound: soft rain and train rumble, rustle of jacket cloth. No music. No subtitles, no captions, no on-screen text.
 
 planos:
-  # ============================ COLD OPEN ============================
+  # ============================ COLD OPEN (V8: 4 PLANOS) ============================
+  # Los planos c01_p01 y c01_p02 siguientes corresponden a la v7.
+  # La v8 tiene 4 planos: c01_p01a (mano golpea), c01_p01b (Martina salta), c01_p02a (mano se apoya), c01_p02b (Martina «Diego…»).
+  # El desglose completo de los 4 planos está en produccion/pruebas/cap01_cold_open/plan.md.
+  # Los planos del cold open v8 se agregan cuando el productor entregue la lista técnica.
+  # Regla de cámara v8: cámara fija 65 mm en c01_p01a y c01_p02a; cámara en mano leve en c01_p01b y c01_p02b; cero push-in.
+  #
   - id: c01_p01
     escena: cold_open
     tiempo: "0:00–0:01"
@@ -863,11 +878,11 @@ planos:
 
     # --- Director ---
     tipo_plano: PM
-    accion: "Martina da vuelta el celular sobre su pierna mientras Tomás, a su lado, mira el pasillo."
-    intencion: "Complicidad incómoda: el público ve cómo lo esconde y que él no se entera."
-    informacion: "Martina esconde el mensaje: «D» es un secreto para Tomás."
-    ironia: "Tomás no ve el gesto; el público sí."
-    actuacion: "Ella da vuelta el celular con un solo movimiento corto, sin mirarlo, y deja la mano encima. Tomás mira el pasillo, ajeno."
+    accion: "Martina da vuelta el celular sobre su pierna. Tomás, a su lado, ya giró la cabeza hacia el pasillo a propósito: vio que ella está con el celular y elige no saber."
+    intencion: "Complicidad incómoda: el público ve que ella esconde el mensaje y que él elige no mirar."
+    informacion: "Martina esconde el mensaje y Tomás elige no saber. «D» es un secreto que los dos cargan."
+    ironia: "El público ve el gesto de ella y el gesto de él: los dos esconden algo."
+    actuacion: "Ella da vuelta el celular con un solo movimiento corto, sin mirarlo, y deja la mano encima. Tomás ya mira el pasillo con la mandíbula tensa: giró la cabeza a propósito cuando vio el celular encendido."
     audio:
       sfx: ["roce de la pantalla contra la tela"]
       musica: "Sigue la nota grave."
@@ -897,10 +912,10 @@ planos:
     continuidad:
       entrada:
         - "Celular boca arriba y encendido sobre el muslo izquierdo de Martina, con su mano izquierda sobre el borde."
-        - "Tomás a su derecha, en el asiento de pasillo, ya mirando el pasillo: giró la cabeza fuera de campo mientras duraban c01_p04 y c01_p05."
+        - "Tomás a su derecha, en el asiento de pasillo, ya mirando el pasillo con la mandíbula tensa: vio que ella está con el celular y giró la cabeza a propósito para no ver (hc32)."
       salida:
         - "Celular boca abajo sobre el muslo izquierdo de Martina, con la pantalla contra el pantalón y la mano izquierda de ella encima."
-        - "Tomás sigue mirando el pasillo; no vio el gesto."
+        - "Tomás sigue mirando el pasillo; eligió no mirar el gesto."
       eje: "Mismo eje de esc01: Martina a la derecha del cuadro y Tomás a la izquierda. Tomás mira hacia la izquierda del cuadro, al pasillo; esa dirección lleva el corte a Carmen, que está del lado derecho del tren, a la izquierda del cuadro."
       hechos: [hc02, hc03, hc05, hc09, hc10, hc12, hc18, hc25, hc26, hc32]
       alertas:

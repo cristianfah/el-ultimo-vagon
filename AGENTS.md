@@ -15,8 +15,8 @@ Todo agente que trabaje en este repo (Cursor, Claude, cualquier otro) lee este a
 ## Estado actual (actualizar con cada decisión)
 
 - **Premisa en desarrollo:** cinco se encierran en el último vagón el primer día del brote; el sexto (Diego) pide entrar. Triángulo en el centro (Martina, Tomás y Diego).
-- **Guion vigente:** `guion/cap01/cap01_v7.md` (**FINAL**).
-- **Aplicado hasta v7 FINAL:** opción 1; conteo 5+Diego; Carmen atiende; Diego ambiguo; Hugo corto; Iván «no hay cómo saber»; gesto final de Martina; continuidad del «Diego…» cold open = escena 4; semilla del corte fuera del guion.
+- **Guion vigente:** `guion/cap01/cap01_v8.md` (**VIGENTE**). La v7 queda como histórica.
+- **Aplicado hasta v8:** todo lo de la v7 + cold open reescrito en 4 planos (sin push-in, cámara fija en la mano, cámara en mano leve en Martina) + Tomás ve que Martina está con el celular y gira la cabeza a propósito para no ver.
 - **Pendiente de temporada:** el tren se detiene más adelante (cap. 2 o 3) por el freno de emergencia. Ver `biblia/decisiones.md`.
 - **Producción:** equipo técnico de agentes definido en `agentes/roles.md`. El guion técnico del capítulo 1 está en prueba en `produccion/shotlists/cap01.yaml` (cold open y escena 1), todavía desglosado desde la v3 (pendiente de actualizar a v7; ver deuda en `produccion/pruebas/cap01_montaje_v2/plan.md`).
 - **Producción:** la prueba de montaje v2 del capítulo 1 tiene keyframes y video tanda 1 generados (en Drive); falta el armado. Plan en `produccion/pruebas/cap01_montaje_v2/plan.md`. Los prompts se escriben con la skill `.cursor/skills/director-de-prompts/`.

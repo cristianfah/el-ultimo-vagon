@@ -79,4 +79,25 @@ Detalle en `produccion/pruebas/cap01_montaje_v1/feedback_proceso.md`.
 - **Cristian aprueba los assets v1**, que pasan a `imagenes/04_aprobados` en Drive (registro con URLs en `produccion/assets/aprobados_v1.md`). Incluye las planchas F01 a F12, los cuadros de look y las vistas técnicas, los cuatro props, las referencias y hojas de los seis personajes y la pareja extra, el estado de Diego y los keyframes KF01 a KF03. Motivo: hacen falta para la prueba de video con otro agente. Los cambios posteriores se hacen como `v2`, sin reemplazar lo aprobado. Las notas de revisión abiertas (contextura de Tomás, cuello de Iván, Martina y la camisa azul bajo luz roja) quedan para esa v2.
 
 ## 2026-10-03
+
+### Continuidad
 - **Brazo herido de Diego: DERECHO.** Resuelve la contradicción entre el YAML (`hc19`, `hc20`, `hc21`) y las fichas v2. Motivo: decisión de Cristian; el YAML es la referencia de continuidad correcta. A corregir: `ESTADO_diego_mojado_herido.png` (muestra el izquierdo, hay que regenerarla), keyframe de c01_p01 y video b01.
+
+### Dirección y calidad (feedback del montaje v2)
+- **Sin push-in ni dolly in por defecto.** Cada plano necesita una intención en la actuación y una cámara elegida a propósito. La cámara fija o en mano leve es la base; cualquier movimiento es la excepción y tiene que estar justificado (una escena, un solo movimiento con motivo). El único movimiento de cámara del capítulo 1 se reserva para cuando aparece la cara de Diego (escena 4). Motivo: el dolly in en todos los planos delata la IA y no impacta.
+- **Una intención por plano.** Cada escena tiene su propio lenguaje de cámara.
+- **Keyframes en alta** (GPT Image en high o Nano Banana Pro en 2K). Motivo: calidad baja produce «IA slop».
+- **Video en 1080p** para la versión final (pruebas siguen en 480p).
+- **Cámara explícita en cada prompt** (fija o en mano, «no push-in»). Control de calidad rechaza las tomas con push-in o con movimiento de fondo sin motivo.
+- **Grano agregado en edición,** no el que deja el modelo.
+
+### Cold open v8
+- **Cold open reescrito en 4 planos:** (1) la mano golpea de golpe con cámara fija a 65 mm; (2) Martina a ~3 m de la puerta salta y se congela; (3) la mano deja de golpear y se apoya plana; (4) primer plano de Martina, del miedo al reconocimiento, «Diego…» casi sin voz, los ojos se le van hacia Tomás por culpa, Tomás desenfocado gira la cabeza, corte a negro en la respiración. Motivo: que el primer cuadro sea el impacto, legible en el celular sin sonido; que Martina tenga expresión; que no haya push-in.
+- **cap01_v8 es la versión vigente.** La v7 queda como histórica.
+
+### Escena 1
+- **Tomás ve que Martina está con el celular y gira la cabeza a propósito para no ver.** No lee el mensaje, pero elige no saber. Tensión callada entre los dos. Motivo: más tensión que simplemente «no lo vio»; el gesto tiene un porqué explícito.
+
+### Pendientes para escenas siguientes (por confirmar con Cristián)
+- Hugo tiene que verse con el boleto en la mano cuando se agacha.
+- El revólver no se adelanta (el inserto no puede parecer preparación para un ataque que todavía no existe).
