@@ -1,0 +1,13 @@
+Film still from a feature film, not an illustration, not a character sheet. Image 1 is the man: use his face, soaked hair, stubble, build and wardrobe state exactly, including the light stone canvas jacket and its left sleeve soaked dark red-black; ignore the grey backdrop and the pose. Image 2 is the carriage door seen from inside: match the door, its small window with the diamond wire mesh, the lock plate, the red emergency brake handle, the seats, the light and the color exactly.
+
+MOMENT: One second after he has slammed his open right palm against the small window from the outside. His palm is still flat on the glass, his face close behind it, mouth open on a name, eyes searching the carriage. His soaked left forearm is lifted into view at the bottom edge of the window.
+
+COMPOSITION: 9:16 vertical. Camera inside the carriage at face height, one and a half meters from the door, the same position as image 2. The door fills the frame; the small window sits in the middle third, with his face in its upper half. The dark out-of-focus back and shoulder of a passenger fills the lower-left corner as a foreground occluder. The red emergency brake handle is visible on the wall to the right of the door, in shadow. The ceiling falls into darkness at the top of the frame.
+
+LENS: Shot on ARRI Alexa 35 with a Cooke S4 35mm spherical lens at T2.8. Focus on his eyes through the glass; the glass surface and his palm are slightly soft. Gentle natural focus falloff, soft halation around the fluorescent tube only. No anamorphic streaks.
+
+LIGHT: Only practical sources. Inside, the fluorescent tube above the door, cold 5600K and hard, throws a bright reflection across the top of the window glass and spills onto the grey-green door. Outside, the gangway behind him is lit by dim deep red emergency light, rimming his wet hair and shoulders in red; his face is lit mostly by the cold spill of the tube through the glass. Inside, the dim red ceiling strip touches the seat tops and the edges of the door frame. Contrast ratio 8:1, one stop underexposed, deep blacks that keep detail.
+
+TEXTURE: The window glass has dry fingerprints and old scratches, and the diamond wire mesh inside the glass crosses his face. His hair is soaked and stuck to his forehead; drops of water on his face, matte skin between the drops. No dark stains inside the carriage.
+
+FINISH: Kodak Vision3 500T film scan look, fine organic grain, soft natural micro-contrast, no digital sharpening, no HDR look. Color separation limited to deep red, cold cyan-white and near-black. Restrained and naturalistic: no heavy haze, no bloom, no lens flares, no exaggerated saturation. No text, no logos.
