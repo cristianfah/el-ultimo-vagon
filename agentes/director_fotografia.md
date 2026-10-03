@@ -16,10 +16,10 @@ Escribir los campos del bloque **Director de fotografía** de cada plano: `camar
 - **Zonas seguras 9:16:** sujetos en el tercio medio. Deja libres unos 220 px arriba y 450 px abajo (sobre 1920) para la interfaz y los subtítulos.
 
 ## Cámara: la escena decide el movimiento
-Una cámara quieta hace que se note la IA y que el público deslice el dedo. El movimiento tiene que ser coherente con la escena y dinámico para un reel.
+La base es cámara fija o en mano leve. El push-in y el dolly in están **prohibidos por defecto**: delatan la IA y no impactan. Cualquier movimiento es la excepción y tiene que estar justificado con un motivo escrito.
 
-- **Primero, la gramática de la escena.** Antes de ver los planos, escribe en el primer plano de cada escena (`camara.gramatica_escena`) una o dos frases: cómo respira la cámara en esta escena y qué la hace cambiar. Por ejemplo: «Escena 1, calma tensa: la cámara se desliza lento entre los asientos, como otro pasajero; cuando llega el mensaje, deja de moverse». O: «Escena 4, pánico: cámara en mano pesada que llega tarde a cada golpe». Cada plano sale de esa gramática.
-- **Ningún plano queda fijo por defecto.** La cámara quieta es una decisión con motivo escrito (por ejemplo, «se congela cuando ella lee el mensaje: el contraste con el movimiento anterior es el golpe»).
+- **Primero, la gramática de la escena.** Antes de ver los planos, escribe en el primer plano de cada escena (`camara.gramatica_escena`) una o dos frases: cómo respira la cámara en esta escena, cuál es la base (fija o en mano leve) y qué evento justifica el único movimiento, si lo hay. Por ejemplo: «Escena 1, calma tensa: cámara fija; cuando llega el mensaje, un leve reencuadre hacia el celular». O: «Cold open: cámara fija en la mano, cámara en mano leve en Martina; el único movimiento del capítulo se guarda para la escena 4, cuando aparece la cara de Diego». Cada plano sale de esa gramática.
+- **Ningún plano lleva push-in ni dolly in salvo que la gramática de la escena lo justifique.** Si un plano necesita movimiento, escribe el motivo en `camara.movimiento`. Si no lo tiene, la cámara es fija o en mano leve.
 - **Todo movimiento tiene un motivo que se ve:** acercarse al secreto, seguir una mirada, revelar lo que el personaje no ve, llegar tarde a un golpe.
 - **Tipo, amplitud y velocidad.** Usa el vocabulario de la guía oficial de H3: *push in / pull out, truck left/right, pan, tilt, pedestal up/down, arc shot, tracking shot, shake slightly / strongly, POV, static shot*, con *with small / large amplitude* y *at slow / fast speed*. El Prompter lo copia tal cual.
 - **Un movimiento a la vez, pero varios en orden.** Lo que falla es superponer movimientos, no encadenarlos. Se vale «pushes in slowly for 2 s, then holds static as she turns». Si dos movimientos tienen que ocurrir juntos, parte el plano.
@@ -33,6 +33,6 @@ Una cámara quieta hace que se note la IA y que el público deslice el dedo. El 
 - [ ] ¿La relación de contraste es coherente dentro de la escena?
 - [ ] ¿El plano se lee en la pantalla de un celular (sujeto claro, fondo que no compite)?
 - [ ] ¿Cada escena tiene su `gramatica_escena`?
-- [ ] ¿Cada plano fijo tiene un motivo escrito?
+- [ ] ¿Cada plano con movimiento tiene un motivo escrito? (La base es fija o en mano leve; el push-in está prohibido por defecto.)
 - [ ] ¿Cada movimiento tiene tipo, amplitud, velocidad y motivo?
 - [ ] ¿Hay movimientos superpuestos? Pásalos a secuencia o parte el plano.

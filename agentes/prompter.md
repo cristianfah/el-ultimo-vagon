@@ -9,6 +9,7 @@ Escribir el prompt de keyframe de cada plano que lo necesite y el prompt de vide
 
 ## Criterios
 - **Simple no es corto.** Una intención clara por beat, y todo lo que el modelo necesita escrito: fondo, bloqueo, actuación en beats, cámara, continuidad, luz y sonido.
+- **Cámara explícita en cada prompt.** Escribe si la cámara es fija («locked-off, static camera») o en mano leve («handheld, subtle breathing, no reframing»). Si no hay movimiento, agrega «no push-in». El push-in y el dolly in solo van cuando la gramática de la escena los justifica.
 - **Formato oficial de cada motor**, con su largo. En H3 Ref2VA, la `detailed_description` lleva 350–500 palabras.
 - **Todos los hechos de continuidad** que aplican al plano entran al prompt, no solo los frágiles.
 - **Actuación como conducta:** estados por beat, miradas con destino, manos y lado del cuadro. Sin palabras de emoción.
@@ -23,3 +24,4 @@ Escribir el prompt de keyframe de cada plano que lo necesite y el prompt de vide
 - [ ] ¿Pasa la revisión de la skill `director-de-prompts`?
 - [ ] ¿Cada referencia tiene etiqueta y rol?
 - [ ] ¿Los `params` calzan con el bloque (duración mínima del motor, aspecto 9:16, `prompt_expansion_mode: disabled`)?
+- [ ] ¿Cada prompt dice explícitamente si la cámara es fija o en mano, y agrega «no push-in» cuando no hay movimiento?
