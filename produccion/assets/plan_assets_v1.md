@@ -177,6 +177,6 @@ Cada rol leyó el plan desde su responsabilidad (`agentes/roles.md`):
 ## 9. Lo que necesito de ti para seguir
 
 1. **Imágenes de referencia del set** (tren, vagón, materiales). Van a `direccion_arte/referencias/sets/`.
-2. **Confirmar o cambiar** las propuestas de las fichas que tocan la historia: el brazo herido de Diego (propuesta: antebrazo izquierdo), el reloj de enfermera de Carmen y que no haya hacha en el último vagón.
+2. **Confirmar o cambiar** las propuestas de las fichas que tocan la historia: el brazo herido de Diego (confirmado: antebrazo **derecho**, ver `biblia/decisiones.md`), el reloj de enfermera de Carmen y que no haya hacha en el último vagón.
 3. **Dónde ocurre la serie:** las fichas dicen *South American*, sin país. Si quieres que sea explícitamente Chile (el bosque del sur de VAGÓN 7), se ajustan los prompts de cara.
 4. **Los primeros resultados de MJ:** me pasas las grillas y elegimos juntos qué variable cambiar en la siguiente ronda.

@@ -137,7 +137,7 @@ hechos_continuidad:
 
   # --- La puerta y la ventanita ---
   - id: hc22
-    hecho: "La ventanita de la puerta del último vagón es un rectángulo vertical de vidrio simple con marco metálico, a la altura de la cabeza de un adulto. Tiene la misma forma y el mismo tamaño en todos los planos, vista desde cualquiera de los dos lados (propuesta)."
+    hecho: "La ventanita de la puerta del último vagón es un rectángulo vertical de esquinas redondeadas con marco metálico remachado, vidrio de seguridad con malla de alambre fina en rombo (diamond wire mesh), a la altura de la cabeza de un adulto. Tiene la misma forma, tamaño y malla en todos los planos y desde ambos lados, según la imagen aprobada F03 (decisión de Cristián, 3-oct-2026)."
     desde: c01_p01
     hasta: null
     fragil: true
@@ -244,8 +244,8 @@ bloques:
     beats: [{ plano: c01_p02, de: 0.0, a: 2.0 }]
     pila_referencias: ["image_url = keyframe c01_p02: Martina de pie bajo luz roja, labios cerrados, mechones sueltos y sudor"]
     costo_estimado_usd: 0.25
-    nota: "Solo primer fotograma: es un plano de quietud y la salida es casi igual a la entrada. El «Diego…» se pide en el primer segundo y medio. Keyframe con Nano Banana Pro para responder la prueba pendiente de motores.md: ¿H3 Max mantiene la identidad desde un keyframe de Nano Banana Pro bajo luz roja? target_audio_url queda para cuando exista la voz de Martina en ElevenLabs."
-    estado: pendiente
+    nota: "HISTÓRICO v7. La v8 usa c01_b03_v8 para este plano. Solo primer fotograma: es un plano de quietud y la salida es casi igual a la entrada. El «Diego…» se pide en el primer segundo y medio. Keyframe con Nano Banana Pro para responder la prueba pendiente de motores.md: ¿H3 Max mantiene la identidad desde un keyframe de Nano Banana Pro bajo luz roja? target_audio_url queda para cuando exista la voz de Martina en ElevenLabs."
+    estado: historico
     prompt_video:
       motor: h3_max
       endpoint: minimax/h3-max/image-to-video
@@ -253,7 +253,7 @@ bloques:
       entradas:
         image_url: "keyframe c01_p02 (aprobado)"
       texto: |
-        Martina stands completely still, eyes fixed on the door window off-screen left. Within the first 1.5 seconds her lips part just enough to say, almost voiceless, barely audible, in neutral Latin American Spanish: "Diego…" Her breath catches. She does not blink and does not step forward. Handheld, subtle breathing, no reframing. Keep the framing, lighting, face and wardrobe exactly as in the still: loose strands around her face, sweat sheen on her forehead, dry clean cream sweater, nobody else in frame. Sound: one knock on glass off-screen, her whisper, then dry silence. No music. No subtitles, no captions, no on-screen text.
+        Martina stands completely still, eyes fixed on the door window off-screen right. Within the first 1.5 seconds her lips part just enough to say, almost voiceless, barely audible, in neutral Latin American Spanish: "Diego…" Her breath catches. She does not blink and does not step forward. Handheld, subtle breathing, no reframing. Keep the framing, lighting, face and wardrobe exactly as in the still: loose strands around her face, sweat sheen on her forehead, dry clean cream sweater, nobody else in frame. Sound: one knock on glass off-screen, her whisper, then dry silence. No music. No subtitles, no captions, no on-screen text.
   - id: c01_b03
     planos: [c01_p03, c01_p04, c01_p06, c01_p07, c01_p08]
     estrategia: A
@@ -359,6 +359,147 @@ planos:
   # Los planos del cold open v8 se agregan cuando el productor entregue la lista técnica.
   # Regla de cámara v8: cámara fija 65 mm en c01_p01a y c01_p02a; cámara en mano leve en c01_p01b y c01_p02b; cero push-in.
   #
+  # ============================ COLD OPEN V8: PROPUESTA (3-oct-2026) ============================
+  # Lista técnica completa: produccion/pruebas/cap01_cold_open/lista_tecnica.md
+  # Motor: solo MiniMax H3 Max 1080P. Kling queda fuera (720p).
+  # Pendiente de aprobación de Cristián.
+  #
+  - id: c01_p01a
+    escena: cold_open_v8
+    tiempo: "0:00–0:01,5"
+    duracion_s: 1.5
+    estado: propuesta
+    tipo_plano: inserto
+    accion: "El primer cuadro YA es el impacto: la palma derecha ensangrentada golpea el vidrio de golpe. Detrás, el pasillo rojo vacío y quieto. El vidrio vibra."
+    intencion: "Susto limpio, legible en el celular sin sonido."
+    personajes: [diego]
+    locacion: loc_puerta_ultimo_vagon
+    camara:
+      movimiento: "Fija en trípode, no reacciona al golpe."
+      focal_mm: 65
+      apertura: f/2.8
+    hechos: [hc01, hc17, hc19, hc20, hc21, hc22, hc23, hc24]
+    bloque: c01_b01_v8
+    nota: "Sale del clip B1 (0,00–1,50 s). Ver lista_tecnica.md §P1."
+
+  - id: c01_p01b
+    escena: cold_open_v8
+    tiempo: "0:01,5–0:03"
+    duracion_s: 1.5
+    estado: propuesta
+    tipo_plano: plano_medio_corto
+    accion: "Martina salta con el golpe y se queda congelada. No se acerca. Tomás desenfocado detrás, a su derecha: se sobresalta y gira la cabeza por sobre el hombro hacia la cola del vagón (busca a Don Hugo), con la boca cerrada. Termina de tres cuartos de espaldas a cámara."
+    intencion: "Miedo puro, todavía no sabe quién es. Tomás gira hacia Hugo, no hacia la puerta: así lo encuentra P4."
+    personajes: [martina, tomas]
+    locacion: loc_ultimo_vagon_rojo
+    camara:
+      movimiento: "En mano leve, operador quieto. Sin push-in."
+      focal_mm: 50
+      apertura: f/2
+    hechos: [hc01, hc09, hc10, hc11, hc12, hc35]
+    bloque: c01_b02_v8
+    nota: "Clip B2. Segundo golpe fuera de campo a 0,3 s. Tomás gira hacia Hugo (decisión 3-oct-2026). Ver lista_tecnica.md §P2."
+
+  - id: c01_p02a
+    escena: cold_open_v8
+    tiempo: "0:03–0:05"
+    duracion_s: 2
+    estado: propuesta
+    tipo_plano: inserto
+    accion: "La mano deja de golpear: se abre y se apoya plana y quieta, casi suave. Se ve el puño gris claro empapado."
+    intencion: "El cambio de golpe a palma calmada le dice «soy yo». Giro del plano."
+    personajes: [diego]
+    locacion: loc_puerta_ultimo_vagon
+    camara:
+      movimiento: "Fija en trípode."
+      focal_mm: 65
+      apertura: f/2.8
+    hechos: [hc01, hc17, hc19, hc20, hc21, hc22, hc23, hc24]
+    bloque: c01_b01_v8
+    nota: "Sale del mismo clip B1 (3,00–5,00 s). Ver lista_tecnica.md §P3."
+
+  - id: c01_p02b
+    escena: cold_open_v8
+    tiempo: "0:05–0:08,5"
+    duracion_s: 3.5
+    estado: propuesta
+    tipo_plano: primer_plano
+    accion: "Miedo → reconocimiento. Susurra «Diego…». Los ojos se van hacia Tomás (culpa). Tomás arriba a la izquierda, desenfocado, de tres cuartos de espaldas (se ve la nuca, la oreja y el filo de la mandíbula; la cara casi oculta, la boca no se ve). Gira apenas la cabeza (~15–20°) hacia ella DESPUÉS de la palabra (2,4–3,0 s), nunca durante. Corte a negro en la respiración."
+    intencion: "Bloque de lipsync. La actuación importante es antes y después de la palabra. Solo Martina habla; Tomás nunca abre la boca."
+    personajes: [martina, tomas]
+    locacion: loc_ultimo_vagon_rojo
+    camara:
+      movimiento: "En mano casi imperceptible, operador contiene la respiración. Sin push-in, sin zoom, sin rack focus."
+      focal_mm: 85
+      apertura: f/1.8
+    hechos: [hc01, hc09, hc10, hc11, hc26, hc34, hc35]
+    bloque: c01_b03_v8
+    nota: "Clip B3. Tomás SÍ (decisión 3-oct): de tres cuartos de espaldas, boca oculta, gira ~15° después del «Diego…». KF4b (sin Tomás) es plan B. Ver lista_tecnica.md §P4."
+
+# ============================ BLOQUES V8 (PROPUESTA) ============================
+bloques_v8:
+  - id: c01_b01_v8
+    estado: propuesta
+    planos: [c01_p01a, c01_p02a]
+    motor: h3_max
+    endpoint: minimax/h3-max/image-to-video
+    duracion_s: 5
+    resolucion: "1080P"
+    descripcion: "Un solo clip de 5 s. P1 usa 0,00–1,50 y P3 usa 3,00–5,00. Lo que pase entre 1,5 y 3,0 s no se ve (ahí va P2)."
+    keyframe: KF1
+    keyframe_motor: nano_banana_pro
+    keyframe_resolucion: "2K"
+    costo_estimado_usd: 0.96
+    tomas_objetivo: 2
+    prompt_keyframe: "Ver lista_tecnica.md §P1 – KF1."
+    prompt_video: "Ver lista_tecnica.md §P1 – Video B1."
+    nota: "Si en 3,2–4,2 s la mano no se abre: FL válido con KF1b (palma plana)."
+
+  - id: c01_b02_v8
+    estado: propuesta
+    planos: [c01_p01b]
+    motor: h3_max
+    endpoint: minimax/h3-max/image-to-video
+    duracion_s: 3
+    resolucion: "1080P"
+    descripcion: "Martina salta y se congela. Tomás gira hacia Hugo (cola del vagón), termina de tres cuartos de espaldas."
+    keyframe: KF2
+    keyframe_motor: nano_banana_pro
+    keyframe_resolucion: "2K"
+    costo_estimado_usd: 0.58
+    tomas_objetivo: 2
+    prompt_keyframe: "Ver lista_tecnica.md §P2 – KF2."
+    prompt_video: "Ver lista_tecnica.md §P2 – Video B2."
+    nota: "Segundo golpe a 0,3 s. Tomás gira hacia Hugo (decisión 3-oct-2026), así lo encuentra P4 de espaldas."
+
+  - id: c01_b03_v8
+    estado: propuesta
+    planos: [c01_p02b]
+    motor: h3_max
+    endpoint: minimax/h3-max/image-to-video
+    duracion_s: 5
+    resolucion: "1080P"
+    descripcion: "Primer plano de Martina, lipsync de «Diego…». Tomás de tres cuartos de espaldas (nuca, oreja, filo de mandíbula; cara casi oculta, boca no visible). Gira ~15° hacia ella en 2,4–3,0 s, después de la palabra."
+    keyframe: KF4
+    keyframe_alternativo: KF4b
+    keyframe_motor: nano_banana_pro
+    keyframe_resolucion: "2K"
+    audio:
+      metodo: "voz-primero"
+      motor_voz: elevenlabs
+      pista_duracion_s: 5
+      target_audio_url: true
+    lipsync_respaldo: "sync-3 si la boca no calza (±2 cuadros)"
+    costo_estimado_usd: 0.96
+    tomas_objetivo: 2
+    prompt_keyframe: "Ver lista_tecnica.md §P4 – KF4 y KF4b."
+    prompt_video: "Ver lista_tecnica.md §P4 – Video B3."
+    nota: "Solo Martina habla; Tomás nunca abre la boca, su cara está casi oculta, sin rack focus, sin push-in, sin zoom. Plan B: KF4b si H3 le muestra la cara o le mueve los labios."
+
+# ============================ COLD OPEN V7 (HISTÓRICO) ============================
+# Los planos c01_p01 y c01_p02 siguientes corresponden a la v7.
+# Se mantienen como referencia pero el montaje sigue la v8.
+#
   - id: c01_p01
     escena: cold_open
     tiempo: "0:00–0:01"

@@ -47,7 +47,7 @@ Mirando hacia el fondo, la cabina queda **a la izquierda**; mirando hacia la pue
 | Asientos | Tapiz azul marino oscuro, parejo y mate, con desgaste solo en los cabezales y el borde de los cojines. Pasamanos cromado de arco en la esquina superior del lado del pasillo |
 | Resto | Cortinas crema estampadas con lazo, lámparas de lectura bajo el portaequipaje, redes, cielo abovedado con rejillas, franja de goma doble en el piso |
 | Texto y logos | Ninguno, en ninguna parte |
-| Herida de Diego (propuesta) | Antebrazo izquierdo |
+| Herida de Diego | Antebrazo **derecho** (ver `biblia/decisiones.md`, 3-oct-2026) |
 
 ## 4. Vistas candidatas (revisadas por los agentes)
 

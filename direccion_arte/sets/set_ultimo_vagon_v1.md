@@ -142,7 +142,7 @@ Photographic prop reference sheet, not an illustration. An old train emergency b
 | Tapiz de los asientos | Azul gastado, con un asiento reparado con cinta negra (fila 3, izquierda) |
 | Ventanita | Rectangular, vidrio con malla de alambre, a la altura de la cara |
 | Llave | Hierro, con placa de bronce sin texto. Hugo la lleva en el cinturón hasta que se la da a Martina |
-| Herida de Diego (propuesta) | Antebrazo izquierdo |
+| Herida de Diego | Antebrazo **derecho** (ver `biblia/decisiones.md`, 3-oct-2026) |
 
 ---
 

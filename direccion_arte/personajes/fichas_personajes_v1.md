@@ -109,7 +109,7 @@ Photographic character reference sheet of the man in image 1, not an illustratio
 - **Ancla:** pelo negro lacio, largo hasta las cejas, y barba de tres días.
 - **Cara:** cara abierta, cejas expresivas que se levantan en el centro, dientes un poco torcidos, ojos cafés cálidos, piel trigueña con marcas de acné antiguas en las mejillas.
 - **Vestuario:** chaqueta de trabajo de lona **color piedra clara** (para que la mancha oscura de la manga se lea a través del vidrio bajo la luz roja); sudadera con capucha gris oscuro debajo; jeans negros; zapatillas gastadas; una mochila con una sola correa al hombro.
-- **Herida (propuesta, confirmar):** antebrazo izquierdo. La manga clara está oscura desde el codo hasta el puño.
+- **Herida:** antebrazo **derecho** (ver `biblia/decisiones.md`, 3-oct-2026). La manga clara está oscura desde el codo hasta el puño.
 - **Evitar:** chaqueta de cuero, tatuajes, mandíbula de modelo, mirada intensa de galán.
 - **Variables:** (1) el largo del pelo: hasta las cejas / hasta la mandíbula / corto desordenado; (2) la cara: abierta de niño / más angulosa; (3) la barba: tres días / una semana.
 

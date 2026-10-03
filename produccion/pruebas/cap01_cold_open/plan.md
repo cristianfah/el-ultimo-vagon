@@ -36,7 +36,39 @@ Cero push-in ni dolly in. Planos de la mano: cámara fija, 65 mm. Planos de Mart
 
 ## Lista técnica (modelo, lente, luz, movimiento, prompts)
 
-*Pendiente del productor. Se agrega a este mismo archivo cuando esté lista.*
+**Archivo completo:** [`lista_tecnica.md`](lista_tecnica.md) (390 líneas, 3-oct-2026).
+
+### Resumen
+
+| Campo | Valor |
+|---|---|
+| Duración | 8,5 s con 4 planos, más tarjeta «20 MINUTOS ANTES» |
+| Motor de video | **MiniMax H3 Max, solo 1080P** (`minimax/h3-max/image-to-video`). Kling queda fuera: su Preview es 720p |
+| Keyframes | Nano Banana Pro 2K (4 nuevos: KF1, KF2, KF4, KF4b). Alternativa: GPT Image 2.5 high |
+| Lipsync | Voz primero (ElevenLabs), pista de 5 s con `target_audio_url`. Respaldo: sync-3 |
+| Cámara | P1 y P3 fijos en trípode. P2 y P4 en mano leve. **Cero push-in, zoom o dolly** |
+| Costo | ~3,70 USD base, ~5,65 con respaldos (promo 0,096 USD/s hasta 15-oct) |
+| Tiempo | ~2 h (1 h generación, 1 h post) |
+
+### Bloques de generación
+
+| Bloque | Planos | Duración | Descripción |
+|---|---|---|---|
+| B1 | P1 (0,0–1,5 s) + P3 (3,0–5,0 s) | 5 s | Un solo clip con la mano; P2 va en medio |
+| B2 | P2 | 3 s | Martina salta y se congela, Tomás desenfocado |
+| B3 | P4 | 5 s | Primer plano de Martina, lipsync de «Diego…» |
+
+Los prompts completos de keyframes y video están en `lista_tecnica.md` §2.
+
+## Decidido (Cristián)
+
+1. **Segundo golpe fuera de campo en P2: SÍ.** (3-oct-2026, 10:33) Un segundo golpe **solo en audio**, fuera de campo, a los 0,3 s de P2. Martina salta en cámara con ese golpe. P1 sigue siendo «golpe seco, después silencio» durante 1,5 s.
+
+2. **Ventanita con malla de alambre (F03): SÍ.** (3-oct-2026, 10:52) Se mantiene F03 y se corrigió hc22. La ventanita es un rectángulo vertical de esquinas redondeadas con marco metálico remachado, vidrio de seguridad con malla de alambre fina en rombo, a la altura de la cabeza de un adulto. Misma forma, tamaño y malla en todos los planos y desde ambos lados.
+
+3. **Tomás SÍ va en P4, con giro de cabeza.** (3-oct-2026, 10:57) Tomás desenfocado, de tres cuartos de espalda (nuca, oreja, filo de mandíbula; cara casi oculta, boca no visible). Gira apenas la cabeza (~15–20°) hacia Martina **después** de «Diego…» (2,4–3,0 s, nunca durante). Solo Martina habla. KF4b (sin Tomás) queda como **plan B** si H3 le mueve la boca o le muestra la cara.
+
+4. **Staging de Tomás en P2: gira hacia Hugo, no hacia la puerta.** (3-oct-2026) Después del segundo golpe, Tomás se sobresalta y gira la cabeza por sobre el hombro hacia la cola del vagón (busca a Don Hugo, que tiene la llave y el revólver). Termina de tres cuartos de espaldas a cámara, que es como lo encuentra P4.
 
 ## Notas
 

@@ -41,7 +41,8 @@ El primer cuadro YA es el impacto: la palma ensangrentada de **DIEGO** golpea el
 *Sonido: golpe seco, después silencio.*
 
 **P2 · 0:01,5–0:03 · Contraplano, Martina, plano medio corto, a ~3 m de la puerta.**
-**MARTINA** salta con el golpe y se queda congelada. No se acerca a la puerta. **TOMÁS** desenfocado detrás, a la derecha.
+*Sonido: segundo golpe fuera de campo a los 0,3 s.*
+**MARTINA** salta con el golpe y se queda congelada. No se acerca a la puerta. **TOMÁS** desenfocado detrás, a la derecha. Tomás se sobresalta y gira la cabeza por sobre el hombro hacia Don Hugo (que tiene la llave y el revólver), como preguntando «¿qué hacemos?». Termina de tres cuartos de espaldas a cámara.
 
 *Cámara en mano muy leve (respiración), sin avanzar.*
 
