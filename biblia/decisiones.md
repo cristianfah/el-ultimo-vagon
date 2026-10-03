@@ -98,6 +98,11 @@ Detalle en `produccion/pruebas/cap01_montaje_v1/feedback_proceso.md`.
 ### Escena 1
 - **Tomás ve que Martina está con el celular y gira la cabeza a propósito para no ver.** No lee el mensaje, pero elige no saber. Tensión callada entre los dos. Motivo: más tensión que simplemente «no lo vio»; el gesto tiene un porqué explícito.
 
+### Producción del cold open (prueba de calidad + lipsync)
+- **Solo MiniMax H3 Max a 1080p** para los 4 planos del cold open. Kling 4.0 Preview es 720p, así que **Kling queda fuera de este documento**. Motivo: decisión de Cristián (3-oct, 01:18); la promo de fal (0,096 USD/s hasta 15-oct) hace que H3 Max sea la opción más económica sin sacrificar resolución.
+- **Keyframes en Nano Banana Pro 2K** (alternativa: GPT Image 2.5 high). Motivo: evitar el «AI slop» que dejó el montaje v2.
+- La lista técnica completa está en `produccion/pruebas/cap01_cold_open/lista_tecnica.md`.
+
 ### Pendientes para escenas siguientes (por confirmar con Cristián)
 - Hugo tiene que verse con el boleto en la mano cuando se agacha.
 - El revólver no se adelanta (el inserto no puede parecer preparación para un ataque que todavía no existe).

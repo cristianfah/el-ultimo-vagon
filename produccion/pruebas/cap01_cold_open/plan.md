@@ -36,7 +36,41 @@ Cero push-in ni dolly in. Planos de la mano: cámara fija, 65 mm. Planos de Mart
 
 ## Lista técnica (modelo, lente, luz, movimiento, prompts)
 
-*Pendiente del productor. Se agrega a este mismo archivo cuando esté lista.*
+**Archivo completo:** [`lista_tecnica.md`](lista_tecnica.md) (390 líneas, 3-oct-2026).
+
+### Resumen
+
+| Campo | Valor |
+|---|---|
+| Duración | 8,5 s con 4 planos, más tarjeta «20 MINUTOS ANTES» |
+| Motor de video | **MiniMax H3 Max, solo 1080P** (`minimax/h3-max/image-to-video`). Kling queda fuera: su Preview es 720p |
+| Keyframes | Nano Banana Pro 2K (4 nuevos: KF1, KF2, KF4, KF4b). Alternativa: GPT Image 2.5 high |
+| Lipsync | Voz primero (ElevenLabs), pista de 5 s con `target_audio_url`. Respaldo: sync-3 |
+| Cámara | P1 y P3 fijos en trípode. P2 y P4 en mano leve. **Cero push-in, zoom o dolly** |
+| Costo | ~3,70 USD base, ~5,65 con respaldos (promo 0,096 USD/s hasta 15-oct) |
+| Tiempo | ~2 h (1 h generación, 1 h post) |
+
+### Bloques de generación
+
+| Bloque | Planos | Duración | Descripción |
+|---|---|---|---|
+| B1 | P1 (0,0–1,5 s) + P3 (3,0–5,0 s) | 5 s | Un solo clip con la mano; P2 va en medio |
+| B2 | P2 | 3 s | Martina salta y se congela, Tomás desenfocado |
+| B3 | P4 | 5 s | Primer plano de Martina, lipsync de «Diego…» |
+
+Los prompts completos de keyframes y video están en `lista_tecnica.md` §2.
+
+## Por decidir (Cristián)
+
+Los siguientes puntos quedaron **pendientes de aprobación** en la lista técnica. El PR no se mergea hasta que Cristián confirme:
+
+1. **Segundo golpe fuera de campo en P2.** En P1 hay un solo golpe; P2 empieza 1,5 s después, así que el sobresalto de Martina llegaría tarde. Propuesta del productor: agregar un segundo golpe **solo en audio**, fuera de campo, a los 0,3 s de P2, para que ella salte en cámara. Si no se acepta, P2 entra con acción superpuesta, desde ~0,25 s del clip.
+
+2. **Ventanita con malla de alambre (F03).** `hc22` dice «rectángulo vertical de vidrio simple» y el keyframe viejo de c01_p01 no tiene malla. F03 (aprobada) tiene rectángulo redondeado con malla fina detrás del vidrio. El plan técnico sigue F03. ¿Se mantiene o se corrige hc22?
+
+3. **Tomás en P4.** Tener a Tomás desenfocado girando la cabeza mientras Martina susurra es un **riesgo moderado**: H3 puede moverle la boca a él en vez de a ella, o cambiarle el foco. Respaldo propuesto: sacarlo del keyframe (KF4b) y cargar la culpa solo con el desvío de ojos de Martina. ¿Se prueba primero con Tomás, o se va directo a KF4b?
+
+**Contradicción conocida (no se resuelve en este PR):** el YAML c01_b02 dice «door window off-screen left», pero la geografía de la v8 pone la ventanita a la derecha del cuadro. Cuando Cristián apruebe los planos, hay que corregir c01_b02.
 
 ## Notas
 
