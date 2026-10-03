@@ -66,9 +66,7 @@ Los prompts completos de keyframes y video están en `lista_tecnica.md` §2.
 
 2. **Ventanita con malla de alambre (F03): SÍ.** (3-oct-2026, 10:52) Se mantiene F03 y se corrigió hc22. La ventanita es un rectángulo vertical de esquinas redondeadas con marco metálico remachado, vidrio de seguridad con malla de alambre fina en rombo, a la altura de la cabeza de un adulto. Misma forma, tamaño y malla en todos los planos y desde ambos lados.
 
-## Por decidir (Cristián)
-
-1. **Tomás en P4.** Tener a Tomás desenfocado girando la cabeza mientras Martina susurra es un **riesgo moderado**: H3 puede moverle la boca a él en vez de a ella, o cambiarle el foco. Respaldo propuesto: sacarlo del keyframe (KF4b) y cargar la culpa solo con el desvío de ojos de Martina. ¿Se prueba primero con Tomás, o se va directo a KF4b?
+3. **Tomás SÍ va en P4, con giro de cabeza.** (3-oct-2026, 10:57) Tomás desenfocado, de tres cuartos de espalda (se le ve sobre todo la nuca y el perfil perdido), boca cerrada y apretada, nunca la abre. Gira la cabeza hacia Martina **después** de que ella termina de decir «Diego…». Solo Martina habla. KF4b (sin Tomás) queda como **plan B** si H3 le mueve la boca a él.
 
 **Contradicción conocida (no se resuelve en este PR):** el YAML c01_b02 dice «door window off-screen left», pero la geografía de la v8 pone la ventanita a la derecha del cuadro. Cuando Cristián apruebe los planos, hay que corregir c01_b02.
 
