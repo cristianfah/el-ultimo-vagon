@@ -64,13 +64,11 @@ Los prompts completos de keyframes y video están en `lista_tecnica.md` §2.
 
 1. **Segundo golpe fuera de campo en P2: SÍ.** (3-oct-2026, 10:33) Un segundo golpe **solo en audio**, fuera de campo, a los 0,3 s de P2. Martina salta en cámara con ese golpe. P1 sigue siendo «golpe seco, después silencio» durante 1,5 s.
 
+2. **Ventanita con malla de alambre (F03): SÍ.** (3-oct-2026, 10:52) Se mantiene F03 y se corrigió hc22. La ventanita es un rectángulo vertical de esquinas redondeadas con marco metálico remachado, vidrio de seguridad con malla de alambre fina en rombo, a la altura de la cabeza de un adulto. Misma forma, tamaño y malla en todos los planos y desde ambos lados.
+
 ## Por decidir (Cristián)
 
-Los siguientes puntos quedaron **pendientes de aprobación** en la lista técnica. El PR no se mergea hasta que Cristián confirme:
-
-1. **Ventanita con malla de alambre (F03).** `hc22` dice «rectángulo vertical de vidrio simple» y el keyframe viejo de c01_p01 no tiene malla. F03 (aprobada) tiene rectángulo redondeado con malla fina detrás del vidrio. El plan técnico sigue F03. ¿Se mantiene o se corrige hc22?
-
-2. **Tomás en P4.** Tener a Tomás desenfocado girando la cabeza mientras Martina susurra es un **riesgo moderado**: H3 puede moverle la boca a él en vez de a ella, o cambiarle el foco. Respaldo propuesto: sacarlo del keyframe (KF4b) y cargar la culpa solo con el desvío de ojos de Martina. ¿Se prueba primero con Tomás, o se va directo a KF4b?
+1. **Tomás en P4.** Tener a Tomás desenfocado girando la cabeza mientras Martina susurra es un **riesgo moderado**: H3 puede moverle la boca a él en vez de a ella, o cambiarle el foco. Respaldo propuesto: sacarlo del keyframe (KF4b) y cargar la culpa solo con el desvío de ojos de Martina. ¿Se prueba primero con Tomás, o se va directo a KF4b?
 
 **Contradicción conocida (no se resuelve en este PR):** el YAML c01_b02 dice «door window off-screen left», pero la geografía de la v8 pone la ventanita a la derecha del cuadro. Cuando Cristián apruebe los planos, hay que corregir c01_b02.
 

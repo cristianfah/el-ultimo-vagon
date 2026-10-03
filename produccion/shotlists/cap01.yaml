@@ -137,7 +137,7 @@ hechos_continuidad:
 
   # --- La puerta y la ventanita ---
   - id: hc22
-    hecho: "La ventanita de la puerta del último vagón es un rectángulo vertical de vidrio simple con marco metálico, a la altura de la cabeza de un adulto. Tiene la misma forma y el mismo tamaño en todos los planos, vista desde cualquiera de los dos lados (propuesta)."
+    hecho: "La ventanita de la puerta del último vagón es un rectángulo vertical de esquinas redondeadas con marco metálico remachado, vidrio de seguridad con malla de alambre fina en rombo (diamond wire mesh), a la altura de la cabeza de un adulto. Tiene la misma forma, tamaño y malla en todos los planos y desde ambos lados, según la imagen aprobada F03 (decisión de Cristián, 3-oct-2026)."
     desde: c01_p01
     hasta: null
     fragil: true

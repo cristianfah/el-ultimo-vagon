@@ -102,6 +102,7 @@ Detalle en `produccion/pruebas/cap01_montaje_v1/feedback_proceso.md`.
 - **Solo MiniMax H3 Max a 1080p** para los 4 planos del cold open. Kling 4.0 Preview es 720p, así que **Kling queda fuera de este documento**. Motivo: decisión de Cristián (3-oct, 01:18); la promo de fal (0,096 USD/s hasta 15-oct) hace que H3 Max sea la opción más económica sin sacrificar resolución.
 - **Keyframes en Nano Banana Pro 2K** (alternativa: GPT Image 2.5 high). Motivo: evitar el «AI slop» que dejó el montaje v2.
 - **Segundo golpe fuera de campo en P2: SÍ.** (3-oct-2026, 10:33) Un segundo golpe **solo en audio**, fuera de campo, a los 0,3 s de P2. Martina salta en cámara con ese golpe. P1 sigue siendo «golpe seco, después silencio» durante 1,5 s. Motivo: sin el segundo golpe, el sobresalto de Martina llegaría tarde (P2 empieza 1,5 s después de P1).
+- **Ventanita con malla de alambre (F03): SÍ.** (3-oct-2026, 10:52) Se mantiene F03 y se corrigió hc22. La ventanita es un rectángulo vertical de esquinas redondeadas con marco metálico remachado, vidrio de seguridad con malla de alambre fina en rombo (diamond wire mesh), a la altura de la cabeza de un adulto. Misma forma, tamaño y malla en todos los planos y desde ambos lados. Motivo: F03 ya estaba aprobada; hc22 decía "vidrio simple" por error.
 - La lista técnica completa está en `produccion/pruebas/cap01_cold_open/lista_tecnica.md`.
 
 ### Pendientes para escenas siguientes (por confirmar con Cristián)

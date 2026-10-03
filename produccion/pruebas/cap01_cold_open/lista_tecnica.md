@@ -48,8 +48,7 @@ Vista de arriba. La puerta está al norte y Martina, a 3 m, la mira de frente. T
 - **Las cámaras de los 4 planos están del mismo lado del eje Martina–puerta,** así que los cortes no cruzan el eje.
 - **Esto calza con lo que ya existe:** el keyframe aprobado c01_p02 y la toma b02 del v2 ya la tienen mirando a la derecha del cuadro.
 - **Ojo:** el YAML (c01_b02) todavía dice "door window off-screen left". Hay que corregirlo a *right* cuando se actualice el bloque.
-- **La puerta y la ventanita siguen la plancha aprobada F03:** rectángulo de esquinas redondeadas con marco remachado, vidrio con malla de alambre, tubo frío encima, tira roja al centro del cielo, cerradura a la izquierda y freno a la derecha.
-  - **Contradicción a decidir:** hc22 dice "rectángulo vertical de vidrio simple", y el keyframe viejo de c01_p01 no tiene malla. Propongo seguir F03, con la malla fina detrás de la palma, porque es lo que se ve en el resto del capítulo.
+- **La puerta y la ventanita siguen la plancha aprobada F03:** rectángulo de esquinas redondeadas con marco remachado, vidrio de seguridad con malla de alambre fina en rombo (diamond wire mesh), tubo frío encima, tira roja al centro del cielo, cerradura a la izquierda y freno a la derecha. (Decisión de Cristián, 3-oct-2026: SÍ a F03, hc22 corregido.)
 - **Fondo del otro lado del vidrio (hc24):** el fuelle y el pasillo rojo, vacíos y **quietos**. Nada de vagones moviéndose ni de luces que pasen.
 
 ### Gramática de la escena (para el Director de fotografía)
@@ -131,6 +130,8 @@ overall_soundscape: A low, steady rumble of the train under the floor. One dry, 
 
 non_diegetic_music: N/A
 ```
+
+> **Nota sobre la malla (decisión 3-oct-2026):** el vidrio de la ventanita tiene malla de alambre fina en rombo según F03. En los prompts de video se agrega: *"The small window has fine diamond wire mesh inside the glass; the mesh stays static, consistent, no flicker, no moiré."* Si el modelo genera parpadeo o moiré en la malla, se corrige con estabilización temporal en post o se regenera con otra seed.
 
 **Tomas:** 2 como máximo (regla de `asistente_direccion.md`). La segunda depende de cómo salió la primera:
 - **Si la mano o la luz saltan, o la mano se limpia:** el mismo prompt con otra `seed`.
@@ -381,7 +382,7 @@ non_diegetic_music: N/A
 
 ## 9. Pendientes y contradicciones que encontré (no se resolvieron aquí)
 
-- **Ventanita:** hc22 dice rectángulo vertical de vidrio simple, mientras que F03 (aprobada) muestra un rectángulo redondeado con malla de alambre. Este plan sigue F03 y falta que Cristián lo confirme.
+- **Ventanita:** ✅ Decidido (3-oct-2026): se mantiene F03 (rectángulo de esquinas redondeadas con malla de alambre fina en rombo) y se corrigió hc22.
 - **Tablas de set y fichas v1 corregidas en este PR.** `set_ultimo_vagon_v1.md`, `set_ultimo_vagon_v2.md`, `fichas_personajes_v1.md` y `plan_assets_v1.md` ya dicen "antebrazo derecho". Pendiente: regeneración de `ESTADO_diego_mojado_herido.png` (ver `biblia/decisiones.md` y `fichas_personajes_v2.md` línea 29).
 - **El YAML c01_b02 tiene la puerta a la izquierda del cuadro** ("off-screen left"). Con este eje va a la derecha.
 - **El keyframe c01_p05 tiene el texto de la v3,** «Estoy en el tren.», y la v7 dice «Ya subí. Vagón 4.». No es parte del cold open, pero hay que regenerarlo antes de la escena 1.
