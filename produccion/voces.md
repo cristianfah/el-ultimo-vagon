@@ -21,14 +21,14 @@ Aprobadas por Cristian el 18-oct-2026. Están en la biblioteca de ElevenLabs de 
 
 ## Capítulo 1: tomas elegidas (18-oct-2026)
 
-Flujo de ElevenLabs `r6dpxC6EYTl7hcfMXoJw`. El `generation_id` identifica la toma.
+Flujo de ElevenLabs `r6dpxC6EYTl7hcfMXoJw`. El `generation_id` identifica la toma. **Los MP3 para el animatic están en `produccion/pruebas/cap01_animatic/voces/`** con el nombre `<personaje>_<bloque>_<n>.mp3`.
 
 | # | Bloque | Personaje | Línea | Indicaciones | generation_id |
 | --- | --- | --- | --- | --- | --- |
 | 1 | 2 | Tomás | ¿Dónde estabas? | `[curious][a little suspicious]` | `HvCQbsS9OiNL80lqZwOT` |
 | 2 | 2 | Martina | En el baño. | `[casually][forced lightness]` | `4RrclPgpmeD4JrP6g5JA` |
 | 3 | 2 | Tomás | ¿Tu papá sabe que vienes en este tren? | `[gently][sincere]` | `tmSKhQo2s9J0j7Ziz1BA` |
-| 4 | 2 | Martina | No. … Esa era la idea. | pendiente (lecturas D/E/F con indicaciones mínimas) | — |
+| 4 | 2 | Martina | No. … Esa era la idea. | `No. [pause] Esa era la idea.` (sin etiquetas) | `hnhzQySfP72ZEuoSGEq7` |
 | 5 | 7 | Diego | ¡Martina! ¡Martina, ábreme! | `[breathless][pleading] … [voice breaking]` | `I8ao0FNiZPHDuv6QMAt1` |
 | 6 | 7 | Diego | ¡Te vi en el vagón 2! (escrito «vagón dos») | `[out of breath][pleading][voice cracks]` | `vtgFQKEC0fz06AsPRAwC` |
 | 7 | 7 | Tomás | ¿No estabas en el baño? | `[confused][slowly]` | `rRdo5vZ8f4jqVdeqSkLr` |
