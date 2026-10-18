@@ -19,4 +19,4 @@ Caption alternativo (aprobado por Cristian, 18-oct-2026): **Nadie en este tren s
 
 ## Aprendizajes para el próximo capítulo
 
-**v10 · bloque 7 · P2 · Diego:** mojado porque viene de afuera; la hoja de estado va sobre fondo neutro. La puerta lateral del fuelle queda entreabierta detrás de él y por ahí entran la lluvia y el viento: así se entiende que cruzó por fuera. La lluvia suena más fuerte cuando aparece su cara.
+**v10:** Bloque 7: Diego va mojado porque cruzó por fuera del tren. No hay lluvia en cuadro ni puerta abierta; en post, la lluvia suena un poco más fuerte cuando aparece. La hoja de estado (v3) va sobre fondo neutro.
