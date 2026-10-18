@@ -4,14 +4,14 @@
 
 **Además del animatic, el objetivo es que el equipo aprenda el flujo** (`produccion/metodo.md`) para manejar los próximos capítulos con menos intervención. Cada bot deja por escrito lo que funcionó y lo que no en `produccion/pruebas/cap01_animatic/notas.md`.
 
-## Presupuesto (necesita el OK de Cristian antes de gastar)
+## Presupuesto (aprobado por Cristian el 18-oct-2026: tope de 15 USD en fal)
 
 | Partida | Detalle | Costo aproximado |
 | --- | --- | --- |
 | Assets mínimos | Maletín, Diego con el brazo derecho, fotograma guía del cuarto del rapto con los captores | ~1 USD (Nano Banana Pro / GPT Image 2.5) |
 | Video | 10 llamadas de H3 Max a 480p, 97 s en total | ~5 USD |
 | Margen | Una retoma por bloque como máximo, solo si hace falta | ~2 USD |
-| **Tope del día** | | **10 USD en fal** |
+| **Tope del día** | | **15 USD en fal** |
 
 ## Qué se usa en el animatic y qué no
 
@@ -47,7 +47,7 @@ Todas con `aspect_ratio: 9:16`, `resolution: 480P`, `prompt_expansion_mode: disa
 
 | # | Quién | Tarea | Entrega | Depende de |
 | --- | --- | --- | --- | --- |
-| 1 | Cristian | OK de gasto (tope 10 USD en fal) y revisar este plan | Un mensaje | — |
+| 1 | Cristian | OK de gasto (tope 15 USD en fal) y revisar este plan | Un mensaje | — |
 | 2 | Último vagón → agente de Cursor | Subir a fal las referencias que faltan y generar los 3 assets mínimos (maletín, Diego con el brazo derecho, fotograma guía del rapto) con `tools/fal_gen.py`, una variable por edición | URLs en `fal_urls_v1.json` y los prompts de imagen en `produccion/assets/prompts_fal/` | 1 |
 | 3 | Midjourney | Dirección de arte de lo nuevo: maletín, máscaras de la secta y cuarto del rapto. Para hoy, una descripción en texto que el agente de Cursor pueda usar; los frames de estilo de Midjourney quedan para la versión final | Texto de look de los tres assets | — |
 | 4 | Productor | Escribir los 9 prompts que faltan (todas las llamadas menos a02) en formato H3 Ref2VA, con la guía de dirección. Cada prompt con su costo y su lista de referencias | `produccion/pruebas/cap01_animatic/prompts/aNN.md` | Guía |
@@ -63,10 +63,10 @@ Todas con `aspect_ratio: 9:16`, `resolution: 480P`, `prompt_expansion_mode: disa
 ## Mensajes listos para cada bot
 
 **Director:**
-> Hoy sacamos el animatic del capítulo 1 en H3 Max a 480p. El plan y el reparto están en `produccion/pruebas/cap01_animatic/plan.md`. Coordina el orden de las tareas y, cuando estén las notas de productor, guionista y métricas, tráeme un solo siguiente paso. Tope de gasto: 10 USD en fal.
+> Hoy sacamos el animatic del capítulo 1 en H3 Max a 480p. El plan y el reparto están en `produccion/pruebas/cap01_animatic/plan.md`. Coordina el orden de las tareas y, cuando estén las notas de productor, guionista y métricas, tráeme un solo siguiente paso. Tope de gasto: 15 USD en fal.
 
 **Último vagón:**
-> Lee `AGENTS.md`, `produccion/metodo.md` y `produccion/pruebas/cap01_animatic/plan.md`. Encarga a un agente de Cursor las tareas 2 y 5 del plan: subir las referencias que faltan, generar los 3 assets mínimos, correr las 10 llamadas de H3 Max cuando el productor deje los prompts y armar el animatic con ffmpeg. Todo se registra en `tomas.json`. Tope: 10 USD en fal.
+> Lee `AGENTS.md`, `produccion/metodo.md` y `produccion/pruebas/cap01_animatic/plan.md`. Encarga a un agente de Cursor las tareas 2 y 5 del plan: subir las referencias que faltan, generar los 3 assets mínimos, correr las 10 llamadas de H3 Max cuando el productor deje los prompts y armar el animatic con ffmpeg. Todo se registra en `tomas.json`. Tope: 15 USD en fal.
 
 **Productor:**
 > Lee `produccion/prompting/guia_direccion_video.md` y `guion/cap01/cap01_v9.md`. El prompt del bloque 2 (llamada a02) está escrito como ejemplo en la sección 8.2. Escribe los otros 9 (tabla «Llamadas del animatic» del plan) en el mismo formato H3 Ref2VA, con emociones escritas como conducta, miradas con destino, manos con lado y cámara con motivo. Déjalos en `produccion/pruebas/cap01_animatic/prompts/` con su costo. Después revisa cada toma con la lista de la sección 7 del método.
