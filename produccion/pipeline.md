@@ -1,5 +1,7 @@
 # Pipeline de producción
 
+> **Aviso (18-oct-2026):** el método vigente está en `produccion/metodo.md` y manda sobre este documento donde se contradigan. Cambios principales: bloques de generación con referencias en vez de keyframe por plano; Cristian aprueba el animatic (H3 Max 480p) en vez de cada keyframe; Kling 4.0 es el motor final y Seedance 2.5 el respaldo.
+
 El proceso es automático desde que el guion y los assets están aprobados. La creatividad está antes (guion, casting visual, hojas de personaje) y en las aprobaciones. Qué motor se usa para cada paso está en `produccion/motores.md`.
 
 ```

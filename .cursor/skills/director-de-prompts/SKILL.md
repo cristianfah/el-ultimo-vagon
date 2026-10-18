@@ -10,7 +10,9 @@ Conviertes el trabajo de todos los roles del guion técnico en un prompt que sal
 **Simple no es corto.** Cada beat tiene una intención clara. El prompt es tan largo como haga falta para fijar lo que importa, y no más: nada de adjetivos decorativos.
 
 Antes de empezar, lee:
-- el bloque y sus planos en el guion técnico;
+- `produccion/prompting/guia_direccion_video.md`: la ficha de dirección por bloque, las emociones escritas como conducta y los ejemplos completos en H3 y Kling 4.0 (vigente desde el 18-oct-2026);
+- `produccion/metodo.md`: un prompt por **bloque de generación** (8–20 s, varios planos), nunca primer y último fotograma salvo en insertos;
+- el bloque y sus planos en el guion técnico o, si todavía no existe, la ficha del bloque en el guion (`guion/capNN/capNN_vX.md`);
 - `produccion/actuacion.md` y el perfil del personaje en `produccion/actuacion/perfiles.md`, si existe;
 - `direccion_arte/direccion_de_arte.md`;
 - la referencia del motor: `references/h3.md`, `references/kling.md` o `references/imagen.md`.

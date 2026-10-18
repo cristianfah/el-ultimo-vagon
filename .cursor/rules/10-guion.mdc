@@ -4,17 +4,27 @@ globs: ["guion/**", "biblia/**"]
 alwaysApply: false
 ---
 
+Vigente desde la biblia v2 (18-oct-2026). Antes de escribir: `biblia/premisa.md`, `biblia/escaleta_t1.md`, `biblia/personajes.md` y `biblia/reglas_del_mundo.md`. La verdad de la conspiración (`biblia/conspiracion.md`) es solo para guionistas: nunca se explica entera en un capítulo.
+
 Formato de cada capítulo (75–90 s, 9:16):
-1. **Cold open (0–3 s):** una imagen que plantee una pregunta. Nunca un plano de ubicación.
-2. **Desde el capítulo 2:** primeros segundos para el resultado de la votación anterior y su consecuencia inmediata.
-3. **Desarrollo:** acción y tensión, con un solo giro. Un momento fuerte cada ~15 s.
-4. **Cierre:** una **decisión** con dos opciones válidas y ninguna correcta. Se corta un beat antes de decidir.
-5. **Tarjeta de votación:** pregunta corta y dos palabras.
+1. **Gancho (0–3 s):** una imagen que hace una pregunta y cuenta la premisa del capítulo. Se entiende sin sonido. Nunca un plano de ubicación. Desde el capítulo 2 suele ser los últimos segundos del capítulo anterior, que sirven de recap sin texto.
+2. **La escena (3–60 s):** un solo conflicto, que escala. Un golpe cada ~15 s.
+3. **El giro (60–85 s):** algo cambia lo que creíamos.
+4. **Corte en la mejor parte,** un beat antes de que el personaje actúe o responda.
+5. **Encuesta:** «Si fueras ___, ¿___?» con dos respuestas cortas. En la temporada 1 no cambia la historia (ver `biblia/votaciones.md`).
 
 Reglas de escritura:
+- **Máximo tres personajes con diálogo por capítulo.** Los demás reaccionan.
+- **Tarjetas de nombre** cuando el personaje habla por primera vez, no todas al principio.
+- **El pasado se cuenta en flashes de 1 segundo,** nunca en escenas.
+- **Un objeto carga el peso de cada capítulo:** la llave, el maletín, el revólver o la radio.
+- **Sin cuenta regresiva en pantalla** ni el nombre de la serie en el reel.
 - **El diálogo es corto.** Cada línea revela una postura o algo de la vida del personaje. Nunca explica lo que ya se ve.
-- **Cada personaje defiende su postura desde lo que es,** no desde la lógica. Ver `biblia/personajes.md`.
-- **El público debe saber algo que un personaje no sabe** (ironía dramática) al menos una vez por capítulo.
-- **Respetar `biblia/reglas_del_mundo.md`.** Los personajes solo saben lo que vieron; la verdad completa es solo para los guionistas.
+- **Cada personaje defiende su postura desde lo que es,** no desde la lógica.
+- **El público sabe algo que un personaje no sabe** al menos una vez por capítulo (mapa de revelaciones en `biblia/escaleta_t1.md`).
+- **Respetar `biblia/reglas_del_mundo.md`.** Los personajes solo saben lo que vieron.
 - **Revisar agujeros de lógica:** ¿por qué no hacen lo obvio? Si hay una salida obvia, el dilema no sirve.
-- **Al final de cada guion,** incluir las ramas del capítulo siguiente (una por opción) y dónde convergen.
+
+Formato de producción del guion (obligatorio desde `cap01_v9`):
+- El guion se escribe en **bloques de generación** (8–20 s, una locación y una luz por bloque), cada uno con su ficha: intención, cámara (con motivo), referencias (nombres de assets aprobados), planos con segundo de inicio y sonido. Método completo en `produccion/metodo.md`.
+- Al final del guion van los **assets que faltan** y las **líneas de voz** con su indicación.

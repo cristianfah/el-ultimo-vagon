@@ -110,3 +110,41 @@ Detalle en `produccion/pruebas/cap01_montaje_v1/feedback_proceso.md`.
 ### Pendientes para escenas siguientes (por confirmar con Cristián)
 - Hugo tiene que verse con el boleto en la mano cuando se agacha.
 - El revólver no se adelanta (el inserto no puede parecer preparación para un ataque que todavía no existe).
+
+## 2026-10-18 · Biblia v2 (revisión de historia con Claude)
+
+Trabajado en el documento «El Último Vagón — Lore del universo» (pestañas Lore, Escaleta T1, Producción y Cap 1 · Guion) y pasado al repo. La biblia anterior quedó en `archivo/biblia_v1/`.
+
+### Historia
+- **Nueva premisa:** un tren nocturno lleva un virus hacia la capital; la hija del Presidente lo liberó sin saberlo, obligada por sus captores; el gobierno puede bombardear el tren. Motivo: el guion v8 era el piloto de una serie larga metido en 90 s, el voto estaba cargado hacia el «sí» y había salidas obvias (la cabina del revisor). Ver `biblia/premisa.md`.
+- **Martina es la hija del Presidente.** La raptan antes de subir, la amarran gente con máscaras y la obligan a dejar un maletín en el vagón 2 sin decirle qué contiene. Motivo: una decisión moral sobre si una vida vale lo mismo cuando es de tu familia.
+- **Detrás hay una secta controlada por una IA creada para salvar el planeta.** Concluyó que el problema es la decisión humana: no quiere matar, quiere que nadie decida. El tren es su prueba con el Presidente. Se insinúa en la temporada 1 y se revela en la 2. Motivo: idea de Cristian; Claude propuso la motivación de la máquina y Cristian sumó el cambio climático. Ver `biblia/conspiracion.md`.
+- **Por qué Martina:** con ella a bordo, el gobierno no puede bombardear el tren sin más. Motivo: decisión de Cristian.
+- **El virus:** inhalado desde el maletín actúa casi al instante; por mordida o herida tarda según el lugar. Motivo: decisión de Cristian.
+- **El tren no para porque lo maneja el control central;** el freno está bloqueado desde afuera. Reemplaza la idea del freno de emergencia. Motivo: que la regla se entienda sin explicación.
+- **El gobierno lo oculta hasta que el tren cruza una estación sin parar** y el video se hace viral. Ahí sube el infiltrado, que trabaja para la secta. Motivo: decisión de Cristian.
+- **Sin cuenta regresiva en pantalla.** El destino es una amenaza de fondo. Motivo: decisión de Cristian.
+- **Don Hugo ya no le entrega la llave a Martina;** su poder es saber desenganchar el vagón. Motivo: el gesto anterior no se sostenía.
+- **Iván mantiene su motivación original** (su hijo, su dureza es miedo). Se descartó que quisiera el bombardeo. Motivo: nadie querría liberar la infección; no era creíble.
+- **Diego sabe poco:** vio a Martina con un maletín en el vagón 2 y lo entiende recién en el capítulo 6. Motivo: Cristian no quería un Diego que sabe y calla.
+- **Carmen es la infectada del final** (corte en la palma derecha durante la huida del capítulo 1). Motivo: es el personaje más querido.
+- **Temporada 1 de 8 capítulos,** escrita completa antes de producir. Final: sueltan el último vagón; Diego queda del lado del tren sin confirmar su muerte; Carmen está infectada. Ver `biblia/escaleta_t1.md`.
+- **País sin nombre con geografía chilena.** No se nombra Chile.
+- **«El Último Vagón» es un nombre interno;** no aparece en los reels.
+
+### Formato y votaciones
+- **Las encuestas son «Si fueras ___, ¿qué harías?»** y en la temporada 1 no cambian la historia. La decisión mayor va al final de temporada. Reemplaza el voto «¿Martina le abre?» con dos ramas. Motivo: escribir y producir dos versiones por capítulo frena la producción; el voto «no» era ridículo. Ver `biblia/votaciones.md`.
+- **Formato del reel:** premisa en los primeros segundos, una escena, un giro, corte en la mejor parte, máximo tres personajes con diálogo, tarjetas de nombre cuando el personaje habla, el pasado en flashes de 1 s. Ver `.cursor/rules/10-guion.mdc`.
+
+### Capítulo 1
+- **`guion/cap01/cap01_v9.md` es el guion vigente.** Reemplaza a la v8 (que queda como histórica). Está escrito en 8 bloques de generación con fichas para producir.
+- **El vagón 2 lleva pasajeros (extras)** para que se lea como un tren con gente. Motivo: nota de Cristian sobre el bloque 0.
+- **La pista del padre va en un diálogo** («¿Tu papá sabe que vienes en este tren?» / «No. Esa era la idea.»), no en boca de los captores. Motivo: decisión de Cristian.
+
+### Producción
+- **El bloque de generación con referencias reemplaza al primer y último fotograma.** Cada bloque (8–20 s, una locación y una luz) lleva varios planos y un paquete fijo de referencias. El primer y último fotograma queda solo para insertos con control total. Motivo: en las pruebas, la interpolación entre dos fotogramas hacía que el video no fluyera e inventaba vestuario. Ver `produccion/metodo.md`.
+- **Reemplaza la regla «ningún plano pasa a video sin keyframe aprobado»:** ahora la aprobación de Cristian es sobre el animatic completo.
+- **Animatic primero:** el capítulo completo en MiniMax H3 Max a 480p (lo corren los bots de Cursor por fal). Cristian lo aprueba antes de la versión final.
+- **Kling 4.0 es el motor final de todos los bloques.** Si un bloque falla dos veces en Kling, pasa a **Seedance 2.5**, que es bastante más caro. Motivo: decisión de Cristian. Kling 4.0 salió el 16-oct-2026.
+- **Voces en ElevenLabs** (plan Creator), una voz fija por personaje. En el animatic se usa el audio que genera el modelo.
+- **Guía de dirección para prompts de video:** `produccion/prompting/guia_direccion_video.md`. Motivo: pedido de Cristian para que el bot productor escriba prompts dirigidos con actuación, emociones (como conducta) y movimiento.
