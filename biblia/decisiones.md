@@ -148,3 +148,4 @@ Trabajado en el documento «El Último Vagón — Lore del universo» (pestañas
 - **Kling 4.0 es el motor final de todos los bloques.** Si un bloque falla dos veces en Kling, pasa a **Seedance 2.5**, que es bastante más caro. Motivo: decisión de Cristian. Kling 4.0 salió el 16-oct-2026.
 - **Voces en ElevenLabs** (plan Creator), una voz fija por personaje. En el animatic se usa el audio que genera el modelo.
 - **Guía de dirección para prompts de video:** `produccion/prompting/guia_direccion_video.md`. Motivo: pedido de Cristian para que el bot productor escriba prompts dirigidos con actuación, emociones (como conducta) y movimiento.
+- **Voces aprobadas (18-oct-2026):** Tomás, Martina y Diego con acento chileno suave (nunca acento de España), diseñadas en ElevenLabs y actuadas con el modelo v4. IDs y método en `produccion/voces.md`. Motivo: Cristian sintió robóticas y «españolas» las primeras muestras en español neutro.

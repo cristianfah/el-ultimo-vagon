@@ -18,7 +18,7 @@ Reescrita con la biblia v2 (18-oct-2026). Las preguntas de la biblia anterior es
 ## Abiertas
 - [ ] **El infiltrado:** nombre, casting visual y cómo se ve su credencial (sin insignias reales).
 - [ ] **Diseño de las máscaras de la secta** y del cuarto del rapto (tarea de dirección de arte).
-- [ ] **Acento:** ¿español neutro latinoamericano o un acento chileno suave? Hoy los prompts dicen *neutral Latin American Spanish*.
+- [x] **Acento:** chileno suave, latinoamericano; nunca de España (18-oct-2026). Los prompts de video dicen *soft Chilean Spanish accent*. Ver `produccion/voces.md`.
 - [ ] **Nombre y logo de la línea ferroviaria inventada** (gorra de Hugo, placas del tren).
 - [ ] **Detalle fino de la relación Martina–Diego:** ¿fueron pareja?, ¿cuándo terminó?, ¿por qué le pasó el horario del tren?
 - [ ] **¿Diego manipula o es honesto?** En la temporada 1 parece honesto; queda abierto para la temporada 2.

@@ -68,7 +68,7 @@ Las reglas espaciales van antes que el estilo, y la luz es un candado, no decora
 - Fuera del prompt, y en español, una nota de 1–3 líneas con qué se fijó y qué vigilar en la toma.
 
 ## Reglas fijas del proyecto
-- Prompts en inglés; el diálogo va en español, tal cual el guion, con el acento explícito (neutral Latin American Spanish).
+- Prompts en inglés; el diálogo va en español, tal cual el guion, con el acento explícito (Spanish with a soft Chilean accent).
 - Gore: en imagen nunca *blood* ni *gore*; se usa *dark red-black stains*, *dark splatter*. La violencia fuerte va fuera de campo y en el sonido.
 - Nada de propiedad intelectual ajena: ni marcas, ni logos, ni insignias. En celulares: «plain unbranded phone, no notch».
 - Sin música en la generación (`non_diegetic_music: N/A`) y sin texto en cuadro: las tarjetas y los subtítulos se hacen en post. **Todo prompt de video cierra su descripción con «No music. No subtitles, no captions, no on-screen text.»** (decisión de Cristian en `biblia/decisiones.md`).

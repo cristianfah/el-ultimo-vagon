@@ -6,7 +6,7 @@ Kling 4.0 es el motor final de la serie desde el 18-oct-2026 (salió el 16-oct-2
 - **Un bloque, una llamada:** todo el bloque del guion (8–20 s, varios planos) va en una sola generación. No se usan keyframes ni primer y último fotograma, salvo un inserto con encuadre exacto.
 - **Estructura:** REFERENCES → LOOK → SHOTS (uno por plano, con su rango de tiempo) → SOUND → cierre fijo. Cada plano: encuadre y corte, cámara (tipo, amplitud, velocidad, motivo), bloqueo, beats de actuación con segundo, diálogo exacto con entrega física.
 - **Referencias:** un rol por referencia, declarado al principio: `@Image1 is Martina: identity, face, hair and wardrobe only; ignore the sheet layout and background.` Kling no publicó una sintaxis oficial de @; lo importante es que cada referencia tenga un solo rol y nombre.
-- **Diálogo:** entre comillas, en español, con el idioma y la entrega: `Martina says in neutral Latin American Spanish, quietly: "No."`. Si la voz está vinculada (audio de referencia), no se describe el timbre.
+- **Diálogo:** entre comillas, en español, con el idioma y la entrega: `Martina says in Spanish with a soft Chilean accent, quietly: "No."`. Si la voz está vinculada (audio de referencia), no se describe el timbre.
 - **Negativo** (si la interfaz lo tiene): `push-in, zoom, dolly, warped hands, extra fingers, morphing faces, text, subtitles, captions, logos, music`. Todo lo demás va en positivo dentro del prompt.
 - **Kling infla el volumen del torso:** indicar la contextura («average, slightly soft build»).
 - **4.0 Flash** (720p, hasta 20 s, solo primer fotograma) queda para exploración.
@@ -20,7 +20,7 @@ LOOK
 Live-action, cinematic, 9:16 vertical. [Lens, practical light sources, film look.] [Train motion.] Held for the whole clip: [continuity].
 
 SHOTS
-Shot 1 (0.0–X.Xs) — [framing, where the frame cuts]. Camera: [type, amplitude, speed], [motive]. [Blocking]. [Beats with seconds; gaze targets; hands with side]. [Character] says in neutral Latin American Spanish, [delivery]: "[line]".
+Shot 1 (0.0–X.Xs) — [framing, where the frame cuts]. Camera: [type, amplitude, speed], [motive]. [Blocking]. [Beats with seconds; gaze targets; hands with side]. [Character] says in Spanish with a soft Chilean accent, [delivery]: "[line]".
 Shot 2 (X.X–Y.Ys) — The camera cuts to [...].
 
 SOUND
