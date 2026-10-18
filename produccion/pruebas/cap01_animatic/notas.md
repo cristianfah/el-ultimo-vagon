@@ -9,6 +9,8 @@ Cada bot deja aquí sus notas, con fecha y firma. Lo que funcionó y lo que no s
 
 ## Guionista · líneas, caption y encuesta
 
+Caption alternativo (aprobado por Cristian, 18-oct-2026): **Nadie en este tren sabe quién es Martina. Capítulo 1.**
+
 ## Midjourney · look de los assets nuevos
 
 ## Métricas · gancho, ritmo y encuesta
