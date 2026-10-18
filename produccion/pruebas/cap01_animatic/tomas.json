@@ -1,0 +1,178 @@
+{
+  "gasto_acumulado_dia_usd": 4.9,
+  "gasto_acumulado_dia_usd_campo": 4.9,
+  "assets_imagen": [
+    {
+      "id": "personajes/ESTADO_diego_mojado_herido_v3.png",
+      "modelo": "openai/gpt-image-2.5/flare/edit",
+      "tomas": 2,
+      "costo_usd": 0.3,
+      "nota": "Hoja de estado sobre fondo gris; chaqueta de lona piedra de HOJA_diego; manga derecha con dark red-black stains, sin herida abierta. Toma 2 es la que cuenta."
+    }
+  ],
+  "tomas": [
+    {
+      "llamada": "a00",
+      "prompt": "produccion/pruebas/cap01_animatic/prompts/a00.md",
+      "referencias": [
+        "personajes/HOJA_martina.png",
+        "props/PROP_maletin_v2.png",
+        "set/F08_ambar_pasajeros_hacia_puerta.png",
+        "personajes/HOJA_extra_pareja_camisa_azul.png"
+      ],
+      "semilla": 1805917198,
+      "costo_usd": 0.4,
+      "url": "https://v3b.fal.media/files/b/0aaeeeca/8zCJ6PuBzF52Vso7VbiIi_minimax-h3.mp4",
+      "local": "/workspace/renders/cap01/animatic/tomas/a00/0.mp4",
+      "duracion_s": 8,
+      "elapsed_s": 10.7,
+      "error": null,
+      "reintento": false
+    },
+    {
+      "llamada": "a01",
+      "prompt": "produccion/pruebas/cap01_animatic/prompts/a01.md",
+      "referencias": [
+        "personajes/HOJA_martina.png",
+        "escenas/cuarto_rapto_martina.png",
+        "props/PROP_maletin_v2.png"
+      ],
+      "semilla": 910351898,
+      "costo_usd": 0.3,
+      "url": "https://v3b.fal.media/files/b/0aaeeecb/zqNjQ4iAIZcOlXi0wMnw-_minimax-h3.mp4",
+      "local": "/workspace/renders/cap01/animatic/tomas/a01/0.mp4",
+      "duracion_s": 6,
+      "elapsed_s": 10.8,
+      "error": null,
+      "reintento": false
+    },
+    {
+      "llamada": "a02",
+      "prompt": "produccion/pruebas/cap01_animatic/prompts/a02.md",
+      "referencias": [
+        "personajes/HOJA_martina.png",
+        "personajes/HOJA_tomas.png",
+        "set/F09_ambar_asiento_pareja.png"
+      ],
+      "semilla": 518232583,
+      "costo_usd": 0.7,
+      "url": "https://v3b.fal.media/files/b/0aaeeecc/mMSveWAk2U1vch2DYpr9S_minimax-h3.mp4",
+      "local": "/workspace/renders/cap01/animatic/tomas/a02/0.mp4",
+      "duracion_s": 14,
+      "elapsed_s": 10.7,
+      "error": null,
+      "reintento": false
+    },
+    {
+      "llamada": "a03",
+      "prompt": "produccion/pruebas/cap01_animatic/prompts/a03.md",
+      "referencias": [
+        "personajes/HOJA_extra_pareja_camisa_azul.png",
+        "props/PROP_maletin_v2.png",
+        "set/F08_ambar_pasajeros_hacia_puerta.png",
+        "referencias/ref_infectados.jpg"
+      ],
+      "semilla": 1581523702,
+      "costo_usd": 0.5,
+      "url": "https://v3b.fal.media/files/b/0aaeeece/UIcfmoU2RW0DT9J6f6q3x_minimax-h3.mp4",
+      "local": "/workspace/renders/cap01/animatic/tomas/a03/0.mp4",
+      "duracion_s": 10,
+      "elapsed_s": 10.7,
+      "error": null,
+      "reintento": false
+    },
+    {
+      "llamada": "a04",
+      "prompt": "produccion/pruebas/cap01_animatic/prompts/a04.md",
+      "referencias": [
+        "personajes/HOJA_martina.png",
+        "personajes/HOJA_tomas.png",
+        "personajes/HOJA_hugo.png",
+        "set/F09_ambar_asiento_pareja.png",
+        "set/F10_rojo_pasajeros_hacia_puerta.png"
+      ],
+      "semilla": 1406598298,
+      "costo_usd": 0.62,
+      "url": "https://v3b.fal.media/files/b/0aaeeecf/lb7i2mw4-klDB-FOnt9ct_minimax-h3.mp4",
+      "local": "/workspace/renders/cap01/animatic/tomas/a04/0.mp4",
+      "duracion_s": 12,
+      "elapsed_s": 10.8,
+      "error": null,
+      "reintento": false
+    },
+    {
+      "llamada": "a05",
+      "prompt": "produccion/pruebas/cap01_animatic/prompts/a05.md",
+      "referencias": [
+        "personajes/HOJA_hugo.png",
+        "personajes/HOJA_carmen.png",
+        "personajes/HOJA_ivan.png",
+        "set/F07_rojo_fuelle_vestibulo.png",
+        "set/F04_rojo_puerta_desde_fuelle.png",
+        "set/F12_rojo_detalle_llave_0-23.png"
+      ],
+      "semilla": 2095998201,
+      "costo_usd": 0.64,
+      "url": "https://v3b.fal.media/files/b/0aaeeed0/mKmc8exSIv21JsdQ12tMr_minimax-h3.mp4",
+      "local": "/workspace/renders/cap01/animatic/tomas/a05/0.mp4",
+      "duracion_s": 12,
+      "elapsed_s": 15.9,
+      "error": null,
+      "reintento": false
+    },
+    {
+      "llamada": "a05i",
+      "prompt": "produccion/pruebas/cap01_animatic/prompts/a05i.md",
+      "referencias": [
+        "personajes/HOJA_carmen.png",
+        "set/F07_rojo_fuelle_vestibulo.png"
+      ],
+      "semilla": 1806262267,
+      "costo_usd": 0.25,
+      "url": "https://v3b.fal.media/files/b/0aaeeed1/p9NCKRhjZnP5a6WEMycNc_minimax-h3.mp4",
+      "local": "/workspace/renders/cap01/animatic/tomas/a05i/0.mp4",
+      "duracion_s": 5,
+      "elapsed_s": 5.5,
+      "error": null,
+      "reintento": false
+    },
+    {
+      "llamada": "a06",
+      "prompt": "produccion/pruebas/cap01_animatic/prompts/a06.md",
+      "referencias": [
+        "personajes/HOJA_carmen.png",
+        "personajes/HOJA_tomas.png",
+        "personajes/HOJA_martina.png",
+        "set/F01_rojo_ultimo_vagon_hacia_puerta.png",
+        "set/F02_rojo_ultimo_vagon_hacia_fondo_cabina.png"
+      ],
+      "semilla": 1928170076,
+      "costo_usd": 0.42,
+      "url": "https://v3b.fal.media/files/b/0aaeeed2/7IW4U-MPVUBoysxXqn0l-_minimax-h3.mp4",
+      "local": "/workspace/renders/cap01/animatic/tomas/a06/0.mp4",
+      "duracion_s": 8,
+      "elapsed_s": 10.8,
+      "error": null,
+      "reintento": false
+    },
+    {
+      "llamada": "a07a",
+      "prompt": "produccion/pruebas/cap01_animatic/prompts/a07a.md",
+      "referencias": [
+        "personajes/ESTADO_diego_mojado_herido_v2.png",
+        "personajes/HOJA_martina.png",
+        "personajes/HOJA_tomas.png",
+        "set/F03_rojo_puerta_desde_dentro_0-45.png",
+        "set/F01_rojo_ultimo_vagon_hacia_puerta.png"
+      ],
+      "semilla": 1729385548,
+      "costo_usd": 0.52,
+      "url": "https://v3b.fal.media/files/b/0aaeeed3/9L-1YhsV0-AHnctOhqd9x_minimax-h3.mp4",
+      "local": "/workspace/renders/cap01/animatic/tomas/a07a/0.mp4",
+      "duracion_s": 10,
+      "elapsed_s": 10.6,
+      "error": null,
+      "reintento": false
+    }
+  ]
+}
