@@ -1,5 +1,21 @@
 # Motores de generación: qué se usa para qué
 
+## Decisión vigente (18-oct-2026)
+
+Esta sección manda sobre el resto del documento. Detalle en `produccion/metodo.md`.
+
+| Paso | Motor | Quién lo corre |
+|---|---|---|
+| Animatic del capítulo (480p, bloques con referencias) | **MiniMax H3 Max** (`minimax/h3-max/reference-to-video`, fal) | Bots de Cursor |
+| Assets nuevos, estados y fotogramas guía | **Nano Banana Pro / GPT Image 2.5** (fal, `tools/fal_gen.py`) | Bots de Cursor |
+| Versión final de todos los bloques | **Kling 4.0** (MCP oficial, suscripción). Salió el 16-oct-2026: ya no es solo exploración | Cristian o Claude; los bots, si su MCP expone 4.0 |
+| Respaldo: bloque que falla dos veces en Kling | **Seedance 2.5** (~0,57 USD/s a 720p) | Con OK de Cristian |
+| Voces de la versión final | **ElevenLabs** (plan Creator) | Cristian o Claude |
+
+Ya no se genera un keyframe por plano: el video sale de bloques con referencias, y el primer y último fotograma queda solo para insertos.
+
+## Histórico (hasta el 17-oct-2026)
+
 Todos los motores leen del mismo guion técnico (`produccion/shotlists/capNN.yaml`). Cambiar de motor en un plano es cambiar un campo, no rehacer el plano.
 
 ## Resumen

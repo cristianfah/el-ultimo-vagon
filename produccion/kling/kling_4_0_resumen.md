@@ -3,7 +3,8 @@
 La versión completa está en el proyecto Fahren.tv (`Kling_VIDEO_4_0_Guia_Prompting_Avanzado.md`). Conviene copiarla aquí.
 
 **Disponibilidad:**
-- Kling 4.0 sale oficialmente en octubre de 2026. La versión Flash está en acceso anticipado desde el 28 de septiembre.
+- **Kling 4.0 salió el 16 de octubre de 2026** en la web de Kling; la API para desarrolladores llega después. Desde el 18-oct-2026 es el **motor final de la serie** (`produccion/metodo.md`). Falta confirmar si el MCP oficial ya lo expone.
+- La versión Flash está en acceso anticipado desde el 28 de septiembre y queda para exploración.
 - **Todavía no está en Weavy**, que hoy tiene Kling 3, con referencias de personaje, y O1.
 
 ## Especificaciones
