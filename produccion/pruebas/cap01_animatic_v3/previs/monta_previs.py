@@ -4,6 +4,7 @@ from __future__ import annotations
 
 import argparse
 import json
+import math
 import pathlib
 import subprocess
 
@@ -68,19 +69,65 @@ def main():
         shot_in[s["id"]] = rec["in"]
         t += s["duration_s"]
     total = round(t, 3)
+    nframes = math.ceil(total * FPS - 1e-9)  # 72,10 s × 24 = 1731, igual que v1
     call_start = {call: shot_in[sid] for call, sid in CALL_FIRST.items()}
 
+    # Concat de PNG a distinta resolución se salta archivos y alarga el plano
+    # anterior. Primero se normaliza cada still a 480×832 y después se concatena.
     work = pathlib.Path("/tmp/previs_montaje")
+    stills_dir = work / "stills"
     work.mkdir(exist_ok=True)
+    stills_dir.mkdir(exist_ok=True)
+
+    vf_still = (
+        f"scale={W}:{H}:force_original_aspect_ratio=decrease,"
+        f"pad={W}:{H}:(ow-iw)/2:(oh-ih)/2,format=rgb24"
+    )
+
+    def normalize_still(rec):
+        src = (FRAMES / f"{rec['id']}.png").resolve()
+        if not src.exists():
+            raise FileNotFoundError(src)
+        dest = stills_dir / f"{rec['id']}.png"
+        cmd = ["ffmpeg", "-y", "-i", str(src), "-vf", vf_still, str(dest)]
+        r = subprocess.run(cmd, capture_output=True, text=True)
+        if r.returncode != 0:
+            raise RuntimeError(f"still {rec['id']}: {r.stderr[-1500:]}")
+        rec["file"] = str(FRAMES / f"{rec['id']}.png")
+        rec["still"] = str(dest)
+        return rec
+
+    from concurrent.futures import ThreadPoolExecutor, as_completed
+    with ThreadPoolExecutor(max_workers=8) as pool:
+        futs = [pool.submit(normalize_still, rec) for rec in edl]
+        for fut in as_completed(futs):
+            rec = fut.result()
+            print(f"still {rec['id']} {rec['dur']}s", flush=True)
+
     concat = work / "concat.txt"
     lines = ["ffconcat version 1.0"]
     for rec in edl:
-        p = (FRAMES / f"{rec['id']}.png").resolve()
-        lines.append(f"file '{p}'")
+        still = stills_dir / f"{rec['id']}.png"
+        lines.append(f"file '{still}'")
         lines.append(f"duration {rec['dur']}")
-    last = (FRAMES / f"{edl[-1]['id']}.png").resolve()
+    last = stills_dir / f"{edl[-1]['id']}.png"
     lines.append(f"file '{last}'")
     concat.write_text("\n".join(lines) + "\n")
+
+    video_only = work / "video.mp4"
+    r = subprocess.run(
+        [
+            "ffmpeg", "-y", "-f", "concat", "-safe", "0", "-i", str(concat),
+            "-vf", f"fps={FPS},format=yuv420p",
+            "-r", str(FPS), "-frames:v", str(nframes),
+            "-c:v", "libx264", "-pix_fmt", "yuv420p",
+            "-preset", "veryfast", "-crf", "18", "-an", str(video_only),
+        ],
+        capture_output=True, text=True,
+    )
+    if r.returncode != 0:
+        print(r.stderr[-4000:])
+        raise SystemExit(r.returncode)
 
     silent = work / "silence.wav"
     subprocess.run(
@@ -113,18 +160,12 @@ def main():
             "nota": "Colchón 0,5 s de cada extremo de la llamada recortado; overlay al primer plano de la llamada.",
         })
 
-    # build ffmpeg mix
-    inputs = ["-i", str(concat), "-i", str(silent)]
-    for call in ("c02", "c04b", "c07a", "c07b"):
-        inputs += ["-i", str(trimmed[call])]
-
-    # adelay in ms
-    delays = []
     mix_labels = ["[1:a]"]
     fc = []
+    inputs = ["-i", str(video_only), "-i", str(silent)]
     for i, call in enumerate(("c02", "c04b", "c07a", "c07b"), start=2):
+        inputs += ["-i", str(trimmed[call])]
         ms = int(round(call_start[call] * 1000))
-        delays.append(ms)
         lab = f"a{i}"
         fc.append(f"[{i}:a]adelay={ms}|{ms},volume=-6dB[{lab}]")
         mix_labels.append(f"[{lab}]")
@@ -132,19 +173,17 @@ def main():
         "".join(mix_labels)
         + f"amix=inputs={len(mix_labels)}:duration=first:dropout_transition=0:normalize=0[aout]"
     )
-    vf = f"scale={W}:{H}:force_original_aspect_ratio=decrease,pad={W}:{H}:(ow-iw)/2:(oh-ih)/2,fps={FPS},format=yuv420p"
     cmd = [
-        "ffmpeg", "-y", "-f", "concat", "-safe", "0", *inputs,
+        "ffmpeg", "-y", *inputs,
         "-filter_complex", ";".join(fc),
         "-map", "0:v", "-map", "[aout]",
-        "-vf", vf,
-        "-r", str(FPS), "-c:v", "libx264", "-pix_fmt", "yuv420p", "-crf", "20",
+        "-c:v", "copy",
         "-c:a", "aac", "-b:a", "128k",
         "-movflags", "+faststart",
-        "-t", str(total),
+        "-t", f"{nframes / FPS:.6f}",
         str(OUT),
     ]
-    print("ffmpeg", " ".join(cmd[:8]), "...", flush=True)
+    print("ffmpeg mix", OUT, flush=True)
     r = subprocess.run(cmd, capture_output=True, text=True)
     if r.returncode != 0:
         print(r.stderr[-4000:])
