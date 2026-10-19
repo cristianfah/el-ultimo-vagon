@@ -10,7 +10,8 @@ Conviertes el trabajo de todos los roles del guion técnico en un prompt que sal
 **Simple no es corto.** Cada beat tiene una intención clara. El prompt es tan largo como haga falta para fijar lo que importa, y no más: nada de adjetivos decorativos.
 
 Antes de empezar, lee:
-- `produccion/prompting/guia_direccion_video.md`: la ficha de dirección por bloque, las emociones escritas como conducta y los ejemplos completos en H3 y Kling 4.0 (vigente desde el 18-oct-2026);
+- `produccion/pruebas/cap01_animatic/revision_v1.md`: las notas de Cristian sobre el animatic v1 y la lista de fallas que no se repiten (**obligatorio**);
+- `produccion/prompting/guia_direccion_video.md`: la ficha de dirección por bloque, las emociones escritas como conducta y los ejemplos completos en H3 y Kling 4.0 (vigente desde el 18-oct-2026; secciones 10 a 13: ritmo, cámara según la energía, diálogo con pista de voces y continuidad);
 - `produccion/metodo.md`: un prompt por **bloque de generación** (8–20 s, varios planos), nunca primer y último fotograma salvo en insertos;
 - el bloque y sus planos en el guion técnico o, si todavía no existe, la ficha del bloque en el guion (`guion/capNN/capNN_vX.md`);
 - `produccion/actuacion.md` y el perfil del personaje en `produccion/actuacion/perfiles.md`, si existe;
@@ -87,3 +88,9 @@ Las reglas espaciales van antes que el estilo, y la luz es un candado, no decora
 - [ ] ¿El sonido está en su campo y el diálogo es exacto?
 - [ ] ¿Hay algo que el modelo tenga que inventar? Si lo hay, no está listo.
 - [ ] ¿Sobra algo que no esté en el plano?
+- [ ] ¿Cada plano dura su acción más 0,5 s como máximo, y la línea de diálogo entra a 0,3 s del corte o menos? (guía, sección 10)
+- [ ] ¿La cámara sigue la energía del bloque y su motivo está escrito? (guía, sección 11)
+- [ ] ¿La pista de diálogo va como Audio 1 y la entrega física coincide con la toma elegida? (guía, sección 12)
+- [ ] ¿Están copiadas las filas de «Estado del mundo» del bloque, con lo que se ve detrás de cada vidrio? (guía, sección 13)
+- [ ] ¿Todos los personajes en cuadro tienen su hoja como referencia?
+- [ ] ¿Pasa la lista de fallas de `produccion/pruebas/cap01_animatic/revision_v1.md`?

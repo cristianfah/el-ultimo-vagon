@@ -25,6 +25,6 @@ Reglas de escritura:
 - **Respetar `biblia/reglas_del_mundo.md`.** Los personajes solo saben lo que vieron.
 - **Revisar agujeros de lógica:** ¿por qué no hacen lo obvio? Si hay una salida obvia, el dilema no sirve.
 
-Formato de producción del guion (obligatorio desde `cap01_v9`):
+Formato de producción del guion (obligatorio desde `cap01_v9`; desde `cap01_v10` también la energía de cada bloque, la cámara con motivo en cada plano, la tabla «Estado del mundo» y la tabla de voces con la toma de cada línea):
 - El guion se escribe en **bloques de generación** (8–20 s, una locación y una luz por bloque), cada uno con su ficha: intención, cámara (con motivo), referencias (nombres de assets aprobados), planos con segundo de inicio y sonido. Método completo en `produccion/metodo.md`.
 - Al final del guion van los **assets que faltan** y las **líneas de voz** con su indicación.

@@ -22,7 +22,7 @@ El último vagón aparece en los 8 capítulos. Los sets nuevos (cuarto del rapto
 El público conoce el secreto de Martina antes que nadie, y Diego llega como la amenaza de que se sepa.
 
 ### Capítulo 1 · El maletín
-Guion completo: `guion/cap01/cap01_v9.md`.
+Guion completo: `guion/cap01/cap01_v10.md`.
 - **Gancho:** en el vagón 2, con pasajeros alrededor, Martina desliza un maletín bajo un asiento. Le tiemblan las manos.
 - **Escena:** flashes de un segundo del rapto: amarrada, máscaras, la foto de Tomás en una pantalla. Los captores no explican nada. Martina vuelve junto a Tomás. Él: «¿Dónde estabas?». Ella: «En el baño». Tomás: «¿Tu papá sabe que vienes en este tren?». Martina: «No. Esa era la idea». Un pasajero de camisa azul encuentra el maletín y lo abre: sale una niebla y se convierte en segundos. Gritos, luz roja, todos corren al último vagón. Al cerrar, un vidrio roto le corta la palma a Carmen (un cuadro, solo para el público).
 - **Giro:** golpean la puerta. Es Diego, empapado, con el brazo herido: «¡Martina! ¡Te vi en el vagón 2!». Tomás la mira: ella le dijo que estaba en el baño.

@@ -16,9 +16,10 @@ Todo agente que trabaje en este repo (Cursor, Claude, cualquier otro) lee este a
 
 - **Biblia v2 (18-oct-2026):** un tren nocturno lleva un virus hacia la capital; la hija del Presidente (Martina) lo liberó sin saberlo, obligada por una secta; el gobierno puede bombardear el tren; el grupo se atrinchera en el último vagón. Detrás de la secta hay una IA (solo para guionistas, `biblia/conspiracion.md`). La biblia anterior está en `archivo/biblia_v1/`.
 - **Temporada 1:** 8 capítulos escritos en línea recta, con encuestas de «Si fueras ___, ¿qué harías?» que no cambian la historia. Escaleta en `biblia/escaleta_t1.md`; votaciones en `biblia/votaciones.md`.
-- **Guion vigente:** `guion/cap01/cap01_v9.md` (**VIGENTE**), escrito en 8 bloques de generación. La v8 y anteriores quedan como históricas y pertenecen a la biblia v1.
+- **Guion vigente:** `guion/cap01/cap01_v10.md` (**VIGENTE**, 18-oct-2026): la misma historia de la v9 con dirección de cámara, ritmo, tabla «Estado del mundo» y voces primero. La v9 y anteriores quedan como históricas.
+- **Antes de producir cualquier cosa, leer `produccion/pruebas/cap01_animatic/revision_v1.md`:** las notas de Cristian sobre el animatic v1 y la lista de fallas que no se repiten.
 - **Producción (método nuevo):** bloques de generación con paquete de referencias, animatic en H3 Max a 480p (bots de Cursor por fal), aprobación de Cristian sobre el animatic, versión final en **Kling 4.0** y **Seedance 2.5** como respaldo. Ver `produccion/metodo.md`. Los prompts se escriben con `produccion/prompting/guia_direccion_video.md` y la skill `.cursor/skills/director-de-prompts/`.
-- **Tarea en curso:** animatic del capítulo 1. Plan y reparto de tareas en `produccion/pruebas/cap01_animatic/plan.md`.
+- **Tarea en curso:** animatic v3 del capítulo 1 (previsualización con GPT Image 2.5, voces primero, H3 Max a 768p). Plan y reparto en `produccion/pruebas/cap01_animatic_v3/plan.md`. El v1 y el v2 quedan en `produccion/pruebas/cap01_animatic/`.
 - **Obsoleto:** `produccion/shotlists/cap01.yaml` y las pruebas `cap01_montaje_v1`, `cap01_montaje_v2` y `cap01_cold_open` corresponden al guion anterior (v3–v8). Se consultan por lo aprendido, no se producen.
 - **Assets v1 aprobados (2026-10-01):** planchas F01–F12, cuadros de look, vistas técnicas, 4 props, referencias y hojas de los 6 personajes y la pareja extra, estado de Diego y keyframes KF01–KF03. URLs en `produccion/assets/aprobados_v1.md`, archivos en `imagenes/04_aprobados` (Drive). Los cambios posteriores se hacen como v2.
 - **Imágenes:** viven en la carpeta privada de Drive y se suben con `tools/drive_sync.py`. Las ediciones se corren con `tools/fal_gen.py`. Ninguna imagen se propone para aprobación sin pasar antes por la revisión de continuidad de los agentes.
@@ -52,7 +53,7 @@ Qué motor se usa para qué está en `produccion/motores.md`.
 
 - **Midjourney 8.2:** solo exploración de arte.
 - **Weavy (Figma Weave):** solo creación de assets (hojas de personaje, locaciones, props). Los flujos se arman como JSON para pegarlos; ver `produccion/weavy/`.
-- **fal.ai (API y MCP):** MiniMax H3 Max para el animatic (480p) y Nano Banana Pro / GPT Image 2.5 para assets, estados y fotogramas guía.
+- **fal.ai (API y MCP):** MiniMax H3 Max para el animatic (768p, con la pista de diálogo como audio de referencia), GPT Image 2.5 para la previsualización, los fotogramas guía y los estados nuevos, y Nano Banana Pro para ediciones de una sola variable.
 - **Kling 4.0:** motor final de todos los bloques, por el MCP oficial con la suscripción propia (salió el 16-oct-2026); ver `produccion/kling/` y `.cursor/skills/director-de-prompts/references/kling.md`.
 - **Seedance 2.5:** respaldo para el bloque que falle dos veces en Kling. Es bastante más caro: siempre con OK de Cristian.
 - **Comfy Cloud (API):** upscale final, correcciones puntuales y nodos pagados con créditos de Comfy.

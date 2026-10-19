@@ -28,10 +28,11 @@ Cada personaje tiene una **postura** en el debate. El público debe poder decir 
 | **El operador** | Centro de control: confirma que el tren no se detiene (cap. 4) | Secundario |
 | **El hombre de camisa azul** | Abre el maletín en el vagón 2 y es el primer infectado | Hoja aprobada (pareja extra). Camisa azul cobalto: bajo luz roja se ve negra |
 
-## Líneas que los definen (capítulo 1, `guion/cap01/cap01_v9.md`)
+## Líneas que los definen (capítulo 1, `guion/cap01/cap01_v10.md`)
 - **Tomás:** «¿Tu papá sabe que vienes en este tren?» / «¿No estabas en el baño?»
 - **Martina:** «En el baño.» (demasiado rápido) / «No. Esa era la idea.»
 - **Diego:** «¡Martina! ¡Martina, ábreme!» / «¡Te vi en el vagón 2!»
+- **Don Hugo:** un pitazo y «¡Al último vagón! ¡Rápido!»
 
 ## Anclas visuales para prompts (aprobadas 2026-10-01)
 Casting visual aprobado. Las fichas están en `direccion_arte/personajes/fichas_personajes_v2.md` y los assets en `produccion/assets/aprobados_v1.md`.

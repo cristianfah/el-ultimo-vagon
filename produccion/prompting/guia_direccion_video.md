@@ -65,7 +65,7 @@ Por plano:
 ## 6. La cámara
 
 - **Vocabulario:** static (locked off), handheld (shakes slightly / strongly), push in, pull out, pan, tilt, truck, track, arc. Siempre con **amplitud** (small / large) y **velocidad** (slow / fast), en una frase propia, separada de la acción del actor.
-- **Sin push-in por defecto.** Cada escena tiene su gramática en la ficha del guion. En el capítulo 1, el único movimiento de cámara es el avance hacia la ventanita cuando aparece Diego.
+- **Sin push-in por defecto, pero tampoco cámara fija por defecto.** Cada plano tiene la cámara que pide el guion (desde la v10, con su motivo). La cámara fija es una elección de contraste, no la opción segura. Ver la sección 11.
 - **Cámara en mano con intención:** «the camera shakes slightly, as if held by a passenger, and arrives late to the scream».
 - **Escribir dónde está la cámara:** altura (seated eye height, floor level), distancia y lente (50mm, 35mm).
 - **Tamaño de plano con corte:** «close-up framed from mid-chest up, hands out of frame». Si no se dice, el modelo abre el plano.
@@ -168,3 +168,49 @@ Además de la lista de la skill `director-de-prompts`:
 - [ ] ¿El balanceo del tren está escrito y es del cuerpo, no de la cámara?
 - [ ] ¿El diálogo es idéntico al guion, con idioma y entrega física?
 - [ ] ¿Cierra con «No music. No subtitles, no captions, no on-screen text.»?
+- [ ] ¿Pasa la lista de fallas de `produccion/pruebas/cap01_animatic/revision_v1.md` (sección 5)?
+
+## 10. Ritmo: cuánto dura un plano
+
+Después del animatic v1 (notas de Cristian en `produccion/pruebas/cap01_animatic/revision_v1.md`): el modelo termina la acción antes de tiempo y rellena el resto con espera. Por eso el prompt fija **cuándo termina cada acción y qué pasa justo después**.
+
+| Tipo de plano | Duración | Cómo se escribe |
+| --- | --- | --- |
+| Acción (huida, golpe, ataque) | 1 a 1,5 s | Empieza en mitad del movimiento: «at 0.0s he is already lunging» |
+| Reacción o detalle | 0,8 a 1,5 s | Un solo gesto, con su segundo |
+| Diálogo | La línea más 0,3 s | La línea entra a 0,2–0,3 s del corte; la reacción del otro llega antes de que termine |
+| Silencio dramático | Lo que diga el guion | Solo si está escrito; con microgestos (respiración, tragar, mandíbula) |
+
+- **Pedir la duración justa:** la llamada dura la suma de sus planos más 0,5 s de colchón al inicio y al final. Si el plano necesita 1,2 s, el prompt no le da 3.
+- **Nada de esperas:** «then still» solo cuando la quietud es el beat. En cualquier otro caso, el plano corta.
+
+## 11. Cámara según la energía del bloque
+
+El guion da a cada bloque una energía de 1 (quietud) a 5 (caos). La cámara la sigue:
+
+| Energía | Gramática | Frases útiles para el prompt |
+| --- | --- | --- |
+| 1–2 | Fija o en mano muy suave, a la altura de los ojos; plano y contraplano | «handheld, barely breathing with the actor», «locked off at seated eye height» |
+| 3 | En mano cercana; paneos cortos motivados por una mirada | «a quick short pan from him to her, because it is what she is looking at» |
+| 4 | En mano activa; llega tarde a los sonidos; barridos | «the camera arrives late to the scream», «a fast whip pan to the rear door as it bursts open» |
+| 5 | En mano intensa, dentro de la acción, chocando con los cuerpos | «the camera runs with them between the seats, bumped by shoulders», «the impact shakes the frame» |
+
+El motivo siempre va escrito: la cámara se mueve porque alguien mira, porque algo golpea o porque corre con alguien. Un movimiento sin motivo se ve generado.
+
+## 12. Diálogo con la pista de voces (H3 a 768p y Kling 4.0)
+
+La pista de diálogo de la llamada (las tomas aprobadas, montadas en los tiempos del guion) entra como **Audio 1**. En la prueba del 18-oct-2026, H3 Max a 768p la reprodujo con desfase cero; a 480p, no (`revision_v1.md`, sección 4).
+
+- **Declararla al principio,** después de las imágenes: «Audio 1 is the exact dialogue of this scene: use it as the soundtrack and sync every line to the lips of the speaker. Voices only from Audio 1.»
+- **Cada línea con su orden, su segundo y su hablante:** «At 0.3s Tomás speaks the first line of Audio 1». Se puede citar el texto entre comillas, igual que en el guion.
+- **La entrega física coincide con la toma elegida:** si la toma de Martina es «casual forzada», el cuerpo hace eso (se acomoda el abrigo, no mira). La tabla de voces del guion dice qué toma va en cada línea.
+- **H3:** pistas de 2 a 15 s; hasta 3 audios por llamada. **Kling 4.0:** de 5 a 30 s; si la pista es más corta, se completa con silencio.
+- **En el montaje** se vuelve a poner la pista limpia en los mismos tiempos.
+
+## 13. Continuidad dentro del prompt
+
+- **Copiar las filas de «Estado del mundo»** del bloque (guion v10 en adelante) como frases en positivo dentro del plano que corresponda: «the briefcase stays under his seat, its metal corner visible, through the whole shot».
+- **Detrás de cada vidrio:** se escribe qué se ve y si se mueve. En el tren, por la ventanita de las puertas entre vagones solo se ve el fuelle oscuro: «behind him only the dark red-lit gangway, no sky, no rain».
+- **Objetos en las manos:** si un personaje no hace nada con un objeto, el objeto no está en el plano. Mejor una mano apoyada en algo concreto (un cerrojo, un respaldo).
+- **Fotogramas de la previsualización:** el del primer plano va como primer fotograma (`image_url`); los demás, como referencia de su plano («Image 6 is the composition and light of Shot 2»).
+

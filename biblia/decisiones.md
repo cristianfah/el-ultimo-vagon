@@ -149,3 +149,25 @@ Trabajado en el documento «El Último Vagón — Lore del universo» (pestañas
 - **Voces en ElevenLabs** (plan Creator), una voz fija por personaje. En el animatic se usa el audio que genera el modelo.
 - **Guía de dirección para prompts de video:** `produccion/prompting/guia_direccion_video.md`. Motivo: pedido de Cristian para que el bot productor escriba prompts dirigidos con actuación, emociones (como conducta) y movimiento.
 - **Voces aprobadas (18-oct-2026):** Tomás, Martina y Diego con acento chileno suave (nunca acento de España), diseñadas en ElevenLabs y actuadas con el modelo v4. IDs y método en `produccion/voces.md`. Motivo: Cristian sintió robóticas y «españolas» las primeras muestras en español neutro.
+
+## 18-oct-2026 (noche) · Revisión del animatic v1
+
+Notas de Cristian sobre el animatic v1 y v2 del capítulo 1. Detalle en `produccion/pruebas/cap01_animatic/revision_v1.md`.
+
+### Capítulo 1
+- **`guion/cap01/cap01_v10.md` es el guion vigente.** Misma historia de la v9; cambia la dirección: ritmo, cámara con motivo, continuidad escrita y voces primero. Motivo: el v1 salió lento, con cámara fija, tiempos muertos y errores de continuidad.
+- **El maletín se abre solo** (cierres con temporizador), bajo el asiento del hombre de camisa azul, y la niebla se arrastra hasta él. Ya no lo encuentra ni lo abre. Motivo: idea de Cristian; además calza con un plan de la secta.
+- **Los flashes del rapto son un solo recuerdo** que nace de un gesto de Martina (se aprieta la muñeca), con corte por coincidencia. Motivo: en el v1 el salto de lugar no se entendía.
+- **Don Hugo habla:** «¡Al último vagón! ¡Rápido!». Motivo: con el gesto solo no se entendía (nota de Cristian). Falta diseñar su voz.
+- **Se ve cómo Carmen se corta:** un infectado revienta el vidrio y la agarra, Iván la tira, cae y la palma derecha golpea los vidrios. Motivo: en el v1 no se entendía.
+- **Diego está mojado porque cruzó por fuera del tren.** Detrás de él, por la ventanita, solo se ve el fuelle oscuro: nunca lluvia, cielo ni una puerta abierta. Detrás de él se mueven sombras. Motivo: nota de Cristian sobre la lluvia en el fuelle y la falta de peligro.
+- **Hugo no sostiene la llave en el plano final:** su mano está en el cerrojo, esperando la respuesta de Martina. Motivo: la llave se veía antinatural.
+
+### Producción
+- **Voces primero, también en el animatic:** la pista de diálogo con las tomas aprobadas entra como audio de referencia. **H3 Max a 768p** (a 480p no respeta la pista). Motivo: con el video generado antes, la intención y los tiempos no calzaban con las voces.
+- **Previsualización antes del video:** un fotograma por plano en GPT Image 2.5, montado con las pistas de diálogo; Cristian la aprueba antes de generar. Motivo: corregir en imágenes cuesta centavos y evita versiones de video.
+- **GPT Image 2.5 entra al pipeline** para la previsualización, los fotogramas guía y los estados nuevos; Nano Banana Pro queda para ediciones de una sola variable. Motivo: decisión de Cristian.
+- **Llamadas cortas** (de 4 a 8 s y hasta tres planos en H3), **dos semillas por llamada** y **todos los personajes en cuadro con su hoja**. Motivo: las llamadas largas generaban tiempo muerto y los personajes solo descritos cambiaban de cara.
+- **Lista de fallas que no se repiten** (`revision_v1.md`, sección 5): cada bot revisa su entrega contra ella antes de mandarla. Motivo: Cristian no quiere 150 correcciones ni 20 versiones antes de la versión en alta.
+- **Más presupuesto:** tope propuesto de 40 USD en fal para el animatic v3. Motivo: Cristian pidió gastar lo necesario para que salga bien.
+
