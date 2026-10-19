@@ -12,7 +12,7 @@
 | --- | --- | --- |
 | Assets nuevos | 5 assets × 2 tomas (GPT Image 2.5 y Nano Banana Pro) | ~1,5 USD |
 | Previsualización | ~40 fotogramas en GPT Image 2.5, más una pasada de correcciones | ~10 USD |
-| Video | 16 llamadas, unos 88 s pedidos × 2 semillas, H3 Max a 768p | ~9 USD a precio de lista |
+| Video | 16 llamadas, unos 88 s pedidos × 2 semillas, H3 Max a 480p | ~8,8 USD a precio de lista (~5,7 con el descuento hasta el 31-oct) |
 | Margen | Retomas y cobro real a 768p | ~10 USD |
 | **Tope** | | **40 USD** |
 
@@ -42,7 +42,7 @@ Cada fase tiene una entrega y una revisión. Ninguna fase empieza sin que la ant
 
 ## Llamadas de video (fase 6)
 
-H3 Max `minimax/h3-max/reference-to-video` · `resolution: 768P` · `aspect_ratio: 9:16` · `prompt_expansion_mode: disabled` · dos semillas por llamada. Cada llamada pide 0,5 s de colchón al inicio y al final. Primer fotograma: el de la previsualización del primer plano de la llamada.
+H3 Max `minimax/h3-max/reference-to-video` · `resolution: 480P` (decisión de Cristian del 18-oct-2026, por costo; las llamadas con diálogo llevan igual la pista como Audio 1 para los tiempos, y en el montaje se reemplaza el audio por la pista limpia) · `aspect_ratio: 9:16` · `prompt_expansion_mode: disabled` · dos semillas por llamada. Cada llamada pide 0,5 s de colchón al inicio y al final. Primer fotograma: el de la previsualización del primer plano de la llamada.
 
 | Llamada | Bloque y planos | Planos en el montaje | Duración pedida | Audio 1 |
 | --- | --- | --- | --- | --- |
