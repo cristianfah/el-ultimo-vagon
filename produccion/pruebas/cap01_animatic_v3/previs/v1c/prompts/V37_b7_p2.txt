@@ -1,0 +1,11 @@
+Edit the image: wider framing: the door window fills about 60% of the frame width.
+
+CHANGE: Pull the camera back: the small wired-glass door window now fills about 60% of the frame width, with the riveted metal door around it visible on all sides, so there is room for a slow push-in. Diego's face stays behind the glass in the same place within the window.
+
+PRESERVE EXACTLY:
+- camera position, lens, framing and 9:16 aspect (unless the change says otherwise)
+- every person's face, hair, wardrobe, pose and eyeline not named in the change
+- every light source, shadow, colour grade and film grain not named in the change
+- natural hands with five separate fingers
+
+ONLY CHANGE: wider framing: the door window fills about 60% of the frame width. Everything else stays identical. No text.

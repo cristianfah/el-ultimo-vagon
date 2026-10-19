@@ -1,0 +1,11 @@
+Edit the image: make the red emergency light hard and from above, with no white fill on any face.
+
+CHANGE: The narrow red ceiling strip (#B3001B) is the only red source and lights from above: every face is half in shadow, real black zones, no white or grey fill light on skin, no pink or magenta. Keep the one cold white tube above the door only where it already is and only on heads and shoulders near it. Shorten any long glowing red neon lines to the single narrow ceiling strip.
+
+PRESERVE EXACTLY:
+- camera position, lens, framing and 9:16 aspect (unless the change says otherwise)
+- every person's face, hair, wardrobe, pose and eyeline not named in the change
+- every light source, shadow, colour grade and film grain not named in the change
+- natural hands with five separate fingers
+
+ONLY CHANGE: make the red emergency light hard and from above, with no white fill on any face. Everything else stays identical. No text.

@@ -1,0 +1,11 @@
+Edit the image: the gangway behind Diego falls almost to black and half his face is in shadow.
+
+CHANGE: Behind Diego the gangway falls almost to black with only a faint red cast; the cold white tube above the door, on our side, is the only light on the glass and lights his face from above, half of it in shadow.
+
+PRESERVE EXACTLY:
+- camera position, lens, framing and 9:16 aspect (unless the change says otherwise)
+- every person's face, hair, wardrobe, pose and eyeline not named in the change
+- every light source, shadow, colour grade and film grain not named in the change
+- natural hands with five separate fingers
+
+ONLY CHANGE: the gangway behind Diego falls almost to black and half his face is in shadow. Everything else stays identical. No text.

@@ -1,0 +1,11 @@
+Edit the image: the moment just before the change: normal eyes and clean neck.
+
+CHANGE: His eyes are normal human eyes with dark irises, half-closed, and his neck and jaw skin is clean, with no veins and no marks: the instant just before the change. Same head angle turning toward frame right.
+
+PRESERVE EXACTLY:
+- camera position, lens, framing and 9:16 aspect (unless the change says otherwise)
+- every person's face, hair, wardrobe, pose and eyeline not named in the change
+- every light source, shadow, colour grade and film grain not named in the change
+- natural hands with five separate fingers
+
+ONLY CHANGE: the moment just before the change: normal eyes and clean neck. Everything else stays identical. No text.

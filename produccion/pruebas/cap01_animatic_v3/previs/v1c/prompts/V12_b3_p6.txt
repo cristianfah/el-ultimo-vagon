@@ -1,0 +1,11 @@
+Edit the image: the screaming woman is the same reader as Image 2.
+
+CHANGE: The woman springing up and screaming at frame right is the same young woman as Image 2: same face, dark hair tied up in a bun, rust-red knitted scarf, dark top; no beige cardigan, no loose curly hair. Same pose, book falling, mouth open screaming.
+
+PRESERVE EXACTLY:
+- camera position, lens, framing and 9:16 aspect (unless the change says otherwise)
+- every person's face, hair, wardrobe, pose and eyeline not named in the change
+- every light source, shadow, colour grade and film grain not named in the change
+- natural hands with five separate fingers
+
+ONLY CHANGE: the screaming woman is the same reader as Image 2. Everything else stays identical. No text.

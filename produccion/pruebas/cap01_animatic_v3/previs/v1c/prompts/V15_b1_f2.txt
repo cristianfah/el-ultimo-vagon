@@ -1,0 +1,11 @@
+Edit the image: the two background masks are completely smooth and featureless.
+
+CHANGE: The two masked figures standing in the background wear completely smooth, featureless grey masks: no eyes, no eye holes, no nose, no mouth, no lines.
+
+PRESERVE EXACTLY:
+- camera position, lens, framing and 9:16 aspect (unless the change says otherwise)
+- every person's face, hair, wardrobe, pose and eyeline not named in the change
+- every light source, shadow, colour grade and film grain not named in the change
+- natural hands with five separate fingers
+
+ONLY CHANGE: the two background masks are completely smooth and featureless. Everything else stays identical. No text.

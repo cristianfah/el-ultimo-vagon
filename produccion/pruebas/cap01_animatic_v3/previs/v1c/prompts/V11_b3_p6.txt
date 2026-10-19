@@ -1,0 +1,11 @@
+Edit the image: the couple in the foreground left becomes a dark struggling tangle.
+
+CHANGE: Foreground left: the calm seated couple becomes a dark struggling tangle in shadow, the man lunging onto his wife, shapes only, motion blur, nothing graphic. They are not looking at the camera.
+
+PRESERVE EXACTLY:
+- camera position, lens, framing and 9:16 aspect (unless the change says otherwise)
+- every person's face, hair, wardrobe, pose and eyeline not named in the change
+- every light source, shadow, colour grade and film grain not named in the change
+- natural hands with five separate fingers
+
+ONLY CHANGE: the couple in the foreground left becomes a dark struggling tangle. Everything else stays identical. No text.

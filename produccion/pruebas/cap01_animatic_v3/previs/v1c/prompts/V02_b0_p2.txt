@@ -1,0 +1,11 @@
+Edit the image: the oat sweater cuff covers her knuckles.
+
+CHANGE: The oat knit sweater cuff extends past her wrist out of the charcoal coat sleeve and covers her knuckles up to the first finger joints; only her fingertips show on top of the briefcase. Real knit texture; the hand is separate from the cuff; five separate fingers.
+
+PRESERVE EXACTLY:
+- camera position, lens, framing and 9:16 aspect (unless the change says otherwise)
+- every person's face, hair, wardrobe, pose and eyeline not named in the change
+- every light source, shadow, colour grade and film grain not named in the change
+- natural hands with five separate fingers
+
+ONLY CHANGE: the oat sweater cuff covers her knuckles. Everything else stays identical. No text.

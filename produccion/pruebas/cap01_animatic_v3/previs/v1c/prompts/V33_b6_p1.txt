@@ -1,0 +1,11 @@
+Edit the image: Iván stands with his back pressed against the door.
+
+CHANGE: Iván stands with his BACK pressed against the door, facing camera, arms braced against the door frame, head turned slightly; the small window full of palms and dark smears stays above his shoulder.
+
+PRESERVE EXACTLY:
+- camera position, lens, framing and 9:16 aspect (unless the change says otherwise)
+- every person's face, hair, wardrobe, pose and eyeline not named in the change
+- every light source, shadow, colour grade and film grain not named in the change
+- natural hands with five separate fingers
+
+ONLY CHANGE: Iván stands with his back pressed against the door. Everything else stays identical. No text.
