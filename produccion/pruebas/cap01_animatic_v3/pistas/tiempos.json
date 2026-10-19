@@ -1,0 +1,105 @@
+{
+  "c04b": "pendiente: falta la voz de Hugo («¡Al último vagón! ¡Rápido!», máx. 1,6 s)",
+  "pistas": [
+    {
+      "pista": "c02",
+      "wav": "produccion/pruebas/cap01_animatic_v3/pistas/c02.wav",
+      "mp3": "produccion/pruebas/cap01_animatic_v3/pistas/c02.mp3",
+      "duracion_pedida_s": 12.5,
+      "duracion_wav_s": 12.5,
+      "duracion_mp3_s": 12.539,
+      "lineas": [
+        {
+          "toma": "tomas_b2_1.mp3",
+          "label": "Tomás 1C · ¿Dónde estabas?",
+          "plano": "P1 0,5–4,0",
+          "entra_tabla_s": 0.8,
+          "entra_archivo_s": 0.8,
+          "fin_archivo_s": 2.446,
+          "onset_habla_medido_s": 1.08,
+          "desfase_vs_tabla_s": 0.28
+        },
+        {
+          "toma": "martina_b2_1.mp3",
+          "label": "Martina 2B · En el baño.",
+          "plano": "P1",
+          "entra_tabla_s": 2.5,
+          "entra_archivo_s": 2.5,
+          "fin_archivo_s": 3.649,
+          "onset_habla_medido_s": 2.656,
+          "desfase_vs_tabla_s": 0.156
+        },
+        {
+          "toma": "tomas_b2_2.mp3",
+          "label": "Tomás 3C · ¿Tu papá sabe…?",
+          "plano": "P3 5,0–8,0",
+          "entra_tabla_s": 5.2,
+          "entra_archivo_s": 5.2,
+          "fin_archivo_s": 7.708,
+          "onset_habla_medido_s": 5.333,
+          "desfase_vs_tabla_s": 0.133
+        },
+        {
+          "toma": "martina_b2_2.mp3",
+          "label": "Martina 4D · No. … Esa era la idea.",
+          "plano": "P4 8,0–12,0",
+          "entra_tabla_s": 8.2,
+          "entra_archivo_s": 8.2,
+          "fin_archivo_s": 11.282,
+          "onset_habla_medido_s": 8.242,
+          "desfase_vs_tabla_s": 0.042
+        }
+      ]
+    },
+    {
+      "pista": "c07a",
+      "wav": "produccion/pruebas/cap01_animatic_v3/pistas/c07a.wav",
+      "mp3": "produccion/pruebas/cap01_animatic_v3/pistas/c07a.mp3",
+      "duracion_pedida_s": 8.3,
+      "duracion_wav_s": 8.3,
+      "duracion_mp3_s": 8.333,
+      "lineas": [
+        {
+          "toma": "diego_b7_1.mp3",
+          "label": "Diego 5C · ¡Martina! ¡Martina, ábreme!",
+          "plano": "P2 1,3–4,9",
+          "entra_tabla_s": 1.5,
+          "entra_archivo_s": 1.5,
+          "fin_archivo_s": 4.426,
+          "onset_habla_medido_s": 1.714,
+          "desfase_vs_tabla_s": 0.214
+        },
+        {
+          "toma": "diego_b7_2.mp3",
+          "label": "Diego 6C · ¡Te vi en el vagón 2!",
+          "plano": "P3 4,9–7,8",
+          "entra_tabla_s": 5.0,
+          "entra_archivo_s": 5.0,
+          "fin_archivo_s": 7.508,
+          "onset_habla_medido_s": 5.15,
+          "desfase_vs_tabla_s": 0.15
+        }
+      ]
+    },
+    {
+      "pista": "c07b",
+      "wav": "produccion/pruebas/cap01_animatic_v3/pistas/c07b.wav",
+      "mp3": "produccion/pruebas/cap01_animatic_v3/pistas/c07b.mp3",
+      "duracion_pedida_s": 7.5,
+      "duracion_wav_s": 7.5,
+      "duracion_mp3_s": 7.549,
+      "lineas": [
+        {
+          "toma": "tomas_b7_1.mp3",
+          "label": "Tomás 7B · ¿No estabas en el baño?",
+          "plano": "P4 0,5–3,2",
+          "entra_tabla_s": 0.7,
+          "entra_archivo_s": 0.7,
+          "fin_archivo_s": 2.973,
+          "onset_habla_medido_s": 0.808,
+          "desfase_vs_tabla_s": 0.108
+        }
+      ]
+    }
+  ]
+}
