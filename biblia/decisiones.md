@@ -171,5 +171,11 @@ Notas de Cristian sobre el animatic v1 y v2 del capítulo 1. Detalle en `producc
 - **GPT Image 2.5 entra al pipeline** para la previsualización, los fotogramas guía y los estados nuevos; Nano Banana Pro queda para ediciones de una sola variable. Motivo: decisión de Cristian.
 - **Llamadas cortas** (de 4 a 8 s y hasta tres planos en H3), **dos semillas por llamada** y **todos los personajes en cuadro con su hoja**. Motivo: las llamadas largas generaban tiempo muerto y los personajes solo descritos cambiaban de cara.
 - **Lista de fallas que no se repiten** (`revision_v1.md`, sección 5): cada bot revisa su entrega contra ella antes de mandarla. Motivo: Cristian no quiere 150 correcciones ni 20 versiones antes de la versión en alta.
-- **Más presupuesto:** tope propuesto de 40 USD en fal para el animatic v3. Motivo: Cristian pidió gastar lo necesario para que salga bien.
+- **Más presupuesto:** tope de 40 USD en fal para el animatic v3. Motivo: Cristian pidió gastar lo necesario para que salga bien.
+
+## 19-oct-2026 · Assets v10 y previs
+
+- **Tope de fal del v3: 40 USD, techo no meta.** Las tandas sueltas siguen con el tope que se les asigne (esta de assets: 3 USD). Motivo: Cristian lo confirma.
+- **b0_p2:** la manga que empuja el maletín es la del abrigo gris, con el puño del suéter avena asomando y cubriéndole los nudillos. Motivo: decisión de Cristian para la previsualización.
+- **c04b en previs:** Hugo toma A (2,3 s) entra a los 2,5 s de `pistas/c04b.mp3`; el pitazo va como efecto en post a los 2,1 s. Motivo: tiempos de Cristian para `cap01_previs_v1`.
 

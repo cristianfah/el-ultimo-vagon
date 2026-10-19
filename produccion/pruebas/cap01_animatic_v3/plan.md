@@ -6,7 +6,7 @@
 
 **Antes de empezar:** fusionar a `main` los PR #11 (assets, `fal_urls_v1.json`, tomas) y #12 (prompts del productor), para que todos trabajen sobre lo mismo.
 
-## Presupuesto: tope de 40 USD en fal (propuesto; Cristian confirma)
+## Presupuesto: tope de 40 USD en fal (techo, no meta; Cristian, 19-oct-2026)
 
 | Partida | Detalle | Costo aproximado |
 | --- | --- | --- |
@@ -37,6 +37,8 @@ Cada fase tiene una entrega y una revisión. Ninguna fase empieza sin que la ant
 
 - **Un fotograma por plano** del guion v10, en GPT Image 2.5 (`openai/gpt-image-2.5/flare/edit`; `sunburst/edit` para el P1 del bloque 0), 9:16, con las hojas de los personajes en cuadro y la plancha del set como referencias.
 - **Cada prompt de fotograma describe el instante más representativo del plano:** tamaño, altura de cámara, lente, quién está dónde y mirando a qué, la luz y las filas de «Estado del mundo» que aplican. Sin texto en la imagen.
+- **b0_p2 (decisión de Cristian, 19-oct):** manga del abrigo gris carbón, con el puño del suéter avena asomando y cubriéndole los nudillos. Prompt en `previs/prompts/b0_p2.txt`.
+- **Montaje de `cap01_previs_v1`:** EDL y audio en `previs/montaje.md`. `c04b.mp3`: Hugo toma A (2,3 s) entra a los 2,5 s; pitazo como efecto en post a los 2,1 s.
 - **El video de la previsualización** son los fotogramas fijos con la duración de cada plano y las pistas de diálogo encima, más un efecto de sonido simple donde ayude a entender (golpes, grito). Sirve para aprobar encuadres, continuidad y ritmo antes de gastar en video.
 - **Los fotogramas aprobados** son el primer fotograma de cada llamada (`image_url`) y la referencia de composición de los demás planos.
 
