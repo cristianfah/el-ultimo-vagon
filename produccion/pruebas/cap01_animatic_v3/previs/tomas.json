@@ -1,6 +1,6 @@
 {
   "tope_usd": 6.5,
-  "costo_usd": 3.176,
+  "costo_usd": 4.226,
   "tomas": [
     {
       "id": "b0_p1",
@@ -805,6 +805,97 @@
         "https://v3b.fal.media/files/b/0aaca77b/gxJvG_NylXQWPnPye25qY_HOJA_martina.png",
         "https://v3b.fal.media/files/b/0aaca77b/PzOwbqmC0cGCK6rcDZl44_F09_ambar_asiento_pareja.png"
       ],
+      "error": null
+    },
+    {
+      "id": "b3_p1",
+      "ok": true,
+      "lote": "previs_v1b",
+      "modelo": "fal-ai/nano-banana-pro/edit",
+      "costo_usd": 0.15,
+      "request_id": "01a151be-8fd2-76b2-af89-b075009c4c5a",
+      "elapsed_s": 26.1,
+      "url": "https://v3b.fal.media/files/b/0aaef1a0/hQ98-i1Bo4oKgv3VFZjol_e0cs04nQ.png",
+      "src": "/workspace/produccion/pruebas/cap01_animatic_v3/previs/frames/b0_p2.png",
+      "raw": "/workspace/produccion/pruebas/cap01_animatic_v3/previs/raw/b3_p1_v1b_nbp_0.png",
+      "error": null
+    },
+    {
+      "id": "b5_p5",
+      "ok": true,
+      "lote": "previs_v1b",
+      "modelo": "fal-ai/nano-banana-pro/edit",
+      "costo_usd": 0.15,
+      "request_id": "01a151be-909f-7f92-b33d-0e3e4ed0283a",
+      "elapsed_s": 26.4,
+      "url": "https://v3b.fal.media/files/b/0aaef1a0/gseL3DLPnUjc2VkgjJukC_Z2EvG6iM.png",
+      "src": "/workspace/produccion/pruebas/cap01_animatic_v3/previs/frames/b5_p5.png",
+      "raw": "/workspace/produccion/pruebas/cap01_animatic_v3/previs/raw/b5_p5_v1b_nbp_0.png",
+      "error": null
+    },
+    {
+      "id": "b7_p6",
+      "ok": true,
+      "lote": "previs_v1b",
+      "modelo": "fal-ai/nano-banana-pro/edit",
+      "costo_usd": 0.15,
+      "request_id": "01a151be-90bc-7842-afb6-61fb8e201f43",
+      "elapsed_s": 26.5,
+      "url": "https://v3b.fal.media/files/b/0aaef1a0/QkU2h557wJCvlBLPb_xQ1_ctMIA38K.png",
+      "src": "/workspace/produccion/pruebas/cap01_animatic_v3/previs/frames/b7_p6.png",
+      "raw": "/workspace/produccion/pruebas/cap01_animatic_v3/previs/raw/b7_p6_v1b_nbp_0.png",
+      "error": null
+    },
+    {
+      "id": "b7_p2",
+      "ok": true,
+      "lote": "previs_v1b",
+      "modelo": "fal-ai/nano-banana-pro/edit",
+      "costo_usd": 0.15,
+      "request_id": "01a151be-9223-7b93-a21d-50005a306d4b",
+      "elapsed_s": 28.1,
+      "url": "https://v3b.fal.media/files/b/0aaef1a0/nBuGaLsgBrVj5qiBeB1AH_zM0goobr.png",
+      "src": "/workspace/produccion/pruebas/cap01_animatic_v3/previs/frames/b7_p2.png",
+      "raw": "/workspace/produccion/pruebas/cap01_animatic_v3/previs/raw/b7_p2_v1b_nbp_0.png",
+      "error": null
+    },
+    {
+      "id": "b7_p5",
+      "ok": true,
+      "lote": "previs_v1b",
+      "modelo": "fal-ai/nano-banana-pro/edit",
+      "costo_usd": 0.15,
+      "request_id": "01a151be-902c-7681-94ea-4a7933c3b1bc",
+      "elapsed_s": 29.3,
+      "url": "https://v3b.fal.media/files/b/0aaef1a0/Us8laFCxThimWcIFRc-o6_OiOVkDXh.png",
+      "src": "/workspace/produccion/pruebas/cap01_animatic_v3/previs/frames/b7_p5.png",
+      "raw": "/workspace/produccion/pruebas/cap01_animatic_v3/previs/raw/b7_p5_v1b_nbp_0.png",
+      "error": null
+    },
+    {
+      "id": "b7_p2",
+      "ok": true,
+      "lote": "previs_v1b",
+      "nota": "segunda pasada: manchas oscuras",
+      "modelo": "fal-ai/nano-banana-pro/edit",
+      "costo_usd": 0.15,
+      "request_id": "01a151bf-d061-7d63-b442-849a5512b1eb",
+      "elapsed_s": 29.2,
+      "url": "https://v3b.fal.media/files/b/0aaef1a8/Qef7BAyuSaaKdDPPaQb-A_vnn4qBMW.png",
+      "raw": "/workspace/produccion/pruebas/cap01_animatic_v3/previs/raw/b7_p2_v1b_nbp_1.png",
+      "error": null
+    },
+    {
+      "id": "b7_p5",
+      "ok": true,
+      "lote": "previs_v1b",
+      "nota": "segunda pasada: manchas oscuras",
+      "modelo": "fal-ai/nano-banana-pro/edit",
+      "costo_usd": 0.15,
+      "request_id": "01a151bf-d079-7be3-b9fb-dd09b743e47f",
+      "elapsed_s": 30.9,
+      "url": "https://v3b.fal.media/files/b/0aaef1a8/n-BlaYsNkOF6eq4qnIybk_8dJZ0f21.png",
+      "raw": "/workspace/produccion/pruebas/cap01_animatic_v3/previs/raw/b7_p5_v1b_nbp_1.png",
       "error": null
     }
   ],

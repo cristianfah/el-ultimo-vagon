@@ -2,6 +2,7 @@
 """Monta cap01_previs_v1.mp4: fotogramas fijos 9:16 480x832 24 fps + 4 pistas."""
 from __future__ import annotations
 
+import argparse
 import json
 import pathlib
 import subprocess
@@ -40,6 +41,12 @@ def ffprobe_dur(path: pathlib.Path) -> float:
 
 
 def main():
+    global OUT
+    ap = argparse.ArgumentParser()
+    ap.add_argument("--out", default=str(OUT))
+    ap.add_argument("--no-md", action="store_true")
+    args = ap.parse_args()
+    OUT = pathlib.Path(args.out)
     pack = json.loads(PACK.read_text())
     shots = pack["shots"]
     missing = [s["id"] for s in shots if not (FRAMES / f"{s['id']}.png").exists()]
@@ -171,7 +178,8 @@ def main():
     md.append("")
     md.append("Hugo (toma A) entra a los 2,5 s de la pista original = 2,0 s del bloque c04b en este corte (0,5 s dentro de P5 / `b4_p5`).")
     md.append("")
-    MONTAJE.write_text("\n".join(md) + "\n")
+    if not args.no_md:
+        MONTAJE.write_text("\n".join(md) + "\n")
     print(json.dumps({
         "out": str(OUT),
         "dur": vdur,

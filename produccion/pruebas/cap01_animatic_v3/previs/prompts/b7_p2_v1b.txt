@@ -1,0 +1,11 @@
+Edit the image: dry glass with dark palm stains, and a dark gangway behind the man.
+
+CHANGE: the small wired-glass window is dry: no raindrops, no water streaks, no droplets on the glass or the metal frame. On that dry glass, matte dark red-black palm prints and smears, as if several hands had pressed from the other side. Behind the man, through the glass, only the dark accordion gangway: black rubber walls close behind him, no lit carriage, no receding corridor, no far door, no distant window. The only light on the glass is the cold white fluorescent tube above the door, a thin highlight on the wire mesh; the gangway behind him stays dark.
+
+PRESERVE EXACTLY:
+- the man's face, wet hair, beige jacket over the hoodie, pose, mouth open, his arms
+- the metal window frame, rivets, rhombic wire mesh
+- camera position, lens, vertical framing, 9:16 aspect
+- colour grade and grain; do not add new lamps
+
+ONLY CHANGE: dry glass, dark red-black stains on the glass, dark gangway behind him. Everything else stays identical. No text.

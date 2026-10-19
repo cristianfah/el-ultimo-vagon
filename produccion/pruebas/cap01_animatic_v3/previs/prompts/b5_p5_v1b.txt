@@ -1,0 +1,11 @@
+Edit the image: the same insert, with a RIGHT hand instead of a left.
+
+CHANGE: the hand on the jagged glass is a RIGHT hand, viewed from the back. The wrist still enters from frame left. The thumb sits on the lower edge of the hand, toward the glass; the four fingers point up along the shards; the nails are on the far side of the glass. Same brown coat sleeve and white cuff ending at the wrist. Same thin cut and dark red-black stain on the hand and the glass edge.
+
+PRESERVE EXACTLY:
+- the metal door window frame, rivets, jagged glass still stuck in the frame
+- the dark red carriage interior through the empty window, out of focus, no sky, no rain
+- camera position, lens, vertical framing, 9:16 aspect
+- every light source (steady red emergency light), shadows, colour grade, grain
+
+ONLY CHANGE: the hand's laterality to a right hand. Everything else stays identical. No text.

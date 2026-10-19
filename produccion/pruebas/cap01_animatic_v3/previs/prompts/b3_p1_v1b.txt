@@ -1,0 +1,13 @@
+Edit the image: the same floor-level shot, without the hand and the boot on the right.
+
+CHANGE: the woman's right hand and the brown boot on the right are gone. After they are gone, the aisle floor and the right side of the briefcase are empty; nobody crouches there. The briefcase stays exactly where it is, half under the window seat on the aisle side, its back edge jammed on the seat's metal rail. No standing person appears beside the briefcase.
+
+PRESERVE EXACTLY:
+- camera position, floor-level framing, 9:16 aspect
+- the navy seat, metal rail, curtains, far door
+- the sleeping passenger's legs and brown shoes on the left, only those, still seated
+- the briefcase shape, dark body and metal corners
+- the aisle rubber strip
+- every light source (amber reading lamps), shadows, colour grade, grain
+
+ONLY CHANGE: remove the hand and the boot on the right. Everything else stays identical. No text.
