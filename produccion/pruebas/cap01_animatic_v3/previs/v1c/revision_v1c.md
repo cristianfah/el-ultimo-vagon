@@ -1,3 +1,19 @@
+# Previs v1c · corrida del 19-oct-2026
+
+Montaje: `cap01_previs_v1c.mp4`, 70.5 s, 1692 fotogramas a 24 fps, 480×832, 43 planos y 44 segmentos (el de más es el negro de 0.5 s de `b4_p3`). Los cortes coinciden con `tiempos_montaje_v3.json`.
+
+Costo de esta corrida, estimado, porque fal no devolvió monto: **8.29 USD**. El corredor dejó `gastado_usd` en 6.85 (las tarifas del lote de las llamadas V suman 6.40; los 0.45 restantes coinciden con el FIX de `b2_p4`). Sunburst, 25 llamadas, estimado 1.44. Detalle por llamada en `log_generaciones_v1c.json`. Decisiones en `log_decisiones_v1c.md`.
+
+Regenerados en sunburst desde el PNG original (dos o más cambios, o una edición que no se podía seguir apilando): `b0_p2`, `b0_p3`, `b2_p4`, `b3_p1`, `b3_p6`, `b4_p6`, `b5_p6`, `b5_p8`, `b6_p1`, `b6_p2`, `b6_p3`, `b7_p1` a `b7_p6`. Editados y conservados (una variable, NBP o flare): `b0_p1`, `b0_p4`, `b1_f2`, `b2_p1`, `b2_p2`, `b2_p3`, `b3_p3`, `b3_p4`, `b3_p5`, `b4_p1`, `b5_p1`, `b5_p2`, `b5_p4`, `b5_p5`, `b5_p7`, `b5_p9`.
+
+Marcados, el montaje usa el original: `b3_p2` (V04, maletín fuera del lado pasillo en las dos tomas). `b6_p1` se marcó en NBP y después entró por sunburst.
+
+Fallas que quedaron en el corte: maletín de `b0_p2` y `b3_p1` al lado del asiento, no debajo; manga de Diego no solo en el brazo derecho; puño de Carmen sin entrar del todo al abrigo; uñas largas en `b5_p8`.
+
+V36–V47 no se corrieron: el bloque 7 salió en un sunburst por plano.
+
+---
+
 # Previs v1c · Parte B + 7 arreglos de Cristian (cap. 1)
 
 18-oct-2026, 22:55 (hora de Chile). Cristian aprobó la previs (22:45) y pidió la parte B (~5,75 USD) más siete arreglos. Después de esto la previs no vuelve a pasar por él, salvo que cambie la historia.

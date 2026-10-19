@@ -1,0 +1,3232 @@
+{
+ "lote": "previs_v1c",
+ "nota": "Un registro por llamada a fal. Ningún monto es una factura: fal no devolvió costo. costo_tipo dice estimado en todas.",
+ "estimado_usd": 8.29,
+ "gastado_usd_corredor": 6.85,
+ "llamadas": 73,
+ "records": [
+  {
+   "id": "V01_t0",
+   "paso": "V01",
+   "plano": "b0_p2",
+   "toma": 0,
+   "timestamp": "2026-10-19T02:01:25Z",
+   "timestamp_fuente": "mtime del PNG de salida, UTC",
+   "modelo": "nbp",
+   "endpoint": "fal-ai/nano-banana-pro/edit",
+   "params": {
+    "resolution": "2K",
+    "quality": null,
+    "aspect": "9:16",
+    "image_size": null,
+    "num_images": 1,
+    "seed": null,
+    "output_format": "png"
+   },
+   "prompt_file": "prompts/V01_b0_p2.txt",
+   "prompt": "Edit the image: lower the carriage light to the LOW amber of Image 2.\n\nCHANGE: Of the reading lamps under the luggage racks only two or three stay lit (the ones nearest the action in this shot); every other lamp and every ceiling fixture is dark. Short warm cones (~2800K) with real darkness between them; passengers away from the lit lamps fall into deep shade, almost silhouettes. Side windows stay black night with rain only on the outside of the glass.\n\nPRESERVE EXACTLY:\n- camera position, lens, framing and 9:16 aspect (unless the change says otherwise)\n- every person's face, hair, wardrobe, pose and eyeline not named in the change\n- every light source, shadow, colour grade and film grain not named in the change\n- natural hands with five separate fingers\n\nONLY CHANGE: lower the carriage light to the LOW amber of Image 2. Everything else stays identical. No text.",
+   "referencias": [
+    {
+     "orden": 1,
+     "path": "según resolve(): frame:b0_p2",
+     "rol": "fotograma que se edita"
+    },
+    {
+     "orden": 2,
+     "path": "ref:set/F08_v2_ambar_bajo.png",
+     "rol": "referencia de luz ámbar baja del vagón 2"
+    }
+   ],
+   "fal_request_id": null,
+   "output": "raw/V01_b0_p2_t0_nbp_0.png",
+   "costo_usd": 0.15,
+   "costo_tipo": "estimado",
+   "nota_costo": "Cifra del lote (NBP 0.15, flare 0.08). fal_gen.py no guarda el monto ni el request_id. El corredor sumó esta cifra a gastado_usd.",
+   "latencia_s": null,
+   "latencia_tipo": "no medida",
+   "veredicto": "retry",
+   "motivo_visual": "Esta toma no se aceptó. Criterio que se volvió a pedir: 2–3 lámparas; sigue el maletín bajo el asiento, lado pasillo; dedos",
+   "en_montaje": false
+  },
+  {
+   "id": "V01_t1",
+   "paso": "V01",
+   "plano": "b0_p2",
+   "toma": 1,
+   "timestamp": "2026-10-19T02:02:43Z",
+   "timestamp_fuente": "mtime del PNG de salida, UTC",
+   "modelo": "nbp",
+   "endpoint": "fal-ai/nano-banana-pro/edit",
+   "params": {
+    "resolution": "2K",
+    "quality": null,
+    "aspect": "9:16",
+    "image_size": null,
+    "num_images": 1,
+    "seed": null,
+    "output_format": "png"
+   },
+   "prompt_file": "prompts/V01_b0_p2.txt",
+   "prompt": "Edit the image: lower the carriage light to the LOW amber of Image 2.\n\nCHANGE: Of the reading lamps under the luggage racks only two or three stay lit (the ones nearest the action in this shot); every other lamp and every ceiling fixture is dark. Short warm cones (~2800K) with real darkness between them; passengers away from the lit lamps fall into deep shade, almost silhouettes. Side windows stay black night with rain only on the outside of the glass.\n\nPRESERVE EXACTLY:\n- camera position, lens, framing and 9:16 aspect (unless the change says otherwise)\n- every person's face, hair, wardrobe, pose and eyeline not named in the change\n- every light source, shadow, colour grade and film grain not named in the change\n- natural hands with five separate fingers\n\nONLY CHANGE: lower the carriage light to the LOW amber of Image 2. Everything else stays identical. No text.",
+   "referencias": [
+    {
+     "orden": 1,
+     "path": "según resolve(): frame:b0_p2",
+     "rol": "fotograma que se edita"
+    },
+    {
+     "orden": 2,
+     "path": "ref:set/F08_v2_ambar_bajo.png",
+     "rol": "referencia de luz ámbar baja del vagón 2"
+    }
+   ],
+   "fal_request_id": null,
+   "output": "raw/V01_b0_p2_t1_nbp_0.png",
+   "costo_usd": 0.15,
+   "costo_tipo": "estimado",
+   "nota_costo": "Cifra del lote (NBP 0.15, flare 0.08). fal_gen.py no guarda el monto ni el request_id. El corredor sumó esta cifra a gastado_usd.",
+   "latencia_s": null,
+   "latencia_tipo": "no medida",
+   "veredicto": "accept",
+   "motivo_visual": "Aceptada en la pasada secuencial. Criterio del lote: 2–3 lámparas; sigue el maletín bajo el asiento, lado pasillo; dedos",
+   "en_montaje": false
+  },
+  {
+   "id": "V02_t0",
+   "paso": "V02",
+   "plano": "b0_p2",
+   "toma": 0,
+   "timestamp": "2026-10-19T02:03:45Z",
+   "timestamp_fuente": "mtime del PNG de salida, UTC",
+   "modelo": "nbp",
+   "endpoint": "fal-ai/nano-banana-pro/edit",
+   "params": {
+    "resolution": "2K",
+    "quality": null,
+    "aspect": "9:16",
+    "image_size": null,
+    "num_images": 1,
+    "seed": null,
+    "output_format": "png"
+   },
+   "prompt_file": "prompts/V02_b0_p2.txt",
+   "prompt": "Edit the image: the oat sweater cuff covers her knuckles.\n\nCHANGE: The oat knit sweater cuff extends past her wrist out of the charcoal coat sleeve and covers her knuckles up to the first finger joints; only her fingertips show on top of the briefcase. Real knit texture; the hand is separate from the cuff; five separate fingers.\n\nPRESERVE EXACTLY:\n- camera position, lens, framing and 9:16 aspect (unless the change says otherwise)\n- every person's face, hair, wardrobe, pose and eyeline not named in the change\n- every light source, shadow, colour grade and film grain not named in the change\n- natural hands with five separate fingers\n\nONLY CHANGE: the oat sweater cuff covers her knuckles. Everything else stays identical. No text.",
+   "referencias": [
+    {
+     "orden": 1,
+     "path": "según resolve(): frame:b0_p2",
+     "rol": "salida ya editada del paso V01 (v1c/frames), no el PNG original"
+    }
+   ],
+   "fal_request_id": null,
+   "output": "raw/V02_b0_p2_t0_nbp_0.png",
+   "costo_usd": 0.15,
+   "costo_tipo": "estimado",
+   "nota_costo": "Cifra del lote (NBP 0.15, flare 0.08). fal_gen.py no guarda el monto ni el request_id. El corredor sumó esta cifra a gastado_usd.",
+   "latencia_s": null,
+   "latencia_tipo": "no medida",
+   "veredicto": "accept",
+   "motivo_visual": "Aceptada en la pasada secuencial. Criterio del lote: Decisión de Cristian: manga gris + puño avena sobre los nudillos · dedos sin artefacto",
+   "en_montaje": false
+  },
+  {
+   "id": "V03_t0",
+   "paso": "V03",
+   "plano": "b3_p1",
+   "toma": 0,
+   "timestamp": "2026-10-19T02:04:36Z",
+   "timestamp_fuente": "mtime del PNG de salida, UTC",
+   "modelo": "nbp",
+   "endpoint": "fal-ai/nano-banana-pro/edit",
+   "params": {
+    "resolution": "2K",
+    "quality": null,
+    "aspect": "9:16",
+    "image_size": null,
+    "num_images": 1,
+    "seed": null,
+    "output_format": "png"
+   },
+   "prompt_file": "prompts/V03_b3_p1.txt",
+   "prompt": "Edit the image: the same floor-level shot without her hand, sleeve and boot; the briefcase has sprung open by itself.\n\nCHANGE: Her hand, sleeve and boot are gone; nobody is in the aisle. The briefcase stays EXACTLY where it is: half under the sleeping man's window seat, on its AISLE side, its back edge on the seat's metal rail, NOT out in the aisle. Both latches have just sprung open and the lid is lifted a finger's width; a thin thread of white mist seeps from the gap. His dark shoes behind it stay still: he is seated.\n\nPRESERVE EXACTLY:\n- camera position, lens, framing and 9:16 aspect (unless the change says otherwise)\n- every person's face, hair, wardrobe, pose and eyeline not named in the change\n- every light source, shadow, colour grade and film grain not named in the change\n- natural hands with five separate fingers\n\nONLY CHANGE: the same floor-level shot without her hand, sleeve and boot; the briefcase has sprung open by itself. Everything else stays identical. No text.",
+   "referencias": [
+    {
+     "orden": 1,
+     "path": "según resolve(): frame:b0_p2",
+     "rol": "salida ya editada del paso V02 (v1c/frames), no el PNG original"
+    }
+   ],
+   "fal_request_id": null,
+   "output": "raw/V03_b3_p1_t0_nbp_0.png",
+   "costo_usd": 0.15,
+   "costo_tipo": "estimado",
+   "nota_costo": "Cifra del lote (NBP 0.15, flare 0.08). fal_gen.py no guarda el monto ni el request_id. El corredor sumó esta cifra a gastado_usd.",
+   "latencia_s": null,
+   "latencia_tipo": "no medida",
+   "veredicto": "accept",
+   "motivo_visual": "Aceptada en la pasada secuencial. Criterio del lote: Extra 1: maletín BAJO el asiento, lado pasillo, no en el pasillo · mismo encuadre que b0_p2 · nadie de pie",
+   "en_montaje": false
+  },
+  {
+   "id": "V04_t0",
+   "paso": "V04",
+   "plano": "b3_p2",
+   "toma": 0,
+   "timestamp": "2026-10-19T02:05:38Z",
+   "timestamp_fuente": "mtime del PNG de salida, UTC",
+   "modelo": "flare",
+   "endpoint": "openai/gpt-image-2.5/flare/edit",
+   "params": {
+    "resolution": null,
+    "quality": "high",
+    "aspect": "9:16",
+    "image_size": {
+     "width": 1152,
+     "height": 2048
+    },
+    "num_images": 1,
+    "seed": null,
+    "output_format": "png"
+   },
+   "prompt_file": "prompts/V04_b3_p2.txt",
+   "prompt": "FILM STILL, vertical 9:16. Image 1 is the previous shot (b3_p1): same carriage, same briefcase under the same seat, same low amber light. Image 2 is the blue-shirt man (identity and wardrobe only). Image 3 is the briefcase. Image 4 is carriage 2's LOW amber light (only two or three reading lamps lit). MOMENT: low shot at shin height, a little further back than Image 1. The blue-shirt man is SEATED in his window seat and ASLEEP: we only see his lower legs from the knees down, knees bent, both dark shoes flat on the floor in front of his seat, trouser hems; the TOP edge of the frame is at his knees. Nobody is standing. The briefcase is under his seat on the AISLE side exactly as in Image 1, lid open a finger's width; a thin, low white mist creeps out of the gap across the floor and rises between his shoes around his ankles and shins, not dense. CAMERA: at shin height, 35mm, f/2.8, ready to tilt up to the knees. LIGHT: one amber cone catches the mist and the metal corner; the rest falls to black. Shot on 35mm film, Kodak Vision3 500T grain, practical light only, blacks fall to black, no HDR, no glow halos. No text, no captions, no watermark.",
+   "referencias": [
+    {
+     "orden": 1,
+     "path": "según resolve(): frame:b3_p1",
+     "rol": "salida ya editada del paso V03 (v1c/frames), no el PNG original"
+    },
+    {
+     "orden": 2,
+     "path": "ref:personajes/HOJA_extra_pareja_camisa_azul.png",
+     "rol": "hoja de la pareja de camisa azul"
+    },
+    {
+     "orden": 3,
+     "path": "ref:props/PROP_maletin_v2.png",
+     "rol": "referencia del maletín cerrado"
+    },
+    {
+     "orden": 4,
+     "path": "ref:set/F08_v2_ambar_bajo.png",
+     "rol": "referencia de luz ámbar baja del vagón 2"
+    }
+   ],
+   "fal_request_id": null,
+   "output": "raw/V04_b3_p2_t0_flare_0.png",
+   "costo_usd": 0.08,
+   "costo_tipo": "estimado",
+   "nota_costo": "Cifra del lote (NBP 0.15, flare 0.08). fal_gen.py no guarda el monto ni el request_id. El corredor sumó esta cifra a gastado_usd.",
+   "latencia_s": null,
+   "latencia_tipo": "no medida",
+   "veredicto": "flag",
+   "motivo_visual": "dos tomas: t0 maletín fuera del asiento, al lado de las piernas; t1 bajo el asiento pero del lado de la ventana, no del pasillo. Sentado en ambas.",
+   "en_montaje": false
+  },
+  {
+   "id": "V04_t1",
+   "paso": "V04",
+   "plano": "b3_p2",
+   "toma": 1,
+   "timestamp": "2026-10-19T02:06:37Z",
+   "timestamp_fuente": "mtime del PNG de salida, UTC",
+   "modelo": "flare",
+   "endpoint": "openai/gpt-image-2.5/flare/edit",
+   "params": {
+    "resolution": null,
+    "quality": "high",
+    "aspect": "9:16",
+    "image_size": {
+     "width": 1152,
+     "height": 2048
+    },
+    "num_images": 1,
+    "seed": null,
+    "output_format": "png"
+   },
+   "prompt_file": "prompts/V04_b3_p2.txt",
+   "prompt": "FILM STILL, vertical 9:16. Image 1 is the previous shot (b3_p1): same carriage, same briefcase under the same seat, same low amber light. Image 2 is the blue-shirt man (identity and wardrobe only). Image 3 is the briefcase. Image 4 is carriage 2's LOW amber light (only two or three reading lamps lit). MOMENT: low shot at shin height, a little further back than Image 1. The blue-shirt man is SEATED in his window seat and ASLEEP: we only see his lower legs from the knees down, knees bent, both dark shoes flat on the floor in front of his seat, trouser hems; the TOP edge of the frame is at his knees. Nobody is standing. The briefcase is under his seat on the AISLE side exactly as in Image 1, lid open a finger's width; a thin, low white mist creeps out of the gap across the floor and rises between his shoes around his ankles and shins, not dense. CAMERA: at shin height, 35mm, f/2.8, ready to tilt up to the knees. LIGHT: one amber cone catches the mist and the metal corner; the rest falls to black. Shot on 35mm film, Kodak Vision3 500T grain, practical light only, blacks fall to black, no HDR, no glow halos. No text, no captions, no watermark.",
+   "referencias": [
+    {
+     "orden": 1,
+     "path": "según resolve(): frame:b3_p1",
+     "rol": "salida ya editada del paso V03 (v1c/frames), no el PNG original"
+    },
+    {
+     "orden": 2,
+     "path": "ref:personajes/HOJA_extra_pareja_camisa_azul.png",
+     "rol": "hoja de la pareja de camisa azul"
+    },
+    {
+     "orden": 3,
+     "path": "ref:props/PROP_maletin_v2.png",
+     "rol": "referencia del maletín cerrado"
+    },
+    {
+     "orden": 4,
+     "path": "ref:set/F08_v2_ambar_bajo.png",
+     "rol": "referencia de luz ámbar baja del vagón 2"
+    }
+   ],
+   "fal_request_id": null,
+   "output": "raw/V04_b3_p2_t1_flare_0.png",
+   "costo_usd": 0.08,
+   "costo_tipo": "estimado",
+   "nota_costo": "Cifra del lote (NBP 0.15, flare 0.08). fal_gen.py no guarda el monto ni el request_id. El corredor sumó esta cifra a gastado_usd.",
+   "latencia_s": null,
+   "latencia_tipo": "no medida",
+   "veredicto": "flag",
+   "motivo_visual": "dos tomas: t0 maletín fuera del asiento, al lado de las piernas; t1 bajo el asiento pero del lado de la ventana, no del pasillo. Sentado en ambas.",
+   "en_montaje": false
+  },
+  {
+   "id": "V05_t0",
+   "paso": "V05",
+   "plano": "b0_p3",
+   "toma": 0,
+   "timestamp": "2026-10-19T02:08:01Z",
+   "timestamp_fuente": "mtime del PNG de salida, UTC",
+   "modelo": "nbp",
+   "endpoint": "fal-ai/nano-banana-pro/edit",
+   "params": {
+    "resolution": "2K",
+    "quality": null,
+    "aspect": "9:16",
+    "image_size": null,
+    "num_images": 1,
+    "seed": null,
+    "output_format": "png"
+   },
+   "prompt_file": "prompts/V05_b0_p3.txt",
+   "prompt": "Edit the image: lower the carriage light to the LOW amber of Image 2.\n\nCHANGE: Of the reading lamps under the luggage racks only two or three stay lit (the ones nearest the action in this shot); every other lamp and every ceiling fixture is dark. Short warm cones (~2800K) with real darkness between them; passengers away from the lit lamps fall into deep shade, almost silhouettes. Side windows stay black night with rain only on the outside of the glass.\n\nPRESERVE EXACTLY:\n- camera position, lens, framing and 9:16 aspect (unless the change says otherwise)\n- every person's face, hair, wardrobe, pose and eyeline not named in the change\n- every light source, shadow, colour grade and film grain not named in the change\n- natural hands with five separate fingers\n\nONLY CHANGE: lower the carriage light to the LOW amber of Image 2. Everything else stays identical. No text.",
+   "referencias": [
+    {
+     "orden": 1,
+     "path": "según resolve(): frame:b0_p3",
+     "rol": "fotograma que se edita"
+    },
+    {
+     "orden": 2,
+     "path": "ref:set/F08_v2_ambar_bajo.png",
+     "rol": "referencia de luz ámbar baja del vagón 2"
+    }
+   ],
+   "fal_request_id": null,
+   "output": "raw/V05_b0_p3_t0_nbp_0.png",
+   "costo_usd": 0.15,
+   "costo_tipo": "estimado",
+   "nota_costo": "Cifra del lote (NBP 0.15, flare 0.08). fal_gen.py no guarda el monto ni el request_id. El corredor sumó esta cifra a gastado_usd.",
+   "latencia_s": null,
+   "latencia_tipo": "no medida",
+   "veredicto": "accept",
+   "motivo_visual": "Aceptada en la pasada secuencial. Criterio del lote: 2–3 lámparas; el hombre y la esposa siguen dormidos",
+   "en_montaje": false
+  },
+  {
+   "id": "V06_t0",
+   "paso": "V06",
+   "plano": "b0_p3",
+   "toma": 0,
+   "timestamp": "2026-10-19T02:08:48Z",
+   "timestamp_fuente": "mtime del PNG de salida, UTC",
+   "modelo": "nbp",
+   "endpoint": "fal-ai/nano-banana-pro/edit",
+   "params": {
+    "resolution": "2K",
+    "quality": null,
+    "aspect": "9:16",
+    "image_size": null,
+    "num_images": 1,
+    "seed": null,
+    "output_format": "png"
+   },
+   "prompt_file": "prompts/V06_b0_p3.txt",
+   "prompt": "Edit the image: Martina looks at the sleeping man.\n\nCHANGE: Martina, standing at the right edge with her hand on the seatback, has her head and eyes turned DOWN-LEFT toward the blue-shirt man who stirs in the window seat at frame left: her eyeline lands on his face, frozen, breath held. She does not look off frame or at the camera.\n\nPRESERVE EXACTLY:\n- camera position, lens, framing and 9:16 aspect (unless the change says otherwise)\n- every person's face, hair, wardrobe, pose and eyeline not named in the change\n- every light source, shadow, colour grade and film grain not named in the change\n- natural hands with five separate fingers\n\nONLY CHANGE: Martina looks at the sleeping man. Everything else stays identical. No text.",
+   "referencias": [
+    {
+     "orden": 1,
+     "path": "según resolve(): frame:b0_p3",
+     "rol": "salida ya editada del paso V05 (v1c/frames), no el PNG original"
+    }
+   ],
+   "fal_request_id": null,
+   "output": "raw/V06_b0_p3_t0_nbp_0.png",
+   "costo_usd": 0.15,
+   "costo_tipo": "estimado",
+   "nota_costo": "Cifra del lote (NBP 0.15, flare 0.08). fal_gen.py no guarda el monto ni el request_id. El corredor sumó esta cifra a gastado_usd.",
+   "latencia_s": null,
+   "latencia_tipo": "no medida",
+   "veredicto": "accept",
+   "motivo_visual": "Aceptada en la pasada secuencial. Criterio del lote: Extra 3: mira al hombre que se remueve (eje hacia la izquierda), no fuera de cuadro",
+   "en_montaje": false
+  },
+  {
+   "id": "V07_t0",
+   "paso": "V07",
+   "plano": "b0_p4",
+   "toma": 0,
+   "timestamp": "2026-10-19T02:09:37Z",
+   "timestamp_fuente": "mtime del PNG de salida, UTC",
+   "modelo": "nbp",
+   "endpoint": "fal-ai/nano-banana-pro/edit",
+   "params": {
+    "resolution": "2K",
+    "quality": null,
+    "aspect": "9:16",
+    "image_size": null,
+    "num_images": 1,
+    "seed": null,
+    "output_format": "png"
+   },
+   "prompt_file": "prompts/V07_b0_p4.txt",
+   "prompt": "Edit the image: lower the carriage light to the LOW amber of Image 2.\n\nCHANGE: Of the reading lamps under the luggage racks only two or three stay lit (the ones nearest the action in this shot); every other lamp and every ceiling fixture is dark. Short warm cones (~2800K) with real darkness between them; passengers away from the lit lamps fall into deep shade, almost silhouettes. Side windows stay black night with rain only on the outside of the glass.\n\nPRESERVE EXACTLY:\n- camera position, lens, framing and 9:16 aspect (unless the change says otherwise)\n- every person's face, hair, wardrobe, pose and eyeline not named in the change\n- every light source, shadow, colour grade and film grain not named in the change\n- natural hands with five separate fingers\n\nONLY CHANGE: lower the carriage light to the LOW amber of Image 2. Everything else stays identical. No text.",
+   "referencias": [
+    {
+     "orden": 1,
+     "path": "según resolve(): frame:b0_p4",
+     "rol": "fotograma que se edita"
+    },
+    {
+     "orden": 2,
+     "path": "ref:set/F08_v2_ambar_bajo.png",
+     "rol": "referencia de luz ámbar baja del vagón 2"
+    }
+   ],
+   "fal_request_id": null,
+   "output": "raw/V07_b0_p4_t0_nbp_0.png",
+   "costo_usd": 0.15,
+   "costo_tipo": "estimado",
+   "nota_costo": "Cifra del lote (NBP 0.15, flare 0.08). fal_gen.py no guarda el monto ni el request_id. El corredor sumó esta cifra a gastado_usd.",
+   "latencia_s": null,
+   "latencia_tipo": "no medida",
+   "veredicto": "accept",
+   "motivo_visual": "Aceptada en la pasada secuencial. Criterio del lote: 2–3 lámparas; la lectora sigue bajo SU lámpara encendida, misma cara",
+   "en_montaje": true
+  },
+  {
+   "id": "V08_t0",
+   "paso": "V08",
+   "plano": "b3_p3",
+   "toma": 0,
+   "timestamp": "2026-10-19T02:10:45Z",
+   "timestamp_fuente": "mtime del PNG de salida, UTC",
+   "modelo": "nbp",
+   "endpoint": "fal-ai/nano-banana-pro/edit",
+   "params": {
+    "resolution": "2K",
+    "quality": null,
+    "aspect": "9:16",
+    "image_size": null,
+    "num_images": 1,
+    "seed": null,
+    "output_format": "png"
+   },
+   "prompt_file": "prompts/V08_b3_p3.txt",
+   "prompt": "Edit the image: lower the carriage light to the LOW amber of Image 2.\n\nCHANGE: Of the reading lamps under the luggage racks only two or three stay lit (the ones nearest the action in this shot); every other lamp and every ceiling fixture is dark. Short warm cones (~2800K) with real darkness between them; passengers away from the lit lamps fall into deep shade, almost silhouettes. Side windows stay black night with rain only on the outside of the glass.\n\nPRESERVE EXACTLY:\n- camera position, lens, framing and 9:16 aspect (unless the change says otherwise)\n- every person's face, hair, wardrobe, pose and eyeline not named in the change\n- every light source, shadow, colour grade and film grain not named in the change\n- natural hands with five separate fingers\n\nONLY CHANGE: lower the carriage light to the LOW amber of Image 2. Everything else stays identical. No text.",
+   "referencias": [
+    {
+     "orden": 1,
+     "path": "según resolve(): frame:b3_p3",
+     "rol": "fotograma que se edita"
+    },
+    {
+     "orden": 2,
+     "path": "ref:set/F08_v2_ambar_bajo.png",
+     "rol": "referencia de luz ámbar baja del vagón 2"
+    }
+   ],
+   "fal_request_id": null,
+   "output": "raw/V08_b3_p3_t0_nbp_0.png",
+   "costo_usd": 0.15,
+   "costo_tipo": "estimado",
+   "nota_costo": "Cifra del lote (NBP 0.15, flare 0.08). fal_gen.py no guarda el monto ni el request_id. El corredor sumó esta cifra a gastado_usd.",
+   "latencia_s": null,
+   "latencia_tipo": "no medida",
+   "veredicto": "accept",
+   "motivo_visual": "Aceptada en la pasada secuencial. Criterio del lote: 2–3 lámparas; él izq. tosiendo, mano derecha al cuello, esposa der.",
+   "en_montaje": true
+  },
+  {
+   "id": "V09_t0",
+   "paso": "V09",
+   "plano": "b3_p5",
+   "toma": 0,
+   "timestamp": "2026-10-19T02:11:43Z",
+   "timestamp_fuente": "mtime del PNG de salida, UTC",
+   "modelo": "nbp",
+   "endpoint": "fal-ai/nano-banana-pro/edit",
+   "params": {
+    "resolution": "2K",
+    "quality": null,
+    "aspect": "9:16",
+    "image_size": null,
+    "num_images": 1,
+    "seed": null,
+    "output_format": "png"
+   },
+   "prompt_file": "prompts/V09_b3_p5.txt",
+   "prompt": "Edit the image: lower the carriage light to the LOW amber of Image 2.\n\nCHANGE: Of the reading lamps under the luggage racks only two or three stay lit (the ones nearest the action in this shot); every other lamp and every ceiling fixture is dark. Short warm cones (~2800K) with real darkness between them; passengers away from the lit lamps fall into deep shade, almost silhouettes. Side windows stay black night with rain only on the outside of the glass.\n\nPRESERVE EXACTLY:\n- camera position, lens, framing and 9:16 aspect (unless the change says otherwise)\n- every person's face, hair, wardrobe, pose and eyeline not named in the change\n- every light source, shadow, colour grade and film grain not named in the change\n- natural hands with five separate fingers\n\nONLY CHANGE: lower the carriage light to the LOW amber of Image 2. Everything else stays identical. No text.",
+   "referencias": [
+    {
+     "orden": 1,
+     "path": "según resolve(): frame:b3_p5",
+     "rol": "fotograma que se edita"
+    },
+    {
+     "orden": 2,
+     "path": "ref:set/F08_v2_ambar_bajo.png",
+     "rol": "referencia de luz ámbar baja del vagón 2"
+    }
+   ],
+   "fal_request_id": null,
+   "output": "raw/V09_b3_p5_t0_nbp_0.png",
+   "costo_usd": 0.15,
+   "costo_tipo": "estimado",
+   "nota_costo": "Cifra del lote (NBP 0.15, flare 0.08). fal_gen.py no guarda el monto ni el request_id. El corredor sumó esta cifra a gastado_usd.",
+   "latencia_s": null,
+   "latencia_tipo": "no medida",
+   "veredicto": "accept",
+   "motivo_visual": "Aceptada en la pasada secuencial. Criterio del lote: 2–3 lámparas · VIGILAR brazos fundidos (si siguen, marcar)",
+   "en_montaje": true
+  },
+  {
+   "id": "V10_t0",
+   "paso": "V10",
+   "plano": "b3_p6",
+   "toma": 0,
+   "timestamp": "2026-10-19T02:12:39Z",
+   "timestamp_fuente": "mtime del PNG de salida, UTC",
+   "modelo": "nbp",
+   "endpoint": "fal-ai/nano-banana-pro/edit",
+   "params": {
+    "resolution": "2K",
+    "quality": null,
+    "aspect": "9:16",
+    "image_size": null,
+    "num_images": 1,
+    "seed": null,
+    "output_format": "png"
+   },
+   "prompt_file": "prompts/V10_b3_p6.txt",
+   "prompt": "Edit the image: lower the carriage light to the LOW amber of Image 2.\n\nCHANGE: Of the reading lamps under the luggage racks only two or three stay lit (the ones nearest the action in this shot); every other lamp and every ceiling fixture is dark. Short warm cones (~2800K) with real darkness between them; passengers away from the lit lamps fall into deep shade, almost silhouettes. Side windows stay black night with rain only on the outside of the glass.\n\nPRESERVE EXACTLY:\n- camera position, lens, framing and 9:16 aspect (unless the change says otherwise)\n- every person's face, hair, wardrobe, pose and eyeline not named in the change\n- every light source, shadow, colour grade and film grain not named in the change\n- natural hands with five separate fingers\n\nONLY CHANGE: lower the carriage light to the LOW amber of Image 2. Everything else stays identical. No text.",
+   "referencias": [
+    {
+     "orden": 1,
+     "path": "según resolve(): frame:b3_p6",
+     "rol": "fotograma que se edita"
+    },
+    {
+     "orden": 2,
+     "path": "ref:set/F08_v2_ambar_bajo.png",
+     "rol": "referencia de luz ámbar baja del vagón 2"
+    }
+   ],
+   "fal_request_id": null,
+   "output": "raw/V10_b3_p6_t0_nbp_0.png",
+   "costo_usd": 0.15,
+   "costo_tipo": "estimado",
+   "nota_costo": "Cifra del lote (NBP 0.15, flare 0.08). fal_gen.py no guarda el monto ni el request_id. El corredor sumó esta cifra a gastado_usd.",
+   "latencia_s": null,
+   "latencia_tipo": "no medida",
+   "veredicto": "accept",
+   "motivo_visual": "Aceptada en la pasada secuencial. Criterio del lote: 2–3 lámparas; la lámpara de la lectora encendida",
+   "en_montaje": false
+  },
+  {
+   "id": "V11_t0",
+   "paso": "V11",
+   "plano": "b3_p6",
+   "toma": 0,
+   "timestamp": "2026-10-19T02:13:30Z",
+   "timestamp_fuente": "mtime del PNG de salida, UTC",
+   "modelo": "nbp",
+   "endpoint": "fal-ai/nano-banana-pro/edit",
+   "params": {
+    "resolution": "2K",
+    "quality": null,
+    "aspect": "9:16",
+    "image_size": null,
+    "num_images": 1,
+    "seed": null,
+    "output_format": "png"
+   },
+   "prompt_file": "prompts/V11_b3_p6.txt",
+   "prompt": "Edit the image: the couple in the foreground left becomes a dark struggling tangle.\n\nCHANGE: Foreground left: the calm seated couple becomes a dark struggling tangle in shadow, the man lunging onto his wife, shapes only, motion blur, nothing graphic. They are not looking at the camera.\n\nPRESERVE EXACTLY:\n- camera position, lens, framing and 9:16 aspect (unless the change says otherwise)\n- every person's face, hair, wardrobe, pose and eyeline not named in the change\n- every light source, shadow, colour grade and film grain not named in the change\n- natural hands with five separate fingers\n\nONLY CHANGE: the couple in the foreground left becomes a dark struggling tangle. Everything else stays identical. No text.",
+   "referencias": [
+    {
+     "orden": 1,
+     "path": "según resolve(): frame:b3_p6",
+     "rol": "salida ya editada del paso V10 (v1c/frames), no el PNG original"
+    }
+   ],
+   "fal_request_id": null,
+   "output": "raw/V11_b3_p6_t0_nbp_0.png",
+   "costo_usd": 0.15,
+   "costo_tipo": "estimado",
+   "nota_costo": "Cifra del lote (NBP 0.15, flare 0.08). fal_gen.py no guarda el monto ni el request_id. El corredor sumó esta cifra a gastado_usd.",
+   "latencia_s": null,
+   "latencia_tipo": "no medida",
+   "veredicto": "accept",
+   "motivo_visual": "Aceptada en la pasada secuencial. Criterio del lote: Forcejeo en primer término izq., sin nada gráfico",
+   "en_montaje": false
+  },
+  {
+   "id": "V12_t0",
+   "paso": "V12",
+   "plano": "b3_p6",
+   "toma": 0,
+   "timestamp": "2026-10-19T02:14:22Z",
+   "timestamp_fuente": "mtime del PNG de salida, UTC",
+   "modelo": "nbp",
+   "endpoint": "fal-ai/nano-banana-pro/edit",
+   "params": {
+    "resolution": "2K",
+    "quality": null,
+    "aspect": "9:16",
+    "image_size": null,
+    "num_images": 1,
+    "seed": null,
+    "output_format": "png"
+   },
+   "prompt_file": "prompts/V12_b3_p6.txt",
+   "prompt": "Edit the image: the screaming woman is the same reader as Image 2.\n\nCHANGE: The woman springing up and screaming at frame right is the same young woman as Image 2: same face, dark hair tied up in a bun, rust-red knitted scarf, dark top; no beige cardigan, no loose curly hair. Same pose, book falling, mouth open screaming.\n\nPRESERVE EXACTLY:\n- camera position, lens, framing and 9:16 aspect (unless the change says otherwise)\n- every person's face, hair, wardrobe, pose and eyeline not named in the change\n- every light source, shadow, colour grade and film grain not named in the change\n- natural hands with five separate fingers\n\nONLY CHANGE: the screaming woman is the same reader as Image 2. Everything else stays identical. No text.",
+   "referencias": [
+    {
+     "orden": 1,
+     "path": "según resolve(): frame:b3_p6",
+     "rol": "salida ya editada del paso V11 (v1c/frames), no el PNG original"
+    },
+    {
+     "orden": 2,
+     "path": "file:v1c/refs/lectora_b0_p4.png",
+     "rol": "recorte de la lectora tomado de b0_p4"
+    }
+   ],
+   "fal_request_id": null,
+   "output": "raw/V12_b3_p6_t0_nbp_0.png",
+   "costo_usd": 0.15,
+   "costo_tipo": "estimado",
+   "nota_costo": "Cifra del lote (NBP 0.15, flare 0.08). fal_gen.py no guarda el monto ni el request_id. El corredor sumó esta cifra a gastado_usd.",
+   "latencia_s": null,
+   "latencia_tipo": "no medida",
+   "veredicto": "accept",
+   "motivo_visual": "Aceptada en la pasada secuencial. Criterio del lote: Lectora = la de b0_p4 (cara, moño, bufanda) · no se parece a la esposa",
+   "en_montaje": false
+  },
+  {
+   "id": "V13_t0",
+   "paso": "V13",
+   "plano": "b3_p4",
+   "toma": 0,
+   "timestamp": "2026-10-19T02:15:11Z",
+   "timestamp_fuente": "mtime del PNG de salida, UTC",
+   "modelo": "nbp",
+   "endpoint": "fal-ai/nano-banana-pro/edit",
+   "params": {
+    "resolution": "2K",
+    "quality": null,
+    "aspect": "9:16",
+    "image_size": null,
+    "num_images": 1,
+    "seed": null,
+    "output_format": "png"
+   },
+   "prompt_file": "prompts/V13_b3_p4.txt",
+   "prompt": "Edit the image: the moment just before the change: normal eyes and clean neck.\n\nCHANGE: His eyes are normal human eyes with dark irises, half-closed, and his neck and jaw skin is clean, with no veins and no marks: the instant just before the change. Same head angle turning toward frame right.\n\nPRESERVE EXACTLY:\n- camera position, lens, framing and 9:16 aspect (unless the change says otherwise)\n- every person's face, hair, wardrobe, pose and eyeline not named in the change\n- every light source, shadow, colour grade and film grain not named in the change\n- natural hands with five separate fingers\n\nONLY CHANGE: the moment just before the change: normal eyes and clean neck. Everything else stays identical. No text.",
+   "referencias": [
+    {
+     "orden": 1,
+     "path": "según resolve(): frame:b3_p4",
+     "rol": "fotograma que se edita"
+    }
+   ],
+   "fal_request_id": null,
+   "output": "raw/V13_b3_p4_t0_nbp_0.png",
+   "costo_usd": 0.15,
+   "costo_tipo": "estimado",
+   "nota_costo": "Cifra del lote (NBP 0.15, flare 0.08). fal_gen.py no guarda el monto ni el request_id. El corredor sumó esta cifra a gastado_usd.",
+   "latencia_s": null,
+   "latencia_tipo": "no medida",
+   "veredicto": "accept",
+   "motivo_visual": "Aceptada en la pasada secuencial. Criterio del lote: Estado inicial de c03b; el final lo da ESTADO_hombre_azul_infectado como referencia",
+   "en_montaje": true
+  },
+  {
+   "id": "V14_t0",
+   "paso": "V14",
+   "plano": "b0_p1",
+   "toma": 0,
+   "timestamp": "2026-10-19T02:15:59Z",
+   "timestamp_fuente": "mtime del PNG de salida, UTC",
+   "modelo": "nbp",
+   "endpoint": "fal-ai/nano-banana-pro/edit",
+   "params": {
+    "resolution": "2K",
+    "quality": null,
+    "aspect": "9:16",
+    "image_size": null,
+    "num_images": 1,
+    "seed": null,
+    "output_format": "png"
+   },
+   "prompt_file": "prompts/V14_b0_p1.txt",
+   "prompt": "Edit the image: reframe tighter, to an extreme close-up of her eyes.\n\nCHANGE: Push in to an extreme close-up framed from just above her eyebrows to her upper lip: both eyes and the bridge of the nose fill the frame, her eyes darting toward frame left. Same lamp beam across her eyes, same shadow.\n\nPRESERVE EXACTLY:\n- camera position, lens, framing and 9:16 aspect (unless the change says otherwise)\n- every person's face, hair, wardrobe, pose and eyeline not named in the change\n- every light source, shadow, colour grade and film grain not named in the change\n- natural hands with five separate fingers\n\nONLY CHANGE: reframe tighter, to an extreme close-up of her eyes. Everything else stays identical. No text.",
+   "referencias": [
+    {
+     "orden": 1,
+     "path": "según resolve(): frame:b0_p1",
+     "rol": "fotograma que se edita"
+    }
+   ],
+   "fal_request_id": null,
+   "output": "raw/V14_b0_p1_t0_nbp_0.png",
+   "costo_usd": 0.15,
+   "costo_tipo": "estimado",
+   "nota_costo": "Cifra del lote (NBP 0.15, flare 0.08). fal_gen.py no guarda el monto ni el request_id. El corredor sumó esta cifra a gastado_usd.",
+   "latencia_s": null,
+   "latencia_tipo": "no medida",
+   "veredicto": "retry",
+   "motivo_visual": "Esta toma no se aceptó. Criterio que se volvió a pedir: PPP ceja–labio superior · mirada a la izq. · si NBP no lo logra, se acepta y se pide push-in en c00a",
+   "en_montaje": false
+  },
+  {
+   "id": "V14_t1",
+   "paso": "V14",
+   "plano": "b0_p1",
+   "toma": 1,
+   "timestamp": "2026-10-19T02:16:49Z",
+   "timestamp_fuente": "mtime del PNG de salida, UTC",
+   "modelo": "nbp",
+   "endpoint": "fal-ai/nano-banana-pro/edit",
+   "params": {
+    "resolution": "2K",
+    "quality": null,
+    "aspect": "9:16",
+    "image_size": null,
+    "num_images": 1,
+    "seed": null,
+    "output_format": "png"
+   },
+   "prompt_file": "prompts/V14_b0_p1.txt",
+   "prompt": "Edit the image: reframe tighter, to an extreme close-up of her eyes.\n\nCHANGE: Push in to an extreme close-up framed from just above her eyebrows to her upper lip: both eyes and the bridge of the nose fill the frame, her eyes darting toward frame left. Same lamp beam across her eyes, same shadow.\n\nPRESERVE EXACTLY:\n- camera position, lens, framing and 9:16 aspect (unless the change says otherwise)\n- every person's face, hair, wardrobe, pose and eyeline not named in the change\n- every light source, shadow, colour grade and film grain not named in the change\n- natural hands with five separate fingers\n\nONLY CHANGE: reframe tighter, to an extreme close-up of her eyes. Everything else stays identical. No text.",
+   "referencias": [
+    {
+     "orden": 1,
+     "path": "según resolve(): frame:b0_p1",
+     "rol": "fotograma que se edita"
+    }
+   ],
+   "fal_request_id": null,
+   "output": "raw/V14_b0_p1_t1_nbp_0.png",
+   "costo_usd": 0.15,
+   "costo_tipo": "estimado",
+   "nota_costo": "Cifra del lote (NBP 0.15, flare 0.08). fal_gen.py no guarda el monto ni el request_id. El corredor sumó esta cifra a gastado_usd.",
+   "latencia_s": null,
+   "latencia_tipo": "no medida",
+   "veredicto": "accept",
+   "motivo_visual": "Aceptada en la pasada secuencial. Criterio del lote: PPP ceja–labio superior · mirada a la izq. · si NBP no lo logra, se acepta y se pide push-in en c00a",
+   "en_montaje": true
+  },
+  {
+   "id": "V15_t0",
+   "paso": "V15",
+   "plano": "b1_f2",
+   "toma": 0,
+   "timestamp": "2026-10-19T02:17:42Z",
+   "timestamp_fuente": "mtime del PNG de salida, UTC",
+   "modelo": "nbp",
+   "endpoint": "fal-ai/nano-banana-pro/edit",
+   "params": {
+    "resolution": "2K",
+    "quality": null,
+    "aspect": "9:16",
+    "image_size": null,
+    "num_images": 1,
+    "seed": null,
+    "output_format": "png"
+   },
+   "prompt_file": "prompts/V15_b1_f2.txt",
+   "prompt": "Edit the image: the two background masks are completely smooth and featureless.\n\nCHANGE: The two masked figures standing in the background wear completely smooth, featureless grey masks: no eyes, no eye holes, no nose, no mouth, no lines.\n\nPRESERVE EXACTLY:\n- camera position, lens, framing and 9:16 aspect (unless the change says otherwise)\n- every person's face, hair, wardrobe, pose and eyeline not named in the change\n- every light source, shadow, colour grade and film grain not named in the change\n- natural hands with five separate fingers\n\nONLY CHANGE: the two background masks are completely smooth and featureless. Everything else stays identical. No text.",
+   "referencias": [
+    {
+     "orden": 1,
+     "path": "según resolve(): frame:b1_f2",
+     "rol": "fotograma que se edita"
+    }
+   ],
+   "fal_request_id": null,
+   "output": "raw/V15_b1_f2_t0_nbp_0.png",
+   "costo_usd": 0.15,
+   "costo_tipo": "estimado",
+   "nota_costo": "Cifra del lote (NBP 0.15, flare 0.08). fal_gen.py no guarda el monto ni el request_id. El corredor sumó esta cifra a gastado_usd.",
+   "latencia_s": null,
+   "latencia_tipo": "no medida",
+   "veredicto": "accept",
+   "motivo_visual": "Aceptada en la pasada secuencial. Criterio del lote: Máscaras lisas · cinta y muñecas visibles, el maletín no las tapa",
+   "en_montaje": true
+  },
+  {
+   "id": "V16_t0",
+   "paso": "V16",
+   "plano": "b2_p2",
+   "toma": 0,
+   "timestamp": "2026-10-19T02:18:40Z",
+   "timestamp_fuente": "mtime del PNG de salida, UTC",
+   "modelo": "nbp",
+   "endpoint": "fal-ai/nano-banana-pro/edit",
+   "params": {
+    "resolution": "2K",
+    "quality": null,
+    "aspect": "9:16",
+    "image_size": null,
+    "num_images": 1,
+    "seed": null,
+    "output_format": "png"
+   },
+   "prompt_file": "prompts/V16_b2_p2.txt",
+   "prompt": "Edit the image: the red mark on her right wrist is clearly visible before the sleeve covers it.\n\nCHANGE: Her sleeve has ridden up: across the inside of her RIGHT wrist, between the pushed-up oat cuff and her hand, a thin raw red line is clearly visible, like the mark a tight binding leaves (not a bracelet, not a thread, no jewellery). Her LEFT fingertips have just pinched the edge of the cuff to pull it down, but the mark is still fully uncovered.\n\nPRESERVE EXACTLY:\n- camera position, lens, framing and 9:16 aspect (unless the change says otherwise)\n- every person's face, hair, wardrobe, pose and eyeline not named in the change\n- every light source, shadow, colour grade and film grain not named in the change\n- natural hands with five separate fingers\n\nONLY CHANGE: the red mark on her right wrist is clearly visible before the sleeve covers it. Everything else stays identical. No text.",
+   "referencias": [
+    {
+     "orden": 1,
+     "path": "según resolve(): frame:b2_p2",
+     "rol": "fotograma que se edita"
+    }
+   ],
+   "fal_request_id": null,
+   "output": "raw/V16_b2_p2_t0_nbp_0.png",
+   "costo_usd": 0.15,
+   "costo_tipo": "estimado",
+   "nota_costo": "Cifra del lote (NBP 0.15, flare 0.08). fal_gen.py no guarda el monto ni el request_id. El corredor sumó esta cifra a gastado_usd.",
+   "latencia_s": null,
+   "latencia_tipo": "no medida",
+   "veredicto": "retry",
+   "motivo_visual": "Esta toma no se aceptó. Criterio que se volvió a pedir: Extra 2: la marca roja se lee ANTES de que los dedos bajen la manga · es lo único que cuenta el plano",
+   "en_montaje": false
+  },
+  {
+   "id": "V16_t1",
+   "paso": "V16",
+   "plano": "b2_p2",
+   "toma": 1,
+   "timestamp": "2026-10-19T02:19:45Z",
+   "timestamp_fuente": "mtime del PNG de salida, UTC",
+   "modelo": "nbp",
+   "endpoint": "fal-ai/nano-banana-pro/edit",
+   "params": {
+    "resolution": "2K",
+    "quality": null,
+    "aspect": "9:16",
+    "image_size": null,
+    "num_images": 1,
+    "seed": null,
+    "output_format": "png"
+   },
+   "prompt_file": "prompts/V16_b2_p2.txt",
+   "prompt": "Edit the image: the red mark on her right wrist is clearly visible before the sleeve covers it.\n\nCHANGE: Her sleeve has ridden up: across the inside of her RIGHT wrist, between the pushed-up oat cuff and her hand, a thin raw red line is clearly visible, like the mark a tight binding leaves (not a bracelet, not a thread, no jewellery). Her LEFT fingertips have just pinched the edge of the cuff to pull it down, but the mark is still fully uncovered.\n\nPRESERVE EXACTLY:\n- camera position, lens, framing and 9:16 aspect (unless the change says otherwise)\n- every person's face, hair, wardrobe, pose and eyeline not named in the change\n- every light source, shadow, colour grade and film grain not named in the change\n- natural hands with five separate fingers\n\nONLY CHANGE: the red mark on her right wrist is clearly visible before the sleeve covers it. Everything else stays identical. No text.",
+   "referencias": [
+    {
+     "orden": 1,
+     "path": "según resolve(): frame:b2_p2",
+     "rol": "fotograma que se edita"
+    }
+   ],
+   "fal_request_id": null,
+   "output": "raw/V16_b2_p2_t1_nbp_0.png",
+   "costo_usd": 0.15,
+   "costo_tipo": "estimado",
+   "nota_costo": "Cifra del lote (NBP 0.15, flare 0.08). fal_gen.py no guarda el monto ni el request_id. El corredor sumó esta cifra a gastado_usd.",
+   "latencia_s": null,
+   "latencia_tipo": "no medida",
+   "veredicto": "accept",
+   "motivo_visual": "Aceptada en la pasada secuencial. Criterio del lote: Extra 2: la marca roja se lee ANTES de que los dedos bajen la manga · es lo único que cuenta el plano",
+   "en_montaje": true
+  },
+  {
+   "id": "V17_t0",
+   "paso": "V17",
+   "plano": "b2_p3",
+   "toma": 0,
+   "timestamp": "2026-10-19T02:20:44Z",
+   "timestamp_fuente": "mtime del PNG de salida, UTC",
+   "modelo": "flare",
+   "endpoint": "openai/gpt-image-2.5/flare/edit",
+   "params": {
+    "resolution": null,
+    "quality": "high",
+    "aspect": "9:16",
+    "image_size": {
+     "width": 1152,
+     "height": 2048
+    },
+    "num_images": 1,
+    "seed": null,
+    "output_format": "png"
+   },
+   "prompt_file": "prompts/V17_b2_p3.txt",
+   "prompt": "FILM STILL, vertical 9:16. Image 1 is the two-shot of this scene (same carriage 5, same amber light, same wardrobe). Image 2 is Tomás: face, short neatly combed dark hair with a side parting, thin full metal-frame glasses, navy quilted jacket over a grey sweater (identity, hair and wardrobe only). Image 3 is Martina's oat knit sweater and charcoal coat (wardrobe only). Image 4 is carriage 5 and its amber light. MOMENT: close-up of Tomás from mid-chest up, positioned at frame RIGHT, turned and looking toward frame LEFT at Martina, who sits beside him at the window. A soft half smile: he has decided not to insist; lips parting on the first word of a gentle, sincere question. At the LEFT edge of frame, very close to camera and out of focus, Martina's shoulder in the oat knit sweater under the charcoal coat. Behind Tomás: the aisle and the seats on the other side of the carriage, with dozing passengers soft and dark. NO window anywhere behind him: the window is on Martina's side, out of frame left. His hair is exactly as Image 2: short, side-parted, tidy, no curls, no fringe. CAMERA: handheld, at seated eye height, 50mm, f/2, focus on his eyes behind the glasses. LIGHT: carriage 5 at night in warm amber from the reading lamps (~3000K), practical light only, deeper shade between lamps; a warm lamp catches the rim of his metal frames. Shot on 35mm film, Kodak Vision3 500T grain, blacks fall to black, real skin texture, no HDR, no glow halos. No text, no captions, no watermark.",
+   "referencias": [
+    {
+     "orden": 1,
+     "path": "según resolve(): frame:b2_p1",
+     "rol": "fotograma que se edita"
+    },
+    {
+     "orden": 2,
+     "path": "ref:personajes/HOJA_tomas.png",
+     "rol": "hoja de Tomás: pelo corto con partidura, anteojos, campera"
+    },
+    {
+     "orden": 3,
+     "path": "ref:personajes/HOJA_martina.png",
+     "rol": "hoja de Martina: cara, pelo, suéter avena, abrigo"
+    },
+    {
+     "orden": 4,
+     "path": "ref:set/F09_ambar_asiento_pareja.png",
+     "rol": "referencia de la banca de dos, sin divisor central"
+    }
+   ],
+   "fal_request_id": null,
+   "output": "raw/V17_b2_p3_t0_flare_0.png",
+   "costo_usd": 0.08,
+   "costo_tipo": "estimado",
+   "nota_costo": "Cifra del lote (NBP 0.15, flare 0.08). fal_gen.py no guarda el monto ni el request_id. El corredor sumó esta cifra a gastado_usd.",
+   "latencia_s": null,
+   "latencia_tipo": "no medida",
+   "veredicto": "accept",
+   "motivo_visual": "Aceptada en la pasada secuencial. Criterio del lote: Extra 7 + 6: Tomás a la DERECHA mirando a la izquierda · hombro avena desenfocado en el borde izq. · detrás: pasillo y asientos del otro lado, SIN ventana · pelo de la hoja",
+   "en_montaje": true
+  },
+  {
+   "id": "V18_t0",
+   "paso": "V18",
+   "plano": "b2_p4",
+   "toma": 0,
+   "timestamp": "2026-10-19T02:21:46Z",
+   "timestamp_fuente": "mtime del PNG de salida, UTC",
+   "modelo": "nbp",
+   "endpoint": "fal-ai/nano-banana-pro/edit",
+   "params": {
+    "resolution": "2K",
+    "quality": null,
+    "aspect": "9:16",
+    "image_size": null,
+    "num_images": 1,
+    "seed": null,
+    "output_format": "png"
+   },
+   "prompt_file": "prompts/V18_b2_p4.txt",
+   "prompt": "Edit the image: remove Tomás's hand; her hands rest alone.\n\nCHANGE: Tomás's hand and navy cuff are gone from the bottom right; her LEFT hand rests alone on the armrest. She still stares straight ahead, never at him.\n\nPRESERVE EXACTLY:\n- camera position, lens, framing and 9:16 aspect (unless the change says otherwise)\n- every person's face, hair, wardrobe, pose and eyeline not named in the change\n- every light source, shadow, colour grade and film grain not named in the change\n- natural hands with five separate fingers\n\nONLY CHANGE: remove Tomás's hand; her hands rest alone. Everything else stays identical. No text.",
+   "referencias": [
+    {
+     "orden": 1,
+     "path": "según resolve(): frame:b2_p4",
+     "rol": "fotograma que se edita"
+    }
+   ],
+   "fal_request_id": null,
+   "output": "raw/V18_b2_p4_t0_nbp_0.png",
+   "costo_usd": 0.15,
+   "costo_tipo": "estimado",
+   "nota_costo": "Cifra del lote (NBP 0.15, flare 0.08). fal_gen.py no guarda el monto ni el request_id. El corredor sumó esta cifra a gastado_usd.",
+   "latencia_s": null,
+   "latencia_tipo": "no medida",
+   "veredicto": "accept",
+   "motivo_visual": "Aceptada en la pasada secuencial. Criterio del lote: Estado inicial de P4: la mano de Tomás entra después · ventana a su lado (izq.) ✓",
+   "en_montaje": false
+  },
+  {
+   "id": "V19_t0",
+   "paso": "V19",
+   "plano": "b2_p1",
+   "toma": 0,
+   "timestamp": "2026-10-19T02:22:49Z",
+   "timestamp_fuente": "mtime del PNG de salida, UTC",
+   "modelo": "nbp",
+   "endpoint": "fal-ai/nano-banana-pro/edit",
+   "params": {
+    "resolution": "2K",
+    "quality": null,
+    "aspect": "9:16",
+    "image_size": null,
+    "num_images": 1,
+    "seed": null,
+    "output_format": "png"
+   },
+   "prompt_file": "prompts/V19_b2_p1.txt",
+   "prompt": "Edit the image: give Tomás the exact hair of Image 2.\n\nCHANGE: Tomás's hair becomes short dark brown hair, neatly combed with a side parting, tidy, short on the sides, as in Image 2: no curls, no fringe falling on the forehead, no messy waves. Same face, same thin metal-frame glasses.\n\nPRESERVE EXACTLY:\n- camera position, lens, framing and 9:16 aspect (unless the change says otherwise)\n- every person's face, hair, wardrobe, pose and eyeline not named in the change\n- every light source, shadow, colour grade and film grain not named in the change\n- natural hands with five separate fingers\n\nONLY CHANGE: give Tomás the exact hair of Image 2. Everything else stays identical. No text.",
+   "referencias": [
+    {
+     "orden": 1,
+     "path": "según resolve(): frame:b2_p1",
+     "rol": "fotograma que se edita"
+    },
+    {
+     "orden": 2,
+     "path": "ref:personajes/HOJA_tomas.png",
+     "rol": "hoja de Tomás: pelo corto con partidura, anteojos, campera"
+    }
+   ],
+   "fal_request_id": null,
+   "output": "raw/V19_b2_p1_t0_nbp_0.png",
+   "costo_usd": 0.15,
+   "costo_tipo": "estimado",
+   "nota_costo": "Cifra del lote (NBP 0.15, flare 0.08). fal_gen.py no guarda el monto ni el request_id. El corredor sumó esta cifra a gastado_usd.",
+   "latencia_s": null,
+   "latencia_tipo": "no medida",
+   "veredicto": "accept",
+   "motivo_visual": "Aceptada en la pasada secuencial. Criterio del lote: Extra 6: pelo corto con partidura · Tomás der. mira a la izq. · ventana del lado de Martina ✓",
+   "en_montaje": true
+  },
+  {
+   "id": "FIX_b2_p4_t0",
+   "paso": "FIX_b2_p4",
+   "plano": "b2_p4",
+   "toma": 0,
+   "timestamp": "2026-10-19T02:24:35Z",
+   "timestamp_fuente": "mtime del PNG, UTC",
+   "modelo": "nbp",
+   "endpoint": "fal-ai/nano-banana-pro/edit",
+   "params": {
+    "resolution": "2K",
+    "quality": null,
+    "aspect": "9:16",
+    "image_size": null,
+    "num_images": 1,
+    "seed": null,
+    "output_format": "png"
+   },
+   "prompt_file": "prompts/FIX_b2_p4_asiento.txt",
+   "prompt": "Edit the image: her seat is one place of a shared pair bench, as in Image 2, not a single seat.\n\nCHANGE: The seat she sits on becomes half of a shared two-person train bench like Image 2. Two navy backrests joined side by side and two cushions joined into one bench; the only metal armrests are at the outer ends (against the window and at the aisle). There is no dividing armrest and no gap between the two places. Martina stays in the window place, frame left. The empty aisle place of the same bench is visible beside her, frame right, unoccupied: its backrest and cushion continue into frame. Same Martina, same face, same hair, same oat sweater, same charcoal coat, same jeans, same hand alone on the window-side armrest, same stare straight ahead, never toward camera. Same amber lamps, same rainy window on the left.\n\nPRESERVE EXACTLY:\n- camera position, lens, framing and 9:16 aspect\n- Martina's face, hair, wardrobe, pose and eyeline\n- the amber light, shadows, colour grade and film grain\n- natural hands with five separate fingers\n- nobody else on her bench\n\nONLY CHANGE: the single seat becomes a shared pair bench. Everything else stays identical. No text.",
+   "referencias": [
+    {
+     "orden": 1,
+     "path": "frames/b2_p4.png en ese momento (salida de V18, ya editada)",
+     "rol": "imagen ya editada, no el original"
+    },
+    {
+     "orden": 2,
+     "path": ".refs_cache/F09_ambar_asiento_pareja.png",
+     "rol": "referencia de la banca de dos, sin divisor central"
+    }
+   ],
+   "fal_request_id": null,
+   "output": "raw/FIX_b2_p4_asiento_t0_nbp_0.png",
+   "costo_usd": 0.15,
+   "costo_tipo": "estimado",
+   "nota_costo": "Misma tarifa estimada de NBP. No está dentro de gastado_usd del corredor; el registro la anota aparte como 0.45 por las tres tomas.",
+   "latencia_s": null,
+   "latencia_tipo": "no medida",
+   "veredicto": "accept",
+   "motivo_visual": "Se ve la banca de dos, pero el plano quedó más abierto que el primer plano.",
+   "en_montaje": false
+  },
+  {
+   "id": "FIX_b2_p4_t1",
+   "paso": "FIX_b2_p4",
+   "plano": "b2_p4",
+   "toma": 1,
+   "timestamp": "2026-10-19T02:25:36Z",
+   "timestamp_fuente": "mtime del PNG, UTC",
+   "modelo": "nbp",
+   "endpoint": "fal-ai/nano-banana-pro/edit",
+   "params": {
+    "resolution": "2K",
+    "quality": null,
+    "aspect": "9:16",
+    "image_size": null,
+    "num_images": 1,
+    "seed": null,
+    "output_format": "png"
+   },
+   "prompt_file": "prompts/FIX_b2_p4_asiento_t1.txt",
+   "prompt": "Edit the image: turn the single seat into a shared pair bench, as in Image 2. Do not change the camera.\n\nCHANGE: Keep this exact close-up and this exact crop: Martina from the chest up, same size in frame, same head position. Only the seat changes. The single seatback behind her becomes one half of a shared two-person bench like Image 2: two navy backrests joined side by side, two cushions joined, no dividing armrest between them. The second, empty backrest of her own bench enters at the right edge, close beside her, unoccupied. Armrests only at the outer ends. She stays in the window place. Same face, same hair, same oat sweater, same charcoal coat, same hand alone on the armrest, same stare straight ahead.\n\nPRESERVE EXACTLY:\n- camera position, lens, framing, crop and 9:16 aspect. Do not pull back. Do not widen.\n- Martina's face, hair, wardrobe, pose and eyeline\n- the amber light, the rainy window on the left, shadows and film grain\n- natural hands with five separate fingers\n- nobody else on her bench\n\nONLY CHANGE: the single seatback becomes a joined pair bench. Everything else stays identical. No text.",
+   "referencias": [
+    {
+     "orden": 1,
+     "path": "raw/FIX_b2_p4_asiento_t0_nbp_0.png",
+     "rol": "imagen ya editada, no el original"
+    },
+    {
+     "orden": 2,
+     "path": ".refs_cache/F09_ambar_asiento_pareja.png",
+     "rol": "referencia de la banca de dos, sin divisor central"
+    }
+   ],
+   "fal_request_id": null,
+   "output": "raw/FIX_b2_p4_asiento_t1_nbp_0.png",
+   "costo_usd": 0.15,
+   "costo_tipo": "estimado",
+   "nota_costo": "Misma tarifa estimada de NBP. No está dentro de gastado_usd del corredor; el registro la anota aparte como 0.45 por las tres tomas.",
+   "latencia_s": null,
+   "latencia_tipo": "no medida",
+   "veredicto": "retry",
+   "motivo_visual": "No abrió el lugar de al lado: seguía leyéndose como asiento individual.",
+   "en_montaje": false
+  },
+  {
+   "id": "FIX_b2_p4_t2",
+   "paso": "FIX_b2_p4",
+   "plano": "b2_p4",
+   "toma": 2,
+   "timestamp": "2026-10-19T02:26:42Z",
+   "timestamp_fuente": "mtime del PNG, UTC",
+   "modelo": "nbp",
+   "endpoint": "fal-ai/nano-banana-pro/edit",
+   "params": {
+    "resolution": "2K",
+    "quality": null,
+    "aspect": "9:16",
+    "image_size": null,
+    "num_images": 1,
+    "seed": null,
+    "output_format": "png"
+   },
+   "prompt_file": "prompts/FIX_b2_p4_asiento_t2.txt",
+   "prompt": "Edit the image: push in to a chest-up close-up. Keep the shared pair bench exactly as it is.\n\nCHANGE: Move the camera closer until Martina fills the frame from the chest up, placed on the left half. The shared two-person bench stays: she sits in the window place, and the empty joined backrest and cushion of the same bench remain visible along the right edge, unoccupied, with no dividing armrest between the two places. Same face, same hair, same oat sweater, same charcoal coat, same stare straight ahead, her hand still resting on the bench. Window with rain stays on the left. Do not turn the bench back into a single seat. Do not add anyone beside her.\n\nPRESERVE EXACTLY:\n- the shared pair bench from Image 1 (two joined navy backs, two joined cushions, no center divider)\n- Martina's face, hair, wardrobe and forward eyeline\n- amber practical light, rainy window, film grain\n- natural hands with five separate fingers\n- 9:16 aspect\n\nONLY CHANGE: a closer chest-up framing. The pair bench stays. No text.",
+   "referencias": [
+    {
+     "orden": 1,
+     "path": "raw/FIX_b2_p4_asiento_t1_nbp_0.png",
+     "rol": "imagen ya editada, no el original"
+    },
+    {
+     "orden": 2,
+     "path": ".refs_cache/F09_ambar_asiento_pareja.png",
+     "rol": "referencia de la banca de dos, sin divisor central"
+    }
+   ],
+   "fal_request_id": null,
+   "output": "raw/FIX_b2_p4_asiento_t2_nbp_0.png",
+   "costo_usd": 0.15,
+   "costo_tipo": "estimado",
+   "nota_costo": "Misma tarifa estimada de NBP. No está dentro de gastado_usd del corredor; el registro la anota aparte como 0.45 por las tres tomas.",
+   "latencia_s": null,
+   "latencia_tipo": "no medida",
+   "veredicto": "retry",
+   "motivo_visual": "No cerró el encuadre.",
+   "en_montaje": false
+  },
+  {
+   "id": "V20_t0",
+   "paso": "V20",
+   "plano": "b4_p1",
+   "toma": 0,
+   "timestamp": "2026-10-19T02:27:55Z",
+   "timestamp_fuente": "mtime del PNG de salida, UTC",
+   "modelo": "nbp",
+   "endpoint": "fal-ai/nano-banana-pro/edit",
+   "params": {
+    "resolution": "2K",
+    "quality": null,
+    "aspect": "9:16",
+    "image_size": null,
+    "num_images": 1,
+    "seed": null,
+    "output_format": "png"
+   },
+   "prompt_file": "prompts/V20_b4_p1.txt",
+   "prompt": "Edit the image: Iván is still seated and Carmen is still asleep.\n\nCHANGE: Iván, mid-carriage, is still sitting in his seat, only lifting his head toward the front door; Carmen, nearer camera, is still asleep, head down, glasses on the cord against her chest, bag on her LEFT shoulder. The passenger near the front door already stands staring at it.\n\nPRESERVE EXACTLY:\n- camera position, lens, framing and 9:16 aspect (unless the change says otherwise)\n- every person's face, hair, wardrobe, pose and eyeline not named in the change\n- every light source, shadow, colour grade and film grain not named in the change\n- natural hands with five separate fingers\n\nONLY CHANGE: Iván is still seated and Carmen is still asleep. Everything else stays identical. No text.",
+   "referencias": [
+    {
+     "orden": 1,
+     "path": "según resolve(): frame:b4_p1",
+     "rol": "fotograma que se edita"
+    }
+   ],
+   "fal_request_id": null,
+   "output": "raw/V20_b4_p1_t0_nbp_0.png",
+   "costo_usd": 0.15,
+   "costo_tipo": "estimado",
+   "nota_costo": "Cifra del lote (NBP 0.15, flare 0.08). fal_gen.py no guarda el monto ni el request_id. El corredor sumó esta cifra a gastado_usd.",
+   "latencia_s": null,
+   "latencia_tipo": "no medida",
+   "veredicto": "accept",
+   "motivo_visual": "Aceptada en la pasada secuencial. Criterio del lote: Estado inicial de c04a (la ola aún no llega a Iván y Carmen) · bolso hombro izq.",
+   "en_montaje": true
+  },
+  {
+   "id": "V20_t1",
+   "paso": "V20",
+   "plano": "b4_p1",
+   "toma": 1,
+   "timestamp": "2026-10-19T02:28:56Z",
+   "timestamp_fuente": "mtime del PNG de salida, UTC",
+   "modelo": "nbp",
+   "endpoint": "fal-ai/nano-banana-pro/edit",
+   "params": {
+    "resolution": "2K",
+    "quality": null,
+    "aspect": "9:16",
+    "image_size": null,
+    "num_images": 1,
+    "seed": null,
+    "output_format": "png"
+   },
+   "prompt_file": "prompts/V20_b4_p1.txt",
+   "prompt": "Edit the image: Iván is still seated and Carmen is still asleep.\n\nCHANGE: Iván, mid-carriage, is still sitting in his seat, only lifting his head toward the front door; Carmen, nearer camera, is still asleep, head down, glasses on the cord against her chest, bag on her LEFT shoulder. The passenger near the front door already stands staring at it.\n\nPRESERVE EXACTLY:\n- camera position, lens, framing and 9:16 aspect (unless the change says otherwise)\n- every person's face, hair, wardrobe, pose and eyeline not named in the change\n- every light source, shadow, colour grade and film grain not named in the change\n- natural hands with five separate fingers\n\nONLY CHANGE: Iván is still seated and Carmen is still asleep. Everything else stays identical. No text.",
+   "referencias": [
+    {
+     "orden": 1,
+     "path": "según resolve(): frame:b4_p1",
+     "rol": "fotograma que se edita"
+    }
+   ],
+   "fal_request_id": null,
+   "output": "raw/V20_b4_p1_t1_nbp_0.png",
+   "costo_usd": 0.15,
+   "costo_tipo": "estimado",
+   "nota_costo": "Cifra del lote (NBP 0.15, flare 0.08). fal_gen.py no guarda el monto ni el request_id. El corredor sumó esta cifra a gastado_usd.",
+   "latencia_s": null,
+   "latencia_tipo": "no medida",
+   "veredicto": "retry",
+   "motivo_visual": "Esta toma no se aceptó. Criterio que se volvió a pedir: Estado inicial de c04a (la ola aún no llega a Iván y Carmen) · bolso hombro izq.",
+   "en_montaje": false
+  },
+  {
+   "id": "V21_t0",
+   "paso": "V21",
+   "plano": "b4_p6",
+   "toma": 0,
+   "timestamp": "2026-10-19T02:29:56Z",
+   "timestamp_fuente": "mtime del PNG de salida, UTC",
+   "modelo": "nbp",
+   "endpoint": "fal-ai/nano-banana-pro/edit",
+   "params": {
+    "resolution": "2K",
+    "quality": null,
+    "aspect": "9:16",
+    "image_size": null,
+    "num_images": 1,
+    "seed": null,
+    "output_format": "png"
+   },
+   "prompt_file": "prompts/V21_b4_p6.txt",
+   "prompt": "Edit the image: through the burst front door only a dark red gangway.\n\nCHANGE: Through the burst-open front door at the far end, behind the incoming infected silhouettes, there is only a dark gangway lit faint red: no blue light, no sky, no rain, no exterior.\n\nPRESERVE EXACTLY:\n- camera position, lens, framing and 9:16 aspect (unless the change says otherwise)\n- every person's face, hair, wardrobe, pose and eyeline not named in the change\n- every light source, shadow, colour grade and film grain not named in the change\n- natural hands with five separate fingers\n\nONLY CHANGE: through the burst front door only a dark red gangway. Everything else stays identical. No text.",
+   "referencias": [
+    {
+     "orden": 1,
+     "path": "según resolve(): frame:b4_p6",
+     "rol": "fotograma que se edita"
+    }
+   ],
+   "fal_request_id": null,
+   "output": "raw/V21_b4_p6_t0_nbp_0.png",
+   "costo_usd": 0.15,
+   "costo_tipo": "estimado",
+   "nota_costo": "Cifra del lote (NBP 0.15, flare 0.08). fal_gen.py no guarda el monto ni el request_id. El corredor sumó esta cifra a gastado_usd.",
+   "latencia_s": null,
+   "latencia_tipo": "no medida",
+   "veredicto": "accept",
+   "motivo_visual": "Aceptada en la pasada secuencial. Criterio del lote: Fuelle rojo detrás de las siluetas · VIGILAR brazo de Martina saliendo de la chaqueta de Tomás",
+   "en_montaje": false
+  },
+  {
+   "id": "V22_t0",
+   "paso": "V22",
+   "plano": "b4_p6",
+   "toma": 0,
+   "timestamp": "2026-10-19T02:30:53Z",
+   "timestamp_fuente": "mtime del PNG de salida, UTC",
+   "modelo": "nbp",
+   "endpoint": "fal-ai/nano-banana-pro/edit",
+   "params": {
+    "resolution": "2K",
+    "quality": null,
+    "aspect": "9:16",
+    "image_size": null,
+    "num_images": 1,
+    "seed": null,
+    "output_format": "png"
+   },
+   "prompt_file": "prompts/V22_b4_p6.txt",
+   "prompt": "Edit the image: give Tomás the exact hair of Image 2.\n\nCHANGE: Tomás's hair becomes short dark brown hair, neatly combed with a side parting, tidy, short on the sides, as in Image 2: no curls, no fringe falling on the forehead, no messy waves. Same face, same thin metal-frame glasses.\n\nPRESERVE EXACTLY:\n- camera position, lens, framing and 9:16 aspect (unless the change says otherwise)\n- every person's face, hair, wardrobe, pose and eyeline not named in the change\n- every light source, shadow, colour grade and film grain not named in the change\n- natural hands with five separate fingers\n\nONLY CHANGE: give Tomás the exact hair of Image 2. Everything else stays identical. No text.",
+   "referencias": [
+    {
+     "orden": 1,
+     "path": "según resolve(): frame:b4_p6",
+     "rol": "salida ya editada del paso V21 (v1c/frames), no el PNG original"
+    },
+    {
+     "orden": 2,
+     "path": "ref:personajes/HOJA_tomas.png",
+     "rol": "hoja de Tomás: pelo corto con partidura, anteojos, campera"
+    }
+   ],
+   "fal_request_id": null,
+   "output": "raw/V22_b4_p6_t0_nbp_0.png",
+   "costo_usd": 0.15,
+   "costo_tipo": "estimado",
+   "nota_costo": "Cifra del lote (NBP 0.15, flare 0.08). fal_gen.py no guarda el monto ni el request_id. El corredor sumó esta cifra a gastado_usd.",
+   "latencia_s": null,
+   "latencia_tipo": "no medida",
+   "veredicto": "accept",
+   "motivo_visual": "Aceptada en la pasada secuencial. Criterio del lote: Extra 6 · manos naturales (Tomás der. toma la izq. de Martina)",
+   "en_montaje": false
+  },
+  {
+   "id": "V23_t0",
+   "paso": "V23",
+   "plano": "b5_p1",
+   "toma": 0,
+   "timestamp": "2026-10-19T02:31:47Z",
+   "timestamp_fuente": "mtime del PNG de salida, UTC",
+   "modelo": "nbp",
+   "endpoint": "fal-ai/nano-banana-pro/edit",
+   "params": {
+    "resolution": "2K",
+    "quality": null,
+    "aspect": "9:16",
+    "image_size": null,
+    "num_images": 1,
+    "seed": null,
+    "output_format": "png"
+   },
+   "prompt_file": "prompts/V23_b5_p1.txt",
+   "prompt": "Edit the image: make the red emergency light hard and from above, with no white fill on any face.\n\nCHANGE: The narrow red ceiling strip (#B3001B) is the only red source and lights from above: every face is half in shadow, real black zones, no white or grey fill light on skin, no pink or magenta. Keep the one cold white tube above the door only where it already is and only on heads and shoulders near it. Shorten any long glowing red neon lines to the single narrow ceiling strip.\n\nPRESERVE EXACTLY:\n- camera position, lens, framing and 9:16 aspect (unless the change says otherwise)\n- every person's face, hair, wardrobe, pose and eyeline not named in the change\n- every light source, shadow, colour grade and film grain not named in the change\n- natural hands with five separate fingers\n\nONLY CHANGE: make the red emergency light hard and from above, with no white fill on any face. Everything else stays identical. No text.",
+   "referencias": [
+    {
+     "orden": 1,
+     "path": "según resolve(): frame:b5_p1",
+     "rol": "fotograma que se edita"
+    }
+   ],
+   "fal_request_id": null,
+   "output": "raw/V23_b5_p1_t0_nbp_0.png",
+   "costo_usd": 0.15,
+   "costo_tipo": "estimado",
+   "nota_costo": "Cifra del lote (NBP 0.15, flare 0.08). fal_gen.py no guarda el monto ni el request_id. El corredor sumó esta cifra a gastado_usd.",
+   "latencia_s": null,
+   "latencia_tipo": "no medida",
+   "veredicto": "accept",
+   "motivo_visual": "Aceptada en la pasada secuencial. Criterio del lote: Solo luz (encuadre ya pasa) · llave trabada, dos manos, dedos separados",
+   "en_montaje": true
+  },
+  {
+   "id": "V24_t0",
+   "paso": "V24",
+   "plano": "b5_p2",
+   "toma": 0,
+   "timestamp": "2026-10-19T02:33:01Z",
+   "timestamp_fuente": "mtime del PNG de salida, UTC",
+   "modelo": "nbp",
+   "endpoint": "fal-ai/nano-banana-pro/edit",
+   "params": {
+    "resolution": "2K",
+    "quality": null,
+    "aspect": "9:16",
+    "image_size": null,
+    "num_images": 1,
+    "seed": null,
+    "output_format": "png"
+   },
+   "prompt_file": "prompts/V24_b5_p2.txt",
+   "prompt": "Edit the image: make the red emergency light hard and from above, with no white fill on any face.\n\nCHANGE: The narrow red ceiling strip (#B3001B) is the only red source and lights from above: every face is half in shadow, real black zones, no white or grey fill light on skin, no pink or magenta. Keep the one cold white tube above the door only where it already is and only on heads and shoulders near it. Shorten any long glowing red neon lines to the single narrow ceiling strip.\n\nPRESERVE EXACTLY:\n- camera position, lens, framing and 9:16 aspect (unless the change says otherwise)\n- every person's face, hair, wardrobe, pose and eyeline not named in the change\n- every light source, shadow, colour grade and film grain not named in the change\n- natural hands with five separate fingers\n\nONLY CHANGE: make the red emergency light hard and from above, with no white fill on any face. Everything else stays identical. No text.",
+   "referencias": [
+    {
+     "orden": 1,
+     "path": "según resolve(): frame:b5_p2",
+     "rol": "fotograma que se edita"
+    }
+   ],
+   "fal_request_id": null,
+   "output": "raw/V24_b5_p2_t0_nbp_0.png",
+   "costo_usd": 0.15,
+   "costo_tipo": "estimado",
+   "nota_costo": "Cifra del lote (NBP 0.15, flare 0.08). fal_gen.py no guarda el monto ni el request_id. El corredor sumó esta cifra a gastado_usd.",
+   "latencia_s": null,
+   "latencia_tipo": "no medida",
+   "veredicto": "retry",
+   "motivo_visual": "Esta toma no se aceptó. Criterio que se volvió a pedir: Solo luz · Carmen última de espaldas a la puerta del vagón 5",
+   "en_montaje": false
+  },
+  {
+   "id": "V24_t1",
+   "paso": "V24",
+   "plano": "b5_p2",
+   "toma": 1,
+   "timestamp": "2026-10-19T02:34:08Z",
+   "timestamp_fuente": "mtime del PNG de salida, UTC",
+   "modelo": "nbp",
+   "endpoint": "fal-ai/nano-banana-pro/edit",
+   "params": {
+    "resolution": "2K",
+    "quality": null,
+    "aspect": "9:16",
+    "image_size": null,
+    "num_images": 1,
+    "seed": null,
+    "output_format": "png"
+   },
+   "prompt_file": "prompts/V24_b5_p2.txt",
+   "prompt": "Edit the image: make the red emergency light hard and from above, with no white fill on any face.\n\nCHANGE: The narrow red ceiling strip (#B3001B) is the only red source and lights from above: every face is half in shadow, real black zones, no white or grey fill light on skin, no pink or magenta. Keep the one cold white tube above the door only where it already is and only on heads and shoulders near it. Shorten any long glowing red neon lines to the single narrow ceiling strip.\n\nPRESERVE EXACTLY:\n- camera position, lens, framing and 9:16 aspect (unless the change says otherwise)\n- every person's face, hair, wardrobe, pose and eyeline not named in the change\n- every light source, shadow, colour grade and film grain not named in the change\n- natural hands with five separate fingers\n\nONLY CHANGE: make the red emergency light hard and from above, with no white fill on any face. Everything else stays identical. No text.",
+   "referencias": [
+    {
+     "orden": 1,
+     "path": "según resolve(): frame:b5_p2",
+     "rol": "fotograma que se edita"
+    }
+   ],
+   "fal_request_id": null,
+   "output": "raw/V24_b5_p2_t1_nbp_0.png",
+   "costo_usd": 0.15,
+   "costo_tipo": "estimado",
+   "nota_costo": "Cifra del lote (NBP 0.15, flare 0.08). fal_gen.py no guarda el monto ni el request_id. El corredor sumó esta cifra a gastado_usd.",
+   "latencia_s": null,
+   "latencia_tipo": "no medida",
+   "veredicto": "accept",
+   "motivo_visual": "Aceptada en la pasada secuencial. Criterio del lote: Solo luz · Carmen última de espaldas a la puerta del vagón 5",
+   "en_montaje": true
+  },
+  {
+   "id": "V25_t0",
+   "paso": "V25",
+   "plano": "b5_p4",
+   "toma": 0,
+   "timestamp": "2026-10-19T02:35:05Z",
+   "timestamp_fuente": "mtime del PNG de salida, UTC",
+   "modelo": "nbp",
+   "endpoint": "fal-ai/nano-banana-pro/edit",
+   "params": {
+    "resolution": "2K",
+    "quality": null,
+    "aspect": "9:16",
+    "image_size": null,
+    "num_images": 1,
+    "seed": null,
+    "output_format": "png"
+   },
+   "prompt_file": "prompts/V25_b5_p4.txt",
+   "prompt": "Edit the image: the smear on her palm and on the glass is reddish black, not bright red.\n\nCHANGE: The smear on Carmen's RIGHT palm and on the broken glass under it is a dark reddish black, almost black, matte, not bright red, not glossy; one thin cut, no exposed flesh.\n\nPRESERVE EXACTLY:\n- camera position, lens, framing and 9:16 aspect (unless the change says otherwise)\n- every person's face, hair, wardrobe, pose and eyeline not named in the change\n- every light source, shadow, colour grade and film grain not named in the change\n- natural hands with five separate fingers\n\nONLY CHANGE: the smear on her palm and on the glass is reddish black, not bright red. Everything else stays identical. No text.",
+   "referencias": [
+    {
+     "orden": 1,
+     "path": "según resolve(): frame:b5_p4",
+     "rol": "fotograma que se edita"
+    }
+   ],
+   "fal_request_id": null,
+   "output": "raw/V25_b5_p4_t0_nbp_0.png",
+   "costo_usd": 0.15,
+   "costo_tipo": "estimado",
+   "nota_costo": "Cifra del lote (NBP 0.15, flare 0.08). fal_gen.py no guarda el monto ni el request_id. El corredor sumó esta cifra a gastado_usd.",
+   "latencia_s": null,
+   "latencia_tipo": "no medida",
+   "veredicto": "accept",
+   "motivo_visual": "Aceptada en la pasada secuencial. Criterio del lote: Extra 5 · palma DERECHA",
+   "en_montaje": true
+  },
+  {
+   "id": "V26_t0",
+   "paso": "V26",
+   "plano": "b5_p5",
+   "toma": 0,
+   "timestamp": "2026-10-19T02:36:10Z",
+   "timestamp_fuente": "mtime del PNG de salida, UTC",
+   "modelo": "nbp",
+   "endpoint": "fal-ai/nano-banana-pro/edit",
+   "params": {
+    "resolution": "2K",
+    "quality": null,
+    "aspect": "9:16",
+    "image_size": null,
+    "num_images": 1,
+    "seed": null,
+    "output_format": "png"
+   },
+   "prompt_file": "prompts/V26_b5_p5.txt",
+   "prompt": "Edit the image: the smear on her palm and on the glass is reddish black, not bright red.\n\nCHANGE: The smear on Carmen's RIGHT palm and on the glass edge is a dark reddish black, almost black, matte, not bright red, not glossy; one thin clean cut; no exposed flesh.\n\nPRESERVE EXACTLY:\n- camera position, lens, framing and 9:16 aspect (unless the change says otherwise)\n- every person's face, hair, wardrobe, pose and eyeline not named in the change\n- every light source, shadow, colour grade and film grain not named in the change\n- natural hands with five separate fingers\n\nONLY CHANGE: the smear on her palm and on the glass is reddish black, not bright red. Everything else stays identical. No text.",
+   "referencias": [
+    {
+     "orden": 1,
+     "path": "según resolve(): frame:b5_p5",
+     "rol": "fotograma que se edita"
+    }
+   ],
+   "fal_request_id": null,
+   "output": "raw/V26_b5_p5_t0_nbp_0.png",
+   "costo_usd": 0.15,
+   "costo_tipo": "estimado",
+   "nota_costo": "Cifra del lote (NBP 0.15, flare 0.08). fal_gen.py no guarda el monto ni el request_id. El corredor sumó esta cifra a gastado_usd.",
+   "latencia_s": null,
+   "latencia_tipo": "no medida",
+   "veredicto": "accept",
+   "motivo_visual": "Aceptada en la pasada secuencial. Criterio del lote: Extra 5 · mano derecha (corregida en parte A)",
+   "en_montaje": true
+  },
+  {
+   "id": "V27_t0",
+   "paso": "V27",
+   "plano": "b5_p6",
+   "toma": 0,
+   "timestamp": "2026-10-19T02:37:55Z",
+   "timestamp_fuente": "mtime del PNG de salida, UTC",
+   "modelo": "nbp",
+   "endpoint": "fal-ai/nano-banana-pro/edit",
+   "params": {
+    "resolution": "2K",
+    "quality": null,
+    "aspect": "9:16",
+    "image_size": null,
+    "num_images": 1,
+    "seed": null,
+    "output_format": "png"
+   },
+   "prompt_file": "prompts/V27_b5_p6.txt",
+   "prompt": "Edit the image: the key is in the keyhole, mid-turn, held by Hugo's right hand.\n\nCHANGE: The antique key from Image 2 is in the keyhole of the bronze plate, mid-turn, held between the thumb and fingers of Hugo's RIGHT hand; his left shoulder presses the door, which is still closed. No key in any pocket. Fingers clearly separate from the key.\n\nPRESERVE EXACTLY:\n- camera position, lens, framing and 9:16 aspect (unless the change says otherwise)\n- every person's face, hair, wardrobe, pose and eyeline not named in the change\n- every light source, shadow, colour grade and film grain not named in the change\n- natural hands with five separate fingers\n\nONLY CHANGE: the key is in the keyhole, mid-turn, held by Hugo's right hand. Everything else stays identical. No text.",
+   "referencias": [
+    {
+     "orden": 1,
+     "path": "según resolve(): frame:b5_p6",
+     "rol": "fotograma que se edita"
+    },
+    {
+     "orden": 2,
+     "path": "ref:props/PROP_llave_y_cerradura.png",
+     "rol": "referencia de la llave antigua y la placa"
+    }
+   ],
+   "fal_request_id": null,
+   "output": "raw/V27_b5_p6_t0_nbp_0.png",
+   "costo_usd": 0.15,
+   "costo_tipo": "estimado",
+   "nota_costo": "Cifra del lote (NBP 0.15, flare 0.08). fal_gen.py no guarda el monto ni el request_id. El corredor sumó esta cifra a gastado_usd.",
+   "latencia_s": null,
+   "latencia_tipo": "no medida",
+   "veredicto": "accept",
+   "motivo_visual": "Aceptada en la pasada secuencial. Criterio del lote: Decisión llave: gira por fuera en P6 y se queda con ella en la mano (estado inicial: a mitad de giro)",
+   "en_montaje": false
+  },
+  {
+   "id": "V27_t1",
+   "paso": "V27",
+   "plano": "b5_p6",
+   "toma": 1,
+   "timestamp": "2026-10-19T02:38:44Z",
+   "timestamp_fuente": "mtime del PNG de salida, UTC",
+   "modelo": "nbp",
+   "endpoint": "fal-ai/nano-banana-pro/edit",
+   "params": {
+    "resolution": "2K",
+    "quality": null,
+    "aspect": "9:16",
+    "image_size": null,
+    "num_images": 1,
+    "seed": null,
+    "output_format": "png"
+   },
+   "prompt_file": "prompts/V27_b5_p6.txt",
+   "prompt": "Edit the image: the key is in the keyhole, mid-turn, held by Hugo's right hand.\n\nCHANGE: The antique key from Image 2 is in the keyhole of the bronze plate, mid-turn, held between the thumb and fingers of Hugo's RIGHT hand; his left shoulder presses the door, which is still closed. No key in any pocket. Fingers clearly separate from the key.\n\nPRESERVE EXACTLY:\n- camera position, lens, framing and 9:16 aspect (unless the change says otherwise)\n- every person's face, hair, wardrobe, pose and eyeline not named in the change\n- every light source, shadow, colour grade and film grain not named in the change\n- natural hands with five separate fingers\n\nONLY CHANGE: the key is in the keyhole, mid-turn, held by Hugo's right hand. Everything else stays identical. No text.",
+   "referencias": [
+    {
+     "orden": 1,
+     "path": "según resolve(): frame:b5_p6",
+     "rol": "fotograma que se edita"
+    },
+    {
+     "orden": 2,
+     "path": "ref:props/PROP_llave_y_cerradura.png",
+     "rol": "referencia de la llave antigua y la placa"
+    }
+   ],
+   "fal_request_id": null,
+   "output": "raw/V27_b5_p6_t1_nbp_0.png",
+   "costo_usd": 0.15,
+   "costo_tipo": "estimado",
+   "nota_costo": "Cifra del lote (NBP 0.15, flare 0.08). fal_gen.py no guarda el monto ni el request_id. El corredor sumó esta cifra a gastado_usd.",
+   "latencia_s": null,
+   "latencia_tipo": "no medida",
+   "veredicto": "retry",
+   "motivo_visual": "Esta toma no se aceptó. Criterio que se volvió a pedir: Decisión llave: gira por fuera en P6 y se queda con ella en la mano (estado inicial: a mitad de giro)",
+   "en_montaje": false
+  },
+  {
+   "id": "V28_t0",
+   "paso": "V28",
+   "plano": "b5_p6",
+   "toma": 0,
+   "timestamp": "2026-10-19T02:39:39Z",
+   "timestamp_fuente": "mtime del PNG de salida, UTC",
+   "modelo": "nbp",
+   "endpoint": "fal-ai/nano-banana-pro/edit",
+   "params": {
+    "resolution": "2K",
+    "quality": null,
+    "aspect": "9:16",
+    "image_size": null,
+    "num_images": 1,
+    "seed": null,
+    "output_format": "png"
+   },
+   "prompt_file": "prompts/V28_b5_p6.txt",
+   "prompt": "Edit the image: make the red emergency light hard and from above, with no white fill on any face.\n\nCHANGE: The narrow red ceiling strip (#B3001B) is the only red source and lights from above: every face is half in shadow, real black zones, no white or grey fill light on skin, no pink or magenta. Keep the one cold white tube above the door only where it already is and only on heads and shoulders near it. Shorten any long glowing red neon lines to the single narrow ceiling strip.\n\nPRESERVE EXACTLY:\n- camera position, lens, framing and 9:16 aspect (unless the change says otherwise)\n- every person's face, hair, wardrobe, pose and eyeline not named in the change\n- every light source, shadow, colour grade and film grain not named in the change\n- natural hands with five separate fingers\n\nONLY CHANGE: make the red emergency light hard and from above, with no white fill on any face. Everything else stays identical. No text.",
+   "referencias": [
+    {
+     "orden": 1,
+     "path": "según resolve(): frame:b5_p6",
+     "rol": "salida ya editada del paso V27 (v1c/frames), no el PNG original"
+    }
+   ],
+   "fal_request_id": null,
+   "output": "raw/V28_b5_p6_t0_nbp_0.png",
+   "costo_usd": 0.15,
+   "costo_tipo": "estimado",
+   "nota_costo": "Cifra del lote (NBP 0.15, flare 0.08). fal_gen.py no guarda el monto ni el request_id. El corredor sumó esta cifra a gastado_usd.",
+   "latencia_s": null,
+   "latencia_tipo": "no medida",
+   "veredicto": "accept",
+   "motivo_visual": "Aceptada en la pasada secuencial. Criterio del lote: Solo luz",
+   "en_montaje": false
+  },
+  {
+   "id": "V29_t0",
+   "paso": "V29",
+   "plano": "b5_p8",
+   "toma": 0,
+   "timestamp": "2026-10-19T02:40:42Z",
+   "timestamp_fuente": "mtime del PNG de salida, UTC",
+   "modelo": "nbp",
+   "endpoint": "fal-ai/nano-banana-pro/edit",
+   "params": {
+    "resolution": "2K",
+    "quality": null,
+    "aspect": "9:16",
+    "image_size": null,
+    "num_images": 1,
+    "seed": null,
+    "output_format": "png"
+   },
+   "prompt_file": "prompts/V29_b5_p8.txt",
+   "prompt": "Edit the image: make the door window dry and dark.\n\nCHANGE: The small wired-glass window of the door is dry and dark: no water drops at all, only a dark red gangway behind the mesh.\n\nPRESERVE EXACTLY:\n- camera position, lens, framing and 9:16 aspect (unless the change says otherwise)\n- every person's face, hair, wardrobe, pose and eyeline not named in the change\n- every light source, shadow, colour grade and film grain not named in the change\n- natural hands with five separate fingers\n\nONLY CHANGE: make the door window dry and dark. Everything else stays identical. No text.",
+   "referencias": [
+    {
+     "orden": 1,
+     "path": "según resolve(): frame:b5_p8",
+     "rol": "fotograma que se edita"
+    }
+   ],
+   "fal_request_id": null,
+   "output": "raw/V29_b5_p8_t0_nbp_0.png",
+   "costo_usd": 0.15,
+   "costo_tipo": "estimado",
+   "nota_costo": "Cifra del lote (NBP 0.15, flare 0.08). fal_gen.py no guarda el monto ni el request_id. El corredor sumó esta cifra a gastado_usd.",
+   "latencia_s": null,
+   "latencia_tipo": "no medida",
+   "veredicto": "accept",
+   "motivo_visual": "Aceptada en la pasada secuencial. Criterio del lote: Sin gotas en la ventanita (regla dura §5)",
+   "en_montaje": false
+  },
+  {
+   "id": "V30_t0",
+   "paso": "V30",
+   "plano": "b5_p8",
+   "toma": 0,
+   "timestamp": "2026-10-19T02:41:41Z",
+   "timestamp_fuente": "mtime del PNG de salida, UTC",
+   "modelo": "nbp",
+   "endpoint": "fal-ai/nano-banana-pro/edit",
+   "params": {
+    "resolution": "2K",
+    "quality": null,
+    "aspect": "9:16",
+    "image_size": null,
+    "num_images": 1,
+    "seed": null,
+    "output_format": "png"
+   },
+   "prompt_file": "prompts/V30_b5_p8.txt",
+   "prompt": "Edit the image: reframe to a tight shot at lock height.\n\nCHANGE: Tighter framing at the height of the lock: Hugo's shoulder and back pressing the door closed, the door edge crushing a grey infected hand jammed in the gap on the lock side, and his RIGHT hand turning the antique key in the keyhole from inside (the clac). The bronze plate, keyhole and key read clearly and large in frame.\n\nPRESERVE EXACTLY:\n- camera position, lens, framing and 9:16 aspect (unless the change says otherwise)\n- every person's face, hair, wardrobe, pose and eyeline not named in the change\n- every light source, shadow, colour grade and film grain not named in the change\n- natural hands with five separate fingers\n\nONLY CHANGE: reframe to a tight shot at lock height. Everything else stays identical. No text.",
+   "referencias": [
+    {
+     "orden": 1,
+     "path": "según resolve(): frame:b5_p8",
+     "rol": "salida ya editada del paso V29 (v1c/frames), no el PNG original"
+    }
+   ],
+   "fal_request_id": null,
+   "output": "raw/V30_b5_p8_t0_nbp_0.png",
+   "costo_usd": 0.15,
+   "costo_tipo": "estimado",
+   "nota_costo": "Cifra del lote (NBP 0.15, flare 0.08). fal_gen.py no guarda el monto ni el request_id. El corredor sumó esta cifra a gastado_usd.",
+   "latencia_s": null,
+   "latencia_tipo": "no medida",
+   "veredicto": "retry",
+   "motivo_visual": "Esta toma no se aceptó. Criterio que se volvió a pedir: Decisión llave: plano cerrado a la altura de la cerradura; aplasta la mano y gira la llave por dentro",
+   "en_montaje": false
+  },
+  {
+   "id": "V30_t1",
+   "paso": "V30",
+   "plano": "b5_p8",
+   "toma": 1,
+   "timestamp": "2026-10-19T02:42:52Z",
+   "timestamp_fuente": "mtime del PNG de salida, UTC",
+   "modelo": "nbp",
+   "endpoint": "fal-ai/nano-banana-pro/edit",
+   "params": {
+    "resolution": "2K",
+    "quality": null,
+    "aspect": "9:16",
+    "image_size": null,
+    "num_images": 1,
+    "seed": null,
+    "output_format": "png"
+   },
+   "prompt_file": "prompts/V30_b5_p8.txt",
+   "prompt": "Edit the image: reframe to a tight shot at lock height.\n\nCHANGE: Tighter framing at the height of the lock: Hugo's shoulder and back pressing the door closed, the door edge crushing a grey infected hand jammed in the gap on the lock side, and his RIGHT hand turning the antique key in the keyhole from inside (the clac). The bronze plate, keyhole and key read clearly and large in frame.\n\nPRESERVE EXACTLY:\n- camera position, lens, framing and 9:16 aspect (unless the change says otherwise)\n- every person's face, hair, wardrobe, pose and eyeline not named in the change\n- every light source, shadow, colour grade and film grain not named in the change\n- natural hands with five separate fingers\n\nONLY CHANGE: reframe to a tight shot at lock height. Everything else stays identical. No text.",
+   "referencias": [
+    {
+     "orden": 1,
+     "path": "según resolve(): frame:b5_p8",
+     "rol": "salida ya editada del paso V29 (v1c/frames), no el PNG original"
+    }
+   ],
+   "fal_request_id": null,
+   "output": "raw/V30_b5_p8_t1_nbp_0.png",
+   "costo_usd": 0.15,
+   "costo_tipo": "estimado",
+   "nota_costo": "Cifra del lote (NBP 0.15, flare 0.08). fal_gen.py no guarda el monto ni el request_id. El corredor sumó esta cifra a gastado_usd.",
+   "latencia_s": null,
+   "latencia_tipo": "no medida",
+   "veredicto": "accept",
+   "motivo_visual": "Aceptada en la pasada secuencial. Criterio del lote: Decisión llave: plano cerrado a la altura de la cerradura; aplasta la mano y gira la llave por dentro",
+   "en_montaje": false
+  },
+  {
+   "id": "V31_t0",
+   "paso": "V31",
+   "plano": "b5_p9",
+   "toma": 0,
+   "timestamp": "2026-10-19T02:43:40Z",
+   "timestamp_fuente": "mtime del PNG de salida, UTC",
+   "modelo": "nbp",
+   "endpoint": "fal-ai/nano-banana-pro/edit",
+   "params": {
+    "resolution": "2K",
+    "quality": null,
+    "aspect": "9:16",
+    "image_size": null,
+    "num_images": 1,
+    "seed": null,
+    "output_format": "png"
+   },
+   "prompt_file": "prompts/V31_b5_p9.txt",
+   "prompt": "Edit the image: remove every water droplet from the door window.\n\nCHANGE: Every water droplet and rain streak on the small door window is gone; the glass is dry. Keep the infected face, the dark smear and the wire mesh.\n\nPRESERVE EXACTLY:\n- camera position, lens, framing and 9:16 aspect (unless the change says otherwise)\n- every person's face, hair, wardrobe, pose and eyeline not named in the change\n- every light source, shadow, colour grade and film grain not named in the change\n- natural hands with five separate fingers\n\nONLY CHANGE: remove every water droplet from the door window. Everything else stays identical. No text.",
+   "referencias": [
+    {
+     "orden": 1,
+     "path": "según resolve(): frame:b5_p9",
+     "rol": "fotograma que se edita"
+    }
+   ],
+   "fal_request_id": null,
+   "output": "raw/V31_b5_p9_t0_nbp_0.png",
+   "costo_usd": 0.15,
+   "costo_tipo": "estimado",
+   "nota_costo": "Cifra del lote (NBP 0.15, flare 0.08). fal_gen.py no guarda el monto ni el request_id. El corredor sumó esta cifra a gastado_usd.",
+   "latencia_s": null,
+   "latencia_tipo": "no medida",
+   "veredicto": "accept",
+   "motivo_visual": "Aceptada en la pasada secuencial. Criterio del lote: Sin gotas",
+   "en_montaje": true
+  },
+  {
+   "id": "V32_t0",
+   "paso": "V32",
+   "plano": "b5_p7",
+   "toma": 0,
+   "timestamp": "2026-10-19T02:44:40Z",
+   "timestamp_fuente": "mtime del PNG de salida, UTC",
+   "modelo": "nbp",
+   "endpoint": "fal-ai/nano-banana-pro/edit",
+   "params": {
+    "resolution": "2K",
+    "quality": null,
+    "aspect": "9:16",
+    "image_size": null,
+    "num_images": 1,
+    "seed": null,
+    "output_format": "png"
+   },
+   "prompt_file": "prompts/V32_b5_p7.txt",
+   "prompt": "Edit the image: give Tomás the exact hair of Image 2.\n\nCHANGE: Tomás's hair becomes short dark brown hair, neatly combed with a side parting, tidy, short on the sides, as in Image 2: no curls, no fringe falling on the forehead, no messy waves. Same face, same thin metal-frame glasses.\n\nPRESERVE EXACTLY:\n- camera position, lens, framing and 9:16 aspect (unless the change says otherwise)\n- every person's face, hair, wardrobe, pose and eyeline not named in the change\n- every light source, shadow, colour grade and film grain not named in the change\n- natural hands with five separate fingers\n\nONLY CHANGE: give Tomás the exact hair of Image 2. Everything else stays identical. No text.",
+   "referencias": [
+    {
+     "orden": 1,
+     "path": "según resolve(): frame:b5_p7",
+     "rol": "fotograma que se edita"
+    },
+    {
+     "orden": 2,
+     "path": "ref:personajes/HOJA_tomas.png",
+     "rol": "hoja de Tomás: pelo corto con partidura, anteojos, campera"
+    }
+   ],
+   "fal_request_id": null,
+   "output": "raw/V32_b5_p7_t0_nbp_0.png",
+   "costo_usd": 0.15,
+   "costo_tipo": "estimado",
+   "nota_costo": "Cifra del lote (NBP 0.15, flare 0.08). fal_gen.py no guarda el monto ni el request_id. El corredor sumó esta cifra a gastado_usd.",
+   "latencia_s": null,
+   "latencia_tipo": "no medida",
+   "veredicto": "accept",
+   "motivo_visual": "Aceptada en la pasada secuencial. Criterio del lote: Extra 6",
+   "en_montaje": true
+  },
+  {
+   "id": "V33_t0",
+   "paso": "V33",
+   "plano": "b6_p1",
+   "toma": 0,
+   "timestamp": "2026-10-19T02:45:32Z",
+   "timestamp_fuente": "mtime del PNG de salida, UTC",
+   "modelo": "nbp",
+   "endpoint": "fal-ai/nano-banana-pro/edit",
+   "params": {
+    "resolution": "2K",
+    "quality": null,
+    "aspect": "9:16",
+    "image_size": null,
+    "num_images": 1,
+    "seed": null,
+    "output_format": "png"
+   },
+   "prompt_file": "prompts/V33_b6_p1.txt",
+   "prompt": "Edit the image: Iván stands with his back pressed against the door.\n\nCHANGE: Iván stands with his BACK pressed against the door, facing camera, arms braced against the door frame, head turned slightly; the small window full of palms and dark smears stays above his shoulder.\n\nPRESERVE EXACTLY:\n- camera position, lens, framing and 9:16 aspect (unless the change says otherwise)\n- every person's face, hair, wardrobe, pose and eyeline not named in the change\n- every light source, shadow, colour grade and film grain not named in the change\n- natural hands with five separate fingers\n\nONLY CHANGE: Iván stands with his back pressed against the door. Everything else stays identical. No text.",
+   "referencias": [
+    {
+     "orden": 1,
+     "path": "según resolve(): frame:b6_p1",
+     "rol": "fotograma que se edita"
+    }
+   ],
+   "fal_request_id": null,
+   "output": "raw/V33_b6_p1_t0_nbp_0.png",
+   "costo_usd": 0.15,
+   "costo_tipo": "estimado",
+   "nota_costo": "Cifra del lote (NBP 0.15, flare 0.08). fal_gen.py no guarda el monto ni el request_id. El corredor sumó esta cifra a gastado_usd.",
+   "latencia_s": null,
+   "latencia_tipo": "no medida",
+   "veredicto": "flag",
+   "motivo_visual": "dos tomas: Iván sigue de cara a la puerta, no de espaldas mirando a cámara. Hugo sin llave en ambas.",
+   "en_montaje": false
+  },
+  {
+   "id": "V33_t1",
+   "paso": "V33",
+   "plano": "b6_p1",
+   "toma": 1,
+   "timestamp": "2026-10-19T02:46:36Z",
+   "timestamp_fuente": "mtime del PNG de salida, UTC",
+   "modelo": "nbp",
+   "endpoint": "fal-ai/nano-banana-pro/edit",
+   "params": {
+    "resolution": "2K",
+    "quality": null,
+    "aspect": "9:16",
+    "image_size": null,
+    "num_images": 1,
+    "seed": null,
+    "output_format": "png"
+   },
+   "prompt_file": "prompts/V33_b6_p1.txt",
+   "prompt": "Edit the image: Iván stands with his back pressed against the door.\n\nCHANGE: Iván stands with his BACK pressed against the door, facing camera, arms braced against the door frame, head turned slightly; the small window full of palms and dark smears stays above his shoulder.\n\nPRESERVE EXACTLY:\n- camera position, lens, framing and 9:16 aspect (unless the change says otherwise)\n- every person's face, hair, wardrobe, pose and eyeline not named in the change\n- every light source, shadow, colour grade and film grain not named in the change\n- natural hands with five separate fingers\n\nONLY CHANGE: Iván stands with his back pressed against the door. Everything else stays identical. No text.",
+   "referencias": [
+    {
+     "orden": 1,
+     "path": "según resolve(): frame:b6_p1",
+     "rol": "fotograma que se edita"
+    }
+   ],
+   "fal_request_id": null,
+   "output": "raw/V33_b6_p1_t1_nbp_0.png",
+   "costo_usd": 0.15,
+   "costo_tipo": "estimado",
+   "nota_costo": "Cifra del lote (NBP 0.15, flare 0.08). fal_gen.py no guarda el monto ni el request_id. El corredor sumó esta cifra a gastado_usd.",
+   "latencia_s": null,
+   "latencia_tipo": "no medida",
+   "veredicto": "flag",
+   "motivo_visual": "dos tomas: Iván sigue de cara a la puerta, no de espaldas mirando a cámara. Hugo sin llave en ambas.",
+   "en_montaje": false
+  },
+  {
+   "id": "V34_t0",
+   "paso": "V34",
+   "plano": "b6_p2",
+   "toma": 0,
+   "timestamp": "2026-10-19T02:47:45Z",
+   "timestamp_fuente": "mtime del PNG de salida, UTC",
+   "modelo": "flare",
+   "endpoint": "openai/gpt-image-2.5/flare/edit",
+   "params": {
+    "resolution": null,
+    "quality": "high",
+    "aspect": "9:16",
+    "image_size": {
+     "width": 1152,
+     "height": 2048
+    },
+    "num_images": 1,
+    "seed": null,
+    "output_format": "png"
+   },
+   "prompt_file": "prompts/V34_b6_p2.txt",
+   "prompt": "FILM STILL, vertical 9:16. Image 1 is this shot as it is now (same Carmen, same last carriage, same red light). Image 2 is Carmen (face, grey roots, nurse uniform under a brown coat, bag on her LEFT shoulder, glasses on a cord; identity and wardrobe only). Image 3 is the state of her RIGHT palm (one thin cut and a dark reddish-black smear). Image 4 is the last carriage in red light. MOMENT: close-up of Carmen, chest up, locked off. Her chin is down: she looks at her own RIGHT palm, which she holds close to her chest, palm turned toward HER face, not toward the camera; we only glimpse the edge of the dark reddish-black smear (almost black, matte, not bright red). Her fingers are curling into a fist and the fist is already slipping inside the opening of her brown coat. Her eyes stay on the hand. CAMERA: locked off, 50mm, f/2. LIGHT: the narrow red ceiling strip (#B3001B) from above is the only light: half her face in shadow, real black zones, no white fill on her skin. Glasses on the cord, bag on her left shoulder. Shot on 35mm film, Kodak Vision3 500T grain, blacks fall to black, real skin texture, no HDR. No text, no captions, no watermark.",
+   "referencias": [
+    {
+     "orden": 1,
+     "path": "según resolve(): frame:b6_p2",
+     "rol": "fotograma que se edita"
+    },
+    {
+     "orden": 2,
+     "path": "ref:personajes/HOJA_carmen.png",
+     "rol": "hoja de Carmen"
+    },
+    {
+     "orden": 3,
+     "path": "ref:personajes/ESTADO_carmen_palma_v2_palma.png",
+     "rol": "estado de la palma derecha de Carmen"
+    },
+    {
+     "orden": 4,
+     "path": "ref:set/F05_rojo_tres_cuartos_hacia_puerta.png",
+     "rol": "referencia de luz roja del último vagón"
+    }
+   ],
+   "fal_request_id": null,
+   "output": "raw/V34_b6_p2_t0_flare_0.png",
+   "costo_usd": 0.08,
+   "costo_tipo": "estimado",
+   "nota_costo": "Cifra del lote (NBP 0.15, flare 0.08). fal_gen.py no guarda el monto ni el request_id. El corredor sumó esta cifra a gastado_usd.",
+   "latencia_s": null,
+   "latencia_tipo": "no medida",
+   "veredicto": "retry",
+   "motivo_visual": "Esta toma no se aceptó. Criterio que se volvió a pedir: Extra 4 + 5: mira su palma cerca del pecho, la cierra en un puño y la mete en el abrigo · no la muestra a cámara · mancha negra rojiza · luz roja de arriba, media cara en sombra",
+   "en_montaje": false
+  },
+  {
+   "id": "V34_t1",
+   "paso": "V34",
+   "plano": "b6_p2",
+   "toma": 1,
+   "timestamp": "2026-10-19T02:49:01Z",
+   "timestamp_fuente": "mtime del PNG de salida, UTC",
+   "modelo": "flare",
+   "endpoint": "openai/gpt-image-2.5/flare/edit",
+   "params": {
+    "resolution": null,
+    "quality": "high",
+    "aspect": "9:16",
+    "image_size": {
+     "width": 1152,
+     "height": 2048
+    },
+    "num_images": 1,
+    "seed": null,
+    "output_format": "png"
+   },
+   "prompt_file": "prompts/V34_b6_p2.txt",
+   "prompt": "FILM STILL, vertical 9:16. Image 1 is this shot as it is now (same Carmen, same last carriage, same red light). Image 2 is Carmen (face, grey roots, nurse uniform under a brown coat, bag on her LEFT shoulder, glasses on a cord; identity and wardrobe only). Image 3 is the state of her RIGHT palm (one thin cut and a dark reddish-black smear). Image 4 is the last carriage in red light. MOMENT: close-up of Carmen, chest up, locked off. Her chin is down: she looks at her own RIGHT palm, which she holds close to her chest, palm turned toward HER face, not toward the camera; we only glimpse the edge of the dark reddish-black smear (almost black, matte, not bright red). Her fingers are curling into a fist and the fist is already slipping inside the opening of her brown coat. Her eyes stay on the hand. CAMERA: locked off, 50mm, f/2. LIGHT: the narrow red ceiling strip (#B3001B) from above is the only light: half her face in shadow, real black zones, no white fill on her skin. Glasses on the cord, bag on her left shoulder. Shot on 35mm film, Kodak Vision3 500T grain, blacks fall to black, real skin texture, no HDR. No text, no captions, no watermark.",
+   "referencias": [
+    {
+     "orden": 1,
+     "path": "según resolve(): frame:b6_p2",
+     "rol": "fotograma que se edita"
+    },
+    {
+     "orden": 2,
+     "path": "ref:personajes/HOJA_carmen.png",
+     "rol": "hoja de Carmen"
+    },
+    {
+     "orden": 3,
+     "path": "ref:personajes/ESTADO_carmen_palma_v2_palma.png",
+     "rol": "estado de la palma derecha de Carmen"
+    },
+    {
+     "orden": 4,
+     "path": "ref:set/F05_rojo_tres_cuartos_hacia_puerta.png",
+     "rol": "referencia de luz roja del último vagón"
+    }
+   ],
+   "fal_request_id": null,
+   "output": "raw/V34_b6_p2_t1_flare_0.png",
+   "costo_usd": 0.08,
+   "costo_tipo": "estimado",
+   "nota_costo": "Cifra del lote (NBP 0.15, flare 0.08). fal_gen.py no guarda el monto ni el request_id. El corredor sumó esta cifra a gastado_usd.",
+   "latencia_s": null,
+   "latencia_tipo": "no medida",
+   "veredicto": "accept",
+   "motivo_visual": "Aceptada en la pasada secuencial. Criterio del lote: Extra 4 + 5: mira su palma cerca del pecho, la cierra en un puño y la mete en el abrigo · no la muestra a cámara · mancha negra rojiza · luz roja de arriba, media cara en sombra",
+   "en_montaje": false
+  },
+  {
+   "id": "V35_t0",
+   "paso": "V35",
+   "plano": "b6_p3",
+   "toma": 0,
+   "timestamp": "2026-10-19T02:49:59Z",
+   "timestamp_fuente": "mtime del PNG de salida, UTC",
+   "modelo": "nbp",
+   "endpoint": "fal-ai/nano-banana-pro/edit",
+   "params": {
+    "resolution": "2K",
+    "quality": null,
+    "aspect": "9:16",
+    "image_size": null,
+    "num_images": 1,
+    "seed": null,
+    "output_format": "png"
+   },
+   "prompt_file": "prompts/V35_b6_p3.txt",
+   "prompt": "Edit the image: replace the far door at the back of the shot with the rear wall of this last carriage, as in Image 2.\n\nCHANGE: Behind the people there is no door, no small door window and no cold tube: only the rear end wall of the last carriage in red light, the rear window at its centre (black, nothing visible through it), the conductor's cabin door at frame LEFT, and the last seats in deep shade. This is the opposite end of the carriage from the front door; the cold white tube is behind the camera, above the real door.\n\nPRESERVE EXACTLY:\n- camera position, lens, framing and 9:16 aspect (unless the change says otherwise)\n- every person's face, hair, wardrobe, pose and eyeline not named in the change\n- every light source, shadow, colour grade and film grain not named in the change\n- natural hands with five separate fingers\n\nONLY CHANGE: replace the far door at the back of the shot with the rear wall of this last carriage, as in Image 2. Everything else stays identical. No text.",
+   "referencias": [
+    {
+     "orden": 1,
+     "path": "según resolve(): frame:b6_p3",
+     "rol": "fotograma que se edita"
+    },
+    {
+     "orden": 2,
+     "path": "ref:set/F02_rojo_ultimo_vagon_hacia_fondo_cabina.png",
+     "rol": "referencia de la pared trasera, sin segunda puerta"
+    }
+   ],
+   "fal_request_id": null,
+   "output": "raw/V35_b6_p3_t0_nbp_0.png",
+   "costo_usd": 0.15,
+   "costo_tipo": "estimado",
+   "nota_costo": "Cifra del lote (NBP 0.15, flare 0.08). fal_gen.py no guarda el monto ni el request_id. El corredor sumó esta cifra a gastado_usd.",
+   "latencia_s": null,
+   "latencia_tipo": "no medida",
+   "veredicto": "retry",
+   "motivo_visual": "No se aceptó. En b6_p3 la ventanita trasera muestra vías y cielo.",
+   "en_montaje": false
+  },
+  {
+   "id": "SB_b5_p6_fallo_carga",
+   "paso": "SB_b5_p6",
+   "plano": "b5_p6",
+   "toma": 0,
+   "timestamp": "2026-10-19T02:56:30Z",
+   "timestamp_fuente": "aproximado: el lote de las 02:56 UTC; esta llamada no dejó PNG",
+   "modelo": "sunburst",
+   "endpoint": "openai/gpt-image-2.5/sunburst/edit",
+   "params": {
+    "image_size": {
+     "width": 1152,
+     "height": 2048
+    },
+    "quality": "high",
+    "aspect": "9:16",
+    "num_images": 1,
+    "seed": null,
+    "output_format": "png",
+    "resolution": null
+   },
+   "prompt_file": "prompts/SB_b5_p6.txt",
+   "prompt": "FILM STILL, vertical 9:16. Rebuild this shot clean, in one pass, from Image 1. Image 1 is the original frame: match its camera on Hugo at the door. Image 2 is Hugo: match his face, grey mustache, conductor cap and dark uniform. Image 3 is the antique key and the bronze lock plate. Image 4 is the red light of this carriage.\n\nMOMENT: the door is still closed. Hugo's left shoulder presses it. The antique key is in the keyhole of the bronze plate, mid-turn, held between the thumb and fingers of his RIGHT hand. A second hand may steady the plate. Fingers stay separate from the key. No key in any pocket. He looks down at the lock.\n\nLIGHT: the narrow red ceiling strip is the only light, from above. Half his face is in real black shadow. No white or grey fill on his skin. No long red neon tube.\n\nTEXTURE: sharp face, real skin, separate fingers, fine 35mm grain. No waxy skin, no crunchy sharpening, no compression mush, no text.",
+   "referencias": [
+    {
+     "orden": 1,
+     "path": "previs/frames/b5_p6.png",
+     "rol": "fotograma original"
+    },
+    {
+     "orden": 2,
+     "path": ".refs_cache/HOJA_hugo.png (entonces 2752×1536)",
+     "rol": "hoja de Hugo"
+    },
+    {
+     "orden": 3,
+     "path": ".refs_cache/PROP_llave_y_cerradura.png",
+     "rol": "referencia de la llave antigua y la placa"
+    },
+    {
+     "orden": 4,
+     "path": ".refs_cache/F05_rojo_tres_cuartos_hacia_puerta.png",
+     "rol": "referencia de luz roja del último vagón"
+    }
+   ],
+   "fal_request_id": "01a15216-809f-7271-95e9-dfef6c0d122a",
+   "output": null,
+   "costo_usd": 0.0704,
+   "costo_tipo": "estimado",
+   "latencia_s": 6.629,
+   "latencia_tipo": "inference_time de fal (status COMPLETED pese al 422)",
+   "veredicto": "retry",
+   "motivo_visual": "422 image_load_error al leer HOJA_hugo.png subida (2752×1536). No hubo PNG. Se achicó la hoja a 1536 px y se reintentó.",
+   "en_montaje": false,
+   "nota_costo": "fal no devolvió un monto. Se estima igual que una toma sunburst con 4 referencias porque el status quedó COMPLETED. No está confirmado que se haya cobrado."
+  },
+  {
+   "id": "SB_b0_p3_t0",
+   "paso": "SB_b0_p3",
+   "plano": "b0_p3",
+   "toma": 0,
+   "timestamp": "2026-10-19T02:56:53Z",
+   "timestamp_fuente": "mtime del PNG, UTC",
+   "modelo": "sunburst",
+   "endpoint": "openai/gpt-image-2.5/sunburst/edit",
+   "params": {
+    "resolution": null,
+    "quality": "high",
+    "aspect": "9:16",
+    "image_size": {
+     "width": 1152,
+     "height": 2048
+    },
+    "num_images": 1,
+    "seed": null,
+    "output_format": "png"
+   },
+   "prompt_file": "prompts/SB_b0_p3.txt",
+   "prompt_fuente": "archivo vigente; no se reescribió después de esta toma",
+   "prompt": "FILM STILL, vertical 9:16. Rebuild this shot clean, in one pass, from Image 1. Image 1 is the original frame: match its camera and who is where. Image 2 is the low amber of this carriage. Image 3 is Martina: match her face, wavy dark hair, oat sweater and charcoal coat. Image 4 is the blue-shirt couple: match their faces and the cobalt shirt.\n\nMOMENT: Martina stands at the right edge, one hand on the seatback. Her head and her eyes are turned DOWN-LEFT and land on the face of the blue-shirt man, who stirs in the window seat at frame left. She does not look off frame and she does not look at the camera. The man and his wife stay seated; she is still asleep beside him.\n\nCAMERA: same angle as Image 1. The small window of the door at the far end is dry and dark: a dark gangway, no rain, no sky.\n\nLIGHT: only two or three reading lamps under the luggage rack, short warm cones about 2800K, real darkness between them. Passengers away from those lamps fall into deep shade. Side windows are black night with rain only on the outside of the glass.\n\nTEXTURE: sharp faces, real skin, fine 35mm grain. No waxy skin, no crunchy sharpening, no compression mush, no text.",
+   "referencias": [
+    {
+     "orden": 1,
+     "path": "previs/frames (original) + refs del job; el meta de las primeras tomas no guardó la lista",
+     "rol": "fotograma original, PNG limpio, no una salida ya editada"
+    }
+   ],
+   "fal_request_id": "01a15216-7cad-7260-a487-7f97783fa8ee",
+   "output": "raw/SB_b0_p3_t0_sunburst_0.png",
+   "costo_usd": 0.0464,
+   "costo_tipo": "estimado",
+   "nota_costo": "Estimado: 0.0424 (tabla fal high, 2026-09-09, interpolada a 1152×2048 con 1 referencia) + 0.008 por referencia extra (nota del 8-sep-2026, no remedida) + 0.004 de texto. fal no devolvió monto.",
+   "latencia_s": 45.524,
+   "latencia_tipo": "inference_time de fal, sin la subida",
+   "veredicto": "accept",
+   "motivo_visual": "Martina mira hacia abajo a la izquierda, al hombre de camisa azul. La esposa sigue dormida. Luz ámbar baja. Caras nítidas.",
+   "en_montaje": true
+  },
+  {
+   "id": "SB_b5_p8_t0",
+   "paso": "SB_b5_p8",
+   "plano": "b5_p8",
+   "toma": 0,
+   "timestamp": "2026-10-19T02:56:54Z",
+   "timestamp_fuente": "mtime del PNG, UTC",
+   "modelo": "sunburst",
+   "endpoint": "openai/gpt-image-2.5/sunburst/edit",
+   "params": {
+    "resolution": null,
+    "quality": "high",
+    "aspect": "9:16",
+    "image_size": {
+     "width": 1152,
+     "height": 2048
+    },
+    "num_images": 1,
+    "seed": null,
+    "output_format": "png"
+   },
+   "prompt_file": "prompts/SB_b5_p8.txt",
+   "prompt_fuente": "archivo vigente; no se reescribió después de esta toma",
+   "prompt": "FILM STILL, vertical 9:16. Rebuild this shot clean and tighter, in one pass. Image 1 is the original wider frame: same door, same Hugo, same side of the lock. Image 2 is Hugo: match his face, grey mustache, conductor cap and dark uniform. Image 3 is the antique key and the bronze lock plate.\n\nMOMENT: a tight shot at the height of the lock. Hugo's shoulder and back press the door closed. The door edge crushes a grey infected hand jammed in the gap on the lock side: five human fingers, short and blunt, not claws. His RIGHT hand turns the antique key in the keyhole from inside. The bronze plate, the keyhole and the key read large and clear. The small wired-glass window is dry: a dark red gangway behind the mesh, no water drops, no sky, no blue.\n\nLIGHT: red from above. Half of Hugo's face is in real black shadow. No white fill on his skin.\n\nTEXTURE: sharp skin, separate fingers, fine 35mm grain. No waxy skin, no crunchy sharpening, no compression mush, no text.",
+   "referencias": [
+    {
+     "orden": 1,
+     "path": "previs/frames (original) + refs del job; el meta de las primeras tomas no guardó la lista",
+     "rol": "fotograma original, PNG limpio, no una salida ya editada"
+    }
+   ],
+   "fal_request_id": "01a15216-7d2b-7c21-a938-df16b43edc6e",
+   "output": "raw/SB_b5_p8_t0_sunburst_0.png",
+   "costo_usd": 0.0464,
+   "costo_tipo": "estimado",
+   "nota_costo": "Estimado: 0.0424 (tabla fal high, 2026-09-09, interpolada a 1152×2048 con 1 referencia) + 0.008 por referencia extra (nota del 8-sep-2026, no remedida) + 0.004 de texto. fal no devolvió monto.",
+   "latencia_s": 46.182,
+   "latencia_tipo": "inference_time de fal, sin la subida",
+   "veredicto": "accept",
+   "motivo_visual": "Plano cerrado: hombro contra la puerta, llave girando por dentro, mano gris atorada en el vano, ventanita seca. Las uñas de esa mano salieron largas. Se acepta con esa falla.",
+   "en_montaje": true
+  },
+  {
+   "id": "SB_b3_p6_t0",
+   "paso": "SB_b3_p6",
+   "plano": "b3_p6",
+   "toma": 0,
+   "timestamp": "2026-10-19T02:56:58Z",
+   "timestamp_fuente": "mtime del PNG, UTC",
+   "modelo": "sunburst",
+   "endpoint": "openai/gpt-image-2.5/sunburst/edit",
+   "params": {
+    "resolution": null,
+    "quality": "high",
+    "aspect": "9:16",
+    "image_size": {
+     "width": 1152,
+     "height": 2048
+    },
+    "num_images": 1,
+    "seed": null,
+    "output_format": "png"
+   },
+   "prompt_file": "prompts/SB_b3_p6.txt",
+   "prompt_fuente": "texto reconstruido de antes de reescribir el archivo",
+   "prompt": "FILM STILL, vertical 9:16. Rebuild this wide shot clean, in one pass, from Image 1. Image 1 is the original frame: match its camera looking down the aisle. Image 2 is the low amber of this carriage. Image 3 is the reader: match her face, dark hair tied in a bun, rust-red knitted scarf and dark top.\n\nMOMENT: foreground left is a dark struggling tangle in shadow, the blue-shirt man lunging onto his wife. Shapes only, motion blur, nothing graphic, neither of them looking at the camera. At frame right the reader from Image 3 is springing up, mouth open, a book falling from her hand. Same face, bun, rust-red scarf, dark top. No beige cardigan and no loose curly hair.\n\nCAMERA: same wide aisle view as Image 1. The small window of the door at the far end is dry and dark: a dark gangway behind the mesh, no sky, no stars, no raindrops, no blue exterior.\n\nLIGHT: only two or three reading lamps under the luggage rack, the ones nearest the action, including the lamp above the reader. Short warm cones about 2800K. Every other lamp and the ceiling are dark. People away from those lamps are almost silhouettes. Side windows are black night with rain only on the outside of the glass.\n\nTEXTURE: sharp where the reader is in focus, fine 35mm grain. No waxy skin, no crunchy sharpening, no compression mush, no text.",
+   "referencias": [
+    {
+     "orden": 1,
+     "path": "previs/frames (original) + refs del job; el meta de las primeras tomas no guardó la lista",
+     "rol": "fotograma original, PNG limpio, no una salida ya editada"
+    }
+   ],
+   "fal_request_id": "01a15216-7dea-75e1-a3b6-e49b60a32081",
+   "output": "raw/SB_b3_p6_t0_sunburst_0.png",
+   "costo_usd": 0.0464,
+   "costo_tipo": "estimado",
+   "nota_costo": "Estimado: 0.0424 (tabla fal high, 2026-09-09, interpolada a 1152×2048 con 1 referencia) + 0.008 por referencia extra (nota del 8-sep-2026, no remedida) + 0.004 de texto. fal no devolvió monto.",
+   "latencia_s": 49.015,
+   "latencia_tipo": "inference_time de fal, sin la subida",
+   "veredicto": "retry",
+   "motivo_visual": "Lectora con moño y bufanda, ventanita oscura y pocas lámparas. El primer término izquierdo está sentado y caído, no es un forcejeo.",
+   "en_montaje": false
+  },
+  {
+   "id": "SB_b4_p6_t0",
+   "paso": "SB_b4_p6",
+   "plano": "b4_p6",
+   "toma": 0,
+   "timestamp": "2026-10-19T02:57:02Z",
+   "timestamp_fuente": "mtime del PNG, UTC",
+   "modelo": "sunburst",
+   "endpoint": "openai/gpt-image-2.5/sunburst/edit",
+   "params": {
+    "resolution": null,
+    "quality": "high",
+    "aspect": "9:16",
+    "image_size": {
+     "width": 1152,
+     "height": 2048
+    },
+    "num_images": 1,
+    "seed": null,
+    "output_format": "png"
+   },
+   "prompt_file": "prompts/SB_b4_p6.txt",
+   "prompt_fuente": "archivo vigente; no se reescribió después de esta toma",
+   "prompt": "FILM STILL, vertical 9:16. Rebuild this shot clean, in one pass, from Image 1. Image 1 is the original frame: match its camera and who is running where. Image 2 is Tomás: match his face and give him this exact hair, short dark brown, side-parted, tidy, short on the sides, thin metal glasses, navy puffer. Image 3 is Martina: wavy dark hair, oat sweater, charcoal coat. Image 4 is the red light of this carriage.\n\nMOMENT: Tomás and Martina run toward the camera down the aisle. Tomás is frame right. His RIGHT hand holds Martina's LEFT hand; five separate fingers on each hand, a real grip. Martina's arm comes out of her own charcoal coat, not out of his jacket. His hair is the short side-parted cut of Image 2: no curls, no fringe, no messy waves. Behind them, Iván and Carmen follow. Through the burst-open front door, behind the infected silhouettes, there is only a dark gangway lit faint red: no blue light, no sky, no rain, no exterior.\n\nLIGHT: the narrow red ceiling strip is the only light, from above. Half of each face falls in real black shadow. No white or grey fill on skin.\n\nTEXTURE: sharp faces, real skin, fine 35mm grain. No waxy skin, no crunchy sharpening, no compression mush, no text.",
+   "referencias": [
+    {
+     "orden": 1,
+     "path": "previs/frames (original) + refs del job; el meta de las primeras tomas no guardó la lista",
+     "rol": "fotograma original, PNG limpio, no una salida ya editada"
+    }
+   ],
+   "fal_request_id": "01a15216-7f7c-7233-ac21-9fda3915f671",
+   "output": "raw/SB_b4_p6_t0_sunburst_0.png",
+   "costo_usd": 0.0464,
+   "costo_tipo": "estimado",
+   "nota_costo": "Estimado: 0.0424 (tabla fal high, 2026-09-09, interpolada a 1152×2048 con 1 referencia) + 0.008 por referencia extra (nota del 8-sep-2026, no remedida) + 0.004 de texto. fal no devolvió monto.",
+   "latencia_s": 52.098,
+   "latencia_tipo": "inference_time de fal, sin la subida",
+   "veredicto": "accept",
+   "motivo_visual": "Pelo corto con partidura, manos tomadas, fuelle rojo detrás de las siluetas, sin cielo. El brazo de Martina sale de su abrigo.",
+   "en_montaje": true
+  },
+  {
+   "id": "SB_b0_p2_t0",
+   "paso": "SB_b0_p2",
+   "plano": "b0_p2",
+   "toma": 0,
+   "timestamp": "2026-10-19T02:57:03Z",
+   "timestamp_fuente": "mtime del PNG, UTC",
+   "modelo": "sunburst",
+   "endpoint": "openai/gpt-image-2.5/sunburst/edit",
+   "params": {
+    "resolution": null,
+    "quality": "high",
+    "aspect": "9:16",
+    "image_size": {
+     "width": 1152,
+     "height": 2048
+    },
+    "num_images": 1,
+    "seed": null,
+    "output_format": "png"
+   },
+   "prompt_file": "prompts/SB_b0_p2.txt",
+   "prompt_fuente": "texto reconstruido de antes de reescribir el archivo",
+   "prompt": "FILM STILL, vertical 9:16. Rebuild this shot clean, in one pass, from Image 1. Image 1 is the original frame: match its camera, its low angle and who is where. Image 2 is the low amber of this carriage. Image 3 is the closed briefcase. Image 4 is Martina's wardrobe: oat knit and charcoal coat.\n\nMOMENT: night, before the outbreak. The closed hard-shell briefcase sits fully UNDER the blue seat, on the AISLE side, tucked into the shadow beneath the cushion, its back edge on the seat's metal rail. It is not out in the aisle. Martina's hand rests on top of it. The oat sweater cuff comes out of the charcoal coat sleeve and covers the knuckles up to the first finger joints; only the fingertips show. Five separate fingers, the hand separate from the cuff. The blue-shirt man stays seated and asleep; his dark shoes stay behind the briefcase, still.\n\nCAMERA: same low angle as Image 1. The rear door at the end of the aisle is a blank metal door. Its small window is dry: a dark gangway behind the glass, no rain, no sky, no blue night.\n\nLIGHT: only two or three reading lamps under the luggage rack, the ones nearest this seat. Short warm cones, about 2800K, with real darkness between them. Every other lamp and the ceiling are dark. Side windows are black night with rain only on the outside of the glass.\n\nTEXTURE: real knit, real leather, fine 35mm grain. Sharp fingers. No waxy skin, no crunchy sharpening, no compression mush, no text.",
+   "referencias": [
+    {
+     "orden": 1,
+     "path": "previs/frames (original) + refs del job; el meta de las primeras tomas no guardó la lista",
+     "rol": "fotograma original, PNG limpio, no una salida ya editada"
+    }
+   ],
+   "fal_request_id": "01a15216-7f89-7220-99f2-66a94afb10c9",
+   "output": "raw/SB_b0_p2_t0_sunburst_0.png",
+   "costo_usd": 0.0464,
+   "costo_tipo": "estimado",
+   "nota_costo": "Estimado: 0.0424 (tabla fal high, 2026-09-09, interpolada a 1152×2048 con 1 referencia) + 0.008 por referencia extra (nota del 8-sep-2026, no remedida) + 0.004 de texto. fal no devolvió monto.",
+   "latencia_s": 53.732,
+   "latencia_tipo": "inference_time de fal, sin la subida",
+   "veredicto": "retry",
+   "motivo_visual": "Puño de avena y luz baja correctos, ventanita seca. El maletín sigue en el piso del pasillo, al lado del asiento, no debajo del cojín.",
+   "en_montaje": false
+  },
+  {
+   "id": "SB_b2_p4_t0",
+   "paso": "SB_b2_p4",
+   "plano": "b2_p4",
+   "toma": 0,
+   "timestamp": "2026-10-19T03:01:49Z",
+   "timestamp_fuente": "mtime del PNG, UTC",
+   "modelo": "sunburst",
+   "endpoint": "openai/gpt-image-2.5/sunburst/edit",
+   "params": {
+    "resolution": null,
+    "quality": "high",
+    "aspect": "9:16",
+    "image_size": {
+     "width": 1152,
+     "height": 2048
+    },
+    "num_images": 1,
+    "seed": null,
+    "output_format": "png"
+   },
+   "prompt_file": "prompts/SB_b2_p4.txt",
+   "prompt_fuente": "archivo vigente; no se reescribió después de esta toma",
+   "prompt": "FILM STILL, vertical 9:16. Rebuild this shot clean, in one pass, from Image 1. Image 1 is the original close-up: match Martina's face, her stare and the amber carriage. Image 2 is Martina. Image 3 is the shared pair bench: two navy backs joined, two cushions joined, metal armrests only at the outer ends.\n\nMOMENT: chest-up close-up. Martina sits in the window place of that shared bench, frame left. The empty aisle place of the SAME bench stays visible along the right edge, unoccupied: its backrest beside hers, no dividing armrest, no gap. Her LEFT hand rests alone on the window-side armrest. Five separate fingers. She stares straight ahead, not at the camera. Nobody else is on the bench.\n\nCAMERA: closer than a wide seat shot, from the chest up, same side of the carriage as Image 1. The rainy window stays on her left.\n\nLIGHT: one warm reading lamp above, about 2800K. Real shadow on the far side of her face. No white fill.\n\nTEXTURE: sharp face, real knit, fine 35mm grain. No waxy skin, no crunchy sharpening, no compression mush, no text.",
+   "referencias": [
+    {
+     "orden": 1,
+     "path": "previs/frames (original) + refs del job; el meta de las primeras tomas no guardó la lista",
+     "rol": "fotograma original, PNG limpio, no una salida ya editada"
+    }
+   ],
+   "fal_request_id": "01a1521b-1cf8-7653-8310-1b989b5e3f8a",
+   "output": "raw/SB_b2_p4_t0_sunburst_0.png",
+   "costo_usd": 0.0464,
+   "costo_tipo": "estimado",
+   "nota_costo": "Estimado: 0.0424 (tabla fal high, 2026-09-09, interpolada a 1152×2048 con 1 referencia) + 0.008 por referencia extra (nota del 8-sep-2026, no remedida) + 0.004 de texto. fal no devolvió monto.",
+   "latencia_s": 38.151,
+   "latencia_tipo": "inference_time de fal, sin la subida",
+   "veredicto": "accept",
+   "motivo_visual": "Banca compartida: el lugar vacío se ve a su derecha, sin divisor. La mano sola en el apoyabrazos, ventana a la izquierda, mirada al frente. Quedó más abierto que un primer plano y con más de dos lámparas.",
+   "en_montaje": true
+  },
+  {
+   "id": "SB_b6_p3_t0",
+   "paso": "SB_b6_p3",
+   "plano": "b6_p3",
+   "toma": 0,
+   "timestamp": "2026-10-19T03:01:50Z",
+   "timestamp_fuente": "mtime del PNG, UTC",
+   "modelo": "sunburst",
+   "endpoint": "openai/gpt-image-2.5/sunburst/edit",
+   "params": {
+    "resolution": null,
+    "quality": "high",
+    "aspect": "9:16",
+    "image_size": {
+     "width": 1152,
+     "height": 2048
+    },
+    "num_images": 1,
+    "seed": null,
+    "output_format": "png"
+   },
+   "prompt_file": "prompts/SB_b6_p3.txt",
+   "prompt_fuente": "archivo vigente; no se reescribió después de esta toma",
+   "prompt": "FILM STILL, vertical 9:16. Rebuild this shot clean, in one pass, from Image 1. Image 1 is the original two-shot in the last carriage. Image 2 is the rear wall of this carriage: no second door. Image 3 is Martina. Image 4 is Tomás: short dark brown hair, side-parted, tidy, short on the sides, thin metal glasses, navy puffer.\n\nMOMENT: Tomás stands frame left, looking right, toward Martina. Martina stands frame right, eyes on the floor, oat sweater and charcoal coat. They are not touching.\n\nBEHIND THEM: the rear end wall of the last carriage. No door in that wall, no door window, no tracks, no forest, no sky, no night exterior. A plain rear window at the centre of the wall, black, with nothing visible through it. The conductor's cabin door is at frame left. The last seats fall into deep shade. Side windows, if any, show only black night and rain on the outside glass.\n\nLIGHT: the narrow red ceiling strip from above. Half of each face in real black shadow. No white fill. No long neon tube.\n\nTEXTURE: sharp faces, fine 35mm grain. No waxy skin, no crunchy sharpening, no compression mush, no text.",
+   "referencias": [
+    {
+     "orden": 1,
+     "path": "previs/frames (original) + refs del job; el meta de las primeras tomas no guardó la lista",
+     "rol": "fotograma original, PNG limpio, no una salida ya editada"
+    }
+   ],
+   "fal_request_id": "01a1521b-1f0e-7b92-a5d5-e33e10fc649d",
+   "output": "raw/SB_b6_p3_t0_sunburst_0.png",
+   "costo_usd": 0.0464,
+   "costo_tipo": "estimado",
+   "nota_costo": "Estimado: 0.0424 (tabla fal high, 2026-09-09, interpolada a 1152×2048 con 1 referencia) + 0.008 por referencia extra (nota del 8-sep-2026, no remedida) + 0.004 de texto. fal no devolvió monto.",
+   "latencia_s": 38.089,
+   "latencia_tipo": "inference_time de fal, sin la subida",
+   "veredicto": "accept",
+   "motivo_visual": "Pared trasera, ventanita negra sin vías ni cielo, puerta de cabina a la izquierda. Tomás a la izquierda mira a la derecha; Martina a la derecha mira el piso. El pelo no es una partidura estricta y la tira roja del techo es larga.",
+   "en_montaje": true
+  },
+  {
+   "id": "SB_b3_p6_t1",
+   "paso": "SB_b3_p6",
+   "plano": "b3_p6",
+   "toma": 1,
+   "timestamp": "2026-10-19T03:01:52Z",
+   "timestamp_fuente": "mtime del PNG, UTC",
+   "modelo": "sunburst",
+   "endpoint": "openai/gpt-image-2.5/sunburst/edit",
+   "params": {
+    "resolution": null,
+    "quality": "high",
+    "aspect": "9:16",
+    "image_size": {
+     "width": 1152,
+     "height": 2048
+    },
+    "num_images": 1,
+    "seed": null,
+    "output_format": "png"
+   },
+   "prompt_file": "prompts/SB_b3_p6.txt",
+   "prompt_fuente": "archivo vigente; no se reescribió después de esta toma",
+   "prompt": "FILM STILL, vertical 9:16. Rebuild this wide shot clean, in one pass, from Image 1. Image 1 is the original frame: match its camera looking down the aisle. Image 2 is the low amber of this carriage. Image 3 is the reader: match her face, dark hair tied in a bun, rust-red knitted scarf and dark top.\n\nMOMENT: foreground left, the blue-shirt man is on his feet and lunging onto his wife. Their bodies tangle in shadow, motion blur, shapes only, nothing graphic, neither looking at the camera. They are not asleep and not sitting calmly. At frame right the reader from Image 3 is springing up, mouth open, a book falling from her hand. Same face, bun, rust-red scarf, dark top. No beige cardigan and no loose curly hair.\n\nCAMERA: same wide aisle view as Image 1. The small window of the door at the far end is dry and dark: a dark gangway behind the mesh, no sky, no stars, no raindrops, no blue exterior.\n\nLIGHT: only two or three reading lamps under the luggage rack, the ones nearest the action, including the lamp above the reader. Short warm cones about 2800K. Every other lamp and the ceiling are dark. People away from those lamps are almost silhouettes. Side windows are black night with rain only on the outside of the glass.\n\nTEXTURE: sharp where the reader is in focus, fine 35mm grain. No waxy skin, no crunchy sharpening, no compression mush, no text.",
+   "referencias": [
+    {
+     "orden": 1,
+     "path": "previs/frames (original) + refs del job; el meta de las primeras tomas no guardó la lista",
+     "rol": "fotograma original, PNG limpio, no una salida ya editada"
+    }
+   ],
+   "fal_request_id": "01a1521b-1d8e-73c1-aae5-e895b092a184",
+   "output": "raw/SB_b3_p6_t1_sunburst_0.png",
+   "costo_usd": 0.0464,
+   "costo_tipo": "estimado",
+   "nota_costo": "Estimado: 0.0424 (tabla fal high, 2026-09-09, interpolada a 1152×2048 con 1 referencia) + 0.008 por referencia extra (nota del 8-sep-2026, no remedida) + 0.004 de texto. fal no devolvió monto.",
+   "latencia_s": 40.669,
+   "latencia_tipo": "inference_time de fal, sin la subida",
+   "veredicto": "accept",
+   "motivo_visual": "El hombre de azul está de pie abalanzado sobre la mujer. La lectora grita con moño, bufanda roja y el libro cayendo. Ventanita oscura, sin cielo.",
+   "en_montaje": true
+  },
+  {
+   "id": "SB_b5_p6_t0",
+   "paso": "SB_b5_p6",
+   "plano": "b5_p6",
+   "toma": 0,
+   "timestamp": "2026-10-19T03:01:54Z",
+   "timestamp_fuente": "mtime del PNG, UTC",
+   "modelo": "sunburst",
+   "endpoint": "openai/gpt-image-2.5/sunburst/edit",
+   "params": {
+    "resolution": null,
+    "quality": "high",
+    "aspect": "9:16",
+    "image_size": {
+     "width": 1152,
+     "height": 2048
+    },
+    "num_images": 1,
+    "seed": null,
+    "output_format": "png"
+   },
+   "prompt_file": "prompts/SB_b5_p6.txt",
+   "prompt_fuente": "archivo vigente; no se reescribió después de esta toma",
+   "prompt": "FILM STILL, vertical 9:16. Rebuild this shot clean, in one pass, from Image 1. Image 1 is the original frame: match its camera on Hugo at the door. Image 2 is Hugo: match his face, grey mustache, conductor cap and dark uniform. Image 3 is the antique key and the bronze lock plate. Image 4 is the red light of this carriage.\n\nMOMENT: the door is still closed. Hugo's left shoulder presses it. The antique key is in the keyhole of the bronze plate, mid-turn, held between the thumb and fingers of his RIGHT hand. A second hand may steady the plate. Fingers stay separate from the key. No key in any pocket. He looks down at the lock.\n\nLIGHT: the narrow red ceiling strip is the only light, from above. Half his face is in real black shadow. No white or grey fill on his skin. No long red neon tube.\n\nTEXTURE: sharp face, real skin, separate fingers, fine 35mm grain. No waxy skin, no crunchy sharpening, no compression mush, no text.",
+   "referencias": [
+    {
+     "orden": 1,
+     "path": "previs/frames (original) + refs del job; el meta de las primeras tomas no guardó la lista",
+     "rol": "fotograma original, PNG limpio, no una salida ya editada"
+    }
+   ],
+   "fal_request_id": "01a1521b-1e87-7a21-ab1f-3845b4538f7e",
+   "output": "raw/SB_b5_p6_t0_sunburst_0.png",
+   "costo_usd": 0.0464,
+   "costo_tipo": "estimado",
+   "nota_costo": "Estimado: 0.0424 (tabla fal high, 2026-09-09, interpolada a 1152×2048 con 1 referencia) + 0.008 por referencia extra (nota del 8-sep-2026, no remedida) + 0.004 de texto. fal no devolvió monto.",
+   "latencia_s": 42.092,
+   "latencia_tipo": "inference_time de fal, sin la subida",
+   "veredicto": "accept",
+   "motivo_visual": "La llave está en la cerradura, a mitad de giro, en la mano derecha. La otra mano afirma la placa. Media cara en sombra. Sin tubo de neón largo.",
+   "en_montaje": true
+  },
+  {
+   "id": "SB_b6_p2_t0",
+   "paso": "SB_b6_p2",
+   "plano": "b6_p2",
+   "toma": 0,
+   "timestamp": "2026-10-19T03:01:55Z",
+   "timestamp_fuente": "mtime del PNG, UTC",
+   "modelo": "sunburst",
+   "endpoint": "openai/gpt-image-2.5/sunburst/edit",
+   "params": {
+    "resolution": null,
+    "quality": "high",
+    "aspect": "9:16",
+    "image_size": {
+     "width": 1152,
+     "height": 2048
+    },
+    "num_images": 1,
+    "seed": null,
+    "output_format": "png"
+   },
+   "prompt_file": "prompts/SB_b6_p2.txt",
+   "prompt_fuente": "texto reconstruido de antes de reescribir el archivo",
+   "prompt": "FILM STILL, vertical 9:16. Rebuild this shot clean, in one pass, from Image 1. Image 1 is the original close-up of Carmen in the last carriage. Image 2 is Carmen: match her face, grey roots, nurse uniform under a brown coat, glasses on a cord, bag on her LEFT shoulder. Image 3 is the state of her RIGHT palm: one thin cut and a dark reddish-black smear, almost black, matte. Image 4 is the red light of the last carriage.\n\nMOMENT: chest-up, locked off. Her chin is down. She looks at her own RIGHT palm, held close to her chest, the palm turned toward HER face and not toward the camera. We only glimpse the edge of that dark smear. Her fingers are curling into a fist and the fist is already slipping inside the opening of the brown coat. Her eyes stay on the hand. The bag strap stays on her left shoulder.\n\nLIGHT: the narrow red ceiling strip is the only light, from above. Half her face is in real black shadow. No white fill on her skin.\n\nTEXTURE: sharp face, real skin with pores that stay photographic, fine 35mm grain. No waxy skin, no crunchy sharpening, no compression mush, no text.",
+   "referencias": [
+    {
+     "orden": 1,
+     "path": "previs/frames (original) + refs del job; el meta de las primeras tomas no guardó la lista",
+     "rol": "fotograma original, PNG limpio, no una salida ya editada"
+    }
+   ],
+   "fal_request_id": "01a1521b-1d63-7650-bec4-95237867b037",
+   "output": "raw/SB_b6_p2_t0_sunburst_0.png",
+   "costo_usd": 0.0464,
+   "costo_tipo": "estimado",
+   "nota_costo": "Estimado: 0.0424 (tabla fal high, 2026-09-09, interpolada a 1152×2048 con 1 referencia) + 0.008 por referencia extra (nota del 8-sep-2026, no remedida) + 0.004 de texto. fal no devolvió monto.",
+   "latencia_s": 42.643,
+   "latencia_tipo": "inference_time de fal, sin la subida",
+   "veredicto": "accept",
+   "motivo_visual": "Puño cerca del pecho, mirada baja, bolso al hombro izquierdo, media cara en sombra, piel nítida. La mancha no se lee y el puño no llega a entrar en el abrigo. No se reintentó: el presupuesto se usó en planos que no tenían toma.",
+   "en_montaje": true
+  },
+  {
+   "id": "SB_b0_p2_t1",
+   "paso": "SB_b0_p2",
+   "plano": "b0_p2",
+   "toma": 1,
+   "timestamp": "2026-10-19T03:01:58Z",
+   "timestamp_fuente": "mtime del PNG, UTC",
+   "modelo": "sunburst",
+   "endpoint": "openai/gpt-image-2.5/sunburst/edit",
+   "params": {
+    "resolution": null,
+    "quality": "high",
+    "aspect": "9:16",
+    "image_size": {
+     "width": 1152,
+     "height": 2048
+    },
+    "num_images": 1,
+    "seed": null,
+    "output_format": "png"
+   },
+   "prompt_file": "prompts/SB_b0_p2.txt",
+   "prompt_fuente": "texto reconstruido de antes de reescribir el archivo",
+   "prompt": "FILM STILL, vertical 9:16. Rebuild this shot clean, in one pass, from Image 1. Image 1 is the original frame: match its camera, its low angle and who is where. Image 2 is the low amber of this carriage. Image 3 is the closed briefcase. Image 4 is Martina's wardrobe: oat knit and charcoal coat.\n\nMOMENT: night, before the outbreak. The closed hard-shell briefcase is entirely in the shadow UNDER the blue cushion, aisle side. The cushion hides the top of the briefcase. Only its front face and brass corner peek out below the seat rail. It does not sit on the open floor of the aisle. Martina's hand rests on top of it. The oat sweater cuff comes out of the charcoal coat sleeve and covers the knuckles up to the first finger joints; only the fingertips show. Five separate fingers, the hand separate from the cuff. The blue-shirt man stays seated and asleep; his dark shoes stay behind the briefcase, still.\n\nCAMERA: same low angle as Image 1. The rear door at the end of the aisle is a blank metal door. Its small window is dry: a dark gangway behind the glass, no rain, no sky, no blue night.\n\nLIGHT: only two or three reading lamps under the luggage rack, the ones nearest this seat. Short warm cones, about 2800K, with real darkness between them. Every other lamp and the ceiling are dark. Side windows are black night with rain only on the outside of the glass.\n\nTEXTURE: real knit, real leather, fine 35mm grain. Sharp fingers. No waxy skin, no crunchy sharpening, no compression mush, no text.",
+   "referencias": [
+    {
+     "orden": 1,
+     "path": "previs/frames (original) + refs del job; el meta de las primeras tomas no guardó la lista",
+     "rol": "fotograma original, PNG limpio, no una salida ya editada"
+    }
+   ],
+   "fal_request_id": "01a1521b-2159-71e0-a151-4d8ab5ec3364",
+   "output": "raw/SB_b0_p2_t1_sunburst_0.png",
+   "costo_usd": 0.0464,
+   "costo_tipo": "estimado",
+   "nota_costo": "Estimado: 0.0424 (tabla fal high, 2026-09-09, interpolada a 1152×2048 con 1 referencia) + 0.008 por referencia extra (nota del 8-sep-2026, no remedida) + 0.004 de texto. fal no devolvió monto.",
+   "latencia_s": 45.867,
+   "latencia_tipo": "inference_time de fal, sin la subida",
+   "veredicto": "retry",
+   "motivo_visual": "Misma falla de posición: el maletín sigue apoyado en el piso del pasillo. El puño cubre los nudillos y la luz sigue baja.",
+   "en_montaje": false
+  },
+  {
+   "id": "SB_b7_p1_t0",
+   "paso": "SB_b7_p1",
+   "plano": "b7_p1",
+   "toma": 0,
+   "timestamp": "2026-10-19T03:07:07Z",
+   "timestamp_fuente": "started_unix del runner",
+   "modelo": "sunburst",
+   "endpoint": "openai/gpt-image-2.5/sunburst/edit",
+   "params": {
+    "resolution": null,
+    "quality": "high",
+    "aspect": "9:16",
+    "image_size": {
+     "width": 1152,
+     "height": 2048
+    },
+    "num_images": 1,
+    "seed": null,
+    "output_format": "png"
+   },
+   "prompt_file": "prompts/SB_b7_p1.txt",
+   "prompt_fuente": "meta de la llamada",
+   "prompt": "FILM STILL, vertical 9:16. Rebuild this shot clean, in one pass, from Image 1. Image 1 is the group from behind, looking at the closed door. Image 2 is the red light of this carriage.\n\nMOMENT: the door stays closed. Through its small wired window there is only a dark gangway in faint red: black glass, no sky, no rain, no water drops, no lit corridor. On the glass, dark reddish-black smears and handprints, matte, almost black. The group stands still, heads lifted toward the door.\n\nLIGHT: the narrow red ceiling strip from above. No white fill on the backs of their heads beyond the practicals already in the carriage.\n\nTEXTURE: fine 35mm grain. No crunchy sharpening, no compression mush, no text.",
+   "referencias": [
+    {
+     "orden": 1,
+     "path": "frames/b7_p1.png",
+     "rol": "fotograma original, PNG limpio, no una salida ya editada"
+    },
+    {
+     "orden": 2,
+     "path": ".refs_cache/F05_rojo_tres_cuartos_hacia_puerta.png",
+     "rol": "referencia de luz roja del último vagón"
+    }
+   ],
+   "fal_request_id": "01a15220-92c5-78e1-b1fa-8d746f98f475",
+   "output": "raw/SB_b7_p1_t0_sunburst_0.png",
+   "costo_usd": 0.0544,
+   "costo_tipo": "estimado",
+   "nota_costo": "Estimado: 0.0424 (tabla fal high, 2026-09-09, interpolada a 1152×2048 con 1 referencia) + 0.008 por referencia extra (nota del 8-sep-2026, no remedida) + 0.004 de texto. fal no devolvió monto.",
+   "latencia_s": 48.86,
+   "latencia_tipo": "reloj de pared del runner, incluye la subida",
+   "veredicto": "accept",
+   "motivo_visual": "Puerta cerrada, fuelle oscuro detrás del vidrio, sin cielo. Manchas de manos en el vidrio, más rojas que negras. El grupo está de espaldas.",
+   "en_montaje": true
+  },
+  {
+   "id": "SB_b7_p4_t0",
+   "paso": "SB_b7_p4",
+   "plano": "b7_p4",
+   "toma": 0,
+   "timestamp": "2026-10-19T03:07:07Z",
+   "timestamp_fuente": "started_unix del runner",
+   "modelo": "sunburst",
+   "endpoint": "openai/gpt-image-2.5/sunburst/edit",
+   "params": {
+    "resolution": null,
+    "quality": "high",
+    "aspect": "9:16",
+    "image_size": {
+     "width": 1152,
+     "height": 2048
+    },
+    "num_images": 1,
+    "seed": null,
+    "output_format": "png"
+   },
+   "prompt_file": "prompts/SB_b7_p4.txt",
+   "prompt_fuente": "meta de la llamada",
+   "prompt": "FILM STILL, vertical 9:16. Rebuild this shot clean, in one pass, from Image 1. Image 1 is the original close-up. Image 2 is the rear wall of the last carriage. Image 3 is Tomás: match his face and this hair, short dark brown, side-parted, tidy, short on the sides, thin metal glasses, navy puffer. Image 4 is Martina, soft, only if she is at the edge.\n\nMOMENT: Tomás is frame left, looking right, toward Martina. His hair is the short side part of Image 3: no curls, no fringe, no messy waves. His mouth is slightly open, about to speak.\n\nBEHIND HIM: the rear end wall. No second door, no door window, no tracks, no sky. A plain rear window, black, nothing through it. The conductor's cabin door is at frame left.\n\nLIGHT: the narrow red ceiling strip from above. Half his face is in real black shadow. No white fill.\n\nTEXTURE: sharp face, fine 35mm grain. No waxy skin, no crunchy sharpening, no compression mush, no text.",
+   "referencias": [
+    {
+     "orden": 1,
+     "path": "frames/b7_p4.png",
+     "rol": "fotograma original, PNG limpio, no una salida ya editada"
+    },
+    {
+     "orden": 2,
+     "path": ".refs_cache/F02_rojo_ultimo_vagon_hacia_fondo_cabina.png",
+     "rol": "referencia de la pared trasera, sin segunda puerta"
+    },
+    {
+     "orden": 3,
+     "path": ".refs_cache/HOJA_tomas.png",
+     "rol": "hoja de Tomás: pelo corto con partidura, anteojos, campera"
+    },
+    {
+     "orden": 4,
+     "path": ".refs_cache/HOJA_martina.png",
+     "rol": "hoja de Martina: cara, pelo, suéter avena, abrigo"
+    }
+   ],
+   "fal_request_id": "01a15220-989e-77d2-81da-4935ededebf9",
+   "output": "raw/SB_b7_p4_t0_sunburst_0.png",
+   "costo_usd": 0.0704,
+   "costo_tipo": "estimado",
+   "nota_costo": "Estimado: 0.0424 (tabla fal high, 2026-09-09, interpolada a 1152×2048 con 1 referencia) + 0.008 por referencia extra (nota del 8-sep-2026, no remedida) + 0.004 de texto. fal no devolvió monto.",
+   "latencia_s": 61.85,
+   "latencia_tipo": "reloj de pared del runner, incluye la subida",
+   "veredicto": "accept",
+   "motivo_visual": "Tomás a la izquierda mira a la derecha, pelo corto con partidura, anteojos. Ventanita trasera negra, sin segunda puerta.",
+   "en_montaje": true
+  },
+  {
+   "id": "SB_b7_p6_t0",
+   "paso": "SB_b7_p6",
+   "plano": "b7_p6",
+   "toma": 0,
+   "timestamp": "2026-10-19T03:07:07Z",
+   "timestamp_fuente": "started_unix del runner",
+   "modelo": "sunburst",
+   "endpoint": "openai/gpt-image-2.5/sunburst/edit",
+   "params": {
+    "resolution": null,
+    "quality": "high",
+    "aspect": "9:16",
+    "image_size": {
+     "width": 1152,
+     "height": 2048
+    },
+    "num_images": 1,
+    "seed": null,
+    "output_format": "png"
+   },
+   "prompt_file": "prompts/SB_b7_p6.txt",
+   "prompt_fuente": "meta de la llamada",
+   "prompt": "FILM STILL, vertical 9:16. Rebuild this shot clean, in one pass, from Image 1. Image 1 is the original close-up of Martina. Image 2 is the rear wall of the last carriage. Image 3 is Martina. Image 4 is Hugo: an old hand only, conductor cuff.\n\nMOMENT: Martina is in focus. Her eyes are toward frame left, where Tomás stands out of focus. In the lower right foreground, out of focus, Hugo's RIGHT hand rests on the door handle. The hand is empty: no key. Five separate fingers.\n\nBEHIND HER: the rear end wall. No second door, no tracks, no sky. A plain rear window, black, nothing through it.\n\nLIGHT: the narrow red ceiling strip from above. Half of Martina's face is in real black shadow. No white fill on her skin.\n\nTEXTURE: sharp face, fine 35mm grain. No waxy skin, no crunchy sharpening, no compression mush, no text.",
+   "referencias": [
+    {
+     "orden": 1,
+     "path": "frames/b7_p6.png",
+     "rol": "fotograma original, PNG limpio, no una salida ya editada"
+    },
+    {
+     "orden": 2,
+     "path": ".refs_cache/F02_rojo_ultimo_vagon_hacia_fondo_cabina.png",
+     "rol": "referencia de la pared trasera, sin segunda puerta"
+    },
+    {
+     "orden": 3,
+     "path": ".refs_cache/HOJA_martina.png",
+     "rol": "hoja de Martina: cara, pelo, suéter avena, abrigo"
+    },
+    {
+     "orden": 4,
+     "path": ".refs_cache/HOJA_hugo.png",
+     "rol": "hoja de Hugo"
+    }
+   ],
+   "fal_request_id": "01a15220-93b5-7d91-a2b5-961dc3b70662",
+   "output": "raw/SB_b7_p6_t0_sunburst_0.png",
+   "costo_usd": 0.0704,
+   "costo_tipo": "estimado",
+   "nota_costo": "Estimado: 0.0424 (tabla fal high, 2026-09-09, interpolada a 1152×2048 con 1 referencia) + 0.008 por referencia extra (nota del 8-sep-2026, no remedida) + 0.004 de texto. fal no devolvió monto.",
+   "latencia_s": 51.87,
+   "latencia_tipo": "reloj de pared del runner, incluye la subida",
+   "veredicto": "retry",
+   "motivo_visual": "La mano de Hugo está en la manija, sin llave, y Martina mira a la izquierda. Detrás de ella hay una puerta con ventanita: es la segunda puerta que no debía estar.",
+   "en_montaje": false
+  },
+  {
+   "id": "SB_b7_p3_t0",
+   "paso": "SB_b7_p3",
+   "plano": "b7_p3",
+   "toma": 0,
+   "timestamp": "2026-10-19T03:07:08Z",
+   "timestamp_fuente": "started_unix del runner",
+   "modelo": "sunburst",
+   "endpoint": "openai/gpt-image-2.5/sunburst/edit",
+   "params": {
+    "resolution": null,
+    "quality": "high",
+    "aspect": "9:16",
+    "image_size": {
+     "width": 1152,
+     "height": 2048
+    },
+    "num_images": 1,
+    "seed": null,
+    "output_format": "png"
+   },
+   "prompt_file": "prompts/SB_b7_p3.txt",
+   "prompt_fuente": "meta de la llamada",
+   "prompt": "FILM STILL, vertical 9:16. Rebuild this shot clean, in one pass, from Image 1. Image 1 is the original: Martina in the foreground. Image 2 is the rear wall of the last carriage. Image 3 is Martina: wavy dark hair, oat sweater, charcoal coat. Image 4 is Iván: shaved head, stone canvas jacket.\n\nMOMENT: Martina is frame right, in focus, chest up, still, eyes toward the door beside the camera. Iván is at the left edge, out of focus, his head turned toward her. Tomás and Carmen are soft shapes behind her, also turning toward her.\n\nBEHIND THEM: the rear end wall. No second door, no door window, no tracks, no sky. A plain rear window at the centre, black, nothing visible through it. The conductor's cabin door is at frame left. Last seats in deep shade.\n\nLIGHT: the narrow red ceiling strip from above. Half of Martina's face is in real black shadow. No white fill on her skin.\n\nTEXTURE: sharp face on Martina, fine 35mm grain. No waxy skin, no crunchy sharpening, no compression mush, no text.",
+   "referencias": [
+    {
+     "orden": 1,
+     "path": "frames/b7_p3.png",
+     "rol": "fotograma original, PNG limpio, no una salida ya editada"
+    },
+    {
+     "orden": 2,
+     "path": ".refs_cache/F02_rojo_ultimo_vagon_hacia_fondo_cabina.png",
+     "rol": "referencia de la pared trasera, sin segunda puerta"
+    },
+    {
+     "orden": 3,
+     "path": ".refs_cache/HOJA_martina.png",
+     "rol": "hoja de Martina: cara, pelo, suéter avena, abrigo"
+    },
+    {
+     "orden": 4,
+     "path": ".refs_cache/HOJA_ivan.png",
+     "rol": "hoja de Iván"
+    }
+   ],
+   "fal_request_id": "01a15220-9c44-74b2-9f94-f6dbab6cbdc7",
+   "output": "raw/SB_b7_p3_t0_sunburst_0.png",
+   "costo_usd": 0.0704,
+   "costo_tipo": "estimado",
+   "nota_costo": "Estimado: 0.0424 (tabla fal high, 2026-09-09, interpolada a 1152×2048 con 1 referencia) + 0.008 por referencia extra (nota del 8-sep-2026, no remedida) + 0.004 de texto. fal no devolvió monto.",
+   "latencia_s": 71.37,
+   "latencia_tipo": "reloj de pared del runner, incluye la subida",
+   "veredicto": "accept",
+   "motivo_visual": "Martina a la derecha, enfocada, media cara en sombra. Detrás, pared con ventanita negra y puerta de cabina a la izquierda, sin vías. Iván queda grande en el primer término izquierdo, no solo en el borde.",
+   "en_montaje": true
+  },
+  {
+   "id": "SB_b7_p5_t0",
+   "paso": "SB_b7_p5",
+   "plano": "b7_p5",
+   "toma": 0,
+   "timestamp": "2026-10-19T03:07:08Z",
+   "timestamp_fuente": "started_unix del runner",
+   "modelo": "sunburst",
+   "endpoint": "openai/gpt-image-2.5/sunburst/edit",
+   "params": {
+    "resolution": null,
+    "quality": "high",
+    "aspect": "9:16",
+    "image_size": {
+     "width": 1152,
+     "height": 2048
+    },
+    "num_images": 1,
+    "seed": null,
+    "output_format": "png"
+   },
+   "prompt_file": "prompts/SB_b7_p5.txt",
+   "prompt_fuente": "meta de la llamada",
+   "prompt": "FILM STILL, vertical 9:16. Rebuild this shot clean, in one pass, from Image 1. Image 1 is Diego at the door window. Image 2 is Diego's face. Image 3 is Diego soaked: pale stone canvas jacket, only the RIGHT sleeve torn and stained dark reddish black.\n\nMOMENT: Diego hits the wired glass with his LEFT palm, five fingers spread, and his eyes turn back over his shoulder. The shadows in the gangway are close behind him. The prints already on the glass are dark, almost black, matte. His jacket is soaked and clean except that right sleeve. No stains on the chest or the left sleeve.\n\nBEHIND HIM: the gangway is almost black, a faint red cast only. No sky, no rain, no lit corridor.\n\nLIGHT: the cold white tube above the door, on our side, from above. Half his face is in real shadow.\n\nTEXTURE: sharp wet skin, a clear left hand, fine 35mm grain. No waxy skin, no crunchy sharpening, no compression mush, no text.",
+   "referencias": [
+    {
+     "orden": 1,
+     "path": "frames/b7_p5.png",
+     "rol": "fotograma original, PNG limpio, no una salida ya editada"
+    },
+    {
+     "orden": 2,
+     "path": ".refs_cache/HOJA_diego.png",
+     "rol": "hoja de Diego"
+    },
+    {
+     "orden": 3,
+     "path": ".refs_cache/ESTADO_diego_mojado_herido_v3.png",
+     "rol": "estado de Diego mojado, manga derecha oscura"
+    }
+   ],
+   "fal_request_id": "01a15220-9727-7933-ad0d-871658f50981",
+   "output": "raw/SB_b7_p5_t0_sunburst_0.png",
+   "costo_usd": 0.0624,
+   "costo_tipo": "estimado",
+   "nota_costo": "Estimado: 0.0424 (tabla fal high, 2026-09-09, interpolada a 1152×2048 con 1 referencia) + 0.008 por referencia extra (nota del 8-sep-2026, no remedida) + 0.004 de texto. fal no devolvió monto.",
+   "latencia_s": 67.93,
+   "latencia_tipo": "reloj de pared del runner, incluye la subida",
+   "veredicto": "retry",
+   "motivo_visual": "Mira hacia atrás y el fuelle está oscuro, pero las dos manos están en el vidrio y la chaqueta tiene manchas rojo vivo en el pecho y la manga.",
+   "en_montaje": false
+  },
+  {
+   "id": "SB_b7_p2_fallo_politica",
+   "paso": "SB_b7_p2",
+   "plano": "b7_p2",
+   "toma": -1,
+   "timestamp": "2026-10-19T03:07:30Z",
+   "timestamp_fuente": "aproximado: dentro del lote que terminó 03:08:20Z; no hubo meta",
+   "modelo": "sunburst",
+   "endpoint": "openai/gpt-image-2.5/sunburst/edit",
+   "params": {
+    "resolution": null,
+    "quality": "high",
+    "aspect": "9:16",
+    "image_size": {
+     "width": 1152,
+     "height": 2048
+    },
+    "num_images": 1,
+    "seed": null,
+    "output_format": "png"
+   },
+   "prompt_file": "prompts/SB_b7_p2.txt",
+   "prompt_fuente": "primer texto, reemplazado después. Pedía manga rasgada y manchas dark reddish black, y usaba ESTADO_diego_mojado_herido_v3.",
+   "prompt": "FILM STILL, vertical 9:16. Rebuild this shot clean, in one pass, from Image 1. Image 1 is Diego at the door window. Image 2 is Diego's face. Image 3 is Diego soaked: pale stone canvas jacket, only the RIGHT sleeve torn and stained dark reddish black. Image 4 is the red carriage.\n\nMOMENT: the wired-glass window fills about 60 percent of the frame width, with riveted metal door visible on all sides. Diego's wet face is pressed to the glass, hair stuck to his forehead. He looks back over his shoulder into the gangway. The handprints on the glass are dark, almost black, matte. His jacket is soaked and clean except the right sleeve.\n\nBEHIND HIM: the gangway falls almost to black, a faint red cast only. No lit corridor, no doors, no sky, no rain.\n\nLIGHT: the cold white tube above the door, on our side, lights the glass from above. Half his face is in real shadow. No second fill.\n\nTEXTURE: sharp wet skin, separate fingers, fine 35mm grain. No waxy skin, no crunchy sharpening, no compression mush, no text.",
+   "referencias": [
+    {
+     "orden": 1,
+     "path": "previs/frames/b7_p2.png",
+     "rol": "fotograma original"
+    },
+    {
+     "orden": 2,
+     "path": "personajes/HOJA_diego.png",
+     "rol": "hoja de Diego"
+    },
+    {
+     "orden": 3,
+     "path": "personajes/ESTADO_diego_mojado_herido_v3.png",
+     "rol": "estado de Diego mojado, manga derecha oscura"
+    },
+    {
+     "orden": 4,
+     "path": "set/F05_rojo_tres_cuartos_hacia_puerta.png",
+     "rol": "referencia de luz roja del último vagón"
+    }
+   ],
+   "fal_request_id": null,
+   "output": null,
+   "costo_usd": 0.0704,
+   "costo_tipo": "estimado",
+   "nota_costo": "content_policy_violation antes de haber PNG. No hay request_id en el log del runner. El monto es la misma estimación; no está confirmado que se haya cobrado.",
+   "latencia_s": null,
+   "latencia_tipo": "no medida",
+   "veredicto": "retry",
+   "motivo_visual": "El checker de contenido rechazó el prompt (manga rasgada, manchas, estado herido). Se reescribió sin esas palabras y sin la hoja de estado.",
+   "en_montaje": false
+  },
+  {
+   "id": "SB_b0_p2_t2",
+   "paso": "SB_b0_p2",
+   "plano": "b0_p2",
+   "toma": 2,
+   "timestamp": "2026-10-19T03:09:25Z",
+   "timestamp_fuente": "started_unix del runner",
+   "modelo": "sunburst",
+   "endpoint": "openai/gpt-image-2.5/sunburst/edit",
+   "params": {
+    "resolution": null,
+    "quality": "high",
+    "aspect": "9:16",
+    "image_size": {
+     "width": 1152,
+     "height": 2048
+    },
+    "num_images": 1,
+    "seed": null,
+    "output_format": "png"
+   },
+   "prompt_file": "prompts/SB_b0_p2.txt",
+   "prompt_fuente": "meta de la llamada",
+   "prompt": "FILM STILL, vertical 9:16. Rebuild this shot clean, in one pass, from Image 1. Image 1 is the original frame: match its camera, its low angle and who is where. Image 2 is the low amber of this carriage. Image 3 is the closed briefcase. Image 4 is Martina's wardrobe: oat knit and charcoal coat.\n\nMOMENT: night, before the outbreak. Slide the briefcase backward, toward the window, until the blue cushion covers two thirds of it. Only the front brass corner stays visible, low, in the shadow under the rail. The body of the briefcase is hidden by the seat. It is not standing on the open aisle floor. Martina's hand rests on top of it. The oat sweater cuff comes out of the charcoal coat sleeve and covers the knuckles up to the first finger joints; only the fingertips show. Five separate fingers, the hand separate from the cuff. The blue-shirt man stays seated and asleep; his dark shoes stay behind the briefcase, still.\n\nCAMERA: same low angle as Image 1. The rear door at the end of the aisle is a blank metal door. Its small window is dry: a dark gangway behind the glass, no rain, no sky, no blue night.\n\nLIGHT: only two or three reading lamps under the luggage rack, the ones nearest this seat. Short warm cones, about 2800K, with real darkness between them. Every other lamp and the ceiling are dark. Side windows are black night with rain only on the outside of the glass.\n\nTEXTURE: real knit, real leather, fine 35mm grain. Sharp fingers. No waxy skin, no crunchy sharpening, no compression mush, no text.",
+   "referencias": [
+    {
+     "orden": 1,
+     "path": "frames/b0_p2.png",
+     "rol": "fotograma original, PNG limpio, no una salida ya editada"
+    },
+    {
+     "orden": 2,
+     "path": ".refs_cache/F08_v2_ambar_bajo.png",
+     "rol": "referencia de luz ámbar baja del vagón 2"
+    },
+    {
+     "orden": 3,
+     "path": ".refs_cache/PROP_maletin_v2.png",
+     "rol": "referencia del maletín cerrado"
+    },
+    {
+     "orden": 4,
+     "path": ".refs_cache/HOJA_martina.png",
+     "rol": "hoja de Martina: cara, pelo, suéter avena, abrigo"
+    }
+   ],
+   "fal_request_id": "01a15222-b19b-7ce0-a6ca-6ab450a4e68a",
+   "output": "raw/SB_b0_p2_t2_sunburst_0.png",
+   "costo_usd": 0.0704,
+   "costo_tipo": "estimado",
+   "nota_costo": "Estimado: 0.0424 (tabla fal high, 2026-09-09, interpolada a 1152×2048 con 1 referencia) + 0.008 por referencia extra (nota del 8-sep-2026, no remedida) + 0.004 de texto. fal no devolvió monto.",
+   "latencia_s": 74.93,
+   "latencia_tipo": "reloj de pared del runner, incluye la subida",
+   "veredicto": "accept",
+   "motivo_visual": "Tercera toma. Puño, luz de dos o tres lámparas y ventanita seca. El maletín sigue fuera, contra el riel, no metido bajo el cojín. Se acepta con esa falla: tres regeneraciones no lo movieron y el original ya lo tenía así.",
+   "en_montaje": true
+  },
+  {
+   "id": "SB_b3_p1_t0",
+   "paso": "SB_b3_p1",
+   "plano": "b3_p1",
+   "toma": 0,
+   "timestamp": "2026-10-19T03:09:25Z",
+   "timestamp_fuente": "started_unix del runner",
+   "modelo": "sunburst",
+   "endpoint": "openai/gpt-image-2.5/sunburst/edit",
+   "params": {
+    "resolution": null,
+    "quality": "high",
+    "aspect": "9:16",
+    "image_size": {
+     "width": 1152,
+     "height": 2048
+    },
+    "num_images": 1,
+    "seed": null,
+    "output_format": "png"
+   },
+   "prompt_file": "prompts/SB_b3_p1.txt",
+   "prompt_fuente": "meta de la llamada",
+   "prompt": "FILM STILL, vertical 9:16. Rebuild the floor-level shot of Image 1, clean, in one pass. Image 1 is that angle: the blue seat, the aisle, the sleeping man's shoes. Image 2 is the low amber of this carriage. Image 3 is the briefcase.\n\nMOMENT: the same low angle. Her hand, her sleeve and her boot are gone. Nobody stands in the aisle. The briefcase stays half UNDER the sleeping man's seat, on the AISLE side, its back edge on the seat's metal rail, not out in the aisle. Both latches have just sprung open and the lid is lifted a finger's width. A thin thread of white mist seeps from the gap. His dark shoes stay still behind it: he is seated, asleep.\n\nCAMERA: same low angle as Image 1. The door window at the end of the aisle is dry and dark: a dark gangway, no rain, no sky.\n\nLIGHT: only two or three reading lamps, short warm cones about 2800K, real darkness between them. Side windows are black night with rain only on the outside of the glass.\n\nTEXTURE: sharp metal and leather, fine 35mm grain. No crunchy sharpening, no compression mush, no text.",
+   "referencias": [
+    {
+     "orden": 1,
+     "path": "frames/b0_p2.png",
+     "rol": "fotograma original, PNG limpio, no una salida ya editada"
+    },
+    {
+     "orden": 2,
+     "path": ".refs_cache/F08_v2_ambar_bajo.png",
+     "rol": "referencia de luz ámbar baja del vagón 2"
+    },
+    {
+     "orden": 3,
+     "path": ".refs_cache/PROP_maletin_v2.png",
+     "rol": "referencia del maletín cerrado"
+    }
+   ],
+   "fal_request_id": "01a15222-b05d-7b30-aca2-96d25e3597c8",
+   "output": "raw/SB_b3_p1_t0_sunburst_0.png",
+   "costo_usd": 0.0624,
+   "costo_tipo": "estimado",
+   "nota_costo": "Estimado: 0.0424 (tabla fal high, 2026-09-09, interpolada a 1152×2048 con 1 referencia) + 0.008 por referencia extra (nota del 8-sep-2026, no remedida) + 0.004 de texto. fal no devolvió monto.",
+   "latencia_s": 44.01,
+   "latencia_tipo": "reloj de pared del runner, incluye la subida",
+   "veredicto": "accept",
+   "motivo_visual": "Nadie en el pasillo, trabas abiertas y un hilo de niebla. El hombre sigue sentado. El maletín sigue al lado del asiento, no debajo: la misma falla que b0_p2.",
+   "en_montaje": true
+  },
+  {
+   "id": "SB_b6_p1_t0",
+   "paso": "SB_b6_p1",
+   "plano": "b6_p1",
+   "toma": 0,
+   "timestamp": "2026-10-19T03:09:25Z",
+   "timestamp_fuente": "started_unix del runner",
+   "modelo": "sunburst",
+   "endpoint": "openai/gpt-image-2.5/sunburst/edit",
+   "params": {
+    "resolution": null,
+    "quality": "high",
+    "aspect": "9:16",
+    "image_size": {
+     "width": 1152,
+     "height": 2048
+    },
+    "num_images": 1,
+    "seed": null,
+    "output_format": "png"
+   },
+   "prompt_file": "prompts/SB_b6_p1.txt",
+   "prompt_fuente": "meta de la llamada",
+   "prompt": "FILM STILL, vertical 9:16. Rebuild this shot clean, in one pass, from Image 1. Image 1 is the original view down the last carriage toward the door. Image 2 is Iván: shaved head, broken nose, stone canvas jacket. Image 3 is Hugo: conductor cap, mustache, empty hands. Image 4 is the red light.\n\nMOMENT: Iván stands with his BACK pressed against the front door, facing the camera, both arms braced on the door frame, head turned slightly toward the group. The small wired window, full of palms and dark almost-black smears, sits above his shoulder. Behind that glass is only a dark red gangway: no sky, no rain, no blue. Hugo stands beside the door with empty hands: no key in either hand, no key in the lock. The others stand in the foreground with their backs to the camera, looking toward Iván.\n\nLIGHT: the narrow red ceiling strip from above. Half the faces in real black shadow. No white fill on skin.\n\nTEXTURE: sharp faces, fine 35mm grain. No waxy skin, no crunchy sharpening, no compression mush, no text.",
+   "referencias": [
+    {
+     "orden": 1,
+     "path": "frames/b6_p1.png",
+     "rol": "fotograma original, PNG limpio, no una salida ya editada"
+    },
+    {
+     "orden": 2,
+     "path": ".refs_cache/HOJA_ivan.png",
+     "rol": "hoja de Iván"
+    },
+    {
+     "orden": 3,
+     "path": ".refs_cache/HOJA_hugo.png",
+     "rol": "hoja de Hugo"
+    },
+    {
+     "orden": 4,
+     "path": ".refs_cache/F05_rojo_tres_cuartos_hacia_puerta.png",
+     "rol": "referencia de luz roja del último vagón"
+    }
+   ],
+   "fal_request_id": "01a15222-b31a-71d3-8876-b5588f44987f",
+   "output": "raw/SB_b6_p1_t0_sunburst_0.png",
+   "costo_usd": 0.0704,
+   "costo_tipo": "estimado",
+   "nota_costo": "Estimado: 0.0424 (tabla fal high, 2026-09-09, interpolada a 1152×2048 con 1 referencia) + 0.008 por referencia extra (nota del 8-sep-2026, no remedida) + 0.004 de texto. fal no devolvió monto.",
+   "latencia_s": 46.03,
+   "latencia_tipo": "reloj de pared del runner, incluye la subida",
+   "veredicto": "accept",
+   "motivo_visual": "Iván de espaldas a la puerta, de frente a cámara, brazos abiertos contra el marco. Hugo al lado, manos vacías. El vidrio tiene palmas y no muestra cielo.",
+   "en_montaje": true
+  },
+  {
+   "id": "SB_b7_p2_t0",
+   "paso": "SB_b7_p2",
+   "plano": "b7_p2",
+   "toma": 0,
+   "timestamp": "2026-10-19T03:09:25Z",
+   "timestamp_fuente": "started_unix del runner",
+   "modelo": "sunburst",
+   "endpoint": "openai/gpt-image-2.5/sunburst/edit",
+   "params": {
+    "resolution": null,
+    "quality": "high",
+    "aspect": "9:16",
+    "image_size": {
+     "width": 1152,
+     "height": 2048
+    },
+    "num_images": 1,
+    "seed": null,
+    "output_format": "png"
+   },
+   "prompt_file": "prompts/SB_b7_p2.txt",
+   "prompt_fuente": "meta de la llamada",
+   "prompt": "FILM STILL, vertical 9:16. Rebuild this shot clean, in one pass, from Image 1. Image 1 is Diego at the door window. Image 2 is Diego's face: wet dark hair, pale stone canvas jacket. Image 3 is the red carriage.\n\nMOMENT: the wired-glass window fills about 60 percent of the frame width, riveted metal around it. Diego's wet face is at the glass. He looks back over his shoulder. His jacket is pale and clean except the right sleeve, which is a darker wet grey. Marks already on the glass are dark and matte, not bright.\n\nBEHIND HIM: the gangway is almost black, a faint red cast only. No sky, no rain, no lit corridor.\n\nLIGHT: the cold white tube above the door, on our side, from above. Half his face is in real shadow.\n\nTEXTURE: sharp wet skin, fine 35mm grain. No waxy skin, no crunchy sharpening, no compression mush, no text.",
+   "referencias": [
+    {
+     "orden": 1,
+     "path": "frames/b7_p2.png",
+     "rol": "fotograma original, PNG limpio, no una salida ya editada"
+    },
+    {
+     "orden": 2,
+     "path": ".refs_cache/HOJA_diego.png",
+     "rol": "hoja de Diego"
+    },
+    {
+     "orden": 3,
+     "path": ".refs_cache/F05_rojo_tres_cuartos_hacia_puerta.png",
+     "rol": "referencia de luz roja del último vagón"
+    }
+   ],
+   "fal_request_id": "01a15222-aff8-7a02-b2c5-04bf9571cc11",
+   "output": "raw/SB_b7_p2_t0_sunburst_0.png",
+   "costo_usd": 0.0624,
+   "costo_tipo": "estimado",
+   "nota_costo": "Estimado: 0.0424 (tabla fal high, 2026-09-09, interpolada a 1152×2048 con 1 referencia) + 0.008 por referencia extra (nota del 8-sep-2026, no remedida) + 0.004 de texto. fal no devolvió monto.",
+   "latencia_s": 48.09,
+   "latencia_tipo": "reloj de pared del runner, incluye la subida",
+   "veredicto": "retry",
+   "motivo_visual": "El encuadre de la ventanita y la mirada hacia atrás sirven, pero la espalda y el vidrio tienen marcas rojo vivo. La regla es manga derecha y marcas oscuras.",
+   "en_montaje": false
+  },
+  {
+   "id": "SB_b7_p5_t1",
+   "paso": "SB_b7_p5",
+   "plano": "b7_p5",
+   "toma": 1,
+   "timestamp": "2026-10-19T03:09:25Z",
+   "timestamp_fuente": "started_unix del runner",
+   "modelo": "sunburst",
+   "endpoint": "openai/gpt-image-2.5/sunburst/edit",
+   "params": {
+    "resolution": null,
+    "quality": "high",
+    "aspect": "9:16",
+    "image_size": {
+     "width": 1152,
+     "height": 2048
+    },
+    "num_images": 1,
+    "seed": null,
+    "output_format": "png"
+   },
+   "prompt_file": "prompts/SB_b7_p5.txt",
+   "prompt_fuente": "meta de la llamada",
+   "prompt": "FILM STILL, vertical 9:16. Rebuild this shot clean, in one pass, from Image 1. Image 1 is Diego at the door window. Image 2 is Diego's face and pale stone jacket. Image 3 is the red carriage.\n\nMOMENT: Diego's LEFT palm is flat on the wired glass, five fingers spread, and his eyes turn back over his shoulder. His right hand is down, off the glass. The jacket stays pale and clean except the right sleeve, which is a darker wet grey. Marks on the glass are dark and matte.\n\nBEHIND HIM: the gangway is almost black, a faint red cast only. No sky, no rain, no lit corridor.\n\nLIGHT: the cold white tube above the door, on our side, from above. Half his face is in real shadow.\n\nTEXTURE: sharp wet skin, a clear left hand, fine 35mm grain. No waxy skin, no crunchy sharpening, no compression mush, no text.",
+   "referencias": [
+    {
+     "orden": 1,
+     "path": "frames/b7_p5.png",
+     "rol": "fotograma original, PNG limpio, no una salida ya editada"
+    },
+    {
+     "orden": 2,
+     "path": ".refs_cache/HOJA_diego.png",
+     "rol": "hoja de Diego"
+    },
+    {
+     "orden": 3,
+     "path": ".refs_cache/F05_rojo_tres_cuartos_hacia_puerta.png",
+     "rol": "referencia de luz roja del último vagón"
+    }
+   ],
+   "fal_request_id": "01a15222-b35f-77a2-81ab-e4b982e835fe",
+   "output": "raw/SB_b7_p5_t1_sunburst_0.png",
+   "costo_usd": 0.0624,
+   "costo_tipo": "estimado",
+   "nota_costo": "Estimado: 0.0424 (tabla fal high, 2026-09-09, interpolada a 1152×2048 con 1 referencia) + 0.008 por referencia extra (nota del 8-sep-2026, no remedida) + 0.004 de texto. fal no devolvió monto.",
+   "latencia_s": 49.99,
+   "latencia_tipo": "reloj de pared del runner, incluye la subida",
+   "veredicto": "accept",
+   "motivo_visual": "La palma izquierda está en el vidrio y mira hacia atrás. El fuelle está oscuro. Queda una marca rojo vivo en la manga derecha, no una manga apenas más oscura.",
+   "en_montaje": true
+  },
+  {
+   "id": "SB_b7_p6_t1",
+   "paso": "SB_b7_p6",
+   "plano": "b7_p6",
+   "toma": 1,
+   "timestamp": "2026-10-19T03:09:25Z",
+   "timestamp_fuente": "started_unix del runner",
+   "modelo": "sunburst",
+   "endpoint": "openai/gpt-image-2.5/sunburst/edit",
+   "params": {
+    "resolution": null,
+    "quality": "high",
+    "aspect": "9:16",
+    "image_size": {
+     "width": 1152,
+     "height": 2048
+    },
+    "num_images": 1,
+    "seed": null,
+    "output_format": "png"
+   },
+   "prompt_file": "prompts/SB_b7_p6.txt",
+   "prompt_fuente": "meta de la llamada",
+   "prompt": "FILM STILL, vertical 9:16. Rebuild this shot clean, in one pass, from Image 1. Image 1 is the original close-up of Martina. Image 2 is the rear wall of the last carriage. Image 3 is Martina. Image 4 is Hugo: an old hand only, conductor cuff.\n\nMOMENT: Martina is in focus. Her eyes are toward frame left, where Tomás stands out of focus. In the lower right foreground, out of focus, Hugo's RIGHT hand rests on the door handle. The hand is empty: no key. Five separate fingers.\n\nBEHIND HER: a blank metal end wall. One plain window in that wall, black, with nothing outside it. There is no door in that wall, no door handle on it, no tracks and no sky.\n\nLIGHT: the narrow red ceiling strip from above. Half of Martina's face is in real black shadow. No white fill on her skin.\n\nTEXTURE: sharp face, fine 35mm grain. No waxy skin, no crunchy sharpening, no compression mush, no text.",
+   "referencias": [
+    {
+     "orden": 1,
+     "path": "frames/b7_p6.png",
+     "rol": "fotograma original, PNG limpio, no una salida ya editada"
+    },
+    {
+     "orden": 2,
+     "path": ".refs_cache/F02_rojo_ultimo_vagon_hacia_fondo_cabina.png",
+     "rol": "referencia de la pared trasera, sin segunda puerta"
+    },
+    {
+     "orden": 3,
+     "path": ".refs_cache/HOJA_martina.png",
+     "rol": "hoja de Martina: cara, pelo, suéter avena, abrigo"
+    },
+    {
+     "orden": 4,
+     "path": ".refs_cache/HOJA_hugo.png",
+     "rol": "hoja de Hugo"
+    }
+   ],
+   "fal_request_id": "01a15222-b502-7990-8727-7f536dfb3a0c",
+   "output": "raw/SB_b7_p6_t1_sunburst_0.png",
+   "costo_usd": 0.0704,
+   "costo_tipo": "estimado",
+   "nota_costo": "Estimado: 0.0424 (tabla fal high, 2026-09-09, interpolada a 1152×2048 con 1 referencia) + 0.008 por referencia extra (nota del 8-sep-2026, no remedida) + 0.004 de texto. fal no devolvió monto.",
+   "latencia_s": 47.67,
+   "latencia_tipo": "reloj de pared del runner, incluye la subida",
+   "veredicto": "accept",
+   "motivo_visual": "Pared ciega con una ventanita negra, sin puerta ni vías. La mano de Hugo, vacía, está en la manija abajo a la derecha. Martina mira a la izquierda. Cara nítida.",
+   "en_montaje": true
+  },
+  {
+   "id": "SB_b7_p2_t1",
+   "paso": "SB_b7_p2",
+   "plano": "b7_p2",
+   "toma": 1,
+   "timestamp": "2026-10-19T03:11:39Z",
+   "timestamp_fuente": "started_unix del runner",
+   "modelo": "sunburst",
+   "endpoint": "openai/gpt-image-2.5/sunburst/edit",
+   "params": {
+    "resolution": null,
+    "quality": "high",
+    "aspect": "9:16",
+    "image_size": {
+     "width": 1152,
+     "height": 2048
+    },
+    "num_images": 1,
+    "seed": null,
+    "output_format": "png"
+   },
+   "prompt_file": "prompts/SB_b7_p2.txt",
+   "prompt_fuente": "meta de la llamada",
+   "prompt": "FILM STILL, vertical 9:16. Rebuild this shot clean, in one pass, from Image 1. Image 1 is Diego at the door window. Image 2 is Diego's face: wet dark hair, pale stone canvas jacket. Image 3 is the red carriage.\n\nMOMENT: the wired-glass window fills about 60 percent of the frame width, riveted metal around it. Diego's wet face is at the glass. He looks back over his shoulder. The back of the jacket and the left sleeve are clean pale canvas, with no marks. The only darker area is a flat grey wet patch on the right sleeve, with no hand shape. Marks on the glass are charcoal grey, not bright.\n\nBEHIND HIM: the gangway is almost black, a faint red cast only. No sky, no rain, no lit corridor.\n\nLIGHT: the cold white tube above the door, on our side, from above. Half his face is in real shadow.\n\nTEXTURE: sharp wet skin, fine 35mm grain. No waxy skin, no crunchy sharpening, no compression mush, no text.",
+   "referencias": [
+    {
+     "orden": 1,
+     "path": "frames/b7_p2.png",
+     "rol": "fotograma original, PNG limpio, no una salida ya editada"
+    },
+    {
+     "orden": 2,
+     "path": ".refs_cache/HOJA_diego.png",
+     "rol": "hoja de Diego"
+    },
+    {
+     "orden": 3,
+     "path": ".refs_cache/F05_rojo_tres_cuartos_hacia_puerta.png",
+     "rol": "referencia de luz roja del último vagón"
+    }
+   ],
+   "fal_request_id": "01a15224-bb80-77e0-9d69-1408a9fb115a",
+   "output": "raw/SB_b7_p2_t1_sunburst_0.png",
+   "costo_usd": 0.0624,
+   "costo_tipo": "estimado",
+   "nota_costo": "Estimado: 0.0424 (tabla fal high, 2026-09-09, interpolada a 1152×2048 con 1 referencia) + 0.008 por referencia extra (nota del 8-sep-2026, no remedida) + 0.004 de texto. fal no devolvió monto.",
+   "latencia_s": 40.3,
+   "latencia_tipo": "reloj de pared del runner, incluye la subida",
+   "veredicto": "accept",
+   "motivo_visual": "Ventanita ancha, mira hacia atrás, fuelle oscuro, tubo blanco arriba. La chaqueta es clara con manchas oscuras, ya no rojo vivo. Siguen marcas en la espalda, no solo en la manga derecha.",
+   "en_montaje": true
+  }
+ ]
+}

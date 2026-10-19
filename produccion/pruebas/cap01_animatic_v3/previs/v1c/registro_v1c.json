@@ -1,0 +1,303 @@
+{
+ "gastado_usd": 6.85,
+ "pasos": {
+  "V01": {
+   "tomas": 2,
+   "estado": "aceptado",
+   "salidas": [
+    "/workspace/produccion/pruebas/cap01_animatic_v3/previs/v1c/raw/V01_b0_p2_t0_nbp_0.png",
+    "/workspace/produccion/pruebas/cap01_animatic_v3/previs/v1c/raw/V01_b0_p2_t1_nbp_0.png"
+   ],
+   "aceptada": "raw/V01_b0_p2_t1_nbp_0.png"
+  },
+  "V02": {
+   "tomas": 1,
+   "estado": "aceptado",
+   "salidas": [
+    "/workspace/produccion/pruebas/cap01_animatic_v3/previs/v1c/raw/V02_b0_p2_t0_nbp_0.png"
+   ],
+   "aceptada": "raw/V02_b0_p2_t0_nbp_0.png"
+  },
+  "V03": {
+   "tomas": 1,
+   "estado": "aceptado",
+   "salidas": [
+    "/workspace/produccion/pruebas/cap01_animatic_v3/previs/v1c/raw/V03_b3_p1_t0_nbp_0.png"
+   ],
+   "aceptada": "raw/V03_b3_p1_t0_nbp_0.png"
+  },
+  "V04": {
+   "tomas": 2,
+   "estado": "marcado",
+   "salidas": [
+    "/workspace/produccion/pruebas/cap01_animatic_v3/previs/v1c/raw/V04_b3_p2_t0_flare_0.png",
+    "/workspace/produccion/pruebas/cap01_animatic_v3/previs/v1c/raw/V04_b3_p2_t1_flare_0.png"
+   ],
+   "motivo": "dos tomas: t0 maletín fuera del asiento, al lado de las piernas; t1 bajo el asiento pero del lado de la ventana, no del pasillo. Sentado en ambas."
+  },
+  "V05": {
+   "tomas": 1,
+   "estado": "aceptado",
+   "salidas": [
+    "/workspace/produccion/pruebas/cap01_animatic_v3/previs/v1c/raw/V05_b0_p3_t0_nbp_0.png"
+   ],
+   "aceptada": "raw/V05_b0_p3_t0_nbp_0.png"
+  },
+  "V06": {
+   "tomas": 1,
+   "estado": "aceptado",
+   "salidas": [
+    "/workspace/produccion/pruebas/cap01_animatic_v3/previs/v1c/raw/V06_b0_p3_t0_nbp_0.png"
+   ],
+   "aceptada": "raw/V06_b0_p3_t0_nbp_0.png"
+  },
+  "V07": {
+   "tomas": 1,
+   "estado": "aceptado",
+   "salidas": [
+    "/workspace/produccion/pruebas/cap01_animatic_v3/previs/v1c/raw/V07_b0_p4_t0_nbp_0.png"
+   ],
+   "aceptada": "raw/V07_b0_p4_t0_nbp_0.png"
+  },
+  "V08": {
+   "tomas": 1,
+   "estado": "aceptado",
+   "salidas": [
+    "/workspace/produccion/pruebas/cap01_animatic_v3/previs/v1c/raw/V08_b3_p3_t0_nbp_0.png"
+   ],
+   "aceptada": "raw/V08_b3_p3_t0_nbp_0.png"
+  },
+  "V09": {
+   "tomas": 1,
+   "estado": "aceptado",
+   "salidas": [
+    "/workspace/produccion/pruebas/cap01_animatic_v3/previs/v1c/raw/V09_b3_p5_t0_nbp_0.png"
+   ],
+   "aceptada": "raw/V09_b3_p5_t0_nbp_0.png"
+  },
+  "V10": {
+   "tomas": 1,
+   "estado": "aceptado",
+   "salidas": [
+    "/workspace/produccion/pruebas/cap01_animatic_v3/previs/v1c/raw/V10_b3_p6_t0_nbp_0.png"
+   ],
+   "aceptada": "raw/V10_b3_p6_t0_nbp_0.png"
+  },
+  "V11": {
+   "tomas": 1,
+   "estado": "aceptado",
+   "salidas": [
+    "/workspace/produccion/pruebas/cap01_animatic_v3/previs/v1c/raw/V11_b3_p6_t0_nbp_0.png"
+   ],
+   "aceptada": "raw/V11_b3_p6_t0_nbp_0.png"
+  },
+  "V12": {
+   "tomas": 1,
+   "estado": "aceptado",
+   "salidas": [
+    "/workspace/produccion/pruebas/cap01_animatic_v3/previs/v1c/raw/V12_b3_p6_t0_nbp_0.png"
+   ],
+   "aceptada": "raw/V12_b3_p6_t0_nbp_0.png"
+  },
+  "V13": {
+   "tomas": 1,
+   "estado": "aceptado",
+   "salidas": [
+    "/workspace/produccion/pruebas/cap01_animatic_v3/previs/v1c/raw/V13_b3_p4_t0_nbp_0.png"
+   ],
+   "aceptada": "raw/V13_b3_p4_t0_nbp_0.png"
+  },
+  "V14": {
+   "tomas": 2,
+   "estado": "aceptado",
+   "salidas": [
+    "/workspace/produccion/pruebas/cap01_animatic_v3/previs/v1c/raw/V14_b0_p1_t0_nbp_0.png",
+    "/workspace/produccion/pruebas/cap01_animatic_v3/previs/v1c/raw/V14_b0_p1_t1_nbp_0.png"
+   ],
+   "aceptada": "raw/V14_b0_p1_t1_nbp_0.png"
+  },
+  "V15": {
+   "tomas": 1,
+   "estado": "aceptado",
+   "salidas": [
+    "/workspace/produccion/pruebas/cap01_animatic_v3/previs/v1c/raw/V15_b1_f2_t0_nbp_0.png"
+   ],
+   "aceptada": "raw/V15_b1_f2_t0_nbp_0.png"
+  },
+  "V16": {
+   "tomas": 2,
+   "estado": "aceptado",
+   "salidas": [
+    "/workspace/produccion/pruebas/cap01_animatic_v3/previs/v1c/raw/V16_b2_p2_t0_nbp_0.png",
+    "/workspace/produccion/pruebas/cap01_animatic_v3/previs/v1c/raw/V16_b2_p2_t1_nbp_0.png"
+   ],
+   "aceptada": "raw/V16_b2_p2_t1_nbp_0.png"
+  },
+  "V17": {
+   "tomas": 1,
+   "estado": "aceptado",
+   "salidas": [
+    "/workspace/produccion/pruebas/cap01_animatic_v3/previs/v1c/raw/V17_b2_p3_t0_flare_0.png"
+   ],
+   "aceptada": "raw/V17_b2_p3_t0_flare_0.png"
+  },
+  "V18": {
+   "tomas": 1,
+   "estado": "aceptado",
+   "salidas": [
+    "/workspace/produccion/pruebas/cap01_animatic_v3/previs/v1c/raw/V18_b2_p4_t0_nbp_0.png"
+   ],
+   "aceptada": "raw/V18_b2_p4_t0_nbp_0.png"
+  },
+  "V19": {
+   "tomas": 1,
+   "estado": "aceptado",
+   "salidas": [
+    "/workspace/produccion/pruebas/cap01_animatic_v3/previs/v1c/raw/V19_b2_p1_t0_nbp_0.png"
+   ],
+   "aceptada": "raw/V19_b2_p1_t0_nbp_0.png"
+  },
+  "V20": {
+   "tomas": 2,
+   "estado": "aceptado",
+   "salidas": [
+    "/workspace/produccion/pruebas/cap01_animatic_v3/previs/v1c/raw/V20_b4_p1_t0_nbp_0.png",
+    "/workspace/produccion/pruebas/cap01_animatic_v3/previs/v1c/raw/V20_b4_p1_t1_nbp_0.png"
+   ],
+   "aceptada": "raw/V20_b4_p1_t0_nbp_0.png"
+  },
+  "V21": {
+   "tomas": 1,
+   "estado": "aceptado",
+   "salidas": [
+    "/workspace/produccion/pruebas/cap01_animatic_v3/previs/v1c/raw/V21_b4_p6_t0_nbp_0.png"
+   ],
+   "aceptada": "raw/V21_b4_p6_t0_nbp_0.png"
+  },
+  "V22": {
+   "tomas": 1,
+   "estado": "aceptado",
+   "salidas": [
+    "/workspace/produccion/pruebas/cap01_animatic_v3/previs/v1c/raw/V22_b4_p6_t0_nbp_0.png"
+   ],
+   "aceptada": "raw/V22_b4_p6_t0_nbp_0.png"
+  },
+  "V23": {
+   "tomas": 1,
+   "estado": "aceptado",
+   "salidas": [
+    "/workspace/produccion/pruebas/cap01_animatic_v3/previs/v1c/raw/V23_b5_p1_t0_nbp_0.png"
+   ],
+   "aceptada": "raw/V23_b5_p1_t0_nbp_0.png"
+  },
+  "V24": {
+   "tomas": 2,
+   "estado": "aceptado",
+   "salidas": [
+    "/workspace/produccion/pruebas/cap01_animatic_v3/previs/v1c/raw/V24_b5_p2_t0_nbp_0.png",
+    "/workspace/produccion/pruebas/cap01_animatic_v3/previs/v1c/raw/V24_b5_p2_t1_nbp_0.png"
+   ],
+   "aceptada": "raw/V24_b5_p2_t1_nbp_0.png"
+  },
+  "V25": {
+   "tomas": 1,
+   "estado": "aceptado",
+   "salidas": [
+    "/workspace/produccion/pruebas/cap01_animatic_v3/previs/v1c/raw/V25_b5_p4_t0_nbp_0.png"
+   ],
+   "aceptada": "raw/V25_b5_p4_t0_nbp_0.png"
+  },
+  "V26": {
+   "tomas": 1,
+   "estado": "aceptado",
+   "salidas": [
+    "/workspace/produccion/pruebas/cap01_animatic_v3/previs/v1c/raw/V26_b5_p5_t0_nbp_0.png"
+   ],
+   "aceptada": "raw/V26_b5_p5_t0_nbp_0.png"
+  },
+  "V27": {
+   "tomas": 2,
+   "estado": "aceptado",
+   "salidas": [
+    "/workspace/produccion/pruebas/cap01_animatic_v3/previs/v1c/raw/V27_b5_p6_t0_nbp_0.png",
+    "/workspace/produccion/pruebas/cap01_animatic_v3/previs/v1c/raw/V27_b5_p6_t1_nbp_0.png"
+   ],
+   "aceptada": "raw/V27_b5_p6_t0_nbp_0.png"
+  },
+  "V28": {
+   "tomas": 1,
+   "estado": "aceptado",
+   "salidas": [
+    "/workspace/produccion/pruebas/cap01_animatic_v3/previs/v1c/raw/V28_b5_p6_t0_nbp_0.png"
+   ],
+   "aceptada": "raw/V28_b5_p6_t0_nbp_0.png"
+  },
+  "V29": {
+   "tomas": 1,
+   "estado": "aceptado",
+   "salidas": [
+    "/workspace/produccion/pruebas/cap01_animatic_v3/previs/v1c/raw/V29_b5_p8_t0_nbp_0.png"
+   ],
+   "aceptada": "raw/V29_b5_p8_t0_nbp_0.png"
+  },
+  "V30": {
+   "tomas": 2,
+   "estado": "aceptado",
+   "salidas": [
+    "/workspace/produccion/pruebas/cap01_animatic_v3/previs/v1c/raw/V30_b5_p8_t0_nbp_0.png",
+    "/workspace/produccion/pruebas/cap01_animatic_v3/previs/v1c/raw/V30_b5_p8_t1_nbp_0.png"
+   ],
+   "aceptada": "raw/V30_b5_p8_t1_nbp_0.png"
+  },
+  "V31": {
+   "tomas": 1,
+   "estado": "aceptado",
+   "salidas": [
+    "/workspace/produccion/pruebas/cap01_animatic_v3/previs/v1c/raw/V31_b5_p9_t0_nbp_0.png"
+   ],
+   "aceptada": "raw/V31_b5_p9_t0_nbp_0.png"
+  },
+  "V32": {
+   "tomas": 1,
+   "estado": "aceptado",
+   "salidas": [
+    "/workspace/produccion/pruebas/cap01_animatic_v3/previs/v1c/raw/V32_b5_p7_t0_nbp_0.png"
+   ],
+   "aceptada": "raw/V32_b5_p7_t0_nbp_0.png"
+  },
+  "V33": {
+   "tomas": 2,
+   "estado": "marcado",
+   "salidas": [
+    "/workspace/produccion/pruebas/cap01_animatic_v3/previs/v1c/raw/V33_b6_p1_t0_nbp_0.png",
+    "/workspace/produccion/pruebas/cap01_animatic_v3/previs/v1c/raw/V33_b6_p1_t1_nbp_0.png"
+   ],
+   "motivo": "dos tomas: Iván sigue de cara a la puerta, no de espaldas mirando a cámara. Hugo sin llave en ambas."
+  },
+  "V34": {
+   "tomas": 2,
+   "estado": "aceptado",
+   "salidas": [
+    "/workspace/produccion/pruebas/cap01_animatic_v3/previs/v1c/raw/V34_b6_p2_t0_flare_0.png",
+    "/workspace/produccion/pruebas/cap01_animatic_v3/previs/v1c/raw/V34_b6_p2_t1_flare_0.png"
+   ],
+   "aceptada": "raw/V34_b6_p2_t1_flare_0.png"
+  },
+  "V35": {
+   "tomas": 1,
+   "estado": "pendiente",
+   "salidas": [
+    "/workspace/produccion/pruebas/cap01_animatic_v3/previs/v1c/raw/V35_b6_p3_t0_nbp_0.png"
+   ]
+  }
+ },
+ "correcciones": [
+  {
+   "id": "FIX_b2_p4_asiento",
+   "tomas": 3,
+   "costo_est_usd": 0.45,
+   "aceptada": "raw/FIX_b2_p4_asiento_t0_nbp_0.png",
+   "nota": "Cristian: el asiento de b2_p4 era individual. Quedó la banca de dos (F09). t1 no abrió el lugar de al lado; t2 no cerró el plano. Se acepta t0, más abierto que el primer plano."
+  }
+ ]
+}
