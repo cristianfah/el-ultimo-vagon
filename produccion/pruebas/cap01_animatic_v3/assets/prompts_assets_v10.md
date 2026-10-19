@@ -120,3 +120,8 @@ Never blood or gore in the description of the image: only the thin cut and the d
 ```
 
 Vigilar: que sea la mano **derecha** y que el corte sea fino. Para c06b, la misma imagen sirve como referencia del estado de la palma.
+
+## 6. ESTADO_carmen_palma_v2_palma (Nano Banana Pro, una variable sobre ESTADO_carmen_palma) — estado para c06b
+Motivo: el asset actual muestra el dorso (palma contra el vidrio); c06b necesita ver el corte. El actual sigue como primer fotograma de c05i.
+
+Edit this image. CHANGE: the same right hand has just lifted off the jagged glass and is rotated so the open palm faces the camera, fingers slightly curled, a few centimetres in front of the broken window frame. One thin cut runs across the heel of the palm with a small dark red-black stain on the cut; the heavier dark red-black stain stays on the glass edge behind the hand. PRESERVE EXACTLY: the hand's identity, skin tone, sleeve and cuff, the door window frame and jagged glass, the dark out-of-focus carriage interior behind, the cold light, framing and 9:16 aspect. ONLY CHANGE the hand's rotation and the visible palm with its cut. No text.

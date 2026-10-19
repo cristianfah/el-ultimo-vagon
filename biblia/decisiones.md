@@ -178,4 +178,5 @@ Notas de Cristian sobre el animatic v1 y v2 del capítulo 1. Detalle en `producc
 - **Tope de fal del v3: 40 USD, techo no meta.** Las tandas sueltas siguen con el tope que se les asigne (esta de assets: 3 USD). Motivo: Cristian lo confirma.
 - **b0_p2:** la manga que empuja el maletín es la del abrigo gris, con el puño del suéter avena asomando y cubriéndole los nudillos. Motivo: decisión de Cristian para la previsualización.
 - **c04b en previs:** Hugo toma A (2,3 s) entra a los 2,5 s de `pistas/c04b.mp3`; el pitazo va como efecto en post a los 2,1 s. Motivo: tiempos de Cristian para `cap01_previs_v1`.
+- **Palma de Carmen, dos assets:** `ESTADO_carmen_palma.png` es el primer fotograma de c05i (dorso contra el vidrio). `ESTADO_carmen_palma_v2_palma.png` (Nano Banana Pro, una variable, prompt §6 de assets v10) es el estado de c06b: palma abierta hacia cámara. Motivo: el dorso no deja ver el corte que Carmen mira en c06b.
 
