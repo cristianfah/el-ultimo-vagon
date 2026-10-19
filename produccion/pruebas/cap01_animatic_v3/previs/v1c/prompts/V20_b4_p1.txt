@@ -1,0 +1,11 @@
+Edit the image: Iván is still seated and Carmen is still asleep.
+
+CHANGE: Iván, mid-carriage, is still sitting in his seat, only lifting his head toward the front door; Carmen, nearer camera, is still asleep, head down, glasses on the cord against her chest, bag on her LEFT shoulder. The passenger near the front door already stands staring at it.
+
+PRESERVE EXACTLY:
+- camera position, lens, framing and 9:16 aspect (unless the change says otherwise)
+- every person's face, hair, wardrobe, pose and eyeline not named in the change
+- every light source, shadow, colour grade and film grain not named in the change
+- natural hands with five separate fingers
+
+ONLY CHANGE: Iván is still seated and Carmen is still asleep. Everything else stays identical. No text.

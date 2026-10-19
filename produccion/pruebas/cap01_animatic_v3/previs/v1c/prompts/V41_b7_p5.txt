@@ -1,0 +1,11 @@
+Edit the image: only Diego's right sleeve is stained, and the prints on the glass are dark.
+
+CHANGE: Diego's pale stone canvas jacket is soaked and clean except the RIGHT sleeve, which is torn and stained dark reddish black, as in Image 2; no stains on the chest or the left sleeve. The handprints on the glass become dark, almost black, matte, not bright red.
+
+PRESERVE EXACTLY:
+- camera position, lens, framing and 9:16 aspect (unless the change says otherwise)
+- every person's face, hair, wardrobe, pose and eyeline not named in the change
+- every light source, shadow, colour grade and film grain not named in the change
+- natural hands with five separate fingers
+
+ONLY CHANGE: only Diego's right sleeve is stained, and the prints on the glass are dark. Everything else stays identical. No text.

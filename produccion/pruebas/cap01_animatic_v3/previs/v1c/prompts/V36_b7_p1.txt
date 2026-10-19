@@ -1,0 +1,11 @@
+Edit the image: the door window shows only a dark gangway, with the dark smears on the glass.
+
+CHANGE: Behind the door window only the dark gangway in faint red, black glass: no sky, no rain, no water drops, no lit corridor. On the wired glass, the same dark reddish-black smears and handprints left in the previous scene. The door stays closed.
+
+PRESERVE EXACTLY:
+- camera position, lens, framing and 9:16 aspect (unless the change says otherwise)
+- every person's face, hair, wardrobe, pose and eyeline not named in the change
+- every light source, shadow, colour grade and film grain not named in the change
+- natural hands with five separate fingers
+
+ONLY CHANGE: the door window shows only a dark gangway, with the dark smears on the glass. Everything else stays identical. No text.

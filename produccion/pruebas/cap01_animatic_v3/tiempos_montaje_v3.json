@@ -1,0 +1,940 @@
+{
+ "version": "v1c / video v3",
+ "fecha": "2026-10-18",
+ "guion": "guion/cap01/cap01_v10.md (main 3af1c19)",
+ "regla": "revision_v1.md §5: ningún plano dura más que su acción + 0,5 s; nunca se recorta dentro de una línea; sin relleno. Mismos tiempos en el video.",
+ "colchon_llamada_s": 0.5,
+ "total_montaje_s": 70.5,
+ "nota_c05": "c05b = P4, P6, P7; el inserto c05i (P5) va entre P4 y P6 en el montaje.",
+ "nota_post": "b4_p3: 0,5 s de negro en post al inicio del plano; H3 parte ya en rojo. Encuesta «Si fueras Martina, ¿lo dejas entrar?» va después, en post, sobre negro.",
+ "planos": [
+  {
+   "id": "b0_p1",
+   "llamada": "c00a",
+   "plano": "0·P1",
+   "entra_montaje_s": 0.0,
+   "dur_s": 1.2,
+   "dur_previs_v1_s": 1.2,
+   "accion_s": 1.0,
+   "cambio": 0.0,
+   "motivo": "ojos de un extremo al otro y vuelven"
+  },
+  {
+   "id": "b0_p2",
+   "llamada": "c00a",
+   "plano": "0·P2",
+   "entra_montaje_s": 1.2,
+   "dur_s": 1.8,
+   "dur_previs_v1_s": 1.8,
+   "accion_s": 1.5,
+   "cambio": 0.0,
+   "motivo": "empuja, se traba, termina con la bota"
+  },
+  {
+   "id": "b0_p3",
+   "llamada": "c00b",
+   "plano": "0·P3",
+   "entra_montaje_s": 3.0,
+   "dur_s": 1.5,
+   "dur_previs_v1_s": 1.5,
+   "accion_s": 1.0,
+   "cambio": 0.0,
+   "motivo": "él se remueve y ronca; ella se congela"
+  },
+  {
+   "id": "b0_p4",
+   "llamada": "c00b",
+   "plano": "0·P4",
+   "entra_montaje_s": 4.5,
+   "dur_s": 1.5,
+   "dur_previs_v1_s": 1.5,
+   "accion_s": 1.0,
+   "cambio": 0.0,
+   "motivo": "se aleja; el secreto queda quieto"
+  },
+  {
+   "id": "b1_p1",
+   "llamada": "c01",
+   "plano": "1·P1",
+   "entra_montaje_s": 6.0,
+   "dur_s": 0.8,
+   "dur_previs_v1_s": 0.8,
+   "accion_s": 0.6,
+   "cambio": 0.0,
+   "motivo": "se apoya, cierra los ojos, aprieta"
+  },
+  {
+   "id": "b1_f1",
+   "llamada": "c01f",
+   "plano": "1·F1",
+   "entra_montaje_s": 6.8,
+   "dur_s": 0.7,
+   "dur_previs_v1_s": 0.7,
+   "accion_s": 0.5,
+   "cambio": 0.0,
+   "motivo": "tira de la cinta"
+  },
+  {
+   "id": "b1_f2",
+   "llamada": "c01f",
+   "plano": "1·F2",
+   "entra_montaje_s": 7.5,
+   "dur_s": 0.7,
+   "dur_previs_v1_s": 0.7,
+   "accion_s": 0.5,
+   "cambio": 0.0,
+   "motivo": "le dejan el maletín"
+  },
+  {
+   "id": "b1_f3",
+   "llamada": "F3",
+   "plano": "1·F3",
+   "entra_montaje_s": 8.2,
+   "dur_s": 0.8,
+   "dur_previs_v1_s": 0.8,
+   "accion_s": 0.8,
+   "cambio": 0.0,
+   "motivo": "pantalla, lectura de «VAGÓN 2» (post)"
+  },
+  {
+   "id": "b1_p2",
+   "llamada": "c01",
+   "plano": "1·P2",
+   "entra_montaje_s": 9.0,
+   "dur_s": 1.0,
+   "dur_previs_v1_s": 1.0,
+   "accion_s": 0.8,
+   "cambio": 0.0,
+   "motivo": "abre los ojos, manga, empuja la puerta"
+  },
+  {
+   "id": "b2_p1",
+   "llamada": "c02",
+   "plano": "2·P1",
+   "entra_montaje_s": 10.0,
+   "dur_s": 3.2,
+   "dur_previs_v1_s": 3.5,
+   "accion_s": 2.7,
+   "cambio": -0.3,
+   "motivo": "«En el baño.» termina a 3,20 s de llamada = 2,70 s del plano → máx. 3,2"
+  },
+  {
+   "id": "b2_p2",
+   "llamada": "c02",
+   "plano": "2·P2",
+   "entra_montaje_s": 13.2,
+   "dur_s": 1.0,
+   "dur_previs_v1_s": 1.0,
+   "accion_s": 0.8,
+   "cambio": 0.0,
+   "motivo": "la marca se ve y la manga la tapa"
+  },
+  {
+   "id": "b2_p3",
+   "llamada": "c02",
+   "plano": "2·P3",
+   "entra_montaje_s": 14.2,
+   "dur_s": 2.7,
+   "dur_previs_v1_s": 3.0,
+   "accion_s": 2.17,
+   "cambio": -0.3,
+   "motivo": "«¿Tu papá sabe…?» entra 0,2 s y termina 2,17 s después del corte → máx. 2,67"
+  },
+  {
+   "id": "b2_p4",
+   "llamada": "c02",
+   "plano": "2·P4",
+   "entra_montaje_s": 16.9,
+   "dur_s": 4.0,
+   "dur_previs_v1_s": 4.0,
+   "accion_s": 3.5,
+   "cambio": 0.0,
+   "motivo": "«No… Esa era la idea.» termina 2,95 s; mano de Tomás ~0,6 s; corte 0,5 s después (guion)"
+  },
+  {
+   "id": "b3_p1",
+   "llamada": "c03a",
+   "plano": "3·P1",
+   "entra_montaje_s": 20.9,
+   "dur_s": 1.3,
+   "dur_previs_v1_s": 1.3,
+   "accion_s": 0.8,
+   "cambio": 0.0,
+   "motivo": "clic-clic y la tapa se levanta"
+  },
+  {
+   "id": "b3_p2",
+   "llamada": "c03a",
+   "plano": "3·P2",
+   "entra_montaje_s": 22.2,
+   "dur_s": 1.5,
+   "dur_previs_v1_s": 1.5,
+   "accion_s": 1.2,
+   "cambio": 0.0,
+   "motivo": "la niebla sube de los zapatos a las rodillas"
+  },
+  {
+   "id": "b3_p3",
+   "llamada": "c03a",
+   "plano": "3·P3",
+   "entra_montaje_s": 23.7,
+   "dur_s": 2.2,
+   "dur_previs_v1_s": 2.2,
+   "accion_s": 1.7,
+   "cambio": 0.0,
+   "motivo": "despierta tosiendo, mira abajo, mano al cuello"
+  },
+  {
+   "id": "b3_p4",
+   "llamada": "c03b",
+   "plano": "3·P4",
+   "entra_montaje_s": 25.9,
+   "dur_s": 1.5,
+   "dur_previs_v1_s": 1.5,
+   "accion_s": 1.2,
+   "cambio": 0.0,
+   "motivo": "ojos blancos, venas, deja de toser, gira"
+  },
+  {
+   "id": "b3_p5",
+   "llamada": "c03b",
+   "plano": "3·P5",
+   "entra_montaje_s": 27.4,
+   "dur_s": 1.0,
+   "dur_previs_v1_s": 1.0,
+   "accion_s": 0.6,
+   "cambio": 0.0,
+   "motivo": "se lanza; corte en el impacto"
+  },
+  {
+   "id": "b3_p6",
+   "llamada": "c03b",
+   "plano": "3·P6",
+   "entra_montaje_s": 28.4,
+   "dur_s": 1.5,
+   "dur_previs_v1_s": 1.5,
+   "accion_s": 1.0,
+   "cambio": 0.0,
+   "motivo": "la lectora se levanta y grita; ola"
+  },
+  {
+   "id": "b4_p1",
+   "llamada": "c04a",
+   "plano": "4·P1",
+   "entra_montaje_s": 29.9,
+   "dur_s": 1.8,
+   "dur_previs_v1_s": 1.8,
+   "accion_s": 1.3,
+   "cambio": 0.0,
+   "motivo": "ola de cabezas: pasajero → Iván → Carmen"
+  },
+  {
+   "id": "b4_p2",
+   "llamada": "c04a",
+   "plano": "4·P2",
+   "entra_montaje_s": 31.7,
+   "dur_s": 1.5,
+   "dur_previs_v1_s": 1.5,
+   "accion_s": 1.0,
+   "cambio": 0.0,
+   "motivo": "le agarra el brazo; él gira"
+  },
+  {
+   "id": "b4_p3",
+   "llamada": "c04a",
+   "plano": "4·P3",
+   "entra_montaje_s": 33.2,
+   "dur_s": 1.2,
+   "dur_previs_v1_s": 1.2,
+   "accion_s": 1.2,
+   "cambio": 0.0,
+   "motivo": "chasquido, 0,5 s de negro (post), rojo"
+  },
+  {
+   "id": "b4_p4",
+   "llamada": "c04b",
+   "plano": "4·P4",
+   "entra_montaje_s": 34.4,
+   "dur_s": 1.5,
+   "dur_previs_v1_s": 1.5,
+   "accion_s": 1.0,
+   "cambio": 0.0,
+   "motivo": "siluetas se estrellan; la puerta se sacude"
+  },
+  {
+   "id": "b4_p5",
+   "llamada": "c04b",
+   "plano": "4·P5",
+   "entra_montaje_s": 35.9,
+   "dur_s": 3.0,
+   "dur_previs_v1_s": 2.5,
+   "accion_s": 2.56,
+   "cambio": 0.5,
+   "motivo": "pitazo 0,1 s; «¡Al último vagón! ¡Rápido!» termina 2,56 s del plano → v10: 3,0 s (antes 2,5 cortaba dentro de «¡Rápido!»)"
+  },
+  {
+   "id": "b4_p6",
+   "llamada": "c04b",
+   "plano": "4·P6",
+   "entra_montaje_s": 38.9,
+   "dur_s": 2.0,
+   "dur_previs_v1_s": 2.5,
+   "accion_s": 1.5,
+   "cambio": -0.5,
+   "motivo": "estampida; v10: 2,0 s"
+  },
+  {
+   "id": "b5_p1",
+   "llamada": "c05a",
+   "plano": "5·P1",
+   "entra_montaje_s": 40.9,
+   "dur_s": 1.3,
+   "dur_previs_v1_s": 1.3,
+   "accion_s": 1.0,
+   "cambio": 0.0,
+   "motivo": "mete la llave, se traba, la fuerza"
+  },
+  {
+   "id": "b5_p2",
+   "llamada": "c05a",
+   "plano": "5·P2",
+   "entra_montaje_s": 42.2,
+   "dur_s": 1.5,
+   "dur_previs_v1_s": 1.5,
+   "accion_s": 1.2,
+   "cambio": 0.0,
+   "motivo": "Iván cierra y empuja; infectados en el vidrio"
+  },
+  {
+   "id": "b5_p3",
+   "llamada": "c05a",
+   "plano": "5·P3",
+   "entra_montaje_s": 43.7,
+   "dur_s": 1.0,
+   "dur_previs_v1_s": 1.0,
+   "accion_s": 0.6,
+   "cambio": 0.0,
+   "motivo": "el vidrio revienta y la agarra"
+  },
+  {
+   "id": "b5_p4",
+   "llamada": "c05b",
+   "plano": "5·P4",
+   "entra_montaje_s": 44.7,
+   "dur_s": 1.5,
+   "dur_previs_v1_s": 1.5,
+   "accion_s": 1.0,
+   "cambio": 0.0,
+   "motivo": "choca, apoya la palma, Iván la arranca"
+  },
+  {
+   "id": "b5_p5",
+   "llamada": "c05i",
+   "plano": "5·P5",
+   "entra_montaje_s": 46.2,
+   "dur_s": 1.0,
+   "dur_previs_v1_s": 1.0,
+   "accion_s": 0.6,
+   "cambio": 0.0,
+   "motivo": "inserto de la palma"
+  },
+  {
+   "id": "b5_p6",
+   "llamada": "c05b",
+   "plano": "5·P6",
+   "entra_montaje_s": 47.2,
+   "dur_s": 1.5,
+   "dur_previs_v1_s": 1.5,
+   "accion_s": 1.2,
+   "cambio": 0.0,
+   "motivo": "la llave gira, clac; la saca; hombro"
+  },
+  {
+   "id": "b5_p7",
+   "llamada": "c05b",
+   "plano": "5·P7",
+   "entra_montaje_s": 48.7,
+   "dur_s": 1.2,
+   "dur_previs_v1_s": 1.2,
+   "accion_s": 1.0,
+   "cambio": 0.0,
+   "motivo": "entran en tropel"
+  },
+  {
+   "id": "b5_p8",
+   "llamada": "c06a",
+   "plano": "5·P8",
+   "entra_montaje_s": 49.9,
+   "dur_s": 1.3,
+   "dur_previs_v1_s": 1.3,
+   "accion_s": 1.0,
+   "cambio": 0.0,
+   "motivo": "cierra con el cuerpo, aplasta la mano, gira la llave"
+  },
+  {
+   "id": "b5_p9",
+   "llamada": "c06a",
+   "plano": "5·P9",
+   "entra_montaje_s": 51.2,
+   "dur_s": 1.0,
+   "dur_previs_v1_s": 1.0,
+   "accion_s": 0.5,
+   "cambio": 0.0,
+   "motivo": "la cara se estrella"
+  },
+  {
+   "id": "b6_p1",
+   "llamada": "c06a",
+   "plano": "6·P1",
+   "entra_montaje_s": 52.2,
+   "dur_s": 2.0,
+   "dur_previs_v1_s": 2.0,
+   "accion_s": 2.0,
+   "cambio": 0.0,
+   "motivo": "golpes, retroceden, grito lejano, paran: silencio escrito"
+  },
+  {
+   "id": "b6_p2",
+   "llamada": "c06b",
+   "plano": "6·P2",
+   "entra_montaje_s": 54.2,
+   "dur_s": 1.5,
+   "dur_previs_v1_s": 1.5,
+   "accion_s": 1.2,
+   "cambio": 0.0,
+   "motivo": "se mira la palma, puño, la esconde, mira"
+  },
+  {
+   "id": "b6_p3",
+   "llamada": "c06b",
+   "plano": "6·P3",
+   "entra_montaje_s": 55.7,
+   "dur_s": 2.0,
+   "dur_previs_v1_s": 2.0,
+   "accion_s": 1.5,
+   "cambio": 0.0,
+   "motivo": "Tomás gira y la mira; ella mira el piso (silencio del bloque)"
+  },
+  {
+   "id": "b7_p1",
+   "llamada": "c07a",
+   "plano": "7·P1",
+   "entra_montaje_s": 57.7,
+   "dur_s": 0.8,
+   "dur_previs_v1_s": 0.8,
+   "accion_s": 0.6,
+   "cambio": 0.0,
+   "motivo": "tres golpes; levantan la cabeza"
+  },
+  {
+   "id": "b7_p2",
+   "llamada": "c07a",
+   "plano": "7·P2",
+   "entra_montaje_s": 58.5,
+   "dur_s": 3.6,
+   "dur_previs_v1_s": 3.6,
+   "accion_s": 3.25,
+   "cambio": 0.0,
+   "motivo": "«¡Martina, ábreme!» termina 2,65 s; mira atrás ~0,6 s → máx. 3,75"
+  },
+  {
+   "id": "b7_p3",
+   "llamada": "c07a",
+   "plano": "7·P3",
+   "entra_montaje_s": 62.1,
+   "dur_s": 2.7,
+   "dur_previs_v1_s": 2.9,
+   "accion_s": 2.16,
+   "cambio": -0.2,
+   "motivo": "«¡Te vi en el vagón 2!» termina 2,16 s del plano → máx. 2,66"
+  },
+  {
+   "id": "b7_p4",
+   "llamada": "c07b",
+   "plano": "7·P4",
+   "entra_montaje_s": 64.8,
+   "dur_s": 2.5,
+   "dur_previs_v1_s": 2.7,
+   "accion_s": 2.02,
+   "cambio": -0.2,
+   "motivo": "«¿No estabas en el baño?» termina 2,02 s del plano → máx. 2,52"
+  },
+  {
+   "id": "b7_p5",
+   "llamada": "c07b",
+   "plano": "7·P5",
+   "entra_montaje_s": 67.3,
+   "dur_s": 1.2,
+   "dur_previs_v1_s": 1.2,
+   "accion_s": 0.8,
+   "cambio": 0.0,
+   "motivo": "golpea y mira atrás"
+  },
+  {
+   "id": "b7_p6",
+   "llamada": "c07b",
+   "plano": "7·P6",
+   "entra_montaje_s": 68.5,
+   "dur_s": 2.0,
+   "dur_previs_v1_s": 2.6,
+   "accion_s": 2.0,
+   "cambio": -0.6,
+   "motivo": "Cristian: ~2 s, mira a Tomás y luego a la manija; corte justo al llegar a la manija, sin el segundo extra"
+  }
+ ],
+ "llamadas": [
+  {
+   "llamada": "c00a",
+   "planos": [
+    "b0_p1",
+    "b0_p2"
+   ],
+   "montaje_s": 3.0,
+   "pedida_s": 4.0,
+   "resolucion": "480P",
+   "planos_en_llamada": [
+    {
+     "id": "b0_p1",
+     "de_s": 0.5,
+     "a_s": 1.7
+    },
+    {
+     "id": "b0_p2",
+     "de_s": 1.7,
+     "a_s": 3.5
+    }
+   ]
+  },
+  {
+   "llamada": "c00b",
+   "planos": [
+    "b0_p3",
+    "b0_p4"
+   ],
+   "montaje_s": 3.0,
+   "pedida_s": 4.0,
+   "resolucion": "480P",
+   "planos_en_llamada": [
+    {
+     "id": "b0_p3",
+     "de_s": 0.5,
+     "a_s": 2.0
+    },
+    {
+     "id": "b0_p4",
+     "de_s": 2.0,
+     "a_s": 3.5
+    }
+   ]
+  },
+  {
+   "llamada": "c01",
+   "planos": [
+    "b1_p1",
+    "b1_p2"
+   ],
+   "montaje_s": 1.8,
+   "pedida_s": 3.5,
+   "nota": "duración pedida según plan.md, no montaje + colchón",
+   "resolucion": "480P",
+   "planos_en_llamada": [
+    {
+     "id": "b1_p1",
+     "de_s": 0.5,
+     "a_s": 1.3
+    },
+    {
+     "id": "b1_p2",
+     "de_s": 1.3,
+     "a_s": 2.3
+    }
+   ]
+  },
+  {
+   "llamada": "c01f",
+   "planos": [
+    "b1_f1",
+    "b1_f2"
+   ],
+   "montaje_s": 1.4,
+   "pedida_s": 2.5,
+   "nota": "duración pedida según plan.md, no montaje + colchón",
+   "resolucion": "480P",
+   "planos_en_llamada": [
+    {
+     "id": "b1_f1",
+     "de_s": 0.5,
+     "a_s": 1.2
+    },
+    {
+     "id": "b1_f2",
+     "de_s": 1.2,
+     "a_s": 1.9
+    }
+   ]
+  },
+  {
+   "llamada": "c02",
+   "planos": [
+    "b2_p1",
+    "b2_p2",
+    "b2_p3",
+    "b2_p4"
+   ],
+   "montaje_s": 10.9,
+   "pedida_s": 11.9,
+   "resolucion": "768P",
+   "audio1": {
+    "pista": "pistas/c02_v2.mp3",
+    "wav": "pistas/c02_v2.wav",
+    "origen": "pistas/c02.wav",
+    "edicion": "se quitan 0,30 s de silencio en 3,55–3,85 s y 0,30 s en 7,50–7,80 s (tiempo de llamada); ninguna línea se toca",
+    "lineas_entran_s": {
+     "Tomás 1C": 0.8,
+     "Martina 2B": 2.5,
+     "Tomás 3C": 4.9,
+     "Martina 4D": 7.6
+    }
+   },
+   "planos_en_llamada": [
+    {
+     "id": "b2_p1",
+     "de_s": 0.5,
+     "a_s": 3.7
+    },
+    {
+     "id": "b2_p2",
+     "de_s": 3.7,
+     "a_s": 4.7
+    },
+    {
+     "id": "b2_p3",
+     "de_s": 4.7,
+     "a_s": 7.4
+    },
+    {
+     "id": "b2_p4",
+     "de_s": 7.4,
+     "a_s": 11.4
+    }
+   ]
+  },
+  {
+   "llamada": "c03a",
+   "planos": [
+    "b3_p1",
+    "b3_p2",
+    "b3_p3"
+   ],
+   "montaje_s": 5.0,
+   "pedida_s": 6.0,
+   "resolucion": "480P",
+   "planos_en_llamada": [
+    {
+     "id": "b3_p1",
+     "de_s": 0.5,
+     "a_s": 1.8
+    },
+    {
+     "id": "b3_p2",
+     "de_s": 1.8,
+     "a_s": 3.3
+    },
+    {
+     "id": "b3_p3",
+     "de_s": 3.3,
+     "a_s": 5.5
+    }
+   ]
+  },
+  {
+   "llamada": "c03b",
+   "planos": [
+    "b3_p4",
+    "b3_p5",
+    "b3_p6"
+   ],
+   "montaje_s": 4.0,
+   "pedida_s": 5.0,
+   "resolucion": "480P",
+   "planos_en_llamada": [
+    {
+     "id": "b3_p4",
+     "de_s": 0.5,
+     "a_s": 2.0
+    },
+    {
+     "id": "b3_p5",
+     "de_s": 2.0,
+     "a_s": 3.0
+    },
+    {
+     "id": "b3_p6",
+     "de_s": 3.0,
+     "a_s": 4.5
+    }
+   ]
+  },
+  {
+   "llamada": "c04a",
+   "planos": [
+    "b4_p1",
+    "b4_p2",
+    "b4_p3"
+   ],
+   "montaje_s": 4.5,
+   "pedida_s": 5.5,
+   "resolucion": "480P",
+   "planos_en_llamada": [
+    {
+     "id": "b4_p1",
+     "de_s": 0.5,
+     "a_s": 2.3
+    },
+    {
+     "id": "b4_p2",
+     "de_s": 2.3,
+     "a_s": 3.8
+    },
+    {
+     "id": "b4_p3",
+     "de_s": 3.8,
+     "a_s": 5.0
+    }
+   ]
+  },
+  {
+   "llamada": "c04b",
+   "planos": [
+    "b4_p4",
+    "b4_p5",
+    "b4_p6"
+   ],
+   "montaje_s": 6.5,
+   "pedida_s": 7.5,
+   "resolucion": "768P",
+   "audio1": {
+    "pista": "pistas/c04b.mp3",
+    "edicion": "sin cambios",
+    "lineas_entran_s": {
+     "Hugo A": 2.63
+    },
+    "pitazo_post_s": 2.1
+   },
+   "planos_en_llamada": [
+    {
+     "id": "b4_p4",
+     "de_s": 0.5,
+     "a_s": 2.0
+    },
+    {
+     "id": "b4_p5",
+     "de_s": 2.0,
+     "a_s": 5.0
+    },
+    {
+     "id": "b4_p6",
+     "de_s": 5.0,
+     "a_s": 7.0
+    }
+   ]
+  },
+  {
+   "llamada": "c05a",
+   "planos": [
+    "b5_p1",
+    "b5_p2",
+    "b5_p3"
+   ],
+   "montaje_s": 3.8,
+   "pedida_s": 4.8,
+   "resolucion": "480P",
+   "planos_en_llamada": [
+    {
+     "id": "b5_p1",
+     "de_s": 0.5,
+     "a_s": 1.8
+    },
+    {
+     "id": "b5_p2",
+     "de_s": 1.8,
+     "a_s": 3.3
+    },
+    {
+     "id": "b5_p3",
+     "de_s": 3.3,
+     "a_s": 4.3
+    }
+   ]
+  },
+  {
+   "llamada": "c05b",
+   "planos": [
+    "b5_p4",
+    "b5_p6",
+    "b5_p7"
+   ],
+   "montaje_s": 4.2,
+   "pedida_s": 5.2,
+   "resolucion": "480P",
+   "planos_en_llamada": [
+    {
+     "id": "b5_p4",
+     "de_s": 0.5,
+     "a_s": 2.0
+    },
+    {
+     "id": "b5_p6",
+     "de_s": 2.0,
+     "a_s": 3.5
+    },
+    {
+     "id": "b5_p7",
+     "de_s": 3.5,
+     "a_s": 4.7
+    }
+   ]
+  },
+  {
+   "llamada": "c05i",
+   "planos": [
+    "b5_p5"
+   ],
+   "montaje_s": 1.0,
+   "pedida_s": 2.0,
+   "resolucion": "480P",
+   "planos_en_llamada": [
+    {
+     "id": "b5_p5",
+     "de_s": 0.5,
+     "a_s": 1.5
+    }
+   ]
+  },
+  {
+   "llamada": "c06a",
+   "planos": [
+    "b5_p8",
+    "b5_p9",
+    "b6_p1"
+   ],
+   "montaje_s": 4.3,
+   "pedida_s": 5.3,
+   "resolucion": "480P",
+   "planos_en_llamada": [
+    {
+     "id": "b5_p8",
+     "de_s": 0.5,
+     "a_s": 1.8
+    },
+    {
+     "id": "b5_p9",
+     "de_s": 1.8,
+     "a_s": 2.8
+    },
+    {
+     "id": "b6_p1",
+     "de_s": 2.8,
+     "a_s": 4.8
+    }
+   ]
+  },
+  {
+   "llamada": "c06b",
+   "planos": [
+    "b6_p2",
+    "b6_p3"
+   ],
+   "montaje_s": 3.5,
+   "pedida_s": 4.5,
+   "resolucion": "480P",
+   "planos_en_llamada": [
+    {
+     "id": "b6_p2",
+     "de_s": 0.5,
+     "a_s": 2.0
+    },
+    {
+     "id": "b6_p3",
+     "de_s": 2.0,
+     "a_s": 4.0
+    }
+   ]
+  },
+  {
+   "llamada": "c07a",
+   "planos": [
+    "b7_p1",
+    "b7_p2",
+    "b7_p3"
+   ],
+   "montaje_s": 7.1,
+   "pedida_s": 8.1,
+   "resolucion": "768P",
+   "audio1": {
+    "pista": "pistas/c07a_v2.mp3",
+    "wav": "pistas/c07a_v2.wav",
+    "origen": "pistas/c07a.wav",
+    "edicion": "cola recortada de 8,3 a 8,1 s (silencio)",
+    "lineas_entran_s": {
+     "Diego 5C": 1.5,
+     "Diego 6C": 5.0
+    }
+   },
+   "planos_en_llamada": [
+    {
+     "id": "b7_p1",
+     "de_s": 0.5,
+     "a_s": 1.3
+    },
+    {
+     "id": "b7_p2",
+     "de_s": 1.3,
+     "a_s": 4.9
+    },
+    {
+     "id": "b7_p3",
+     "de_s": 4.9,
+     "a_s": 7.6
+    }
+   ]
+  },
+  {
+   "llamada": "c07b",
+   "planos": [
+    "b7_p4",
+    "b7_p5",
+    "b7_p6"
+   ],
+   "montaje_s": 5.7,
+   "pedida_s": 6.7,
+   "resolucion": "768P",
+   "audio1": {
+    "pista": "pistas/c07b_v2.mp3",
+    "wav": "pistas/c07b_v2.wav",
+    "origen": "pistas/c07b.wav",
+    "edicion": "cola recortada de 7,5 a 6,7 s (silencio)",
+    "lineas_entran_s": {
+     "Tomás 7B": 0.7
+    }
+   },
+   "planos_en_llamada": [
+    {
+     "id": "b7_p4",
+     "de_s": 0.5,
+     "a_s": 3.0
+    },
+    {
+     "id": "b7_p5",
+     "de_s": 3.0,
+     "a_s": 4.2
+    },
+    {
+     "id": "b7_p6",
+     "de_s": 4.2,
+     "a_s": 6.2
+    }
+   ]
+  }
+ ]
+}

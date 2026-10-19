@@ -1,0 +1,11 @@
+Edit the image: make the door window dry and dark.
+
+CHANGE: The small wired-glass window of the door is dry and dark: no water drops at all, only a dark red gangway behind the mesh.
+
+PRESERVE EXACTLY:
+- camera position, lens, framing and 9:16 aspect (unless the change says otherwise)
+- every person's face, hair, wardrobe, pose and eyeline not named in the change
+- every light source, shadow, colour grade and film grain not named in the change
+- natural hands with five separate fingers
+
+ONLY CHANGE: make the door window dry and dark. Everything else stays identical. No text.

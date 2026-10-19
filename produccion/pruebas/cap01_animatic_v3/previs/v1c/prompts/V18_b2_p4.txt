@@ -1,0 +1,11 @@
+Edit the image: remove Tomás's hand; her hands rest alone.
+
+CHANGE: Tomás's hand and navy cuff are gone from the bottom right; her LEFT hand rests alone on the armrest. She still stares straight ahead, never at him.
+
+PRESERVE EXACTLY:
+- camera position, lens, framing and 9:16 aspect (unless the change says otherwise)
+- every person's face, hair, wardrobe, pose and eyeline not named in the change
+- every light source, shadow, colour grade and film grain not named in the change
+- natural hands with five separate fingers
+
+ONLY CHANGE: remove Tomás's hand; her hands rest alone. Everything else stays identical. No text.

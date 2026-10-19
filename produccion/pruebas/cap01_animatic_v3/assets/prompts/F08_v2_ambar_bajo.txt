@@ -1,0 +1,11 @@
+Edit the image: the same train carriage late at night, with almost every reading lamp switched off.
+
+CHANGE: of the eight small amber reading lamps under the luggage racks, only three stay lit: the second lamp on the left side, the fourth lamp on the left side, and the third lamp on the right side. Every other lamp is off: a dark unlit fixture, no glow. Without those lamps the carriage falls into deep amber shadow: the seat backs read only as dark navy shapes with a thin warm rim where a lit lamp touches them; the aisle floor is dark with three small warm pools of light under the lit lamps. The small window in the far door shows only the dark, unlit gangway behind it: no lamp, no glow, just black glass with a faint reflection.
+
+PRESERVE EXACTLY:
+- the carriage geometry, camera position, lens and vertical framing; aisle centred, far door centred
+- the navy seats with chrome handles, the curtains, the luggage racks, the red fire extinguisher by the door, the book on the right armrest, the cup on the left
+- the side windows: night outside, rain only on the outside of the glass
+- colour grade (warm amber with deep shadow), grain and film texture
+
+ONLY CHANGE: only three reading lamps lit, everything else in deep amber shadow, the far door window dark. Everything else stays identical. No text anywhere in the frame.

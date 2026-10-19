@@ -1,0 +1,11 @@
+Edit the image: give Tomás the exact hair of Image 2.
+
+CHANGE: Tomás's hair becomes short dark brown hair, neatly combed with a side parting, tidy, short on the sides, as in Image 2: no curls, no fringe falling on the forehead, no messy waves. Same face, same thin metal-frame glasses.
+
+PRESERVE EXACTLY:
+- camera position, lens, framing and 9:16 aspect (unless the change says otherwise)
+- every person's face, hair, wardrobe, pose and eyeline not named in the change
+- every light source, shadow, colour grade and film grain not named in the change
+- natural hands with five separate fingers
+
+ONLY CHANGE: give Tomás the exact hair of Image 2. Everything else stays identical. No text.

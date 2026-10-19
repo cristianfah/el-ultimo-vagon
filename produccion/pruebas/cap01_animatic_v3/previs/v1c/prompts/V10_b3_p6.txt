@@ -1,0 +1,11 @@
+Edit the image: lower the carriage light to the LOW amber of Image 2.
+
+CHANGE: Of the reading lamps under the luggage racks only two or three stay lit (the ones nearest the action in this shot); every other lamp and every ceiling fixture is dark. Short warm cones (~2800K) with real darkness between them; passengers away from the lit lamps fall into deep shade, almost silhouettes. Side windows stay black night with rain only on the outside of the glass.
+
+PRESERVE EXACTLY:
+- camera position, lens, framing and 9:16 aspect (unless the change says otherwise)
+- every person's face, hair, wardrobe, pose and eyeline not named in the change
+- every light source, shadow, colour grade and film grain not named in the change
+- natural hands with five separate fingers
+
+ONLY CHANGE: lower the carriage light to the LOW amber of Image 2. Everything else stays identical. No text.

@@ -1,0 +1,11 @@
+Edit the image: remove every water droplet from the door window.
+
+CHANGE: Every water droplet and rain streak on the small door window is gone; the glass is dry. Keep the infected face, the dark smear and the wire mesh.
+
+PRESERVE EXACTLY:
+- camera position, lens, framing and 9:16 aspect (unless the change says otherwise)
+- every person's face, hair, wardrobe, pose and eyeline not named in the change
+- every light source, shadow, colour grade and film grain not named in the change
+- natural hands with five separate fingers
+
+ONLY CHANGE: remove every water droplet from the door window. Everything else stays identical. No text.

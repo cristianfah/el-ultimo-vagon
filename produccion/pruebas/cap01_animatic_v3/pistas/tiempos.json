@@ -1,6 +1,5 @@
 {
-  "c04b": "pendiente: falta la voz de Hugo («¡Al último vagón! ¡Rápido!», máx. 1,6 s)",
-  "nota": "Aire inicial recortado; onset de habla = segundo de la tabla. Tomás 7B a 0,2 s del corte de P4 (v10).",
+  "nota": "Aire inicial recortado; onset de habla = segundo de la tabla, salvo c04b (toma A con 0,13 s de aire; la tabla manda 2,5 s). Tomás 7B a 0,2 s del corte de P4 (v10). Pitazo de Hugo: efecto en post a los 2,1 s de c04b, no va en la pista. Estos tiempos son los del montaje de cap01_previs_v1.",
   "pistas": [
     {
       "pista": "c02",
@@ -57,6 +56,36 @@
           "desfase_vs_tabla_s": 0.0,
           "despues_del_corte_s": 0.2,
           "seccion5_ok": true
+        }
+      ]
+    },
+    {
+      "pista": "c04b",
+      "wav": null,
+      "mp3": "produccion/pruebas/cap01_animatic_v3/pistas/c04b.mp3",
+      "duracion_pedida_s": 7.5,
+      "duracion_mp3_s": 7.549,
+      "lineas": [
+        {
+          "toma": "hugo_b4_1.mp3",
+          "label": "Hugo A · ¡Al último vagón! ¡Rápido!",
+          "duracion_toma_s": 2.3,
+          "plano": "P5 2,0–5,0",
+          "corte_plano_s": 2.0,
+          "entra_tabla_s": 2.5,
+          "aire_en_toma_s": 0.13,
+          "onset_habla_medido_s": 2.63,
+          "desfase_vs_tabla_s": 0.13,
+          "despues_del_corte_s": 0.5,
+          "seccion5_ok": true,
+          "nota": "Entra a los 2,5 s según tabla de Cristian (0,5 s dentro de P5). Pitazo como efecto en post a los 2,1 s, no está en este archivo."
+        }
+      ],
+      "efectos_post": [
+        {
+          "fx": "pitazo",
+          "entra_s": 2.1,
+          "nota": "Efecto en post; no va en c04b.mp3."
         }
       ]
     },

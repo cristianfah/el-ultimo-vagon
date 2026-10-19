@@ -1,0 +1,934 @@
+{
+  "tope_usd": 6.5,
+  "costo_usd": 4.226,
+  "tomas": [
+    {
+      "id": "b0_p1",
+      "ok": true,
+      "modelo": "openai/gpt-image-2.5/sunburst/edit",
+      "costo_usd": 0.0522,
+      "request_id": "01a1519b-e0a8-7cd0-bb90-a2c024d27454",
+      "elapsed_s": 53.1,
+      "url": "https://v3b.fal.media/files/b/0aaef0bf/Fgh3iiORv5ElZnklhACBu_lC259qoj.png",
+      "path": "/workspace/produccion/pruebas/cap01_animatic_v3/previs/frames/b0_p1.png",
+      "raw": "/workspace/produccion/pruebas/cap01_animatic_v3/previs/raw/b0_p1_t0.png",
+      "refs": [
+        "https://v3b.fal.media/files/b/0aaca77b/gxJvG_NylXQWPnPye25qY_HOJA_martina.png",
+        "https://v3b.fal.media/files/b/0aaef085/1tFiXTvu-SwPe-7ntCywL_aIXH7ag6.png"
+      ],
+      "error": null,
+      "replaced": true
+    },
+    {
+      "id": "b1_p1",
+      "ok": true,
+      "modelo": "openai/gpt-image-2.5/flare/edit",
+      "costo_usd": 0.0526,
+      "request_id": "01a1519c-f89f-78f2-b5c8-32188f40c987",
+      "elapsed_s": 28.3,
+      "url": "https://v3b.fal.media/files/b/0aaef0c5/uquncNuePm1Iho3CCPsDX_zZBe6TWk.png",
+      "path": "/workspace/produccion/pruebas/cap01_animatic_v3/previs/frames/b1_p1.png",
+      "raw": "/workspace/produccion/pruebas/cap01_animatic_v3/previs/raw/b1_p1_t0.png",
+      "refs": [
+        "https://v3b.fal.media/files/b/0aaca77b/gxJvG_NylXQWPnPye25qY_HOJA_martina.png",
+        "https://v3b.fal.media/files/b/0aaef085/1tFiXTvu-SwPe-7ntCywL_aIXH7ag6.png"
+      ],
+      "error": null
+    },
+    {
+      "id": "b0_p2",
+      "ok": true,
+      "modelo": "openai/gpt-image-2.5/flare/edit",
+      "costo_usd": 0.0767,
+      "request_id": "01a1519c-f86c-7c33-b3b2-2eac69869511",
+      "elapsed_s": 30.4,
+      "url": "https://v3b.fal.media/files/b/0aaef0c5/XJb35BMOFhoLhD8LEXQat_nyZQwScY.png",
+      "path": "/workspace/produccion/pruebas/cap01_animatic_v3/previs/frames/b0_p2.png",
+      "raw": "/workspace/produccion/pruebas/cap01_animatic_v3/previs/raw/b0_p2_t0.png",
+      "refs": [
+        "https://v3b.fal.media/files/b/0aaca77b/gxJvG_NylXQWPnPye25qY_HOJA_martina.png",
+        "https://v3b.fal.media/files/b/0aaeee79/Y-JPlHDGfrxyuD28x8lFG_HOJA_extra_pareja_camisa_azul.png",
+        "https://v3b.fal.media/files/b/0aaeeeb3/XmGD-bbhILh7w0-tYMXaS_prop_maletin_v2_nbp_0.png",
+        "https://v3b.fal.media/files/b/0aaef085/1tFiXTvu-SwPe-7ntCywL_aIXH7ag6.png"
+      ],
+      "error": null
+    },
+    {
+      "id": "b0_p4",
+      "ok": true,
+      "modelo": "openai/gpt-image-2.5/flare/edit",
+      "costo_usd": 0.0644,
+      "request_id": "01a1519c-f877-7871-b801-4d33c31c6486",
+      "elapsed_s": 31.5,
+      "url": "https://v3b.fal.media/files/b/0aaef0c5/iw6P2h6gZHWWdgqkEjhVz_27fW8Auh.png",
+      "path": "/workspace/produccion/pruebas/cap01_animatic_v3/previs/frames/b0_p4.png",
+      "raw": "/workspace/produccion/pruebas/cap01_animatic_v3/previs/raw/b0_p4_t0.png",
+      "refs": [
+        "https://v3b.fal.media/files/b/0aaca77b/gxJvG_NylXQWPnPye25qY_HOJA_martina.png",
+        "https://v3b.fal.media/files/b/0aaeeeb3/XmGD-bbhILh7w0-tYMXaS_prop_maletin_v2_nbp_0.png",
+        "https://v3b.fal.media/files/b/0aaef085/1tFiXTvu-SwPe-7ntCywL_aIXH7ag6.png"
+      ],
+      "error": null
+    },
+    {
+      "id": "b1_f2",
+      "ok": true,
+      "modelo": "openai/gpt-image-2.5/flare/edit",
+      "costo_usd": 0.0645,
+      "request_id": "01a1519c-f8b9-78c3-ae32-df38fa7f0cc3",
+      "elapsed_s": 32.2,
+      "url": "https://v3b.fal.media/files/b/0aaef0c5/pBm9XDL2T-iaC1lYUMbg6_Vv6W3AVR.png",
+      "path": "/workspace/produccion/pruebas/cap01_animatic_v3/previs/frames/b1_f2.png",
+      "raw": "/workspace/produccion/pruebas/cap01_animatic_v3/previs/raw/b1_f2_t0.png",
+      "refs": [
+        "https://v3b.fal.media/files/b/0aaca77b/gxJvG_NylXQWPnPye25qY_HOJA_martina.png",
+        "https://v3b.fal.media/files/b/0aaef085/YN4QTQemWyTovr3NYrDmX_tJ8G4vm5.png",
+        "https://v3b.fal.media/files/b/0aaeeeb3/XmGD-bbhILh7w0-tYMXaS_prop_maletin_v2_nbp_0.png"
+      ],
+      "error": null
+    },
+    {
+      "id": "b2_p1",
+      "ok": true,
+      "modelo": "openai/gpt-image-2.5/flare/edit",
+      "costo_usd": 0.0642,
+      "request_id": "01a1519c-f873-7aa2-ab49-8696064efe74",
+      "elapsed_s": 32.6,
+      "url": "https://v3b.fal.media/files/b/0aaef0c5/CVet4HJXUHuL1durInZS9_rpqoii95.png",
+      "path": "/workspace/produccion/pruebas/cap01_animatic_v3/previs/frames/b2_p1.png",
+      "raw": "/workspace/produccion/pruebas/cap01_animatic_v3/previs/raw/b2_p1_t0.png",
+      "refs": [
+        "https://v3b.fal.media/files/b/0aaca77b/gxJvG_NylXQWPnPye25qY_HOJA_martina.png",
+        "https://v3b.fal.media/files/b/0aaca77b/QIGG8k0Xlw4BBGntsymsW_HOJA_tomas.png",
+        "https://v3b.fal.media/files/b/0aaca77b/PzOwbqmC0cGCK6rcDZl44_F09_ambar_asiento_pareja.png"
+      ],
+      "error": null
+    },
+    {
+      "id": "b0_p3",
+      "ok": true,
+      "modelo": "openai/gpt-image-2.5/flare/edit",
+      "costo_usd": 0.0768,
+      "request_id": "01a1519c-f881-7ea2-9659-7ea65a82d8e3",
+      "elapsed_s": 34.2,
+      "url": "https://v3b.fal.media/files/b/0aaef0c5/HKmeuc4VV2Pj6ezPnf5AL_98PPV8WN.png",
+      "path": "/workspace/produccion/pruebas/cap01_animatic_v3/previs/frames/b0_p3.png",
+      "raw": "/workspace/produccion/pruebas/cap01_animatic_v3/previs/raw/b0_p3_t0.png",
+      "refs": [
+        "https://v3b.fal.media/files/b/0aaeee79/Y-JPlHDGfrxyuD28x8lFG_HOJA_extra_pareja_camisa_azul.png",
+        "https://v3b.fal.media/files/b/0aaca77b/gxJvG_NylXQWPnPye25qY_HOJA_martina.png",
+        "https://v3b.fal.media/files/b/0aaeeeb3/XmGD-bbhILh7w0-tYMXaS_prop_maletin_v2_nbp_0.png",
+        "https://v3b.fal.media/files/b/0aaef085/1tFiXTvu-SwPe-7ntCywL_aIXH7ag6.png"
+      ],
+      "error": null
+    },
+    {
+      "id": "b3_p3",
+      "ok": true,
+      "modelo": "openai/gpt-image-2.5/flare/edit",
+      "costo_usd": 0.0519,
+      "request_id": "01a1519d-770e-7b53-ac55-a17d4f4b9c02",
+      "elapsed_s": 22.7,
+      "url": "https://v3b.fal.media/files/b/0aaef0c7/n0fWfN3cGqAUaPtF6zvny_8VJ9pZux.png",
+      "path": "/workspace/produccion/pruebas/cap01_animatic_v3/previs/frames/b3_p3.png",
+      "raw": "/workspace/produccion/pruebas/cap01_animatic_v3/previs/raw/b3_p3_t0.png",
+      "refs": [
+        "https://v3b.fal.media/files/b/0aaeee79/Y-JPlHDGfrxyuD28x8lFG_HOJA_extra_pareja_camisa_azul.png",
+        "https://v3b.fal.media/files/b/0aaef085/1tFiXTvu-SwPe-7ntCywL_aIXH7ag6.png"
+      ],
+      "error": null
+    },
+    {
+      "id": "b3_p2",
+      "ok": true,
+      "modelo": "openai/gpt-image-2.5/flare/edit",
+      "costo_usd": 0.0641,
+      "request_id": "01a1519d-757d-74d1-8f82-7d2956487576",
+      "elapsed_s": 25.4,
+      "url": "https://v3b.fal.media/files/b/0aaef0c7/lmFDaYvcHZbe8izvVzg46_B4C6gi50.png",
+      "path": "/workspace/produccion/pruebas/cap01_animatic_v3/previs/frames/b3_p2.png",
+      "raw": "/workspace/produccion/pruebas/cap01_animatic_v3/previs/raw/b3_p2_t0.png",
+      "refs": [
+        "https://v3b.fal.media/files/b/0aaeee79/Y-JPlHDGfrxyuD28x8lFG_HOJA_extra_pareja_camisa_azul.png",
+        "https://v3b.fal.media/files/b/0aaeeeb3/XmGD-bbhILh7w0-tYMXaS_prop_maletin_v2_nbp_0.png",
+        "https://v3b.fal.media/files/b/0aaef085/1tFiXTvu-SwPe-7ntCywL_aIXH7ag6.png"
+      ],
+      "error": null
+    },
+    {
+      "id": "b2_p3",
+      "ok": true,
+      "modelo": "openai/gpt-image-2.5/flare/edit",
+      "costo_usd": 0.0516,
+      "request_id": "01a1519d-6e6c-7861-bacc-2e262bfb4fa1",
+      "elapsed_s": 27.8,
+      "url": "https://v3b.fal.media/files/b/0aaef0c8/UuiXS17S5B6hmxiQ1_YyG_IqyZQp1i.png",
+      "path": "/workspace/produccion/pruebas/cap01_animatic_v3/previs/frames/b2_p3.png",
+      "raw": "/workspace/produccion/pruebas/cap01_animatic_v3/previs/raw/b2_p3_t0.png",
+      "refs": [
+        "https://v3b.fal.media/files/b/0aaca77b/QIGG8k0Xlw4BBGntsymsW_HOJA_tomas.png",
+        "https://v3b.fal.media/files/b/0aaca77b/PzOwbqmC0cGCK6rcDZl44_F09_ambar_asiento_pareja.png"
+      ],
+      "error": null
+    },
+    {
+      "id": "b2_p4",
+      "ok": true,
+      "modelo": "openai/gpt-image-2.5/flare/edit",
+      "costo_usd": 0.0641,
+      "request_id": "01a1519d-72c7-7a12-904c-50958aacf9da",
+      "elapsed_s": 27.9,
+      "url": "https://v3b.fal.media/files/b/0aaef0c8/e1_9OU0Rdu8vcHkagwWI4_04YyfRGp.png",
+      "path": "/workspace/produccion/pruebas/cap01_animatic_v3/previs/frames/b2_p4.png",
+      "raw": "/workspace/produccion/pruebas/cap01_animatic_v3/previs/raw/b2_p4_t0.png",
+      "refs": [
+        "https://v3b.fal.media/files/b/0aaca77b/gxJvG_NylXQWPnPye25qY_HOJA_martina.png",
+        "https://v3b.fal.media/files/b/0aaca77b/QIGG8k0Xlw4BBGntsymsW_HOJA_tomas.png",
+        "https://v3b.fal.media/files/b/0aaca77b/PzOwbqmC0cGCK6rcDZl44_F09_ambar_asiento_pareja.png"
+      ],
+      "error": null
+    },
+    {
+      "id": "b3_p4",
+      "ok": true,
+      "modelo": "openai/gpt-image-2.5/flare/edit",
+      "costo_usd": 0.0762,
+      "request_id": "01a1519d-7d50-7663-8959-9723d5fc3107",
+      "elapsed_s": 31.5,
+      "url": "https://v3b.fal.media/files/b/0aaef0c8/Rs87myOy6BptuT4YoS9c0_1Y2TnPUf.png",
+      "path": "/workspace/produccion/pruebas/cap01_animatic_v3/previs/frames/b3_p4.png",
+      "raw": "/workspace/produccion/pruebas/cap01_animatic_v3/previs/raw/b3_p4_t0.png",
+      "refs": [
+        "https://v3b.fal.media/files/b/0aaef086/fIcBuc8vr7xLcrMo11V2a_7LQUC5Dt.png",
+        "https://v3b.fal.media/files/b/0aaeee79/Y-JPlHDGfrxyuD28x8lFG_HOJA_extra_pareja_camisa_azul.png",
+        "https://v3b.fal.media/files/b/0aaeee57/acsDjue9s2V4HF70fQcO-_ref_infectados.jpg",
+        "https://v3b.fal.media/files/b/0aaef085/1tFiXTvu-SwPe-7ntCywL_aIXH7ag6.png"
+      ],
+      "error": null
+    },
+    {
+      "id": "b3_p6",
+      "ok": true,
+      "modelo": "openai/gpt-image-2.5/flare/edit",
+      "costo_usd": 0.0521,
+      "request_id": "01a1519d-cfa5-7ce1-82ba-206efef5612e",
+      "elapsed_s": 23.0,
+      "url": "https://v3b.fal.media/files/b/0aaef0ca/METEqjFB4UQI8gtoDkuND_qjv4IseC.png",
+      "path": "/workspace/produccion/pruebas/cap01_animatic_v3/previs/frames/b3_p6.png",
+      "raw": "/workspace/produccion/pruebas/cap01_animatic_v3/previs/raw/b3_p6_t0.png",
+      "refs": [
+        "https://v3b.fal.media/files/b/0aaef085/1tFiXTvu-SwPe-7ntCywL_aIXH7ag6.png",
+        "https://v3b.fal.media/files/b/0aaeee79/Y-JPlHDGfrxyuD28x8lFG_HOJA_extra_pareja_camisa_azul.png"
+      ],
+      "error": null
+    },
+    {
+      "id": "b3_p5",
+      "ok": true,
+      "modelo": "openai/gpt-image-2.5/flare/edit",
+      "costo_usd": 0.076,
+      "request_id": "01a1519d-cd9d-7c52-bb37-7670baa5b276",
+      "elapsed_s": 25.4,
+      "url": "https://v3b.fal.media/files/b/0aaef0ca/KvjPxo3E0zsM6M8Jow_--_Bq4y0GOj.png",
+      "path": "/workspace/produccion/pruebas/cap01_animatic_v3/previs/frames/b3_p5.png",
+      "raw": "/workspace/produccion/pruebas/cap01_animatic_v3/previs/raw/b3_p5_t0.png",
+      "refs": [
+        "https://v3b.fal.media/files/b/0aaef086/fIcBuc8vr7xLcrMo11V2a_7LQUC5Dt.png",
+        "https://v3b.fal.media/files/b/0aaeee79/Y-JPlHDGfrxyuD28x8lFG_HOJA_extra_pareja_camisa_azul.png",
+        "https://v3b.fal.media/files/b/0aaeee57/acsDjue9s2V4HF70fQcO-_ref_infectados.jpg",
+        "https://v3b.fal.media/files/b/0aaef085/1tFiXTvu-SwPe-7ntCywL_aIXH7ag6.png"
+      ],
+      "error": null
+    },
+    {
+      "id": "b4_p2",
+      "ok": true,
+      "modelo": "openai/gpt-image-2.5/flare/edit",
+      "costo_usd": 0.0639,
+      "request_id": "01a1519d-db1e-7ea2-b7b0-214d50774a88",
+      "elapsed_s": 24.0,
+      "url": "https://v3b.fal.media/files/b/0aaef0ca/pbqck7ZNQiU44ZiGn69II_z2A5AQh8.png",
+      "path": "/workspace/produccion/pruebas/cap01_animatic_v3/previs/frames/b4_p2.png",
+      "raw": "/workspace/produccion/pruebas/cap01_animatic_v3/previs/raw/b4_p2_t0.png",
+      "refs": [
+        "https://v3b.fal.media/files/b/0aaca77b/gxJvG_NylXQWPnPye25qY_HOJA_martina.png",
+        "https://v3b.fal.media/files/b/0aaca77b/QIGG8k0Xlw4BBGntsymsW_HOJA_tomas.png",
+        "https://v3b.fal.media/files/b/0aaca77b/PzOwbqmC0cGCK6rcDZl44_F09_ambar_asiento_pareja.png"
+      ],
+      "error": null
+    },
+    {
+      "id": "b4_p1",
+      "ok": true,
+      "modelo": "openai/gpt-image-2.5/flare/edit",
+      "costo_usd": 0.0762,
+      "request_id": "01a1519d-d8ad-73a1-8155-80e74151a678",
+      "elapsed_s": 27.1,
+      "url": "https://v3b.fal.media/files/b/0aaef0ca/dEywRyXUbQ5Ix6FUIS3pa_Yxeh20pt.png",
+      "path": "/workspace/produccion/pruebas/cap01_animatic_v3/previs/frames/b4_p1.png",
+      "raw": "/workspace/produccion/pruebas/cap01_animatic_v3/previs/raw/b4_p1_t0.png",
+      "refs": [
+        "https://v3b.fal.media/files/b/0aaca77b/jKxRb5IV8dbedLGy4_Kdq_HOJA_ivan.png",
+        "https://v3b.fal.media/files/b/0aaca77b/h4Q1Ei5g6JWNhFmrLCnu__HOJA_carmen.png",
+        "https://v3b.fal.media/files/b/0aaca77b/vgqFytQvyrQx4kWSLF2fi_F08_ambar_pasajeros_hacia_puerta.png",
+        "https://v3b.fal.media/files/b/0aaca77b/PzOwbqmC0cGCK6rcDZl44_F09_ambar_asiento_pareja.png"
+      ],
+      "error": null
+    },
+    {
+      "id": "b4_p3",
+      "ok": true,
+      "modelo": "openai/gpt-image-2.5/flare/edit",
+      "costo_usd": 0.0639,
+      "request_id": "01a1519d-dfb4-7371-9585-35f8f4290e4a",
+      "elapsed_s": 25.4,
+      "url": "https://v3b.fal.media/files/b/0aaef0ca/AKemIfaWV1xdmyvKuKhXP_TmdpStzX.png",
+      "path": "/workspace/produccion/pruebas/cap01_animatic_v3/previs/frames/b4_p3.png",
+      "raw": "/workspace/produccion/pruebas/cap01_animatic_v3/previs/raw/b4_p3_t0.png",
+      "refs": [
+        "https://v3b.fal.media/files/b/0aaeee79/CcgvlprGujBKr1bN0wAuC_F10_rojo_pasajeros_hacia_puerta.png",
+        "https://v3b.fal.media/files/b/0aaca77b/jKxRb5IV8dbedLGy4_Kdq_HOJA_ivan.png",
+        "https://v3b.fal.media/files/b/0aaca77b/h4Q1Ei5g6JWNhFmrLCnu__HOJA_carmen.png"
+      ],
+      "error": null,
+      "replaced": true
+    },
+    {
+      "id": "b4_p6",
+      "ok": true,
+      "modelo": "openai/gpt-image-2.5/flare/edit",
+      "costo_usd": 0.1006,
+      "request_id": "01a1519e-30ee-7b12-b7a0-bbdea2cc34a1",
+      "elapsed_s": 30.6,
+      "url": "https://v3b.fal.media/files/b/0aaef0cc/1tLq8hxxrhMchbHYhkVCS_ggRmnizV.png",
+      "path": "/workspace/produccion/pruebas/cap01_animatic_v3/previs/frames/b4_p6.png",
+      "raw": "/workspace/produccion/pruebas/cap01_animatic_v3/previs/raw/b4_p6_t0.png",
+      "refs": [
+        "https://v3b.fal.media/files/b/0aaca77b/gxJvG_NylXQWPnPye25qY_HOJA_martina.png",
+        "https://v3b.fal.media/files/b/0aaca77b/QIGG8k0Xlw4BBGntsymsW_HOJA_tomas.png",
+        "https://v3b.fal.media/files/b/0aaca77b/h4Q1Ei5g6JWNhFmrLCnu__HOJA_carmen.png",
+        "https://v3b.fal.media/files/b/0aaca77b/jKxRb5IV8dbedLGy4_Kdq_HOJA_ivan.png",
+        "https://v3b.fal.media/files/b/0aaeee79/CcgvlprGujBKr1bN0wAuC_F10_rojo_pasajeros_hacia_puerta.png",
+        "https://v3b.fal.media/files/b/0aaeee57/acsDjue9s2V4HF70fQcO-_ref_infectados.jpg"
+      ],
+      "error": null
+    },
+    {
+      "id": "b5_p3",
+      "ok": true,
+      "modelo": "openai/gpt-image-2.5/flare/edit",
+      "costo_usd": 0.0635,
+      "request_id": "01a1519e-42ce-7d90-874c-0851046850e9",
+      "elapsed_s": 27.8,
+      "url": "https://v3b.fal.media/files/b/0aaef0cd/pZM2s65rneZj65UwaY3XO_BCPdKnyn.png",
+      "path": "/workspace/produccion/pruebas/cap01_animatic_v3/previs/frames/b5_p3.png",
+      "raw": "/workspace/produccion/pruebas/cap01_animatic_v3/previs/raw/b5_p3_t0.png",
+      "refs": [
+        "https://v3b.fal.media/files/b/0aaca77b/h4Q1Ei5g6JWNhFmrLCnu__HOJA_carmen.png",
+        "https://v3b.fal.media/files/b/0aaeee57/acsDjue9s2V4HF70fQcO-_ref_infectados.jpg",
+        "https://v3b.fal.media/files/b/0aaeee79/pQXCNTot3k6RNoQ7y4qXm_F07_rojo_fuelle_vestibulo.png"
+      ],
+      "error": null
+    },
+    {
+      "id": "b5_p2",
+      "ok": true,
+      "modelo": "openai/gpt-image-2.5/flare/edit",
+      "costo_usd": 0.1004,
+      "request_id": "01a1519e-4280-7560-908a-42af44cc2894",
+      "elapsed_s": 30.2,
+      "url": "https://v3b.fal.media/files/b/0aaef0cd/SiX8MyjKKF-o9AiCNjT-E_zpktyhra.png",
+      "path": "/workspace/produccion/pruebas/cap01_animatic_v3/previs/frames/b5_p2.png",
+      "raw": "/workspace/produccion/pruebas/cap01_animatic_v3/previs/raw/b5_p2_t0.png",
+      "refs": [
+        "https://v3b.fal.media/files/b/0aaca77b/jKxRb5IV8dbedLGy4_Kdq_HOJA_ivan.png",
+        "https://v3b.fal.media/files/b/0aaca77b/h4Q1Ei5g6JWNhFmrLCnu__HOJA_carmen.png",
+        "https://v3b.fal.media/files/b/0aaca77b/gxJvG_NylXQWPnPye25qY_HOJA_martina.png",
+        "https://v3b.fal.media/files/b/0aaca77b/QIGG8k0Xlw4BBGntsymsW_HOJA_tomas.png",
+        "https://v3b.fal.media/files/b/0aaeee79/pQXCNTot3k6RNoQ7y4qXm_F07_rojo_fuelle_vestibulo.png",
+        "https://v3b.fal.media/files/b/0aaeee57/acsDjue9s2V4HF70fQcO-_ref_infectados.jpg"
+      ],
+      "error": null
+    },
+    {
+      "id": "b5_p1",
+      "ok": true,
+      "modelo": "openai/gpt-image-2.5/flare/edit",
+      "costo_usd": 0.076,
+      "request_id": "01a1519e-38eb-7652-acd7-3ba64e4674af",
+      "elapsed_s": 32.8,
+      "url": "https://v3b.fal.media/files/b/0aaef0cd/bYAuweCOdeBAh_xIuteFF_y00Aj7CD.png",
+      "path": "/workspace/produccion/pruebas/cap01_animatic_v3/previs/frames/b5_p1.png",
+      "raw": "/workspace/produccion/pruebas/cap01_animatic_v3/previs/raw/b5_p1_t0.png",
+      "refs": [
+        "https://v3b.fal.media/files/b/0aaca77b/Y0NtlR1O9i2eW4avjrp79_HOJA_hugo.png",
+        "https://v3b.fal.media/files/b/0aaeee79/7TfwxCV9IVD0Q6DbwH8wL_PROP_llave_y_cerradura.png",
+        "https://v3b.fal.media/files/b/0aaca77b/c73vbo2QXGczuqRsrS3Yx_F04_rojo_puerta_desde_fuelle.png",
+        "https://v3b.fal.media/files/b/0aaeee79/XGpg_1idNsx_qO94-6B2i_F12_rojo_detalle_llave_0-23.png"
+      ],
+      "error": null
+    },
+    {
+      "id": "b4_p5",
+      "ok": true,
+      "modelo": "openai/gpt-image-2.5/flare/edit",
+      "costo_usd": 0.1254,
+      "request_id": "01a1519e-298e-7d52-982b-8c40cf0ed042",
+      "elapsed_s": 37.4,
+      "url": "https://v3b.fal.media/files/b/0aaef0cd/xrO4u3KotuMF3Pn_GSlc5_EMp78S4D.png",
+      "path": "/workspace/produccion/pruebas/cap01_animatic_v3/previs/frames/b4_p5.png",
+      "raw": "/workspace/produccion/pruebas/cap01_animatic_v3/previs/raw/b4_p5_t0.png",
+      "refs": [
+        "https://v3b.fal.media/files/b/0aaca77b/Y0NtlR1O9i2eW4avjrp79_HOJA_hugo.png",
+        "https://v3b.fal.media/files/b/0aaca77b/gxJvG_NylXQWPnPye25qY_HOJA_martina.png",
+        "https://v3b.fal.media/files/b/0aaca77b/QIGG8k0Xlw4BBGntsymsW_HOJA_tomas.png",
+        "https://v3b.fal.media/files/b/0aaca77b/h4Q1Ei5g6JWNhFmrLCnu__HOJA_carmen.png",
+        "https://v3b.fal.media/files/b/0aaca77b/jKxRb5IV8dbedLGy4_Kdq_HOJA_ivan.png",
+        "https://v3b.fal.media/files/b/0aaeee79/CcgvlprGujBKr1bN0wAuC_F10_rojo_pasajeros_hacia_puerta.png",
+        "https://v3b.fal.media/files/b/0aaeee79/7TfwxCV9IVD0Q6DbwH8wL_PROP_llave_y_cerradura.png",
+        "https://v3b.fal.media/files/b/0aaeee57/acsDjue9s2V4HF70fQcO-_ref_infectados.jpg"
+      ],
+      "error": null
+    },
+    {
+      "id": "b5_p4",
+      "ok": true,
+      "modelo": "openai/gpt-image-2.5/flare/edit",
+      "costo_usd": 0.0879,
+      "request_id": "01a1519e-5baf-7923-a9ea-3778aa105922",
+      "elapsed_s": 34.7,
+      "url": "https://v3b.fal.media/files/b/0aaef0ce/AHLZ3bcnK-Nq6iuA9XqlI_IEcYfCTD.png",
+      "path": "/workspace/produccion/pruebas/cap01_animatic_v3/previs/frames/b5_p4.png",
+      "raw": "/workspace/produccion/pruebas/cap01_animatic_v3/previs/raw/b5_p4_t0.png",
+      "refs": [
+        "https://v3b.fal.media/files/b/0aaca77b/h4Q1Ei5g6JWNhFmrLCnu__HOJA_carmen.png",
+        "https://v3b.fal.media/files/b/0aaca77b/jKxRb5IV8dbedLGy4_Kdq_HOJA_ivan.png",
+        "https://v3b.fal.media/files/b/0aaef086/ChW-m78nEpDNJEFV25ltZ_u7REg6B5.png",
+        "https://v3b.fal.media/files/b/0aaeee57/acsDjue9s2V4HF70fQcO-_ref_infectados.jpg",
+        "https://v3b.fal.media/files/b/0aaeee79/pQXCNTot3k6RNoQ7y4qXm_F07_rojo_fuelle_vestibulo.png"
+      ],
+      "error": null
+    },
+    {
+      "id": "b5_p9",
+      "ok": true,
+      "modelo": "openai/gpt-image-2.5/flare/edit",
+      "costo_usd": 0.0513,
+      "request_id": "01a1519e-b8f9-7e73-b898-6de75eaad70d",
+      "elapsed_s": 24.9,
+      "url": "https://v3b.fal.media/files/b/0aaef0d0/eFgQGcTBbxHWdW6nuyrp8_X9MA0RUV.png",
+      "path": "/workspace/produccion/pruebas/cap01_animatic_v3/previs/frames/b5_p9.png",
+      "raw": "/workspace/produccion/pruebas/cap01_animatic_v3/previs/raw/b5_p9_t0.png",
+      "refs": [
+        "https://v3b.fal.media/files/b/0aaca77b/I6kNLxhGD5kjj6UWzbGV0_F03_rojo_puerta_desde_dentro_0-45.png",
+        "https://v3b.fal.media/files/b/0aaeee57/acsDjue9s2V4HF70fQcO-_ref_infectados.jpg"
+      ],
+      "error": null
+    },
+    {
+      "id": "b1_f3",
+      "ok": true,
+      "modelo": "(asset PANTALLA_tomas_anden, sin generación)",
+      "costo_usd": 0.0,
+      "path": "produccion/pruebas/cap01_animatic_v3/previs/frames/b1_f3.png",
+      "url": "https://v3b.fal.media/files/b/0aaef086/QwdAJjH40nhYyRt__ny0p_VASRszld.png",
+      "nota": "VAGÓN 2 en post",
+      "error": null
+    },
+    {
+      "id": "b5_p5",
+      "ok": true,
+      "modelo": "(asset ESTADO_carmen_palma, fotograma guía c05i)",
+      "costo_usd": 0.0,
+      "path": "produccion/pruebas/cap01_animatic_v3/previs/frames/b5_p5.png",
+      "url": "https://v3b.fal.media/files/b/0aaef086/ChW-m78nEpDNJEFV25ltZ_u7REg6B5.png",
+      "nota": "El director permite usarlo directo como fotograma guía de c05i",
+      "error": null
+    },
+    {
+      "id": "b6_p2",
+      "ok": true,
+      "modelo": "openai/gpt-image-2.5/flare/edit",
+      "costo_usd": 0.0639,
+      "request_id": "01a151a4-50ec-79a2-bf57-a2e6f119cf92",
+      "elapsed_s": 26.4,
+      "url": "https://v3b.fal.media/files/b/0aaef0f5/FKzsRimgmVEqoDSpefSTX_w9hUuBt9.png",
+      "path": "/workspace/produccion/pruebas/cap01_animatic_v3/previs/frames/b6_p2.png",
+      "raw": "/workspace/produccion/pruebas/cap01_animatic_v3/previs/raw/b6_p2_t0.png",
+      "refs": [
+        "https://v3b.fal.media/files/b/0aaca77b/h4Q1Ei5g6JWNhFmrLCnu__HOJA_carmen.png",
+        "https://v3b.fal.media/files/b/0aaef086/ChW-m78nEpDNJEFV25ltZ_u7REg6B5.png",
+        "https://v3b.fal.media/files/b/0aaeee79/y37VCdVQneuEQHi7tmsc1_F05_rojo_tres_cuartos_hacia_puerta.png"
+      ],
+      "error": null,
+      "replaced": true
+    },
+    {
+      "id": "b5_p8",
+      "ok": true,
+      "modelo": "openai/gpt-image-2.5/flare/edit",
+      "costo_usd": 0.0759,
+      "request_id": "01a151a4-50ef-72c0-8ed3-17104968f753",
+      "elapsed_s": 30.7,
+      "url": "https://v3b.fal.media/files/b/0aaef0f5/oljWJU9qYzOIjC9x_aIIb_h0SaD69l.png",
+      "path": "/workspace/produccion/pruebas/cap01_animatic_v3/previs/frames/b5_p8.png",
+      "raw": "/workspace/produccion/pruebas/cap01_animatic_v3/previs/raw/b5_p8_t0.png",
+      "refs": [
+        "https://v3b.fal.media/files/b/0aaca77b/Y0NtlR1O9i2eW4avjrp79_HOJA_hugo.png",
+        "https://v3b.fal.media/files/b/0aaeee57/acsDjue9s2V4HF70fQcO-_ref_infectados.jpg",
+        "https://v3b.fal.media/files/b/0aaca77b/I6kNLxhGD5kjj6UWzbGV0_F03_rojo_puerta_desde_dentro_0-45.png",
+        "https://v3b.fal.media/files/b/0aaeee79/7TfwxCV9IVD0Q6DbwH8wL_PROP_llave_y_cerradura.png"
+      ],
+      "error": null,
+      "replaced": false,
+      "nota_remake": "Remake §5 (lluvia en ventanita) rechazado por política; se conserva la toma original (cuerpo+llave en bocallave)."
+    },
+    {
+      "id": "b6_p3",
+      "ok": true,
+      "modelo": "openai/gpt-image-2.5/flare/edit",
+      "costo_usd": 0.0762,
+      "request_id": "01a151a4-5156-7790-9e2f-ef3b90932dc5",
+      "elapsed_s": 37.4,
+      "url": "https://v3b.fal.media/files/b/0aaef0f5/63W-LXgz0iwgJJ4ZGnsf5_O2c2bDlH.png",
+      "path": "/workspace/produccion/pruebas/cap01_animatic_v3/previs/frames/b6_p3.png",
+      "raw": "/workspace/produccion/pruebas/cap01_animatic_v3/previs/raw/b6_p3_t0.png",
+      "refs": [
+        "https://v3b.fal.media/files/b/0aaca77b/QIGG8k0Xlw4BBGntsymsW_HOJA_tomas.png",
+        "https://v3b.fal.media/files/b/0aaca77b/gxJvG_NylXQWPnPye25qY_HOJA_martina.png",
+        "https://v3b.fal.media/files/b/0aaeee79/y37VCdVQneuEQHi7tmsc1_F05_rojo_tres_cuartos_hacia_puerta.png",
+        "https://v3b.fal.media/files/b/0aaca77b/cjnHyHuvZXot98Es7F2wd_F01_rojo_ultimo_vagon_hacia_puerta.png"
+      ],
+      "error": null
+    },
+    {
+      "id": "b5_p7",
+      "ok": true,
+      "modelo": "openai/gpt-image-2.5/flare/edit",
+      "costo_usd": 0.1131,
+      "request_id": "01a151a4-5144-77b3-aa9b-dac9fbd6a04e",
+      "elapsed_s": 38.0,
+      "url": "https://v3b.fal.media/files/b/0aaef0f5/ae8OeTHw3muJkr5amka2T_5695dxNP.png",
+      "path": "/workspace/produccion/pruebas/cap01_animatic_v3/previs/frames/b5_p7.png",
+      "raw": "/workspace/produccion/pruebas/cap01_animatic_v3/previs/raw/b5_p7_t0.png",
+      "refs": [
+        "https://v3b.fal.media/files/b/0aaca77b/QIGG8k0Xlw4BBGntsymsW_HOJA_tomas.png",
+        "https://v3b.fal.media/files/b/0aaca77b/gxJvG_NylXQWPnPye25qY_HOJA_martina.png",
+        "https://v3b.fal.media/files/b/0aaca77b/jKxRb5IV8dbedLGy4_Kdq_HOJA_ivan.png",
+        "https://v3b.fal.media/files/b/0aaca77b/h4Q1Ei5g6JWNhFmrLCnu__HOJA_carmen.png",
+        "https://v3b.fal.media/files/b/0aaca77b/Y0NtlR1O9i2eW4avjrp79_HOJA_hugo.png",
+        "https://v3b.fal.media/files/b/0aaca77b/cjnHyHuvZXot98Es7F2wd_F01_rojo_ultimo_vagon_hacia_puerta.png",
+        "https://v3b.fal.media/files/b/0aaca77b/I6kNLxhGD5kjj6UWzbGV0_F03_rojo_puerta_desde_dentro_0-45.png"
+      ],
+      "error": null
+    },
+    {
+      "id": "b6_p1",
+      "ok": true,
+      "modelo": "openai/gpt-image-2.5/flare/edit",
+      "costo_usd": 0.1129,
+      "request_id": "01a151a4-5106-7fb0-b9c3-9805ea704cd8",
+      "elapsed_s": 42.4,
+      "url": "https://v3b.fal.media/files/b/0aaef0f6/QSiPTn8LeWmDfjkuhaQK5_1Hrq8W17.png",
+      "path": "/workspace/produccion/pruebas/cap01_animatic_v3/previs/frames/b6_p1.png",
+      "raw": "/workspace/produccion/pruebas/cap01_animatic_v3/previs/raw/b6_p1_t0.png",
+      "refs": [
+        "https://v3b.fal.media/files/b/0aaca77b/gxJvG_NylXQWPnPye25qY_HOJA_martina.png",
+        "https://v3b.fal.media/files/b/0aaca77b/QIGG8k0Xlw4BBGntsymsW_HOJA_tomas.png",
+        "https://v3b.fal.media/files/b/0aaca77b/h4Q1Ei5g6JWNhFmrLCnu__HOJA_carmen.png",
+        "https://v3b.fal.media/files/b/0aaca77b/jKxRb5IV8dbedLGy4_Kdq_HOJA_ivan.png",
+        "https://v3b.fal.media/files/b/0aaca77b/Y0NtlR1O9i2eW4avjrp79_HOJA_hugo.png",
+        "https://v3b.fal.media/files/b/0aaca77b/cjnHyHuvZXot98Es7F2wd_F01_rojo_ultimo_vagon_hacia_puerta.png",
+        "https://v3b.fal.media/files/b/0aaeee57/acsDjue9s2V4HF70fQcO-_ref_infectados.jpg"
+      ],
+      "error": null
+    },
+    {
+      "id": "b7_p1",
+      "ok": true,
+      "modelo": "openai/gpt-image-2.5/flare/edit",
+      "costo_usd": 0.1131,
+      "request_id": "01a151a4-b760-71d3-beed-b83276741cfc",
+      "elapsed_s": 29.7,
+      "url": "https://v3b.fal.media/files/b/0aaef0f7/w0HZ8S9GAJhgmF5vyYqpt_rhEs6z0X.png",
+      "path": "/workspace/produccion/pruebas/cap01_animatic_v3/previs/frames/b7_p1.png",
+      "raw": "/workspace/produccion/pruebas/cap01_animatic_v3/previs/raw/b7_p1_t0.png",
+      "refs": [
+        "https://v3b.fal.media/files/b/0aaca77b/gxJvG_NylXQWPnPye25qY_HOJA_martina.png",
+        "https://v3b.fal.media/files/b/0aaca77b/QIGG8k0Xlw4BBGntsymsW_HOJA_tomas.png",
+        "https://v3b.fal.media/files/b/0aaca77b/h4Q1Ei5g6JWNhFmrLCnu__HOJA_carmen.png",
+        "https://v3b.fal.media/files/b/0aaca77b/jKxRb5IV8dbedLGy4_Kdq_HOJA_ivan.png",
+        "https://v3b.fal.media/files/b/0aaca77b/Y0NtlR1O9i2eW4avjrp79_HOJA_hugo.png",
+        "https://v3b.fal.media/files/b/0aaeee79/y37VCdVQneuEQHi7tmsc1_F05_rojo_tres_cuartos_hacia_puerta.png",
+        "https://v3b.fal.media/files/b/0aaca77b/I6kNLxhGD5kjj6UWzbGV0_F03_rojo_puerta_desde_dentro_0-45.png"
+      ],
+      "error": null
+    },
+    {
+      "id": "b7_p2",
+      "ok": true,
+      "modelo": "openai/gpt-image-2.5/flare/edit",
+      "costo_usd": 0.0768,
+      "request_id": "01a151a4-c846-7e23-a2f1-96592f18a37f",
+      "elapsed_s": 25.5,
+      "url": "https://v3b.fal.media/files/b/0aaef0f8/AfT-AZmqauxqSDoaTYAaY_TY7a2mv8.png",
+      "path": "/workspace/produccion/pruebas/cap01_animatic_v3/previs/frames/b7_p2.png",
+      "raw": "/workspace/produccion/pruebas/cap01_animatic_v3/previs/raw/b7_p2_t0.png",
+      "refs": [
+        "https://v3b.fal.media/files/b/0aaeeeed/F5MBlqPWd-MGyoUFRsOQv_estado_diego_mojado_herido_v3_t2_flare_0.png",
+        "https://v3b.fal.media/files/b/0aaca77b/pWC2LbPmSFhdVQl7vDgPe_HOJA_diego.png",
+        "https://v3b.fal.media/files/b/0aaca77b/I6kNLxhGD5kjj6UWzbGV0_F03_rojo_puerta_desde_dentro_0-45.png",
+        "https://v3b.fal.media/files/b/0aaeee79/pQXCNTot3k6RNoQ7y4qXm_F07_rojo_fuelle_vestibulo.png"
+      ],
+      "error": null
+    },
+    {
+      "id": "b7_p4",
+      "ok": true,
+      "modelo": "openai/gpt-image-2.5/flare/edit",
+      "costo_usd": 0.0639,
+      "request_id": "01a151a4-e4e2-7953-8f2c-ecf7e6e613c7",
+      "elapsed_s": 24.9,
+      "url": "https://v3b.fal.media/files/b/0aaef0f8/387rnPESANNTNFFeYZFQ5_u2a6yJKv.png",
+      "path": "/workspace/produccion/pruebas/cap01_animatic_v3/previs/frames/b7_p4.png",
+      "raw": "/workspace/produccion/pruebas/cap01_animatic_v3/previs/raw/b7_p4_t0.png",
+      "refs": [
+        "https://v3b.fal.media/files/b/0aaca77b/QIGG8k0Xlw4BBGntsymsW_HOJA_tomas.png",
+        "https://v3b.fal.media/files/b/0aaca77b/gxJvG_NylXQWPnPye25qY_HOJA_martina.png",
+        "https://v3b.fal.media/files/b/0aaeee79/y37VCdVQneuEQHi7tmsc1_F05_rojo_tres_cuartos_hacia_puerta.png"
+      ],
+      "error": null
+    },
+    {
+      "id": "b7_p3",
+      "ok": true,
+      "modelo": "openai/gpt-image-2.5/flare/edit",
+      "costo_usd": 0.101,
+      "request_id": "01a151a4-e25b-75f0-b737-600211e14f58",
+      "elapsed_s": 29.2,
+      "url": "https://v3b.fal.media/files/b/0aaef0f8/LKbpj_28Lf18IOI_dRLuy_OKT0dyzB.png",
+      "path": "/workspace/produccion/pruebas/cap01_animatic_v3/previs/frames/b7_p3.png",
+      "raw": "/workspace/produccion/pruebas/cap01_animatic_v3/previs/raw/b7_p3_t0.png",
+      "refs": [
+        "https://v3b.fal.media/files/b/0aaca77b/gxJvG_NylXQWPnPye25qY_HOJA_martina.png",
+        "https://v3b.fal.media/files/b/0aaca77b/QIGG8k0Xlw4BBGntsymsW_HOJA_tomas.png",
+        "https://v3b.fal.media/files/b/0aaca77b/h4Q1Ei5g6JWNhFmrLCnu__HOJA_carmen.png",
+        "https://v3b.fal.media/files/b/0aaca77b/jKxRb5IV8dbedLGy4_Kdq_HOJA_ivan.png",
+        "https://v3b.fal.media/files/b/0aaeee79/y37VCdVQneuEQHi7tmsc1_F05_rojo_tres_cuartos_hacia_puerta.png",
+        "https://v3b.fal.media/files/b/0aaca77b/cjnHyHuvZXot98Es7F2wd_F01_rojo_ultimo_vagon_hacia_puerta.png"
+      ],
+      "error": null
+    },
+    {
+      "id": "b7_p6",
+      "ok": true,
+      "modelo": "openai/gpt-image-2.5/flare/edit",
+      "costo_usd": 0.0765,
+      "request_id": "01a151a4-f60b-77a0-b7a0-fe1eb1ed8368",
+      "elapsed_s": 26.8,
+      "url": "https://v3b.fal.media/files/b/0aaef0f9/2wSUGDS19UaK5K-Vgzgre_Vvrr7ixC.png",
+      "path": "/workspace/produccion/pruebas/cap01_animatic_v3/previs/frames/b7_p6.png",
+      "raw": "/workspace/produccion/pruebas/cap01_animatic_v3/previs/raw/b7_p6_t0.png",
+      "refs": [
+        "https://v3b.fal.media/files/b/0aaca77b/gxJvG_NylXQWPnPye25qY_HOJA_martina.png",
+        "https://v3b.fal.media/files/b/0aaca77b/Y0NtlR1O9i2eW4avjrp79_HOJA_hugo.png",
+        "https://v3b.fal.media/files/b/0aaeee79/y37VCdVQneuEQHi7tmsc1_F05_rojo_tres_cuartos_hacia_puerta.png",
+        "https://v3b.fal.media/files/b/0aaca77b/I6kNLxhGD5kjj6UWzbGV0_F03_rojo_puerta_desde_dentro_0-45.png"
+      ],
+      "error": null
+    },
+    {
+      "id": "b1_f1",
+      "ok": true,
+      "modelo": "openai/gpt-image-2.5/flare/edit",
+      "costo_usd": 0.0569,
+      "request_id": "01a151a5-9fff-70b3-bf48-04ebf39d3830",
+      "elapsed_s": 23.2,
+      "url": "https://v3b.fal.media/files/b/0aaef0fd/J7hz8PjR-YmHqWDUoS7xC_b5WXhFAG.png",
+      "path": "/workspace/produccion/pruebas/cap01_animatic_v3/previs/frames/b1_f1.png",
+      "raw": "/workspace/produccion/pruebas/cap01_animatic_v3/previs/raw/b1_f1_t0.png",
+      "refs": [
+        "https://v3b.fal.media/files/b/0aaef085/YN4QTQemWyTovr3NYrDmX_tJ8G4vm5.png",
+        "https://v3b.fal.media/files/b/0aaca77b/gxJvG_NylXQWPnPye25qY_HOJA_martina.png",
+        "https://v3b.fal.media/files/b/0aaef0fd/U-BQiWA-idBz2qFSjnIIH_b1_p1.png"
+      ],
+      "error": null
+    },
+    {
+      "id": "b5_p6",
+      "ok": true,
+      "modelo": "openai/gpt-image-2.5/flare/edit",
+      "costo_usd": 0.069,
+      "request_id": "01a151a5-9f39-79d3-99a3-b24676a62e8a",
+      "elapsed_s": 24.7,
+      "url": "https://v3b.fal.media/files/b/0aaef0fd/PDO2xbskZEeXrB4X7rs_x_Qis75eBz.png",
+      "path": "/workspace/produccion/pruebas/cap01_animatic_v3/previs/frames/b5_p6.png",
+      "raw": "/workspace/produccion/pruebas/cap01_animatic_v3/previs/raw/b5_p6_t0.png",
+      "refs": [
+        "https://v3b.fal.media/files/b/0aaca77b/Y0NtlR1O9i2eW4avjrp79_HOJA_hugo.png",
+        "https://v3b.fal.media/files/b/0aaeee79/7TfwxCV9IVD0Q6DbwH8wL_PROP_llave_y_cerradura.png",
+        "https://v3b.fal.media/files/b/0aaca77b/c73vbo2QXGczuqRsrS3Yx_F04_rojo_puerta_desde_fuelle.png",
+        "https://v3b.fal.media/files/b/0aaef0fd/pzrnZZ0aGvWIXINmQ1cnk_b5_p1.png"
+      ],
+      "error": null
+    },
+    {
+      "id": "b1_p2",
+      "ok": true,
+      "modelo": "openai/gpt-image-2.5/flare/edit",
+      "costo_usd": 0.0577,
+      "request_id": "01a151a5-a025-7801-98e2-f1d9f0303e08",
+      "elapsed_s": 24.6,
+      "url": "https://v3b.fal.media/files/b/0aaef0fd/2nFZfvsPiKZlMnyJbisL5_YAWdsetg.png",
+      "path": "/workspace/produccion/pruebas/cap01_animatic_v3/previs/frames/b1_p2.png",
+      "raw": "/workspace/produccion/pruebas/cap01_animatic_v3/previs/raw/b1_p2_t0.png",
+      "refs": [
+        "https://v3b.fal.media/files/b/0aaca77b/gxJvG_NylXQWPnPye25qY_HOJA_martina.png",
+        "https://v3b.fal.media/files/b/0aaef085/1tFiXTvu-SwPe-7ntCywL_aIXH7ag6.png",
+        "https://v3b.fal.media/files/b/0aaef0fd/z9abH50Kz9_R8_dXQKU1M_b1_p1.png"
+      ],
+      "error": null
+    },
+    {
+      "id": "b7_p5",
+      "ok": true,
+      "modelo": "openai/gpt-image-2.5/flare/edit",
+      "costo_usd": 0.082,
+      "request_id": "01a151a5-9f21-7422-9629-85077da33c0f",
+      "elapsed_s": 28.2,
+      "url": "https://v3b.fal.media/files/b/0aaef0fd/5VHwK5AMUh7Lkf6vEo4nB_lIbOCjYC.png",
+      "path": "/workspace/produccion/pruebas/cap01_animatic_v3/previs/frames/b7_p5.png",
+      "raw": "/workspace/produccion/pruebas/cap01_animatic_v3/previs/raw/b7_p5_t0.png",
+      "refs": [
+        "https://v3b.fal.media/files/b/0aaeeeed/F5MBlqPWd-MGyoUFRsOQv_estado_diego_mojado_herido_v3_t2_flare_0.png",
+        "https://v3b.fal.media/files/b/0aaca77b/pWC2LbPmSFhdVQl7vDgPe_HOJA_diego.png",
+        "https://v3b.fal.media/files/b/0aaca77b/I6kNLxhGD5kjj6UWzbGV0_F03_rojo_puerta_desde_dentro_0-45.png",
+        "https://v3b.fal.media/files/b/0aaeee79/pQXCNTot3k6RNoQ7y4qXm_F07_rojo_fuelle_vestibulo.png",
+        "https://v3b.fal.media/files/b/0aaef0fd/vVcFDC4Qugi7uJIrZm80o_b7_p2.png"
+      ],
+      "error": null
+    },
+    {
+      "id": "b3_p1",
+      "ok": true,
+      "modelo": "openai/gpt-image-2.5/flare/edit",
+      "costo_usd": 0.0694,
+      "request_id": "01a151a5-a0a3-74c2-b175-d56c3e0d7171",
+      "elapsed_s": 30.4,
+      "url": "https://v3b.fal.media/files/b/0aaef0fe/9XoRZY2xh-nT9yJ35TI6U_8Sob9g6H.png",
+      "path": "/workspace/produccion/pruebas/cap01_animatic_v3/previs/frames/b3_p1.png",
+      "raw": "/workspace/produccion/pruebas/cap01_animatic_v3/previs/raw/b3_p1_t0.png",
+      "refs": [
+        "https://v3b.fal.media/files/b/0aaeee79/Y-JPlHDGfrxyuD28x8lFG_HOJA_extra_pareja_camisa_azul.png",
+        "https://v3b.fal.media/files/b/0aaeeeb3/XmGD-bbhILh7w0-tYMXaS_prop_maletin_v2_nbp_0.png",
+        "https://v3b.fal.media/files/b/0aaef085/1tFiXTvu-SwPe-7ntCywL_aIXH7ag6.png",
+        "https://v3b.fal.media/files/b/0aaef0fd/CawSjD6elvhBouKFO_3TZ_b0_p2.png"
+      ],
+      "error": null
+    },
+    {
+      "id": "b4_p3",
+      "ok": true,
+      "modelo": "openai/gpt-image-2.5/flare/edit",
+      "costo_usd": 0.064,
+      "request_id": "01a151a9-c3d8-70a2-8228-c7f16ea958da",
+      "elapsed_s": 26.9,
+      "url": "https://v3b.fal.media/files/b/0aaef118/5Fn9q9zrqQKHGiWQBoxG8_FjL9RSKm.png",
+      "path": "/workspace/produccion/pruebas/cap01_animatic_v3/previs/frames/b4_p3.png",
+      "raw": "/workspace/produccion/pruebas/cap01_animatic_v3/previs/raw/b4_p3_t0.png",
+      "refs": [
+        "https://v3b.fal.media/files/b/0aaeee79/CcgvlprGujBKr1bN0wAuC_F10_rojo_pasajeros_hacia_puerta.png",
+        "https://v3b.fal.media/files/b/0aaca77b/jKxRb5IV8dbedLGy4_Kdq_HOJA_ivan.png",
+        "https://v3b.fal.media/files/b/0aaca77b/h4Q1Ei5g6JWNhFmrLCnu__HOJA_carmen.png"
+      ],
+      "error": null
+    },
+    {
+      "id": "b6_p2",
+      "ok": true,
+      "modelo": "openai/gpt-image-2.5/flare/edit",
+      "costo_usd": 0.064,
+      "request_id": "01a151a9-c40a-78c0-80bb-2e71e03d72af",
+      "elapsed_s": 30.3,
+      "url": "https://v3b.fal.media/files/b/0aaef119/KnsdPTDlp3oELOltES9bQ_ZWjyqFIW.png",
+      "path": "/workspace/produccion/pruebas/cap01_animatic_v3/previs/frames/b6_p2.png",
+      "raw": "/workspace/produccion/pruebas/cap01_animatic_v3/previs/raw/b6_p2_t0.png",
+      "refs": [
+        "https://v3b.fal.media/files/b/0aaca77b/h4Q1Ei5g6JWNhFmrLCnu__HOJA_carmen.png",
+        "https://v3b.fal.media/files/b/0aaef0f4/Rh5b4Mgpq2kCDNhYBkBfG_uBC7sSiv.png",
+        "https://v3b.fal.media/files/b/0aaeee79/y37VCdVQneuEQHi7tmsc1_F05_rojo_tres_cuartos_hacia_puerta.png"
+      ],
+      "error": null
+    },
+    {
+      "id": "b0_p1",
+      "ok": true,
+      "modelo": "openai/gpt-image-2.5/sunburst/edit",
+      "costo_usd": 0.0524,
+      "request_id": "01a151a9-c409-7f91-b2a8-b28c29099da6",
+      "elapsed_s": 34.3,
+      "url": "https://v3b.fal.media/files/b/0aaef118/BRq1E6uwa4OpgvDHv5z71_Anz4XISR.png",
+      "path": "/workspace/produccion/pruebas/cap01_animatic_v3/previs/frames/b0_p1.png",
+      "raw": "/workspace/produccion/pruebas/cap01_animatic_v3/previs/raw/b0_p1_t0.png",
+      "refs": [
+        "https://v3b.fal.media/files/b/0aaca77b/gxJvG_NylXQWPnPye25qY_HOJA_martina.png",
+        "https://v3b.fal.media/files/b/0aaef085/1tFiXTvu-SwPe-7ntCywL_aIXH7ag6.png"
+      ],
+      "error": null
+    },
+    {
+      "id": "b4_p4",
+      "ok": true,
+      "modelo": "openai/gpt-image-2.5/flare/edit",
+      "costo_usd": 0.0393,
+      "request_id": "01a151ab-32fb-7501-b70d-79808aa8c643",
+      "elapsed_s": 20.4,
+      "url": "https://v3b.fal.media/files/b/0aaef121/DNTzCnchSyY11QMZhq0tS_jU1KMuSw.png",
+      "path": "/workspace/produccion/pruebas/cap01_animatic_v3/previs/frames/b4_p4.png",
+      "raw": "/workspace/produccion/pruebas/cap01_animatic_v3/previs/raw/b4_p4_t0.png",
+      "refs": [
+        "https://v3b.fal.media/files/b/0aaeee79/CcgvlprGujBKr1bN0wAuC_F10_rojo_pasajeros_hacia_puerta.png"
+      ],
+      "error": null
+    },
+    {
+      "id": "b2_p2",
+      "ok": true,
+      "modelo": "openai/gpt-image-2.5/flare/edit",
+      "costo_usd": 0.0515,
+      "request_id": "01a151ab-3333-7150-bc33-cf1b9a1d5744",
+      "elapsed_s": 20.9,
+      "url": "https://v3b.fal.media/files/b/0aaef121/TnhFbfWtFNU3U79Hsh_9t_bvJIhgA1.png",
+      "path": "/workspace/produccion/pruebas/cap01_animatic_v3/previs/frames/b2_p2.png",
+      "raw": "/workspace/produccion/pruebas/cap01_animatic_v3/previs/raw/b2_p2_t0.png",
+      "refs": [
+        "https://v3b.fal.media/files/b/0aaca77b/gxJvG_NylXQWPnPye25qY_HOJA_martina.png",
+        "https://v3b.fal.media/files/b/0aaca77b/PzOwbqmC0cGCK6rcDZl44_F09_ambar_asiento_pareja.png"
+      ],
+      "error": null
+    },
+    {
+      "id": "b3_p1",
+      "ok": true,
+      "lote": "previs_v1b",
+      "modelo": "fal-ai/nano-banana-pro/edit",
+      "costo_usd": 0.15,
+      "request_id": "01a151be-8fd2-76b2-af89-b075009c4c5a",
+      "elapsed_s": 26.1,
+      "url": "https://v3b.fal.media/files/b/0aaef1a0/hQ98-i1Bo4oKgv3VFZjol_e0cs04nQ.png",
+      "src": "/workspace/produccion/pruebas/cap01_animatic_v3/previs/frames/b0_p2.png",
+      "raw": "/workspace/produccion/pruebas/cap01_animatic_v3/previs/raw/b3_p1_v1b_nbp_0.png",
+      "error": null
+    },
+    {
+      "id": "b5_p5",
+      "ok": true,
+      "lote": "previs_v1b",
+      "modelo": "fal-ai/nano-banana-pro/edit",
+      "costo_usd": 0.15,
+      "request_id": "01a151be-909f-7f92-b33d-0e3e4ed0283a",
+      "elapsed_s": 26.4,
+      "url": "https://v3b.fal.media/files/b/0aaef1a0/gseL3DLPnUjc2VkgjJukC_Z2EvG6iM.png",
+      "src": "/workspace/produccion/pruebas/cap01_animatic_v3/previs/frames/b5_p5.png",
+      "raw": "/workspace/produccion/pruebas/cap01_animatic_v3/previs/raw/b5_p5_v1b_nbp_0.png",
+      "error": null
+    },
+    {
+      "id": "b7_p6",
+      "ok": true,
+      "lote": "previs_v1b",
+      "modelo": "fal-ai/nano-banana-pro/edit",
+      "costo_usd": 0.15,
+      "request_id": "01a151be-90bc-7842-afb6-61fb8e201f43",
+      "elapsed_s": 26.5,
+      "url": "https://v3b.fal.media/files/b/0aaef1a0/QkU2h557wJCvlBLPb_xQ1_ctMIA38K.png",
+      "src": "/workspace/produccion/pruebas/cap01_animatic_v3/previs/frames/b7_p6.png",
+      "raw": "/workspace/produccion/pruebas/cap01_animatic_v3/previs/raw/b7_p6_v1b_nbp_0.png",
+      "error": null
+    },
+    {
+      "id": "b7_p2",
+      "ok": true,
+      "lote": "previs_v1b",
+      "modelo": "fal-ai/nano-banana-pro/edit",
+      "costo_usd": 0.15,
+      "request_id": "01a151be-9223-7b93-a21d-50005a306d4b",
+      "elapsed_s": 28.1,
+      "url": "https://v3b.fal.media/files/b/0aaef1a0/nBuGaLsgBrVj5qiBeB1AH_zM0goobr.png",
+      "src": "/workspace/produccion/pruebas/cap01_animatic_v3/previs/frames/b7_p2.png",
+      "raw": "/workspace/produccion/pruebas/cap01_animatic_v3/previs/raw/b7_p2_v1b_nbp_0.png",
+      "error": null
+    },
+    {
+      "id": "b7_p5",
+      "ok": true,
+      "lote": "previs_v1b",
+      "modelo": "fal-ai/nano-banana-pro/edit",
+      "costo_usd": 0.15,
+      "request_id": "01a151be-902c-7681-94ea-4a7933c3b1bc",
+      "elapsed_s": 29.3,
+      "url": "https://v3b.fal.media/files/b/0aaef1a0/Us8laFCxThimWcIFRc-o6_OiOVkDXh.png",
+      "src": "/workspace/produccion/pruebas/cap01_animatic_v3/previs/frames/b7_p5.png",
+      "raw": "/workspace/produccion/pruebas/cap01_animatic_v3/previs/raw/b7_p5_v1b_nbp_0.png",
+      "error": null
+    },
+    {
+      "id": "b7_p2",
+      "ok": true,
+      "lote": "previs_v1b",
+      "nota": "segunda pasada: manchas oscuras",
+      "modelo": "fal-ai/nano-banana-pro/edit",
+      "costo_usd": 0.15,
+      "request_id": "01a151bf-d061-7d63-b442-849a5512b1eb",
+      "elapsed_s": 29.2,
+      "url": "https://v3b.fal.media/files/b/0aaef1a8/Qef7BAyuSaaKdDPPaQb-A_vnn4qBMW.png",
+      "raw": "/workspace/produccion/pruebas/cap01_animatic_v3/previs/raw/b7_p2_v1b_nbp_1.png",
+      "error": null
+    },
+    {
+      "id": "b7_p5",
+      "ok": true,
+      "lote": "previs_v1b",
+      "nota": "segunda pasada: manchas oscuras",
+      "modelo": "fal-ai/nano-banana-pro/edit",
+      "costo_usd": 0.15,
+      "request_id": "01a151bf-d079-7be3-b9fb-dd09b743e47f",
+      "elapsed_s": 30.9,
+      "url": "https://v3b.fal.media/files/b/0aaef1a8/n-BlaYsNkOF6eq4qnIybk_8dJZ0f21.png",
+      "raw": "/workspace/produccion/pruebas/cap01_animatic_v3/previs/raw/b7_p5_v1b_nbp_1.png",
+      "error": null
+    }
+  ],
+  "errors": [
+    {
+      "id": "b2_p2",
+      "ok": false,
+      "error": "FalClientHTTPError: [{'loc': ['body', 'prompt'], 'msg': 'The content could not be processed because it contained material flagged by a content checker.', 'type': 'content_policy_violation', 'url': 'https://docs.fal.ai/errors#content_policy_violation', 'input': \"FILM STILL, vertical 9:16. Image 1 is Martina: face, hair, oat knit sweater, open charcoal wool coat, dark jeans, brown boots. Identity and wardrobe only; ignore the sheet layout and background. Image 2 is carriage 5, the couple's seats and the amber light. MOMENT: close insert of Martina's RIGHT wrist on her lap: the sweater and coat sleeve have ridden up and reveal a narrow raw red band around the wrist, an abrasion mark like a tight binding left (not a bracelet, not a thread, no jewellery). Her LEFT fingers already pinch the cuff, mid-yank, pulling the sleeve down over it. CAMERA: locked off, close, at her lap height, 85mm, f/2.8, focus on the mark. LIGHT: Carriage 5 at night in warm amber from the reading lamps (~3000K), practical light only, deeper shade between lamps; rear passengers dozing, soft and dark. Side window: black night, rain only on the outside of the glass. Warm lamp light from above on her hands, the jeans in shade. Shot on 35mm film, Kodak Vision3 500T grain, practical light only, blacks fall to black, real skin texture with pores, no HDR, no glow halos, no orange-teal rim light, not everything in focus, natural hands with five separate fingers. No text, no captions, no watermark.\", 'categories': ['model_moderated']}]",
+      "traceback": "Traceback (most recent call last):\n  File \"/home/ubuntu/.local/lib/python3.12/site-packages/fal_client/client.py\", line 639, in _raise_for_status\n    response.raise_for_status()\n  File \"/home/ubuntu/.local/lib/python3.12/site-packages/httpx/_models.py\", line 829, in raise_for_status\n    raise HTTPStatusError(message, request=request, response=self)\nhttpx.HTTPStatusError: Client error '422 Unprocessable Entity' for url 'https://queue.fal.run/openai/gpt-image-2.5/requests/01a1519d-6618-7531-909a-9c9d8150274c'\nFor more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/422\n\nThe above exception was the direct cause of the following exception:\n\nTraceback (most recent call last):\n  File \"/tmp/gen_previs_v1.py\", line 258, in main\n    rec = fut.result()\n          ^^^^^^^^^^^^\n  File \"/usr/lib/python3.12/concurrent/futures/_base.py\", line 449, in result\n    return self.__get_result()\n           ^^^^^^^^^^^^^^^^^^^\n  File \"/usr/lib/python3.12/concurrent/futures/_base.py\", line 401, in __get_result\n    raise self._exception\n  File \"/usr/lib/python3.12/concurrent/futures/thread.py\", line 58, in run\n    result = self.fn(*self.args, **self.kwargs)\n             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/tmp/gen_previs_v1.py\", line 250, in do\n    return run_shot(s, urls, prompt, s[\"id\"] + \"_t0\")\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/tmp/gen_previs_v1.py\", line 116, in run_shot\n    result = handle.get()\n             ^^^^^^^^^^^^\n  File \"/home/ubuntu/.local/lib/python3.12/site-packages/fal_client/client.py\", line 1592, in get\n    response = _maybe_retry_request(\n               ^^^^^^^^^^^^^^^^^^^^^\n  File \"/home/ubuntu/.local/lib/python3.12/site-packages/fal_client/client.py\", line 1242, in _maybe_retry_request\n    return _request(client, method, url, **kwargs)\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/home/ubuntu/.local/lib/python3.12/site-packages/fal_client/client.py\", line 1128, in _request\n    _raise_for_status(response)\n  File \"/home/ubuntu/.local/lib/python3.12/site-packages/fal_client/client.py\", line 656, in _raise_for_status\n    raise FalClientHTTPError(\nfal_client.client.FalClientHTTPError: [{'loc': ['body', 'prompt'], 'msg': 'The content could not be processed because it contained material flagged by a content checker.', 'type': 'content_policy_violation', 'url': 'https://docs.fal.ai/errors#content_policy_violation', 'input': \"FILM STILL, vertical 9:16. Image 1 is Martina: face, hair, oat knit sweater, open charcoal wool coat, dark jeans, brown boots. Identity and wardrobe only; ignore the sheet layout and background. Image 2 is carriage 5, the couple's seats and the amber light. MOMENT: close insert of Martina's RIGHT wrist on her lap: the sweater and coat sleeve have ridden up and reveal a narrow raw red band around the wrist, an abrasion mark like a tight binding left (not a bracelet, not a thread, no jewellery). Her LEFT fingers already pinch the cuff, mid-yank, pulling the sleeve down over it. CAMERA: locked off, close, at her lap height, 85mm, f/2.8, focus on the mark. LIGHT: Carriage 5 at night in warm amber from the reading lamps (~3000K), practical light only, deeper shade between lamps; rear passengers dozing, soft and dark. Side window: black night, rain only on the outside of the glass. Warm lamp light from above on her hands, the jeans in shade. Shot on 35mm film, Kodak Vision3 500T grain, practical light only, blacks fall to black, real skin texture with pores, no HDR, no glow halos, no orange-teal rim light, not everything in focus, natural hands with five separate fingers. No text, no captions, no watermark.\", 'categories': ['model_moderated']}]\n"
+    },
+    {
+      "id": "b4_p4",
+      "ok": false,
+      "error": "FalClientHTTPError: [{'loc': ['body', 'prompt'], 'msg': 'The content could not be processed because it contained material flagged by a content checker.', 'type': 'content_policy_violation', 'url': 'https://docs.fal.ai/errors#content_policy_violation', 'input': \"FILM STILL, vertical 9:16. Image 1 is carriage 5 geometry in red emergency light, looking toward the front door. Image 2 is infection look only (eyes, skin, veins); ignore faces, wardrobe and setting. MOMENT: the small wired-glass window of carriage 5's front door, close. Two infected silhouettes have just slammed into the glass from the gangway side: palms flat and a face pressed against the rhombic wire mesh, dark smears on the glass; the door visibly jolting in its frame. CAMERA: short fast push toward the glass, jolted by the impact, 35mm. LIGHT: Carriage 5 in red emergency light: the narrow continuous red strip along the centre of the ceiling is the dominant source (#B3001B), deep and dark, not pink or magenta; faces half in shadow, real black zones, no white fill. Side windows black with rain on the outside of the glass. Behind the silhouettes only the dark red-lit gangway: no sky, no rain. Shot on 35mm film, Kodak Vision3 500T grain, practical light only, blacks fall to black, real skin texture with pores, no HDR, no glow halos, no orange-teal rim light, not everything in focus, natural hands with five separate fingers. No text, no captions, no watermark.\", 'categories': ['model_moderated']}]",
+      "traceback": "Traceback (most recent call last):\n  File \"/home/ubuntu/.local/lib/python3.12/site-packages/fal_client/client.py\", line 639, in _raise_for_status\n    response.raise_for_status()\n  File \"/home/ubuntu/.local/lib/python3.12/site-packages/httpx/_models.py\", line 829, in raise_for_status\n    raise HTTPStatusError(message, request=request, response=self)\nhttpx.HTTPStatusError: Client error '422 Unprocessable Entity' for url 'https://queue.fal.run/openai/gpt-image-2.5/requests/01a1519d-f833-7b42-bd6b-cc74b1bdfeb7'\nFor more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/422\n\nThe above exception was the direct cause of the following exception:\n\nTraceback (most recent call last):\n  File \"/tmp/gen_previs_v1.py\", line 258, in main\n    rec = fut.result()\n          ^^^^^^^^^^^^\n  File \"/usr/lib/python3.12/concurrent/futures/_base.py\", line 449, in result\n    return self.__get_result()\n           ^^^^^^^^^^^^^^^^^^^\n  File \"/usr/lib/python3.12/concurrent/futures/_base.py\", line 401, in __get_result\n    raise self._exception\n  File \"/usr/lib/python3.12/concurrent/futures/thread.py\", line 58, in run\n    result = self.fn(*self.args, **self.kwargs)\n             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/tmp/gen_previs_v1.py\", line 250, in do\n    return run_shot(s, urls, prompt, s[\"id\"] + \"_t0\")\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/tmp/gen_previs_v1.py\", line 116, in run_shot\n    result = handle.get()\n             ^^^^^^^^^^^^\n  File \"/home/ubuntu/.local/lib/python3.12/site-packages/fal_client/client.py\", line 1592, in get\n    response = _maybe_retry_request(\n               ^^^^^^^^^^^^^^^^^^^^^\n  File \"/home/ubuntu/.local/lib/python3.12/site-packages/fal_client/client.py\", line 1242, in _maybe_retry_request\n    return _request(client, method, url, **kwargs)\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/home/ubuntu/.local/lib/python3.12/site-packages/fal_client/client.py\", line 1128, in _request\n    _raise_for_status(response)\n  File \"/home/ubuntu/.local/lib/python3.12/site-packages/fal_client/client.py\", line 656, in _raise_for_status\n    raise FalClientHTTPError(\nfal_client.client.FalClientHTTPError: [{'loc': ['body', 'prompt'], 'msg': 'The content could not be processed because it contained material flagged by a content checker.', 'type': 'content_policy_violation', 'url': 'https://docs.fal.ai/errors#content_policy_violation', 'input': \"FILM STILL, vertical 9:16. Image 1 is carriage 5 geometry in red emergency light, looking toward the front door. Image 2 is infection look only (eyes, skin, veins); ignore faces, wardrobe and setting. MOMENT: the small wired-glass window of carriage 5's front door, close. Two infected silhouettes have just slammed into the glass from the gangway side: palms flat and a face pressed against the rhombic wire mesh, dark smears on the glass; the door visibly jolting in its frame. CAMERA: short fast push toward the glass, jolted by the impact, 35mm. LIGHT: Carriage 5 in red emergency light: the narrow continuous red strip along the centre of the ceiling is the dominant source (#B3001B), deep and dark, not pink or magenta; faces half in shadow, real black zones, no white fill. Side windows black with rain on the outside of the glass. Behind the silhouettes only the dark red-lit gangway: no sky, no rain. Shot on 35mm film, Kodak Vision3 500T grain, practical light only, blacks fall to black, real skin texture with pores, no HDR, no glow halos, no orange-teal rim light, not everything in focus, natural hands with five separate fingers. No text, no captions, no watermark.\", 'categories': ['model_moderated']}]\n"
+    },
+    {
+      "id": "b4_p4",
+      "ok": false,
+      "error": "FalClientHTTPError: [{'loc': ['body', 'prompt'], 'msg': 'The content could not be processed because it contained material flagged by a content checker.', 'type': 'content_policy_violation', 'url': 'https://docs.fal.ai/errors#content_policy_violation', 'input': \"FILM STILL, vertical 9:16. Image 1 is carriage 5 geometry in red emergency light, looking toward the front door. Image 2 is pale milky eyes and grey-violet veins only; ignore faces, wardrobe and setting. MOMENT: the small wired-glass window of carriage 5's front door, close. Two dark figures press their palms and a face against the rhombic wire mesh from the gangway side; the door stays shut in its frame. CAMERA: short push toward the glass, 35mm. LIGHT: Carriage 5 in red emergency light: the narrow continuous red strip along the centre of the ceiling is the dominant source (#B3001B), deep and dark, not pink or magenta; faces half in shadow, real black zones, no white fill. Side windows black with rain on the outside of the glass. Behind the figures only the dark red-lit gangway: no sky, no rain. Shot on 35mm film, Kodak Vision3 500T grain, practical light only, blacks fall to black, real skin texture with pores, no HDR, no glow halos, no orange-teal rim light, not everything in focus, natural hands with five separate fingers. No text, no captions, no watermark.\", 'categories': ['model_moderated']}]",
+      "traceback": "Traceback (most recent call last):\n  File \"/home/ubuntu/.local/lib/python3.12/site-packages/fal_client/client.py\", line 639, in _raise_for_status\n    response.raise_for_status()\n  File \"/home/ubuntu/.local/lib/python3.12/site-packages/httpx/_models.py\", line 829, in raise_for_status\n    raise HTTPStatusError(message, request=request, response=self)\nhttpx.HTTPStatusError: Client error '422 Unprocessable Entity' for url 'https://queue.fal.run/openai/gpt-image-2.5/requests/01a151a9-c3fe-7661-8982-27fd9345da30'\nFor more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/422\n\nThe above exception was the direct cause of the following exception:\n\nTraceback (most recent call last):\n  File \"/tmp/gen_previs_v1.py\", line 264, in main\n    rec = fut.result()\n          ^^^^^^^^^^^^\n  File \"/usr/lib/python3.12/concurrent/futures/_base.py\", line 449, in result\n    return self.__get_result()\n           ^^^^^^^^^^^^^^^^^^^\n  File \"/usr/lib/python3.12/concurrent/futures/_base.py\", line 401, in __get_result\n    raise self._exception\n  File \"/usr/lib/python3.12/concurrent/futures/thread.py\", line 58, in run\n    result = self.fn(*self.args, **self.kwargs)\n             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/tmp/gen_previs_v1.py\", line 256, in do\n    return run_shot(s, urls, prompt, s[\"id\"] + \"_t0\")\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/tmp/gen_previs_v1.py\", line 117, in run_shot\n    result = handle.get()\n             ^^^^^^^^^^^^\n  File \"/home/ubuntu/.local/lib/python3.12/site-packages/fal_client/client.py\", line 1592, in get\n    response = _maybe_retry_request(\n               ^^^^^^^^^^^^^^^^^^^^^\n  File \"/home/ubuntu/.local/lib/python3.12/site-packages/fal_client/client.py\", line 1242, in _maybe_retry_request\n    return _request(client, method, url, **kwargs)\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/home/ubuntu/.local/lib/python3.12/site-packages/fal_client/client.py\", line 1128, in _request\n    _raise_for_status(response)\n  File \"/home/ubuntu/.local/lib/python3.12/site-packages/fal_client/client.py\", line 656, in _raise_for_status\n    raise FalClientHTTPError(\nfal_client.client.FalClientHTTPError: [{'loc': ['body', 'prompt'], 'msg': 'The content could not be processed because it contained material flagged by a content checker.', 'type': 'content_policy_violation', 'url': 'https://docs.fal.ai/errors#content_policy_violation', 'input': \"FILM STILL, vertical 9:16. Image 1 is carriage 5 geometry in red emergency light, looking toward the front door. Image 2 is pale milky eyes and grey-violet veins only; ignore faces, wardrobe and setting. MOMENT: the small wired-glass window of carriage 5's front door, close. Two dark figures press their palms and a face against the rhombic wire mesh from the gangway side; the door stays shut in its frame. CAMERA: short push toward the glass, 35mm. LIGHT: Carriage 5 in red emergency light: the narrow continuous red strip along the centre of the ceiling is the dominant source (#B3001B), deep and dark, not pink or magenta; faces half in shadow, real black zones, no white fill. Side windows black with rain on the outside of the glass. Behind the figures only the dark red-lit gangway: no sky, no rain. Shot on 35mm film, Kodak Vision3 500T grain, practical light only, blacks fall to black, real skin texture with pores, no HDR, no glow halos, no orange-teal rim light, not everything in focus, natural hands with five separate fingers. No text, no captions, no watermark.\", 'categories': ['model_moderated']}]\n"
+    },
+    {
+      "id": "b2_p2",
+      "ok": false,
+      "error": "FalClientHTTPError: [{'loc': ['body', 'prompt'], 'msg': 'The content could not be processed because it contained material flagged by a content checker.', 'type': 'content_policy_violation', 'url': 'https://docs.fal.ai/errors#content_policy_violation', 'input': \"FILM STILL, vertical 9:16. Image 1 is Martina: face, hair, oat knit sweater, open charcoal wool coat, dark jeans, brown boots. Identity and wardrobe only; ignore the sheet layout and background. Image 2 is carriage 5, the couple's seats and the amber light. MOMENT: close insert of Martina's RIGHT wrist on her lap: the sweater and coat sleeve have ridden up and reveal a faint pale pink pressure ring around the wrist, like a watch sat there too long (not a bracelet, not a thread, no jewellery). Her LEFT fingers already pinch the cuff, mid-yank, pulling the sleeve down over it. CAMERA: locked off, close, at her lap height, 85mm, f/2.8, focus on the mark. LIGHT: Carriage 5 at night in warm amber from the reading lamps (~3000K), practical light only, deeper shade between lamps; rear passengers dozing, soft and dark. Side window: black night, rain only on the outside of the glass. Warm lamp light from above on her hands, the jeans in shade. Shot on 35mm film, Kodak Vision3 500T grain, practical light only, blacks fall to black, real skin texture with pores, no HDR, no glow halos, no orange-teal rim light, not everything in focus, natural hands with five separate fingers. No text, no captions, no watermark.\", 'categories': ['model_moderated']}]",
+      "traceback": "Traceback (most recent call last):\n  File \"/home/ubuntu/.local/lib/python3.12/site-packages/fal_client/client.py\", line 639, in _raise_for_status\n    response.raise_for_status()\n  File \"/home/ubuntu/.local/lib/python3.12/site-packages/httpx/_models.py\", line 829, in raise_for_status\n    raise HTTPStatusError(message, request=request, response=self)\nhttpx.HTTPStatusError: Client error '422 Unprocessable Entity' for url 'https://queue.fal.run/openai/gpt-image-2.5/requests/01a151a9-c40f-7762-b0fb-17322b14ccfe'\nFor more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/422\n\nThe above exception was the direct cause of the following exception:\n\nTraceback (most recent call last):\n  File \"/tmp/gen_previs_v1.py\", line 264, in main\n    rec = fut.result()\n          ^^^^^^^^^^^^\n  File \"/usr/lib/python3.12/concurrent/futures/_base.py\", line 449, in result\n    return self.__get_result()\n           ^^^^^^^^^^^^^^^^^^^\n  File \"/usr/lib/python3.12/concurrent/futures/_base.py\", line 401, in __get_result\n    raise self._exception\n  File \"/usr/lib/python3.12/concurrent/futures/thread.py\", line 58, in run\n    result = self.fn(*self.args, **self.kwargs)\n             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/tmp/gen_previs_v1.py\", line 256, in do\n    return run_shot(s, urls, prompt, s[\"id\"] + \"_t0\")\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/tmp/gen_previs_v1.py\", line 117, in run_shot\n    result = handle.get()\n             ^^^^^^^^^^^^\n  File \"/home/ubuntu/.local/lib/python3.12/site-packages/fal_client/client.py\", line 1592, in get\n    response = _maybe_retry_request(\n               ^^^^^^^^^^^^^^^^^^^^^\n  File \"/home/ubuntu/.local/lib/python3.12/site-packages/fal_client/client.py\", line 1242, in _maybe_retry_request\n    return _request(client, method, url, **kwargs)\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/home/ubuntu/.local/lib/python3.12/site-packages/fal_client/client.py\", line 1128, in _request\n    _raise_for_status(response)\n  File \"/home/ubuntu/.local/lib/python3.12/site-packages/fal_client/client.py\", line 656, in _raise_for_status\n    raise FalClientHTTPError(\nfal_client.client.FalClientHTTPError: [{'loc': ['body', 'prompt'], 'msg': 'The content could not be processed because it contained material flagged by a content checker.', 'type': 'content_policy_violation', 'url': 'https://docs.fal.ai/errors#content_policy_violation', 'input': \"FILM STILL, vertical 9:16. Image 1 is Martina: face, hair, oat knit sweater, open charcoal wool coat, dark jeans, brown boots. Identity and wardrobe only; ignore the sheet layout and background. Image 2 is carriage 5, the couple's seats and the amber light. MOMENT: close insert of Martina's RIGHT wrist on her lap: the sweater and coat sleeve have ridden up and reveal a faint pale pink pressure ring around the wrist, like a watch sat there too long (not a bracelet, not a thread, no jewellery). Her LEFT fingers already pinch the cuff, mid-yank, pulling the sleeve down over it. CAMERA: locked off, close, at her lap height, 85mm, f/2.8, focus on the mark. LIGHT: Carriage 5 at night in warm amber from the reading lamps (~3000K), practical light only, deeper shade between lamps; rear passengers dozing, soft and dark. Side window: black night, rain only on the outside of the glass. Warm lamp light from above on her hands, the jeans in shade. Shot on 35mm film, Kodak Vision3 500T grain, practical light only, blacks fall to black, real skin texture with pores, no HDR, no glow halos, no orange-teal rim light, not everything in focus, natural hands with five separate fingers. No text, no captions, no watermark.\", 'categories': ['model_moderated']}]\n"
+    },
+    {
+      "id": "b5_p8",
+      "ok": false,
+      "error": "FalClientHTTPError: [{'loc': ['body', 'prompt'], 'msg': 'The content could not be processed because it contained material flagged by a content checker.', 'type': 'content_policy_violation', 'url': 'https://docs.fal.ai/errors#content_policy_violation', 'input': \"FILM STILL, vertical 9:16. Image 1 is Don Hugo: grey moustache, conductor cap with a plain wheel badge (no letters), conductor jacket below the hip, whistle on a cord. Identity and wardrobe only. Image 2 is infection look only (eyes, skin, veins); ignore faces, wardrobe and setting. Image 3 is the last carriage's door and its small wired-glass window seen from inside, red light. MOMENT: close on the door from inside. Hugo closes the door with his body, shoulder and back against it; an infected grey hand with dark nails is jammed in the gap on the lock side (frame LEFT, where the bronze plate is from inside), being crushed by the door edge. The door has no bolt and no latch bar: only a bronze plate with a keyhole above and a handle below. Hugo's RIGHT hand turns the iron key in the keyhole of that plate, from inside. The small wired-glass window of this door shows only the dark red-lit gangway: no rain, no sky, no water droplets on that glass. CAMERA: handheld, close, 35mm. LIGHT: Last carriage in red emergency light: the narrow red ceiling strip is dominant; the single cold white fluorescent tube (#E8F1F2) above the front door is the only white light and only catches heads and shoulders from above near the door; deep black zones; side windows black with rain only on the outside of the glass. Shot on 35mm film, Kodak Vision3 500T grain, practical light only, blacks fall to black, real skin texture with pores, no HDR, no glow halos, no orange-teal rim light, not everything in focus, natural hands with five separate fingers. No text, no captions, no watermark.\", 'categories': ['model_moderated']}]",
+      "traceback": "Traceback (most recent call last):\n  File \"/home/ubuntu/.local/lib/python3.12/site-packages/fal_client/client.py\", line 639, in _raise_for_status\n    response.raise_for_status()\n  File \"/home/ubuntu/.local/lib/python3.12/site-packages/httpx/_models.py\", line 829, in raise_for_status\n    raise HTTPStatusError(message, request=request, response=self)\nhttpx.HTTPStatusError: Client error '422 Unprocessable Entity' for url 'https://queue.fal.run/openai/gpt-image-2.5/requests/01a151a9-c3e6-7b02-9929-76c3d95f676e'\nFor more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/422\n\nThe above exception was the direct cause of the following exception:\n\nTraceback (most recent call last):\n  File \"/tmp/gen_previs_v1.py\", line 264, in main\n    rec = fut.result()\n          ^^^^^^^^^^^^\n  File \"/usr/lib/python3.12/concurrent/futures/_base.py\", line 449, in result\n    return self.__get_result()\n           ^^^^^^^^^^^^^^^^^^^\n  File \"/usr/lib/python3.12/concurrent/futures/_base.py\", line 401, in __get_result\n    raise self._exception\n  File \"/usr/lib/python3.12/concurrent/futures/thread.py\", line 58, in run\n    result = self.fn(*self.args, **self.kwargs)\n             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/tmp/gen_previs_v1.py\", line 256, in do\n    return run_shot(s, urls, prompt, s[\"id\"] + \"_t0\")\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/tmp/gen_previs_v1.py\", line 117, in run_shot\n    result = handle.get()\n             ^^^^^^^^^^^^\n  File \"/home/ubuntu/.local/lib/python3.12/site-packages/fal_client/client.py\", line 1592, in get\n    response = _maybe_retry_request(\n               ^^^^^^^^^^^^^^^^^^^^^\n  File \"/home/ubuntu/.local/lib/python3.12/site-packages/fal_client/client.py\", line 1242, in _maybe_retry_request\n    return _request(client, method, url, **kwargs)\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/home/ubuntu/.local/lib/python3.12/site-packages/fal_client/client.py\", line 1128, in _request\n    _raise_for_status(response)\n  File \"/home/ubuntu/.local/lib/python3.12/site-packages/fal_client/client.py\", line 656, in _raise_for_status\n    raise FalClientHTTPError(\nfal_client.client.FalClientHTTPError: [{'loc': ['body', 'prompt'], 'msg': 'The content could not be processed because it contained material flagged by a content checker.', 'type': 'content_policy_violation', 'url': 'https://docs.fal.ai/errors#content_policy_violation', 'input': \"FILM STILL, vertical 9:16. Image 1 is Don Hugo: grey moustache, conductor cap with a plain wheel badge (no letters), conductor jacket below the hip, whistle on a cord. Identity and wardrobe only. Image 2 is infection look only (eyes, skin, veins); ignore faces, wardrobe and setting. Image 3 is the last carriage's door and its small wired-glass window seen from inside, red light. MOMENT: close on the door from inside. Hugo closes the door with his body, shoulder and back against it; an infected grey hand with dark nails is jammed in the gap on the lock side (frame LEFT, where the bronze plate is from inside), being crushed by the door edge. The door has no bolt and no latch bar: only a bronze plate with a keyhole above and a handle below. Hugo's RIGHT hand turns the iron key in the keyhole of that plate, from inside. The small wired-glass window of this door shows only the dark red-lit gangway: no rain, no sky, no water droplets on that glass. CAMERA: handheld, close, 35mm. LIGHT: Last carriage in red emergency light: the narrow red ceiling strip is dominant; the single cold white fluorescent tube (#E8F1F2) above the front door is the only white light and only catches heads and shoulders from above near the door; deep black zones; side windows black with rain only on the outside of the glass. Shot on 35mm film, Kodak Vision3 500T grain, practical light only, blacks fall to black, real skin texture with pores, no HDR, no glow halos, no orange-teal rim light, not everything in focus, natural hands with five separate fingers. No text, no captions, no watermark.\", 'categories': ['model_moderated']}]\n"
+    }
+  ]
+}

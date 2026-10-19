@@ -1,0 +1,11 @@
+Edit the image: remove the standing conductor in the background; keep only his hand on the handle.
+
+CHANGE: the full-body man in the conductor cap and dark jacket standing in the aisle behind the woman is gone. In that space, only the empty aisle, seats and the far door of the last carriage, out of focus, as they already are around him. The RIGHT hand in the extreme foreground at the bottom-right stays: empty, no key, resting on the bronze HANDLE of the door (the handle below the keyhole). The hand belongs to someone just out of frame; his body is not visible anywhere in the shot.
+
+PRESERVE EXACTLY:
+- the woman's face, hair, charcoal coat, oat sweater, position and look toward the door at camera-right
+- the door edge, bronze plate, keyhole and handle, and the empty right hand on the handle
+- camera position, lens, vertical framing, 9:16 aspect
+- every light source (red ceiling strip, cold white tube above the far door), shadows, colour grade, grain
+
+ONLY CHANGE: delete the standing conductor in the background. Everything else stays identical. No text.

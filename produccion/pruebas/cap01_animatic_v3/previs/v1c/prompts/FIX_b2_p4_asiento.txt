@@ -1,0 +1,12 @@
+Edit the image: her seat is one place of a shared pair bench, as in Image 2, not a single seat.
+
+CHANGE: The seat she sits on becomes half of a shared two-person train bench like Image 2. Two navy backrests joined side by side and two cushions joined into one bench; the only metal armrests are at the outer ends (against the window and at the aisle). There is no dividing armrest and no gap between the two places. Martina stays in the window place, frame left. The empty aisle place of the same bench is visible beside her, frame right, unoccupied: its backrest and cushion continue into frame. Same Martina, same face, same hair, same oat sweater, same charcoal coat, same jeans, same hand alone on the window-side armrest, same stare straight ahead, never toward camera. Same amber lamps, same rainy window on the left.
+
+PRESERVE EXACTLY:
+- camera position, lens, framing and 9:16 aspect
+- Martina's face, hair, wardrobe, pose and eyeline
+- the amber light, shadows, colour grade and film grain
+- natural hands with five separate fingers
+- nobody else on her bench
+
+ONLY CHANGE: the single seat becomes a shared pair bench. Everything else stays identical. No text.

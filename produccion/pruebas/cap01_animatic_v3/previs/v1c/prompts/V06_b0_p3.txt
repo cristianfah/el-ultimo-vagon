@@ -1,0 +1,11 @@
+Edit the image: Martina looks at the sleeping man.
+
+CHANGE: Martina, standing at the right edge with her hand on the seatback, has her head and eyes turned DOWN-LEFT toward the blue-shirt man who stirs in the window seat at frame left: her eyeline lands on his face, frozen, breath held. She does not look off frame or at the camera.
+
+PRESERVE EXACTLY:
+- camera position, lens, framing and 9:16 aspect (unless the change says otherwise)
+- every person's face, hair, wardrobe, pose and eyeline not named in the change
+- every light source, shadow, colour grade and film grain not named in the change
+- natural hands with five separate fingers
+
+ONLY CHANGE: Martina looks at the sleeping man. Everything else stays identical. No text.

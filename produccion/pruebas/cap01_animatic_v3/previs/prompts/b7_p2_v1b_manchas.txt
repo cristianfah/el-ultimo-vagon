@@ -1,0 +1,11 @@
+Edit the image: the marks on the glass become dark and faint, not bright red palm prints.
+
+CHANGE: the bright red five-finger palm prints on the glass are gone. In their place, a few matte dark red-black smears and incomplete palm marks on the glass, darker than the man's jacket, not a row of clear red hands. The glass stays dry. The gangway behind him stays dark.
+
+PRESERVE EXACTLY:
+- the man's face, wet hair, beige jacket, pose
+- the dry glass, metal frame, rhombic wire mesh
+- the dark accordion gangway behind him, the cold white tube above the door
+- camera position, framing, 9:16 aspect, colour grade, grain
+
+ONLY CHANGE: the colour and number of the stains on the glass. Everything else stays identical. No text.
