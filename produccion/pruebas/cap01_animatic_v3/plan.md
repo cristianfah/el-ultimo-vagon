@@ -76,7 +76,7 @@ Tiempos medidos desde el segundo 0 de la llamada (incluyen el colchón de 0,5 s 
 | | Martina 2B `martina_b2_1` | 2,5 s | P1 | |
 | | Tomás 3C `tomas_b2_2` | 5,2 s | P3 (5,0–8,0 s) | |
 | | Martina 4D `martina_b2_2` | 8,2 s | P4 (8,0–12,0 s) | |
-| `c04b.mp3` | Hugo (toma nueva, de 1,6 s como máximo). El pitazo va como efecto en post, a los 2,1 s | 2,6 s | P5 (2,0–4,5 s) | 7,5 s |
+| `c04b.mp3` | Hugo (toma elegida, de 2,0 a 2,3 s). El pitazo va como efecto en post, a los 2,1 s | 2,5 s | P5 (2,0–5,0 s) | 7,5 s |
 | `c07a.mp3` | Diego 5C `diego_b7_1` | 1,5 s | P2 (1,3–4,9 s) | 8,3 s |
 | | Diego 6C `diego_b7_2` | 5,0 s | P3 (4,9–7,8 s) | |
 | `c07b.mp3` | Tomás 7B `tomas_b7_1` | 0,7 s | P4 (0,5–3,2 s) | 7,5 s |

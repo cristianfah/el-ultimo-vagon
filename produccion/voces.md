@@ -6,6 +6,7 @@ Aprobadas por Cristian el 18-oct-2026. Están en la biblioteca de ElevenLabs de 
 | --- | --- | --- | --- |
 | Tomás | UV · Tomás | `32TKm2yo0S1caJHTYiFJ` | Hombre chileno de 31 años, acento suave de Santiago. Voz media grave, tranquila y educada; cuando duda baja la voz y se vuelve frío |
 | Martina | UV · Martina | `v4QCZzj0PB6WaqO3Sn6D` | Mujer chilena de 29 años, acento suave de Santiago. Voz baja, cálida, cansada y algo ronca; casi susurra; cuando miente responde demasiado rápido |
+| Don Hugo | UV · Hugo | `nAxzHfcP2MxLUcx3Gzo7` | Hombre chileno de 62 años, acento suave de Santiago. Voz grave y gastada, pausada; autoridad tranquila de revisor; al gritar, la voz se le raja pero manda. Aprobada el 18-oct-2026 |
 | Diego | UV · Diego | `qXAGWqslOQWtQyyko9NJ` | Hombre chileno de 30 años, acento suave de Santiago. Voz cálida y rasposa; bajo presión habla sin aire y se le quiebra al final de las frases |
 
 ## Cómo se generan las líneas
@@ -34,5 +35,5 @@ Flujo de ElevenLabs `r6dpxC6EYTl7hcfMXoJw`. El `generation_id` identifica la tom
 | 7 | 7 | Tomás | ¿No estabas en el baño? | `[confused][slowly]` | `rRdo5vZ8f4jqVdeqSkLr` |
 
 ## Pendiente
-- **Voz de Don Hugo:** habla desde el capítulo 1 en la v10 («¡Al último vagón! ¡Rápido!», toma de 1,6 s como máximo).
+- **Toma de Don Hugo** para «¡Al último vagón! ¡Rápido!»: A `[shouting]` (`fJqjFbqbPRbEXXt0fUtc`), B sin etiquetas (`RBpL8KDZHCO1rShOnCCr`) o C `[urgent] … [breathless]` (`P84Ue9Z2tQVkI8JHFkOc`). Elige Cristian.
 - Voces de Carmen, Iván y el infiltrado (hablan desde el capítulo 2).
