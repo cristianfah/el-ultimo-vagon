@@ -34,4 +34,5 @@ Flujo de ElevenLabs `r6dpxC6EYTl7hcfMXoJw`. El `generation_id` identifica la tom
 | 7 | 7 | Tomás | ¿No estabas en el baño? | `[confused][slowly]` | `rRdo5vZ8f4jqVdeqSkLr` |
 
 ## Pendiente
-- Voces de Carmen, Iván, Hugo y el infiltrado (hablan desde el capítulo 2).
+- **Voz de Don Hugo:** habla desde el capítulo 1 en la v10 («¡Al último vagón! ¡Rápido!», toma de 1,6 s como máximo).
+- Voces de Carmen, Iván y el infiltrado (hablan desde el capítulo 2).

@@ -162,6 +162,8 @@ Notas de Cristian sobre el animatic v1 y v2 del capítulo 1. Detalle en `producc
 - **Se ve cómo Carmen se corta:** un infectado revienta el vidrio y la agarra, Iván la tira, cae y la palma derecha golpea los vidrios. Motivo: en el v1 no se entendía.
 - **Diego está mojado porque cruzó por fuera del tren.** Detrás de él, por la ventanita, solo se ve el fuelle oscuro: nunca lluvia, cielo ni una puerta abierta. Detrás de él se mueven sombras. Motivo: nota de Cristian sobre la lluvia en el fuelle y la falta de peligro.
 - **Hugo no sostiene la llave en el plano final:** su mano está en el cerrojo, esperando la respuesta de Martina. Motivo: la llave se veía antinatural.
+- **Los golpes de los infectados paran por una razón:** un grito lejano en el vagón 5 se los lleva. Antes de Diego se oye el viento y una puerta lateral del fuelle (fuera de cuadro). Motivo: en el v1 no se entendía por qué paraban ni de dónde salía Diego.
+- **Los planos cerrados del último vagón se toman desde el lado de la puerta:** Martina a la derecha del cuadro y Tomás a la izquierda, para que sus miradas se encuentren. Motivo: revisión de ejes del guion v10.
 
 ### Producción
 - **Voces primero, también en el animatic:** la pista de diálogo con las tomas aprobadas entra como audio de referencia. **H3 Max a 768p** (a 480p no respeta la pista). Motivo: con el video generado antes, la intención y los tiempos no calzaban con las voces.

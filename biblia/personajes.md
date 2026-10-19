@@ -26,7 +26,7 @@ Cada personaje tiene una **postura** en el debate. El público debe poder decir 
 | **El Presidente** | Padre de Martina. Gobierna con las recomendaciones del sistema de crisis | Sin nombre en pantalla. Casi no habla |
 | **El asesor** | Le avisa al Presidente que su hija va en el tren (cap. 4) | Secundario |
 | **El operador** | Centro de control: confirma que el tren no se detiene (cap. 4) | Secundario |
-| **El hombre de camisa azul** | Abre el maletín en el vagón 2 y es el primer infectado | Hoja aprobada (pareja extra). Camisa azul cobalto: bajo luz roja se ve negra |
+| **El hombre de camisa azul** | Duerme sobre el asiento bajo el cual Martina deja el maletín; cuando se abre solo, es el primer infectado | Hoja aprobada (pareja extra). Camisa azul cobalto: bajo luz roja se ve negra |
 
 ## Líneas que los definen (capítulo 1, `guion/cap01/cap01_v10.md`)
 - **Tomás:** «¿Tu papá sabe que vienes en este tren?» / «¿No estabas en el baño?»
