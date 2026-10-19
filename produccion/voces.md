@@ -35,5 +35,5 @@ Flujo de ElevenLabs `r6dpxC6EYTl7hcfMXoJw`. El `generation_id` identifica la tom
 | 7 | 7 | Tomás | ¿No estabas en el baño? | `[confused][slowly]` | `rRdo5vZ8f4jqVdeqSkLr` |
 
 ## Pendiente
-- **Toma de Don Hugo** para «¡Al último vagón! ¡Rápido!»: A `[shouting]` (`fJqjFbqbPRbEXXt0fUtc`), B sin etiquetas (`RBpL8KDZHCO1rShOnCCr`) o C `[urgent] … [breathless]` (`P84Ue9Z2tQVkI8JHFkOc`). Elige Cristian.
+- **Toma de Don Hugo** para «¡Al último vagón! ¡Rápido!»: **elegida la A** `[shouting]` (`fJqjFbqbPRbEXXt0fUtc`, 2,3 s), en `produccion/pruebas/cap01_animatic/voces/hugo_b4_1.mp3`.
 - Voces de Carmen, Iván y el infiltrado (hablan desde el capítulo 2).
