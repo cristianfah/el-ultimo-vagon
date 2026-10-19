@@ -1,0 +1,267 @@
+{
+  "gasto_acumulado_dia_usd": 6.06,
+  "gasto_acumulado_dia_usd_campo": 6.06,
+  "tope_dia_usd": 15,
+  "desglose_gasto_usd": {
+    "assets_tarea2": 0.2,
+    "edicion_maletin_v2": 0.05,
+    "diego_v3_gpt_image": 0.3,
+    "h3_max_tomas_animatic": 5.51,
+    "total": 6.06
+  },
+  "assets_imagen": [
+    {
+      "id": "saldo_inicial_tarea2",
+      "modelo": "fal-ai/nano-banana-pro/edit",
+      "costo_usd": 0.2,
+      "nota": "Punto de partida pedido en TAREA 5: maletín v1, cuarto del rapto y Diego v2 (brazo derecho). Subidas a fal sin costo."
+    },
+    {
+      "id": "props/PROP_maletin_v2.png",
+      "modelo": "fal-ai/nano-banana-pro/edit",
+      "tomas": 1,
+      "costo_usd": 0.05,
+      "nota": "Edición de esquinas metálicas con borde ámbar. Es la referencia de maletín en a00–a03."
+    },
+    {
+      "id": "personajes/ESTADO_diego_mojado_herido_v3.png",
+      "modelo": "openai/gpt-image-2.5/flare/edit",
+      "tomas": 2,
+      "costo_usd": 0.3,
+      "nota": "Hoja de estado sobre fondo gris; chaqueta de lona piedra de HOJA_diego; manga derecha con dark red-black stains, sin herida abierta. Toma 2 es la que cuenta. Picture 1 de a07a y a07b. No se usa ESTADO_diego ni v2."
+    }
+  ],
+  "tomas": [
+    {
+      "llamada": "a00",
+      "prompt": "produccion/pruebas/cap01_animatic/prompts/a00.md",
+      "referencias": [
+        "personajes/HOJA_martina.png",
+        "props/PROP_maletin_v2.png",
+        "set/F08_ambar_pasajeros_hacia_puerta.png",
+        "personajes/HOJA_extra_pareja_camisa_azul.png"
+      ],
+      "semilla": 1805917198,
+      "costo_usd": 0.4,
+      "url": "https://v3b.fal.media/files/b/0aaeeeca/8zCJ6PuBzF52Vso7VbiIi_minimax-h3.mp4",
+      "local": "/workspace/renders/cap01/animatic/tomas/a00/0.mp4",
+      "duracion_s": 8,
+      "elapsed_s": 10.7,
+      "error": null,
+      "reintento": false
+    },
+    {
+      "llamada": "a01",
+      "prompt": "produccion/pruebas/cap01_animatic/prompts/a01.md",
+      "referencias": [
+        "personajes/HOJA_martina.png",
+        "escenas/cuarto_rapto_martina.png",
+        "props/PROP_maletin_v2.png"
+      ],
+      "semilla": 910351898,
+      "costo_usd": 0.3,
+      "url": "https://v3b.fal.media/files/b/0aaeeecb/zqNjQ4iAIZcOlXi0wMnw-_minimax-h3.mp4",
+      "local": "/workspace/renders/cap01/animatic/tomas/a01/0.mp4",
+      "duracion_s": 6,
+      "elapsed_s": 10.8,
+      "error": null,
+      "reintento": false
+    },
+    {
+      "llamada": "a02",
+      "prompt": "produccion/pruebas/cap01_animatic/prompts/a02.md",
+      "referencias": [
+        "personajes/HOJA_martina.png",
+        "personajes/HOJA_tomas.png",
+        "set/F09_ambar_asiento_pareja.png"
+      ],
+      "semilla": 518232583,
+      "costo_usd": 0.7,
+      "url": "https://v3b.fal.media/files/b/0aaeeecc/mMSveWAk2U1vch2DYpr9S_minimax-h3.mp4",
+      "local": "/workspace/renders/cap01/animatic/tomas/a02/0.mp4",
+      "duracion_s": 14,
+      "elapsed_s": 10.7,
+      "error": null,
+      "reintento": false
+    },
+    {
+      "llamada": "a03",
+      "prompt": "produccion/pruebas/cap01_animatic/prompts/a03.md",
+      "referencias": [
+        "personajes/HOJA_extra_pareja_camisa_azul.png",
+        "props/PROP_maletin_v2.png",
+        "set/F08_ambar_pasajeros_hacia_puerta.png",
+        "referencias/ref_infectados.jpg"
+      ],
+      "semilla": 1581523702,
+      "costo_usd": 0.5,
+      "url": "https://v3b.fal.media/files/b/0aaeeece/UIcfmoU2RW0DT9J6f6q3x_minimax-h3.mp4",
+      "local": "/workspace/renders/cap01/animatic/tomas/a03/0.mp4",
+      "duracion_s": 10,
+      "elapsed_s": 10.7,
+      "error": null,
+      "reintento": false
+    },
+    {
+      "llamada": "a04",
+      "prompt": "produccion/pruebas/cap01_animatic/prompts/a04.md",
+      "referencias": [
+        "personajes/HOJA_martina.png",
+        "personajes/HOJA_tomas.png",
+        "personajes/HOJA_hugo.png",
+        "set/F09_ambar_asiento_pareja.png",
+        "set/F10_rojo_pasajeros_hacia_puerta.png"
+      ],
+      "semilla": 1406598298,
+      "costo_usd": 0.62,
+      "url": "https://v3b.fal.media/files/b/0aaeeecf/lb7i2mw4-klDB-FOnt9ct_minimax-h3.mp4",
+      "local": "/workspace/renders/cap01/animatic/tomas/a04/0.mp4",
+      "duracion_s": 12,
+      "elapsed_s": 10.8,
+      "error": null,
+      "reintento": false
+    },
+    {
+      "llamada": "a05",
+      "prompt": "produccion/pruebas/cap01_animatic/prompts/a05.md",
+      "referencias": [
+        "personajes/HOJA_hugo.png",
+        "personajes/HOJA_carmen.png",
+        "personajes/HOJA_ivan.png",
+        "set/F07_rojo_fuelle_vestibulo.png",
+        "set/F04_rojo_puerta_desde_fuelle.png",
+        "set/F12_rojo_detalle_llave_0-23.png"
+      ],
+      "semilla": 2095998201,
+      "costo_usd": 0.64,
+      "url": "https://v3b.fal.media/files/b/0aaeeed0/mKmc8exSIv21JsdQ12tMr_minimax-h3.mp4",
+      "local": "/workspace/renders/cap01/animatic/tomas/a05/0.mp4",
+      "duracion_s": 12,
+      "elapsed_s": 15.9,
+      "error": null,
+      "reintento": false
+    },
+    {
+      "llamada": "a05i",
+      "prompt": "produccion/pruebas/cap01_animatic/prompts/a05i.md",
+      "referencias": [
+        "personajes/HOJA_carmen.png",
+        "set/F07_rojo_fuelle_vestibulo.png"
+      ],
+      "semilla": 1806262267,
+      "costo_usd": 0.25,
+      "url": "https://v3b.fal.media/files/b/0aaeeed1/p9NCKRhjZnP5a6WEMycNc_minimax-h3.mp4",
+      "local": "/workspace/renders/cap01/animatic/tomas/a05i/0.mp4",
+      "duracion_s": 5,
+      "elapsed_s": 5.5,
+      "error": null,
+      "reintento": false
+    },
+    {
+      "llamada": "a06",
+      "prompt": "produccion/pruebas/cap01_animatic/prompts/a06.md",
+      "referencias": [
+        "personajes/HOJA_carmen.png",
+        "personajes/HOJA_tomas.png",
+        "personajes/HOJA_martina.png",
+        "set/F01_rojo_ultimo_vagon_hacia_puerta.png",
+        "set/F02_rojo_ultimo_vagon_hacia_fondo_cabina.png"
+      ],
+      "semilla": 1928170076,
+      "costo_usd": 0.42,
+      "url": "https://v3b.fal.media/files/b/0aaeeed2/7IW4U-MPVUBoysxXqn0l-_minimax-h3.mp4",
+      "local": "/workspace/renders/cap01/animatic/tomas/a06/0.mp4",
+      "duracion_s": 8,
+      "elapsed_s": 10.8,
+      "error": null,
+      "reintento": false
+    },
+    {
+      "llamada": "a07a_descartada_diego_v2",
+      "prompt": "produccion/pruebas/cap01_animatic/prompts/a07a.md",
+      "referencias": [
+        "personajes/ESTADO_diego_mojado_herido_v2.png",
+        "personajes/HOJA_martina.png",
+        "personajes/HOJA_tomas.png",
+        "set/F03_rojo_puerta_desde_dentro_0-45.png",
+        "set/F01_rojo_ultimo_vagon_hacia_puerta.png"
+      ],
+      "semilla": 1729385548,
+      "costo_usd": 0.52,
+      "url": "https://v3b.fal.media/files/b/0aaeeed3/9L-1YhsV0-AHnctOhqd9x_minimax-h3.mp4",
+      "local": "/workspace/renders/cap01/animatic/tomas/a07a/0.mp4",
+      "duracion_s": 10,
+      "elapsed_s": 10.6,
+      "error": null,
+      "reintento": false
+    },
+    {
+      "llamada": "a07a",
+      "prompt": "produccion/pruebas/cap01_animatic/prompts/a07a.md",
+      "referencias": [
+        "personajes/ESTADO_diego_mojado_herido_v3.png",
+        "personajes/HOJA_martina.png",
+        "personajes/HOJA_tomas.png",
+        "set/F03_rojo_puerta_desde_dentro_0-45.png",
+        "set/F01_rojo_ultimo_vagon_hacia_puerta.png"
+      ],
+      "semilla": 434065130,
+      "costo_usd": 0.52,
+      "url": "https://v3b.fal.media/files/b/0aaeeeff/gLQ_lHhJpS0M7OzKXo4qu_minimax-h3.mp4",
+      "local": "/workspace/renders/cap01/animatic/tomas/a07a/0.mp4",
+      "duracion_s": 10,
+      "elapsed_s": 11.2,
+      "error": null,
+      "reintento": false,
+      "nota": "Picture 1 = ESTADO_diego_mojado_herido_v3 (decisión Cristián; no v2 ni ESTADO viejo)"
+    },
+    {
+      "llamada": "a07b",
+      "prompt": "produccion/pruebas/cap01_animatic/prompts/a07b.md",
+      "referencias": [
+        "personajes/ESTADO_diego_mojado_herido_v3.png",
+        "personajes/HOJA_tomas.png",
+        "personajes/HOJA_martina.png",
+        "personajes/HOJA_hugo.png",
+        "set/F03_rojo_puerta_desde_dentro_0-45.png",
+        "set/F05_rojo_tres_cuartos_hacia_puerta.png"
+      ],
+      "semilla": 1034656178,
+      "costo_usd": 0.64,
+      "url": "https://v3b.fal.media/files/b/0aaeef01/R-UKsUDx7OoLTLiBX4jrH_minimax-h3.mp4",
+      "local": "/workspace/renders/cap01/animatic/tomas/a07b/0.mp4",
+      "duracion_s": 12,
+      "elapsed_s": 16.2,
+      "error": null,
+      "reintento": false,
+      "nota": "Picture 1 = ESTADO_diego_mojado_herido_v3 (decisión Cristián; no v2 ni ESTADO viejo)"
+    }
+  ],
+  "montaje": {
+    "guion": "guion/cap01/cap01_v9.md",
+    "salida": "renders/cap01/animatic/cap01_animatic_v1.mp4",
+    "copia_repo": "produccion/pruebas/cap01_animatic/cap01_animatic_v1.mp4",
+    "duracion_objetivo_s": 85,
+    "duracion_real_s": 85.084,
+    "sin_subtitulos_ni_tarjetas": true,
+    "cortes": [
+      {"src": "a00", "in": 0.0, "out": 1.5, "nota": "B0 P1"},
+      {"src": "a01", "in": 0.0, "out": 0.7, "nota": "B1 flash 1"},
+      {"src": "a00", "in": 2.5, "out": 4.3, "nota": "B0 P2"},
+      {"src": "a01", "in": 2.0, "out": 2.7, "nota": "B1 flash 2"},
+      {"src": "a00", "in": 5.0, "out": 6.6, "nota": "B0 P3"},
+      {"src": "a01", "in": 4.0, "out": 4.7, "nota": "B1 flash 3"},
+      {"src": "a02", "in": 0.0, "out": 14.0, "nota": "B2"},
+      {"src": "a03", "in": 0.0, "out": 10.0, "nota": "B3"},
+      {"src": "a04", "in": 0.0, "out": 12.0, "nota": "B4"},
+      {"src": "a05", "in": 0.0, "out": 2.0, "nota": "B5 P1"},
+      {"src": "a05", "in": 2.0, "out": 4.0, "nota": "B5 P2"},
+      {"src": "a05", "in": 4.0, "out": 5.0, "nota": "B5 P3"},
+      {"src": "a05i", "in": 1.5, "out": 2.5, "nota": "B5 inserto palma Carmen"},
+      {"src": "a05", "in": 6.0, "out": 12.0, "nota": "B5 P4"},
+      {"src": "a06", "in": 0.0, "out": 8.0, "nota": "B6"},
+      {"src": "a07a", "in": 0.0, "out": 10.0, "nota": "B7 P1–P3"},
+      {"src": "a07b", "in": 0.0, "out": 12.0, "nota": "B7 P4–P6"}
+    ]
+  }
+}
