@@ -1,7 +1,7 @@
 {
   "pieza": "cama_empanada",
   "tope_usd": 3.0,
-  "gasto_total_usd": 0.5488,
+  "gasto_total_usd": 0.6034,
   "nota_precio": "fal no devolvió el cobro: GET https://api.fal.ai/v1/models/billing-events y /v1/models/usage respondieron 403 con esta FAL_KEY. Se usa la tabla. Salida high 1152×2048: 0.0424 USD (equivalente en píxeles a 2048×1152 high, 1413 tokens × 30 USD/1M; fal cobra igual y publica 0.05268 USD para 1024×1024 high). Texto: 5 USD/1M, estimado como caracteres/4. Referencia de edit: la tabla de fal suma ~0.008 USD por una imagen ≤1024×1024 y ~0.012 USD por una de 3840×2160; 1152×2048 no está, se anota 0.010 USD como punto medio de esos dos anclajes.",
   "llamadas": [
     {
@@ -457,6 +457,53 @@
       "decision": "aceptada",
       "motivo": "Ahora sí está adentro, con la cabeza en la punta y la mano saliendo con el tenedor junto al repulgue dorado. Las púas apoyan en la cuerda pero no se ven clavadas. Se acepta este intento y se descarta el 1.",
       "archivo_final": "produccion/piezas/cama_empanada/stills/KF7.png"
+    },
+    {
+      "etapa": "KF0b",
+      "intento": 1,
+      "modelo": "openai/gpt-image-2.5/sunburst/edit",
+      "parametros": {
+        "quality": "high",
+        "image_size": {
+          "width": 1152,
+          "height": 2048
+        },
+        "num_images": 1,
+        "output_format": "png",
+        "background": "opaque"
+      },
+      "prompt": "Locked-off overhead photograph, lens axis exactly vertical, 90 degrees straight down, no tilt. Vertical 9:16 frame. The whole walnut bed is visible with a margin of pale oak floor on every side. Headboard at the top. The bed sits slightly right of center.\n\nSame ordinary bedroom as Image 1: pale oak floor, low walnut bed, plain rectangular headboard, small walnut nightstand at the top-left with a switched-off ceramic lamp and a beige shade. Soft natural daylight from frame left, gentle shadows to frame right. Real room, natural color, fine film grain. No text, no logos.\n\nImage 1 is only a reference for the room, the bed, the overhead framing, her heather-grey t-shirt, her navy sweatpants, her low dark bun, and her face as it looks from the side. Rebuild the photograph. Do not copy her pose from Image 1. In this new photograph she does not look at the camera.\n\nOne woman kneels on the floor in the left margin, leaning over the bare mattress the way a cook leans over a board. Her head is bowed. Her chin points down at the mattress. The crown of her head faces the lens, and we see one ear and the side of her nose in profile. Her eyes are lowered onto the powder on the mattress. Her face is not turned up. Both eyes are hidden from a straight-on view. Unposed, absorbed in the work, closed mouth, not smiling.\n\nThe bed holds only a bare quilted off-white mattress. No sheet, no duvet, no pillows. Both hands hold a round stainless-steel mesh sieve just above the center of the mattress. Fine white powder sifts from the mesh onto the mattress. A small off-white ceramic bowl of the same powder sits on the floor beside her knee.\n\nExactly two arms and two hands. One person. Photoreal, no plastic skin, no illustration. The frame contains no text, no letters, no numbers, no logos.",
+      "referencias": [
+        "https://v3b.fal.media/files/b/0aaf46e5/HK7siM4L7hTW4M6iYn99j_KF0.png"
+      ],
+      "request_id": "01a15ec1-62f6-7690-9d84-4d3198323252",
+      "imagen_fal": {
+        "url": "https://v3b.fal.media/files/b/0aaf46e5/Z1X_CFy87slmBPBSLjwMB_ntGPyvr4.png",
+        "width": null,
+        "height": null,
+        "file_name": "Z1X_CFy87slmBPBSLjwMB_ntGPyvr4.png"
+      },
+      "archivo_intento": "produccion/piezas/cama_empanada/stills/KF0b_intento1.png",
+      "costo_usd": 0.0546,
+      "costo_fuente": "tabla",
+      "costo_detalle": {
+        "salida_usd": 0.0424,
+        "salida_tokens": 1413,
+        "texto_usd": 0.0022,
+        "texto_tokens_estimados": 448,
+        "referencia_usd": 0.01,
+        "referencia_base": "Igual que el resto de la tanda: 0.010 es el punto medio entre 0.008 y 0.012 de la tabla de fal.",
+        "tope_de_esta_tarea_usd": 0.5,
+        "billing_error": {
+          "error": "HTTP Error 403: Forbidden"
+        }
+      },
+      "billing_raw": {
+        "error": "HTTP Error 403: Forbidden"
+      },
+      "decision": "aceptada",
+      "motivo": "Cabeza gacha, mira el colchón, se ve la coronilla y el perfil. No mira a cámara. Tamiza con el colador sobre el colchón pelado. Mismo cuarto, cama, encuadre, ropa y moño que KF0. Toma natural.",
+      "archivo_final": "produccion/piezas/cama_empanada/stills/KF0b.png"
     }
   ],
   "etapa_mas_debil": "KF5"
