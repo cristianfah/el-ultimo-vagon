@@ -1,7 +1,7 @@
 {
   "pieza": "cama_empanada",
   "tope_usd": 3.0,
-  "gasto_total_usd": 0.6034,
+  "gasto_total_usd": 0.6582,
   "nota_precio": "fal no devolvió el cobro: GET https://api.fal.ai/v1/models/billing-events y /v1/models/usage respondieron 403 con esta FAL_KEY. Se usa la tabla. Salida high 1152×2048: 0.0424 USD (equivalente en píxeles a 2048×1152 high, 1413 tokens × 30 USD/1M; fal cobra igual y publica 0.05268 USD para 1024×1024 high). Texto: 5 USD/1M, estimado como caracteres/4. Referencia de edit: la tabla de fal suma ~0.008 USD por una imagen ≤1024×1024 y ~0.012 USD por una de 3840×2160; 1152×2048 no está, se anota 0.010 USD como punto medio de esos dos anclajes.",
   "llamadas": [
     {
@@ -504,6 +504,53 @@
       "decision": "aceptada",
       "motivo": "Cabeza gacha, mira el colchón, se ve la coronilla y el perfil. No mira a cámara. Tamiza con el colador sobre el colchón pelado. Mismo cuarto, cama, encuadre, ropa y moño que KF0. Toma natural.",
       "archivo_final": "produccion/piezas/cama_empanada/stills/KF0b.png"
+    },
+    {
+      "etapa": "KF_end",
+      "intento": 1,
+      "modelo": "openai/gpt-image-2.5/sunburst/edit",
+      "parametros": {
+        "quality": "high",
+        "image_size": {
+          "width": 1152,
+          "height": 2048
+        },
+        "num_images": 1,
+        "output_format": "png",
+        "background": "opaque"
+      },
+      "prompt": "Locked-off overhead photograph, lens axis exactly vertical, 90 degrees straight down, no tilt. Vertical 9:16 frame. The whole walnut bed is visible, with a margin of pale oak floor on every side. Headboard at the top. The bed sits slightly right of center, same place as Image 1.\n\nImage 1 is only a reference for the bedroom, the wooden bed, the overhead framing, the daylight, her heather-grey t-shirt, her low dark bun, and her face in profile. Rebuild the photograph from scratch. Do not copy her kneeling pose. She is not on the floor. The left floor is empty. She does not look at the camera.\n\nThe mattress is one giant Chilean fried cheese empanada, a clear half-moon that fills the bed. The straight side runs down the left of the mattress. The curved edge on the right is a thick braided rope crimp, the repulgue of a Chilean empanada. The crust is deep-fried: golden, crisp, covered in small irregular fry blisters, with a thin shine of oil. It is food photography, appetizing, real fried dough, not a baked pie and not an egg-washed pastry. A little melted pale-yellow cheese oozes from the bottom tip of the braid. A few soft wisps of steam rise off the crust. The walnut frame and headboard stay visible around it. The nightstand and the switched-off beige lamp stay at the top-left, same daylight from frame left.\n\nThe same woman is inside the empanada. Only her head comes out, resting on a plain white pillow at the top of the bed, just under the headboard. Her eyes are closed. Her cheek rests toward the pillow, face turned to the side, relaxed, comfortable, mouth closed. We do not see her eyes looking up. Her hair is the same low bun. A little of the heather-grey collar shows at her neck. Her arms, hands and body stay inside the crust. No hands in the frame. No fork. No holes in the dough. No brush. No bowl. No sieve.\n\nOne person. Photoreal, natural skin, fine film grain. The frame contains no text, no letters, no numbers, no logos.",
+      "referencias": [
+        "https://v3b.fal.media/files/b/0aaf46e5/Z1X_CFy87slmBPBSLjwMB_ntGPyvr4.png"
+      ],
+      "request_id": "01a15ed0-8b19-7000-8ef9-42b88ed6a0c4",
+      "imagen_fal": {
+        "url": "https://v3b.fal.media/files/b/0aaf4749/gJBQWFHTXlL2dMRm1EoM2_O7AB6Kdd.png",
+        "width": null,
+        "height": null,
+        "file_name": "gJBQWFHTXlL2dMRm1EoM2_O7AB6Kdd.png"
+      },
+      "archivo_intento": "produccion/piezas/cama_empanada/stills/KF_end_intento1.png",
+      "costo_usd": 0.0548,
+      "costo_fuente": "tabla",
+      "costo_detalle": {
+        "salida_usd": 0.0424,
+        "salida_tokens": 1413,
+        "texto_usd": 0.0024,
+        "texto_tokens_estimados": 490,
+        "referencia_usd": 0.01,
+        "referencia_base": "Punto medio de la tabla fal entre 0.008 (≤1024²) y 0.012 (3840×2160).",
+        "tope_de_esta_tarea_usd": 0.5,
+        "billing_error": {
+          "error": "HTTP Error 403: Forbidden"
+        }
+      },
+      "billing_raw": {
+        "error": "HTTP Error 403: Forbidden"
+      },
+      "decision": "aceptada",
+      "motivo": "Media luna frita, repulgue trenzado, ampollas, brillo de aceite y un hilo de queso en la punta. Vapor suave. Ella adentro, solo la cabeza sobre la almohada, ojos cerrados, de perfil, sin mirar a cámara. Sin manos, sin tenedor y sin agujeros. Mismo cuarto y encuadre que KF0b.",
+      "archivo_final": "produccion/piezas/cama_empanada/stills/KF_end.png"
     }
   ],
   "etapa_mas_debil": "KF5"
