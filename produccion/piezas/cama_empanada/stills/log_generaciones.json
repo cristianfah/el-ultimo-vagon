@@ -1,0 +1,463 @@
+{
+  "pieza": "cama_empanada",
+  "tope_usd": 3.0,
+  "gasto_total_usd": 0.5488,
+  "nota_precio": "fal no devolvió el cobro: GET https://api.fal.ai/v1/models/billing-events y /v1/models/usage respondieron 403 con esta FAL_KEY. Se usa la tabla. Salida high 1152×2048: 0.0424 USD (equivalente en píxeles a 2048×1152 high, 1413 tokens × 30 USD/1M; fal cobra igual y publica 0.05268 USD para 1024×1024 high). Texto: 5 USD/1M, estimado como caracteres/4. Referencia de edit: la tabla de fal suma ~0.008 USD por una imagen ≤1024×1024 y ~0.012 USD por una de 3840×2160; 1152×2048 no está, se anota 0.010 USD como punto medio de esos dos anclajes.",
+  "llamadas": [
+    {
+      "etapa": "KF0",
+      "intento": 1,
+      "modelo": "openai/gpt-image-2.5/sunburst/text-to-image",
+      "parametros": {
+        "quality": "high",
+        "image_size": {
+          "width": 1152,
+          "height": 2048
+        },
+        "num_images": 1,
+        "output_format": "png",
+        "background": "opaque"
+      },
+      "prompt": "Locked-off overhead photograph, lens axis exactly vertical, 90 degrees straight down, no tilt, no dutch angle, no horizon, no perspective convergence. Vertical 9:16 frame. A double bed fills most of the frame and is fully visible, with a margin of bare oak floor on every side. The bed sits slightly right of center so the left floor margin is wider. The plain walnut headboard is at the top of the frame. The foot of the bed is at the bottom. Same camera position, same bed size, same floor margins in every frame.\n\nAn ordinary real bedroom in soft daytime. Pale oak floorboards with visible grain. A low simple walnut bed frame and a plain rectangular walnut headboard, no carvings, no logos. At the top-left, on the floor margin beyond the headboard, a small walnut nightstand with one drawer and a switched-off ceramic lamp with a beige fabric shade. Nothing on the nightstand has letters. Soft natural daylight from an unseen window at frame left, gentle shadows falling to frame right, neutral-warm, low contrast. No lamp light, no colored gels, no haze, no night.\n\nOne woman in her early thirties, light-olive skin with visible pores, oval face, straight dark eyebrows, brown eyes, straight nose, no makeup, no lipstick, short clean nails, no jewelry, no watch, no tattoos. Dark brown hair in a low bun with a few loose strands at the nape. Plain heather-grey cotton short-sleeve t-shirt with no print. Dark navy sweatpants. Serious closed mouth, concentrated, not smiling. Exactly two arms and two hands. She kneels on the oak floor in the left margin, beside the bed, fully in frame from her knees to her head. Her face is turned up toward the lens, serious, so the face is readable from above, while both hands work.\n\nThe bed holds only a bare quilted off-white mattress with a simple stitched grid. No sheet, no duvet, no pillows. Both of her hands hold a round stainless-steel mesh kitchen sieve just above the center of the mattress. Fine white powder sifts from the mesh and dusts the middle of the mattress. A small off-white ceramic bowl of the same powder sits on the floor beside her left knee.\n\nPhotoreal film still, full-frame camera, deep focus, natural color, visible linen weave, wood grain and skin texture, fine film grain. A real photograph of a real room. No beauty filter, no waxy skin, no plastic, no CGI glow, no illustration. The frame contains no text, no letters, no numbers, no logos, no watermark, no captions.",
+      "referencias": [],
+      "request_id": "01a15e7d-8d54-74b0-bba6-83b4d2d63ae9",
+      "imagen_fal": {
+        "url": "https://v3b.fal.media/files/b/0aaf4529/NMXZjO0S3jtkFWsdKgBEY_fWblAk28.png",
+        "width": null,
+        "height": null,
+        "file_name": "NMXZjO0S3jtkFWsdKgBEY_fWblAk28.png"
+      },
+      "archivo_intento": "produccion/piezas/cama_empanada/stills/KF0_intento1.png",
+      "costo_usd": 0.0455,
+      "costo_fuente": "tabla",
+      "billing_raw": {
+        "error": "HTTP Error 403: Forbidden"
+      },
+      "decision": "aceptada",
+      "motivo": "Cenital real, cama completa con piso alrededor, una persona a la izquierda, camiseta gris, pantalón azul marino y moño bajo. Colchón pelado, colador con talco y bowl en el piso. Dos manos, cara seria y legible, luz natural, sin texto. Queda como ancla.",
+      "costo_detalle": {
+        "salida_usd": 0.0424,
+        "salida_tokens": 1413,
+        "salida_base": "Tabla/calculadora OpenAI para GPT Image 2.5 high en 2048×1152 (mismos 2.359.296 px que 1152×2048): 1413 tokens de salida × 30 USD/1M = 0.04239 USD. fal publica el mismo rate y el mismo 0.05268 USD para 1024×1024 high (1756 tokens). 1152×2048 no tiene fila propia. billing-events y usage devolvieron 403 con esta clave.",
+        "texto_usd": 0.0031,
+        "texto_tokens_estimados": 611,
+        "texto_base": "5 USD por 1M de tokens de texto de entrada. Tokens ≈ caracteres/4. fal dice que un prompt de ~500 palabras suma unos 0.003 USD.",
+        "referencia_usd": 0
+      },
+      "archivo_final": "produccion/piezas/cama_empanada/stills/KF0.png"
+    },
+    {
+      "etapa": "KF3",
+      "intento": 1,
+      "modelo": "openai/gpt-image-2.5/sunburst/edit",
+      "parametros": {
+        "quality": "high",
+        "image_size": {
+          "width": 1152,
+          "height": 2048
+        },
+        "num_images": 1,
+        "output_format": "png",
+        "background": "opaque"
+      },
+      "prompt": "Locked-off overhead photograph, lens axis exactly vertical, 90 degrees straight down, no tilt, no dutch angle, no horizon, no perspective convergence. Vertical 9:16 frame. A double bed fills most of the frame and is fully visible, with a margin of bare oak floor on every side. The bed sits slightly right of center so the left floor margin is wider. The plain walnut headboard is at the top of the frame. The foot of the bed is at the bottom. Same camera position, same bed size, same floor margins in every frame.\n\nAn ordinary real bedroom in soft daytime. Pale oak floorboards with visible grain. A low simple walnut bed frame and a plain rectangular walnut headboard, no carvings, no logos. At the top-left, on the floor margin beyond the headboard, a small walnut nightstand with one drawer and a switched-off ceramic lamp with a beige fabric shade. Nothing on the nightstand has letters. Soft natural daylight from an unseen window at frame left, gentle shadows falling to frame right, neutral-warm, low contrast. No lamp light, no colored gels, no haze, no night.\n\nOne woman in her early thirties, light-olive skin with visible pores, oval face, straight dark eyebrows, brown eyes, straight nose, no makeup, no lipstick, short clean nails, no jewelry, no watch, no tattoos. Dark brown hair in a low bun with a few loose strands at the nape. Plain heather-grey cotton short-sleeve t-shirt with no print. Dark navy sweatpants. Serious closed mouth, concentrated, not smiling. Exactly two arms and two hands. She kneels on the oak floor in the left margin, in the same place as Image 1, face angled down, same bun and same clothes.\n\nThe sheet has been folded over the duvet and the two pillows into one giant half-moon, like an uncooked empanada, centered on the same bed. The straight fold runs vertically along the left side of the mattress. The curved edge bulges toward the right. The duvet and pillows are completely hidden inside. The linen is still pale and matte, not browned. Both of her palms press the curved edge flat. The edge is smooth, not crimped yet.\n\nImage 1 is the only reference. Match it for the locked overhead camera, the 9:16 framing, the bed position and size, the oak floor, the walnut headboard, the nightstand and lamp, the daylight direction and color, and the same woman: same face, same low bun, same heather-grey t-shirt, same navy sweatpants. Rebuild the photograph for this new stage. Do not keep the bare mattress, the white powder, or the sieve unless this stage describes them.\n\nPhotoreal film still, full-frame camera, deep focus, natural color, visible linen weave, wood grain and skin texture, fine film grain. A real photograph of a real room. No beauty filter, no waxy skin, no plastic, no CGI glow, no illustration. The frame contains no text, no letters, no numbers, no logos, no watermark, no captions.",
+      "referencias": [
+        "https://v3b.fal.media/files/b/0aaf453e/nIgc1TcrUEgeX2ypcUE9B_KF0.png"
+      ],
+      "request_id": "01a15e80-e75b-7922-b353-b55fc7bd7ceb",
+      "imagen_fal": {
+        "url": "https://v3b.fal.media/files/b/0aaf453f/W1KtBH5b1Im5MiaJ8VPGx_HUC3z4Yf.png",
+        "width": null,
+        "height": null,
+        "file_name": "W1KtBH5b1Im5MiaJ8VPGx_HUC3z4Yf.png"
+      },
+      "archivo_intento": "produccion/piezas/cama_empanada/stills/KF3_intento1.png",
+      "costo_usd": 0.056,
+      "costo_fuente": "tabla",
+      "costo_detalle": {
+        "salida_usd": 0.0424,
+        "salida_tokens": 1413,
+        "texto_usd": 0.0036,
+        "texto_tokens_estimados": 713,
+        "referencia_usd": 0.01,
+        "referencia_base": "Tabla fal: ~0.008 USD si la referencia es ≤1024×1024 y ~0.012 USD si es 3840×2160. KF0 es 1152×2048; 0.010 es el punto medio de esos dos anclajes, no una fila de la tabla.",
+        "billing_error": {
+          "error": "HTTP Error 403: Forbidden"
+        }
+      },
+      "billing_raw": {
+        "error": "HTTP Error 403: Forbidden"
+      },
+      "decision": "aceptada",
+      "motivo": "La sábana queda en media luna pálida, borde recto a la izquierda y curva a la derecha, sin repulgar. Las dos palmas aprietan el borde. El relleno ya no se ve.",
+      "archivo_final": "produccion/piezas/cama_empanada/stills/KF3.png"
+    },
+    {
+      "etapa": "KF4",
+      "intento": 1,
+      "modelo": "openai/gpt-image-2.5/sunburst/edit",
+      "parametros": {
+        "quality": "high",
+        "image_size": {
+          "width": 1152,
+          "height": 2048
+        },
+        "num_images": 1,
+        "output_format": "png",
+        "background": "opaque"
+      },
+      "prompt": "Locked-off overhead photograph, lens axis exactly vertical, 90 degrees straight down, no tilt, no dutch angle, no horizon, no perspective convergence. Vertical 9:16 frame. A double bed fills most of the frame and is fully visible, with a margin of bare oak floor on every side. The bed sits slightly right of center so the left floor margin is wider. The plain walnut headboard is at the top of the frame. The foot of the bed is at the bottom. Same camera position, same bed size, same floor margins in every frame.\n\nAn ordinary real bedroom in soft daytime. Pale oak floorboards with visible grain. A low simple walnut bed frame and a plain rectangular walnut headboard, no carvings, no logos. At the top-left, on the floor margin beyond the headboard, a small walnut nightstand with one drawer and a switched-off ceramic lamp with a beige fabric shade. Nothing on the nightstand has letters. Soft natural daylight from an unseen window at frame left, gentle shadows falling to frame right, neutral-warm, low contrast. No lamp light, no colored gels, no haze, no night.\n\nOne woman in her early thirties, light-olive skin with visible pores, oval face, straight dark eyebrows, brown eyes, straight nose, no makeup, no lipstick, short clean nails, no jewelry, no watch, no tattoos. Dark brown hair in a low bun with a few loose strands at the nape. Plain heather-grey cotton short-sleeve t-shirt with no print. Dark navy sweatpants. Serious closed mouth, concentrated, not smiling. Exactly two arms and two hands. She kneels on the oak floor in the left margin, in the same place as Image 1, face angled down, same bun and same clothes.\n\nThe same giant pale half-moon of linen sits on the bed, straight fold on the left, curved edge on the right. Her fingers pinch the curved edge into a rope of small repeated folds, an empanada crimp made of linen. The lower half of the curve is already crimped. The upper curve is still a smooth pressed edge. Both hands work at the middle of the curve. The linen stays pale and matte, not golden.\n\nImage 1 is the only reference. Match it for the locked overhead camera, the 9:16 framing, the bed position and size, the oak floor, the walnut headboard, the nightstand and lamp, the daylight direction and color, and the same woman: same face, same low bun, same heather-grey t-shirt, same navy sweatpants. Rebuild the photograph for this new stage. Do not keep the bare mattress, the white powder, or the sieve unless this stage describes them.\n\nPhotoreal film still, full-frame camera, deep focus, natural color, visible linen weave, wood grain and skin texture, fine film grain. A real photograph of a real room. No beauty filter, no waxy skin, no plastic, no CGI glow, no illustration. The frame contains no text, no letters, no numbers, no logos, no watermark, no captions.",
+      "referencias": [
+        "https://v3b.fal.media/files/b/0aaf453e/nIgc1TcrUEgeX2ypcUE9B_KF0.png"
+      ],
+      "request_id": "01a15e80-e746-7083-98db-bf7fbf432d2c",
+      "imagen_fal": {
+        "url": "https://v3b.fal.media/files/b/0aaf453f/fzn5lBpjvJ7hSHZy70yLe_dhkEvBhz.png",
+        "width": null,
+        "height": null,
+        "file_name": "fzn5lBpjvJ7hSHZy70yLe_dhkEvBhz.png"
+      },
+      "archivo_intento": "produccion/piezas/cama_empanada/stills/KF4_intento1.png",
+      "costo_usd": 0.0559,
+      "costo_fuente": "tabla",
+      "costo_detalle": {
+        "salida_usd": 0.0424,
+        "salida_tokens": 1413,
+        "texto_usd": 0.0035,
+        "texto_tokens_estimados": 703,
+        "referencia_usd": 0.01,
+        "referencia_base": "Tabla fal: ~0.008 USD si la referencia es ≤1024×1024 y ~0.012 USD si es 3840×2160. KF0 es 1152×2048; 0.010 es el punto medio de esos dos anclajes, no una fila de la tabla.",
+        "billing_error": {
+          "error": "HTTP Error 403: Forbidden"
+        }
+      },
+      "billing_raw": {
+        "error": "HTTP Error 403: Forbidden"
+      },
+      "decision": "aceptada",
+      "motivo": "Repulgue a mano: cuerda de pliegues en la curva y las dos manos pinzando el tramo que todavía está liso. Lino pálido, sin dorar.",
+      "archivo_final": "produccion/piezas/cama_empanada/stills/KF4.png"
+    },
+    {
+      "etapa": "KF6",
+      "intento": 1,
+      "modelo": "openai/gpt-image-2.5/sunburst/edit",
+      "parametros": {
+        "quality": "high",
+        "image_size": {
+          "width": 1152,
+          "height": 2048
+        },
+        "num_images": 1,
+        "output_format": "png",
+        "background": "opaque"
+      },
+      "prompt": "Locked-off overhead photograph, lens axis exactly vertical, 90 degrees straight down, no tilt, no dutch angle, no horizon, no perspective convergence. Vertical 9:16 frame. A double bed fills most of the frame and is fully visible, with a margin of bare oak floor on every side. The bed sits slightly right of center so the left floor margin is wider. The plain walnut headboard is at the top of the frame. The foot of the bed is at the bottom. Same camera position, same bed size, same floor margins in every frame.\n\nAn ordinary real bedroom in soft daytime. Pale oak floorboards with visible grain. A low simple walnut bed frame and a plain rectangular walnut headboard, no carvings, no logos. At the top-left, on the floor margin beyond the headboard, a small walnut nightstand with one drawer and a switched-off ceramic lamp with a beige fabric shade. Nothing on the nightstand has letters. Soft natural daylight from an unseen window at frame left, gentle shadows falling to frame right, neutral-warm, low contrast. No lamp light, no colored gels, no haze, no night.\n\nThe same bed, the same floor, the same light. The woman is no longer kneeling. The left floor margin is empty. She is tucked inside the giant pale half-moon empanada of linen, fully clothed in the same heather-grey t-shirt and navy sweatpants, like the filling. Only her head comes out of the bottom tip of the half-moon. Her face looks straight up at the lens, serious, closed mouth, same face and same low bun as Image 1. The rest of her body is hidden inside the empanada. Her right hand is outside, fingers resting on a small blank round cream dial at the right edge of the empanada, the dial of an electric blanket, smooth face, no markings. The linen crust is still pale and matte, crimped along the curved edge, not golden yet.\n\nImage 1 is the only reference. Match it for the locked overhead camera, the 9:16 framing, the bed position and size, the oak floor, the walnut headboard, the nightstand and lamp, the daylight direction and color, and the same woman: same face, same low bun, same heather-grey t-shirt, same navy sweatpants. Rebuild the photograph for this new stage. Do not keep the bare mattress, the white powder, or the sieve unless this stage describes them.\n\nPhotoreal film still, full-frame camera, deep focus, natural color, visible linen weave, wood grain and skin texture, fine film grain. A real photograph of a real room. No beauty filter, no waxy skin, no plastic, no CGI glow, no illustration. The frame contains no text, no letters, no numbers, no logos, no watermark, no captions. One person only.",
+      "referencias": [
+        "https://v3b.fal.media/files/b/0aaf453e/nIgc1TcrUEgeX2ypcUE9B_KF0.png"
+      ],
+      "request_id": "01a15e80-e6d0-7923-8d70-91ce09114f8a",
+      "imagen_fal": {
+        "url": "https://v3b.fal.media/files/b/0aaf453f/39p999SoJKBJVvQ6lPWyb_R5Y5vVuo.png",
+        "width": null,
+        "height": null,
+        "file_name": "39p999SoJKBJVvQ6lPWyb_R5Y5vVuo.png"
+      },
+      "archivo_intento": "produccion/piezas/cama_empanada/stills/KF6_intento1.png",
+      "costo_usd": 0.0557,
+      "costo_fuente": "tabla",
+      "costo_detalle": {
+        "salida_usd": 0.0424,
+        "salida_tokens": 1413,
+        "texto_usd": 0.0033,
+        "texto_tokens_estimados": 651,
+        "referencia_usd": 0.01,
+        "referencia_base": "Tabla fal: ~0.008 USD si la referencia es ≤1024×1024 y ~0.012 USD si es 3840×2160. KF0 es 1152×2048; 0.010 es el punto medio de esos dos anclajes, no una fila de la tabla.",
+        "billing_error": {
+          "error": "HTTP Error 403: Forbidden"
+        }
+      },
+      "billing_raw": {
+        "error": "HTTP Error 403: Forbidden"
+      },
+      "decision": "aceptada",
+      "motivo": "Está metida adentro, solo la cabeza sale por la punta inferior y la mano derecha toma la perilla. El piso de la izquierda queda vacío: la cámara no se movió. La masa sigue pálida. La empanada es un poco más chica que en KF3–KF5.",
+      "archivo_final": "produccion/piezas/cama_empanada/stills/KF6.png"
+    },
+    {
+      "etapa": "KF5",
+      "intento": 1,
+      "modelo": "openai/gpt-image-2.5/sunburst/edit",
+      "parametros": {
+        "quality": "high",
+        "image_size": {
+          "width": 1152,
+          "height": 2048
+        },
+        "num_images": 1,
+        "output_format": "png",
+        "background": "opaque"
+      },
+      "prompt": "Locked-off overhead photograph, lens axis exactly vertical, 90 degrees straight down, no tilt, no dutch angle, no horizon, no perspective convergence. Vertical 9:16 frame. A double bed fills most of the frame and is fully visible, with a margin of bare oak floor on every side. The bed sits slightly right of center so the left floor margin is wider. The plain walnut headboard is at the top of the frame. The foot of the bed is at the bottom. Same camera position, same bed size, same floor margins in every frame.\n\nAn ordinary real bedroom in soft daytime. Pale oak floorboards with visible grain. A low simple walnut bed frame and a plain rectangular walnut headboard, no carvings, no logos. At the top-left, on the floor margin beyond the headboard, a small walnut nightstand with one drawer and a switched-off ceramic lamp with a beige fabric shade. Nothing on the nightstand has letters. Soft natural daylight from an unseen window at frame left, gentle shadows falling to frame right, neutral-warm, low contrast. No lamp light, no colored gels, no haze, no night.\n\nOne woman in her early thirties, light-olive skin with visible pores, oval face, straight dark eyebrows, brown eyes, straight nose, no makeup, no lipstick, short clean nails, no jewelry, no watch, no tattoos. Dark brown hair in a low bun with a few loose strands at the nape. Plain heather-grey cotton short-sleeve t-shirt with no print. Dark navy sweatpants. Serious closed mouth, concentrated, not smiling. Exactly two arms and two hands. She kneels on the oak floor in the left margin, in the same place as Image 1, face angled down, same bun and same clothes.\n\nThe same giant pale half-moon is fully crimped along the whole curved right edge, a rope of small linen folds. Her right hand holds a pastry brush with a wooden handle and pale bristles and paints a thin yellow egg wash along the crimped edge, so that edge looks wet and slightly yellow. Her left hand rests flat on the linen to hold it. The center of the half-moon is still matte pale linen, not golden, not browned.\n\nImage 1 is the only reference. Match it for the locked overhead camera, the 9:16 framing, the bed position and size, the oak floor, the walnut headboard, the nightstand and lamp, the daylight direction and color, and the same woman: same face, same low bun, same heather-grey t-shirt, same navy sweatpants. Rebuild the photograph for this new stage. Do not keep the bare mattress, the white powder, or the sieve unless this stage describes them.\n\nPhotoreal film still, full-frame camera, deep focus, natural color, visible linen weave, wood grain and skin texture, fine film grain. A real photograph of a real room. No beauty filter, no waxy skin, no plastic, no CGI glow, no illustration. The frame contains no text, no letters, no numbers, no logos, no watermark, no captions.",
+      "referencias": [
+        "https://v3b.fal.media/files/b/0aaf453e/nIgc1TcrUEgeX2ypcUE9B_KF0.png"
+      ],
+      "request_id": "01a15e80-e70b-7590-99a3-f7536191f7eb",
+      "imagen_fal": {
+        "url": "https://v3b.fal.media/files/b/0aaf453f/OOb9YExjwg8Prqc7GfEay_JfrVMiNj.png",
+        "width": null,
+        "height": null,
+        "file_name": "OOb9YExjwg8Prqc7GfEay_JfrVMiNj.png"
+      },
+      "archivo_intento": "produccion/piezas/cama_empanada/stills/KF5_intento1.png",
+      "costo_usd": 0.0559,
+      "costo_fuente": "tabla",
+      "costo_detalle": {
+        "salida_usd": 0.0424,
+        "salida_tokens": 1413,
+        "texto_usd": 0.0035,
+        "texto_tokens_estimados": 708,
+        "referencia_usd": 0.01,
+        "referencia_base": "Tabla fal: ~0.008 USD si la referencia es ≤1024×1024 y ~0.012 USD si es 3840×2160. KF0 es 1152×2048; 0.010 es el punto medio de esos dos anclajes, no una fila de la tabla.",
+        "billing_error": {
+          "error": "HTTP Error 403: Forbidden"
+        }
+      },
+      "billing_raw": {
+        "error": "HTTP Error 403: Forbidden"
+      },
+      "decision": "rechazada",
+      "motivo": "La brocha pinta el centro de la media luna, no el borde repulgado. Se regenera desde cero con KF0, sin usar esta imagen."
+    },
+    {
+      "etapa": "KF2",
+      "intento": 1,
+      "modelo": "openai/gpt-image-2.5/sunburst/edit",
+      "parametros": {
+        "quality": "high",
+        "image_size": {
+          "width": 1152,
+          "height": 2048
+        },
+        "num_images": 1,
+        "output_format": "png",
+        "background": "opaque"
+      },
+      "prompt": "Locked-off overhead photograph, lens axis exactly vertical, 90 degrees straight down, no tilt, no dutch angle, no horizon, no perspective convergence. Vertical 9:16 frame. A double bed fills most of the frame and is fully visible, with a margin of bare oak floor on every side. The bed sits slightly right of center so the left floor margin is wider. The plain walnut headboard is at the top of the frame. The foot of the bed is at the bottom. Same camera position, same bed size, same floor margins in every frame.\n\nAn ordinary real bedroom in soft daytime. Pale oak floorboards with visible grain. A low simple walnut bed frame and a plain rectangular walnut headboard, no carvings, no logos. At the top-left, on the floor margin beyond the headboard, a small walnut nightstand with one drawer and a switched-off ceramic lamp with a beige fabric shade. Nothing on the nightstand has letters. Soft natural daylight from an unseen window at frame left, gentle shadows falling to frame right, neutral-warm, low contrast. No lamp light, no colored gels, no haze, no night.\n\nOne woman in her early thirties, light-olive skin with visible pores, oval face, straight dark eyebrows, brown eyes, straight nose, no makeup, no lipstick, short clean nails, no jewelry, no watch, no tattoos. Dark brown hair in a low bun with a few loose strands at the nape. Plain heather-grey cotton short-sleeve t-shirt with no print. Dark navy sweatpants. Serious closed mouth, concentrated, not smiling. Exactly two arms and two hands. She kneels on the oak floor in the left margin, in the same place as Image 1, face angled down toward her hands, same bun and same clothes.\n\nThe off-white linen sheet is still stretched flat, and its right half still hangs off the right edge onto the floor. On the left half of the bed only, as a thick pale filling: one folded cream duvet and two plain white pillows stacked together. Her two hands pat the top pillow twice, palms flat on the pillow. At the bottom corner of the duvet lies a small blank round cream dial on a short cloth cord, smooth face, no markings. The right half of the sheet is empty.\n\nImage 1 is the only reference. Match it for the locked overhead camera, the 9:16 framing, the bed position and size, the oak floor, the walnut headboard, the nightstand and lamp, the daylight direction and color, and the same woman: same face, same low bun, same heather-grey t-shirt, same navy sweatpants. Rebuild the photograph for this new stage. Do not keep the bare mattress, the white powder, or the sieve unless this stage describes them.\n\nPhotoreal film still, full-frame camera, deep focus, natural color, visible linen weave, wood grain and skin texture, fine film grain. A real photograph of a real room. No beauty filter, no waxy skin, no plastic, no CGI glow, no illustration. The frame contains no text, no letters, no numbers, no logos, no watermark, no captions.",
+      "referencias": [
+        "https://v3b.fal.media/files/b/0aaf453e/nIgc1TcrUEgeX2ypcUE9B_KF0.png"
+      ],
+      "request_id": "01a15e80-e740-7d42-b6c5-231fea13c0d2",
+      "imagen_fal": {
+        "url": "https://v3b.fal.media/files/b/0aaf453f/FQ3v60dPNV1qQjZN8bIx-_W9nX9DQY.png",
+        "width": null,
+        "height": null,
+        "file_name": "FQ3v60dPNV1qQjZN8bIx-_W9nX9DQY.png"
+      },
+      "archivo_intento": "produccion/piezas/cama_empanada/stills/KF2_intento1.png",
+      "costo_usd": 0.056,
+      "costo_fuente": "tabla",
+      "costo_detalle": {
+        "salida_usd": 0.0424,
+        "salida_tokens": 1413,
+        "texto_usd": 0.0036,
+        "texto_tokens_estimados": 725,
+        "referencia_usd": 0.01,
+        "referencia_base": "Tabla fal: ~0.008 USD si la referencia es ≤1024×1024 y ~0.012 USD si es 3840×2160. KF0 es 1152×2048; 0.010 es el punto medio de esos dos anclajes, no una fila de la tabla.",
+        "billing_error": {
+          "error": "HTTP Error 403: Forbidden"
+        }
+      },
+      "billing_raw": {
+        "error": "HTTP Error 403: Forbidden"
+      },
+      "decision": "aceptada",
+      "motivo": "Plumón doblado y dos almohadas en la mitad izquierda, sábana vacía colgando a la derecha, las dos palmas sobre el relleno y la perilla ciega en el rincón inferior del plumón.",
+      "archivo_final": "produccion/piezas/cama_empanada/stills/KF2.png"
+    },
+    {
+      "etapa": "KF1",
+      "intento": 1,
+      "modelo": "openai/gpt-image-2.5/sunburst/edit",
+      "parametros": {
+        "quality": "high",
+        "image_size": {
+          "width": 1152,
+          "height": 2048
+        },
+        "num_images": 1,
+        "output_format": "png",
+        "background": "opaque"
+      },
+      "prompt": "Locked-off overhead photograph, lens axis exactly vertical, 90 degrees straight down, no tilt, no dutch angle, no horizon, no perspective convergence. Vertical 9:16 frame. A double bed fills most of the frame and is fully visible, with a margin of bare oak floor on every side. The bed sits slightly right of center so the left floor margin is wider. The plain walnut headboard is at the top of the frame. The foot of the bed is at the bottom. Same camera position, same bed size, same floor margins in every frame.\n\nAn ordinary real bedroom in soft daytime. Pale oak floorboards with visible grain. A low simple walnut bed frame and a plain rectangular walnut headboard, no carvings, no logos. At the top-left, on the floor margin beyond the headboard, a small walnut nightstand with one drawer and a switched-off ceramic lamp with a beige fabric shade. Nothing on the nightstand has letters. Soft natural daylight from an unseen window at frame left, gentle shadows falling to frame right, neutral-warm, low contrast. No lamp light, no colored gels, no haze, no night.\n\nOne woman in her early thirties, light-olive skin with visible pores, oval face, straight dark eyebrows, brown eyes, straight nose, no makeup, no lipstick, short clean nails, no jewelry, no watch, no tattoos. Dark brown hair in a low bun with a few loose strands at the nape. Plain heather-grey cotton short-sleeve t-shirt with no print. Dark navy sweatpants. Serious closed mouth, concentrated, not smiling. Exactly two arms and two hands. She kneels on the oak floor in the left margin, in the same place as Image 1. Her face is angled down toward the bed so the low bun, forehead and the bridge of the nose are visible; any visible part of the face matches Image 1.\n\nThe mattress is covered by one large off-white linen sheet stretched flat like rolled dough. The sheet hides the mattress. Half of the sheet hangs off the right edge of the bed and drapes onto the floor. She grips a giant plain wooden rolling pin with both hands. The pin lies horizontally across the middle of the sheet and presses the linen flat. No pillows and no duvet are on the bed.\n\nImage 1 is the only reference. Match it for the locked overhead camera, the 9:16 framing, the bed position and size, the oak floor, the walnut headboard, the nightstand and lamp, the daylight direction and color, and the same woman: same face, same low bun, same heather-grey t-shirt, same navy sweatpants. Rebuild the photograph for this new stage. Do not keep the bare mattress, the white powder, or the sieve unless this stage describes them.\n\nPhotoreal film still, full-frame camera, deep focus, natural color, visible linen weave, wood grain and skin texture, fine film grain. A real photograph of a real room. No beauty filter, no waxy skin, no plastic, no CGI glow, no illustration. The frame contains no text, no letters, no numbers, no logos, no watermark, no captions.",
+      "referencias": [
+        "https://v3b.fal.media/files/b/0aaf453e/nIgc1TcrUEgeX2ypcUE9B_KF0.png"
+      ],
+      "request_id": "01a15e80-e739-72e1-b0f1-94a9eb5af820",
+      "imagen_fal": {
+        "url": "https://v3b.fal.media/files/b/0aaf453f/bA4Cfn2KZ0CQe2qzgDCKl_97fYeKgH.png",
+        "width": null,
+        "height": null,
+        "file_name": "bA4Cfn2KZ0CQe2qzgDCKl_97fYeKgH.png"
+      },
+      "archivo_intento": "produccion/piezas/cama_empanada/stills/KF1_intento1.png",
+      "costo_usd": 0.056,
+      "costo_fuente": "tabla",
+      "costo_detalle": {
+        "salida_usd": 0.0424,
+        "salida_tokens": 1413,
+        "texto_usd": 0.0036,
+        "texto_tokens_estimados": 728,
+        "referencia_usd": 0.01,
+        "referencia_base": "Tabla fal: ~0.008 USD si la referencia es ≤1024×1024 y ~0.012 USD si es 3840×2160. KF0 es 1152×2048; 0.010 es el punto medio de esos dos anclajes, no una fila de la tabla.",
+        "billing_error": {
+          "error": "HTTP Error 403: Forbidden"
+        }
+      },
+      "billing_raw": {
+        "error": "HTTP Error 403: Forbidden"
+      },
+      "decision": "aceptada",
+      "motivo": "Misma cámara, cuarto, cama y ropa. La sábana está estirada y la mitad cuelga a la derecha. El uslero es grande y de madera. Las dos manos comparten el mango cercano; se acepta porque el gesto se lee y los dedos están bien formados.",
+      "archivo_final": "produccion/piezas/cama_empanada/stills/KF1.png"
+    },
+    {
+      "etapa": "KF7",
+      "intento": 1,
+      "modelo": "openai/gpt-image-2.5/sunburst/edit",
+      "parametros": {
+        "quality": "high",
+        "image_size": {
+          "width": 1152,
+          "height": 2048
+        },
+        "num_images": 1,
+        "output_format": "png",
+        "background": "opaque"
+      },
+      "prompt": "Locked-off overhead photograph, lens axis exactly vertical, 90 degrees straight down, no tilt, no dutch angle, no horizon, no perspective convergence. Vertical 9:16 frame. A double bed fills most of the frame and is fully visible, with a margin of bare oak floor on every side. The bed sits slightly right of center so the left floor margin is wider. The plain walnut headboard is at the top of the frame. The foot of the bed is at the bottom. Same camera position, same bed size, same floor margins in every frame.\n\nAn ordinary real bedroom in soft daytime. Pale oak floorboards with visible grain. A low simple walnut bed frame and a plain rectangular walnut headboard, no carvings, no logos. At the top-left, on the floor margin beyond the headboard, a small walnut nightstand with one drawer and a switched-off ceramic lamp with a beige fabric shade. Nothing on the nightstand has letters. Soft natural daylight from an unseen window at frame left, gentle shadows falling to frame right, neutral-warm, low contrast. No lamp light, no colored gels, no haze, no night.\n\nThe same bed, the same floor, the same light. The giant half-moon is now baked: the linen has become a golden-brown pastry crust, glossy from egg wash, with a darker golden crimped edge, still the same size and the same place on the wooden bed. It is the bed, not a small pastry on a plate. The wood frame and headboard remain visible around it. Her head still comes out of the bottom tip, face looking straight up, serious, same face and same low bun as Image 1, heather-grey collar just visible. Her right hand comes out beside her cheek holding a plain four-tine metal fork, and the tines are just piercing the crimped edge. The crust shines with soft daylight on real baked texture, not plastic, not neon.\n\nImage 1 is the only reference. Match it for the locked overhead camera, the 9:16 framing, the bed position and size, the oak floor, the walnut headboard, the nightstand and lamp, the daylight direction and color, and the same woman: same face, same low bun, same heather-grey t-shirt, same navy sweatpants. Rebuild the photograph for this new stage. Do not keep the bare mattress, the white powder, or the sieve unless this stage describes them.\n\nPhotoreal film still, full-frame camera, deep focus, natural color, visible linen weave, wood grain and skin texture, fine film grain. A real photograph of a real room. No beauty filter, no waxy skin, no plastic, no CGI glow, no illustration. The frame contains no text, no letters, no numbers, no logos, no watermark, no captions. One person only.",
+      "referencias": [
+        "https://v3b.fal.media/files/b/0aaf453e/nIgc1TcrUEgeX2ypcUE9B_KF0.png"
+      ],
+      "request_id": "01a15e80-e6f6-79c0-b857-e0df69289f0e",
+      "imagen_fal": {
+        "url": "https://v3b.fal.media/files/b/0aaf453f/4VDyUjfIp7az5n4ESc5wd_D06gxDyE.png",
+        "width": null,
+        "height": null,
+        "file_name": "4VDyUjfIp7az5n4ESc5wd_D06gxDyE.png"
+      },
+      "archivo_intento": "produccion/piezas/cama_empanada/stills/KF7_intento1.png",
+      "costo_usd": 0.0556,
+      "costo_fuente": "tabla",
+      "costo_detalle": {
+        "salida_usd": 0.0424,
+        "salida_tokens": 1413,
+        "texto_usd": 0.0032,
+        "texto_tokens_estimados": 644,
+        "referencia_usd": 0.01,
+        "referencia_base": "Tabla fal: ~0.008 USD si la referencia es ≤1024×1024 y ~0.012 USD si es 3840×2160. KF0 es 1152×2048; 0.010 es el punto medio de esos dos anclajes, no una fila de la tabla.",
+        "billing_error": {
+          "error": "HTTP Error 403: Forbidden"
+        }
+      },
+      "billing_raw": {
+        "error": "HTTP Error 403: Forbidden"
+      },
+      "decision": "rechazada",
+      "motivo": "Quedó arrodillada fuera de la empanada, con el tenedor junto a la cara y no en el borde. Se regenera desde cero con KF0."
+    },
+    {
+      "etapa": "KF5",
+      "intento": 2,
+      "modelo": "openai/gpt-image-2.5/sunburst/edit",
+      "parametros": {
+        "quality": "high",
+        "image_size": {
+          "width": 1152,
+          "height": 2048
+        },
+        "num_images": 1,
+        "output_format": "png",
+        "background": "opaque"
+      },
+      "prompt": "Locked-off overhead photograph, lens axis exactly vertical, 90 degrees straight down, no tilt, no dutch angle, no horizon, no perspective convergence. Vertical 9:16 frame. A double bed fills most of the frame and is fully visible, with a margin of bare oak floor on every side. The bed sits slightly right of center so the left floor margin is wider. The plain walnut headboard is at the top of the frame. The foot of the bed is at the bottom. Same camera position, same bed size, same floor margins in every frame.\n\nAn ordinary real bedroom in soft daytime. Pale oak floorboards with visible grain. A low simple walnut bed frame and a plain rectangular walnut headboard, no carvings, no logos. At the top-left, on the floor margin beyond the headboard, a small walnut nightstand with one drawer and a switched-off ceramic lamp with a beige fabric shade. Nothing on the nightstand has letters. Soft natural daylight from an unseen window at frame left, gentle shadows falling to frame right, neutral-warm, low contrast. No lamp light, no colored gels, no haze, no night.\n\nOne woman in her early thirties, light-olive skin with visible pores, oval face, straight dark eyebrows, brown eyes, straight nose, no makeup, no lipstick, short clean nails, no jewelry, no watch, no tattoos. Dark brown hair in a low bun with a few loose strands at the nape. Plain heather-grey cotton short-sleeve t-shirt with no print. Dark navy sweatpants. Serious closed mouth, concentrated, not smiling. Exactly two arms and two hands. She kneels on the oak floor in the left margin, in the same place as Image 1, face angled down toward the brush, same bun and same clothes. She is not inside the bed.\n\nOn the bed, one giant pale half-moon of linen, like an uncooked empanada. The straight fold runs vertically on the left. The curved edge bulges to the right and is fully crimped into a rope of small linen folds. The center of the half-moon is dry, matte, off-white linen, with no yellow on it.\n\nHer right hand holds a pastry brush with a wooden handle and pale bristles. The bristles touch the crimped rope itself, about halfway along the right curve, and lay a thin wet yellow egg wash only onto those folds. Her left hand is flat on the linen near the straight fold, holding it. A small ceramic bowl of yellow egg wash sits on the floor beside her left knee. The crust is not golden and not browned.\n\nImage 1 is the only reference. Match it for the locked overhead camera, the 9:16 framing, the bed position and size, the oak floor, the walnut headboard, the nightstand and lamp, the daylight direction and color, and the same woman: same face, same low bun, same heather-grey t-shirt, same navy sweatpants. Rebuild the photograph for this new stage. Do not keep the bare mattress, the white powder, or the sieve unless this stage describes them.\n\nPhotoreal film still, full-frame camera, deep focus, natural color, visible linen weave, wood grain and skin texture, fine film grain. A real photograph of a real room. No beauty filter, no waxy skin, no plastic, no CGI glow, no illustration. The frame contains no text, no letters, no numbers, no logos, no watermark, no captions.",
+      "referencias": [
+        "https://v3b.fal.media/files/b/0aaf453e/nIgc1TcrUEgeX2ypcUE9B_KF0.png"
+      ],
+      "request_id": "01a15e83-808b-7f41-b886-21dbebd86503",
+      "imagen_fal": {
+        "url": "https://v3b.fal.media/files/b/0aaf4550/foNJQg9OIYhSOaCkOkXui_zFEEMY8i.png",
+        "width": null,
+        "height": null,
+        "file_name": "foNJQg9OIYhSOaCkOkXui_zFEEMY8i.png"
+      },
+      "archivo_intento": "produccion/piezas/cama_empanada/stills/KF5_intento2.png",
+      "costo_usd": 0.0564,
+      "costo_fuente": "tabla",
+      "costo_detalle": {
+        "salida_usd": 0.0424,
+        "salida_tokens": 1413,
+        "texto_usd": 0.004,
+        "texto_tokens_estimados": 790,
+        "referencia_usd": 0.01,
+        "referencia_base": "Tabla fal: ~0.008 USD si la referencia es ≤1024×1024 y ~0.012 USD si es 3840×2160. KF0 es 1152×2048; 0.010 es el punto medio de esos dos anclajes, no una fila de la tabla.",
+        "billing_error": {
+          "error": "HTTP Error 403: Forbidden"
+        }
+      },
+      "billing_raw": {
+        "error": "HTTP Error 403: Forbidden"
+      },
+      "decision": "aceptada",
+      "motivo": "Mejor que el intento 1: el repulgue es una cuerda clara y ya tiene huevo, con el bowl en el piso. La brocha sigue cayendo en la cara plana, justo por dentro del borde, no sobre los pliegues. Tope de dos intentos. Es la etapa más débil.",
+      "archivo_final": "produccion/piezas/cama_empanada/stills/KF5.png"
+    },
+    {
+      "etapa": "KF7",
+      "intento": 2,
+      "modelo": "openai/gpt-image-2.5/sunburst/edit",
+      "parametros": {
+        "quality": "high",
+        "image_size": {
+          "width": 1152,
+          "height": 2048
+        },
+        "num_images": 1,
+        "output_format": "png",
+        "background": "opaque"
+      },
+      "prompt": "Locked-off overhead photograph, lens axis exactly vertical, 90 degrees straight down, no tilt, no dutch angle, no horizon, no perspective convergence. Vertical 9:16 frame. A double bed fills most of the frame and is fully visible, with a margin of bare oak floor on every side. The bed sits slightly right of center so the left floor margin is wider. The plain walnut headboard is at the top of the frame. The foot of the bed is at the bottom. Same camera position, same bed size, same floor margins in every frame.\n\nAn ordinary real bedroom in soft daytime. Pale oak floorboards with visible grain. A low simple walnut bed frame and a plain rectangular walnut headboard, no carvings, no logos. At the top-left, on the floor margin beyond the headboard, a small walnut nightstand with one drawer and a switched-off ceramic lamp with a beige fabric shade. Nothing on the nightstand has letters. Soft natural daylight from an unseen window at frame left, gentle shadows falling to frame right, neutral-warm, low contrast. No lamp light, no colored gels, no haze, no night.\n\nImage 1 locks the overhead camera, the bedroom, the walnut bed, the oak floor, the nightstand, the daylight, and the woman's face, low bun and heather-grey t-shirt. It does not lock her pose. Do not copy her kneeling pose. She is not on the floor. The left floor margin is empty.\n\nThe mattress is covered by one giant golden-brown half-moon cheese empanada. Glossy egg-washed crust, darker golden crimped rope along the curved edge. The straight side of the half-moon is on the left. The curved crimped edge is on the right. The crust lies on the mattress inside the wooden frame. It is the bed, not a small pastry on a plate. The headboard stays visible at the top.\n\nThe same woman is inside the empanada the way a person lies inside a sleeping bag. Only her head sticks out of a small opening at the bottom tip, near the foot of the bed. Her face looks straight up at the lens, serious, closed mouth, same face and same low bun as Image 1. Her shoulders, torso and legs are hidden under the golden crust.\n\nFrom that same bottom opening, her right hand comes out of the crust holding a plain four-tine metal fork. The four tines are pushed into the crimped curved edge and pierce it. The fork is down at the crust, not near her mouth, not in the air. One person only. The crust shines with soft daylight, real baked texture, not plastic.\n\nPhotoreal film still, full-frame camera, deep focus, natural color, visible linen weave, wood grain and skin texture, fine film grain. A real photograph of a real room. No beauty filter, no waxy skin, no plastic, no CGI glow, no illustration. The frame contains no text, no letters, no numbers, no logos, no watermark, no captions.",
+      "referencias": [
+        "https://v3b.fal.media/files/b/0aaf453e/nIgc1TcrUEgeX2ypcUE9B_KF0.png"
+      ],
+      "request_id": "01a15e83-80a1-74f2-90fc-d0287c4dfd4a",
+      "imagen_fal": {
+        "url": "https://v3b.fal.media/files/b/0aaf4550/P9bhNJR3go3RDqyZnGBNj_I6pk29qc.png",
+        "width": null,
+        "height": null,
+        "file_name": "P9bhNJR3go3RDqyZnGBNj_I6pk29qc.png"
+      },
+      "archivo_intento": "produccion/piezas/cama_empanada/stills/KF7_intento2.png",
+      "costo_usd": 0.0558,
+      "costo_fuente": "tabla",
+      "costo_detalle": {
+        "salida_usd": 0.0424,
+        "salida_tokens": 1413,
+        "texto_usd": 0.0034,
+        "texto_tokens_estimados": 686,
+        "referencia_usd": 0.01,
+        "referencia_base": "Tabla fal: ~0.008 USD si la referencia es ≤1024×1024 y ~0.012 USD si es 3840×2160. KF0 es 1152×2048; 0.010 es el punto medio de esos dos anclajes, no una fila de la tabla.",
+        "billing_error": {
+          "error": "HTTP Error 403: Forbidden"
+        }
+      },
+      "billing_raw": {
+        "error": "HTTP Error 403: Forbidden"
+      },
+      "decision": "aceptada",
+      "motivo": "Ahora sí está adentro, con la cabeza en la punta y la mano saliendo con el tenedor junto al repulgue dorado. Las púas apoyan en la cuerda pero no se ven clavadas. Se acepta este intento y se descarta el 1.",
+      "archivo_final": "produccion/piezas/cama_empanada/stills/KF7.png"
+    }
+  ],
+  "etapa_mas_debil": "KF5"
+}
