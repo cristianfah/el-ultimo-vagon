@@ -254,3 +254,14 @@ Una entrada por decisión, instrucción o llamada paga. Se escribe en el momento
 - Qué: T0, T1 y T2 corridas. Se para aquí por instrucción de Cristián. Entregada `pagina_1.md` con cuatro decisiones pendientes.
 - Acumulado: **318 créditos de Kling** (saldo 2.858, medido) y **~7,2 USD de fal estimados** (T0 ~2,2 · T1 ~1,3 · T2 ~3,7), dentro de los topes (450 créditos y 11 USD). Acumulado de fal del piloto con lo anterior: ~21 USD estimados de 60.
 - Pendiente: el cobro real de fal (panel) y la toma de `image_to_video` en cola.
+
+### 2026-11-10 02:30 · cierre del día · dónde retomar
+- Tipo: instrucción de Cristián
+- Qué: «súbelo al repo y seguimos mañana». Rama `claude/piloto-cap01` subida a `origin` (push normal, sin force, sin PR todavía).
+- Estado: fases (a) a (d) cerradas; de la fase (e), corridas T0, T1 y T2. Detenido antes de la película en gris de las 17 llamadas.
+- Para retomar:
+  1. Decisiones pendientes de Cristián, en `pagina_1.md`: seguir con la película en gris; look del rojo en las caras; correr los 7 edits puntuales; bandolera de Martina.
+  2. Toma de control `T1_c00a_kling_i2v` en cola en Kling (40 créditos cobrados). Consultarla con su `generationId` de `tomas.json` y bajarla apenas termine: la URL vence en 24 h.
+  3. Cobro real de fal de T0, T1 y T2: solo en el panel de fal (Usage).
+  4. Los videos, fotogramas candidatos, referencias bajadas y renders de previz **no están en el repo**: viven en la carpeta de trabajo de la sesión (`trabajo/`). Lo que se elija como toma o fotograma final se copia al repo y al Drive en la entrega.
+- Saldo de Kling: 2.858 créditos. fal del piloto: ~21 USD estimados de 60.
