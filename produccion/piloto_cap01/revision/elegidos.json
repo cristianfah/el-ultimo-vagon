@@ -1,0 +1,123 @@
+{
+ "elegidos": [
+  {
+   "id": "b1_f1",
+   "modelo": "Nano Banana 2.1",
+   "archivo": "t2/elegidos/b1_f1.png",
+   "url_fal": "https://v3b.fal.media/files/b/0ab1d886/27hGyApDOj_O6J0CoDwS__w137EwHx.png",
+   "antes": "produccion/pruebas/cap01_animatic_v3/previs/v1c/frames/b1_f1.png"
+  },
+  {
+   "id": "b1_p1",
+   "modelo": "GPT Image 2.6",
+   "archivo": "t2/elegidos/b1_p1.png",
+   "url_fal": "https://v3b.fal.media/files/b/0ab1d887/fE8EQihre8Pw7PamhGpUX_3hOZ3fkO.png",
+   "antes": "produccion/pruebas/cap01_animatic_v3/previs/frames/b1_p1.png"
+  },
+  {
+   "id": "b2_p1",
+   "modelo": "GPT Image 2.6",
+   "archivo": "t2/elegidos/b2_p1.png",
+   "url_fal": "https://v3b.fal.media/files/b/0ab1d843/AV5V85dOg6n9FKccQ15Om_VI2ARAHI.png",
+   "antes": "produccion/pruebas/cap01_animatic_v3/previs/v1c/frames/b2_p1.png"
+  },
+  {
+   "id": "b2_p3",
+   "modelo": "GPT Image 2.6",
+   "archivo": "t2/elegidos/b2_p3.png",
+   "url_fal": "https://v3b.fal.media/files/b/0ab1d887/tfmOqwai69bM--TjjlId6_mgueKlUc.png",
+   "antes": "produccion/pruebas/cap01_animatic_v3/previs/v1c/frames/b2_p3.png"
+  },
+  {
+   "id": "b2_p4",
+   "modelo": "GPT Image 2.6",
+   "archivo": "t2/elegidos/b2_p4.png",
+   "url_fal": "https://v3b.fal.media/files/b/0ab1d889/Dj8m40fc5i_pgP_RCJ1eH_rmxUigdR.png",
+   "antes": "produccion/pruebas/cap01_animatic_v3/previs/v1c/frames/b2_p4.png"
+  },
+  {
+   "id": "b3_p1",
+   "modelo": "GPT Image 2.6",
+   "archivo": "t2/elegidos/b3_p1.png",
+   "url_fal": "https://v3b.fal.media/files/b/0ab1d88f/0RGHZd4gyRkZHHB8f-p-9_rCaafcpi.png",
+   "antes": "produccion/pruebas/cap01_animatic_v3/previs/v1c/frames/b3_p1.png"
+  },
+  {
+   "id": "b3_p2",
+   "modelo": "GPT Image 2.6",
+   "archivo": "t2/elegidos/b3_p2.png",
+   "url_fal": "https://v3b.fal.media/files/b/0ab1d88f/DoPruCc71vIJs8pkjU26J_I1b4LZNM.png",
+   "antes": "produccion/pruebas/cap01_animatic_v3/previs/frames/b3_p2.png"
+  },
+  {
+   "id": "b4_p1",
+   "modelo": "GPT Image 2.6",
+   "archivo": "t2/elegidos/b4_p1.png",
+   "url_fal": "https://v3b.fal.media/files/b/0ab1d88e/OT2KR3hRyDXm8Oc1ahxu3_c9hw2qno.png",
+   "antes": "produccion/pruebas/cap01_animatic_v3/previs/v1c/frames/b4_p1.png"
+  },
+  {
+   "id": "b4_p4",
+   "modelo": "GPT Image 2.6",
+   "archivo": "t2/elegidos/b4_p4.png",
+   "url_fal": "https://v3b.fal.media/files/b/0ab1d896/nNMW0ExsEFFEHD-Nv_muC_A5AJMWBH.png",
+   "antes": "produccion/pruebas/cap01_animatic_v3/previs/frames/b4_p4.png"
+  },
+  {
+   "id": "b4_p5",
+   "modelo": "GPT Image 2.6",
+   "archivo": "t2/elegidos/b4_p5.png",
+   "url_fal": "https://v3b.fal.media/files/b/0ab1d897/2WrMQx3OtR3JHxbNJzY2w_aKw0KT81.png",
+   "antes": "produccion/pruebas/cap01_animatic_v3/previs/frames/b4_p5.png"
+  },
+  {
+   "id": "b5_p4",
+   "modelo": "GPT Image 2.6",
+   "archivo": "t2/elegidos/b5_p4.png",
+   "url_fal": "https://v3b.fal.media/files/b/0ab1d897/rzpUywhdXWtvsC6M-9SHD_uvaSfX8V.png",
+   "antes": "produccion/pruebas/cap01_animatic_v3/previs/v1c/frames/b5_p4.png"
+  },
+  {
+   "id": "b5_p7",
+   "modelo": "GPT Image 2.6",
+   "archivo": "t2/elegidos/b5_p7.png",
+   "url_fal": "https://v3b.fal.media/files/b/0ab1d89d/I_wRts59RW5KHFdjsNs6r_KouAeDwY.png",
+   "antes": "produccion/pruebas/cap01_animatic_v3/previs/v1c/frames/b5_p7.png"
+  },
+  {
+   "id": "b5_p8",
+   "modelo": "GPT Image 2.6",
+   "archivo": "t2/elegidos/b5_p8.png",
+   "url_fal": "https://v3b.fal.media/files/b/0ab1d89d/lNFqplr-NhDG5lLAUQU1j_EHIdmzGY.png",
+   "antes": "produccion/pruebas/cap01_animatic_v3/previs/v1c/frames/b5_p8.png"
+  },
+  {
+   "id": "b6_p2",
+   "modelo": "GPT Image 2.6",
+   "archivo": "t2/elegidos/b6_p2.png",
+   "url_fal": "https://v3b.fal.media/files/b/0ab1d89d/rv0q-w_w-nkioaEVwEh4l_3BCPZx3b.png",
+   "antes": "produccion/pruebas/cap01_animatic_v3/previs/v1c/frames/b6_p2.png"
+  },
+  {
+   "id": "b6_p3",
+   "modelo": "GPT Image 2.6",
+   "archivo": "t2/elegidos/b6_p3.png",
+   "url_fal": "https://v3b.fal.media/files/b/0ab1d8a3/61PJDncQfELG2sY61ZyVe_0jmDYMyI.png",
+   "antes": "produccion/pruebas/cap01_animatic_v3/previs/v1c/frames/b6_p3.png"
+  },
+  {
+   "id": "b7_p2",
+   "modelo": "GPT Image 2.6",
+   "archivo": "t2/elegidos/b7_p2.png",
+   "url_fal": "https://v3b.fal.media/files/b/0ab1d8a4/nxOjTp4ifqTioRMEx_9iB_Dt2bokia.png",
+   "antes": "produccion/pruebas/cap01_animatic_v3/previs/v1c/frames/b7_p2.png"
+  },
+  {
+   "id": "b7_p5",
+   "modelo": "GPT Image 2.6",
+   "archivo": "t2/elegidos/b7_p5.png",
+   "url_fal": "https://v3b.fal.media/files/b/0ab1d8a4/KnWPBh486lXudSGOYuYDY_7HQoPJ6G.png",
+   "antes": "produccion/pruebas/cap01_animatic_v3/previs/v1c/frames/b7_p5.png"
+  }
+ ]
+}

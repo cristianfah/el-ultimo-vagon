@@ -1,0 +1,258 @@
+{
+ "frames": [
+  {
+   "id": "b1_f1",
+   "call": "c01f",
+   "aspect": "9:16",
+   "refs": [
+    {
+     "n": 1,
+     "file": "REPO/produccion/pruebas/cap01_animatic_v3/previs/v1c/frames/b1_f1.png",
+     "role": "composition reference (current frame)"
+    },
+    {
+     "n": 2,
+     "file": "TRABAJO/refs/personajes__HOJA_martina.png",
+     "role": "Martina: identity, hair and wardrobe only"
+    },
+    {
+     "n": 3,
+     "file": "TRABAJO/refs/escenas__cuarto_rapto_martina_v2.png",
+     "role": "kidnap room: armless metal folding chair, concrete, grey tape, single overhead lamp"
+    }
+   ],
+   "prompt": "Rebuild this shot clean, in one pass, from Image 1.\nImage 1 is the current frame: keep its framing and the place of the taped wrists low in frame; its flat grey light is wrong and is replaced.\nImage 2 is Martina: identity, hair and wardrobe only; ignore the sheet layout and grey backdrop.\nImage 3 is the kidnap room: the same armless metal folding chair, bare concrete, grey tape and its one hanging lamp; ignore its wide framing and the masked figures.\n\nFILM STILL: vertical 9:16, live-action horror thriller: a half-second memory flash in a bare concrete room.\nMOMENT: Martina sits on the armless metal folding chair, her wrists bound together with several turns of matte grey duct tape, resting on her thighs. She is already pulling them apart: forearm tendons tight, knuckles pale, both fists clenched, the tape creased and not giving. Five separate fingers on each hand.\nCOMPOSITION: seen from the front and slightly above. The frame runs from her chin at the top edge to mid-thigh; her face stays out of frame, only the ends of her dark wavy hair lie on her shoulders. The taped wrists sit in the lower third, a little left of centre: her RIGHT wrist on frame left, her LEFT wrist on frame right. Long charcoal wool coat worn open, oversized oat knit sweater with its long cuffs shoved back just above the tape, dark jeans. No armrests: her elbows hang in open air and the thin edge of the bare metal seat shows beside her thigh. Her torso sits right of centre, one shoulder lower with the pull. Behind her only darkness.\nLENS: 50mm at T2, camera at her sternum height, tilted down about 15 degrees. Focus on the tape and knuckles; shoulders and background fall soft.\nLIGHT: single hard cold downlight from straight above, darkness around it, no added fill. The lamp is out of frame overhead. It burns the tops of her shoulders, forearms, the tape and her knuckles; hard-edged shadows drop straight down, under her chin across the sweater and under her fists onto the jeans. The sides of the coat and her lap fall to black. Cold neutral white, no amber, no red.\nTEXTURE: Clean photographic image, no film grain, no digital sharpening, no HDR look, no glow halos, no orange-teal rim light, real skin texture with pores, natural motion-free still. Wool nap, knit loops, wrinkled tape with a dull sheen.\nFINISH: high contrast, blacks fall to black, nothing lifted in the shadows. Nobody looks into the lens: no eyes are in frame. No text, no captions, no watermark, no logos.",
+   "checks": [
+    "Luz: un solo cenital frío y duro desde arriba; hombros, antebrazos, cinta y nudillos quemados, sombras de borde duro hacia abajo, costados y fondo en negro. Nada de luz plana gris, ámbar ni rojo.",
+    "Muñecas amarradas JUNTAS con cinta gris mate sobre los muslos, en el tercio inferior; muñeca derecha a la izquierda del cuadro (calza con b1_p1 para el corte por coincidencia).",
+    "Silla SIN brazos: codos al aire, se ve el borde del asiento metálico; ningún apoyabrazos.",
+    "Vestuario: abrigo gris carbón abierto, suéter avena con puños subidos sobre la cinta, jeans oscuros. Sin bandolera (así está en la plancha aprobada del cuarto).",
+    "Dos manos con cinco dedos separados cada una, puños cerrados tirando; la cinta no cede ni se rompe.",
+    "La cara queda fuera de cuadro (corte en el mentón); nadie mira al lente; sin máscaras ni figuras en cuadro.",
+    "Sin texto, sin grano, sin halos; 9:16 a resolución completa."
+   ]
+  },
+  {
+   "id": "b1_p1",
+   "call": "c01",
+   "aspect": "9:16",
+   "refs": [
+    {
+     "n": 1,
+     "file": "REPO/produccion/pruebas/cap01_animatic_v3/previs/frames/b1_p1.png",
+     "role": "composition reference (current frame)"
+    },
+    {
+     "n": 2,
+     "file": "TRABAJO/refs/personajes__HOJA_martina.png",
+     "role": "Martina: identity, face, hair and wardrobe only"
+    },
+    {
+     "n": 3,
+     "file": "TRABAJO/refs/set__F08_v2_ambar_bajo.png",
+     "role": "carriage 2: end door, navy seats and low amber light level"
+    }
+   ],
+   "prompt": "Rebuild this shot clean, in one pass, from Image 1.\nImage 1 is the current frame: the same shot, same framing, door and seats; rebuild it at full resolution with the hands as described below.\nImage 2 is Martina: identity, face, hair and wardrobe only; ignore the sheet layout and grey backdrop.\nImage 3 is carriage 2: its end door, navy seats and how few lamps are lit.\n\nFILM STILL: vertical 9:16, live-action horror thriller, night train, carriage 2.\nMOMENT: Martina has just let her back fall against the rear end door of the carriage. Eyes closed, lids pressed, jaw tight. In front of her body at waist height her LEFT hand is clamped around her RIGHT wrist over the oat cuff, thumb on top, knuckles pale; the RIGHT hand is a loose fist. Five separate fingers on each hand.\nCOMPOSITION: frontal medium shot from mid-thigh up. Her head in the upper third, a hand's width left of centre, tipped back against the door. Both wrists in the lower third: her RIGHT wrist on frame left, her LEFT arm crossing in from frame right to grip it. Shoulder-length dark brown wavy hair, small mole on her LEFT cheekbone (frame-right side of her face). Oversized oat knit sweater with cuffs over the knuckles, long charcoal wool coat worn open, dark jeans; the thin strap of her small brown leather crossbody bag runs from her right shoulder to the bag at her left hip. Behind her head the door's small wired-glass window shows only the dark gangway. Navy seat rows come toward the camera on both sides of the aisle; black side windows with rain only on the outside of the glass. Bottom right corner: a dark seat back, out of focus, close to the lens.\nLENS: 50mm at T2, locked off at her chest height, two metres from her, slightly off the aisle axis. Focus on her closed eyes; her hands just inside focus, the carriage soft.\nLIGHT: only 2–3 warm amber ceiling lamps, darkness between them, no added fill. Two are in frame: one high on frame right is her key, raking the frame-right side of her face and the gripping hand; one smaller, far on the left. Every other fixture is dark. The frame-left half of her face goes into shadow.\nTEXTURE: Clean photographic image, no film grain, no digital sharpening, no HDR look, no glow halos, no orange-teal rim light, real skin texture with pores, natural motion-free still.\nFINISH: low-key, blacks fall to black. Nobody looks into the lens; every gaze has a target inside the carriage. Her eyes are shut. No text, no captions, no watermark, no logos.",
+   "checks": [
+    "Mano IZQUIERDA apretando la muñeca DERECHA, delante del cuerpo a la altura de la cintura: la muñeca derecha queda a la izquierda del cuadro y el brazo izquierdo entra desde la derecha.",
+    "Las dos muñecas en el tercio inferior del cuadro; la cabeza en el tercio superior (mismo plano que el cuadro vigente, ahora a resolución completa).",
+    "Ojos cerrados, espalda contra la puerta del fondo; ventanita de la puerta con el fuelle oscuro, sin cielo ni lluvia.",
+    "Luz: 2 lámparas ámbar encendidas en cuadro (máximo 3), negro entre ellas, media cara en sombra, sin relleno.",
+    "Identidad y vestuario: lunar en el pómulo IZQUIERDO (lado derecho del cuadro), suéter avena con puños sobre los nudillos, abrigo carbón abierto, jeans, bandolera de cuero café cruzada.",
+    "Manos con cinco dedos separados; marca de la muñeca tapada por la manga.",
+    "Lluvia solo por fuera de los vidrios laterales; sin texto, sin grano."
+   ]
+  },
+  {
+   "id": "b2_p3",
+   "call": "c02b",
+   "aspect": "9:16",
+   "refs": [
+    {
+     "n": 1,
+     "file": "REPO/produccion/pruebas/cap01_animatic_v3/previs/v1c/frames/b2_p3.png",
+     "role": "composition reference (current frame)"
+    },
+    {
+     "n": 2,
+     "file": "TRABAJO/refs/personajes__HOJA_tomas.png",
+     "role": "Tomás: identity, face, hair, glasses and wardrobe only"
+    },
+    {
+     "n": 3,
+     "file": "TRABAJO/refs/set__F09_ambar_asiento_pareja.png",
+     "role": "carriage 5: navy two-seat benches and reading lamps, geometry only"
+    },
+    {
+     "n": 4,
+     "file": "TRABAJO/refs/set__F08_v2_ambar_bajo.png",
+     "role": "light level only: 2-3 lamps lit, black between them"
+    }
+   ],
+   "prompt": "Rebuild this shot clean, in one pass, from Image 1.\nImage 1 is the current frame: keep its over-the-shoulder framing and Tomás's place; its light is wrong (too many lamps, fill on his face) and is replaced.\nImage 2 is Tomás: identity, face, hair, glasses and wardrobe only; ignore the sheet layout and grey backdrop.\nImage 3 is carriage 5: navy two-seat benches and reading lamps; geometry only.\nImage 4 is the light level only: this few lamps lit, this much black between them.\n\nFILM STILL: vertical 9:16, live-action horror thriller, night train, carriage 5.\nMOMENT: Tomás, in the aisle seat, has turned his head to Martina beside him at the window. Lips closed in a small half smile: he has decided not to insist and is about to ask something gentle. His eyes rest on her face, just off frame left.\nCOMPOSITION: over-the-shoulder close-up from the seat opposite. Tomás from mid-chest up on the right half, his eyes on the upper-right third, hands out of frame. Round thin metal-frame glasses, short tidy dark brown hair exactly as Image 2, navy quilted jacket with horizontal stitching, open over a charcoal grey sweater. Left edge, very close to the lens and out of focus: Martina's near shoulder in the oat knit sweater edged by her open charcoal coat, and a blur of dark wavy hair above it; her face is not in frame. Behind Tomás: the aisle, then the navy seat backs across the aisle with one dozing passenger sunk in shade. No window glass anywhere in frame: the window is on Martina's side, out of frame left.\nLENS: 65mm at T2, handheld at seated eye height, just below his eyeline. Focus on his near eye behind the glasses.\nLIGHT: only 2–3 warm amber ceiling lamps, darkness between them, no added fill. His key is the lit reading lamp over their own bench, just outside the top-left of frame: it rakes the side of his face turned to her and leaves his frame-right cheek, ear and jacket in shadow. In frame only two lamps: one across the aisle, a single soft disc high on the left, and one tiny point far down the carriage. Every other fixture is dark and the carriage behind him is near black. A thin warm glint on the metal rim of his glasses.\nTEXTURE: Clean photographic image, no film grain, no digital sharpening, no HDR look, no glow halos, no orange-teal rim light, real skin texture with pores, natural motion-free still.\nFINISH: low-key, blacks fall to black. Nobody looks into the lens; every gaze has a target inside the carriage. No text, no captions, no watermark, no logos.",
+   "checks": [
+    "Luz: máximo 2–3 lámparas ámbar encendidas en cuadro (contarlas), negro entre ellas; la cara de Tomás con un lado en sombra, sin relleno frontal.",
+    "Detrás de Tomás solo el pasillo y los asientos del otro lado; NINGÚN vidrio de ventana en cuadro.",
+    "Tomás a la derecha del cuadro, de pecho hacia arriba, mirando hacia la izquierda (a Martina), no al lente.",
+    "Borde izquierdo: hombro de Martina desenfocado con el suéter avena (y el borde del abrigo carbón); su cara no aparece.",
+    "Identidad de Tomás como su hoja: anteojos redondos de marco metálico fino, pelo castaño oscuro corto y ordenado (ni engominado ni ondulado), chaqueta acolchada azul marino de costuras horizontales sobre suéter gris carbón.",
+    "Boca cerrada con media sonrisa (primer instante, antes de la línea); manos fuera de cuadro.",
+    "Poca profundidad de campo, sin grano, sin halos, sin texto."
+   ]
+  },
+  {
+   "id": "b2_p4",
+   "call": "c02b",
+   "aspect": "9:16",
+   "refs": [
+    {
+     "n": 1,
+     "file": "REPO/produccion/pruebas/cap01_animatic_v3/previs/v1c/frames/b2_p4.png",
+     "role": "composition reference (current frame)"
+    },
+    {
+     "n": 2,
+     "file": "TRABAJO/refs/personajes__HOJA_martina.png",
+     "role": "Martina: identity, face, hair and wardrobe only"
+    },
+    {
+     "n": 3,
+     "file": "TRABAJO/refs/personajes__HOJA_tomas.png",
+     "role": "Tomás: wardrobe and build only, for the shoulder at the right edge"
+    },
+    {
+     "n": 4,
+     "file": "TRABAJO/refs/set__F08_v2_ambar_bajo.png",
+     "role": "light level only: 2-3 lamps lit, black between them"
+    }
+   ],
+   "prompt": "Rebuild this shot clean, in one pass, from Image 1.\nImage 1 is the current frame: keep Martina's place, the window on frame left and the framing; its light is wrong (six lamps) and the seat beside her is wrongly empty.\nImage 2 is Martina: identity, face, hair and wardrobe only; ignore the sheet layout and grey backdrop.\nImage 3 is Tomás: wardrobe only, for his shoulder; ignore the sheet layout and grey backdrop.\nImage 4 is the light level only: this few lamps lit, this much black between them.\n\nFILM STILL: vertical 9:16, live-action horror thriller, night train, carriage 5.\nMOMENT: Martina sits in the window seat, Tomás close beside her in the aisle seat of the same bench. She stares straight ahead at the front door of the carriage, beyond the camera's left, never at him. Lips closed, jaw set, about to answer. Her LEFT hand lies flat on her left thigh, the oat cuff over the knuckles, five separate fingers.\nCOMPOSITION: close shot from the seat opposite, framed from her lap up. Martina on the left half, her eyes on the upper-left third. Shoulder-length dark brown wavy hair, small mole on her LEFT cheekbone (frame right), oversized oat knit sweater, long charcoal wool coat worn open, dark jeans, the thin strap of her small brown leather crossbody bag across her chest. Frame left: the window, black night, rain only on the outside of the glass. Right edge: Tomás's near shoulder and upper arm in the navy quilted jacket with horizontal stitching, nearer the lens, out of focus; his head stays out of frame. Her LEFT hand low on the right; her RIGHT hand cropped out at the bottom edge. Behind them the carriage falls into darkness.\nLENS: 65mm at T2, handheld at seated eye height, set slightly to Tomás's side so his shoulder goes soft in front. Focus on her eyes.\nLIGHT: only 2–3 warm amber ceiling lamps, darkness between them, no added fill. Her key is the lit reading lamp over her own bench at the top of frame: hard warm light from above on her hair, the window side of her face and her hand; the side of her face toward Tomás falls into shadow. One more far down the carriage, a small soft disc. Every other fixture is dark.\nTEXTURE: Clean photographic image, no film grain, no digital sharpening, no HDR look, no glow halos, no orange-teal rim light, real skin texture with pores, natural motion-free still.\nFINISH: low-key, blacks fall to black. Nobody looks into the lens; every gaze has a target inside the carriage. No text, no captions, no watermark, no logos.",
+   "checks": [
+    "Luz: 2 lámparas ámbar encendidas en cuadro (máximo 3; hoy hay 6), el resto del vagón cae a negro; media cara de Martina en sombra, sin relleno.",
+    "Tomás ESTÁ en el asiento de al lado: se ve su hombro y brazo con la chaqueta acolchada azul marino en el borde derecho, desenfocado; su cabeza fuera de cuadro.",
+    "Martina a la izquierda del cuadro con la ventana a su lado (izquierda del cuadro); lluvia solo por fuera del vidrio.",
+    "Mira al frente, a la puerta delantera (pasa por el lado del lente, no al lente y nunca a Tomás); boca cerrada, mandíbula apretada.",
+    "Mano IZQUIERDA de Martina sobre su muslo izquierdo, abajo a la derecha, sola (la mano de Tomás aún no entra: entra al final del plano); cinco dedos separados, puño avena sobre los nudillos.",
+    "Identidad y vestuario: lunar en el pómulo IZQUIERDO, suéter avena, abrigo carbón abierto, bandolera de cuero café cruzada; banca de dos sin apoyabrazos al medio.",
+    "Sin texto, sin grano, sin halos."
+   ]
+  },
+  {
+   "id": "b3_p1",
+   "call": "c03a",
+   "aspect": "9:16",
+   "refs": [
+    {
+     "n": 1,
+     "file": "REPO/produccion/pruebas/cap01_animatic_v3/previs/v1c/frames/b3_p1.png",
+     "role": "composition reference (current frame)"
+    },
+    {
+     "n": 2,
+     "file": "REPO/produccion/pruebas/cap01_animatic_v3/previs/v1c/frames/b0_p2.png",
+     "role": "earlier shot from the same camera position: where the briefcase sits under the bench (ignore hand, sleeve, boot)"
+    },
+    {
+     "n": 3,
+     "file": "TRABAJO/refs/props__PROP_maletin_v2.png",
+     "role": "briefcase prop: dark body, brass corner caps and two brass latches"
+    },
+    {
+     "n": 4,
+     "file": "TRABAJO/refs/set__F08_v2_ambar_bajo.png",
+     "role": "carriage 2 light level: 2-3 lamps lit, black between them"
+    }
+   ],
+   "prompt": "Rebuild this shot clean, in one pass, from Image 1.\nImage 1 is the current frame: keep its floor-level camera and the aisle; its briefcase stands out in the aisle beside the seat, which is wrong.\nImage 2 is the earlier shot from this same camera position: copy exactly where the briefcase sits, under the bench with only its corner out; ignore the hand, sleeve and boot.\nImage 3 is the briefcase: dark body, brass corner caps and two brass latches; prop only, ignore its background.\nImage 4 is the light level of carriage 2: this few lamps lit, this much black between them.\n\nFILM STILL: vertical 9:16, live-action horror thriller, night train, carriage 2: a floor-level detail.\nMOMENT: nobody touches the briefcase. Its two brass latches have just snapped up on their own and the lid has lifted a finger's width, leaving a thin black gap. The first thread of thin white mist slides out of the gap and down to the floor.\nCOMPOSITION: camera on the aisle floor, looking along the aisle toward the far end door. Left third: the navy two-seat bench of the blue-shirt man and his wife. The briefcase lies flat UNDER that bench at its aisle end, pushed in against the seat rail, its latch side facing the aisle; only one brass corner pokes a few centimetres past the seat edge. The aisle itself is empty. Left edge, cropped at the shin: the wife's still legs in olive trousers, her boot flat on the floor (aisle seat); deeper toward the window, in shadow, the man's khaki trouser hems and grey shoes. Centre and right: bare floor with its double rubber strip running to the end door, whose small window shows only the dark gangway. Black side windows, rain only on the outside of the glass.\nLENS: 35mm at T2.8, locked off, the lens ten centimetres above the floor. Focus on the latches and the brass corner; the door and the far seats soft.\nLIGHT: only 2–3 warm amber ceiling lamps, darkness between them, no added fill. Two are in frame: one above this bench, its short cone grazing the floor and catching the brass and the mist; one small, far down the right side. Every other fixture is dark. Under the bench is deep shadow; the floor shines only where the cone lands.\nTEXTURE: Clean photographic image, no film grain, no digital sharpening, no HDR look, no glow halos, no orange-teal rim light, real skin texture with pores, natural motion-free still.\nFINISH: low-key, blacks fall to black. Nobody looks into the lens: no face is in frame. No text, no captions, no watermark, no logos.",
+   "checks": [
+    "El maletín está BAJO la banca del hombre de camisa azul, por el extremo del pasillo: solo asoma la esquina metálica dorada; NO está parado al lado del asiento ni en medio del pasillo.",
+    "Mismo encuadre que b0_p2: cámara a ras de piso mirando por el pasillo hacia la puerta del fondo, banca a la izquierda; sin mano, manga ni bota.",
+    "Los dos cierres dorados recién saltados, tapa levantada apenas un dedo, primer hilo de niebla blanca fina (no densa); nadie toca el maletín.",
+    "Maletín como PROP_maletin_v2: cuerpo oscuro, esquineras y cierres de metal dorado (no plateado).",
+    "Luz: 2 lámparas ámbar encendidas en cuadro (máximo 3), negro entre ellas, sombra profunda bajo la banca.",
+    "Piernas quietas junto al maletín (ella en el asiento del pasillo, él hacia la ventana); nadie de pie; ventanita de la puerta oscura; lluvia solo por fuera.",
+    "Sin texto, sin grano."
+   ]
+  },
+  {
+   "id": "b3_p2",
+   "call": "c03a",
+   "aspect": "9:16",
+   "refs": [
+    {
+     "n": 1,
+     "file": "REPO/produccion/pruebas/cap01_animatic_v3/previs/frames/b3_p2.png",
+     "role": "composition reference (current frame)"
+    },
+    {
+     "n": 2,
+     "file": "TRABAJO/refs/personajes__HOJA_extra_pareja_camisa_azul.png",
+     "role": "the blue-shirt man and his wife: identity, hair and wardrobe only"
+    },
+    {
+     "n": 3,
+     "file": "TRABAJO/refs/props__PROP_maletin_v2.png",
+     "role": "briefcase prop: dark body, brass corner caps and latches"
+    },
+    {
+     "n": 4,
+     "file": "REPO/produccion/pruebas/cap01_animatic_v3/previs/v1c/frames/b3_p3.png",
+     "role": "next shot of the scene: same bench, same sides, same window (here both still asleep)"
+    },
+    {
+     "n": 5,
+     "file": "TRABAJO/refs/set__F08_v2_ambar_bajo.png",
+     "role": "carriage 2 light level: 2-3 lamps lit, black between them"
+    }
+   ],
+   "prompt": "Rebuild this shot clean, in one pass, from Image 1.\nImage 1 is the current frame: keep only its low camera height, the look of the briefcase and the thin mist; its standing man and the briefcase out in the aisle are wrong.\nImage 2 is the blue-shirt man and his wife: identity, hair and wardrobe only; ignore the sheet layout and grey backdrop.\nImage 3 is the briefcase: dark body, brass corner caps and latches; prop only.\nImage 4 is the next shot of this scene: same bench, same sides, same window; here both are still asleep.\nImage 5 is the light level of carriage 2: this few lamps lit.\n\nFILM STILL: vertical 9:16, live-action horror thriller, night train, carriage 2.\nMOMENT: the blue-shirt man sleeps SEATED in the window seat, head fallen against the glass, hands loose on his thighs. His wife sleeps in the aisle seat with her head on his shoulder. Under their bench the briefcase lid already stands open a hand's width, and thin white mist is crawling over the floor, around his shoes and up his shins. Nobody stands.\nCOMPOSITION: low frontal shot from the floor of the row in front, looking up at them. Bottom third: his grey shoes and khaki shins on frame left, her olive trousers and boots on frame right. Bottom right, under the aisle end of the bench: the briefcase, lid open toward us, one brass corner past the seat edge. Middle: their knees and his slack hands, five separate fingers each. Upper third: his cobalt blue shirt, grey beard and balding head against the window at top left; her cream cardigan and black bob on his shoulder at top right. Window on frame left: black night, rain only on the outside of the glass. Left edge: a dark seat leg, out of focus, close to the lens.\nLENS: 28mm at T2.8, camera at shin height, tilted up. Focus on his shoes and the open lid; the faces slightly soft.\nLIGHT: only 2–3 warm amber ceiling lamps, darkness between them, no added fill. One lit reading lamp over their bench at the top of frame is the key: top light on his head, shoulder and hands. The mist glows amber only where that cone reaches the floor and is grey in shadow. One more lamp far behind, small. Every other fixture is dark.\nTEXTURE: Clean photographic image, no film grain, no digital sharpening, no HDR look, no glow halos, no orange-teal rim light, real skin texture with pores, natural motion-free still.\nFINISH: low-key, blacks fall to black. Nobody looks into the lens; every gaze has a target inside the carriage. No text, no captions, no watermark, no logos.",
+   "checks": [
+    "El hombre de camisa azul está SENTADO y dormido con la cabeza contra la ventana (izquierda del cuadro); nadie de pie en el pasillo.",
+    "Su esposa (chaleco crema, melena negra) dormida en su hombro, en el asiento del pasillo, a la derecha del cuadro.",
+    "Maletín BAJO la banca, por el extremo del pasillo (abajo a la derecha), con la tapa abierta; no en medio del pasillo. Esquineras doradas.",
+    "Niebla blanca, fina y baja, que sale del maletín, se arrastra por el piso hacia los zapatos de él y le sube por las canillas; no densa.",
+    "Plano bajo (cámara a la altura de las canillas, mirando hacia arriba); foco abajo, caras algo suaves.",
+    "Luz: 2 lámparas ámbar encendidas en cuadro (máximo 3), negro entre ellas; lluvia solo por fuera del vidrio.",
+    "Camisa azul cobalto (no negra), pantalón caqui, barba gris; ojos cerrados los dos; manos con cinco dedos; sin texto ni grano."
+   ]
+  },
+  {
+   "id": "b4_p1",
+   "call": "c04a",
+   "aspect": "9:16",
+   "refs": [
+    {
+     "n": 1,
+     "file": "REPO/produccion/pruebas/cap01_animatic_v3/previs/v1c/frames/b4_p1.png",
+     "role": "composition reference (current frame)"
+    },
+    {
+     "n": 2,
+     "file": "TRABAJO/refs/personajes__HOJA_carmen.png",
+     "role": "Carmen: identity, face, hair and wardrobe only"
+    },
+    {
+     "n": 3,
+     "file": "TRABAJO/refs/personajes__HOJA_ivan.png",
+     "role": "Iván: identity, face and wardrobe only"
+    },
+    {
+     "n": 4,
+     "file": "TRABAJO/refs/set__F08_v2_ambar_bajo.png",
+     "role": "light level only: 2-3 lamps lit, black between them"
+    }
+   ],
+   "prompt": "Rebuild this shot clean, in one pass, from Image 1.\nImage 1 is the current frame: keep its camera position, the aisle, the door and where each person sits; its light is wrong (seven lamps lit).\nImage 2 is Carmen: identity, face, hair and wardrobe only; ignore the sheet layout and grey backdrop.\nImage 3 is Iván: identity, face and wardrobe only; ignore the sheet layout and grey backdrop.\nImage 4 is the light level only: this few lamps lit, this much black between them.\n\nFILM STILL: vertical 9:16, live-action horror thriller, night train, carriage 5.\nMOMENT: a muffled scream has just come from beyond the front door. Carmen, nearest the camera, is nodding off: eyes closed, chin sinking to her chest. Iván, mid-carriage, still seated, is turning his shaved head toward the front door, his eyes already on it. By the door a man in a dark coat stands with his back to us, staring at it.\nCOMPOSITION: wide shot down the aisle toward the front door. Bottom right: Carmen in an aisle seat facing us, short auburn curls greying at the roots, light blue nurse scrubs under an open brown wool coat, glasses hanging on a cord against her chest, cream canvas tote on her LEFT shoulder (frame right). Left of the aisle, a few rows ahead: Iván sideways in an aisle seat, seen in profile, broken nose, grey hoodie under a brown canvas work jacket. A few other passengers are dark heads above the navy seat backs. The aisle runs up the left-centre of frame to the green end door; its small window shows only the dark gangway. Curtained side windows: black night, rain only on the outside of the glass. Bottom left corner: a seat back, out of focus, close to the lens.\nLENS: 32mm at T2.8, handheld at seated eye height, just right of the aisle axis. Focus on Iván; Carmen a touch soft in front, the door soft behind.\nLIGHT: only 2–3 warm amber ceiling lamps, darkness between them, no added fill. Exactly three are lit: one over Carmen's row at top right, her key, leaving half her face in shadow; one over Iván's side on the left; one small, near the door. Every other fixture and the ceiling are dark. The seat rows between the lamps drop to silhouette.\nTEXTURE: Clean photographic image, no film grain, no digital sharpening, no HDR look, no glow halos, no orange-teal rim light, real skin texture with pores, natural motion-free still.\nFINISH: low-key, blacks fall to black. Nobody looks into the lens; every gaze has a target inside the carriage. No text, no captions, no watermark, no logos.",
+   "checks": [
+    "Luz: exactamente 3 lámparas ámbar encendidas (contarlas; hoy hay 7), el resto apagadas, techo oscuro, filas en silueta entre lámparas, sin relleno.",
+    "Carmen en primer término a la derecha, cabeceando con los ojos cerrados: uniforme celeste bajo abrigo café, anteojos en cordón, bolso de lona al hombro IZQUIERDO (derecha del cuadro).",
+    "Iván a media distancia a la izquierda del pasillo, sentado, de perfil, girando la cabeza hacia la puerta delantera: rapado, nariz quebrada, capucha gris bajo chaqueta de lona.",
+    "Un pasajero de pie junto a la puerta delantera, de espaldas; ventanita con el fuelle oscuro, todavía sin siluetas.",
+    "Nadie mira al lente; todavía es ámbar (sin rojo de emergencia).",
+    "Ventanas laterales negras con lluvia solo por fuera; composición no simétrica (pasillo a la izquierda del centro, respaldo desenfocado abajo a la izquierda).",
+    "Sin texto, sin grano, sin halos."
+   ]
+  }
+ ]
+}

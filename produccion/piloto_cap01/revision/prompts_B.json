@@ -1,0 +1,333 @@
+{
+ "frames": [
+  {
+   "id": "b4_p4",
+   "call": "c04b",
+   "aspect": "9:16",
+   "refs": [
+    {
+     "n": 1,
+     "file": "REPO/produccion/pruebas/cap01_animatic_v3/previs/frames/b4_p4.png",
+     "role": "composition reference (current frame)"
+    },
+    {
+     "n": 2,
+     "file": "TRABAJO/refs/set__F10_rojo_pasajeros_hacia_puerta.png",
+     "role": "carriage 5 in red emergency light: door metal, wired glass, seats and ceiling strip only"
+    }
+   ],
+   "prompt": "Rebuild this shot clean, in one pass, from Image 1.\nImage 1 is the current frame: composition reference only, to be rebuilt at full resolution.\nImage 2 is carriage 5 in red emergency light: door metal, wired glass, seats and red ceiling strip only.\nFILM STILL: vertical 9:16 live-action frame, night train, carriage 5 a second after the lights failed. Close shot of the small window in the carriage's front door.\nMOMENT: two infected passengers have just slammed into the far side of the glass. Their palms are flat on it, fingertips pale from the pressure, and the door shudders in its frame. Their white eyes stare past the left edge of the lens at the passengers inside.\nCOMPOSITION: seen from the aisle inside carriage 5. The grey-green riveted door fills the frame; its rounded window with rhombic wire mesh sits right of centre in the upper half. Behind the glass: a woman on the left, cheek against the pane, her RIGHT palm low on the glass at frame left; a taller man on the right, half hidden behind her, his LEFT palm higher at frame right. Two palms only, five separate fingers each, short broken dirty nails, dark veins on both necks. Behind them only the dark gangway in a dim red cast. The glass is dry. Lower left corner, out of focus: the top of a navy seat back with its chrome handrail arc. The worn bronze lock plate on the door's left edge stays soft.\nLENS: 50mm at T2, standing eye height, one step left of the aisle axis so the door is slightly oblique. Focus on the palms; the faces just behind them fall soft.\nLIGHT: single red emergency light from above, half the face in shadow, no white fill. The source is the narrow red ceiling strip on our side; the tube above this door is dead. Red saturated but dark, never pink, never even; the lower half of the door falls to black.\nTEXTURE: Clean photographic image, no film grain, no digital sharpening, no HDR look, no glow halos, no orange-teal rim light, real skin texture with pores.\nFINISH: Nobody looks into the lens; every gaze has a target inside the carriage. No text, no captions, no watermark, no logos.",
+   "checks": [
+    "Resolución completa en 9:16 (1152×2048 o más) y sigue siendo el plano cerrado de la ventanita de la puerta delantera del vagón 5.",
+    "Dos infectados tras el vidrio con las palmas apoyadas: solo dos palmas, cinco dedos separados en cada una, ojos blancos, venas oscuras en el cuello.",
+    "Ninguno mira al lente: las miradas pasan por el costado izquierdo del lente, hacia los pasajeros.",
+    "Vidrio con malla romboidal, seco (sin gotas, sin lluvia, sin manchas); detrás solo fuelle oscuro con tinte rojo, sin cielo ni pasillo iluminado.",
+    "Luz: solo rojo desde arriba, saturado pero oscuro (no rosado ni parejo); tubo sobre la puerta apagado; cero luz blanca; la mitad baja de la puerta cae a negro.",
+    "Composición no centrada: ventanita a la derecha del centro y respaldo desenfocado abajo a la izquierda. Sin grano, sin texto ni logos."
+   ]
+  },
+  {
+   "id": "b4_p5",
+   "call": "c04b",
+   "aspect": "9:16",
+   "refs": [
+    {
+     "n": 1,
+     "file": "REPO/produccion/pruebas/cap01_animatic_v3/previs/frames/b4_p5.png",
+     "role": "composition reference (current frame)"
+    },
+    {
+     "n": 2,
+     "file": "TRABAJO/refs/personajes__HOJA_hugo.png",
+     "role": "Don Hugo: identity, face, moustache, cap and uniform only"
+    },
+    {
+     "n": 3,
+     "file": "TRABAJO/refs/props__PROP_llave_y_cerradura.png",
+     "role": "the antique iron key with its brass tag: prop only"
+    },
+    {
+     "n": 4,
+     "file": "TRABAJO/refs/personajes__HOJA_ivan.png",
+     "role": "Iván seen from behind: head shape, hood and jacket only"
+    },
+    {
+     "n": 5,
+     "file": "TRABAJO/refs/personajes__HOJA_carmen.png",
+     "role": "Carmen seen from behind: hair, coat and bag only"
+    }
+   ],
+   "prompt": "Rebuild this shot clean, in one pass, from Image 1.\nImage 1 is the current frame: composition reference only (camera position, Hugo's place, foreground heads); his gaze is corrected below.\nImage 2 is Don Hugo: identity, face, moustache, cap and uniform only; ignore the sheet layout and grey backdrop.\nImage 3 is the antique iron key with its brass tag: prop only.\nImage 4 is Iván, seen here from behind: head shape, hood and jacket only; ignore the sheet layout and grey backdrop.\nImage 5 is Carmen, seen here from behind: hair, coat and bag only; ignore the sheet layout and grey backdrop.\nFILM STILL: vertical 9:16 live-action frame, carriage 5 of a night train in red emergency light, looking toward its rear door.\nMOMENT: the rear door has just burst open and Don Hugo is one step inside, mid-shout. His RIGHT arm is straight up, the antique key in his RIGHT fist above his cap. The whistle has just dropped from his lips and swings on its chain at his chest. His LEFT hand is flat on the edge of the open door beside him, holding it open. His eyes are fixed on the front door at the far end of the carriage, behind the camera: the eyeline passes high above the lens and to its left, over the heads.\nCOMPOSITION: seen from a seat row mid-carriage. Hugo stands in the aisle in the left third, framed from the knees up; the raised key reaches the upper left. Foreground, out of focus, backs of heads turned toward him: Iván's shaved head, grey hood and dark brown canvas jacket at the right edge; Carmen's grey-rooted curls and brown coat, cream bag on her LEFT shoulder, lower centre; a young woman's dark wavy hair at the left edge. Behind Hugo, through the open door, only the empty dark red gangway. Side windows black, rain only on the outside of the glass.\nHugo: thick grey moustache, navy cap with a plain wheel badge and no letters, navy conductor jacket.\nLENS: 35mm at T2, handheld at seated eye height. Focus on Hugo's face and the key.\nLIGHT: single red emergency light from above, half the face in shadow, no white fill. The source is the narrow red ceiling strip; red saturated but dark, never pink, never even; the seats fall to black.\nTEXTURE: Clean photographic image, no film grain, no digital sharpening, no HDR look, no glow halos, no orange-teal rim light, real skin texture with pores.\nFINISH: Nobody looks into the lens; every gaze has a target inside the carriage. Each of Hugo's hands shows five separate fingers. No text, no captions, no watermark, no logos.",
+   "checks": [
+    "Hugo NO mira al lente: la mirada va alta, por encima de las cabezas, hacia el fondo del vagón (puerta delantera, detrás de la cámara) y pasa a la izquierda del lente.",
+    "Llave antigua en alto en la mano DERECHA (queda a la izquierda del cuadro porque está de frente); mano IZQUIERDA apoyada en el canto de la puerta abierta; cinco dedos en cada mano.",
+    "Boca abierta gritando; silbato colgando de su cadena sobre el pecho (no en la boca).",
+    "Identidad de Hugo: bigote gris tupido, gorra azul marino con insignia de rueda SIN letras, chaqueta de revisor azul marino. Resolución completa.",
+    "Tras la puerta trasera abierta solo el fuelle rojo oscuro y vacío: ningún infectado de ese lado.",
+    "Primer término desenfocado y de espaldas: Iván (rapado, capucha gris) a la derecha, Carmen (rizos, bolso al hombro IZQUIERDO) abajo al centro, pelo oscuro ondulado al borde izquierdo; nadie de frente.",
+    "Luz: solo rojo desde arriba, media cara de Hugo en sombra, sin relleno blanco; rojo oscuro, no rosado."
+   ]
+  },
+  {
+   "id": "b5_p4",
+   "call": "c05b",
+   "aspect": "9:16",
+   "refs": [
+    {
+     "n": 1,
+     "file": "REPO/produccion/pruebas/cap01_animatic_v3/previs/v1c/frames/b5_p4.png",
+     "role": "composition reference (current frame)"
+    },
+    {
+     "n": 2,
+     "file": "TRABAJO/refs/personajes__HOJA_carmen.png",
+     "role": "Carmen: identity, face, hair and wardrobe only"
+    },
+    {
+     "n": 3,
+     "file": "TRABAJO/refs/personajes__HOJA_ivan.png",
+     "role": "Iván: identity, face and wardrobe only"
+    },
+    {
+     "n": 4,
+     "file": "TRABAJO/refs/set__F07_rojo_fuelle_vestibulo.png",
+     "role": "the gangway vestibule in red light: walls, floor and ceiling lamp only"
+    }
+   ],
+   "prompt": "Rebuild this shot clean, in one pass, from Image 1.\nImage 1 is the current frame: composition reference only; her gaze is corrected below.\nImage 2 is Carmen: identity, face, hair and wardrobe only; ignore the sheet layout and grey backdrop.\nImage 3 is Iván: identity, face and wardrobe only; ignore the sheet layout and grey backdrop.\nImage 4 is the gangway vestibule in red light: walls, floor and ceiling lamp only.\nFILM STILL: vertical 9:16 live-action frame, the gangway between carriage 5 and the last carriage of a night train, red emergency light.\nMOMENT: Carmen has just crashed back against the broken door of carriage 5. To stay on her feet her RIGHT palm is pressed flat on the cracked glass still held in the window frame; her head is turned down toward that hand and her eyes are on it. Iván grips her LEFT wrist with both hands and is already pulling her away, his eyes on the grey arm behind her. That infected arm reaches through the broken window; its fingers are opening, letting go of her coat collar.\nCOMPOSITION: camera inside the gangway, close. The grey-green door of carriage 5 runs up the left edge at a steep angle. Carmen is left of centre, framed from the thighs up, twisted toward frame left; her RIGHT hand is on the glass at the left edge, at shoulder height, back of the hand toward us, five separate fingers spread, a dark red-black smear on the shards under it. The infected forearm shows behind her right shoulder: grey skin, dark veins, short broken dirty nails. Iván fills the right third, closer to the lens, his near shoulder soft and cropped by the frame. Behind them only the dark red vestibule, closed metal walls.\nCarmen: grey-rooted curls, light-blue nurse uniform under a long brown coat, cream bag on her LEFT shoulder (frame right), glasses hanging on a bead cord. Iván: shaved head, broken nose, dark brown canvas work jacket.\nLENS: 32mm at T2, handheld at chest height. Focus on Carmen's face and her right hand.\nLIGHT: single red emergency light from above, half the face in shadow, no white fill. One caged red ceiling lamp is the source; red saturated but dark, never pink, never even; the corners fall to black.\nTEXTURE: Clean photographic image, no film grain, no digital sharpening, no HDR look, no glow halos, no orange-teal rim light, real skin texture with pores.\nFINISH: Nobody looks into the lens; every gaze has a target inside the carriage. No text, no captions, no watermark, no logos.",
+   "checks": [
+    "Carmen NO mira a cámara: cabeza girada hacia la izquierda del cuadro y ojos sobre su mano derecha en el vidrio.",
+    "Palma DERECHA apoyada en el vidrio roto, en el borde izquierdo del cuadro; se ve el dorso con cinco dedos separados; mancha rojo-negra oscura y mate en los vidrios, sin rojo vivo ni herida abierta.",
+    "Iván, a la derecha del cuadro, la toma de la muñeca IZQUIERDA y la tira; mira el brazo infectado, no el lente.",
+    "Brazo infectado gris con venas oscuras y uñas cortas, rotas y sucias, soltando el cuello del abrigo, detrás del hombro derecho de Carmen.",
+    "Carmen: uniforme celeste bajo abrigo largo café, bolso al hombro IZQUIERDO (derecha del cuadro), anteojos colgando del cordón de cuentas, rizos canosos. Iván: rapado, nariz quebrada, chaqueta de lona café oscuro.",
+    "Fondo: solo el fuelle rojo oscuro, sin ventanas ni lluvia. Luz: una sola fuente roja cenital, media cara en sombra, sin blanco; rojo oscuro, no rosado ni parejo."
+   ]
+  },
+  {
+   "id": "b5_p7",
+   "call": "c05b",
+   "aspect": "9:16",
+   "refs": [
+    {
+     "n": 1,
+     "file": "REPO/produccion/pruebas/cap01_animatic_v3/previs/v1c/frames/b5_p7.png",
+     "role": "composition reference (current frame)"
+    },
+    {
+     "n": 2,
+     "file": "TRABAJO/refs/personajes__HOJA_tomas.png",
+     "role": "Tomás: identity, face, hair and wardrobe only"
+    },
+    {
+     "n": 3,
+     "file": "TRABAJO/refs/personajes__HOJA_martina.png",
+     "role": "Martina: identity, face, hair and wardrobe only"
+    },
+    {
+     "n": 4,
+     "file": "TRABAJO/refs/personajes__HOJA_carmen.png",
+     "role": "Carmen: identity, face, hair and wardrobe only"
+    },
+    {
+     "n": 5,
+     "file": "TRABAJO/refs/personajes__HOJA_ivan.png",
+     "role": "Iván: identity, face and wardrobe only"
+    }
+   ],
+   "prompt": "Rebuild this shot clean, in one pass, from Image 1.\nImage 1 is the current frame: composition reference only; gaze and light are corrected below.\nImage 2 is Tomás: identity, face, hair and wardrobe only.\nImage 3 is Martina: identity, face, hair and wardrobe only.\nImage 4 is Carmen: identity, face, hair and wardrobe only.\nImage 5 is Iván: identity, face and wardrobe only. In Images 2 to 5 ignore the sheet layout and grey backdrop.\nFILM STILL: vertical 9:16 live-action frame, inside the last carriage of a night train, looking toward its only door.\nMOMENT: the group is already bursting in. Tomás leads, his LEFT hand locked around Martina's RIGHT hand, dragging her; his head is turned toward frame left and his eyes search the empty seats past the left side of the lens. Martina pitches forward, eyes on the aisle floor. Behind them Iván shoves Carmen, his RIGHT hand flat on her back, and looks back at the doorway; Carmen holds her closed RIGHT fist against her chest and looks down at it.\nCOMPOSITION: seen from the aisle, facing the door. All cropped at the knees. Tomás in the left third; Martina right of centre; Carmen and Iván deeper between them. The grey-green door stands open inward against the right wall. Through the doorway only the dark red gangway and a last figure in a peaked cap. Lower left, out of focus: a seat back with a chrome handrail.\nTomás: round thin metal-frame glasses, short tidy side-parted hair as in his sheet, navy quilted jacket with horizontal stitching over a charcoal sweater. Martina: oat sweater with cuffs over her knuckles, long open charcoal coat, dark jeans, small brown leather crossbody bag, mole on her LEFT cheekbone. Carmen: grey-rooted curls, light-blue uniform under a long brown coat, bag on her LEFT shoulder, glasses on a bead cord. Iván: shaved head, broken nose, dark brown canvas work jacket.\nLENS: 24mm at T2.8, handheld at chest height, backing away. Focus on Tomás.\nLIGHT: single red emergency light from above, half the face in shadow, no white fill. The only white light is the cold tube above the door, behind them: it rims hair and shoulders and never reaches a face. Red saturated but dark, never pink.\nTEXTURE: Clean photographic image, no film grain, no digital sharpening, no HDR look, no glow halos, no orange-teal rim light, real skin texture with pores.\nFINISH: Nobody looks into the lens; every gaze has a target inside the carriage. Hands show five separate fingers. No text, no captions, no watermark, no logos.",
+   "checks": [
+    "Tomás NO mira al lente: cabeza girada hacia la izquierda del cuadro, ojos hacia adentro del vagón por el costado izquierdo del lente.",
+    "Única luz blanca = el tubo frío sobre la puerta, detrás del grupo: solo recorta pelo y hombros. Ninguna cara con luz blanca; caras en rojo con media sombra.",
+    "Tomás a la izquierda del cuadro y Martina a la derecha; la mano IZQUIERDA de Tomás lleva la DERECHA de Martina; manos con cinco dedos.",
+    "Tomás como su hoja: anteojos redondos de marco fino, pelo corto con partidura (sin rizos ni mechón), acolchado de costuras HORIZONTALES (no rombos) sobre suéter gris carbón.",
+    "Martina: suéter avena con puños sobre los nudillos, abrigo carbón abierto, bandolera chica café, lunar en el pómulo IZQUIERDO; mira el piso.",
+    "Iván empuja a Carmen (mano derecha en su espalda) y mira hacia la puerta; Carmen lleva el puño DERECHO cerrado contra el pecho, bolso al hombro IZQUIERDO, y se mira la mano.",
+    "Una sola puerta, abierta hacia adentro contra la pared derecha; tras el vano solo fuelle rojo oscuro y la silueta con gorra (Hugo, último). Nadie mira a cámara."
+   ]
+  },
+  {
+   "id": "b5_p8",
+   "call": "c06a",
+   "aspect": "9:16",
+   "refs": [
+    {
+     "n": 1,
+     "file": "REPO/produccion/pruebas/cap01_animatic_v3/previs/v1c/frames/b5_p8.png",
+     "role": "composition reference (current frame)"
+    },
+    {
+     "n": 2,
+     "file": "TRABAJO/refs/personajes__HOJA_hugo.png",
+     "role": "Don Hugo: identity, face, moustache, cap and uniform only"
+    },
+    {
+     "n": 3,
+     "file": "TRABAJO/refs/props__PROP_llave_y_cerradura.png",
+     "role": "the antique key and the bronze lock plate (keyhole above, handle below): props only"
+    },
+    {
+     "n": 4,
+     "file": "TRABAJO/refs/set__F03_rojo_puerta_desde_dentro_0-45.png",
+     "role": "the last carriage's door seen from inside: metal, window, mesh and plate position only"
+    }
+   ],
+   "prompt": "Rebuild this shot clean, in one pass, from Image 1.\nImage 1 is the current frame: composition reference only (Hugo left, door right, lock plate, window corner).\nImage 2 is Don Hugo: identity, face, moustache, cap and uniform only; ignore the sheet layout and grey backdrop.\nImage 3 is the antique key and the bronze lock plate, keyhole above and handle below: props only.\nImage 4 is the last carriage's door seen from inside: metal, window, mesh and plate position only.\nFILM STILL: vertical 9:16 live-action frame, inside the last carriage of a night train, tight on its door at lock height.\nMOMENT: Don Hugo is already throwing his whole weight into the door, shoulder and cheek against the metal, forcing it shut. A grey infected hand is caught in the gap at the lock edge, crushed between door and frame, its fingers scraping the metal. Hugo's RIGHT hand is turning the antique key in the keyhole, from the inside; his eyes are down on the key.\nCOMPOSITION: seen from inside the carriage, close. Hugo's dark back and shoulder fill the left half, soft at the near edge; his face in profile in the upper left, turned toward frame right. The grey-green riveted door fills the right half. On the door's LEFT edge, the worn bronze plate: keyhole above with the key in it, handle below; no bolt, no latch. Just above the plate the infected hand comes through the gap: five separate fingers, grey skin, dark veins, nails short, broken and dirty. Top right: the lower corner of the small window with rhombic wire mesh; its glass is dry and clean, and behind it only dark shapes in a dark red gangway. His whistle hangs on its chain against the jacket.\nHugo: thick grey moustache, navy cap with a plain wheel badge and no letters, navy conductor jacket.\nLENS: 50mm at T2, handheld at lock height. Focus on the key and the trapped hand; Hugo's shoulder and the window stay soft.\nLIGHT: single red emergency light from above, half the face in shadow, no white fill. The only white light is the cold tube above the door, out of frame: a thin cold edge on the cap and shoulder, nothing on the face. Red saturated but dark, never pink, never even; the jacket falls to black.\nTEXTURE: Clean photographic image, no film grain, no digital sharpening, no HDR look, no glow halos, no orange-teal rim light, real skin texture with pores.\nFINISH: Nobody looks into the lens; every gaze has a target inside the carriage. Hugo's right hand shows five separate fingers. No text, no captions, no watermark, no logos.",
+   "checks": [
+    "Mano infectada en la ranura del lado de la cerradura: cinco dedos separados, uñas CORTAS, rotas y sucias (ni largas ni parejas), piel gris con venas oscuras.",
+    "La llave gira por DENTRO, en la bocallave, en la mano DERECHA de Hugo; placa de bronce en el borde IZQUIERDO de la puerta, bocallave arriba y manija abajo; sin cerrojo.",
+    "Ventanita seca y limpia (sin gotas, sin lluvia, todavía sin manchas), con malla romboidal; detrás solo fuelle rojo oscuro.",
+    "Hugo cierra con hombro y cuerpo y mira la llave, no el lente; bigote gris tupido, gorra con rueda SIN letras, chaqueta azul marino, silbato colgando de su cadena.",
+    "Luz: rojo desde arriba con media cara en sombra; el tubo frío solo deja un filo en la gorra y el hombro; ninguna luz blanca en la cara.",
+    "Puerta de metal gris verdoso remachado; foco en la llave y la mano atrapada; sin grano ni texto."
+   ]
+  },
+  {
+   "id": "b6_p2",
+   "call": "c06b",
+   "aspect": "9:16",
+   "refs": [
+    {
+     "n": 1,
+     "file": "REPO/produccion/pruebas/cap01_animatic_v3/previs/v1c/frames/b6_p2.png",
+     "role": "composition reference (current frame)"
+    },
+    {
+     "n": 2,
+     "file": "TRABAJO/refs/personajes__HOJA_carmen.png",
+     "role": "Carmen: identity, face, hair and wardrobe only"
+    },
+    {
+     "n": 3,
+     "file": "TRABAJO/refs/personajes__ESTADO_carmen_palma_v2_palma.png",
+     "role": "look of the thin cut and the dark red-black stain only (the reference shows a left hand: ignore which hand)"
+    },
+    {
+     "n": 4,
+     "file": "TRABAJO/refs/set__F02_rojo_ultimo_vagon_hacia_fondo_cabina.png",
+     "role": "rear of the last carriage in red light: what is behind her, out of focus; rear window black here"
+    }
+   ],
+   "prompt": "Rebuild this shot clean, in one pass, from Image 1.\nImage 1 is the current frame: composition reference only (Carmen's size in frame); her hands and the background change as written below.\nImage 2 is Carmen: identity, face, hair and wardrobe only; ignore the sheet layout and grey backdrop.\nImage 3 shows only what the cut and its stain look like. It shows a left hand: ignore which hand and ignore its background.\nImage 4 is the rear of the last carriage in red light: what is behind her, out of focus; its rear window is black here.\nFILM STILL: vertical 9:16 live-action frame, inside the last carriage of a night train, the silence after the chase. Close-up of Carmen.\nMOMENT: Carmen stands still in the aisle, chin down, holding her RIGHT hand open in front of her chest. Her eyes are lowered onto the palm: a thin cut across the heel of the hand with a small dark red-black stain around it, matte, almost black. The fingers are open and loose; the hand has not started to close. Her LEFT hand grips the strap of the bag on her LEFT shoulder.\nCOMPOSITION: seen from the door side, facing her. Carmen is right of centre, framed from mid-chest up, her face in the upper right third. Her RIGHT hand is on the frame-left side of her body at sternum height, palm up and tilted toward the lens, fingers pointing toward frame right, thumb along the lower edge nearest the lens, five separate fingers. Her LEFT hand and the cream bag strap are at the right edge. The glasses hang on their bead cord on her chest. Behind her, out of focus: navy seats facing us with chrome handrail arcs and, far back, the rear wall with its black window. Far left edge, clear of her hand: a dark out-of-focus shoulder in brown canvas.\nCarmen: grey-rooted curls, light-blue nurse uniform under a long brown coat.\nLENS: 85mm at T2, locked off at her eye height. Focus on the palm and her lowered eyes; everything else soft.\nLIGHT: single red emergency light from above, half the face in shadow, no white fill. The only white light is the cold tube above the door, behind the camera: a faint cold edge on the top of her curls, nothing on the face. Red saturated but dark, never pink, never even.\nTEXTURE: Clean photographic image, no film grain, no digital sharpening, no HDR look, no glow halos, no orange-teal rim light, real skin texture with pores.\nFINISH: Nobody looks into the lens; every gaze has a target inside the carriage. No text, no captions, no watermark, no logos.",
+   "checks": [
+    "Es la mano DERECHA: sale del lado izquierdo del cuadro, los dedos apuntan a la derecha del cuadro y el pulgar queda en el borde de abajo, hacia el lente. Si el pulgar queda arriba, es la izquierda: descartar.",
+    "Palma abierta cerca del pecho, todavía sin cerrar el puño ni entrar al abrigo; cinco dedos separados.",
+    "Corte fino en el talón de la palma con mancha rojo-negra oscura y mate; sin rojo vivo, sin herida abierta.",
+    "Mirada baja sobre la palma; no mira a cámara.",
+    "Mano IZQUIERDA en la correa del bolso, al hombro IZQUIERDO (derecha del cuadro); anteojos colgando del cordón de cuentas; uniforme celeste bajo abrigo café; rizos canosos.",
+    "Fondo desenfocado hacia la pared trasera (asientos de frente, ventana trasera negra); no aparece la puerta ni nada que parezca una segunda puerta.",
+    "Luz roja desde arriba con media cara en sombra; el tubo frío solo roza los rizos; ninguna luz blanca en la cara."
+   ]
+  },
+  {
+   "id": "b6_p3",
+   "call": "c06b",
+   "aspect": "9:16",
+   "refs": [
+    {
+     "n": 1,
+     "file": "REPO/produccion/pruebas/cap01_animatic_v3/previs/v1c/frames/b6_p3.png",
+     "role": "composition reference (current frame)"
+    },
+    {
+     "n": 2,
+     "file": "TRABAJO/refs/personajes__HOJA_tomas.png",
+     "role": "Tomás: identity, face, hair and wardrobe only"
+    },
+    {
+     "n": 3,
+     "file": "TRABAJO/refs/personajes__HOJA_martina.png",
+     "role": "Martina: identity, face, hair and wardrobe only"
+    },
+    {
+     "n": 4,
+     "file": "TRABAJO/refs/set__F02_rojo_ultimo_vagon_hacia_fondo_cabina.png",
+     "role": "rear wall of the last carriage in red light: geometry only; rear window black here"
+    }
+   ],
+   "prompt": "Rebuild this shot clean, in one pass, from Image 1.\nImage 1 is the current frame: composition reference only; light, his face and the back wall are corrected below.\nImage 2 is Tomás: identity, face, hair and wardrobe only; ignore the sheet layout and grey backdrop.\nImage 3 is Martina: identity, face, hair and wardrobe only; ignore the sheet layout and grey backdrop.\nImage 4 is the rear wall of the last carriage in red light: geometry only; here its rear window is black.\nFILM STILL: vertical 9:16 live-action frame, inside the last carriage of a night train, the silence after the chase. Two-shot from the door side.\nMOMENT: both stand in the aisle. Tomás's head is already turned toward frame right and his eyes are on Martina's face. Martina does not return the look: chin down, her eyes on the aisle floor in front of her boots.\nCOMPOSITION: seen from the door, facing them. Tomás in the left third, a little closer to the lens, his shoulder cropped by the frame; Martina in the right third; both framed from the waist up, hands out of frame. Between and behind them, out of focus, the rear end wall of the carriage: one plain rear window at its centre, black, nothing visible through it, and at frame left the conductor's cabin, a riveted floor-to-ceiling booth in shadow. That wall has no door: the carriage's only door is behind the camera. The navy seats face us and sink into shade. Side windows black, rain only outside the glass. Lower right corner, out of focus: the chrome handrail arc of a front seat.\nTomás: round thin metal-frame glasses, short tidy side-parted hair as in his sheet, navy quilted jacket with horizontal stitching over a charcoal sweater. Martina: oat sweater, long open charcoal coat, strap of her small brown leather crossbody bag, mole on her LEFT cheekbone.\nLENS: 50mm at T2.8, locked off at standing eye height, just right of the aisle axis. Focus on both faces.\nLIGHT: single red emergency light from above, half the face in shadow, no white fill. The only white light is the cold tube above the door, behind the camera: a faint cold glint on the top of their hair and on his glasses rim, nothing on the faces. Red saturated but dark, never pink, never even.\nTEXTURE: Clean photographic image, no film grain, no digital sharpening, no HDR look, no glow halos, no orange-teal rim light, real skin texture with pores.\nFINISH: Nobody looks into the lens; every gaze has a target inside the carriage. No text, no captions, no watermark, no logos.",
+   "checks": [
+    "Tomás a la IZQUIERDA del cuadro, cabeza girada a la derecha, mira a Martina; Martina a la DERECHA mira el piso. Nadie mira al lente.",
+    "Fondo = PARED TRASERA: ventana trasera negra al centro (sin vías, bosque ni cielo) y cabina del revisor a la izquierda del cuadro. Nada se lee como segunda puerta de salida.",
+    "Cara de Tomás igual a su hoja: anteojos redondos de marco fino, pelo corto ordenado con partidura; acolchado azul marino de costuras horizontales sobre suéter gris carbón.",
+    "Martina: suéter avena, abrigo gris carbón abierto, correa de la bandolera café, lunar en el pómulo IZQUIERDO (lado derecho de su cara en el cuadro).",
+    "Luz roja desde arriba con media cara en sombra en los dos; sin luz blanca plana: el tubo frío solo deja un destello en el pelo y en el marco de los anteojos.",
+    "No se ven pegados sobre el fondo: misma luz, mismo desenfoque de profundidad; composición no simétrica (Tomás más cerca y recortado por el borde)."
+   ]
+  },
+  {
+   "id": "b7_p2",
+   "call": "c07a",
+   "aspect": "9:16",
+   "refs": [
+    {
+     "n": 1,
+     "file": "REPO/produccion/pruebas/cap01_animatic_v3/previs/v1c/frames/b7_p2.png",
+     "role": "composition reference (current frame)"
+    },
+    {
+     "n": 2,
+     "file": "TRABAJO/refs/personajes__ESTADO_diego_mojado_herido_v3.png",
+     "role": "Diego in his only valid state: identity, face, wet hair, wardrobe and the stained RIGHT sleeve"
+    },
+    {
+     "n": 3,
+     "file": "TRABAJO/refs/personajes__HOJA_diego.png",
+     "role": "Diego's sheet: face only, as backup (no backpack)"
+    },
+    {
+     "n": 4,
+     "file": "TRABAJO/refs/set__F03_rojo_puerta_desde_dentro_0-45.png",
+     "role": "the last carriage's door seen from inside: metal, window and wire mesh only"
+    }
+   ],
+   "prompt": "Rebuild this shot clean, in one pass, from Image 1.\nImage 1 is the current frame: composition reference only (window size in frame); Diego's pose changes as written below.\nImage 2 is Diego in his only valid state: identity, face, wet hair, wardrobe and the stained RIGHT sleeve; ignore the grey backdrop.\nImage 3 is Diego's sheet: face only, as backup; ignore the backpack, sheet layout and grey backdrop.\nImage 4 is the last carriage's door seen from inside: metal, window and wire mesh only.\nFILM STILL: vertical 9:16 live-action frame, inside the last carriage of a night train, looking at the small window of its door; Diego is outside it, in the gangway.\nMOMENT: Diego's face has just come up to the glass and he is already shouting a name, mouth open. His LEFT fist is on the glass beside his face, mid-pound. His RIGHT forearm is clamped across his chest. His eyes search through the glass and land just past the left edge of the lens, at the eye height of Martina, who stands inside, out of frame.\nCOMPOSITION: seen from inside. The rounded window with rhombic wire mesh fills most of the frame, set right of centre; grey-green riveted door metal down the left edge. Diego faces us, chest to the glass, framed from the ribs up, his face left of centre. His LEFT fist and clean left sleeve are at frame right. His RIGHT forearm crosses his chest at frame left: only that sleeve is torn and carries dark red-black stains from elbow to cuff; no wound visible. The rest of the jacket is clean wet canvas. The glass is dry; on it, soft in the foreground, a few dark matte smears left earlier. Behind him only the dark gangway: black ribbed bellows walls in a faint dark red cast, falling to black.\nDiego: straight black hair, wet and stuck to his forehead; three-day beard; pale stone canvas jacket, soaked and darker at the shoulders; dark grey hood underneath.\nLENS: 50mm at T2, handheld at standing eye height. Focus on his eyes; smears and gangway soft.\nLIGHT: one cold tube above the glass is the only light. It is on our side, just out of frame, and falls steep through the glass on his wet forehead and cheekbones; one side of the face stays in shadow. No lamp behind him.\nTEXTURE: Clean photographic image, no film grain, no digital sharpening, no HDR look, no glow halos, no orange-teal rim light, real skin texture with pores.\nFINISH: Nobody looks into the lens; every gaze has a target inside the carriage. No text, no captions, no watermark, no logos.",
+   "checks": [
+    "Diego de frente tras la ventanita, mojado, gritando; la mirada va a la altura de los ojos, apenas a la izquierda del lente (no al lente).",
+    "Solo la manga DERECHA (izquierda del cuadro, antebrazo cruzado sobre el pecho) está rota y con manchas rojo-negras oscuras del codo al puño; sin herida ni piel de la herida.",
+    "Manga IZQUIERDA (derecha del cuadro, puño contra el vidrio) limpia; pecho y hombros sin manchas ni huellas, solo oscurecidos por el agua.",
+    "Detrás solo el fuelle oscuro con tinte rojo tenue: sin asientos, sin puerta, sin pasillo iluminado, sin cielo.",
+    "Vidrio SECO: sin lluvia ni gotas; malla romboidal; solo unas manchas oscuras y mate de antes.",
+    "Única luz: el tubo frío, de nuestro lado y desde arriba; ninguna lámpara detrás de él; media cara en sombra.",
+    "Identidad: pelo negro lacio mojado pegado a la frente, barba de tres días, chaqueta de lona piedra clara empapada, capucha gris oscura; sin mochila."
+   ]
+  },
+  {
+   "id": "b7_p5",
+   "call": "c07b",
+   "aspect": "9:16",
+   "refs": [
+    {
+     "n": 1,
+     "file": "REPO/produccion/pruebas/cap01_animatic_v3/previs/v1c/frames/b7_p5.png",
+     "role": "composition reference (current frame)"
+    },
+    {
+     "n": 2,
+     "file": "TRABAJO/refs/personajes__ESTADO_diego_mojado_herido_v3.png",
+     "role": "Diego in his only valid state: identity, face, wet hair, wardrobe and the stained RIGHT sleeve"
+    },
+    {
+     "n": 3,
+     "file": "TRABAJO/refs/personajes__HOJA_diego.png",
+     "role": "Diego's sheet: face only, as backup (no backpack)"
+    },
+    {
+     "n": 4,
+     "file": "TRABAJO/refs/set__F03_rojo_puerta_desde_dentro_0-45.png",
+     "role": "the last carriage's door seen from inside: metal, window and wire mesh only"
+    }
+   ],
+   "prompt": "Rebuild this shot clean, in one pass, from Image 1.\nImage 1 is the current frame: composition reference only; jacket and background are corrected below.\nImage 2 is Diego in his only valid state: identity, face, wet hair, wardrobe and the stained RIGHT sleeve; ignore the grey backdrop.\nImage 3 is Diego's sheet: face only, as backup; ignore the backpack, sheet layout and grey backdrop.\nImage 4 is the last carriage's door seen from inside: metal, window and wire mesh only.\nFILM STILL: vertical 9:16 live-action frame, inside the last carriage of a night train, looking at the small window of its door; Diego is outside it, in the gangway.\nMOMENT: Diego's LEFT palm has just hit the glass and stays flat, five separate fingers spread. His head is turned back over his RIGHT shoulder, toward frame left, in profile; his eyes are on the far end of the gangway behind him, where dark shapes have come closer.\nCOMPOSITION: seen from inside. The rounded window with rhombic wire mesh fills most of the frame, set right of centre; grey-green riveted door metal down the left edge. Diego is chest to the glass, framed from the ribs up, head in the upper left third. His LEFT palm is on the glass in the lower right third, its cuff clean. His RIGHT sleeve, at frame left, forearm across his chest, is the only marked part of the jacket: torn, with dark red-black stains from elbow to cuff; no wound. Both shoulders and the chest are clean wet canvas. The glass is dry, with a few dark matte smears left earlier. Behind him only the dark gangway: black ribbed bellows walls in a faint dark red cast and, already halfway up it, two or three blurred dark human shadows, faces unreadable. The gangway holds no seats and no doorway.\nDiego: straight black hair, wet and stuck to his forehead; three-day beard; pale stone canvas jacket, soaked and darker at the shoulders; dark grey hood underneath.\nLENS: 50mm at T2.8, handheld at standing eye height. Focus on the palm; the shadows stay soft.\nLIGHT: one cold tube above the glass is the only light. It is on our side, just out of frame, and falls steep through the glass on his hand and cheekbone; the far side of the face stays in shadow. No lamp behind him.\nTEXTURE: Clean photographic image, no film grain, no digital sharpening, no HDR look, no glow halos, no orange-teal rim light, real skin texture with pores.\nFINISH: Nobody looks into the lens; every gaze has a target inside the carriage. No text, no captions, no watermark, no logos.",
+   "checks": [
+    "Palma IZQUIERDA plana sobre el vidrio (derecha del cuadro), cinco dedos separados; puño izquierdo de la chaqueta limpio.",
+    "Cabeza girada hacia atrás por sobre su hombro DERECHO (perfil hacia la izquierda del cuadro); mira el fondo del fuelle, no el lente.",
+    "SIN mano roja ni mancha en los hombros ni en el pecho: solo la manga DERECHA rota con manchas rojo-negras oscuras del codo al puño, sin herida.",
+    "Detrás solo el fuelle oscuro (goma negra acanalada, tinte rojo tenue): sin asientos, sin puerta, sin pasillo. Dos o tres sombras humanas borrosas, más cerca y más grandes que en b7_p2, sin caras legibles.",
+    "Vidrio seco, sin lluvia ni gotas; malla romboidal; las mismas manchas oscuras mate.",
+    "Única luz: el tubo frío de nuestro lado, desde arriba; ninguna lámpara detrás; lado lejano de la cara en sombra.",
+    "Misma identidad y mismo encuadre que b7_p2 (ventanita a la derecha del centro, metal de la puerta a la izquierda)."
+   ]
+  }
+ ]
+}

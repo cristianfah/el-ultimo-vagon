@@ -1,0 +1,364 @@
+{
+ "piloto": "cap01",
+ "nota": "Rutas de archivo relativas a la carpeta de trabajo (fuera del repo hasta elegir tomas).",
+ "tomas": [
+  {
+   "id": "T0_c02a_kling_t1",
+   "tanda": "T0",
+   "llamada": "c02a",
+   "motor": "Kling 4.0 Omni-Ref (MCP kling-video-v4_0)",
+   "setting": "720p · 6 s · 9:16 · audio_1 · sin video · enable_audio",
+   "refs": [
+    "b2_p1 rehecho (GPT Image 2.6)",
+    "HOJA_martina",
+    "HOJA_tomas"
+   ],
+   "audio": "pistas_v3/c02a.mp3",
+   "archivo": "t0/c02a_kling_t1.mp4",
+   "costo": {
+    "creditos": 60,
+    "fuente": "saldo 3176→3056 por 2 tomas"
+   },
+   "medicion": {
+    "audio": {
+     "tiene_audio": true,
+     "correlacion": 0.987,
+     "desfase_s": 0.0,
+     "nota": "desfase > 0: la toma va atrasada respecto de la pista"
+    },
+    "boca": {
+     "tomas": {
+      "mov_hablando": 3.708,
+      "mov_callado": 0.764,
+      "razon": 4.85,
+      "lineas": [
+       [
+        0.8,
+        1.84
+       ]
+      ]
+     },
+     "martina": {
+      "mov_hablando": 2.91,
+      "mov_callado": 1.937,
+      "razon": 1.5,
+      "lineas": [
+       [
+        2.56,
+        3.2
+       ]
+      ]
+     }
+    },
+    "video": {
+     "ancho": 720,
+     "alto": 1280,
+     "fps": 24.0,
+     "cuadros": 145,
+     "duracion_s": 6.042
+    }
+   },
+   "veredicto": "pista intacta y bocas calzadas; Martina mira a Tomás (el prompt pedía que no): no elegida"
+  },
+  {
+   "id": "T0_c02a_kling_t2",
+   "tanda": "T0",
+   "llamada": "c02a",
+   "motor": "Kling 4.0 Omni-Ref (MCP kling-video-v4_0)",
+   "setting": "720p · 6 s · 9:16 · audio_1 · sin video · enable_audio",
+   "refs": [
+    "b2_p1 rehecho (GPT Image 2.6)",
+    "HOJA_martina",
+    "HOJA_tomas"
+   ],
+   "audio": "pistas_v3/c02a.mp3",
+   "archivo": "t0/c02a_kling_t2.mp4",
+   "costo": {
+    "creditos": 60,
+    "fuente": "saldo 3176→3056 por 2 tomas"
+   },
+   "medicion": {
+    "audio": {
+     "tiene_audio": true,
+     "correlacion": 0.992,
+     "desfase_s": 0.0,
+     "nota": "desfase > 0: la toma va atrasada respecto de la pista"
+    },
+    "boca": {
+     "tomas": {
+      "mov_hablando": 3.747,
+      "mov_callado": 0.918,
+      "razon": 4.08,
+      "lineas": [
+       [
+        0.8,
+        1.84
+       ]
+      ]
+     },
+     "martina": {
+      "mov_hablando": 3.044,
+      "mov_callado": 3.158,
+      "razon": 0.96,
+      "lineas": [
+       [
+        2.56,
+        3.2
+       ]
+      ]
+     }
+    },
+    "video": {
+     "ancho": 720,
+     "alto": 1280,
+     "fps": 24.0,
+     "cuadros": 145,
+     "duracion_s": 6.042
+    }
+   },
+   "veredicto": "GANADORA de la prueba: pista intacta, Tomás habla con Martina callada y al revés; luz y look correctos. Encuadre más abierto que la referencia"
+  },
+  {
+   "id": "T0_c02a_h3_s1",
+   "tanda": "T0",
+   "llamada": "c02a",
+   "motor": "H3 Max (fal minimax/h3-max/reference-to-video)",
+   "setting": "768P · 5,2 s · primer fotograma + audio de referencia · semilla 1019",
+   "refs": [
+    "b2_p1 rehecho (GPT Image 2.6)",
+    "HOJA_martina",
+    "HOJA_tomas",
+    "F09"
+   ],
+   "audio": "pistas_v3/c02a.mp3",
+   "archivo": "t0/c02a_h3_s1.mp4",
+   "costo": {
+    "usd_estimado": 0.45,
+    "fuente": "fal no devuelve el cobro"
+   },
+   "medicion": {
+    "audio": {
+     "tiene_audio": true,
+     "correlacion": 0.982,
+     "desfase_s": 0.0,
+     "nota": "desfase > 0: la toma va atrasada respecto de la pista"
+    },
+    "boca": {
+     "tomas": {
+      "mov_hablando": 7.175,
+      "mov_callado": 3.47,
+      "razon": 2.07,
+      "lineas": [
+       [
+        0.8,
+        1.84
+       ]
+      ]
+     },
+     "martina": {
+      "mov_hablando": 4.08,
+      "mov_callado": 5.933,
+      "razon": 0.69,
+      "lineas": [
+       [
+        2.56,
+        3.2
+       ]
+      ]
+     }
+    },
+    "video": {
+     "ancho": 768,
+     "alto": 1344,
+     "fps": 24.0,
+     "cuadros": 141,
+     "duracion_s": 5.875
+    }
+   },
+   "veredicto": "conserva la pista; boca de Tomás exagerada; luz más pareja y ventana azul; la marca de la muñeca sale como pulsera roja"
+  },
+  {
+   "id": "T0_c02a_h3_s2",
+   "tanda": "T0",
+   "llamada": "c02a",
+   "motor": "H3 Max (fal minimax/h3-max/reference-to-video)",
+   "setting": "768P · 5,2 s · primer fotograma + audio de referencia · semilla 7342",
+   "refs": [
+    "b2_p1 rehecho (GPT Image 2.6)",
+    "HOJA_martina",
+    "HOJA_tomas",
+    "F09"
+   ],
+   "audio": "pistas_v3/c02a.mp3",
+   "archivo": "t0/c02a_h3_s2.mp4",
+   "costo": {
+    "usd_estimado": 0.45,
+    "fuente": "fal no devuelve el cobro"
+   },
+   "medicion": {
+    "audio": {
+     "tiene_audio": true,
+     "correlacion": 0.986,
+     "desfase_s": 0.0,
+     "nota": "desfase > 0: la toma va atrasada respecto de la pista"
+    },
+    "boca": {
+     "tomas": {
+      "mov_hablando": 6.036,
+      "mov_callado": 2.919,
+      "razon": 2.07,
+      "lineas": [
+       [
+        0.8,
+        1.84
+       ]
+      ]
+     },
+     "martina": {
+      "mov_hablando": 4.006,
+      "mov_callado": 4.877,
+      "razon": 0.82,
+      "lineas": [
+       [
+        2.56,
+        3.2
+       ]
+      ]
+     }
+    },
+    "video": {
+     "ancho": 768,
+     "alto": 1344,
+     "fps": 24.0,
+     "cuadros": 141,
+     "duracion_s": 5.875
+    }
+   },
+   "veredicto": "igual que s1"
+  },
+  {
+   "id": "T0_c02a_seedance_a",
+   "tanda": "T0",
+   "llamada": "c02a",
+   "motor": "Seedance 2.5 (fal bytedance/seedance-2.5/us/reference-to-video)",
+   "setting": "480p · 6 s · audio_urls · sin video · semilla 1019",
+   "refs": [
+    "b2_p1 rehecho (GPT Image 2.6)",
+    "HOJA_martina",
+    "HOJA_tomas"
+   ],
+   "audio": "pistas_v3/c02a.mp3",
+   "archivo": "t0/c02a_seedance_a.mp4",
+   "costo": {
+    "usd_estimado": 1.32,
+    "fuente": "fal no devuelve el cobro"
+   },
+   "medicion": {
+    "audio": {
+     "tiene_audio": true,
+     "correlacion": 0.629,
+     "desfase_s": 0.625,
+     "nota": "desfase > 0: la toma va atrasada respecto de la pista"
+    },
+    "boca": {
+     "tomas": {
+      "mov_hablando": 4.256,
+      "mov_callado": 3.514,
+      "razon": 1.21,
+      "lineas": [
+       [
+        0.8,
+        1.84
+       ]
+      ]
+     },
+     "martina": {
+      "mov_hablando": 2.865,
+      "mov_callado": 6.172,
+      "razon": 0.46,
+      "lineas": [
+       [
+        2.56,
+        3.2
+       ]
+      ]
+     }
+    },
+    "video": {
+     "ancho": 480,
+     "alto": 854,
+     "fps": 24.0,
+     "cuadros": 145,
+     "duracion_s": 6.042
+    }
+   },
+   "veredicto": "FALLA: no conserva la pista (correlación 0,63, atraso 0,63 s) y Tomás tiene la boca cerrada en su línea. No rechazó las caras"
+  },
+  {
+   "id": "T1_c05a_kling_previz",
+   "tanda": "T1",
+   "llamada": "c05a",
+   "motor": "Kling 4.0 Omni-Ref (MCP)",
+   "setting": "720p · 5 s · video_1 = previz de 5 s · 8 imágenes · enable_audio",
+   "archivo": "t1/c05a_kling_previz.mp4",
+   "costo": {
+    "creditos": 60,
+    "fuente": "saldo 3056→2996"
+   },
+   "veredicto": "Sigue encuadres, lente y cortes del previz al cuadro. Fallas: aparece un tubo blanco en el plano 2 (no pedido) y Carmen grita hacia el lente al final del plano 3. Sirve como prueba; para toma final se corrige la ficha"
+  },
+  {
+   "id": "T1_c05a_kling_sin_previz",
+   "tanda": "T1",
+   "llamada": "c05a",
+   "motor": "Kling 4.0 Omni-Ref (MCP)",
+   "setting": "720p · 5 s · sin video · 8 imágenes · enable_audio",
+   "archivo": "t1/c05a_kling_sin_previz.mp4",
+   "costo": {
+    "creditos": 50,
+    "fuente": "creditsConsumed"
+   },
+   "veredicto": "Control. El fuelle se alarga y se ilumina de más, el grupo corre de frente al lente y Tomás aparece duplicado. Peor que con previz"
+  },
+  {
+   "id": "T1_c00a_kling_previz",
+   "tanda": "T1",
+   "llamada": "c00a",
+   "motor": "Kling 4.0 Omni-Ref (MCP)",
+   "setting": "720p · 4 s · video_1 = previz de 4 s · 4 imágenes · enable_audio",
+   "archivo": "t1/c00a_kling_previz.mp4",
+   "costo": {
+    "creditos": 48,
+    "fuente": "creditsConsumed"
+   },
+   "veredicto": "Primerísimo plano de ojos y corte al inserto del maletín en el cuadro del previz. La imagen del primer plano viene del cuadro de look, no del previz (una esfera a 85 mm no aporta). Candidata a toma final, pendiente de segunda revisión"
+  },
+  {
+   "id": "T1_c00a_kling_i2v",
+   "tanda": "T1",
+   "llamada": "c00a",
+   "motor": "Kling 4.0 image_to_video (MCP)",
+   "setting": "720p · 4 s · first_image",
+   "archivo": null,
+   "costo": {
+    "creditos": 40,
+    "fuente": "creditsConsumed"
+   },
+   "veredicto": "EN COLA en Kling desde el envío; sin resultado al cerrar T1",
+   "generationId": "AZ_G6okvYt7GjITLWq85mXbab27gi3DT9g6RdeZ0n5zUOoR3m089btdu_nn6X2cN6133Ojk1"
+  },
+  {
+   "id": "T1_c05a_seedance_previz",
+   "tanda": "T1",
+   "llamada": "c05a",
+   "motor": "Seedance 2.5 (fal)",
+   "setting": "480p · 5 s · video_urls = previz · 8 imágenes · semilla 1019",
+   "archivo": "t1/c05a_seedance_previz_a.mp4",
+   "costo": {
+    "usd_estimado": 1.33,
+    "fuente": "fal no devuelve el cobro"
+   },
+   "veredicto": "También sigue encuadres y cortes del previz. A 480p; no rechazó las caras. No mejora a Kling y cuesta en USD"
+  }
+ ]
+}

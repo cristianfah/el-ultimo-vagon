@@ -1,0 +1,74 @@
+diff --git a/guion/cap01/cap01_v10.md b/guion/cap01/cap01_v10.md
+index c1920b2..53c8110 100644
+--- a/guion/cap01/cap01_v10.md
++++ b/guion/cap01/cap01_v10.md
+@@ -1,5 +1,5 @@
+ # Capítulo 1 · El maletín
+-### v10 · ~72 s + encuesta · 9:16 · VIGENTE · biblia v2 (18-oct-2026)
++### v10 · ~71 s + encuesta · 9:16 · VIGENTE · biblia v2 (18-oct-2026) · consolidada el 9-nov-2026
+ 
+ Martina deja un maletín en el vagón 2 sin saber qué contiene; cuando se abre, el tren se llena de infectados y el grupo se encierra en el último vagón. Entonces Diego golpea la puerta y la delata sin querer.
+ 
+@@ -14,7 +14,7 @@ Martina deja un maletín en el vagón 2 sin saber qué contiene; cuando se abre,
+ 
+ **Lado de cada personaje (regla de los 180°):**
+ - **Vagón 5,** cámara desde el asiento de enfrente: Martina a la izquierda del cuadro (ventana) y Tomás a la derecha (pasillo). Tomás está a la izquierda de Martina. **La ventana está siempre del lado de Martina:** en el primer plano de Tomás, detrás de él se ve el pasillo y los asientos del otro lado, nunca la ventana; en el borde izquierdo del cuadro, desenfocado, asoma el hombro de Martina con el suéter avena.
+-- **Último vagón:** el grupo mira hacia la puerta y Martina está a la izquierda de Tomás. **Los planos cerrados de los bloques 6 y 7 se toman desde el lado de la puerta, de frente a ellos:** ahí Martina queda a la **derecha** del cuadro y Tomás a la **izquierda**. Tomás mira hacia la derecha del cuadro para mirarla a ella; ella mira hacia la izquierda para mirarlo a él.
++- **Último vagón:** el grupo mira hacia la puerta y Martina está a la izquierda de Tomás. **Los planos cerrados de los bloques 6 y 7 se toman desde el lado de la puerta, de frente a ellos:** ahí Martina queda a la **derecha** del cuadro y Tomás a la **izquierda**. Tomás mira hacia la derecha del cuadro para mirarla a ella; ella mira hacia la izquierda para mirarlo a él. **El último vagón tiene una sola puerta:** en los planos tomados desde el lado de la puerta, al fondo va la pared trasera, con la ventana trasera negra y la cabina del revisor a la izquierda del cuadro. No hay una segunda puerta.
+ 
+ ---
+ 
+@@ -27,7 +27,7 @@ Cada prompt copia las filas de su bloque. La revisión de cada toma compara cont
+ | **Lugar y luz** | Vagón 2, ámbar bajo: casi todas las lámparas de lectura apagadas, solo dos o tres encendidas; pasajeros en penumbra (`F08_v2_ambar_bajo`) | Puerta del fondo del vagón 2, ámbar bajo · Flashes: cuarto del rapto, luz cenital dura y fría | Vagón 5, ámbar | Vagón 2, ámbar bajo | Vagón 5, de ámbar a rojo de emergencia | Fuelle entre el vagón 5 y el último, rojo | Último vagón, rojo, tubo frío sobre la puerta | Igual que el 6 |
+ | **Maletín** | Bajo el asiento del hombre de camisa azul, por el lado del pasillo; asoma la esquina metálica | Flash: sobre las rodillas de Martina | No se ve | Mismo lugar; los cierres saltan solos; la tapa queda abierta y la niebla se arrastra por el piso | No se ve | No se ve | No se ve | No se ve |
+ | **Ventanas laterales** | Noche, lluvia en el lado de afuera del vidrio | Igual | Igual | Igual | Igual, después en rojo | No hay | Noche, lluvia en el lado de afuera del vidrio | Igual |
+-| **Ventanita de las puertas entre vagones** | Muestra el fuelle oscuro, quieto respecto de la cámara | Igual | Igual | Igual | Siluetas en rojo que se estrellan contra el vidrio | Puerta del vagón 5: infectados que se acercan, luego el vidrio revienta | Manos y manchas oscuras; cuando paran los golpes, el vidrio queda manchado | **Las mismas manchas oscuras en el vidrio. Detrás de Diego, solo el fuelle oscuro con luz roja. Nunca cielo, nunca lluvia, nunca una puerta abierta** |
++| **Ventanita de las puertas entre vagones** | Muestra el fuelle oscuro, quieto respecto de la cámara | Igual | Igual | Igual | Siluetas en rojo que se estrellan contra el vidrio | Puerta del vagón 5: infectados que se acercan, luego el vidrio revienta | Manos y manchas oscuras; cuando paran los golpes, el vidrio queda manchado | **Las mismas manchas oscuras en el vidrio. Detrás de Diego, solo el fuelle oscuro con luz roja. Nunca cielo, nunca lluvia, nunca una puerta abierta, nunca un pasillo iluminado** |
+ | **Martina** | Suéter avena, abrigo gris carbón abierto; marca roja en la muñeca derecha, tapada por la manga | Flash: la misma ropa; muñecas amarradas juntas con cinta gris sobre los muslos, en la silla aprobada | Igual; la manga se sube un instante y deja ver la marca | — | Igual | Igual | Igual | Igual |
+ | **Tomás** | — | Flash: solo en la foto de la pantalla | Anteojos de marco metálico, chaqueta acolchada azul marino | — | Igual | Igual | Igual | Igual |
+ | **Hombre de camisa azul** | Dormido con la cabeza contra la ventana; su esposa dormida en su hombro, en el asiento del pasillo | — | — | Despierta, se infecta (ojos blancos, venas oscuras en el cuello) y se lanza sobre su esposa | — | — | — | — |
+@@ -47,12 +47,12 @@ Energía: 1 es quietud y 5 es caos. La cámara sigue a la energía.
+ | --- | --- | --- | --- | --- | --- |
+ | 0 · El maletín | 0:00–0:06 | 3 | En mano, baja y cercana; fija en el inserto y en el último plano | — | c00a · c00b |
+ | 1 · El recuerdo | 0:06–0:10 | 3 | Fija, cerrada; cortes por coincidencia | — | c01 (tren) · c01f (flashes) |
+-| 2 · El regreso | 0:10–0:21,5 | 2 | En mano muy suave, plano y contraplano a la altura de los ojos | Tomás, Martina | c02 (con audio) |
++| 2 · El regreso | 0:10–0:21,5 | 2 | En mano muy suave, plano y contraplano a la altura de los ojos | Tomás, Martina | c02a · c02b (con audio) |
+ | 3 · El maletín se abre | 0:21,5–0:30,5 | 4 | Fija en los detalles; en mano cercana desde que él despierta | — | c03a · c03b |
+ | 4 · El grito | 0:30,5–0:41,5 | 4 → 5 | En mano; barrido rápido hacia Hugo; corre con la estampida | Hugo | c04a · c04b (con audio) |
+ | 5 · La huida | 0:41,5–0:52,8 | 5 | En mano intensa, planos de 1 a 1,5 s | — | c05a · c05b · c05i (inserto) · c06a |
+ | 6 · El encierro | 0:52,8–0:58,3 | 3 | Fija; el contraste con el caos anterior es la idea | — | c06a · c06b |
+-| 7 · Diego | 0:58,3–1:12,1 | 4 | En mano leve; avance lento hacia la ventanita en el plano 2 | Diego, Tomás | c07a · c07b (con audio) |
++| 7 · Diego | 0:58,3–≈1:11,5 | 4 | En mano leve; avance lento hacia la ventanita en el plano 2 | Diego, Tomás | c07a · c07b (con audio) |
+ 
+ Después, en post: tarjeta de encuesta sobre negro, con los golpes todavía sonando.
+ 
+@@ -67,7 +67,7 @@ Después, en post: tarjeta de encuesta sobre negro, con los golpes todavía sona
+ 
+ **Planos:**
+ - **0:00 · P1 · Primerísimo plano de los ojos de Martina (1,2 s).** Perfil, una lámpara de lectura le cruza la cara. El primer cuadro ya está en movimiento: sus ojos van de un extremo del pasillo al otro y vuelven. *Cámara:* en mano, mínima, a centímetros de ella; respira con ella.
+-- **0:01,2 · P2 · Inserto a ras de piso (1,8 s).** Su mano derecha, con la manga avena sobre los nudillos, empuja el maletín bajo el asiento del hombre de camisa azul. El maletín se traba en el riel del asiento; ella lo termina de meter con la punta de la bota. La mano tiembla. *Cámara:* fija, a ras de piso; solo vibra con el tren.
++- **0:01,2 · P2 · Inserto a ras de piso (1,8 s).** Su mano derecha empuja el maletín: la manga es la del abrigo gris carbón y el puño del suéter avena asoma sobre los nudillos. Lo mete bajo el asiento del hombre de camisa azul. El maletín se traba en el riel del asiento; ella lo termina de meter con la punta de la bota. La mano tiembla. *Cámara:* fija, a ras de piso; solo vibra con el tren.
+ - **0:03 · P3 · Plano medio desde la altura del asiento (1,5 s).** El hombre de camisa azul, dormido con la cabeza contra la ventana y su esposa dormida en el hombro, se remueve y ronca corto; la cabeza le resbala por el vidrio. Martina, de pie al borde del cuadro, se congela con la mano en el respaldo. *Cámara:* en mano; paneo corto y rápido de él a ella, porque es lo que mira ella.
+ - **0:04,5 · P4 · Plano general del pasillo hacia la cola, desde la altura del asiento (1,5 s).** Martina se aleja rápido, sin correr y sin mirar atrás. En primer término, desenfocada, la esquina metálica del maletín bajo el asiento. Al fondo, al otro lado del pasillo, la mujer que lee bajo su lámpara. *Cámara:* fija. El secreto se queda quieto.
+ 
+@@ -215,9 +215,9 @@ Después, en post: tarjeta de encuesta sobre negro, con los golpes todavía sona
+ 
+   *Cámara:* en mano, quieta.
+ - **1:08,3 · P5 · La ventanita (1,2 s).** Diego golpea el vidrio con la palma izquierda y vuelve a mirar hacia atrás; las sombras están más cerca. *Cámara:* en mano.
+-- **1:09,5 · P6 · Primer plano final de Martina, desde el lado de la puerta (2,6 s).** Mira hacia la izquierda del cuadro, a Tomás. Después mira hacia la puerta, junto a la cámara. En primer término, desenfocada, la mano derecha de Hugo apoyada en la manija, esperando su respuesta. Ella no contesta. Los golpes siguen. Corte a negro un segundo después de que su mirada llega a la puerta. *Cámara:* fija.
++- **1:09,5 · P6 · Primer plano final de Martina, desde el lado de la puerta (unos 2 s).** Mira hacia la izquierda del cuadro, a Tomás. Después mira la manija de la puerta, junto a la cámara. En primer término, desenfocada, la mano derecha de Hugo apoyada en la manija, esperando su respuesta. Ella no contesta. Los golpes siguen. Cortamos justo cuando sus ojos llegan a la manija. *Cámara:* fija.
+ 
+-**1:12,1 · Corte a negro.** Los golpes siguen sonando.
++**≈1:11,5 · Corte a negro.** Los golpes siguen sonando.
+ 
+ **Sonido:** el viento y la puerta lateral del fuelle, los golpes de Diego, su voz amortiguada por el vidrio, la respiración de Martina.
+ 
+@@ -229,7 +229,7 @@ Sobre negro, con los golpes todavía sonando:
+ 
+ **SÍ · NO**
+ 
+-(Propuesta de Métricas: «¿lo dejas entrar?» cuesta más que «¿le abres?». Pendiente del OK de Cristian.)
++(Decidida: «¿lo dejas entrar?». Ningún caption promete «ustedes deciden» ni nombra el proyecto.)
+ 
+ ---
+ 

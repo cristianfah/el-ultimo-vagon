@@ -1,0 +1,256 @@
+{
+  "revisor": "segundo revisor independiente (solo lectura: sin generar, editar ni llamar APIs)",
+  "metodo": "Cada cuadro visto a 1400 px de alto y con recortes a resolución completa de manos, caras, llave, manchas y fondos (trabajo/tmp/rev_<id>_*.jpg), comparado con las hojas de personaje, PROP_maletin_v2, PROP_llave_y_cerradura, F02/F03/F07, b0_p2 y la tabla Estado del mundo. Color de piel medido en parches (razón G/R).",
+  "conteo": {"OK": 5, "EDIT_PUNTUAL": 7, "REHACER": 5},
+  "hallazgo_transversal": "En todos los cuadros rojos con personas (b4_p5, b5_p4, b5_p7, b5_p8, b6_p2, b6_p3) la piel y el vestuario están iluminados con luz neutra, no roja: la piel mide G/R 0,46-0,60 (lo mismo que en los cuadros ámbar, 0,52-0,57) y el suéter avena de Martina se lee avena (G/R 0,76). El rojo solo aparece como contraluz y en el set. Solo b4_p4 tiene caras realmente rojas (G/R 0,29). Los checks piden 'sin relleno blanco / caras en rojo', así que literalmente no se cumple; es el mismo look de los cuadros anteriores y del KF02 aprobado. Los veredictos EDIT_PUNTUAL de b5_p8 y b6_p3 suponen que ese look se acepta; si no se acepta, esos dos también son REHACER.",
+  "frames": [
+    {
+      "id": "b1_f1",
+      "veredicto": "EDIT_PUNTUAL",
+      "fallas": [
+        "La cara NO queda fuera de cuadro: arriba se ven la boca completa, el mentón y la base de la nariz (el check pide corte en el mentón). No hay ojos, así que nadie mira al lente."
+      ],
+      "menores": [
+        "Composición casi simétrica y centrada (el prompt pedía torso a la derecha, un hombro caído y muñecas a la izquierda del centro).",
+        "Luz cenital más suave que 'dura': hombros y antebrazos no están quemados; fondo oscuro pero no negro. No es gris plana, ni ámbar ni roja.",
+        "La cinta brilla (plateada), no es mate; las muñecas quedan separadas un puño y unidas por un puente de cinta (en la plancha del cuarto están más juntas).",
+        "Asiento de la silla café (madera), como en la plancha aprobada del cuarto; sin apoyabrazos: bien."
+      ],
+      "dudas": [
+        "Puños con la palma hacia arriba: en cada mano distingo el pulgar y tres dedos doblados; el cuarto dedo queda tapado por el pulgar. No veo dedos fundidos, pero no puedo contar cinco."
+      ],
+      "edit_sugerido": "Recortar unos 170 px de arriba (y el ancho proporcional, queda cerca de 1452x2582) para que el cuadro empiece bajo el mentón."
+    },
+    {
+      "id": "b1_p1",
+      "veredicto": "OK",
+      "fallas": [],
+      "menores": [
+        "Los puños del suéter terminan en la muñeca: los nudillos de las dos manos quedan a la vista (el check dice 'puños sobre los nudillos'). La marca de la muñeca derecha sí queda tapada.",
+        "La mano izquierda aprieta el antebrazo por encima del puño avena (sobre la manga del abrigo), no sobre el puño."
+      ],
+      "dudas": [
+        "El metal interior de la puerta, a la derecha de su cabeza, tiene puntitos brillantes irregulares que podrían leerse como gotas de agua adentro; no pude distinguirlos de remaches o pintura saltada.",
+        "El pelo se ve castaño rojizo y húmedo bajo el ámbar (en la hoja es castaño muy oscuro y seco).",
+        "Lunar del pómulo izquierdo: no lo puedo separar de las pecas."
+      ],
+      "edit_sugerido": ""
+    },
+    {
+      "id": "b2_p1",
+      "veredicto": "OK",
+      "fallas": [],
+      "menores": [
+        "Pelo de Martina más rizado y corto que en la hoja.",
+        "Ella mira hacia abajo, al regazo, no exactamente a las manos (que están en las solapas, a la altura del pecho)."
+      ],
+      "dudas": [
+        "Lunar de Martina no distinguible con la cara girada.",
+        "En la mano de Tomás sobre el muslo se ven cuatro dedos; el pulgar queda oculto (natural)."
+      ],
+      "edit_sugerido": ""
+    },
+    {
+      "id": "b2_p3",
+      "veredicto": "EDIT_PUNTUAL",
+      "fallas": [
+        "Anteojos de Tomás con cristales rectangulares/hexagonales de canto recto, no redondos como en su hoja ni como en b2_p1 y b5_p7 (corte directo con b2_p1)."
+      ],
+      "menores": [
+        "Pelo con algo más de volumen y onda arriba que en la hoja.",
+        "Cara iluminada bastante pareja; la sombra del lado derecho del cuadro es leve."
+      ],
+      "dudas": [],
+      "edit_sugerido": "Cambiar solo la forma de los cristales a redonda, de marco metálico fino, como en HOJA_tomas."
+    },
+    {
+      "id": "b2_p4",
+      "veredicto": "EDIT_PUNTUAL",
+      "fallas": [
+        "Bandolera imposible y del lado equivocado: la correa baja del hombro derecho hacia la cadera IZQUIERDA (derecha del cuadro) y se pierde bajo el abrigo, pero el bolso aparece en la cadera DERECHA (abajo a la izquierda, junto a la ventana). En b1_p1, b2_p1 y b5_p7 el bolso va en la cadera izquierda."
+      ],
+      "menores": [
+        "La mano izquierda queda abajo al centro, no abajo a la derecha; el puño no cubre los nudillos.",
+        "Baranda cromada en primer término abajo a la izquierda (no es un apoyabrazos al medio)."
+      ],
+      "dudas": [],
+      "edit_sugerido": "Borrar el bolso de abajo a la izquierda y dejar ahí abrigo y jeans; la correa ya va hacia la cadera izquierda."
+    },
+    {
+      "id": "b3_p1",
+      "veredicto": "OK",
+      "fallas": [],
+      "menores": [
+        "El maletín se ve casi entero (cara lateral, dos esquineras y los cierres), no solo una esquina; está bajo el vuelo del asiento, pegado a la pierna, igual que en b0_p2, y no en el pasillo.",
+        "Bota de cuero oscuro lisa; en b3_p2 y en la hoja ella usa botas de trekking gris-café.",
+        "La pierna caqui queda más al fondo del pasillo que 'hacia la ventana'."
+      ],
+      "dudas": [],
+      "edit_sugerido": ""
+    },
+    {
+      "id": "b3_p2",
+      "veredicto": "EDIT_PUNTUAL",
+      "fallas": [
+        "A la esposa le falta la pierna izquierda de la rodilla hacia abajo: el muslo termina en la rodilla y debajo solo están el frente del asiento y el maletín. En b3_p3 tiene las dos piernas abajo."
+      ],
+      "menores": [
+        "El interior del maletín brilla ámbar, como si tuviera luz propia, estando bajo la banca en sombra.",
+        "Niebla algo más alta y pareja que 'fina'.",
+        "Camisa azul oscuro, más marino que cobalto bajo el ámbar (no negra)."
+      ],
+      "dudas": [
+        "Podría leerse como pierna recogida sobre el asiento; no lo pude descartar."
+      ],
+      "edit_sugerido": "Añadir la canilla y la bota izquierda de la esposa bajando al piso junto al borde derecho, por delante del maletín."
+    },
+    {
+      "id": "b4_p1",
+      "veredicto": "OK",
+      "fallas": [],
+      "menores": [
+        "Iván mira de perfil hacia la derecha del cuadro (al pasillo y al hombre de pie), no exactamente a la puerta.",
+        "Al fondo a la derecha hay un pasajero con boina: que no se confunda con Hugo."
+      ],
+      "dudas": [],
+      "edit_sugerido": ""
+    },
+    {
+      "id": "b4_p4",
+      "veredicto": "OK",
+      "fallas": [],
+      "menores": [
+        "Detrás de ellos el fondo es rojo iluminado, con una lámpara visible: calza con F03/F07, pero no es un 'fuelle oscuro'.",
+        "Uñas enteras y parejas, sucias pero no rotas."
+      ],
+      "dudas": [
+        "El hombre tiene la cara casi de frente; con los ojos blancos, sin pupila, no puedo descartar que se lea como mirada al lente.",
+        "Venas del cuello no distinguibles (sí en caras y manos)."
+      ],
+      "edit_sugerido": ""
+    },
+    {
+      "id": "b4_p5",
+      "veredicto": "REHACER",
+      "fallas": [
+        "Mirada de Hugo: los iris quedan casi centrados, apenas hacia la izquierda del cuadro; no va alta por encima de las cabezas y no la pude separar de una mirada al lente (era la corrección principal de este cuadro).",
+        "Llave malformada: el paletón sale pegado al anillo y la tija sigue larga hasta el puño y asoma por debajo. En PROP_llave_y_cerradura el paletón va en el extremo opuesto al anillo.",
+        "Luz: cara, manos y uniforme con luz neutra (piel G/R 0,48-0,56); el rojo solo hace contraluz. El check pide solo rojo desde arriba, sin relleno blanco.",
+        "Tras la puerta abierta se ve una superficie roja apanelada y plana, a un metro, que se lee como otra puerta o pared cerrada, no como el fuelle vacío."
+      ],
+      "menores": [],
+      "dudas": [],
+      "edit_sugerido": ""
+    },
+    {
+      "id": "b5_p4",
+      "veredicto": "REHACER",
+      "fallas": [
+        "Sangre fresca, roja y brillante, corriendo por la mano de Carmen hasta la muñeca. La regla es solo manchas rojo-negras mate, y la mancha debía ir en los vidrios. Además no calza con b6_p2, donde el corte es un punto chico.",
+        "Lado de la mano: sale del brazo derecho, pero se ve el dorso (uñas, arrugas de nudillos) con el pulgar hacia la derecha del cuadro, lo que corresponde a una mano izquierda; no se lee como palma derecha apoyada en el vidrio.",
+        "Iván tiene una herida roja en la aleta de la nariz que no está en su hoja ni en b4_p1.",
+        "Carmen mira hacia abajo, al piso, no a su mano.",
+        "Caras con luz neutra (G/R 0,49)."
+      ],
+      "menores": [
+        "El bolsillo del uniforme lleva una etiqueta blanca con dos trazos que parecen letras."
+      ],
+      "dudas": [
+        "En la mano de Carmen cuento tres dedos largos y el pulgar; no pude confirmar el cuarto."
+      ],
+      "edit_sugerido": ""
+    },
+    {
+      "id": "b5_p7",
+      "veredicto": "REHACER",
+      "fallas": [
+        "Acolchado de Tomás en ROMBOS en el delantero y diagonal en las mangas; el check pide costuras horizontales, 'no rombos'.",
+        "Carmen lleva anteojos puestos y además otro par colgando del cordón (en su hoja y en b5_p4 solo cuelgan).",
+        "El puño de Carmen contra el pecho es el IZQUIERDO: el antebrazo y el puño de la manga entran desde la derecha del cuadro. Debía ser el derecho, la mano del corte.",
+        "Iván mira al frente y a la izquierda del cuadro, no hacia la puerta.",
+        "Caras de Tomás y Martina con luz neutra (G/R 0,54-0,58), no rojas."
+      ],
+      "menores": [
+        "La mano de Iván se ve sobre el hombro de Carmen, y es la izquierda."
+      ],
+      "dudas": [],
+      "edit_sugerido": ""
+    },
+    {
+      "id": "b5_p8",
+      "veredicto": "EDIT_PUNTUAL",
+      "fallas": [
+        "Uñas de la mano infectada parejas, enteras y oscuras, como pintadas; el check pide cortas, rotas y sucias, 'ni largas ni parejas'."
+      ],
+      "menores": [
+        "La llave tiene un anillo chico y redondo y no lleva la placa de latón; en el PROP y en b4_p5 el anillo es ovalado y grande, con la placa colgando. Es el plano cerrado de la llave.",
+        "Oreja, sien y mano con luz neutra del tubo; el frente de la cara queda en sombra."
+      ],
+      "dudas": [
+        "Puntitos claros en el metal de la puerta y en el borde inferior del vidrio: no pude distinguir si son gotas o pintura saltada.",
+        "Hugo tiene los ojos casi cerrados por el esfuerzo; no mira al lente."
+      ],
+      "edit_sugerido": "Rehacer solo las uñas de la mano gris: cortas, quebradas, disparejas y sucias."
+    },
+    {
+      "id": "b6_p2",
+      "veredicto": "REHACER",
+      "fallas": [
+        "La mano de la palma es anatómicamente IZQUIERDA: palma hacia el lente, dedos hacia la derecha del cuadro y pulgar ARRIBA (lado lejano). Sale de la manga del brazo derecho, pero la propia lista dice 'si el pulgar queda arriba, es la izquierda: descartar'."
+      ],
+      "menores": [
+        "El corte es un punto oscuro con hilos rojos al centro de la palma, no una línea fina en el talón; chico y oscuro, sin rojo vivo.",
+        "Al fondo a la izquierda se lee una puerta angosta con ventanita (la cabina de F02); desenfocada, pero es 'algo que parece puerta'.",
+        "Cara con luz neutra cálida (G/R 0,50)."
+      ],
+      "dudas": [],
+      "edit_sugerido": ""
+    },
+    {
+      "id": "b6_p3",
+      "veredicto": "EDIT_PUNTUAL",
+      "fallas": [
+        "La manga izquierda de Tomás termina en el puño de la chaqueta y no hay mano: se ve la manga vacía a la altura del muslo, con una sombra debajo.",
+        "Luz: las dos caras con luz neutra suave (G/R 0,59-0,60, las más blancas del lote); el check pedía rojo desde arriba y solo un destello frío en pelo y marco. Ver hallazgo transversal."
+      ],
+      "menores": [
+        "Fondo casi perfectamente simétrico: pasillo, ventana trasera y tira roja sobre el eje del cuadro.",
+        "Encuadre más abierto que 'cintura arriba'.",
+        "La cabina del revisor apenas se insinúa a la izquierda de la ventana; no hay nada que parezca segunda puerta."
+      ],
+      "dudas": [
+        "Lunar de Martina no distinguible."
+      ],
+      "edit_sugerido": "Reencuadrar de la cintura hacia arriba, cargado hacia la izquierda: deja fuera la manga sin mano y rompe la simetría (hay que reescalar a 1152x2048)."
+    },
+    {
+      "id": "b7_p2",
+      "veredicto": "EDIT_PUNTUAL",
+      "fallas": [
+        "El metal interior de la puerta está cubierto de gotas de agua y salpicaduras oscuras, y hay gotas en el borde del vidrio. La regla es vidrio seco y sin lluvia en cuadro; en b5_p8 y F03 la misma puerta está seca."
+      ],
+      "menores": [
+        "La ventanita queda casi centrada y llena el cuadro; el metal de la izquierda es una franja angosta."
+      ],
+      "dudas": [
+        "El tubo frío se ve dentro del área de la ventana, arriba: no pude distinguir si es reflejo del tubo de nuestro lado o una lámpara detrás de Diego (pasa igual en el KF02 aprobado).",
+        "Puño contra el vidrio: va en el brazo izquierdo (derecha del cuadro, manga limpia), pero no pude confirmar si la mano es izquierda o derecha por la forma.",
+        "Los dos chorreos oscuros de la izquierda parecen estar en el vidrio y no en el hombro; no lo puedo asegurar."
+      ],
+      "edit_sugerido": "Secar el marco metálico y el borde del vidrio (quitar gotas y salpicaduras), dejando solo la huella y los chorreos mate."
+    },
+    {
+      "id": "b7_p5",
+      "veredicto": "REHACER",
+      "fallas": [
+        "Hay un solo brazo: la manga rota y manchada (la derecha) es la misma que termina en la mano sobre el vidrio. El brazo izquierdo limpio no está y el antebrazo derecho no cruza el pecho. Contradice b7_p2 y la decisión vigente (golpea con la izquierda; la manchada es la derecha).",
+        "La mano muestra el DORSO (uñas, vello, tendones) con el pulgar a la izquierda: es una mano derecha vista por detrás, no una palma izquierda apoyada en el vidrio. Desde adentro debería verse la palma.",
+        "Las manchas del vidrio no son las de b7_p2: allá hay una huella oscura arriba a la izquierda y dos chorreos; acá hay huellas rojizas al centro-derecha y falta la de arriba.",
+        "El marco no calza con b7_p2 (allá mojado y casi centrado; acá seco, con metal a la izquierda)."
+      ],
+      "menores": [],
+      "dudas": [],
+      "edit_sugerido": ""
+    }
+  ]
+}

@@ -1,0 +1,1301 @@
+{
+ "call_id": "c05a",
+ "bloque": "5 · La huida",
+ "duration_s": 5,
+ "fps": 24,
+ "resolution": [
+  720,
+  1280
+ ],
+ "origin": "ANC_fuelle",
+ "set_light": "rojo",
+ "train_sway": {
+  "m": 0.006,
+  "deg": 0.3,
+  "hz": 0.45
+ },
+ "fuente_tiempos": "tiempos_montaje_v3.json: b5_p1 0.5-1.8, b5_p2 1.8-3.3, b5_p3 3.3-4.3 (pedida 4.8 s). Aqui: 5 s enteros; el ultimo plano se alarga de 4.3 a 5.0 con accion (segundo y tercer tiron), sin quietud al inicio. Colchon 0-0.5 s: Hugo ya esta forzando la llave en el cuadro 0.",
+ "color_map": {
+  "hugo": "morado",
+  "ivan": "verde",
+  "carmen": "amarillo",
+  "martina": "rojo",
+  "tomas": "azul",
+  "infectado_*": "gris oscuro"
+ },
+ "props_in_frame": [
+  "llave"
+ ],
+ "notes": "Geografia (fuelle de 3,0 m): y=0 puerta del ultimo vagon (cerradura en x=-0.32, lado -X), y=3.0 puerta del vagon 5. P1: camara del lado -X mirando hacia +X/-Y (pared izquierda del fuelle oculta, 'pared movil'): Hugo a la izquierda del cuadro, cerradura a la derecha. P2 y P3 miran hacia +Y (vagon 5). Cortes secos por marcador de camara.",
+ "set_anim": {
+  "doors": [
+   {
+    "object": "PUERTA_vagon5_tras",
+    "keys": [
+     {
+      "t": 0.0,
+      "open_deg": 44
+     },
+     {
+      "t": 1.75,
+      "open_deg": 44
+     },
+     {
+      "t": 2.0,
+      "open_deg": 0,
+      "ease": "in"
+     }
+    ]
+   }
+  ],
+  "glass_break": [
+   {
+    "object": "VIDRIO_vagon5_tras",
+    "t": 3.5,
+    "dir": [
+     0.12,
+     -1.0,
+     0.0
+    ],
+    "n": 18,
+    "seed": 5,
+    "speed": 3.2
+   }
+  ]
+ },
+ "shots": [
+  {
+   "id": "b5_p1",
+   "t0": 0.0,
+   "t1": 1.8,
+   "montaje": {
+    "usar_desde_s": 0.5,
+    "usar_hasta_s": 1.8,
+    "dur_montaje_s": 1.3
+   },
+   "descripcion": "Plano cerrado de la cerradura del ultimo vagon. Las dos manos de Hugo fuerzan la llave, que no gira.",
+   "motivo_camara": "En mano, cerca, a la altura de la cerradura: la camara esta con las manos. Se mete unos centimetros cada vez que Hugo carga el cuerpo, dos cuadros tarde, y vuelve. Camara del lado de la cerradura (donde iria la pared del fuelle).",
+   "camera": {
+    "lens_mm": 50,
+    "mode": "handheld",
+    "handheld": {
+     "rot_deg": 0.55,
+     "pos_m": 0.008,
+     "hz": 0.8,
+     "seed": 51
+    },
+    "keys": [
+     {
+      "t": 0.0,
+      "pos": [
+       -1.19,
+       0.94,
+       1.32
+      ],
+      "look_at": [
+       -0.22,
+       0.15,
+       1.27
+      ]
+     },
+     {
+      "t": 0.22,
+      "pos": [
+       -1.19,
+       0.94,
+       1.32
+      ],
+      "look_at": [
+       -0.22,
+       0.15,
+       1.27
+      ]
+     },
+     {
+      "t": 0.36,
+      "pos": [
+       -1.167,
+       0.921,
+       1.32
+      ],
+      "look_at": [
+       -0.23,
+       0.14,
+       1.26
+      ],
+      "ease": "out"
+     },
+     {
+      "t": 0.72,
+      "pos": [
+       -1.19,
+       0.94,
+       1.32
+      ],
+      "look_at": [
+       -0.22,
+       0.15,
+       1.27
+      ]
+     },
+     {
+      "t": 0.92,
+      "pos": [
+       -1.143,
+       0.902,
+       1.32
+      ],
+      "look_at": [
+       -0.24,
+       0.13,
+       1.25
+      ],
+      "ease": "out"
+     },
+     {
+      "t": 1.3,
+      "pos": [
+       -1.19,
+       0.94,
+       1.32
+      ],
+      "look_at": [
+       -0.22,
+       0.15,
+       1.27
+      ]
+     },
+     {
+      "t": 1.5,
+      "pos": [
+       -1.159,
+       0.915,
+       1.32
+      ],
+      "look_at": [
+       -0.23,
+       0.14,
+       1.26
+      ],
+      "ease": "out"
+     },
+     {
+      "t": 1.8,
+      "pos": [
+       -1.182,
+       0.934,
+       1.32
+      ],
+      "look_at": [
+       -0.22,
+       0.15,
+       1.27
+      ]
+     }
+    ]
+   },
+   "actors": {
+    "hugo": {
+     "pose": "de_pie",
+     "tremor": {
+      "m": 0.004,
+      "hz": 7.0
+     },
+     "keys": [
+      {
+       "t": 0.0,
+       "pos": [
+        -0.1,
+        0.5
+       ],
+       "yaw": 168,
+       "lean": 24,
+       "side": 0,
+       "head_pitch": 14
+      },
+      {
+       "t": 0.2,
+       "pos": [
+        -0.11,
+        0.47
+       ],
+       "lean": 28,
+       "side": -3,
+       "ease": "snap"
+      },
+      {
+       "t": 0.4,
+       "pos": [
+        -0.1,
+        0.51
+       ],
+       "lean": 23,
+       "side": 0,
+       "ease": "out"
+      },
+      {
+       "t": 0.7,
+       "pos": [
+        -0.12,
+        0.44
+       ],
+       "lean": 33,
+       "side": -5,
+       "ease": "snap"
+      },
+      {
+       "t": 0.98,
+       "pos": [
+        -0.1,
+        0.5
+       ],
+       "lean": 24,
+       "side": 0,
+       "ease": "out"
+      },
+      {
+       "t": 1.3,
+       "pos": [
+        -0.11,
+        0.46
+       ],
+       "lean": 30,
+       "side": -4,
+       "ease": "snap"
+      },
+      {
+       "t": 1.56,
+       "pos": [
+        -0.1,
+        0.5
+       ],
+       "lean": 24,
+       "side": 0,
+       "ease": "out"
+      },
+      {
+       "t": 1.8,
+       "pos": [
+        -0.11,
+        0.47
+       ],
+       "lean": 29,
+       "side": -3,
+       "ease": "in"
+      }
+     ],
+     "arms": {
+      "R": {
+       "tremor_m": 0.004,
+       "keys": [
+        {
+         "t": 0.0,
+         "to": {
+          "prop": "llave",
+          "offset": [
+           -0.005,
+           0.105,
+           0.012
+          ]
+         }
+        }
+       ]
+      },
+      "L": {
+       "tremor_m": 0.004,
+       "keys": [
+        {
+         "t": 0.0,
+         "to": {
+          "prop": "llave",
+          "offset": [
+           0.03,
+           0.115,
+           -0.018
+          ]
+         }
+        }
+       ]
+      }
+     }
+    }
+   },
+   "props": {
+    "llave": {
+     "tremor": {
+      "deg": 1.2,
+      "hz": 9.0,
+      "m": 0.0
+     },
+     "keys": [
+      {
+       "t": 0.0,
+       "pos": "ANC_bocallave_ext",
+       "rot": [
+        0,
+        6,
+        0
+       ]
+      },
+      {
+       "t": 0.2,
+       "rot": [
+        0,
+        17,
+        0
+       ],
+       "ease": "snap"
+      },
+      {
+       "t": 0.4,
+       "rot": [
+        0,
+        2,
+        0
+       ],
+       "ease": "back"
+      },
+      {
+       "t": 0.7,
+       "rot": [
+        0,
+        23,
+        0
+       ],
+       "ease": "snap"
+      },
+      {
+       "t": 0.98,
+       "rot": [
+        0,
+        0,
+        0
+       ],
+       "ease": "back"
+      },
+      {
+       "t": 1.3,
+       "rot": [
+        0,
+        19,
+        0
+       ],
+       "ease": "snap"
+      },
+      {
+       "t": 1.56,
+       "rot": [
+        0,
+        3,
+        0
+       ],
+       "ease": "back"
+      },
+      {
+       "t": 1.8,
+       "rot": [
+        0,
+        15,
+        0
+       ],
+       "ease": "in"
+      }
+     ]
+    }
+   },
+   "hide_set": [
+    "fuelle_pared_izq",
+    "fuelle_costillas_izq"
+   ]
+  },
+  {
+   "id": "b5_p2",
+   "t0": 1.8,
+   "t1": 3.3,
+   "montaje": {
+    "usar_desde_s": 1.8,
+    "usar_hasta_s": 3.3,
+    "dur_montaje_s": 1.5
+   },
+   "descripcion": "Plano medio desde la puerta del ultimo vagon hacia el vagon 5. Ivan, el ultimo en salir, cierra de un golpe la puerta del vagon 5 (cuadro 48); por su vidrio se acercan los infectados; Ivan empuja al grupo hacia Hugo; Carmen queda ultima, de espaldas a esa puerta.",
+   "motivo_camara": "En mano activa, a la altura de los ojos, por encima de Tomas y Martina que vienen agachados. Acusa el portazo dos cuadros despues y retrocede porque el grupo se le viene encima; termina buscando a Carmen, que queda atras.",
+   "camera": {
+    "lens_mm": 28,
+    "mode": "handheld",
+    "handheld": {
+     "rot_deg": 0.9,
+     "pos_m": 0.015,
+     "hz": 1.0,
+     "seed": 52
+    },
+    "shakes": [
+     {
+      "impact_t": 2.0,
+      "delay_f": 2,
+      "deg": 0.8,
+      "m": 0.006,
+      "dur_s": 0.25,
+      "hz": 8.0
+     }
+    ],
+    "keys": [
+     {
+      "t": 1.79,
+      "pos": [
+       0.04,
+       0.56,
+       1.5
+      ],
+      "look_at": [
+       0.02,
+       3.0,
+       1.36
+      ]
+     },
+     {
+      "t": 2.1,
+      "pos": [
+       0.04,
+       0.54,
+       1.5
+      ],
+      "look_at": [
+       0.02,
+       3.0,
+       1.36
+      ]
+     },
+     {
+      "t": 3.55,
+      "pos": [
+       0.09,
+       0.2,
+       1.47
+      ],
+      "look_at": [
+       0.07,
+       2.8,
+       1.4
+      ]
+     }
+    ]
+   },
+   "actors": {
+    "tomas": {
+     "pose": "de_pie",
+     "keys": [
+      {
+       "t": 1.79,
+       "pos": [
+        -0.3,
+        2.15
+       ],
+       "yaw": 182,
+       "lean": 36,
+       "dz": -0.08
+      },
+      {
+       "t": 2.3,
+       "pos": [
+        -0.3,
+        2.06
+       ],
+       "lean": 34,
+       "dz": -0.08
+      },
+      {
+       "t": 3.6,
+       "pos": [
+        -0.44,
+        1.3
+       ],
+       "lean": 44,
+       "dz": -0.16
+      }
+     ]
+    },
+    "martina": {
+     "pose": "de_pie",
+     "keys": [
+      {
+       "t": 1.79,
+       "pos": [
+        0.22,
+        2.3
+       ],
+       "yaw": 176,
+       "lean": 36,
+       "dz": -0.1,
+       "head_yaw": 0
+      },
+      {
+       "t": 2.08,
+       "pos": [
+        0.22,
+        2.25
+       ],
+       "lean": 34,
+       "head_yaw": -55,
+       "ease": "out"
+      },
+      {
+       "t": 2.4,
+       "pos": [
+        0.22,
+        2.16
+       ],
+       "lean": 38,
+       "head_yaw": 0
+      },
+      {
+       "t": 3.6,
+       "pos": [
+        0.31,
+        1.5
+       ],
+       "lean": 44,
+       "dz": -0.15
+      }
+     ]
+    },
+    "ivan": {
+     "pose": "de_pie",
+     "keys": [
+      {
+       "t": 1.79,
+       "pos": [
+        -0.3,
+        2.8
+       ],
+       "yaw": -22,
+       "lean": 12
+      },
+      {
+       "t": 2.0,
+       "pos": [
+        -0.3,
+        2.72
+       ],
+       "yaw": -12,
+       "lean": 16,
+       "ease": "in"
+      },
+      {
+       "t": 2.36,
+       "pos": [
+        -0.3,
+        2.58
+       ],
+       "yaw": -172,
+       "lean": 10
+      },
+      {
+       "t": 3.6,
+       "pos": [
+        -0.3,
+        1.88
+       ],
+       "yaw": -180,
+       "lean": 22
+      }
+     ],
+     "arms": {
+      "R": {
+       "keys": [
+        {
+         "t": 1.79,
+         "to": [
+          0.13,
+          3.52,
+          1.05
+         ]
+        },
+        {
+         "t": 2.0,
+         "to": [
+          0.33,
+          3.0,
+          1.05
+         ],
+         "ease": "in"
+        },
+        {
+         "t": 2.1,
+         "to": [
+          0.32,
+          2.98,
+          1.08
+         ]
+        },
+        {
+         "t": 2.5,
+         "to": {
+          "actor": "tomas",
+          "part": "espalda",
+          "offset": [
+           0.0,
+           0.05,
+           0.0
+          ]
+         }
+        },
+        {
+         "t": 3.6,
+         "to": {
+          "actor": "tomas",
+          "part": "espalda",
+          "offset": [
+           0.0,
+           0.03,
+           0.0
+          ]
+         }
+        }
+       ]
+      }
+     }
+    },
+    "carmen": {
+     "pose": "de_pie",
+     "keys": [
+      {
+       "t": 1.79,
+       "pos": [
+        0.36,
+        2.52
+       ],
+       "yaw": 172,
+       "lean": 10
+      },
+      {
+       "t": 2.3,
+       "pos": [
+        0.36,
+        2.4
+       ],
+       "yaw": 170,
+       "lean": 10
+      },
+      {
+       "t": 2.75,
+       "pos": [
+        0.3,
+        2.44
+       ],
+       "yaw": 166,
+       "lean": 2,
+       "ease": "out"
+      },
+      {
+       "t": 3.3,
+       "pos": [
+        0.02,
+        2.5
+       ],
+       "yaw": 180,
+       "lean": 4
+      }
+     ]
+    },
+    "infectado_1": {
+     "pose": "de_pie",
+     "tremor": {
+      "m": 0.03,
+      "hz": 2.6
+     },
+     "keys": [
+      {
+       "t": 1.79,
+       "pos": [
+        0.0,
+        10.2
+       ],
+       "yaw": 180,
+       "lean": 18
+      },
+      {
+       "t": 3.3,
+       "pos": [
+        0.02,
+        4.05
+       ],
+       "ease": "linear"
+      }
+     ]
+    },
+    "infectado_2": {
+     "pose": "de_pie",
+     "tremor": {
+      "m": 0.03,
+      "hz": 2.9
+     },
+     "keys": [
+      {
+       "t": 1.79,
+       "pos": [
+        -0.16,
+        12.0
+       ],
+       "yaw": 180,
+       "lean": 20
+      },
+      {
+       "t": 3.3,
+       "pos": [
+        -0.15,
+        5.2
+       ],
+       "ease": "linear"
+      }
+     ]
+    },
+    "infectado_3": {
+     "pose": "de_pie",
+     "tremor": {
+      "m": 0.03,
+      "hz": 2.3
+     },
+     "keys": [
+      {
+       "t": 1.79,
+       "pos": [
+        0.18,
+        13.8
+       ],
+       "yaw": 180,
+       "lean": 16
+      },
+      {
+       "t": 3.3,
+       "pos": [
+        0.18,
+        6.6
+       ],
+       "ease": "linear"
+      }
+     ]
+    }
+   },
+   "nota_claves": "Varias claves terminan despues del corte (t > 3.3) a proposito: asi el grupo y la camara siguen en movimiento en el ultimo cuadro del plano; no hay frenada antes del corte."
+  },
+  {
+   "id": "b5_p3",
+   "t0": 3.3,
+   "t1": 5.0,
+   "montaje": {
+    "usar_desde_s": 3.3,
+    "usar_hasta_s": 4.3,
+    "dur_montaje_s": 1.0,
+    "alargue_s": "4.3-5.0"
+   },
+   "descripcion": "La puerta del vagon 5. IMPACTO en el cuadro 84 (3.500 s): un brazo infectado revienta el vidrio; en el cuadro 86 agarra a Carmen por el hombro izquierdo del abrigo, desde atras; desde el 87 la tira hacia atras contra la puerta. Carmen estira el brazo derecho hacia el grupo.",
+   "motivo_camara": "En mano, baja, de tres cuartos sobre Carmen, con la puerta del vagon 5 a la derecha del cuadro (camara donde iria la pared derecha del fuelle, 'pared movil'). La sacudida parte 3 cuadros despues del impacto (cuadro 87) y la camara sigue el tiron con 2-3 cuadros de retraso.",
+   "impacto": {
+    "t": 3.5,
+    "cuadro": 84,
+    "sacudida_desde_cuadro": 87
+   },
+   "camera": {
+    "lens_mm": 35,
+    "mode": "handheld",
+    "lag_s": 0.1,
+    "handheld": {
+     "rot_deg": 0.8,
+     "pos_m": 0.02,
+     "hz": 1.2,
+     "seed": 53
+    },
+    "shakes": [
+     {
+      "impact_t": 3.5,
+      "delay_f": 3,
+      "deg": 2.4,
+      "m": 0.02,
+      "dur_s": 0.45,
+      "hz": 8.5,
+      "kick": [
+       0.04,
+       -0.03,
+       0.0
+      ]
+     },
+     {
+      "impact_t": 4.3,
+      "delay_f": 2,
+      "deg": 1.0,
+      "m": 0.008,
+      "dur_s": 0.3,
+      "hz": 8.0
+     },
+     {
+      "impact_t": 4.85,
+      "delay_f": 2,
+      "deg": 0.8,
+      "m": 0.006,
+      "dur_s": 0.3,
+      "hz": 8.0
+     }
+    ],
+    "keys": [
+     {
+      "t": 3.29,
+      "pos": [
+       1.3,
+       1.95,
+       1.2
+      ],
+      "look_at": {
+       "actor": "carmen",
+       "part": "cabeza",
+       "offset": [
+        -0.02,
+        0.22,
+        -0.04
+       ]
+      }
+     },
+     {
+      "t": 3.62,
+      "pos": [
+       1.3,
+       1.93,
+       1.2
+      ],
+      "look_at": {
+       "actor": "carmen",
+       "part": "cabeza",
+       "offset": [
+        -0.02,
+        0.22,
+        -0.04
+       ]
+      }
+     },
+     {
+      "t": 3.95,
+      "pos": [
+       1.25,
+       2.05,
+       1.19
+      ],
+      "look_at": {
+       "actor": "carmen",
+       "part": "cabeza",
+       "offset": [
+        -0.02,
+        0.22,
+        -0.04
+       ]
+      },
+      "ease": "out"
+     },
+     {
+      "t": 5.0,
+      "pos": [
+       1.23,
+       2.09,
+       1.2
+      ],
+      "look_at": {
+       "actor": "carmen",
+       "part": "cabeza",
+       "offset": [
+        -0.02,
+        0.22,
+        -0.04
+       ]
+      }
+     }
+    ]
+   },
+   "actors": {
+    "carmen": {
+     "pose": "de_pie",
+     "tremor": {
+      "m": 0.006,
+      "hz": 5.0
+     },
+     "keys": [
+      {
+       "t": 3.29,
+       "pos": [
+        0.02,
+        2.5
+       ],
+       "yaw": 180,
+       "lean": 4,
+       "head_yaw": 0,
+       "head_pitch": 0,
+       "dz": 0
+      },
+      {
+       "t": 3.42,
+       "pos": [
+        0.02,
+        2.49
+       ],
+       "lean": 4,
+       "head_yaw": 0
+      },
+      {
+       "t": 3.5,
+       "pos": [
+        0.02,
+        2.49
+       ],
+       "lean": 6,
+       "head_yaw": 28,
+       "head_pitch": 0,
+       "ease": "out"
+      },
+      {
+       "t": 3.625,
+       "pos": [
+        0.02,
+        2.48
+       ],
+       "lean": 9,
+       "head_yaw": 30,
+       "head_pitch": 6
+      },
+      {
+       "t": 3.83,
+       "pos": [
+        -0.02,
+        2.71
+       ],
+       "lean": -14,
+       "head_pitch": -22,
+       "head_yaw": 10,
+       "dz": -0.04,
+       "ease": "out"
+      },
+      {
+       "t": 4.12,
+       "pos": [
+        0.0,
+        2.6
+       ],
+       "lean": -2,
+       "head_pitch": 4,
+       "dz": -0.02
+      },
+      {
+       "t": 4.3,
+       "pos": [
+        -0.03,
+        2.73
+       ],
+       "lean": -16,
+       "head_pitch": -20,
+       "dz": -0.06,
+       "ease": "out"
+      },
+      {
+       "t": 4.66,
+       "pos": [
+        0.01,
+        2.61
+       ],
+       "lean": -1,
+       "head_pitch": 6,
+       "dz": -0.03
+      },
+      {
+       "t": 4.85,
+       "pos": [
+        -0.02,
+        2.72
+       ],
+       "lean": -14,
+       "head_pitch": -16,
+       "dz": -0.07,
+       "ease": "out"
+      },
+      {
+       "t": 5.0,
+       "pos": [
+        -0.02,
+        2.69
+       ],
+       "lean": -9,
+       "head_pitch": -8,
+       "dz": -0.06
+      }
+     ],
+     "arms": {
+      "R": {
+       "tremor_m": 0.01,
+       "keys": [
+        {
+         "t": 3.29,
+         "to": [
+          -0.22,
+          2.36,
+          0.95
+         ]
+        },
+        {
+         "t": 3.6,
+         "to": [
+          -0.22,
+          2.34,
+          0.98
+         ]
+        },
+        {
+         "t": 3.8,
+         "to": [
+          -0.2,
+          1.98,
+          1.22
+         ],
+         "ease": "out"
+        },
+        {
+         "t": 4.12,
+         "to": [
+          -0.22,
+          2.02,
+          1.12
+         ]
+        },
+        {
+         "t": 4.32,
+         "to": [
+          -0.18,
+          2.06,
+          1.28
+         ],
+         "ease": "out"
+        },
+        {
+         "t": 4.66,
+         "to": [
+          -0.22,
+          2.0,
+          1.1
+         ]
+        },
+        {
+         "t": 4.87,
+         "to": [
+          -0.19,
+          2.08,
+          1.26
+         ],
+         "ease": "out"
+        },
+        {
+         "t": 5.0,
+         "to": [
+          -0.2,
+          2.06,
+          1.22
+         ]
+        }
+       ]
+      }
+     }
+    },
+    "infectado_1": {
+     "pose": "de_pie",
+     "tremor": {
+      "m": 0.012,
+      "hz": 4.0
+     },
+     "keys": [
+      {
+       "t": 3.29,
+       "pos": [
+        0.02,
+        4.05
+       ],
+       "yaw": 180,
+       "lean": 18
+      },
+      {
+       "t": 3.5,
+       "pos": [
+        -0.02,
+        3.36
+       ],
+       "lean": 24,
+       "ease": "linear"
+      },
+      {
+       "t": 3.83,
+       "pos": [
+        -0.02,
+        3.4
+       ],
+       "lean": 14,
+       "ease": "out"
+      },
+      {
+       "t": 4.12,
+       "pos": [
+        -0.02,
+        3.34
+       ],
+       "lean": 22
+      },
+      {
+       "t": 4.3,
+       "pos": [
+        -0.02,
+        3.42
+       ],
+       "lean": 12,
+       "ease": "out"
+      },
+      {
+       "t": 4.66,
+       "pos": [
+        -0.02,
+        3.34
+       ],
+       "lean": 22
+      },
+      {
+       "t": 4.85,
+       "pos": [
+        -0.02,
+        3.42
+       ],
+       "lean": 12,
+       "ease": "out"
+      },
+      {
+       "t": 5.0,
+       "pos": [
+        -0.02,
+        3.4
+       ],
+       "lean": 14
+      }
+     ],
+     "arms": {
+      "R": {
+       "from_t": 3.37,
+       "keys": [
+        {
+         "t": 3.37,
+         "to": [
+          -0.12,
+          3.32,
+          1.62
+         ]
+        },
+        {
+         "t": 3.5,
+         "to": [
+          -0.08,
+          3.045,
+          1.48
+         ],
+         "ease": "snap"
+        },
+        {
+         "t": 3.583,
+         "to": {
+          "actor": "carmen",
+          "part": "hombro_L",
+          "offset": [
+           -0.04,
+           0.03,
+           0.07
+          ]
+         },
+         "ease": "out"
+        },
+        {
+         "t": 5.0,
+         "to": {
+          "actor": "carmen",
+          "part": "hombro_L",
+          "offset": [
+           -0.04,
+           0.03,
+           0.07
+          ]
+         }
+        }
+       ]
+      }
+     }
+    },
+    "infectado_2": {
+     "pose": "de_pie",
+     "tremor": {
+      "m": 0.03,
+      "hz": 2.9
+     },
+     "keys": [
+      {
+       "t": 3.29,
+       "pos": [
+        -0.15,
+        5.2
+       ],
+       "yaw": 180,
+       "lean": 20
+      },
+      {
+       "t": 3.95,
+       "pos": [
+        -0.22,
+        3.95
+       ],
+       "ease": "out"
+      },
+      {
+       "t": 5.0,
+       "pos": [
+        -0.2,
+        3.9
+       ]
+      }
+     ]
+    },
+    "infectado_3": {
+     "pose": "de_pie",
+     "tremor": {
+      "m": 0.03,
+      "hz": 2.3
+     },
+     "keys": [
+      {
+       "t": 3.29,
+       "pos": [
+        0.18,
+        6.6
+       ],
+       "yaw": 180,
+       "lean": 16
+      },
+      {
+       "t": 4.2,
+       "pos": [
+        0.24,
+        4.3
+       ],
+       "ease": "out"
+      },
+      {
+       "t": 5.0,
+       "pos": [
+        0.24,
+        4.22
+       ]
+      }
+     ]
+    }
+   },
+   "hide_set": [
+    "fuelle_pared_der",
+    "fuelle_costillas_der"
+   ]
+  }
+ ]
+}
