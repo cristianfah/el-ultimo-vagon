@@ -265,3 +265,13 @@ Una entrada por decisión, instrucción o llamada paga. Se escribe en el momento
   3. Cobro real de fal de T0, T1 y T2: solo en el panel de fal (Usage).
   4. Los videos, fotogramas candidatos, referencias bajadas y renders de previz **no están en el repo**: viven en la carpeta de trabajo de la sesión (`trabajo/`). Lo que se elija como toma o fotograma final se copia al repo y al Drive en la entrega.
 - Saldo de Kling: 2.858 créditos. fal del piloto: ~21 USD estimados de 60.
+
+### 2026-11-10 02:40 · avance al Drive del proyecto
+- Tipo: instrucción de Cristián
+- Qué: «sube a drive para que los bots revisen el avance». Carpeta nueva dentro del Drive del proyecto: `piloto_cap01 · avance 2026-11-10 (T0, T1, T2)` (id `1FEH1t-U7G8SJWa422ioh23kPJ2YbWClO`).
+- Contenido (26 archivos): `00_LEEME.md` con qué mirar y qué revisar, la página 1, el log, `tomas.json`, 4 videos comparativos, 2 hojas de antes y después, 6 zips (fotogramas elegidos y comparaciones en dos partes cada uno, mediciones de lipsync con la pista, previz) y la subcarpeta `tomas_originales/` con las 9 tomas.
+- Límite encontrado: el conector de Drive admite ~7 MB por archivo (10 MB de carga en base64). Por eso los zips van partidos y `T1_c05a_kling_previz` subió recodificada (x264 crf 17, audio intacto); el original de 7,6 MB queda en la carpeta de trabajo.
+- Quedó un `zz_LEEME_v1_obsoleto.md` (la primera versión, renombrada; el conector no permite reemplazar el contenido de un archivo). Se puede borrar.
+- No subido: los PNG originales de los fotogramas (van en JPEG 95), los candidatos descartados, las 38 referencias aprobadas (ya están en el Drive) y los cuadros sueltos del render de previz.
+- Costo: 0
+- Repetible: sí. Armar el paquete es un script; la subida es una llamada por archivo y pide aprobación en cada una.
