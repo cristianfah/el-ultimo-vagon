@@ -447,3 +447,11 @@ Una entrada por decisión, instrucción o llamada paga. Se escribe en el momento
 - Las otras líneas entran a 0,10–0,30 s del corte. Las que caen dentro de un plano (Martina en b2_p1 y b2_p4) no son entradas después de corte.
 - Pendiente del gang: el test en silencio de Métricas sobre `cap01_gris_v1_qa.mp4`.
 - Costo: 0
+
+### 2026-11-18 06:06 · PARADA 1 · entrega al Drive
+- Tipo: decisión
+- Qué: carpeta nueva «piloto_cap01 · avance 2026-11-18 (gris con cilindros · PARADA 1)» dentro de la carpeta del proyecto, con las páginas de storyboard de los 8 bloques (9 JPG), stills A/B/C y plantas por bloque, 6 de los 8 MP4 de referencia con luz real, 6 de las 7 pruebas de 4 s en borrador, la página 2 y este log. Índice: `avance_2026-11-18_drive.md`.
+- **No subió (límite de ~3 MB por archivo en la subida desde esta sesión):** el montaje de ritmo (`cap01_gris_v1_qa.mp4` y `cap01_gris_v1.mp4`, 4,4–4,6 MB a 720p), `c06a_ref.mp4` (5,0 MB), `c07a_ref.mp4` (9,0 MB) y la prueba de 4 s de c06a (4,0 MB). Se le pregunta a Cristián cómo los quiere.
+- Se para aquí (05: «PARADA 1: sube el gris y muéstraselo a Cristián para que corrija cámara y dirección de arte. No sigas hasta que responda»). No se corrió la prueba de b5_p7 ni nada pagado.
+- **Gasto de la sesión: 0 USD y 0 créditos.** Acumulado del piloto: 318 créditos de Kling (saldo 2.858, sin cambios) y ~21 USD de fal estimados (sin cambios).
+- Siguiente paso: las respuestas de Cristián a la página 2. Con el OK, la prueba de b5_p7 en GPT Image 2.6 (máx. 2 tiradas, tope 1 USD) desde su cuadro gris; después la PARADA 2.
