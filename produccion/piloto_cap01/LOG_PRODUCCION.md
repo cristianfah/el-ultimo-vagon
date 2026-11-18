@@ -405,3 +405,19 @@ Una entrada por decisión, instrucción o llamada paga. Se escribe en el momento
 - Qué: el guion no pide un plano secuencia. El bloque 5, el candidato natural, está escrito en planos de 1 a 1,5 s con cortes secos; P1 y P6 repiten el encuadre de la cerradura a propósito (la llave es el reloj) y P5 sale de un fotograma guía, así que necesitan cortes. b5_p7 ya es un solo plano corto con la cámara retrocediendo, con su recorrido dibujado en la planta. Un plano secuencia de ~11 s con cinco personas y dos espacios separados por una puerta es justo lo que más rompe el modelo. Por la regla de Cristián («plano secuencia solo si el guion lo pide»), se descarta.
 - Quién decidió: director, con la opinión del agente del bloque 5
 - Costo: 0
+
+### 2026-11-18 01:58 · P · revisión independiente del gris
+- Tipo: revisión
+- Qué: un revisor que no armó ninguna ficha revisó las 9 páginas proyectando cada cuadro desde los datos de Blender (no a ojo). El chequeo automático daba 0 problemas en las 17 llamadas, pero tenía puntos ciegos: lados solo en los stills, choques con el set, continuidad entre llamadas y miradas entre 14° y 25° del lente, que en cuadro se leen de frente.
+- Hallazgos graves: Diego casi mira al lente durante su línea (b7_p2, b7_p5: 15–17°); Martina y Carmen casi de frente en b7_p3 y b7_p6; la mano de Hugo en la manija de b7_p6 es imposible en esta geometría (la manija queda detrás de la cámara); Iván no puede girarse «detrás de ella» en b7_p3; una ventana detrás de Tomás en b2_p3 (la v10 dice nunca); cilindros que llenan el cuadro en el bloque 2.
+- Hallazgos medios: b5_p3 cruza el eje (la huida va a la izquierda y en b5_p1/b5_p6 a la derecha); Iván salta de lado entre b5_p2 y b5_p4; en b5_p2 la cámara ocupa el lugar de Hugo; la puerta del vagón 5 cambia de estado entre c05b y c06a; Carmen atraviesa un asiento en b6_p1; varias miradas casi de frente en momentos clave; Martina al centro en b4_p6.
+- Lo que no tiene problemas (verificado con datos): los lados del guion en el vagón 5 y en el último vagón, las miradas que el guion fija, la dirección de pantalla en la huida y en los diálogos, el elenco por bloque, la llave, el tubo frío solo en el último vagón, una sola puerta en el último vagón y el inserto del maletín repetido.
+- Efecto: se paran los videos (casi todas las llamadas cambian) y tres agentes corrigen por zona. El chequeo automático ahora también avisa las miradas «casi de frente» (14–22°).
+- Decisiones del director, a confirmar por Cristián en la PARADA 1:
+  - **b7_p6:** la mano de Hugo en la manija no entra en cuadro; la última mirada de Martina baja hacia la manija, fuera de cuadro abajo a la derecha. (El guion la pide en primer término, desenfocada.)
+  - **b7_p3:** solo se giran hacia Martina Tomás y Carmen; Iván, junto a la puerta, no entra en cuadro. Se saca del prompt de ese plano para que el modelo no invente a una cuarta persona.
+  - **Puerta del vagón 5:** queda reventada y abierta en los bloques 5 y 6 y se cierra fuera de cuadro antes del bloque 7 (la tabla prohíbe una puerta abierta detrás de Diego).
+  - **Maletín:** queda bajo el par de asientos de la pareja, entrando desde el pasillo (en la práctica bajo el cojín de la esposa), para que su esquina se vea desde el pasillo. La tabla dice «bajo el asiento del hombre, por el lado del pasillo». Propuesta de texto para el prompt: «bajo el asiento de la pareja, del lado del pasillo».
+  - **b4_p3:** se mantiene la nota del montaje v1c: el medio segundo de negro va en post y el video parte ya en rojo.
+- Quién decidió: revisor (hallazgos) y director (correcciones)
+- Costo: 0

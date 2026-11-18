@@ -34,6 +34,7 @@ FFMPEG = os.environ.get("FFMPEG", "ffmpeg")
 FUENTE = "/usr/share/fonts/opentype/inter/Inter-Regular.otf"
 FUENTE_B = "/usr/share/fonts/opentype/inter/Inter-SemiBold.otf"
 RADIO = 0.16   # previz_lib.CILINDRO["radio"]
+UMBRAL_CASI = 22.0   # nariz entre 14 y 22 grados del lente: aviso (se lee de frente aunque no mire al lente)
 
 # copia de previz_lib.COLORES (este script corre fuera de Blender); se verifica contra previz_lib en armar()
 COLORES = {
@@ -305,7 +306,7 @@ def revisar(json_ficha, umbral_deg=14.0):
     for p in planos:
         sh = por_id[p["id"]]
         lo, hi = vent.get(p["id"], (p["t0"], p["t1"]))
-        malos = {}
+        malos, casi = {}, {}
         for c in datos["cuadros"][p["f0"]:p["f1"]]:
             t = c["f"] / fps
             if t < lo - 1e-6 or t >= hi:
@@ -319,9 +320,17 @@ def revisar(json_ficha, umbral_deg=14.0):
                 ang = math.degrees(math.acos(max(-1.0, min(1.0, dot(norm(a["mira"]), hacia)))))
                 if ang < umbral_deg and dist < 7.0 and not nombre.startswith("infectado_"):
                     malos.setdefault(nombre, []).append((c["f"], round(ang, 1)))
+                elif ang < UMBRAL_CASI and dist < 4.0 and not nombre.startswith(("infectado_", "extra_")):
+                    casi.setdefault(nombre, []).append((c["f"], round(ang, 1)))
         for nombre, lista in malos.items():
             prob.append("%s: %s mira al lente (nariz a < %.0f° de la camara) en %d cuadros de montaje, p. ej. cuadro %d (%.1f°)"
                         % (p["id"], nombre, umbral_deg, len(lista), lista[0][0], lista[0][1]))
+        for nombre, lista in casi.items():   # 14-22°: en cuadro se lee como una cara de frente (revision del 18-nov)
+            if nombre in malos:
+                continue
+            peor = min(lista, key=lambda x: x[1])
+            avisos.append("%s: %s casi de frente al lente (nariz a < %.0f°) en %d cuadros de montaje; el peor, cuadro %d (%.1f°)"
+                          % (p["id"], nombre, UMBRAL_CASI, len(lista), peor[0], peor[1]))
         # lados declarados en los stills
         for letra, s in (sh.get("stills") or {}).items():
             lados = s.get("lados")
