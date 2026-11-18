@@ -1,0 +1,64 @@
+# c03b_0.7-4.7 · Kling 4.0 Omni-Ref (MCP) · brazo A (gris como video de referencia)
+
+> **Borrador. No se envía sin el OK de Cristian.** Mismo prompt base que `prompt_kling_B.md`, `prompt_seedance_A.md`, `prompt_seedance_B.md`: cambian solo las referencias y las líneas fijas del brazo.
+
+**Llamada:** MCP de Kling, `omni_ref_video` · `model` `kling-video-v4_0` · `resolution` 720p · `duration` 4 · `aspect_ratio` 9:16 · `imageCount` 1 · `prefer_multi_shots` true · `enable_audio` true · sin `audio_1`. Payload: `payload_kling.json` → `A`.
+
+**Ventana:** c03b, de 0,7 a 4,7 s de la llamada · planos dentro de la prueba: b3_p4 0,0–1,3 · b3_p5 1,3–2,3 · b3_p6 2,3–4,0.
+
+**Entradas, en este orden:**
+
+| En el prompt | Campo | Archivo | Se sube desde |
+|---|---|---|---|
+| 视频1 | `video_1` | `video_1.mp4` | `$PREVIZ_TRABAJO/pruebas4s/c03b_0.7-4.7/video_1.mp4` |
+| 图片1 | `image_1` | `HOJA_extra_pareja_camisa_azul.png` | `$TRABAJO/refs/personajes__HOJA_extra_pareja_camisa_azul.png` |
+| 图片2 | `image_2` | `ESTADO_hombre_azul_infectado.png` | `REPO/produccion/pruebas/cap01_animatic_v3/assets/ESTADO_hombre_azul_infectado.png` |
+| 图片3 | `image_3` | `F08_v2_ambar_bajo.png` | `REPO/produccion/pruebas/cap01_animatic_v3/assets/F08_v2_ambar_bajo.png` |
+
+**Prompt** (6527 caracteres, completo y listo para pegar):
+
+```text
+[EUV CAP01 - BLOQUE 3 - INT. CARRIAGE 2 - NOCHE - HANDHELD STILL, 45MM / HANDHELD SHAKEN, 28MM / HANDHELD LATE PAN, 24MM - 4s - 3 CUTS - REAL TIME 24 FPS, NO SLOW MOTION - 9:16 - prueba4s v1]
+
+REFERENCES
+图片1 is the couple in their late 40s: identity and wardrobe only, not framing - the man is heavyset, with a receding hairline and a short grey beard, in a bright cobalt-blue button-up shirt and grey trousers; the woman is short, with shoulder-length straight black hair and a beige cardigan. Ignore the sheet layout and backdrop. In the grey previz the man is the strong-blue cylinder and his wife the pinkish-beige one.
+图片2 is the man in the blue shirt after the change: milky white eyes and dark veins climbing his neck to the jaw; face and skin state only, not framing.
+图片3 is a set plate of carriage 2 at night with only two or three reading lamps lit: look and light only, NEVER a shot.
+视频1 is the grey previz of these exact 4 seconds, rendered from the real camera and lens: composition and blocking.
+视频1 is the master reference for camera, blocking and timing. The character sheets define identity. 图片3 is a style reference only.
+Cylinder legend of the grey previz: every person is a plain colored cylinder with a cone nose that shows where the face points. The man in the blue shirt strong blue; his wife pinkish beige; the other passengers, the woman reading among them, grey.
+
+LOCKS
+CAST LOCK: ONLY 5 PEOPLE - THE MAN IN THE BLUE SHIRT, HIS WIFE, THE WOMAN READING, A YOUNG MAN WITH HEADPHONES AND ONE PASSENGER FAR BACK. CUTS 1 AND 2 SHOW ONLY THE COUPLE.
+THE MAN: MILKY WHITE EYES AND DARK VEINS ON HIS NECK FROM 0.1s TO THE END; BRIGHT BLUE SHIRT.
+SIDES LOCK: THE MAN ON FRAME LEFT (WINDOW SEAT), HIS WIFE ON FRAME RIGHT (AISLE SEAT); HE LUNGES TOWARD FRAME RIGHT. IN CUT 3 THE WOMAN READING IS RIGHT OF CENTER, ACROSS THE AISLE.
+NOBODY LOOKS INTO THE LENS.
+
+SCENE CONTEXT
+Carriage 2 of a night train, almost dark, nearly everyone asleep. The briefcase under the couple's seat has opened by itself and a thin white mist has crept up from the floor; the man in the blue shirt breathed it and is turning. These 4 seconds are his change, his lunge onto his sleeping wife and the first scream in the carriage. Held for the whole clip: wardrobe identical to the character sheets in every frame, never changing color; the thin white mist stays low over the floor; the side windows show night with rain on the outside of the glass.
+
+ACTION
+The man in the blue shirt - GOAL: reach the body beside him. TACTIC: goes dead still, turns his head slowly to his wife, gathers himself and throws his whole weight onto her.
+His wife - asleep on his shoulder until the impact wakes her.
+The woman reading - GOAL: get away from what she sees. TACTIC: jumps to her feet and screams; her book drops.
+The young man with headphones - GOAL: see what is happening. TACTIC: turns sharply toward the couple.
+The passenger far back - lifts his head toward the scream.
+
+PHYSICS
+Real time at 24 fps: no slow motion, no speed ramp. The man's body has weight: he gathers, then lunges in one movement and the seat creaks; the impact drives both of them against the seat and the camera takes the blow. The woman reading springs up; her book falls and hits the floor. The whole carriage sways with the rails and the bodies sway with it.
+
+LIGHTING
+Only practical sources, no fill: only two or three warm amber reading lamps are lit - one over the couple's row, one over the woman reading across the aisle, one far back - with darkness between them. Faces half in shadow; blacks fall to black. The side windows are deep night with rain on the outside of the glass.
+
+AUDIO
+Continuous rail rhythm, rain on the windows, a faint hiss of the mist. 0.0s: his last cough cuts off dead; then only a rasping breath. 1.62s: the seat creaks as he gathers. 2.09s: a heavy thud as he lands on her. 2.3s: the woman reading screams; her book hits the floor. From 2.4s: the rustle of passengers waking. Nobody speaks. AUDIO LOCK, no words: the man in the blue shirt, heavyset, late 40s - only a rasping breath after the cough; the woman reading - one raw, sharp scream of an adult woman.
+
+CUTS
+CUT 1 (0 to 1.3s) - Close-up of the man, frontal, from just above the seat back in front of him, about 1.1 m away, framed from the top of his chest up with air above his head, 45mm. The man left of center; at the right edge, his wife's shoulder and face, asleep against him. Behind: their seat back and the dark carriage. Camera: handheld, still, only breathing; no push-in. At 0.0s his last cough cuts off dead; by 0.1s his eyes are milky white and dark veins are climbing his neck to his jaw. From 0.3s to 1.25s his head turns slowly toward frame right, toward his wife; his eyes arrive first. - HARD CUT AT 1.3s
+CUT 2 (1.3 to 2.3s) - Medium shot, low (about 1.0 m, at their chest height), from the aisle just behind the seat back in front, three-quarter angle, 28mm. The man on frame left, already turned toward her; his wife on frame right, asleep; behind them their seat back and the window wall. Camera: handheld; the operator flinches when the man gathers himself and takes the blow 2 frames after the impact, following the movement late. At 1.3s he stares at her for an instant; at 1.62s he gathers himself and lunges onto her, toward frame right and slightly toward the camera; at 2.09s he lands on her and she wakes with the blow. The shot cuts 0.2s after the impact. - HARD CUT AT 2.3s
+CUT 3 (2.3 to 4.0s) - Wide shot down the aisle toward the rear of the carriage, from standing height in the aisle (about 1.55 m), two rows in front of the couple, 24mm. Camera: handheld; it starts still on the couple at frame left, him on top of her, and arrives late to the scream: a pan from 2.48s to 2.76s finds the woman reading already on her feet, overshoots slightly and settles at 2.92s; then the operator takes half a step forward. At 2.3s the woman reading, across the aisle three rows further back, jumps to her feet and screams, her eyes on the couple, to the left of the lens; her book drops. At 2.4s the young man with headphones, in the foreground on frame right, turns toward the couple; at 2.45s a passenger far back on frame left lifts his head toward her. A thin white mist covers the aisle floor. After the pan the couple is out of frame on the left. - END OF CLIP AT 4.0s
+
+Colored cylinders are blocking only: position, facing and path. Body, face and acting come from the character references.
+
+No music. No subtitles, no captions, no on-screen text.
+```

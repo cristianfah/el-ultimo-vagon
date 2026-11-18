@@ -1,0 +1,79 @@
+# c05b_2.0-6.0 · Seedance 2.5 draft (fal) · brazo B (hoja de storyboard como imagen, sin video)
+
+> **Borrador. No se envía sin el OK de Cristian.** Mismo prompt base que `prompt_kling_A.md`, `prompt_kling_B.md`, `prompt_seedance_A.md`: cambian solo las referencias y las líneas fijas del brazo.
+
+**Llamada:** fal, `bytedance/seedance-2.5/us/reference-to-video` · `draft` true (sale a 480p y devuelve `draft_id`) · `duration` "4" · `aspect_ratio` "9:16" · `seed` 1019 · `generate_audio` true · sin `audio_urls`. Payload: `payload_seedance.json` → `B`.
+
+**Ventana:** c05b, de 2,0 a 6,0 s de la llamada · planos dentro de la prueba: b5_p6 0,0–1,5 · b5_p7 1,5–4,0.
+
+**Entradas, en este orden:**
+
+| En el prompt | Campo | Archivo | Se sube desde |
+|---|---|---|---|
+| @Image1 | `image_urls[0]` | `HOJA_hugo.png` | `$TRABAJO/refs/personajes__HOJA_hugo.png` |
+| @Image2 | `image_urls[1]` | `HOJA_ivan.png` | `$TRABAJO/refs/personajes__HOJA_ivan.png` |
+| @Image3 | `image_urls[2]` | `HOJA_carmen.png` | `$TRABAJO/refs/personajes__HOJA_carmen.png` |
+| @Image4 | `image_urls[3]` | `HOJA_martina.png` | `$TRABAJO/refs/personajes__HOJA_martina.png` |
+| @Image5 | `image_urls[4]` | `HOJA_tomas.png` | `$TRABAJO/refs/personajes__HOJA_tomas.png` |
+| @Image6 | `image_urls[5]` | `PROP_llave_y_cerradura.png` | `$TRABAJO/refs/props__PROP_llave_y_cerradura.png` |
+| @Image7 | `image_urls[6]` | `ref_infectados.jpg` | `REPO/direccion_arte/referencias/ref_infectados.jpg` |
+| @Image8 | `image_urls[7]` | `F04_rojo_puerta_desde_fuelle.png` | `$TRABAJO/refs/set__F04_rojo_puerta_desde_fuelle.png` |
+| @Image9 | `image_urls[8]` | `F03_rojo_puerta_desde_dentro_0-45.png` | `$TRABAJO/refs/set__F03_rojo_puerta_desde_dentro_0-45.png` |
+| @Image10 | `image_urls[9]` | `hoja_storyboard.jpg` | `$PREVIZ_TRABAJO/pruebas4s/c05b_2.0-6.0/hoja_storyboard.jpg` |
+
+**Prompt** (11114 caracteres, completo y listo para pegar):
+
+```text
+[EUV CAP01 - BLOQUE 5 - INT. GANGWAY / LAST CARRIAGE - NOCHE - HANDHELD CLOSE, 50MM / HANDHELD RETREATING, 24MM - 4s - 2 CUTS - REAL TIME 24 FPS, NO SLOW MOTION - 9:16 - prueba4s v1]
+
+REFERENCES
+@Image1 is Hugo, 62, the train conductor: identity and wardrobe only, not framing - a long thin face, a thick grey moustache, tired watery eyes, a navy conductor's cap with a plain embroidered wheel badge and no letters, an old brushed navy conductor's uniform with dull bronze buttons, a whistle on a cord; slim and slightly stooped. Ignore the sheet layout and backdrop. In the grey previz he is the bronze cylinder.
+@Image2 is Iván, 45: identity and wardrobe only, not framing - a shaved head, a broken flattened nose, a wide weathered sunburnt face, two-day stubble with grey patches, a heavy dark brown canvas work jacket with worn reflective stripes on the arms over a grey hoodie, work trousers, safety boots with cement dust only on the boots and knees; broad shoulders, thick neck. Ignore the sheet layout and backdrop. In the grey previz he is the dark-brown cylinder.
+@Image3 is Carmen, 54, a night-shift nurse: identity and wardrobe only, not framing - a round face, short curly reddish-brown dyed hair with grey roots showing, reading glasses hanging on a beaded cord, faded light-blue scrubs under a long dark brown wool coat, a large cloth bag on her LEFT shoulder, worn white clogs; short and sturdy. Ignore the sheet layout and backdrop. In the grey previz she is the light-blue cylinder.
+@Image4 is Martina, 29: identity and wardrobe only, not framing - a narrow face, a small mole on her LEFT cheekbone, shoulder-length dark brown wavy hair tucked behind her right ear, an oversized oatmeal chunky wool sweater whose cuffs cover her knuckles, a long charcoal wool coat always worn open, faded dark jeans, worn brown leather boots. Ignore the sheet layout and backdrop. In the grey previz she is the oatmeal cylinder.
+@Image5 is Tomás, 31: identity and wardrobe only, not framing - thin full metal-frame glasses always on his face, short neat dark brown hair with a side part, clean-shaven, a fitted navy quilted jacket over a charcoal sweater, dark chinos, white sneakers, an average, slightly soft build. Ignore the sheet layout and backdrop. In the grey previz he is the navy-blue cylinder.
+@Image6 is the antique iron key and the lock of the last carriage's door: object identity only, not framing.
+@Image7 is the look of the infected only - grey skin, milky white eyes, dark veins, dark red-black stains at the mouth, ordinary passenger clothes; ignore its background, its lights and its framing. In the grey previz the infected are near-black cylinders (under the light they can read dark grey).
+@Image8 is a set plate of the last carriage's door seen from the gangway, in red light: look and light only, NEVER a shot.
+@Image9 is a set plate of the last carriage's door seen from inside, in red emergency light: look and light only, NEVER a shot.
+@Image10 is the storyboard sheet of these exact 4 seconds, one row per shot with its key stills from the real camera (A = start, B = key moment, C = end): composition and blocking.
+@Image10 is a storyboard sheet; panels, gutters and labels are planning marks only. No storyboard grid, split screen or collage in the output. The character sheets define identity. @Image8 and @Image9 are style references only.
+Cylinder legend of the grey previz: every person is a plain colored cylinder with a cone nose that shows where the face points. Hugo bronze, Iván dark brown, Carmen light blue, Martina oatmeal, Tomás navy blue, the infected near-black.
+
+LOCKS
+CAST LOCK: ONLY 8 PEOPLE - HUGO, IVÁN, CARMEN, MARTINA, TOMÁS AND 3 INFECTED. CUT 1 SHOWS ONLY HUGO.
+HUGO: KEY IN HIS RIGHT HAND FROM THE MOMENT IT LEAVES THE LOCK UNTIL THE END.
+CARMEN: RIGHT PALM CUT, DARK RED-BLACK STAIN; SHE KEEPS THAT HAND PRESSED TO HER CHEST.
+SIDES LOCK: SEEN FROM INSIDE THE LAST CARRIAGE, MARTINA COMES IN ON FRAME LEFT, TOMÁS AND CARMEN ON FRAME RIGHT; HUGO STAYS OUTSIDE, LEFT OF THE DOORWAY.
+LIGHT LOCK: THE COLD WHITE TUBE EXISTS ONLY INSIDE THE LAST CARRIAGE, ABOVE ITS DOOR; THE GANGWAY HAS NO WHITE LIGHT OF ITS OWN, ONLY ITS RED CEILING STRIP.
+NOBODY LOOKS INTO THE LENS.
+
+SCENE CONTEXT
+A night train. The survivors flee carriage 5 through the short closed gangway that joins it to the last carriage, the only place they can lock themselves in. Hugo, the old conductor, has been fighting an antique key that jams in the lock of the last carriage's only door; behind the group, the infected are breaking through the carriage 5 door. These 4 seconds are the key finally turning and the group stumbling into the last carriage. Held for the whole clip: wardrobe identical to the character sheets in every frame, never changing color; Hugo's cap stays on; Tomás's glasses stay on; Martina's coat stays open, her sweater cuffs over her knuckles; Carmen's bag stays on her left shoulder. The gangway has no windows. The last carriage has a single door; its side windows show night with rain on the outside of the glass.
+
+ACTION
+Hugo - GOAL: get the door open and everyone through before the infected reach them. TACTIC: forces the key with both hands and his body weight; when it turns he pulls it out, keeps it in his right fist and rams the door with his shoulder; then guards the doorway from outside, by the lock, hurrying them in and watching the infected.
+Tomás - GOAL: get Martina inside. TACTIC: goes first and pulls her by the hand, his right hand holding her left, looking back at her, not ahead.
+Martina - GOAL: keep up without falling. TACTIC: lets him drag her, half a step behind, eyes on the floor.
+Iván - GOAL: get Carmen inside. TACTIC: shoves her through by the back, keeping his body between her and the gangway.
+Carmen - GOAL: get through while protecting her hurt hand. TACTIC: right hand pressed to her chest, head down, she stumbles forward.
+The infected - run straight down the gangway at the group, arms reaching.
+
+PHYSICS
+Real time at 24 fps: no slow motion, no speed ramp. The jammed key resists, slips back, then turns a quarter turn in one snap. The door is heavy steel: the shoulder blow swings it inward, it keeps going on its own momentum and stops wide open. Bodies have weight: a toe catches on the raised threshold and the stumble carries the body two steps before it recovers; coats swing and settle. The whole train sways and rattles and the bodies sway with it. Handheld moves start late and stop with weight; the camera never floats.
+
+LIGHTING
+Only the set's own sources, no fill. Gangway: the red emergency strip on its ceiling, from above; half of Hugo's face in shadow. Last carriage: red emergency light from above plus one cold white tube over the door on the inside, which rims heads and shoulders and does not light the carriage; faces half in shadow; blacks fall to black. When the door swings open, red light and the cold edge of the tube spill out of the doorway onto Hugo.
+
+AUDIO
+Continuous heavy rail rhythm and the rattle of the gangway plates. 0.15s and 0.3s: the key grinding in the lock. 0.45s: a hard metallic clack as it turns. 0.72s: off-screen, behind the camera, the crash of the carriage 5 door bursting into the gangway, then running feet and snarls getting closer. 1.08s: a shoulder thud and groaning hinges. From 1.5s: scrambling feet, a toe knocking the threshold at 2.2s and 2.3s, ragged breathing. Nobody speaks; no dialogue audio in this test. AUDIO LOCK, breaths and effort only, no words, soft Santiago Chilean voices: Hugo, 62, low worn voice - one strained grunt on the shoulder blow; Iván, 45, deep dry voice - heavy breathing through his teeth; Carmen, 54, warm firm voice - one short choked gasp when she stumbles; Martina, 29, low husky voice - a sharp intake of breath when she stumbles; Tomás, 31, calm mid-low voice - fast breathing.
+
+CUTS
+CUT 1 (0 to 1.5s) - Close shot of the lock of the last carriage's door, seen from the gangway on the lock side, at key height (about 1.2 m), 50mm. Frame left, in the foreground: Hugo in profile, facing the door, eyes on the lock. Frame right: the lock with the antique key in the keyhole. Above center: the door's small window, dim red behind it. Camera: handheld, close, small and slow; it moves in 3 cm with the clack because the sound pulls it, and jolts 3 frames after the off-screen crash and 3 frames after the shoulder blow. At 0.0s Hugo is already throwing his weight on the key with both hands; at 0.15s he wrenches it again and it slips back; at 0.45s it turns with a snap. From 0.6s to 0.9s his right hand pulls the key out and closes around it. At 0.72s his shoulders flinch at the crash behind him; he does not turn. At 1.08s he rams the door with his shoulder: it swings inward, away from the camera, on the right of the frame. By 1.5s he is stepping back to the lock side and turning his head over his left shoulder toward the gangway behind him, away from the lens. - HARD CUT AT 1.5s
+CUT 2 (1.5 to 4.0s) - From inside the last carriage, looking at its only door, at standing eye height (about 1.55 m), 24mm. The doorway is at center; the door swings wide open inward and its leaf ends against the right side; the cold tube glows above the door frame, on the inside. Through the doorway: the short red gangway and, at its far end, the carriage 5 door burst open and hanging against the left side, its glass smashed, with three infected running down the gangway behind the group. Camera: handheld at eye height; it backs away about 0.7 m because the group is coming straight at it, starting 2 frames late and stopping with weight; one jolt 3 frames after Martina stumbles. At 1.5s Tomás is already at the doorway on frame right, dragging Martina by the hand and looking back at her; Martina is half a step behind him, on frame left. At 2.2s, just past the threshold, her toe catches and she stumbles forward, eyes on the floor, his grip keeping her up. Behind them Iván shoves Carmen through by the back; at 2.3s Carmen stumbles, her right hand pressed to her chest. They pass on both sides of the camera: Martina on the left, Tomás and Carmen on the right; Iván comes in behind Carmen and turns to face the door. Outside, left of the doorway, Hugo stands by the lock with the key in his right fist, hurrying them in with his free hand and watching the infected come. From 3.0s the first infected is less than a meter from him and Hugo backs toward the threshold to come in last; at 4.0s he is stepping backward over it. Gazes: Tomás on Martina, Martina on the floor, Carmen on the floor ahead of her, Iván on Carmen's back and then on the door, Hugo on the infected. - END OF CLIP AT 4.0s
+Follow the storyboard panels in order, each a key frame: match camera position, framing, screen direction and action; cut only where the shot number changes. The panels are grey previz stand-ins for blocking only; every look comes from the references and this text.
+
+Colored cylinders are blocking only: position, facing and path. Body, face and acting come from the character references.
+
+No music. No subtitles, no captions, no on-screen text.
+```
