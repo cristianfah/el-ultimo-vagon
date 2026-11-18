@@ -18,7 +18,7 @@
  "props_in_frame": [
   "llave"
  ],
- "notes": "Último vagón, luz roja con el tubo frío sobre la puerta (por dentro). Puerta en y=-0.04, bisagras a la derecha vista desde adentro (+X), abre hacia adentro; cerradura y ranura a la izquierda (x=-0.32). P8: cámara adentro, del lado de la cerradura, mirando la ranura de tres cuartos. P9: de frente a la ventanita. b6_p1: desde el pasillo entre las filas 3 y 4, hacia la puerta. El grupo termina en las marcas del brief (Martina -0.25/-1.55, Tomás 0.25/-1.45, Carmen 0.80/-1.85, Iván 0.10/-0.32, Hugo -0.62/-0.50).",
+ "notes": "Último vagón, luz roja con el tubo frío sobre la puerta (por dentro). Puerta en y=-0.04, bisagras a la derecha vista desde adentro (+X), abre hacia adentro; cerradura y ranura a la izquierda (x=-0.32). P8: cámara adentro, del lado de la cerradura, mirando la ranura de tres cuartos. P9: de frente a la ventanita. b6_p1: desde el pasillo entre las filas 3 y 4, hacia la puerta. El grupo termina en las marcas del brief (Martina -0.25/-1.55, Tomás 0.25/-1.45, Carmen 0.05/-2.20 en el pasillo detrás y entre los dos -cambio del director, 18-nov-, Iván 0.10/-0.32, Hugo -0.62/-0.50).",
  "set_anim": {
   "doors": [
    {
@@ -482,8 +482,8 @@
       {
        "t": 0.9,
        "pos": [
-        0.72,
-        -0.98
+        0.62,
+        -1.1
        ],
        "yaw": -8,
        "head_yaw": 0,
@@ -492,8 +492,8 @@
       {
        "t": 2.06,
        "pos": [
-        0.72,
-        -1.13
+        0.55,
+        -1.45
        ],
        "yaw": -6,
        "head_yaw": 4,
@@ -1079,8 +1079,8 @@
       {
        "t": 0.9,
        "pos": [
-        0.72,
-        -0.98
+        0.62,
+        -1.1
        ],
        "yaw": -8,
        "head_yaw": 0,
@@ -1089,8 +1089,8 @@
       {
        "t": 2.06,
        "pos": [
-        0.72,
-        -1.13
+        0.55,
+        -1.45
        ],
        "yaw": -6,
        "head_yaw": 4,
@@ -1100,10 +1100,10 @@
       {
        "t": 2.8,
        "pos": [
-        0.72,
-        -1.16
+        0.45,
+        -1.62
        ],
-       "yaw": -6,
+       "yaw": -4,
        "head_yaw": 4,
        "head_pitch": -6
       }
@@ -1325,12 +1325,12 @@
     "dur_montaje_s": 2.0,
     "alargue_s": "4.8-6.0"
    },
-   "descripcion": "Plano general del último vagón desde el fondo, hacia la puerta (la única puerta, con el tubo frío encima). Golpes violentos de muchas manos en la puerta y en la ventanita (de 2.95 a 3.92 s); la hoja tiembla contra la cerradura. El grupo retrocede hacia la cámara hasta sus marcas: Martina a la izquierda de Tomás, Carmen a la derecha. Iván cruza a la puerta, se da vuelta y apoya la espalda contra ella (3.32 s), con la cabeza gacha. Hugo junto a la puerta, del lado de la cerradura. A 3.95 s llega un grito lejano desde el vagón 5: los golpes paran de golpe, Iván levanta la cabeza, las siluetas se van de la ventanita (el vidrio queda manchado) y se oyen pasos que se alejan. Silencio: el tren y las respiraciones. Alargue (4.8-6.0): los infectados se alejan por el fuelle; Martina baja la mirada al piso y Carmen a su mano derecha.",
-   "motivo_camara": "Fija a propósito: el contraste con el caos del bloque 5 es la idea. A la altura de los ojos de pie, desde el pasillo entre las filas 3 y 4, con los respaldos de las filas 2 y 3 como primer término. No acusa los golpes: solo vibra con el tren.",
+   "descripcion": "Plano general del último vagón desde el fondo, hacia la puerta (la única puerta, con el tubo frío encima). Golpes violentos de muchas manos en la puerta y en la ventanita (de 2.95 a 3.92 s); la hoja tiembla contra la cerradura. El grupo retrocede hacia la cámara hasta sus marcas: Martina a la izquierda de Tomás; Carmen, la que más retrocede, hasta el pasillo, detrás y entre los dos. Iván cruza a la puerta, se da vuelta y apoya la espalda contra ella (3.32 s), con la cabeza gacha. Hugo junto a la puerta, del lado de la cerradura. A 3.95 s llega un grito lejano desde el vagón 5: los golpes paran de golpe, Iván levanta la cabeza, las siluetas se van de la ventanita (el vidrio queda manchado) y se oyen pasos que se alejan. Silencio: el tren y las respiraciones. Alargue (4.8-6.0): los infectados se alejan por el fuelle; Martina baja la mirada al piso y Carmen a su mano derecha.",
+   "motivo_camara": "Fija a propósito: el contraste con el caos del bloque 5 es la idea. Desde el pasillo entre las filas 3 y 4, un poco alta (1,9 m): Carmen, la que más retrocede, queda de espaldas en primer término y la cámara mira por encima de ella a Iván contra la puerta y a la ventanita; el grupo encerrado, visto desde arriba. Respaldos de las filas 2 y 3 a los lados. No acusa los golpes: solo vibra con el tren.",
    "camera": {
     "lens_mm": 24,
     "tag": "FIJA",
-    "mira": "hacia la puerta del último vagón, desde el fondo",
+    "mira": "hacia la puerta del último vagón, desde el fondo y un poco desde arriba",
     "mov": "fija; solo vibra con el tren",
     "vibration": {
      "deg": 0.04,
@@ -1342,18 +1342,18 @@
       "t": 2.8,
       "pos": [
        0.05,
-       -4.1,
-       1.5
+       -4.3,
+       1.9
       ],
       "look_at": [
-       -0.02,
+       0.0,
        -0.6,
-       1.16
+       1.15
       ]
      }
     ]
    },
-   "en_cuadro": "Primer término: respaldos de los asientos a los dos lados del pasillo. Al fondo, la puerta con la ventanita y el tubo frío encima; Iván de espaldas contra la puerta, al centro; Hugo a la izquierda, junto a la cerradura; Martina a la izquierda de Tomás, al centro; Carmen a la derecha, junto a la fila 1. A los lados, las ventanas laterales negras (noche, lluvia por fuera).",
+   "en_cuadro": "Primer término: Carmen de espaldas en el pasillo, al centro, y los respaldos a los dos lados. Detrás de ella, Martina a la izquierda de Tomás. Al fondo, la puerta con la ventanita y el tubo frío encima; Iván contra la puerta, al centro, por encima de la cabeza de Carmen; Hugo a la izquierda, junto a la cerradura. A los lados, las ventanas laterales negras (noche, lluvia por fuera).",
    "stills": {
     "A": {
      "t": 2.85,
@@ -1528,41 +1528,41 @@
       {
        "t": 2.8,
        "pos": [
-        0.72,
-        -1.16
+        0.45,
+        -1.62
        ],
-       "yaw": -6,
+       "yaw": -4,
        "head_yaw": 4,
        "head_pitch": -6
       },
       {
        "t": 3.8,
        "pos": [
-        0.8,
-        -1.85
+        0.05,
+        -2.2
        ],
-       "yaw": -4,
+       "yaw": -2,
        "head_yaw": 4,
        "head_pitch": -4
       },
       {
        "t": 4.4,
        "pos": [
-        0.8,
-        -1.85
+        0.05,
+        -2.2
        ],
-       "yaw": -4,
+       "yaw": -2,
        "head_yaw": 8,
        "head_pitch": -8
       },
       {
        "t": 6.0,
        "pos": [
-        0.8,
-        -1.85
+        0.05,
+        -2.2
        ],
        "yaw": 0,
-       "head_yaw": -10,
+       "head_yaw": -20,
        "head_pitch": 34
       }
      ],

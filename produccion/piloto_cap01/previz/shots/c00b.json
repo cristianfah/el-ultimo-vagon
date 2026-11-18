@@ -151,7 +151,7 @@
        ],
        "yaw": 0,
        "head_yaw": 6,
-       "head_pitch": 30
+       "head_pitch": 25
       }
      ]
     },
@@ -196,7 +196,7 @@
        ],
        "yaw": 0,
        "head_yaw": -10,
-       "head_pitch": 26
+       "head_pitch": 25
       }
      ]
     },
@@ -211,7 +211,7 @@
        ],
        "yaw": 0,
        "head_yaw": 6,
-       "head_pitch": 34
+       "head_pitch": 25
       }
      ]
     },
@@ -479,7 +479,7 @@
        ],
        "yaw": 0,
        "head_yaw": 6,
-       "head_pitch": 30
+       "head_pitch": 25
       }
      ]
     },
@@ -524,7 +524,7 @@
        ],
        "yaw": 0,
        "head_yaw": -10,
-       "head_pitch": 26
+       "head_pitch": 25
       }
      ]
     },
@@ -539,7 +539,7 @@
        ],
        "yaw": 0,
        "head_yaw": 6,
-       "head_pitch": 34
+       "head_pitch": 25
       }
      ]
     },

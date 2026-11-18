@@ -130,7 +130,7 @@
        ],
        "yaw": 0,
        "head_yaw": 6,
-       "head_pitch": 30
+       "head_pitch": 25
       }
      ]
     },
@@ -175,7 +175,7 @@
        ],
        "yaw": 0,
        "head_yaw": -10,
-       "head_pitch": 26
+       "head_pitch": 25
       }
      ]
     },
@@ -190,7 +190,7 @@
        ],
        "yaw": 0,
        "head_yaw": 6,
-       "head_pitch": 34
+       "head_pitch": 25
       }
      ]
     },
@@ -373,7 +373,7 @@
        ],
        "yaw": 0,
        "head_yaw": 6,
-       "head_pitch": 30
+       "head_pitch": 25
       }
      ]
     },
@@ -418,7 +418,7 @@
        ],
        "yaw": 0,
        "head_yaw": -10,
-       "head_pitch": 26
+       "head_pitch": 25
       }
      ]
     },
@@ -433,7 +433,7 @@
        ],
        "yaw": 0,
        "head_yaw": 6,
-       "head_pitch": 34
+       "head_pitch": 25
       }
      ]
     },
@@ -467,7 +467,7 @@
        ],
        "yaw": -50,
        "head_yaw": 0,
-       "head_pitch": 34,
+       "head_pitch": 25,
        "dz": 0.0
       },
       {
@@ -476,7 +476,7 @@
         -0.07,
         -0.41
        ],
-       "head_pitch": 36,
+       "head_pitch": 25,
        "ease": "in"
       },
       {
@@ -485,7 +485,7 @@
         -0.06,
         -0.4
        ],
-       "head_pitch": 34,
+       "head_pitch": 25,
        "ease": "out"
       },
       {
@@ -495,7 +495,7 @@
         -0.38
        ],
        "dz": 0.05,
-       "head_pitch": 30
+       "head_pitch": 25
       },
       {
        "t": 3.0,

@@ -14,11 +14,11 @@
   "deg": 0.3,
   "hz": 0.45
  },
- "fuente_tiempos": "llamadas_tiempos.json (c05b): b5_p4 0.5-2.0, b5_p6 2.0-3.5, b5_p7 3.5-4.7; pedida 5.2 s, duration_s 6. El inserto b5_p5 (c05i) va entre b5_p4 y b5_p6 en el montaje. P7 se alarga de 4.7 a 6.0 con accion (el grupo llega cerca de sus marcas y Hugo pisa el umbral), sin quietud. Colchon 0-0.5 s: el infectado ya esta tirando a Carmen hacia la puerta en el cuadro 0.",
+ "fuente_tiempos": "llamadas_tiempos.json (c05b): b5_p4 0.5-2.0, b5_p6 2.0-3.5, b5_p7 3.5-4.7; pedida 5.2 s, duration_s 6. El inserto b5_p5 (c05i) va entre b5_p4 y b5_p6 en el montaje. P7 se alarga de 4.7 a 6.0 con accion (el grupo llega cerca de sus marcas, los infectados avanzan por el fuelle y Hugo pisa el umbral), sin quietud. Colchon 0-0.5 s: el infectado ya esta tirando a Carmen hacia la puerta en el cuadro 0.",
  "props_in_frame": [
   "llave"
  ],
- "notes": "Fuelle (y=0 puerta del ultimo vagon, y=3.0 puerta del vagon 5) y ultimo vagon (y<0). P4 desde el lado del ultimo vagon, de frente a Carmen y un poco desde su derecha: la puerta rota del vagon 5 al fondo, Ivan entra por la derecha. P6 igual que P1 (desde el lado de la cerradura, pared izquierda oculta): Hugo a la izquierda, cerradura a la derecha. P7 desde dentro del ultimo vagon mirando a la puerta (la del tubo frio): Martina entra por la izquierda y Tomas por la derecha (el orden de b4_p6 y b5_p2); la hoja abierta queda a la derecha.",
+ "notes": "Fuelle (y=0 puerta del ultimo vagon, y=3.0 puerta del vagon 5) y ultimo vagon (y<0). P4 desde el lado del ultimo vagon, de frente a Carmen y un poco desde su derecha: la puerta rota del vagon 5 al fondo, Ivan entra por la derecha. P6 igual que P1 (desde el lado de la cerradura, pared izquierda oculta): Hugo a la izquierda, cerradura a la derecha. P7 desde dentro del ultimo vagon mirando a la puerta (la del tubo frio): Martina entra por la izquierda y Tomas por la derecha (el orden de b4_p6 y b5_p2); la hoja abierta queda a la derecha. Los infectados revientan la puerta del vagon 5 hacia el fuelle en 2.72 s (cuadro 65, fuera de cuadro en P6) y corren por el fuelle hacia el ultimo vagon; la puerta del vagon 5 queda abierta (-86 grados, hoja contra el lado izquierdo del fuelle).",
  "set_anim": {
   "doors": [
    {
@@ -54,6 +54,34 @@
      {
       "t": 4.0,
       "open_deg": 114
+     }
+    ]
+   },
+   {
+    "object": "PUERTA_vagon5_tras",
+    "nota": "angulo negativo = hacia el fuelle (abre al reves: los infectados la revientan); queda abierta hasta el final",
+    "keys": [
+     {
+      "t": 0.0,
+      "open_deg": 0
+     },
+     {
+      "t": 2.62,
+      "open_deg": 0
+     },
+     {
+      "t": 2.72,
+      "open_deg": -40,
+      "ease": "snap"
+     },
+     {
+      "t": 2.95,
+      "open_deg": -92,
+      "ease": "out"
+     },
+     {
+      "t": 3.12,
+      "open_deg": -86
      }
     ]
    }
@@ -471,14 +499,15 @@
     "usar_hasta_s": 3.5,
     "dur_montaje_s": 1.5
    },
-   "descripcion": "Plano cerrado de la cerradura, el mismo lugar de P1 un poco mas bajo. Hugo fuerza la llave dos veces mas y la llave gira: clac (cuadro 59). La saca con la mano derecha y se queda con ella en la mano (cuadros 63-70). Empuja la puerta con el hombro (cuadro 74): la puerta se abre hacia adentro del ultimo vagon y entra la luz roja de adentro con el tubo frio. Hugo da un paso atras y a un lado (lado de la cerradura) y se da vuelta hacia el grupo para hacerlos pasar. Las manos van en el prompt.",
+   "descripcion": "Plano cerrado de la cerradura, el mismo lugar de P1 un poco mas bajo. Hugo fuerza la llave dos veces mas y la llave gira: clac (cuadro 59). La saca con la mano derecha y se queda con ella en la mano (cuadros 63-70). Empuja la puerta con el hombro (cuadro 74): la puerta se abre hacia adentro del ultimo vagon y entra la luz roja de adentro con el tubo frio. Hugo da un paso atras y a un lado (lado de la cerradura) y se da vuelta hacia el grupo para hacerlos pasar. Las manos van en el prompt. Fuera de cuadro, a espaldas de la camara, los infectados revientan la puerta del vagon 5 hacia el fuelle (cuadro 65): se oye el golpe; la camara lo acusa. Entran corriendo al fuelle.",
    "motivo_camara": "Rima con P1: misma camara del lado de la cerradura, ahora a la altura de la llave. En mano, cerca; se mete un poco con el clac y acusa el empujon del hombro tres cuadros despues.",
    "en_cuadro": "Hugo a la izquierda, en primer termino, mirando la cerradura; la llave a la derecha, en la bocallave; despues la llave en su mano derecha y la puerta que se abre hacia adentro a la derecha del cuadro.",
    "impacto": {
     "t": 3.08,
     "cuadro": 74,
     "sacudida_desde_cuadro": 77,
-    "clac_t": 2.45
+    "clac_t": 2.45,
+    "puerta_vagon5_t": 2.72
    },
    "camera": {
     "lens_mm": 50,
@@ -499,6 +528,14 @@
       "m": 0.003,
       "dur_s": 0.2,
       "hz": 9.0
+     },
+     {
+      "impact_t": 2.72,
+      "delay_f": 3,
+      "deg": 0.6,
+      "m": 0.004,
+      "dur_s": 0.25,
+      "hz": 8.0
      },
      {
       "impact_t": 3.08,
@@ -679,6 +716,129 @@
        "head_yaw": 75
       }
      ]
+    },
+    "infectado_1": {
+     "pose": "de_pie",
+     "tremor": {
+      "m": 0.02,
+      "hz": 3.5
+     },
+     "keys": [
+      {
+       "t": 2.0,
+       "pos": [
+        0.04,
+        3.4
+       ],
+       "yaw": 180
+      },
+      {
+       "t": 2.62,
+       "pos": [
+        0.04,
+        3.36
+       ]
+      },
+      {
+       "t": 2.72,
+       "pos": [
+        0.06,
+        2.98
+       ],
+       "ease": "snap"
+      },
+      {
+       "t": 3.0,
+       "pos": [
+        0.1,
+        2.75
+       ],
+       "ease": "out"
+      },
+      {
+       "t": 3.5,
+       "pos": [
+        0.12,
+        2.5
+       ]
+      }
+     ]
+    },
+    "infectado_2": {
+     "pose": "de_pie",
+     "tremor": {
+      "m": 0.03,
+      "hz": 2.9
+     },
+     "keys": [
+      {
+       "t": 2.0,
+       "pos": [
+        -0.2,
+        3.85
+       ],
+       "yaw": 180
+      },
+      {
+       "t": 2.72,
+       "pos": [
+        -0.2,
+        3.62
+       ]
+      },
+      {
+       "t": 3.1,
+       "pos": [
+        -0.1,
+        3.1
+       ]
+      },
+      {
+       "t": 3.5,
+       "pos": [
+        0.0,
+        2.85
+       ]
+      }
+     ]
+    },
+    "infectado_3": {
+     "pose": "de_pie",
+     "tremor": {
+      "m": 0.03,
+      "hz": 2.3
+     },
+     "keys": [
+      {
+       "t": 2.0,
+       "pos": [
+        0.24,
+        4.0
+       ],
+       "yaw": 180
+      },
+      {
+       "t": 2.72,
+       "pos": [
+        0.24,
+        3.75
+       ]
+      },
+      {
+       "t": 3.3,
+       "pos": [
+        0.3,
+        3.2
+       ]
+      },
+      {
+       "t": 3.5,
+       "pos": [
+        0.32,
+        3.0
+       ]
+      }
+     ]
     }
    },
    "props": {
@@ -826,9 +986,9 @@
     "dur_montaje_s": 1.2,
     "alargue_s": "4.7-6.0"
    },
-   "descripcion": "Desde dentro del ultimo vagon hacia la puerta, que se abre de par en par hacia adentro (la hoja queda a la derecha). Sobre la puerta, por dentro, el tubo frio. El grupo entra en tropel y tropieza: Tomas entra primero, por la derecha, arrastrando a Martina de la mano y mirandola; Martina entra por la izquierda, medio paso atras de el (el mismo orden de b4_p6 y b5_p2, y el de los bloques 6 y 7); Martina tropieza en el umbral (cuadro 101) mirando el piso; detras, Ivan empuja a Carmen por la espalda; Carmen tropieza (cuadro 103) con la mano derecha apretada contra el pecho. Pasan a los dos lados de la camara: Martina por la izquierda, Tomas y Carmen por la derecha. Hugo, afuera en el fuelle junto a la cerradura, con la llave en la mano derecha, los hace pasar y mira hacia el vagon 5; al final pisa el umbral para entrar ultimo (P8). Al fondo, por el vano, la puerta del vagon 5 con el vidrio reventado y los infectados detras. Nadie mira al lente.",
+   "descripcion": "Desde dentro del ultimo vagon hacia la puerta, que se abre de par en par hacia adentro (la hoja queda a la derecha). Sobre la puerta, por dentro, el tubo frio. El grupo entra en tropel y tropieza: Tomas entra primero, por la derecha, arrastrando a Martina de la mano y mirandola; Martina entra por la izquierda, medio paso atras de el (el mismo orden de b4_p6 y b5_p2, y el de los bloques 6 y 7); Martina tropieza en el umbral (cuadro 101) mirando el piso; detras, Ivan empuja a Carmen por la espalda; Carmen tropieza (cuadro 103) con la mano derecha apretada contra el pecho. Pasan a los dos lados de la camara: Martina por la izquierda, Tomas y Carmen por la derecha. Hugo, afuera en el fuelle junto a la cerradura, con la llave en la mano derecha, los hace pasar y mira hacia los infectados que vienen; Al fondo, por el vano, la puerta del vagon 5 reventada hacia el fuelle (abierta, a la izquierda) y los infectados que vienen corriendo por el fuelle detras del grupo; al final el primero esta a menos de un metro de Hugo, que retrocede de espaldas hacia el umbral para entrar ultimo (P8). Nadie mira al lente.",
    "motivo_camara": "En mano, a la altura de los ojos, adentro: la camara esta en el camino del grupo y retrocede porque se le vienen encima. Arranca con dos cuadros de retraso y frena con peso.",
-   "en_cuadro": "La puerta del ultimo vagon al centro, abierta hacia adentro (hoja a la derecha) y el tubo frio encima; por el vano, el fuelle rojo y al fondo la puerta del vagon 5. Tomas entra por la derecha arrastrando a Martina, que entra por la izquierda medio paso atras; detras, Ivan empuja a Carmen; Hugo asoma a la izquierda del vano, afuera.",
+   "en_cuadro": "La puerta del ultimo vagon al centro, abierta hacia adentro (hoja a la derecha) y el tubo frio encima; por el vano, el fuelle rojo y al fondo la puerta del vagon 5 reventada, con los infectados que vienen corriendo detras del grupo. Tomas entra por la derecha arrastrando a Martina, que entra por la izquierda medio paso atras; detras, Ivan empuja a Carmen; Hugo asoma a la izquierda del vano, afuera, y al final pisa el umbral de espaldas.",
    "camera": {
     "lens_mm": 24,
     "tag": "HANDHELD_RETRO",
@@ -1271,15 +1431,7 @@
        "head_yaw": 20
       },
       {
-       "t": 4.7,
-       "pos": [
-        -0.46,
-        0.42
-       ],
-       "head_yaw": 45
-      },
-      {
-       "t": 5.2,
+       "t": 4.6,
        "pos": [
         -0.46,
         0.42
@@ -1287,19 +1439,28 @@
        "head_yaw": 85
       },
       {
-       "t": 5.6,
+       "t": 5.0,
        "pos": [
-        -0.4,
-        0.3
+        -0.38,
+        0.28
        ],
        "yaw": 265,
        "head_yaw": 90
       },
       {
+       "t": 5.5,
+       "pos": [
+        -0.28,
+        0.12
+       ],
+       "yaw": 260,
+       "head_yaw": 95
+      },
+      {
        "t": 6.0,
        "pos": [
-        -0.26,
-        0.12
+        -0.2,
+        0.05
        ],
        "yaw": 255,
        "head_yaw": 100
@@ -1316,16 +1477,37 @@
       {
        "t": 3.5,
        "pos": [
-        -0.02,
-        3.4
+        0.12,
+        2.5
        ],
        "yaw": 180
       },
       {
+       "t": 4.2,
+       "pos": [
+        0.12,
+        1.95
+       ]
+      },
+      {
+       "t": 4.7,
+       "pos": [
+        0.1,
+        1.5
+       ]
+      },
+      {
+       "t": 5.4,
+       "pos": [
+        0.08,
+        1.0
+       ]
+      },
+      {
        "t": 6.0,
        "pos": [
-        0.0,
-        3.32
+        0.08,
+        0.72
        ]
       }
      ]
@@ -1340,16 +1522,37 @@
       {
        "t": 3.5,
        "pos": [
-        -0.22,
-        3.8
+        0.0,
+        2.85
        ],
        "yaw": 180
       },
       {
+       "t": 4.2,
+       "pos": [
+        -0.08,
+        2.35
+       ]
+      },
+      {
+       "t": 4.7,
+       "pos": [
+        -0.12,
+        1.95
+       ]
+      },
+      {
+       "t": 5.4,
+       "pos": [
+        -0.15,
+        1.5
+       ]
+      },
+      {
        "t": 6.0,
        "pos": [
-        -0.18,
-        3.62
+        -0.16,
+        1.2
        ]
       }
      ]
@@ -1364,16 +1567,37 @@
       {
        "t": 3.5,
        "pos": [
-        0.22,
-        4.05
+        0.32,
+        3.0
        ],
        "yaw": 180
       },
       {
+       "t": 4.2,
+       "pos": [
+        0.35,
+        2.55
+       ]
+      },
+      {
+       "t": 4.7,
+       "pos": [
+        0.33,
+        2.15
+       ]
+      },
+      {
+       "t": 5.4,
+       "pos": [
+        0.3,
+        1.7
+       ]
+      },
+      {
        "t": 6.0,
        "pos": [
-        0.24,
-        3.8
+        0.3,
+        1.4
        ]
       }
      ]
@@ -1400,7 +1624,7 @@
        ]
       },
       {
-       "t": 5.2,
+       "t": 4.6,
        "pos": {
         "actor": "hugo",
         "part": "cadera",
@@ -1412,13 +1636,25 @@
        }
       },
       {
-       "t": 5.6,
+       "t": 5.0,
        "pos": {
         "actor": "hugo",
         "part": "cadera",
         "offset": [
          0.041,
          -0.224,
+         0.18
+        ]
+       }
+      },
+      {
+       "t": 5.5,
+       "pos": {
+        "actor": "hugo",
+        "part": "cadera",
+        "offset": [
+         0.021,
+         -0.227,
          0.18
         ]
        }
@@ -1438,7 +1674,7 @@
      ]
     }
    },
-   "nota_claves": "Termina con el grupo cerca de sus marcas del bloque 6 (Martina -0.25,-1.45; Tomas 0.25,-1.40; Carmen 0.72,-1.42, justo delante del asiento de pasillo de la fila 1; Ivan 0.12,-0.62 de cara a la puerta) y Hugo en el umbral (-0.26, 0.12) para entrar ultimo en c06a. La puerta queda abierta a 114 grados hacia adentro (hoja contra el lado derecho del vestibulo).",
+   "nota_claves": "Termina con el grupo cerca de sus marcas del bloque 6 (Martina -0.25,-1.45; Tomas 0.25,-1.40; Carmen 0.72,-1.42, justo delante del asiento de pasillo de la fila 1; Ivan 0.12,-0.62 de cara a la puerta), Hugo en el umbral (-0.20, 0.05) retrocediendo de espaldas para entrar ultimo en c06a, y los infectados en el fuelle (el primero en 0.08, 0.72; los otros en -0.16,1.20 y 0.30,1.40). La puerta del ultimo vagon queda abierta a 114 grados hacia adentro; la del vagon 5, reventada hacia el fuelle (-86 grados).",
    "stills": {
     "A": {
      "t": 3.62,
@@ -1458,7 +1694,7 @@
     },
     "C": {
      "t": 4.62,
-     "desc": "Carmen tropieza hacia la derecha; Ivan entra; Hugo afuera junto a la cerradura; la camara ya retrocedio"
+     "desc": "Carmen tropieza hacia la derecha; Ivan entra; al fondo del fuelle, los infectados que vienen; Hugo afuera junto a la cerradura"
     }
    }
   }

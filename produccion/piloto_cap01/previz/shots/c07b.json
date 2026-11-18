@@ -29,7 +29,7 @@
   "nota": "Habla solo Tomás. Martina no contesta: boca cerrada."
  },
  "props_in_frame": [],
- "notes": "Último vagón, luz roja con el tubo frío sobre la puerta (por dentro); una sola puerta (y = -0.04), detrás de las cámaras de P4 y P6. Grupo en sus marcas: Martina -0.25/-1.55 a la izquierda de Tomás 0.25/-1.45; Carmen 0.80/-1.85; Iván 0.50/-0.40; Hugo -0.62/-0.50 con la mano derecha en la manija (texto). Diego afuera (0.0/0.31). P4 y P6 desde el lado de la puerta (-Y): Tomás a la izquierda, Martina a la derecha, cabina del revisor a la izquierda, al fondo. P5 a la ventanita (+Y).",
+ "notes": "Último vagón, luz roja con el tubo frío sobre la puerta (por dentro); una sola puerta (y = -0.04), detrás de las cámaras de P4 y P6. Grupo en sus marcas: Martina -0.25/-1.55 a la izquierda de Tomás 0.25/-1.45; Carmen 0.05/-2.20 (marca nueva, 18-nov); Iván 0.50/-0.40; Hugo -0.62/-0.50 con la mano derecha en la manija (texto). Diego afuera (0.0/0.31). P4 y P6 desde el lado de la puerta (-Y): Tomás a la izquierda, Martina a la derecha, cabina del revisor a la izquierda, al fondo. P5 a la ventanita (+Y).",
  "set_anim": {
   "glass_break": [
    {
@@ -167,12 +167,12 @@
       {
        "t": 0.0,
        "pos": [
-        0.8,
-        -1.85
+        0.05,
+        -2.2
        ],
-       "yaw": 48,
-       "head_yaw": 26,
-       "head_pitch": -3
+       "yaw": 10,
+       "head_yaw": 15,
+       "head_pitch": -5
       }
      ]
     },
@@ -223,7 +223,7 @@
      ]
     }
    },
-   "en_cuadro": "Tomás (azul marino) a la izquierda del cuadro, de perfil hacia la derecha, con aire sobre la cabeza. En el borde derecho asoma Martina (avena), desenfocada. Al fondo, la cabina del revisor a la izquierda del cuadro, detrás de él, y la pared trasera con la ventana negra hacia la derecha.",
+   "en_cuadro": "Tomás (azul marino) a la izquierda del cuadro, de perfil hacia la derecha, con aire sobre la cabeza. En el borde derecho asoma Martina (avena), desenfocada; entre los dos, más atrás, Carmen (celeste) mira a Martina. Al fondo, la cabina del revisor a la izquierda del cuadro, detrás de él, y la pared trasera con la ventana negra hacia la derecha.",
    "stills": {
     "A": {
      "t": 0.55,
@@ -351,12 +351,12 @@
       {
        "t": 2.99,
        "pos": [
-        0.8,
-        -1.85
+        0.05,
+        -2.2
        ],
-       "yaw": 48,
-       "head_yaw": 26,
-       "head_pitch": -3
+       "yaw": 10,
+       "head_yaw": 15,
+       "head_pitch": -5
       }
      ]
     },
@@ -663,12 +663,12 @@
       {
        "t": 4.19,
        "pos": [
-        0.8,
-        -1.85
+        0.05,
+        -2.2
        ],
-       "yaw": 48,
-       "head_yaw": 26,
-       "head_pitch": -3
+       "yaw": 10,
+       "head_yaw": 15,
+       "head_pitch": -5
       }
      ]
     },
@@ -740,7 +740,7 @@
      }
     }
    },
-   "en_cuadro": "Martina (avena) a la derecha del cuadro, enfocada, con aire sobre la cabeza; mira primero fuera de cuadro a la izquierda (Tomás) y después abajo, junto a la cámara (la manija). En primer término, abajo a la derecha y desenfocada, la mano derecha de Hugo en la manija (solo en el prompt). Al fondo, la pared trasera con la ventana negra y la cabina del revisor a la izquierda del cuadro. Una sola puerta: está detrás de la cámara.",
+   "en_cuadro": "Martina (avena) a la derecha del cuadro, enfocada, con aire sobre la cabeza; mira primero fuera de cuadro a la izquierda (Tomás) y después abajo, junto a la cámara (la manija). A su izquierda, más atrás y desenfocada, Carmen (celeste) la mira. En primer término, abajo a la derecha y desenfocada, la mano derecha de Hugo en la manija (solo en el prompt). Al fondo, la pared trasera con la ventana negra y la cabina del revisor a la izquierda del cuadro. Una sola puerta: está detrás de la cámara.",
    "stills": {
     "A": {
      "t": 4.35,
