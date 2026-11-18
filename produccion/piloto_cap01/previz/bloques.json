@@ -5,7 +5,7 @@
    "c00a",
    "c00b"
   ],
-  "layout": "(pendiente)"
+  "layout": "Vagón 2, de noche, casi a oscuras. La pareja duerme sentada en el lado derecho del tren, fila 12, bajo la lámpara encendida: el hombre de camisa azul en la ventana y la esposa en el pasillo. Martina, de pie en el pasillo junto a ellos, mete el maletín bajo su asiento desde el pasillo y se va caminando hacia la cola sin mirar atrás. Todas las cámaras miran hacia la cola: el asiento de la pareja queda a la izquierda del cuadro y la lectora (fila 15, al otro lado del pasillo, bajo su lámpara) al fondo a la derecha."
  },
  "1": {
   "titulo": "El recuerdo",
@@ -13,7 +13,7 @@
    "c01",
    "c01f"
   ],
-  "layout": "(pendiente)"
+  "layout": "Martina de espaldas contra la puerta trasera del vagón 2, mirando hacia la cabeza del tren. La cámara la mira desde el pasillo, de frente y apenas desde su izquierda: ella a la izquierda del cuadro, la ventanita oscura detrás de la cabeza y la manija a su derecha. En los flashes, sentada en la silla del rapto, mirando a cámara igual y también a la izquierda del cuadro (corte por coincidencia en las muñecas); la figura con máscara de pie junto a su hombro izquierdo, a la derecha del cuadro."
  },
  "2": {
   "titulo": "El regreso",
@@ -21,7 +21,7 @@
    "c02a",
    "c02b"
   ],
-  "layout": "(pendiente)"
+  "layout": "Vagón 5, fila 11, lado derecho: Martina en la ventana y Tomás en el pasillo, sentados mirando hacia la cabeza del tren, con la lámpara de su fila encendida encima. Todas las cámaras están delante de ellos y miran hacia la cola: Martina siempre a la izquierda del cuadro y Tomás a la derecha; la ventana siempre del lado de Martina. Más atrás, filas 12 a 14, pasajeros dormidos."
  },
  "3": {
   "titulo": "El maletín se abre",
@@ -29,7 +29,7 @@
    "c03a",
    "c03b"
   ],
-  "layout": "(pendiente)"
+  "layout": "Mismo vagón 2 y mismo maletín en su marca bajo el asiento de la pareja. Las cámaras miran hacia la cola, de frente a la pareja: el hombre a la izquierda del cuadro (ventana) y la esposa a la derecha (pasillo); él se lanza hacia la derecha del cuadro. El inserto del maletín repite el encuadre de b0_p2. La lectora está al otro lado del pasillo, tres filas más hacia la cola, y aparece a la derecha del cuadro cuando la cámara la encuentra."
  },
  "4": {
   "titulo": "El grito",
@@ -37,7 +37,7 @@
    "c04a",
    "c04b"
   ],
-  "layout": "(pendiente)"
+  "layout": "Vagón 5. Martina y Tomás en la fila 11, sentados mirando hacia la puerta delantera (Martina en la ventana, Tomás en el pasillo). Más adelante, del lado izquierdo, Iván (fila 7, pasillo) y Carmen (fila 8, ventana); un pasajero junto a la puerta delantera. Los infectados llegan por la puerta delantera; Hugo entra por la puerta trasera (hacia el fuelle). En la huida todos corren por el pasillo hacia la puerta trasera: Tomás adelante arrastrando a Martina, que va a la izquierda del cuadro cuando la cámara los mira de frente; después Carmen e Iván."
  },
  "5": {
   "titulo": "La huida",
@@ -58,7 +58,7 @@
    "b5_p8",
    "b5_p9"
   ],
-  "layout": "(pendiente)"
+  "layout": "Fuelle rojo de 3 m entre la puerta del vagón 5 (hacia la cabeza del tren) y la del último vagón (hacia la cola), con su cerradura a la izquierda mirando hacia la cola. Hugo trabaja la llave del lado de la cerradura (P1, P6). El grupo viene del vagón 5 hacia él: Martina a la izquierda, Tomás a la derecha arrastrándola; Iván cierra la puerta del vagón 5 y Carmen queda última, de espaldas a esa puerta, donde el brazo la agarra (P3–P5). Los infectados revientan la puerta del vagón 5. P7 y P8 desde dentro del último vagón mirando a su única puerta, con el tubo frío encima: entran Martina por la izquierda y Tomás por la derecha; Hugo entra último y cierra con llave por dentro."
  },
  "6": {
   "titulo": "El encierro",
@@ -71,7 +71,7 @@
    "b6_p2",
    "b6_p3"
   ],
-  "layout": "(pendiente)"
+  "layout": "Último vagón, rojo, tubo frío sobre la única puerta. Todos miran hacia la puerta: Iván de espaldas contra ella, al centro; Hugo junto a la puerta, del lado de la cerradura; Martina a la izquierda de Tomás, a 1,5 m de la puerta; Carmen en el pasillo, detrás y entre los dos. Los planos cerrados se toman desde la puerta: Tomás a la izquierda del cuadro y Martina a la derecha; al fondo, la ventana trasera negra y la cabina del revisor a la izquierda."
  },
  "7": {
   "titulo": "Diego",
@@ -79,6 +79,6 @@
    "c07a",
    "c07b"
   ],
-  "layout": "(pendiente)"
+  "layout": "Último vagón, igual que el bloque 6. El grupo de pie en el vestíbulo, de cara a la puerta: Martina a la izquierda de Tomás, Carmen en el pasillo detrás y entre los dos, Iván junto a la puerta del lado de las bisagras, Hugo junto a la cerradura. Diego afuera, en el fuelle, con la cara en la ventanita. P1 detrás del grupo mirando la puerta; P2 y P5 frente a la ventanita desde adentro, bajas; P3, P4 y P6 desde el lado de la puerta (Martina a la derecha del cuadro, Tomás a la izquierda, la cabina al fondo a la izquierda)."
  }
 }

@@ -384,3 +384,24 @@ Una entrada por decisión, instrucción o llamada paga. Se escribe en el momento
   - Lo ya medido en el piloto: en T1 Seedance siguió el previz de c05a igual que Kling, a 480p; en T0 rehízo la pista de voz y la atrasó (no sirve para diálogo con pista).
 - Efecto: cada prueba de 4 s se deja en borrador con dos motores (Kling Omni 720p y Seedance 2.5 draft 480p), cada uno con dos brazos (A: el gris como video de referencia; B: la hoja de storyboard como imagen). **No se corre nada sin el OK de Cristián.**
 - Costo: 0
+
+### 2026-11-18 01:25 · P · fichas de las 17 llamadas: resultado de los siete agentes
+- Tipo: revisión
+- Qué: las 17 fichas (`previz/shots/`) pasan el chequeo automático con **0 problemas**; los únicos avisos son buscados (la embestida de b3_p5–b3_p6: él cae sobre la esposa). c00a y c05a quedaron rehechas para cilindros conservando lo que funcionó el 10-nov (lentes, cámaras, cortes, tiempos).
+- Lo que los cilindros no muestran (manos, palma, llave en la mano, ojos blancos, niebla, manchas del vidrio, la mano de Hugo en la manija) va en la `descripcion` de cada plano y después al prompt.
+- Correcciones de continuidad que pidió el director durante el armado:
+  - **Lados entre los bloques 4 y 5:** en la estampida (b4_p6) Martina va a la izquierda del cuadro; en b5_p2, con la cámara mirando en la misma dirección, estaba a la derecha. Se invirtió en c05a: Martina en −X y Tomás en +X desde b5_p2 hasta las marcas del último vagón.
+  - **Infectados en el fuelle:** b5_p8 necesita una mano infectada en la ranura, así que en c05b los infectados revientan la puerta del vagón 5 (fuera de cuadro, durante b5_p6) y entran al fuelle.
+  - **Marca de Carmen en el último vagón:** pasa de (0,80; −1,85), que caía dentro del asiento de la fila 1 y la dejaba fuera de los planos cerrados del bloque 7, a (0,05; −2,20), en el pasillo detrás y entre Martina y Tomás. En b7_p3 ahora se ven girar hacia Martina, en orden, Tomás y Carmen; el giro de Iván (junto a la puerta, como dice la tabla) queda fuera de cuadro y va en el texto.
+  - **b1_p2:** la ventana de montaje pasa de 1,30–2,30 a 1,60–2,60 s (empieza cuando abre los ojos e incluye el empujón de la puerta; propuesta del agente del bloque 1). Mismo largo en el montaje.
+  - **b2_p1:** el set no permitía el plano de dos frontal desde el asiento de enfrente (el respaldo de la fila 10 tapa a la pareja). Se oculta solo ese par de asientos («asiento salvaje», como en un rodaje) y no todo el vagón.
+- Cambios del set que salieron del armado (todos por script): asientos por fila y lado (para el asiento salvaje), fuelles cortos y oscuros detrás de la puerta delantera del vagón 5 y de la trasera del vagón 2 (antes se veía vacío), la tercera lámpara del vagón 2 pasa de la fila 5 der a la fila 19 izq (la puerta trasera del bloque 1 quedaba negra; siguen siendo tres lámparas encendidas), colores de los cilindros convertidos a lineal (los infectados salían grises) y el tubo frío más suave (lavaba el vidrio en b5_p9).
+- Lentes fuera de la regla general, por la distancia real del set: b2_p3 40 mm, b2_p4 35 mm, b6_p3 32 mm. Los primerísimos planos (b0_p1, b3_p4) quedan más abiertos que en el guion porque el cilindro llenaría el cuadro; el prompt conserva el tamaño del guion.
+- Quién decidió: agentes de fichas (encuadres) y director (correcciones de continuidad)
+- Costo: 0
+
+### 2026-11-18 01:25 · plano secuencia · no se propone
+- Tipo: decisión
+- Qué: el guion no pide un plano secuencia. El bloque 5, el candidato natural, está escrito en planos de 1 a 1,5 s con cortes secos; P1 y P6 repiten el encuadre de la cerradura a propósito (la llave es el reloj) y P5 sale de un fotograma guía, así que necesitan cortes. b5_p7 ya es un solo plano corto con la cámara retrocediendo, con su recorrido dibujado en la planta. Un plano secuencia de ~11 s con cinco personas y dos espacios separados por una puerta es justo lo que más rompe el modelo. Por la regla de Cristián («plano secuencia solo si el guion lo pide»), se descarta.
+- Quién decidió: director, con la opinión del agente del bloque 5
+- Costo: 0
