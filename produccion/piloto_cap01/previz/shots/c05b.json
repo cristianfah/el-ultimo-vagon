@@ -500,8 +500,8 @@
     "dur_montaje_s": 1.5
    },
    "descripcion": "Plano cerrado de la cerradura, el mismo lugar de P1 un poco mas bajo. Hugo fuerza la llave dos veces mas y la llave gira: clac (cuadro 59). La saca con la mano derecha y se queda con ella en la mano (cuadros 63-70). Empuja la puerta con el hombro (cuadro 74): la puerta se abre hacia adentro del ultimo vagon y entra la luz roja de adentro con el tubo frio. Hugo da un paso atras y a un lado (lado de la cerradura) y se da vuelta hacia el grupo para hacerlos pasar. Las manos van en el prompt. Fuera de cuadro, a espaldas de la camara, los infectados revientan la puerta del vagon 5 hacia el fuelle (cuadro 65): se oye el golpe; la camara lo acusa. Entran corriendo al fuelle.",
-   "motivo_camara": "Rima con P1: misma camara del lado de la cerradura, ahora a la altura de la llave. En mano, cerca; se mete un poco con el clac y acusa el empujon del hombro tres cuadros despues.",
-   "en_cuadro": "Hugo a la izquierda, en primer termino, mirando la cerradura; la llave a la derecha, en la bocallave; despues la llave en su mano derecha y la puerta que se abre hacia adentro a la derecha del cuadro.",
+   "motivo_camara": "Rima con P1: misma camara del lado de la cerradura, ahora a la altura de la llave. En mano, cerca; se mete un poco con el clac, acusa el empujon del hombro tres cuadros despues y sigue a la puerta que se abre con un paneo corto a la derecha: Hugo queda como primer termino a la izquierda y la cerradura (en la hoja que se abre) y la llave en su mano derecha quedan a la vista.",
+   "en_cuadro": "Hugo a la izquierda, en primer termino, mirando la cerradura; la llave a la derecha, en la bocallave; al final, la camara acompana la puerta que se abre hacia adentro: Hugo queda en el borde izquierdo, la llave en su mano derecha al centro y la cerradura, en la hoja que se abre, a la derecha, con la luz roja y el tubo frio de adentro.",
    "impacto": {
     "t": 3.08,
     "cuadro": 74,
@@ -513,7 +513,7 @@
     "lens_mm": 50,
     "tag": "MANO_CERCA",
     "mira": "a la cerradura del ultimo vagon, desde el lado de la cerradura (como P1)",
-    "mov": "en mano a la altura de la llave; se mete 3 cm con el clac y acusa el empujon del hombro",
+    "mov": "en mano a la altura de la llave; se mete 3 cm con el clac, acusa el empujon del hombro y acompana la puerta que se abre con un paneo corto a la derecha (cerradura y llave en cuadro)",
     "handheld": {
      "rot_deg": 0.55,
      "pos_m": 0.008,
@@ -603,14 +603,14 @@
      {
       "t": 3.5,
       "pos": [
-       -1.12,
-       0.88,
-       1.24
+       -0.86,
+       1.0,
+       1.25
       ],
       "look_at": [
-       -0.1,
-       -0.05,
-       1.2
+       -0.03,
+       -0.6,
+       1.12
       ]
      }
     ]
@@ -710,7 +710,7 @@
        "t": 3.5,
        "pos": [
         -0.45,
-        0.5
+        0.68
        ],
        "yaw": 270,
        "head_yaw": 75
@@ -929,9 +929,9 @@
         "actor": "hugo",
         "part": "cadera",
         "offset": [
-         -0.095,
-         -0.208,
-         0.18
+         -0.15,
+         -0.2,
+         0.2
         ]
        }
       },
@@ -941,9 +941,9 @@
         "actor": "hugo",
         "part": "cadera",
         "offset": [
-         0.06,
-         -0.22,
-         0.18
+         -0.08,
+         -0.26,
+         0.28
         ]
        }
       }
@@ -971,7 +971,7 @@
     },
     "C": {
      "t": 3.45,
-     "desc": "Hugo empujo la puerta con el hombro: se abre hacia adentro; la llave en su mano derecha"
+     "desc": "Hugo empujo la puerta con el hombro: se abre hacia adentro; la llave en su mano derecha y la cerradura en la hoja, a la vista"
     }
    }
   },
@@ -1405,7 +1405,7 @@
        "t": 3.5,
        "pos": [
         -0.45,
-        0.5
+        0.68
        ],
        "yaw": 270,
        "head_yaw": 75,
@@ -1415,7 +1415,7 @@
        "t": 3.75,
        "pos": [
         -0.46,
-        0.42
+        0.55
        ],
        "yaw": 275,
        "head_yaw": 55,
@@ -1425,7 +1425,7 @@
        "t": 4.2,
        "pos": [
         -0.46,
-        0.42
+        0.45
        ],
        "yaw": 270,
        "head_yaw": 20
@@ -1612,9 +1612,9 @@
         "actor": "hugo",
         "part": "cadera",
         "offset": [
-         0.06,
-         -0.22,
-         0.18
+         -0.08,
+         -0.26,
+         0.28
         ]
        },
        "rot": [
@@ -1622,6 +1622,18 @@
         92,
         20
        ]
+      },
+      {
+       "t": 3.9,
+       "pos": {
+        "actor": "hugo",
+        "part": "cadera",
+        "offset": [
+         0.06,
+         -0.22,
+         0.18
+        ]
+       }
       },
       {
        "t": 4.6,

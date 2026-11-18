@@ -15,7 +15,7 @@
   "hz": 0.45
  },
  "fuente_tiempos": "llamadas_tiempos.json (c02a, pedida 5,2 s -> 6 s): b2_p1 0,5–3,7 y b2_p2 3,7–4,7. Pista pistas_v3/c02a.mp3 (5,25 s): Tomás «¿Dónde estabas?» 0,80–1,84 s; Martina «En el baño.» 2,56–3,20 s. Colchón 0–0,5 s: Martina ya se está dejando caer en el asiento en el cuadro 0. b2_p2 se alarga de 4,7 a 6,0 s con acción (alisa la manga sobre la muñeca), sin quietud.",
- "notes": "Vagón 5, fila 11 lado derecho (+X): Martina en la ventana (1,12; 12,53), Tomás en el pasillo (0,56; 12,53), la lámpara de la fila 11 der encendida sobre ellos. Las dos cámaras están delante de la pareja y miran hacia la cola (−Y): Martina a la izquierda del cuadro y Tomás a la derecha. b2_p1 oculta los asientos del vagón 5 (pared móvil: el set no deja sacar solo la fila 10).",
+ "notes": "Vagón 5, fila 11 lado derecho (+X): Martina en la ventana (1,12; 12,53), Tomás en el pasillo (0,56; 12,53), la lámpara de la fila 11 der encendida sobre ellos. Las dos cámaras están delante de la pareja y miran hacia la cola (−Y): Martina a la izquierda del cuadro y Tomás a la derecha. b2_p1 oculta los pares de las filas 9 y 10 der y b2_p2 el de la fila 10 der, donde están las cámaras (asiento salvaje).",
  "shots": [
   {
    "id": "b2_p1",
@@ -318,27 +318,39 @@
     "dur_montaje_s": 1.0,
     "alargue_s": "4.7-6.0"
    },
-   "descripcion": "Inserto de la muñeca derecha de Martina sobre el regazo. Al acomodarse el abrigo, la manga del suéter y del abrigo se ha subido y deja ver la marca roja (una franja de roce, no una pulsera). Los dedos de la mano izquierda toman el puño y la bajan de un tirón (3,95–4,15 s). En el alargue (4,7–6,0 s) alisa la manga sobre la muñeca y deja la mano encima. Con cilindros solo se ve el cilindro de Martina a la altura del regazo, sobre el cojín: el encuadre fija la altura y la distancia; la acción va en el texto.",
-   "motivo_camara": "Fija y cerrada, a la altura del regazo (0,72 m) y a 40 cm de la muñeca, sin operador que lo subraye: lo que ella esconde. 50 mm y no 85 mm porque entre la pareja y el respaldo de la fila 10 hay menos de medio metro. Desde el mismo lado que P1 (delante de ella, mirando hacia la cola): la muñeca derecha queda a la izquierda del cuadro y la mano izquierda entra desde la derecha. Solo vibra con el tren.",
-   "en_cuadro": "El regazo de Martina a la izquierda (su muñeca derecha); por la derecha, desde el hueco hacia Tomás, entra su mano izquierda. Abajo, el cojín; detrás, el respaldo en penumbra ámbar.",
+   "descripcion": "Inserto de la muñeca derecha de Martina sobre el regazo. Al acomodarse el abrigo, la manga del suéter y del abrigo se ha subido y deja ver la marca roja (una franja de roce, no una pulsera). Los dedos de la mano izquierda toman el puño y la bajan de un tirón (3,95–4,15 s). En el alargue (4,7–6,0 s) alisa la manga sobre la muñeca y deja la mano encima. Con cilindros se ve el borde del cilindro de Martina sobre el cojín, el hueco entre los dos asientos y, en el borde derecho, el costado de Tomás: el encuadre fija la altura, la distancia y el lado; la acción de las manos va en el texto.",
+   "motivo_camara": "Fija y cerrada, sobre el respaldo de la fila 10 (1,25 m), mirando hacia abajo al regazo de Martina a 0,9 m, sin operador que lo subraye: lo que ella esconde. 40 mm: el cilindro ocupa la mitad izquierda del cuadro y se leen el cojín, el borde del cilindro y el hueco hacia Tomás (con 50 mm a 40 cm era todo avena y negro). Desde el mismo lado que P1 (delante de ella, mirando hacia la cola): la muñeca derecha queda a la izquierda del cuadro y la mano izquierda entra desde la derecha, desde el hueco. Se oculta el par de la fila 10 der, donde está la cámara (asiento salvaje, como en P1). Solo vibra con el tren.",
+   "en_cuadro": "El regazo de Martina a la izquierda (su muñeca derecha), con el cojín delante; a la derecha, el hueco entre los dos asientos y, en el borde derecho, el costado de Tomás. Por la derecha, desde el hueco, entra la mano izquierda de ella. Detrás, el respaldo de su banca en penumbra ámbar.",
    "stills": {
     "A": {
      "t": 3.75,
-     "desc": "La manga subida deja ver la marca roja de la muñeca derecha."
+     "desc": "La manga subida deja ver la marca roja de la muñeca derecha.",
+     "lados": {
+      "martina": "izq",
+      "tomas": "der"
+     }
     },
     "B": {
      "t": 4.05,
-     "desc": "Los dedos izquierdos bajan la manga de un tirón."
+     "desc": "Los dedos izquierdos bajan la manga de un tirón.",
+     "lados": {
+      "martina": "izq",
+      "tomas": "der"
+     }
     },
     "C": {
      "t": 4.65,
-     "desc": "La marca ya está tapada; la mano queda encima."
+     "desc": "La marca ya está tapada; la mano queda encima.",
+     "lados": {
+      "martina": "izq",
+      "tomas": "der"
+     }
     }
    },
    "camera": {
-    "lens_mm": 50,
+    "lens_mm": 40,
     "tag": "FIJA_REGAZO",
-    "mira": "a la muñeca derecha de Martina, sobre el regazo",
+    "mira": "hacia abajo, al regazo de Martina y al hueco hacia Tomás",
     "mov": "fija; solo vibra con el tren",
     "mode": "locked",
     "sway_scale": 0.6,
@@ -351,14 +363,14 @@
      {
       "t": 3.7,
       "pos": [
-       0.92,
-       0.55,
-       0.74
+       0.88,
+       0.72,
+       1.25
       ],
       "look_at": [
-       0.975,
-       0.16,
-       0.59
+       0.955,
+       0.05,
+       0.64
       ]
      }
     ]
@@ -419,7 +431,10 @@
       }
      ]
     }
-   }
+   },
+   "hide_set": [
+    "vagon5_asiento_10_der"
+   ]
   }
  ]
 }

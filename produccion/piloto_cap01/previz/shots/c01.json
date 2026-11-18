@@ -155,8 +155,8 @@
         0.175
        ],
        "yaw": 0,
-       "head_yaw": -6,
-       "head_pitch": -6,
+       "head_yaw": -14,
+       "head_pitch": -9,
        "dz": -0.015,
        "ease": "in"
       },
@@ -171,7 +171,7 @@
       },
       {
        "t": 0.78,
-       "head_yaw": -12,
+       "head_yaw": -13,
        "head_pitch": -16,
        "ease": "out"
       },
@@ -204,7 +204,7 @@
     "alargue_s": "2.6-4.0",
     "nota": "Ventana movida de 1,30-2,30 a 1,60-2,60 (18-nov, director, a propuesta del agente del bloque 1): empieza cuando abre los ojos e incluye el empujón de la puerta. 1,3-1,6 s no se usa."
    },
-   "descripcion": "La misma toma que P1, sin corte de camara. Martina sigue con los ojos cerrados y la muneca apretada, en la misma posicion de P1, hasta los 1.60 s: ahi abre los ojos y despega la cabeza de la puerta. Mira hacia abajo, suelta la muneca (1.75 s) y con la mano izquierda se estira la manga del abrigo sobre la muneca derecha (1.85-2.10 s). Gira hacia su derecha, hacia la manija (2.08-2.40 s), apoya la mano en la puerta y la empuja (2.40-2.60 s): la puerta cede hacia el fuelle y ella sale por ahi (2.6-4.0 s, alargue). Detras de la puerta, solo el fuelle oscuro.",
+   "descripcion": "La misma toma que P1, sin corte de camara. Martina sigue con los ojos cerrados y la muneca apretada, en la misma posicion de P1, hasta los 1.60 s: ahi abre los ojos, despega la cabeza de la puerta y la gira hacia su derecha, hacia la manija (1.65-1.85 s). Mira hacia abajo, suelta la muneca (1.75 s) y con la mano izquierda se estira la manga del abrigo sobre la muneca derecha (1.85-2.10 s). Gira hacia su derecha, hacia la manija (2.08-2.40 s), apoya la mano en la puerta y la empuja (2.40-2.60 s): la puerta cede hacia el fuelle y ella sale por ahi (2.6-4.0 s, alargue). Detras de la puerta, solo el fuelle oscuro.",
    "motivo_camara": "La misma camara fija de P1: el tren vuelve de golpe y el encuadre no cambia, la que cambia es ella. Al final la camara se queda quieta mirando la puerta que se abre.",
    "camera": {
     "tag": "FIJA_PECHO",
@@ -237,7 +237,7 @@
    "en_cuadro": "El mismo cuadro de P1: Martina a la izquierda, contra la puerta; al girar queda de perfil y despues de espaldas; la puerta se abre hacia el fondo y deja ver solo el fuelle oscuro. Abajo a la derecha, la esquina del respaldo de la fila 20.",
    "stills": {
     "A": {
-     "t": 1.6,
+     "t": 1.625,
      "desc": "Abre los ojos y mira hacia abajo."
     },
     "B": {
@@ -276,15 +276,15 @@
       },
       {
        "t": 1.72,
-       "head_yaw": -7,
-       "head_pitch": -3,
+       "head_yaw": -25,
+       "head_pitch": -2,
        "dz": -0.012,
        "ease": "out"
       },
       {
        "t": 1.86,
-       "head_yaw": -9,
-       "head_pitch": 32,
+       "head_yaw": -22,
+       "head_pitch": 30,
        "dz": -0.01
       },
       {

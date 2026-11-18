@@ -36,7 +36,7 @@
     "usar_hasta_s": 2.3,
     "dur_montaje_s": 1.8
    },
-   "descripcion": "Plano general hacia la puerta delantera, por encima de los respaldos. Un grito ahogado llega desde adelante (0,2 s). Las cabezas se levantan en ola, de la puerta hacia la cámara: primero el pasajero de la fila 1 junto a la puerta (0,25-0,5 s), después dos pasajeros de las filas 3 y 4 (0,5-0,9 s), después Iván, que se pone de pie en la fila 7 (1,0-1,55 s), y al final Carmen, que despierta en la fila 8 y lo mira (1,45-1,8 s). Martina y Tomás quedan detrás de la cámara. Nadie habla.",
+   "descripcion": "Plano general hacia la puerta delantera, por encima de los respaldos. Un grito ahogado llega desde adelante (0,2 s). Las cabezas se levantan en ola, de la puerta hacia la cámara: primero el pasajero de la fila 1 junto a la puerta (0,25-0,5 s), después dos pasajeros de las filas 3 y 4 (0,5-0,9 s), después Iván, que estaba sentado en el borde de su asiento (fila 7, pasillo) y se pone de pie saliendo al pasillo (1,05-1,55 s), y al final Carmen, que despierta en la fila 8 y lo mira (1,45-1,8 s). Martina y Tomás quedan detrás de la cámara. Nadie habla.",
    "motivo_camara": "En mano leve, a la altura de los ojos de alguien sentado (1,3 m), en el pasillo junto a la fila 11: es la mirada de la pareja. El respaldo de la fila 10 izquierda entra en primer término. La cámara sube apenas, tarde, cuando Iván se para.",
    "camera": {
     "tag": "MANO_LEVE",
@@ -105,7 +105,7 @@
      }
     ]
    },
-   "en_cuadro": "Primer término a la izquierda: el respaldo de la fila 10, desenfocado. Las filas de respaldos corren hacia la puerta delantera, al fondo al centro. A la izquierda, Carmen sentada junto a la ventana y Iván, más adelante, que se pone de pie en el pasillo. Al fondo, a la derecha, las cabezas de los pasajeros de las filas 1 y 3; a la izquierda, el de la fila 4.",
+   "en_cuadro": "Primer término a la izquierda: el respaldo de la fila 10, desenfocado. Las filas de respaldos corren hacia la puerta delantera, al fondo al centro. A la izquierda, Carmen sentada junto a la ventana; más adelante, Iván, que se pone de pie y sale al pasillo, de espaldas, a la derecha de la puerta (no la tapa). Al fondo, a la derecha, las cabezas de los pasajeros de las filas 1 y 3; a la izquierda, el de la fila 4.",
    "stills": {
     "A": {
      "t": 0.55,
@@ -227,7 +227,7 @@
        "t": 0.0,
        "pos": [
         -0.56,
-        16.13
+        16.54
        ],
        "yaw": 0,
        "dz": -0.46,
@@ -249,24 +249,42 @@
        "t": 1.05,
        "pos": [
         -0.56,
-        16.13
+        16.54
        ],
        "dz": -0.46
       },
       {
+       "t": 1.3,
+       "pos": [
+        -0.38,
+        16.54
+       ],
+       "dz": -0.2,
+       "ease": "in"
+      },
+      {
        "t": 1.55,
        "pos": [
-        -0.5,
-        16.5
+        -0.06,
+        16.54
        ],
        "dz": 0.0,
        "head_pitch": 0,
-       "head_yaw": -4
+       "head_yaw": -4,
+       "ease": "out"
+      },
+      {
+       "t": 1.8,
+       "pos": [
+        0.1,
+        16.53
+       ],
+       "ease": "out"
       },
       {
        "t": 2.3,
        "pos": [
-        -0.47,
+        0.11,
         16.52
        ],
        "dz": 0.0,
@@ -535,7 +553,7 @@
      }
     ]
    },
-   "en_cuadro": "El mismo eje del P1, en rojo: la tira roja del techo en fuga hacia la puerta delantera, al fondo al centro. A la izquierda, Carmen de pie frente a su asiento e Iván de pie en el pasillo, de espaldas. Al fondo, los pasajeros de pie; el de la fila 1 retrocede desde la puerta. Primer término a la izquierda: el respaldo de la fila 10.",
+   "en_cuadro": "El mismo eje del P1, en rojo: la tira roja del techo en fuga hacia la puerta delantera, al fondo al centro. A la izquierda, Carmen de pie frente a su asiento; Iván de pie en el pasillo, de espaldas, a la derecha de la puerta. Al fondo, los pasajeros de pie; el de la fila 1 retrocede desde la puerta. Primer término a la izquierda: el respaldo de la fila 10.",
    "stills": {
     "A": {
      "t": 3.85,
@@ -557,7 +575,7 @@
       {
        "t": 3.8,
        "pos": [
-        -0.45,
+        0.11,
         16.52
        ],
        "yaw": 0,
@@ -576,7 +594,7 @@
       {
        "t": 5.4,
        "pos": [
-        -0.43,
+        0.1,
         16.5
        ],
        "head_pitch": 0,
@@ -585,8 +603,8 @@
       {
        "t": 6.0,
        "pos": [
-        -0.36,
-        16.48
+        0.07,
+        16.44
        ],
        "head_yaw": -4
       }

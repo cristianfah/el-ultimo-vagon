@@ -30,7 +30,7 @@
     "usar_hasta_s": 1.2,
     "dur_montaje_s": 0.7
    },
-   "descripcion": "Flash. Corte por coincidencia con b1_p1: las mismas munecas en el mismo lugar del cuadro (tercio inferior, un poco a la izquierda), ahora amarradas juntas con varias vueltas de cinta gris sobre los muslos. Martina sentada en la silla metalica sin apoyabrazos del cuarto del rapto, bajo un foco cenital duro y frio. Tira de las munecas con tirones secos (0.18, 0.62 y 1.06 s): la cinta se arruga y no cede. Mira hacia abajo, a la cinta. Misma ropa: abrigo gris carbon abierto, sueter avena con los punos sobre los nudillos.",
+   "descripcion": "Flash. Corte por coincidencia con b1_p1: las mismas munecas en el mismo lugar del cuadro (tercio inferior, un poco a la izquierda), ahora amarradas juntas con varias vueltas de cinta gris sobre los muslos. Martina sentada en la silla metalica sin apoyabrazos del cuarto del rapto, bajo un foco cenital duro y frio. Tira de las munecas con tirones secos (0.18, 0.62 y 1.06 s): la cinta se arruga y no cede. Mira hacia abajo, a la cinta, con la cabeza un poco girada hacia su derecha (como en P1). Misma ropa: abrigo gris carbon abierto, sueter avena con los punos sobre los nudillos.",
    "motivo_camara": "Fija, el mismo lente (50 mm) y la misma posicion relativa a las munecas que b1_p1: 1,48 m delante, 0,28 m por encima, corrida 0,21 m hacia -X. Por eso queda a la altura del esternon de ella sentada (0,92 m) y el corte por coincidencia cae en las munecas. Sin vaiven: esto no es el tren.",
    "camera": {
     "tag": "FIJA_PECHO",
@@ -94,7 +94,7 @@
         0.0
        ],
        "yaw": 0,
-       "head_yaw": -6,
+       "head_yaw": -14,
        "head_pitch": 24,
        "dz": 0.0
       },

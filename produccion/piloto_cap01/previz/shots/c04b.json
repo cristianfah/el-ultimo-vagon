@@ -590,7 +590,7 @@
         3.5
        ],
        "head_pitch": -6,
-       "head_yaw": -16,
+       "head_yaw": -20,
        "ease": "out"
       },
       {
@@ -599,7 +599,7 @@
         0.06,
         3.62
        ],
-       "head_yaw": -10
+       "head_yaw": -22
       },
       {
        "t": 4.0,
@@ -607,7 +607,7 @@
         0.06,
         3.62
        ],
-       "head_yaw": -22
+       "head_yaw": -26
       },
       {
        "t": 4.6,
@@ -615,7 +615,7 @@
         0.07,
         3.62
        ],
-       "head_yaw": -14
+       "head_yaw": -21
       },
       {
        "t": 5.0,
@@ -624,7 +624,7 @@
         3.6
        ],
        "yaw": 10,
-       "head_yaw": -24
+       "head_yaw": -26
       }
      ]
     },
@@ -797,7 +797,7 @@
       {
        "t": 2.0,
        "pos": [
-        -0.15,
+        0.07,
         16.35
        ],
        "yaw": 0,
@@ -853,6 +853,13 @@
        "pos": [
         -0.5,
         15.64
+       ]
+      },
+      {
+       "t": 3.85,
+       "pos": [
+        -0.12,
+        15.58
        ]
       },
       {
@@ -916,7 +923,7 @@
       {
        "t": 5.0,
        "pos": [
-        -0.12,
+        -0.15,
         12.72
        ],
        "yaw": 180,
@@ -976,7 +983,7 @@
       {
        "t": 5.0,
        "pos": [
-        0.12,
+        0.14,
         12.02
        ],
        "yaw": 180,
@@ -1076,7 +1083,7 @@
     "alargue_s": "7.0-8.0"
    },
    "descripcion": "La estampida hacia Hugo por el pasillo, entre los asientos; chocan con los respaldos. Tomás, agachado, arrastra a Martina de la mano (la mano derecha de él, la izquierda de ella); detrás, Carmen, e Iván, último del grupo, que la empuja y mira hacia atrás. Atrás de todos, el pasajero de la fila 1. Martina mira hacia atrás un instante (6,1-6,5 s), justo cuando al fondo la puerta delantera revienta (6,04-6,16 s) y entran las primeras siluetas (desde 6,2 s). Nadie mira al lente: los que corren miran el piso delante de sus pies o hacia atrás.",
-   "motivo_camara": "En mano, corre de espaldas con ellos por el pasillo, delante de Tomás (a 1,3 m), a la altura de la cabeza (1,74 m): así se ve la puerta delantera por encima de las cabezas agachadas. Paso de carrera en el temblor (respira a 2,3 Hz) y dos topones contra los respaldos.",
+   "motivo_camara": "En mano, corre de espaldas con ellos por el pasillo, delante de Tomás (a 1,3 m), del lado derecho del pasillo para que Martina, detrás de él, quede a la izquierda del cuadro, a la altura de la cabeza (1,74 m): así se ve la puerta delantera por encima de las cabezas agachadas. Paso de carrera en el temblor (respira a 2,3 Hz) y dos topones contra los respaldos.",
    "camera": {
     "tag": "HANDHELD_RETRO",
     "mira": "hacia la puerta delantera, por encima del grupo que corre hacia la cámara",
@@ -1117,12 +1124,12 @@
      {
       "t": 5.0,
       "pos": [
-       -0.09,
+       0.06,
        10.72,
        1.74
       ],
       "look_at": [
-       -0.12,
+       0.03,
        21.7,
        0.5
       ]
@@ -1130,12 +1137,12 @@
      {
       "t": 5.6,
       "pos": [
-       -0.1,
+       0.05,
        9.95,
        1.74
       ],
       "look_at": [
-       -0.12,
+       0.03,
        20.95,
        0.5
       ]
@@ -1143,12 +1150,12 @@
      {
       "t": 6.4,
       "pos": [
-       -0.08,
+       0.07,
        8.85,
        1.74
       ],
       "look_at": [
-       -0.1,
+       0.05,
        19.85,
        0.52
       ]
@@ -1156,12 +1163,12 @@
      {
       "t": 7.2,
       "pos": [
-       -0.1,
+       0.05,
        7.72,
        1.73
       ],
       "look_at": [
-       -0.12,
+       0.03,
        18.7,
        0.5
       ]
@@ -1169,12 +1176,12 @@
      {
       "t": 8.0,
       "pos": [
-       -0.09,
+       0.06,
        6.62,
        1.73
       ],
       "look_at": [
-       -0.12,
+       0.03,
        17.6,
        0.5
       ],
@@ -1182,7 +1189,7 @@
      }
     ]
    },
-   "en_cuadro": "Tomás en primer término a la derecha, agachado, tirando; Martina detrás de él, a la izquierda; más atrás Carmen e Iván. Al fondo al centro, por encima de las cabezas, la puerta delantera que revienta y las siluetas que entran por el pasillo. Los respaldos pasan por los dos bordes.",
+   "en_cuadro": "Tomás en primer término a la derecha, agachado, tirando; Martina detrás de él, a la izquierda del cuadro (pegada a los respaldos de la izquierda); más atrás Carmen e Iván. Al fondo al centro, por encima de las cabezas, la puerta delantera que revienta y las siluetas que entran por el pasillo. Los respaldos pasan por los dos bordes.",
    "stills": {
     "A": {
      "t": 5.05,
@@ -1216,7 +1223,7 @@
       {
        "t": 5.0,
        "pos": [
-        0.12,
+        0.14,
         12.02
        ],
        "yaw": 180,
@@ -1227,7 +1234,7 @@
       {
        "t": 5.6,
        "pos": [
-        0.11,
+        0.13,
         11.27
        ],
        "ease": "in"
@@ -1235,7 +1242,7 @@
       {
        "t": 5.75,
        "pos": [
-        0.14,
+        0.16,
         11.07
        ],
        "ease": "out"
@@ -1243,14 +1250,14 @@
       {
        "t": 5.95,
        "pos": [
-        0.11,
+        0.13,
         10.8
        ]
       },
       {
        "t": 6.4,
        "pos": [
-        0.12,
+        0.14,
         10.17
        ],
        "head_pitch": 18,
@@ -1259,7 +1266,7 @@
       {
        "t": 7.2,
        "pos": [
-        0.1,
+        0.12,
         9.05
        ],
        "head_pitch": 16,
@@ -1268,7 +1275,7 @@
       {
        "t": 8.0,
        "pos": [
-        0.12,
+        0.14,
         7.95
        ],
        "ease": "linear"
@@ -1281,7 +1288,7 @@
       {
        "t": 5.0,
        "pos": [
-        -0.12,
+        -0.15,
         12.72
        ],
        "yaw": 180,
@@ -1292,7 +1299,7 @@
       {
        "t": 5.6,
        "pos": [
-        -0.12,
+        -0.15,
         12.0
        ],
        "ease": "in"
@@ -1300,7 +1307,7 @@
       {
        "t": 6.08,
        "pos": [
-        -0.13,
+        -0.16,
         11.4
        ],
        "head_pitch": 22,
@@ -1315,7 +1322,7 @@
       {
        "t": 6.46,
        "pos": [
-        -0.12,
+        -0.15,
         10.92
        ],
        "head_pitch": 0,
@@ -1330,14 +1337,14 @@
       {
        "t": 7.2,
        "pos": [
-        -0.12,
+        -0.15,
         9.78
        ]
       },
       {
        "t": 8.0,
        "pos": [
-        -0.12,
+        -0.15,
         8.68
        ],
        "ease": "linear"

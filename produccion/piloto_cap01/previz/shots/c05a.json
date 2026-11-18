@@ -18,8 +18,8 @@
  "props_in_frame": [
   "llave"
  ],
- "notes": "Fuelle de 3,0 m: y=0 puerta del ultimo vagon (cerradura en x=-0.32), y=3.0 puerta del vagon 5 (parte abierta a 74 grados, como termina c04b). P1 desde el lado de la cerradura (pared izquierda oculta): Hugo a la izquierda, cerradura a la derecha. P2 desde la puerta del ultimo vagon (donde esta Hugo) hacia el vagon 5: Martina a la izquierda (-X) y Tomas a la derecha (+X), como en b4_p6 y en las marcas del ultimo vagon. P3 desde el lado derecho (pared derecha oculta): puerta del vagon 5 a la derecha del cuadro, el grupo hacia la izquierda.",
- "adaptacion_18nov": "Ficha del 10-nov (figuras de bloques) pasada a cilindros: mismos lentes, camaras, cortes y tiempos. Sin lean/side/brazos: la accion de manos va en descripcion. Miradas corregidas: nadie mira al lente (P2 y final de P3). Correccion del director (18-nov): la puerta del vagon 5 parte a 74 grados (fin de c04b) y en P2 Martina va del lado -X y Tomas del +X (continuidad con b4_p6 y con el ultimo vagon); Ivan del lado de Martina, Carmen del lado de Tomas.",
+ "notes": "Fuelle de 3,0 m: y=0 puerta del ultimo vagon (cerradura en x=-0.32), y=3.0 puerta del vagon 5 (parte abierta a 74 grados, como termina c04b). Todo el bloque se filma del mismo lado del eje (la huida va hacia la derecha del cuadro). P1 desde el lado de la cerradura (pared izquierda oculta): Hugo a la izquierda, cerradura a la derecha. P2 desde la puerta del ultimo vagon, a la derecha de Hugo, hacia el vagon 5: Martina a la izquierda (-X) y Tomas a la derecha (+X), como en b4_p6 y en las marcas del ultimo vagon; Ivan cierra la puerta y cruza a la derecha, detras de Tomas. P3 desde el lado izquierdo (pared izquierda oculta, como P1): puerta del vagon 5 a la izquierda del cuadro, el grupo hacia la derecha.",
+ "adaptacion_18nov": "Ficha del 10-nov (figuras de bloques) pasada a cilindros: mismos lentes, camaras, cortes y tiempos. Sin lean/side/brazos: la accion de manos va en descripcion. Miradas corregidas: nadie mira al lente (P2 y final de P3). Correccion del director (18-nov): la puerta del vagon 5 parte a 74 grados (fin de c04b) y en P2 Martina va del lado -X y Tomas del +X (continuidad con b4_p6 y con el ultimo vagon); Ivan del lado de Martina, Carmen del lado de Tomas. Revision independiente (18-nov): P3 pasa al lado -X (no cruza el eje con P1 y P6); en P2 la camara sale del lugar de Hugo (x +0.25), Hugo entra en su marca como primer termino a la izquierda e Ivan termina en +X, detras de Tomas (entra por la derecha en b5_p4).",
  "set_anim": {
   "doors": [
    {
@@ -394,14 +394,14 @@
     "usar_hasta_s": 3.3,
     "dur_montaje_s": 1.5
    },
-   "descripcion": "Plano medio desde la puerta del ultimo vagon hacia el vagon 5. Ivan, el ultimo en salir, cierra de un golpe la puerta del vagon 5 (abierta a 74 grados; portazo en el cuadro 48); por su vidrio se acercan los infectados corriendo. Ivan se da vuelta por su izquierda y empuja al grupo hacia Hugo (fuera de cuadro, a la izquierda de la camara). Tomas (derecha del cuadro) arrastra a Martina (izquierda) de la mano y la mira a ella; Martina viene agachada y mira hacia atras por encima del hombro izquierdo. Carmen queda ultima, de espaldas a la puerta del vagon 5. La unica luz del fuelle es la tira roja del techo: no hay tubo blanco ni fluorescente. Nadie mira al lente.",
-   "motivo_camara": "En mano activa, a la altura de los ojos, por encima de Tomas y Martina que vienen agachados. Acusa el portazo dos cuadros despues y retrocede porque el grupo se le viene encima; termina buscando a Carmen, que queda atras.",
-   "en_cuadro": "Martina a la izquierda y Tomas a la derecha, agachados, en primer termino (el la lleva de la mano); detras, Ivan cierra la puerta del vagon 5 (izquierda, detras de Martina) y Carmen queda ultima (derecha, detras de Tomas); al fondo, por la puerta abierta y despues por su vidrio, los infectados que se acercan. Arriba, la tira roja del techo del fuelle.",
+   "descripcion": "Plano medio desde la puerta del ultimo vagon hacia el vagon 5. Ivan, el ultimo en salir, cierra de un golpe la puerta del vagon 5 (abierta a 74 grados; portazo en el cuadro 48); por su vidrio se acercan los infectados corriendo. Ivan se da vuelta y cruza en diagonal por delante de Carmen, de izquierda a derecha del cuadro, empujando al grupo hacia Hugo; termina a la derecha, detras de Tomas, mirando la espalda de Martina. Tomas (derecha del cuadro) arrastra a Martina (izquierda) de la mano y la mira a ella; Martina viene agachada y mira hacia atras por encima del hombro izquierdo. Carmen queda ultima, de espaldas a la puerta del vagon 5. En primer termino a la izquierda, el hombro de Hugo, que sigue forzando la llave en la cerradura (sus manos van en el prompt). La unica luz del fuelle es la tira roja del techo: no hay tubo blanco ni fluorescente. Nadie mira al lente.",
+   "motivo_camara": "En mano activa, a la altura de los ojos, por encima de Tomas y Martina que vienen agachados, a la derecha de Hugo (la camara no ocupa su lugar). Acusa el portazo dos cuadros despues y retrocede porque el grupo se le viene encima, hasta quedar pegada a la puerta del ultimo vagon: ahi entra el hombro de Hugo como primer termino a la izquierda; termina buscando a Carmen, que queda atras.",
+   "en_cuadro": "Primer termino a la izquierda: el hombro de Hugo (bronce), que entra cuando la camara retrocede. Martina a la izquierda y Tomas a la derecha, agachados (el la lleva de la mano); detras, Ivan cierra la puerta del vagon 5 (izquierda, detras de Martina) y cruza hacia la derecha, detras de Tomas; Carmen queda ultima, al centro, de espaldas a la puerta; al fondo, por la puerta abierta y despues por su vidrio, los infectados que se acercan. Arriba, la tira roja del techo del fuelle.",
    "camera": {
     "lens_mm": 28,
     "tag": "HANDHELD_RETRO",
-    "mira": "hacia la puerta del vagon 5, desde la puerta del ultimo vagon",
-    "mov": "en mano a la altura de los ojos; acusa el portazo 2 cuadros despues y retrocede 0,35 m porque el grupo se le viene encima",
+    "mira": "hacia la puerta del vagon 5, desde la puerta del ultimo vagon (a la derecha de Hugo)",
+    "mov": "en mano a la altura de los ojos; acusa el portazo 2 cuadros despues y retrocede 0,45 m hasta quedar junto a Hugo, porque el grupo se le viene encima",
     "mode": "handheld",
     "handheld": {
      "rot_deg": 0.9,
@@ -423,12 +423,12 @@
      {
       "t": 1.79,
       "pos": [
-       0.04,
+       0.25,
        0.56,
        1.5
       ],
       "look_at": [
-       0.02,
+       -0.06,
        3.0,
        1.36
       ]
@@ -436,25 +436,25 @@
      {
       "t": 2.1,
       "pos": [
-       0.04,
+       0.25,
        0.54,
        1.5
       ],
       "look_at": [
-       0.02,
+       -0.06,
        3.0,
        1.36
       ]
      },
      {
-      "t": 3.55,
+      "t": 3.5,
       "pos": [
-       0.09,
-       0.2,
+       0.22,
+       0.08,
        1.47
       ],
       "look_at": [
-       0.07,
+       -0.1,
        2.8,
        1.4
       ]
@@ -566,20 +566,42 @@
       {
        "t": 2.36,
        "pos": [
-        -0.24,
-        2.6
+        -0.04,
+        2.46
        ],
-       "yaw": 170,
-       "head_pitch": 30
+       "yaw": 150,
+       "head_yaw": -20,
+       "head_pitch": 20
+      },
+      {
+       "t": 2.8,
+       "pos": [
+        0.12,
+        2.16
+       ],
+       "yaw": 168,
+       "head_yaw": -45,
+       "head_pitch": 24
+      },
+      {
+       "t": 3.3,
+       "pos": [
+        0.25,
+        1.98
+       ],
+       "yaw": 174,
+       "head_yaw": -52,
+       "head_pitch": 26
       },
       {
        "t": 3.6,
        "pos": [
-        -0.28,
-        1.9
+        0.27,
+        1.84
        ],
        "yaw": 176,
-       "head_pitch": 30
+       "head_yaw": -55,
+       "head_pitch": 26
       }
      ]
     },
@@ -599,8 +621,8 @@
       {
        "t": 2.3,
        "pos": [
-        0.3,
-        2.5
+        0.32,
+        2.52
        ],
        "yaw": 170,
        "head_yaw": -70
@@ -608,8 +630,8 @@
       {
        "t": 2.75,
        "pos": [
-        0.25,
-        2.5
+        0.28,
+        2.52
        ],
        "yaw": 166,
        "head_yaw": -36,
@@ -701,9 +723,73 @@
        "ease": "linear"
       }
      ]
+    },
+    "hugo": {
+     "pose": "de_pie",
+     "tremor": {
+      "m": 0.004,
+      "hz": 7.0
+     },
+     "keys": [
+      {
+       "t": 1.79,
+       "pos": [
+        -0.11,
+        0.47
+       ],
+       "yaw": 168,
+       "head_yaw": 0,
+       "head_pitch": 16
+      },
+      {
+       "t": 2.05,
+       "pos": [
+        -0.1,
+        0.5
+       ],
+       "head_pitch": 14,
+       "ease": "out"
+      },
+      {
+       "t": 2.35,
+       "pos": [
+        -0.12,
+        0.44
+       ],
+       "head_pitch": 19,
+       "ease": "snap"
+      },
+      {
+       "t": 2.65,
+       "pos": [
+        -0.1,
+        0.5
+       ],
+       "head_pitch": 14,
+       "ease": "out"
+      },
+      {
+       "t": 2.95,
+       "pos": [
+        -0.11,
+        0.45
+       ],
+       "head_pitch": 18,
+       "ease": "snap"
+      },
+      {
+       "t": 3.3,
+       "pos": [
+        -0.1,
+        0.49
+       ],
+       "head_pitch": 15,
+       "ease": "out"
+      }
+     ]
     }
    },
-   "nota_claves": "Varias claves terminan despues del corte (t > 3.3) a proposito: el grupo y la camara siguen en movimiento en el ultimo cuadro del plano; no hay frenada antes del corte. Miradas: Tomas mira hacia atras a Martina (la arrastra), Martina hacia atras por encima del hombro izquierdo, Ivan cierra de espaldas y se da vuelta por su izquierda hacia la espalda de Martina, Carmen primero a Ivan y despues al grupo; nunca al lente.",
+   "nota_claves": "Varias claves terminan despues del corte (t > 3.3) a proposito: el grupo y la camara siguen en movimiento en el ultimo cuadro del plano; no hay frenada antes del corte. Hugo queda en su marca junto a la cerradura (-0.10, 0.48; la misma de b5_p1 y b5_p6), forzando la llave. Miradas: Tomas mira hacia atras a Martina (la arrastra), Martina hacia atras por encima del hombro izquierdo, Ivan cierra de espaldas, se da vuelta y mira la espalda de Martina mientras empuja (termina en x +0.25, del lado de Tomas, para tomar la mano izquierda de Carmen en b5_p4), Carmen primero a Ivan y despues al grupo; nunca al lente.",
    "stills": {
     "A": {
      "t": 1.85,
@@ -725,10 +811,11 @@
     },
     "C": {
      "t": 3.25,
-     "desc": "Ivan empuja al grupo; Carmen queda ultima, de espaldas a la puerta",
+     "desc": "Ivan empuja al grupo desde la derecha, detras de Tomas; Carmen queda ultima, de espaldas a la puerta; el hombro de Hugo en primer termino",
      "lados": {
       "martina": "izq",
-      "tomas": "der"
+      "tomas": "der",
+      "ivan": "der"
      }
     }
    }
@@ -744,9 +831,9 @@
     "dur_montaje_s": 1.0,
     "alargue_s": "4.3-5.0"
    },
-   "descripcion": "La puerta del vagon 5. IMPACTO en el cuadro 84 (3.500 s): un brazo infectado revienta el vidrio; en el cuadro 86 agarra a Carmen por el hombro izquierdo del abrigo, desde atras; desde el 87 la tira hacia atras contra la puerta (tres tirones). Carmen estira el brazo derecho hacia el grupo y grita hacia Ivan y el grupo, a la izquierda del cuadro: nunca hacia el lente. El brazo del infectado y el de Carmen van en el prompt (los cilindros no tienen brazos).",
-   "motivo_camara": "En mano, baja, de tres cuartos sobre Carmen, con la puerta del vagon 5 a la derecha del cuadro (camara donde iria la pared derecha del fuelle, 'pared movil'). La sacudida parte 3 cuadros despues del impacto (cuadro 87) y la camara sigue el tiron con 2-3 cuadros de retraso.",
-   "en_cuadro": "Carmen a la izquierda del centro, de espaldas a la puerta del vagon 5 (a la derecha del cuadro), con la nariz hacia la izquierda del cuadro (el grupo); por el vidrio reventado, el infectado que la agarra; al fondo del vagon 5, otros dos que llegan; arriba, la tira roja del fuelle.",
+   "descripcion": "La puerta del vagon 5. IMPACTO en el cuadro 84 (3.500 s): un brazo infectado revienta el vidrio; en el cuadro 86 agarra a Carmen por el hombro izquierdo del abrigo, desde atras; desde el 87 la tira hacia atras contra la puerta (tres tirones). Carmen estira el brazo derecho hacia el grupo y grita hacia Ivan y el grupo, a la derecha del cuadro (de perfil): nunca hacia el lente. El brazo del infectado y el de Carmen van en el prompt (los cilindros no tienen brazos).",
+   "motivo_camara": "En mano, baja, de tres cuartos sobre Carmen, desde el lado izquierdo del fuelle (pared izquierda oculta, 'pared movil'), el mismo lado de b5_p1, b5_p6 y b5_p2: la puerta del vagon 5 queda a la izquierda del cuadro y la huida hacia la derecha, sin cruzar el eje. La sacudida parte 3 cuadros despues del impacto (cuadro 87) y la camara sigue el tiron con 2-3 cuadros de retraso.",
+   "en_cuadro": "Carmen a la derecha del centro, de perfil, de espaldas a la puerta del vagon 5 (a la izquierda del cuadro), con la nariz hacia la derecha del cuadro (el grupo y la puerta del ultimo vagon, fuera de cuadro); por el vidrio reventado, a la izquierda, el infectado que la agarra; al fondo del vagon 5, otros dos que llegan; arriba, la tira roja del fuelle.",
    "impacto": {
     "t": 3.5,
     "cuadro": 84,
@@ -755,7 +842,7 @@
    "camera": {
     "lens_mm": 35,
     "tag": "MANO_BAJA",
-    "mira": "a Carmen de tres cuartos, con la puerta del vagon 5 a la derecha del cuadro",
+    "mira": "a Carmen de tres cuartos, con la puerta del vagon 5 a la izquierda del cuadro (desde el lado de la cerradura, como b5_p1)",
     "mov": "en mano, baja; sacudida 3 cuadros despues del impacto y sigue cada tiron con 2-3 cuadros de retraso",
     "mode": "handheld",
     "lag_s": 0.1,
@@ -774,7 +861,7 @@
       "dur_s": 0.45,
       "hz": 8.5,
       "kick": [
-       0.04,
+       -0.04,
        -0.03,
        0.0
       ]
@@ -800,15 +887,15 @@
      {
       "t": 3.29,
       "pos": [
-       1.3,
+       -1.25,
        1.95,
-       1.2
+       1.21
       ],
       "look_at": {
        "actor": "carmen",
        "part": "cabeza",
        "offset": [
-        -0.02,
+        0.02,
         0.22,
         -0.04
        ]
@@ -817,15 +904,15 @@
      {
       "t": 3.62,
       "pos": [
-       1.3,
+       -1.25,
        1.93,
-       1.2
+       1.21
       ],
       "look_at": {
        "actor": "carmen",
        "part": "cabeza",
        "offset": [
-        -0.02,
+        0.02,
         0.22,
         -0.04
        ]
@@ -834,15 +921,15 @@
      {
       "t": 3.95,
       "pos": [
-       1.25,
+       -1.2,
        2.05,
-       1.19
+       1.2
       ],
       "look_at": {
        "actor": "carmen",
        "part": "cabeza",
        "offset": [
-        -0.02,
+        0.02,
         0.22,
         -0.04
        ]
@@ -852,15 +939,15 @@
      {
       "t": 5.0,
       "pos": [
-       1.23,
+       -1.18,
        2.09,
-       1.2
+       1.21
       ],
       "look_at": {
        "actor": "carmen",
        "part": "cabeza",
        "offset": [
-        -0.02,
+        0.02,
         0.22,
         -0.04
        ]
@@ -883,7 +970,7 @@
         2.5
        ],
        "yaw": 180,
-       "head_yaw": -32,
+       "head_yaw": -17,
        "head_pitch": 10,
        "dz": 0
       },
@@ -893,7 +980,7 @@
         0.02,
         2.49
        ],
-       "head_yaw": -30,
+       "head_yaw": -15,
        "head_pitch": 8
       },
       {
@@ -902,7 +989,7 @@
         0.02,
         2.49
        ],
-       "head_yaw": -22,
+       "head_yaw": -8,
        "head_pitch": -8,
        "ease": "out"
       },
@@ -912,7 +999,7 @@
         0.02,
         2.48
        ],
-       "head_yaw": -20,
+       "head_yaw": -6,
        "head_pitch": -4
       },
       {
@@ -921,7 +1008,7 @@
         -0.02,
         2.71
        ],
-       "head_yaw": -12,
+       "head_yaw": 0,
        "head_pitch": -24,
        "dz": -0.04,
        "ease": "out"
@@ -932,7 +1019,7 @@
         0.0,
         2.6
        ],
-       "head_yaw": -30,
+       "head_yaw": -14,
        "head_pitch": 2,
        "dz": -0.02
       },
@@ -942,7 +1029,7 @@
         -0.03,
         2.73
        ],
-       "head_yaw": -14,
+       "head_yaw": 0,
        "head_pitch": -20,
        "dz": -0.06,
        "ease": "out"
@@ -953,7 +1040,7 @@
         0.01,
         2.61
        ],
-       "head_yaw": -32,
+       "head_yaw": -16,
        "head_pitch": 4,
        "dz": -0.03
       },
@@ -963,7 +1050,7 @@
         -0.02,
         2.72
        ],
-       "head_yaw": -16,
+       "head_yaw": -2,
        "head_pitch": -16,
        "dz": -0.07,
        "ease": "out"
@@ -974,7 +1061,7 @@
         -0.02,
         2.69
        ],
-       "head_yaw": -26,
+       "head_yaw": -10,
        "head_pitch": -6,
        "dz": -0.06
       }
@@ -998,54 +1085,54 @@
       {
        "t": 3.5,
        "pos": [
-        -0.02,
-        3.36
+        0.05,
+        3.27
        ],
        "ease": "linear"
       },
       {
        "t": 3.83,
        "pos": [
-        -0.02,
-        3.4
+        0.05,
+        3.31
        ],
        "ease": "out"
       },
       {
        "t": 4.12,
        "pos": [
-        -0.02,
-        3.34
+        0.05,
+        3.26
        ]
       },
       {
        "t": 4.3,
        "pos": [
-        -0.02,
-        3.42
+        0.05,
+        3.32
        ],
        "ease": "out"
       },
       {
        "t": 4.66,
        "pos": [
-        -0.02,
-        3.34
+        0.04,
+        3.26
        ]
       },
       {
        "t": 4.85,
        "pos": [
-        -0.02,
-        3.42
+        0.03,
+        3.33
        ],
        "ease": "out"
       },
       {
        "t": 5.0,
        "pos": [
-        -0.02,
-        3.4
+        0.02,
+        3.32
        ]
       }
      ]
@@ -1116,21 +1203,30 @@
     }
    },
    "hide_set": [
-    "fuelle_pared_der",
-    "fuelle_costillas_der"
+    "fuelle_pared_izq",
+    "fuelle_costillas_izq"
    ],
    "stills": {
     "A": {
      "t": 3.35,
-     "desc": "Carmen ultima, de espaldas a la puerta; el infectado llega al vidrio"
+     "desc": "Carmen ultima, de espaldas a la puerta; el infectado llega al vidrio",
+     "lados": {
+      "carmen": "der"
+     }
     },
     "B": {
      "t": 3.6,
-     "desc": "El vidrio revienta (cuadro 84); el brazo agarra a Carmen del hombro izquierdo"
+     "desc": "El vidrio revienta (cuadro 84); el brazo agarra a Carmen del hombro izquierdo",
+     "lados": {
+      "carmen": "der"
+     }
     },
     "C": {
      "t": 4.25,
-     "desc": "Segundo tiron contra la puerta; Carmen grita hacia el grupo (izquierda del cuadro)"
+     "desc": "Segundo tiron contra la puerta; Carmen grita hacia el grupo (derecha del cuadro)",
+     "lados": {
+      "carmen": "der"
+     }
     }
    }
   }

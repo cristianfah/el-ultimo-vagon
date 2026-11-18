@@ -15,7 +15,7 @@
   "hz": 0.45
  },
  "fuente_tiempos": "llamadas_tiempos.json (c02b, pedida 7,7 s -> 8 s): b2_p3 0,5–3,2 y b2_p4 3,2–7,2. Pista pistas_v3/c02b.mp3 (7,73 s): Tomás «¿Tu papá sabe que vienes en este tren?» 0,71–2,67 s; Martina «No.» 3,40–3,68 s y «Esa era la idea.» 5,23–6,15 s. Colchón 0–0,5 s: Tomás ya la está mirando. b2_p4 se alarga de 7,2 a 8,0 s con acción (las manos siguen juntas, ella sigue mirando al frente), sin quietud.",
- "notes": "Vagón 5, fila 11 lado derecho. Plano y contraplano sin cruzar el eje, las dos cámaras delante de la pareja: P3 desde delante de Martina, pegada al muro de la ventana, mirando hacia el pasillo y la cola (Tomás a la derecha, mira a la izquierda); P4 desde delante de Tomás, apenas sobre el respaldo de la fila 10, mirando hacia la ventana y la cola (Martina a la izquierda, mira hacia la cabeza del tren, fuera de cuadro por la izquierda). Pasajeros dormidos en las filas 12 a 14. Iván y Carmen (filas 7 y 8 izq) quedan detrás de las cámaras.",
+ "notes": "Vagón 5, fila 11 lado derecho. Plano y contraplano sin cruzar el eje, las dos cámaras en el asiento de enfrente (fila 10), en leve picado: P3 desde el lado de la ventana (1,52 m), mirando hacia el pasillo y la cola (Tomás a la derecha, mira a la izquierda; detrás de su cabeza, los respaldos del otro lado); P4 desde el lado del pasillo (1,40 m), mirando hacia la ventana y la cola (Martina a la izquierda, mira hacia la cabeza del tren, fuera de cuadro por la izquierda). Pasajeros dormidos en las filas 12 a 14. Iván y Carmen (filas 7 y 8 izq) quedan detrás de las cámaras.",
  "shots": [
   {
    "id": "b2_p3",
@@ -39,8 +39,8 @@
      ]
     ]
    },
-   "motivo_camara": "En mano, a la altura de sus ojos sentados (1,23 m), desde delante de Martina y pegada al muro de la ventana: el punto de vista de ella, a unos 29° de la línea de su mirada. Push-in lento y corto mientras él habla: entra 7 cm entre 0,55 y 2,95 s, arranca y frena. 40 mm a 0,8 m: con 50 mm habría que retroceder a través del muro.",
-   "en_cuadro": "Tomás a la derecha, girado hacia la izquierda; en el borde izquierdo, desenfocado, el hombro de Martina. Detrás de él, el pasillo y los asientos del otro lado con un pasajero dormido (arriba asoma una ventana del muro del pasillo; la de Martina nunca entra).",
+   "motivo_camara": "En mano, desde el asiento de enfrente del lado de la ventana (sobre el asiento de ventana de la fila 10), el punto de vista de Martina, un poco por encima de los ojos sentados (1,52 m) y en leve picado (unos 14° hacia su cabeza): así, detrás de la cabeza de Tomás quedan los respaldos y el pasajero dormido del otro lado del pasillo, y la línea que pasa por su cabeza llega al muro del pasillo por debajo de las ventanas (a 1,40 m la franja de ventanas quedaba pegada a su cabeza). 35 mm a 1,1 m: el cilindro ocupa ~0,55 del ancho. Push-in lento y corto mientras él habla: entra 8 cm entre 0,55 y 2,95 s, arranca y frena.",
+   "en_cuadro": "Tomás a la derecha, girado hacia la izquierda; en el borde izquierdo, desenfocado, el hombro de Martina. Detrás de su cabeza, los respaldos del otro lado del pasillo y un pasajero dormido. Arriba, al fondo, separada de la cabeza por los respaldos, asoma la franja de ventanas del muro del pasillo (con la cámara sobre los respaldos no se puede sacar del cuadro); la ventana de Martina nunca entra.",
    "stills": {
     "A": {
      "t": 0.6,
@@ -68,10 +68,10 @@
     }
    },
    "camera": {
-    "lens_mm": 40,
+    "lens_mm": 35,
     "tag": "PUSH_IN",
-    "mira": "a Tomás, hacia el pasillo y la cola (−X, −Y)",
-    "mov": "push-in de 7 cm mientras él habla (0,55–2,95 s), en mano suave",
+    "mira": "a Tomás, hacia el pasillo y la cola (−X, −Y), en leve picado",
+    "mov": "push-in de 8 cm mientras él habla (0,55–2,95 s), en mano suave",
     "mode": "handheld",
     "handheld": {
      "rot_deg": 0.2,
@@ -89,53 +89,53 @@
      {
       "t": 0.0,
       "pos": [
-       1.26,
-       0.34,
-       1.23
+       1.28,
+       0.76,
+       1.52
       ],
       "look_at": [
-       0.615,
-       -0.134,
-       1.1
+       0.748,
+       0.011,
+       1.124
       ]
      },
      {
       "t": 0.55,
       "pos": [
-       1.26,
-       0.34,
-       1.23
+       1.28,
+       0.76,
+       1.52
       ],
       "look_at": [
-       0.615,
-       -0.134,
-       1.1
+       0.748,
+       0.011,
+       1.124
       ]
      },
      {
       "t": 2.95,
       "pos": [
-       1.204,
-       0.29900000000000004,
-       1.226
+       1.23,
+       0.702,
+       1.498
       ],
       "look_at": [
-       0.5589999999999999,
-       -0.17500000000000002,
-       1.096
+       0.698,
+       -0.047,
+       1.102
       ]
      },
      {
       "t": 3.2,
       "pos": [
-       1.204,
-       0.29900000000000004,
-       1.226
+       1.23,
+       0.702,
+       1.498
       ],
       "look_at": [
-       0.5589999999999999,
-       -0.17500000000000002,
-       1.096
+       0.698,
+       -0.047,
+       1.102
       ]
      }
     ]
@@ -151,27 +151,27 @@
         0.0
        ],
        "yaw": 0,
-       "head_yaw": -86,
+       "head_yaw": -76,
        "head_pitch": 3
       },
       {
        "t": 0.6,
-       "head_yaw": -90,
+       "head_yaw": -78,
        "head_pitch": 6
       },
       {
        "t": 1.7,
-       "head_yaw": -92,
+       "head_yaw": -80,
        "head_pitch": 7
       },
       {
        "t": 2.7,
-       "head_yaw": -88,
+       "head_yaw": -77,
        "head_pitch": 4
       },
       {
        "t": 3.2,
-       "head_yaw": -90,
+       "head_yaw": -78,
        "head_pitch": 5
       }
      ]
@@ -297,8 +297,8 @@
      ]
     ]
    },
-   "motivo_camara": "En mano, quieta, desde delante de Tomás, con la cámara apenas sobre el respaldo de la fila 10, a la altura de sus ojos (1,24 m) y a 24° de su mirada: ella mira justo al lado del lente, hacia la izquierda. 35 mm a 0,8 m, porque el respaldo no deja retroceder más. Cuadro cargado a la izquierda: el aire queda a la derecha, por donde entra la mano de él.",
-   "en_cuadro": "Martina a la izquierda, mirando hacia la izquierda del cuadro; detrás de ella, la ventana negra con lluvia. A la derecha, aire: el respaldo de su fila y, al fondo, los asientos de atrás; abajo a la derecha entra la mano de Tomás.",
+   "motivo_camara": "En mano, quieta, desde el asiento de enfrente del lado del pasillo (sobre el asiento de pasillo de la fila 10, 1,40 m): el contraplano de P3, casi a la misma altura y distancia, en leve picado. Ella mira al frente, hacia la izquierda del cuadro, a unos 40° del lente: nunca a él ni a la cámara. 35 mm a 1,05 m: el cilindro ocupa ~0,55 del ancho. Desde esa altura el respaldo de la fila 10 no tapa el regazo, donde entra la mano de él. Cuadro cargado a la izquierda: el aire queda a la derecha, por donde entra la mano.",
+   "en_cuadro": "Martina a la izquierda, mirando hacia la izquierda del cuadro; detrás de ella, la ventana negra con lluvia. A la derecha, aire: el respaldo de su fila y, al fondo, los asientos de atrás; en el borde derecho asoma la nariz de Tomás, que la mira; abajo a la derecha, sobre el regazo, entra su mano.",
    "stills": {
     "A": {
      "t": 3.45,
@@ -328,7 +328,7 @@
    "camera": {
     "lens_mm": 35,
     "tag": "MANO_QUIETA",
-    "mira": "a Martina, hacia la ventana y la cola (+X, −Y)",
+    "mira": "a Martina, hacia la ventana y la cola (+X, −Y), en leve picado",
     "mov": "en mano, quieta; solo respira",
     "mode": "handheld",
     "handheld": {
@@ -347,27 +347,27 @@
      {
       "t": 3.2,
       "pos": [
-       0.804,
-       0.66,
-       1.24
+       0.55,
+       0.8,
+       1.4
       ],
       "look_at": [
-       1.087,
-       -0.088,
-       0.985
+       1.002,
+       -0.009,
+       1.025
       ]
      },
      {
       "t": 8.0,
       "pos": [
-       0.808,
-       0.66,
-       1.237
+       0.553,
+       0.802,
+       1.398
       ],
       "look_at": [
-       1.087,
-       -0.088,
-       0.985
+       1.002,
+       -0.01,
+       1.024
       ]
      }
     ]
@@ -383,7 +383,7 @@
         0.0
        ],
        "yaw": 0,
-       "head_yaw": 0,
+       "head_yaw": -6,
        "head_pitch": 3
       },
       {
@@ -393,27 +393,27 @@
       },
       {
        "t": 3.9,
-       "head_yaw": 2,
+       "head_yaw": -4,
        "head_pitch": 1
       },
       {
        "t": 5.2,
-       "head_yaw": 3,
+       "head_yaw": -3,
        "head_pitch": -1
       },
       {
        "t": 6.2,
-       "head_yaw": 2,
+       "head_yaw": -4,
        "head_pitch": 0
       },
       {
        "t": 6.6,
-       "head_yaw": 1,
+       "head_yaw": -5,
        "head_pitch": 4
       },
       {
        "t": 8.0,
-       "head_yaw": 2,
+       "head_yaw": -4,
        "head_pitch": 2
       }
      ]

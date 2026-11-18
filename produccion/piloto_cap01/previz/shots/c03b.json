@@ -30,7 +30,7 @@
     "usar_hasta_s": 2.0,
     "dur_montaje_s": 1.5
    },
-   "descripcion": "Primer plano del hombre. Último acceso de tos (0,62 s) y deja de toser de golpe (0,72 s). Los ojos se le ponen blancos y las venas oscuras le suben por el cuello hasta la mandíbula (prompt; el cilindro no tiene cara). La cabeza gira despacio hacia la derecha del cuadro, hacia su esposa (1,0-1,95 s), cuya nariz asoma en el borde derecho.",
+   "descripcion": "Primer plano del hombre. Último acceso de tos (0,62 s) y deja de toser de golpe (0,72 s). Los ojos se le ponen blancos y las venas oscuras le suben por el cuello hasta la mandíbula (prompt; el cilindro no tiene cara). La cabeza gira despacio, con la barbilla baja, hacia la derecha del cuadro, hacia su esposa (1,0-1,95 s; la mirada pasa por debajo del lente), cuya nariz asoma en el borde derecho.",
    "motivo_camara": "En mano, quieta, muy cerca en sensación: 45 mm a 1,1 m, por encima del respaldo de la fila 11, de frente. La parte alta del cilindro con la nariz, aire arriba; la esposa entra por el borde derecho.",
    "camera": {
     "tag": "MANO_QUIETA",
@@ -250,9 +250,19 @@
        "head_yaw": -6
       },
       {
+       "t": 1.2,
+       "head_yaw": 10,
+       "head_pitch": 24
+      },
+      {
+       "t": 1.55,
+       "head_yaw": 45,
+       "head_pitch": 24
+      },
+      {
        "t": 1.95,
        "head_yaw": 84,
-       "head_pitch": 8
+       "head_pitch": 10
       },
       {
        "t": 2.2,
@@ -617,12 +627,12 @@
     "dur_montaje_s": 1.5,
     "alargue_s": "4.5-5.0"
    },
-   "descripcion": "Plano general del pasillo. Al otro lado, la lectora (la del bloque 0) se levanta de golpe y grita (3,0-3,25 s); el libro cae. Otros pasajeros despiertan: el joven de los audífonos se gira hacia la pareja (3,1 s) y el dormido de la fila 16 levanta la cabeza hacia ella (3,15 s). La niebla cubre el piso del pasillo (no se modela). La pareja, él encima de ella, queda fuera de cuadro a la izquierda tras el paneo.",
-   "motivo_camara": "En mano, de pie en el pasillo (1,55 m, fila 10), 24 mm. Arranca todavía sobre la pareja y llega tarde al grito: el paneo (3,18-3,46 s; se pasa un poco y vuelve a los 3,62 s) encuentra a la lectora ya de pie. Después el operador da medio paso.",
+   "descripcion": "Plano general del pasillo. Al otro lado, la lectora (la del bloque 0) se levanta de golpe, delante de su asiento, y grita (3,0-3,25 s); el libro cae. Sin dejar de mirar a la pareja, se escurre de lado entre las filas hacia el pasillo (3,6-5,0 s). Otros pasajeros despiertan: el joven de los audífonos se gira hacia la pareja (3,1 s) y el dormido de la fila 16 levanta la cabeza hacia ella (3,15 s). La niebla cubre el piso del pasillo (no se modela). La pareja, él encima de ella, queda fuera de cuadro a la izquierda tras el paneo.",
+   "motivo_camara": "En mano, de pie en el pasillo (1,55 m, fila 10), 24 mm. Arranca todavía sobre la pareja y llega tarde al grito: el paneo (3,18-3,46 s; se pasa un poco y vuelve a los 3,62 s) encuentra a la lectora ya de pie. Después el operador da medio paso y la acompaña apenas cuando ella se corre hacia el pasillo.",
    "camera": {
     "tag": "MANO_TARDE",
     "mira": "por el pasillo hacia la cola, a la lectora",
-    "mov": "en mano; paneo tardío de la pareja a la lectora (3,18-3,62 s)",
+    "mov": "en mano; paneo tardío de la pareja a la lectora (3,18-3,62 s); después la acompaña apenas",
     "lens_mm": 24,
     "mode": "handheld",
     "handheld": {
@@ -692,7 +702,7 @@
        1.54
       ],
       "look_at": [
-       -0.78,
+       -0.7,
        -2.85,
        1.37
       ]
@@ -705,14 +715,14 @@
        1.54
       ],
       "look_at": [
-       -0.72,
+       -0.52,
        -2.85,
        1.36
       ]
      }
     ]
    },
-   "en_cuadro": "Al inicio, la pareja a la izquierda (él encima de ella). Tras el paneo: el pasillo hacia la cola con la niebla en el piso; la lectora de pie, gritando, a la derecha del centro; el joven de los audífonos en el borde derecho, girado; al fondo a la izquierda, el pasajero de la fila 16 que despierta.",
+   "en_cuadro": "Al inicio, la pareja a la izquierda (él encima de ella). Tras el paneo: el pasillo hacia la cola con la niebla en el piso; la lectora de pie delante de su asiento, gritando, a la derecha del centro, que se escurre hacia el pasillo; el joven de los audífonos en el borde derecho, girado; al fondo a la izquierda, el pasajero de la fila 16 que despierta.",
    "stills": {
     "A": {
      "t": 3.05,
@@ -785,7 +795,7 @@
        "t": 3.0,
        "pos": [
         -1.12,
-        -2.7
+        -2.29
        ],
        "yaw": 0,
        "dz": -0.36,
@@ -795,8 +805,8 @@
       {
        "t": 3.25,
        "pos": [
-        -1.06,
-        -2.5
+        -1.08,
+        -2.29
        ],
        "dz": 0.0,
        "head_yaw": -42,
@@ -806,28 +816,32 @@
       {
        "t": 3.6,
        "pos": [
-        -1.04,
-        -2.46
+        -1.0,
+        -2.29
        ],
-       "head_yaw": -42,
+       "yaw": -10,
+       "head_yaw": -28,
        "head_pitch": 0
       },
       {
        "t": 4.3,
        "pos": [
-        -1.09,
-        -2.56
+        -0.78,
+        -2.3
        ],
-       "head_yaw": -40,
+       "yaw": -25,
+       "head_yaw": -22,
        "head_pitch": 0
       },
       {
        "t": 5.0,
        "pos": [
-        -1.1,
-        -2.58
+        -0.42,
+        -2.31
        ],
-       "head_yaw": -38
+       "yaw": -40,
+       "head_yaw": 14,
+       "head_pitch": 0
       }
      ]
     },
