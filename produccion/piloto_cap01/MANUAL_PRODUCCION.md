@@ -28,6 +28,7 @@ Antes de empezar un capítulo tiene que existir:
 | 3 | Consolidar el guion | versiones del guion + decisiones | una versión + diff | edición + `git diff` | La historia no cambia | Cristián |
 | 4 | Propuesta y plan con topes | informes | `01_propuesta.md`, `02_plan.md` | — | Cada precio con su fuente; lo no verificado, marcado | **Cristián (parar aquí)** |
 | 5 | Pruebas críticas (lipsync, cámara) | un plano, la misma pista | tomas + medición + costo real | *(se llena al producir)* | | Cristián |
+| 5b | **El gris** (película en gris con cilindros) | guion, tiempos por llamada (`previz/llamadas_tiempos.json`), mapa fijo del set (`previz/BRIEF_fichas.md`) | una ficha por llamada (`previz/shots/`), stills A/B/C + planta por plano, páginas de storyboard por bloque, MP4 de referencia de las llamadas de blocking, montaje de ritmo con voces | Blender 4.5 por script (`previz/scripts/`), un agente por bloque | `storyboard.py revisar` (tiempos, miradas al lente y casi de frente, lados, choques) **y** un revisor independiente que proyecta los datos de cada cuadro | **Cristián (PARADA 1)** |
 | 6 | Fotogramas | | | | | |
 | 7 | Video por tanda | | | | | |
 | 8 | Revisión de tomas | | | | | |
@@ -88,11 +89,19 @@ Bloques fijos que van en todo prompt de video (en inglés):
 | El maletín mal puesto en tres cuadros después de varias vueltas | El prompt decía «lado del pasillo» sin decir cuál asiento ni desde dónde se ve | *(se confirma al rehacer los cuadros)* |
 | Hojas disponibles solo como URL de fal | No se guardó el archivo | Bajar cada referencia al repo o al Drive el mismo día que se aprueba |
 
+| El chequeo del gris dio 0 problemas y el revisor encontró 18 hallazgos (miradas casi de frente, ventana detrás de Tomás, eje cruzado en b5_p3, un personaje que salta de lado, la mano de Hugo imposible) | El chequeo medía solo miradas a menos de 14°, lados en los stills y choques entre cilindros | Se agregó el aviso «casi de frente» (14–22°). Regla: después del chequeo, siempre un revisor que no armó las fichas y que proyecta los datos, no que mira las páginas |
+| Martina saltaba de lado entre el bloque 4 y el 5 | Cada agente armó su bloque con marcas propias | Marcas fijas del set escritas antes de repartir (`BRIEF_fichas.md`) y un director que cruza los finales de cada llamada con el inicio de la siguiente |
+| El plano de dos frontal del vagón no cabía (el respaldo de enfrente tapa) | En el set todos los asientos miran hacia adelante | Asientos por fila: se oculta solo el par donde va la cámara («asiento salvaje») |
+| Los cilindros llenaban el cuadro en los primeros planos | Un cilindro de 0,32 m a menos de 1 m con 35–50 mm | Primer plano con cilindros: el cilindro en menos de ~0,6 del ancho; el tamaño del guion lo conserva el prompt |
+| Los infectados salían grises | Colores escritos en sRGB y tomados como lineales | `previz_lib.lineal()` en todos los materiales del elenco |
+
 ## 6. Costos y tiempos reales
 
 *(Por tanda y total; horas de agente y de Cristián. Se llena al producir.)*
 
 Fases (a) a (d): 0 USD, 0 créditos. ~1 hora de agente con seis subagentes de lectura.
+
+**El gris del cap. 1 (17 y 18-nov-2026):** 0 USD, 0 créditos. Siete agentes de fichas en paralelo (~40–60 min cada uno), un revisor (~25 min), tres agentes de corrección. Render en la nube sin GPU: Workbench ~0,6–0,8 s por cuadro; EEVEE con luz real ~7 s por cuadro a 12 muestras.
 
 ## 7. Qué se podría volver determinístico
 
@@ -113,4 +122,7 @@ Tareas repetitivas que un equipo de bots (o un script) puede hacer sin criterio 
 | Medir entrada de línea contra el corte | mp4 + pista | tabla de desfases | tope de 0,3 s | Métricas, a mano | bajo |
 | Medir si la pista salió sin cambios | audio de la toma + pista | correlación y desfase | correlación ≥ 0,8, desfase ≤ 2 cuadros | script del 18-oct | bajo |
 | Armar el corte desde la EDL | EDL + tomas + pistas | mp4 | duración total = suma de la EDL | *(pendiente)* | ninguno |
+| Chequeo del gris: miradas al lente y casi de frente, lados por cuadro, choques entre cilindros, tiempos contra la tabla | fichas + datos por cuadro | lista de problemas y avisos | `storyboard.py revisar` | script | ninguno; no reemplaza al revisor humano o independiente |
+| Stills A/B/C, planta y páginas de storyboard | fichas | PNG y páginas 3300×2550 | `storyboard.py stills` y `pagina` | script | ninguno |
+| Montaje de ritmo con voces y tabla de ritmo | refs de cada llamada + pistas | MP4 + `ritmo_gris_*.md` | `montaje_gris.py` | script | ninguno |
 | Chequeo de vestuario y continuidad por toma | toma + hoja + lista | OK o problema | visión con lista de chequeo, dos revisores que no se ven | subagentes | **alto: falsos OK.** Siempre con hoja de contacto para una persona |
