@@ -28,6 +28,7 @@ from mathutils import Euler, Matrix, Quaternion, Vector
 
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 import previz_lib as L      # noqa: E402
+import previz_luz as LZ     # noqa: E402
 import previz_tiempos as T  # noqa: E402
 
 TAU = 2.0 * math.pi
@@ -191,15 +192,21 @@ class Llamada:
             s = tr.get("seed", semilla_de(nombre))
             for i in range(3):
                 pos[i] += tr.get("m", 0.004) * ruido(t, s + i, tr.get("hz", 6.0), 2) * (0.4 if i == 2 else 1.0)
+        cil = bool(raiz.get("cilindro"))
+        if cil:   # cilindro: solo posicion, giro y mirada. Sin inclinacion, sin ladeo, sin vaiven del cuerpo
+            rol = 0.0
+        lean = 0.0 if cil else v.get("lean", 0.0)
+        side = 0.0 if cil else v.get("side", 0.0)
+        roll = 0.0 if cil else v.get("head_roll", 0.0)
         m_raiz = (Matrix.Translation(pos) @ Matrix.Rotation(math.radians(rol), 4, "Y")
                   @ Matrix.Rotation(math.radians(v.get("yaw", 0.0)), 4, "Z"))
         l_cad = (Matrix.Translation((0, y_off, cad_z + v.get("dz", 0.0)))
-                 @ Matrix.Rotation(-math.radians(v.get("lean", 0.0)), 4, "X")
-                 @ Matrix.Rotation(math.radians(v.get("side", 0.0)), 4, "Y"))
+                 @ Matrix.Rotation(-math.radians(lean), 4, "X")
+                 @ Matrix.Rotation(math.radians(side), 4, "Y"))
         l_cue = (Matrix.Translation((0, 0, d["torso_h"]))
                  @ Matrix.Rotation(math.radians(v.get("head_yaw", 0.0)), 4, "Z")
                  @ Matrix.Rotation(-math.radians(v.get("head_pitch", 0.0)), 4, "X")
-                 @ Matrix.Rotation(math.radians(v.get("head_roll", 0.0)), 4, "Y"))
+                 @ Matrix.Rotation(math.radians(roll), 4, "Y"))
         m_cad = m_raiz @ l_cad
         m_cue = m_cad @ l_cue
         hx = d["ancho"] / 2 + 0.03
@@ -214,6 +221,11 @@ class Llamada:
             "hombro_L": m_cad @ Vector((-hx, 0, d["torso_h"] - 0.07)),
             "cabeza": m_cue @ Vector((0, 0, d["cuello"] + d["cabeza_r"])),
             "frente": m_cue.to_3x3() @ Vector((0, 1, 0)),
+            "cilindro": cil,
+            # cilindro: base y tope en coordenadas locales de la raiz (sentado nace en el cojin)
+            "base_z": L.ALTURA_ASIENTO if postura == "sentado" else 0.0,
+            "tope_z": cad_z + v.get("dz", 0.0) + d["torso_h"] + d["cuello"] + 2 * d["cabeza_r"],
+            "y_off": y_off,
         }
         self._memo[clave] = st
         return st
@@ -349,6 +361,52 @@ def hornear_camara(ll, h, cam, plano, t, f):
     q = q @ Euler((math.radians(rx), math.radians(ry), math.radians(rz)), "XYZ").to_quaternion()
     h.loc(cam, pos, f)
     h.rot_q(cam, q, f)
+    return pos, q
+
+
+def etiqueta_camara(sh):
+    """Tipo de camara para el nombre (CAM_<plano>_<TAG>): camera.tag o, si falta, FIJA / MANO."""
+    c = sh["camera"]
+    tag = c.get("tag")
+    if not tag:
+        tag = "MANO" if c.get("handheld") else "FIJA"
+    return "".join(ch if ch.isalnum() or ch == "_" else "_" for ch in tag.upper())
+
+
+def texto_marcador(sh, ll, f0):
+    """Marcador del corte: plano, lente, altura de camara, hacia donde mira y movimiento (max. 63 caracteres)."""
+    c = sh["camera"]
+    k0 = ll.claves(c["keys"])[0]
+    try:
+        z = ll.punto(k0["pos"], f0 / float(ll.fps), sh).z
+    except Exception:
+        z = float("nan")
+    txt = "%s %dmm h%.2f %s %s" % (sh["id"], int(round(c.get("lens_mm", 35))), z, c.get("mira", ""), c.get("mov", ""))
+    return " ".join(txt.split())[:63]
+
+
+def crear_marcas(ll, col):
+    """Marcas fijas en el piso, con el nombre del personaje: donde empieza (A) y, si se mueve, donde termina (C)
+    cada personaje en cada plano. No salen en el render de camara; solo en la vista cenital."""
+    marcas = []
+    for p in ll.planos:
+        sh = ll.por_id[p["id"]]
+        for nombre in sh.get("actors", {}):
+            ini = ll.actor(sh, nombre, p["f0"] / float(ll.fps))["pies"]
+            fin = ll.actor(sh, nombre, (p["f1"] - 1) / float(ll.fps))["pies"]
+            pares = [("A", ini)] + ([("C", fin)] if (fin - ini).length > 0.2 else [])
+            for letra, q in pares:
+                base = nombre.rsplit("_", 1)[0] if nombre.startswith(("infectado_", "extra_")) else nombre
+                mat = L.material("MARCA_" + base, L.COLORES.get(base, (0.5, 0.5, 0.5)))
+                ob = L.cilindro("MARCA_%s_%s_%s" % (p["id"], nombre, letra), col, mat, L.CILINDRO["radio"] + 0.04,
+                                0.006, eje="Z", segmentos=24)
+                ob.location = (q.x, q.y, 0.002)
+                ob.hide_render = True
+                ob["plano"] = p["id"]
+                ob["actor"] = nombre
+                ob["letra"] = letra
+                marcas.append(ob)
+    return marcas
 
 
 def crear_esquirlas(col, vidrio, spec, n_cuadros, fps, f_rotura, h):
@@ -398,13 +456,14 @@ def main():
     ap = argparse.ArgumentParser()
     ap.add_argument("--json", required=True, help="ficha de la llamada (shots/<id>.json)")
     ap.add_argument("--out", required=True, help=".blend de salida de la llamada")
+    ap.add_argument("--datos", default=None, help="JSON con camara y personajes por cuadro (por defecto, junto al .blend)")
     a = ap.parse_args(L.args_script())
 
     ficha = T.leer_ficha(a.json)
     fps = int(ficha.get("fps", 24))
     res = ficha.get("resolution", [720, 1280])
     sc = L.preparar_escena(fps, res)
-    L.aplicar_luz(ficha.get("set_light", "neutro"))
+    L.aplicar_luz(LZ.estado_en(ficha, 0.0))
     bpy.context.view_layer.update()
     try:
         bpy.context.preferences.edit.keyframe_new_interpolation_type = "LINEAR"
@@ -434,18 +493,20 @@ def main():
     camaras = {}
     for p in ll.planos:
         sh = ll.por_id[p["id"]]
-        cd = bpy.data.cameras.new("CAM_" + p["id"])
+        nom_cam = "CAM_%s_%s" % (p["id"], etiqueta_camara(sh))
+        cd = bpy.data.cameras.new(nom_cam)
         cd.sensor_fit = "VERTICAL"          # 9:16: los 36 mm del sensor van en el alto del cuadro
         cd.sensor_height = 36.0
         cd.sensor_width = 36.0 * res[0] / float(res[1])
         cd.lens = float(sh["camera"].get("lens_mm", ficha.get("lens_mm", 35)))
         cd.clip_start, cd.clip_end = 0.01, 200.0
-        cam = bpy.data.objects.new("CAM_" + p["id"], cd)
+        cam = bpy.data.objects.new(nom_cam, cd)
         col_cam.objects.link(cam)
         cam.rotation_mode = "QUATERNION"
         camaras[p["id"]] = cam
-        mk = sc.timeline_markers.new(p["id"], frame=p["f0"])
+        mk = sc.timeline_markers.new(texto_marcador(sh, ll, p["f0"]), frame=p["f0"])
         mk.camera = cam
+        cam["plano"] = p["id"]
     sc.camera = camaras[ll.planos[0]["id"]]
 
     # puertas y vidrios: animacion de set a nivel de llamada (su estado se conserva entre planos)
@@ -468,6 +529,13 @@ def main():
         if bpy.data.objects.get(n) is None:
             raise KeyError("hide_set: no existe el objeto %r en el set" % n)
 
+    grupos_luz = LZ.montar()
+    LZ.hornear(grupos_luz, ficha, ll.n, fps)
+    crear_marcas(ll, L.coleccion("MARCAS"))
+    datos = {"call_id": ficha["call_id"], "fps": fps, "resolution": res, "n": ll.n,
+             "planos": [{"id": p["id"], "f0": p["f0"], "f1": p["f1"], "camara": camaras[p["id"]].name,
+                         "lens_mm": camaras[p["id"]].data.lens} for p in ll.planos], "cuadros": []}
+
     plano_de = {}
     for p in ll.planos:
         for f in range(p["f0"], p["f1"]):
@@ -477,13 +545,26 @@ def main():
         t = f / float(fps)
         sh = ll.por_id[plano_de[f]]
         visibles = set()
+        cuadro_actores = {}
+        cuadro_props = {}
 
         for nombre, spec in sh.get("actors", {}).items():
             st = ll.actor(sh, nombre, t)
             h.matriz_local(bpy.data.objects["FIG_" + nombre], st["m_raiz"], f)
             h.matriz_local(bpy.data.objects[nombre + "_cadera"], st["l_cad"], f)
             h.matriz_local(bpy.data.objects[nombre + "_cuello"], st["l_cue"], f)
+            if st["cilindro"]:
+                cu = bpy.data.objects[nombre + "_cuerpo"]
+                h.loc(cu, Vector((0.0, st["y_off"], st["base_z"])), f)
+                cu.scale = (1.0, 1.0, max(0.05, st["tope_z"] - st["base_z"]))
+                cu.keyframe_insert("scale", frame=f)
+                visibles |= {nombre + "_cuerpo", nombre + "_nariz"}
+                cuadro_actores[nombre] = {"pies": list(st["pies"]), "cabeza": list(st["cabeza"]),
+                                          "mira": list(st["frente"]), "postura": st["postura"]}
+                continue           # sin brazos ni bota: los cilindros no los tienen
             visibles |= {nombre + "_" + L.PARTES_POSTURA[st["postura"]], nombre + "_torso", nombre + "_cabeza", nombre + "_nariz"}
+            cuadro_actores[nombre] = {"pies": list(st["pies"]), "cabeza": list(st["cabeza"]),
+                                      "mira": list(st["frente"]), "postura": st["postura"]}
             for lado, bs in spec.get("arms", {}).items():       # barra-brazo: solo si la mano es la accion
                 if not en_rango(bs, t):
                     continue
@@ -506,6 +587,7 @@ def main():
 
         for nombre in sh.get("props", {}):
             st = ll.prop(sh, nombre, t)
+            cuadro_props[nombre] = list(st["pos"])
             ob = bpy.data.objects["PROP_" + nombre]
             h.loc(ob, st["pos"], f)
             ob.rotation_euler = st["rot"]
@@ -517,7 +599,11 @@ def main():
             ob.rotation_euler.z = ob["signo"] * math.radians(valor_en(claves, t)["open_deg"])
             ob.keyframe_insert("rotation_euler", index=2, frame=f)
 
-        hornear_camara(ll, h, camaras[sh["id"]], sh, t, f)
+        cpos, cq = hornear_camara(ll, h, camaras[sh["id"]], sh, t, f)
+        datos["cuadros"].append({"f": f, "plano": sh["id"],
+                                 "cam": {"pos": list(cpos), "dir": list(cq @ Vector((0, 0, -1))),
+                                         "up": list(cq @ Vector((0, 1, 0)))},
+                                 "actores": cuadro_actores, "props": cuadro_props})
 
         for n in ocultables:
             h.visible(bpy.data.objects[n], n not in sh.get("hide_set", []), f)
@@ -534,6 +620,10 @@ def main():
     out = os.path.abspath(a.out)
     os.makedirs(os.path.dirname(out), exist_ok=True)
     bpy.ops.wm.save_as_mainfile(filepath=out)
+    ruta_datos = os.path.abspath(a.datos) if a.datos else os.path.splitext(out)[0] + "_datos.json"
+    with open(ruta_datos, "w", encoding="utf-8") as fh:
+        json.dump(datos, fh, separators=(",", ":"))
+    print("[shot_from_json] datos ->", ruta_datos)
     print("[shot_from_json] %s: %d cuadros a %d fps" % (ficha["call_id"], ll.n, fps))
     for p in ll.planos:
         print("[shot_from_json]   %-8s cuadros %3d-%3d  (%.3f-%.3f s)  %s mm" %

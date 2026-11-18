@@ -275,3 +275,101 @@ Una entrada por decisión, instrucción o llamada paga. Se escribe en el momento
 - No subido: los PNG originales de los fotogramas (van en JPEG 95), los candidatos descartados, las 38 referencias aprobadas (ya están en el Drive) y los cuadros sueltos del render de previz.
 - Costo: 0
 - Repetible: sí. Armar el paquete es un script; la subida es una llamada por archivo y pide aprobación en cada una.
+
+---
+
+## Sesión del 17 y 18-nov-2026 · el gris con cilindros (prompt 07)
+
+### 2026-11-17 23:50 · retomar · instrucción de Cristián
+- Tipo: instrucción de Cristián
+- Qué: «Olvida el 06c que te pasé. Este md reemplaza al 06 y al 06c: retoma el piloto del cap. 1 donde quedó, en claude/piloto-cap01, sobre el gris que ya existe, y aplica lo que dice. Personajes como cilindros con nariz, cada uno de su color y nada más; cuerpo y look solo desde las hojas de personaje. Plano secuencia solo si el guion lo pide. Nada pagado sin mi OK.» El md es `07_retomar_piloto_cap01_2026-11-17.md` (Drive del proyecto).
+- Lectura: sigue el plan del 05 (gris → PARADA 1 → b5_p7 → PARADA 2). Hoy se llega hasta la PARADA 1. Las respuestas de Cristián a la página 1 están en el 05 (gris: sí; look del rojo: pendiente; fotogramas desde el gris; bandolera: pendiente).
+- Quién decidió: Cristián
+- Costo: 0
+
+### 2026-11-17 23:55 · P · entorno de esta sesión
+- Tipo: decisión
+- Qué: esta sesión corre en la nube, no en el Mac. Blender 4.5.16 LTS bajado del sitio oficial (`download.blender.org`) a `/opt/blender`; Mesa (EGL por software) instalado para renderizar sin GPU. ffmpeg 7 del sistema. Workbench: ~0,6 s por cuadro; EEVEE con luz real: ~6–10 s por cuadro a 12–16 muestras.
+- Costo: 0
+- Repetible: sí (tres comandos; van al manual).
+
+### 2026-11-18 00:05 · P · el motor del gris, versión cilindros
+- Tipo: decisión
+- Qué cambió en `previz/scripts/` (todo por script, sin tocar las fichas que ya funcionaban):
+  - **Cilindros con nariz** (`previz_lib.crear_cilindro`, por defecto en `build_cast.py`; las figuras de bloques quedan con `--bloques`): un cilindro de 0,32 m de diámetro para todos (sin contextura), a la altura real (sentado nace en el cojín), con una nariz (cono más oscuro del mismo color) a la altura de los ojos. Solo posición, giro y mirada: `lean`, `side`, `head_roll`, brazos y bota ya no se dibujan; la acción de manos va al texto.
+  - **Luz solo de fuentes del set** (`previz_luz.py`, EEVEE): una luz bajo cada lámpara de lectura encendida, con potencias distintas (1,0 · 0,68 · 0,45); rojo de emergencia a lo largo de cada tira del cielo; **tubo frío sobre la puerta, por dentro, solo en el último vagón** (nuevo en el set); foco duro y frío en el cuarto del rapto (nuevo en el set). Mundo casi negro, sin relleno. **El rojo se ajusta en una línea** (`LUZ["rojo"]`), porque el look del rojo sigue pendiente. Los cilindros emiten su color para leerse igual bajo cualquier luz.
+  - **Una cámara por plano con nombre** `CAM_<plano>_<TAG>` y un marcador en cada corte con lente, altura, hacia dónde mira y movimiento.
+  - **Marcas fijas en el piso** con el nombre del personaje (`MARCA_<plano>_<personaje>_A/C`): no salen en el cuadro de cámara, solo en la planta.
+  - **Datos por cuadro** (`<llamada>_datos.json`): cámara y personajes, para el chequeo y la planta.
+  - **Herramientas nuevas:** `storyboard.py` (stills A/B/C desde la cámara real, planta por plano con el recorrido y la cuña de la cámara, chequeo automático y páginas de storyboard de 3300×2550 con paneles 9:16), `cenital.py` y `montaje_gris.py` (película en gris con voces y tabla de ritmo).
+  - **Chequeo automático** (`storyboard.py revisar`): tiempos contra `llamadas_tiempos.json`, **nariz a menos de 14° de la cámara = mira al lente**, lados declarados por cuadro (regla de 180°) y cilindros superpuestos. En la c05a del 10-nov ya marcó lo que Kling después hizo mal: el grupo corre con la cara hacia el lente en b5_p2.
+- Por qué: 07 (cilindros, stills, páginas, cámaras con nombre) y 05 (luz real, ritmo).
+- Quién decidió: agente, sobre las instrucciones del 05 y el 07
+- Costo: 0
+
+### 2026-11-18 00:10 · P · colores de los cilindros
+- Tipo: decisión (la confirma Cristián en la PARADA 1)
+- Qué: un color por personaje sacado de su vestuario (`fichas_personajes_v1.md`), fijo en todos los planos:
+
+| Personaje | Color | De dónde sale |
+|---|---|---|
+| Martina | avena | suéter de lana |
+| Tomás | azul marino | chaqueta acolchada |
+| Diego | piedra clara | chaqueta de lona |
+| Carmen | celeste | uniforme clínico (el abrigo café lo tiene también Iván) |
+| Iván | café oscuro | chaqueta de lona de obra |
+| Hugo | bronce | botones del uniforme (el azul marino ya es de Tomás) |
+| Hombre de camisa azul | azul fuerte | su camisa, el único azul fuerte del elenco |
+| Esposa | beige rosado | chaqueta de punto |
+| Figura con máscara | gris liso | la máscara |
+| Pasajeros | gris oscuro | — |
+| Infectados | casi negro | — |
+
+- Riesgo anotado (07): sin cuerpos en el gris, el modelo puede inventar la contextura. Se mide en la prueba de 4 s; si el cuerpo sale mal, se para y se avisa.
+
+### 2026-11-18 00:15 · P · geografía fija y nombres de muros
+- Tipo: decisión (la confirma Cristián en la PARADA 1)
+- Qué:
+  - **Vagón 2: la pareja pasa al lado derecho (+X)**, fila 12. El guion pide a la esposa a la **derecha del cuadro** en los frontales del bloque 3 (b3_p3, b3_p4, b3_p5), y con la pareja del lado izquierdo (como en la ficha c00a del 10-nov) quedaba a la izquierda. La lectora va al otro lado del pasillo y más hacia la cola (fila 15 izq), para que en b0_p4, que mira hacia la cola, quede «al fondo». Lámparas encendidas del vagón 2: fila 12 der, fila 15 izq y fila 5 der. La toma candidata de c00a no se afecta: el inserto del maletín mira hacia la cola, con el asiento a la izquierda del cuadro, como en esa toma.
+  - **Vagón 5:** Martina en la ventana derecha y Tomás en el pasillo, fila 11, con su lámpara encendida encima.
+  - **Último vagón:** marcas fijas del grupo después de entrar (Martina a la izquierda de Tomás mirando la puerta; Iván en la puerta; Hugo del lado de la cerradura) y de Diego afuera, frente a la ventanita.
+  - **Nombres (07):** en los vagones 2 y 5, «puerta delantera» = hacia la cabeza del tren y «puerta trasera» = hacia el fuelle; «muro de la ventana» = la pared del lado de Martina en su escena y «muro del pasillo» = la del otro lado. En el último vagón hay una sola puerta, «la puerta del último vagón (la del tubo frío)»; al fondo, la pared trasera con la ventana negra y la cabina del revisor.
+- Todo esto está en `previz/BRIEF_fichas.md` (el encargo común de los agentes de fichas).
+
+### 2026-11-18 00:20 · 05 paso 1 · c00a i2v
+- Tipo: corrección
+- Qué: la toma `image_to_video` de c00a (Drive, `tomas_originales/T1_c00a_kling_i2v.mp4`) queda registrada en `tomas.json` como **candidata a final**: le gana a la toma con previz, que tiene los dedos derretidos en la manija del maletín (~3 s).
+- Costo: 0 (los 40 créditos ya estaban cobrados el 10-nov)
+
+### 2026-11-18 00:20 · P · fichas de las 17 llamadas con subagentes
+- Tipo: decisión
+- Qué: siete subagentes en paralelo, uno por grupo de bloques (vagón 2 completo, bloques 0 y 3, en uno solo, para que el inserto del maletín sea el mismo): cada uno escribe sus fichas, mira sus stills, corre el chequeo hasta 0 problemas y entrega notas de layout y planos difíciles. Encargo común en `previz/BRIEF_fichas.md`; tiempos fijos en `previz/llamadas_tiempos.json` (c02 partida en c02a y c02b; duraciones enteras para Kling).
+- Costo: 0
+
+### 2026-11-18 00:24 · P · pistas c02a y c02b
+- Tipo: decisión
+- Qué: el kit (`pistas_v3`) no está en esta máquina. c02a y c02b se derivan de `c02_v2.wav` del repo (recortes 0–5,251 s y 4,20–11,93 s) y se verifican las entradas contra `lectura/04_video_v3.md`: c02a 0,80 · 2,56 s; c02b 0,71 · 3,40 · 5,23 s. Calzan. Solo se usan para el montaje gris; para Kling vale la pista del kit.
+- Costo: 0
+
+### 2026-11-18 00:35 · voces · brief corto por personaje (07; hoy solo se escribe)
+- Tipo: decisión
+- Qué: el brief de voz de cada personaje, para el **AUDIO LOCK** de los prompts. Sale de `biblia/personajes.md` («Cómo habla») y de las voces aprobadas el 18-oct (`produccion/voces.md`). Acento: **chileno suave, de Santiago**; nunca mexicano, neutro ni de España. Las voces de ElevenLabs ya existen: el diálogo del cap. 1 entra como pista (`audio_1`); el brief sirve para que Kling no le invente otra voz en los planos sin pista (respiraciones, gritos) y para el plan B.
+
+| Personaje | Edad | Timbre | Ritmo | Cómo dice su línea clave |
+|---|---|---|---|---|
+| Martina | 29 | baja, cálida, cansada, algo ronca; casi susurra | responde demasiado rápido cuando miente; si no, casi no habla | «En el baño.»: casual forzado, rápido, sin mirarlo · «No. … Esa era la idea.»: plana, la mandíbula apretada en la pausa |
+| Tomás | 31 | media grave, tranquila y educada | pausado; cuando duda baja la voz y se enfría | «¿Dónde estabas?»: curioso con un dejo de sospecha · «¿No estabas en el baño?»: confundido, lento, cayendo en cuenta |
+| Diego | 30 | cálida y rasposa | sin aire, se le quiebra el final de las frases | «¡Martina! ¡Martina, ábreme!»: suplicando a través del vidrio · «¡Te vi en el vagón 2!»: sin aire, la voz se le raja |
+| Carmen | 54 | cálida pero firme, voz de enfermera | pregunta en vez de ordenar | En el cap. 1 no habla: grito ahogado al chocar con el vidrio y un quejido contenido al cortarse |
+| Iván | 45 | grave, seca | frases cortas | En el cap. 1 no habla: respiración fuerte y el esfuerzo al cerrar la puerta y empujar |
+| Hugo | 62 | grave y gastada | pausado, de pocas palabras; el silbato antes que la voz | «¡Al último vagón! ¡Rápido!»: grito de autoridad de revisor; la voz se le raja pero manda |
+
+- Plan B si Kling Omni no sostiene la voz o el acento entre planos: grabar cada línea primero con su voz fija (ya está hecho para el diálogo) y reemplazar el audio en el montaje (`flujos/voces_doblaje_tts_primero/`). La guía de voces de PJ Ace (`NOMBRE_voice_v1` + VOICE LOCK) está hecha para Seedance: **no probada**.
+- Costo: 0
+
+### 2026-11-18 00:40 · después del piloto · anotado, no se hace ahora (07)
+- **Votación:** el bot de métricas propone votar por comentarios («Comenta A o B») y abrir el cap. 2 con «XX % ELIGIÓ…» en la edición, nunca dentro de la imagen, mirando a LINE 9 (serie de terror en un tren nocturno con votación; ~6,5 M de vistas en 8 días según posts de X, sin verificar). **Lo decide Cristián**; hoy la encuesta sigue siendo «Si fueras Martina, ¿lo dejas entrar?».
+- **Diferenciarse de LINE 9:** que en los primeros 2 s se vea lo nuestro: personajes con cara y voz.
+- **Guion:** gancho en 3 s, giro a los 30–45 s y cierre en pregunta; el cap. 2 abre en la consecuencia, sin recap (`flujos/guion_series_verticales_x/FLUJO.md`).
+- **Continuidad automática:** cinewright (plugin de Claude Code, 0 estrellas). No se instala sin que Cristián lo pida. El chequeo de `storyboard.py revisar` ya cubre lo medible (miradas al lente, lados, choques, tiempos).
+- **Midjourney:** fondos y refs de look en 9:16, no motor de video; su filtro puede bloquear las manchas.

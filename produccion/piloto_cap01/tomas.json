@@ -331,7 +331,7 @@
     "creditos": 48,
     "fuente": "creditsConsumed"
    },
-   "veredicto": "Primerísimo plano de ojos y corte al inserto del maletín en el cuadro del previz. La imagen del primer plano viene del cuadro de look, no del previz (una esfera a 85 mm no aporta). Candidata a toma final, pendiente de segunda revisión"
+   "veredicto": "Primerísimo plano de ojos y corte al inserto del maletín en el cuadro del previz. La imagen del primer plano viene del cuadro de look, no del previz (una esfera a 85 mm no aporta). Candidata a toma final, pendiente de segunda revisión Pierde contra la i2v: dedos derretidos en la manija del maletín (~3 s)."
   },
   {
    "id": "T1_c00a_kling_i2v",
@@ -339,13 +339,15 @@
    "llamada": "c00a",
    "motor": "Kling 4.0 image_to_video (MCP)",
    "setting": "720p · 4 s · first_image",
-   "archivo": null,
+   "archivo": "Drive: piloto_cap01 · avance 2026-11-10/tomas_originales/T1_c00a_kling_i2v.mp4 (id 1d7LpLXOHsuVsX1vIpayr5BOv1CVHbYXU)",
    "costo": {
     "creditos": 40,
     "fuente": "creditsConsumed"
    },
-   "veredicto": "EN COLA en Kling desde el envío; sin resultado al cerrar T1",
-   "generationId": "AZ_G6okvYt7GjITLWq85mXbab27gi3DT9g6RdeZ0n5zUOoR3m089btdu_nn6X2cN6133Ojk1"
+   "veredicto": "CANDIDATA A FINAL de c00a (notas del gang 9-nov, prompt 05): le gana a la toma con previz, que tiene los dedos derretidos en la manija del maletín (~3 s). La bajó el productor al Drive.",
+   "generationId": "AZ_G6okvYt7GjITLWq85mXbab27gi3DT9g6RdeZ0n5zUOoR3m089btdu_nn6X2cN6133Ojk1",
+   "estado": "candidata_final",
+   "registrada": "2026-11-18"
   },
   {
    "id": "T1_c05a_seedance_previz",

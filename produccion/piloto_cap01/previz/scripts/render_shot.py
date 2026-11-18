@@ -4,9 +4,15 @@
   blender -b <trabajo>/render/c05a/c05a.blend -P render_shot.py -- --out <trabajo>/render/c05a/frame_ \
       [--engine BLENDER_WORKBENCH|BLENDER_EEVEE_NEXT] [--res 720 1280] [--fps 24] [--frames 0 119] [--still 84]
 
-Salida: <out>0000.png ... (cuadro k = archivo k). Luz plana: Workbench con luz de estudio, color por material,
-sin sombras proyectadas, con cavidad y contorno para que los bloques se separen. Vista "Standard": los colores
-de los personajes salen tal cual. Los cortes los hacen los marcadores de camara de la linea de tiempo.
+Salida: <out>0000.png ... (cuadro k = archivo k). Los cortes los hacen los marcadores de camara de la linea de tiempo.
+
+Motores:
+  BLENDER_WORKBENCH (por defecto): luz plana de estudio, rapida (~0,6 s por cuadro). Para revisar blocking.
+  EEVEE (luz real, el del gris que se entrega): solo las fuentes del set que hornea previz_luz.py (apliques ambar
+    distintos entre si, rojo de emergencia, tubo frio sobre la puerta del ultimo vagon, foco del rapto), mundo casi
+    negro y sin relleno. Los cilindros emiten su propio color para leerse igual con cualquier luz. --samples 4-16.
+  BLENDER_EEVEE_NEXT: el modo antiguo de luz plana con EEVEE (mundo parejo + sol suave).
+Vista "Standard": los colores de los personajes salen tal cual.
 """
 import argparse
 import os
@@ -62,6 +68,26 @@ def configurar_eevee(sc):
         sc.collection.objects.link(lo)
 
 
+def configurar_eevee_real(sc, muestras):
+    """EEVEE con las luces del set horneadas (previz_luz). Sin sol, sin relleno, sin AO: negros de verdad."""
+    motores = [e.identifier for e in bpy.types.RenderSettings.bl_rna.properties["engine"].enum_items]
+    sc.render.engine = "BLENDER_EEVEE_NEXT" if "BLENDER_EEVEE_NEXT" in motores else "BLENDER_EEVEE"
+    ee = sc.eevee
+    ee.taa_render_samples = muestras
+    for attr, val in (("use_shadows", True), ("use_raytracing", False), ("use_gtao", False), ("use_bloom", False),
+                      ("use_volumetric_shadows", False), ("use_soft_shadows", False)):
+        try:
+            setattr(ee, attr, val)
+        except Exception:
+            pass
+    sol = bpy.data.objects.get("LUZ_plana")
+    if sol is not None:
+        bpy.data.objects.remove(sol, do_unlink=True)
+    for mat in bpy.data.materials:            # el set vuelve a su gris base: la luz real pone el color
+        if mat.get("es_set"):
+            L._poner_color(mat, mat["base_rgb"])
+
+
 def main():
     ap = argparse.ArgumentParser()
     ap.add_argument("--out", required=True, help="prefijo de salida, p. ej. <dir>/frame_")
@@ -70,6 +96,7 @@ def main():
     ap.add_argument("--fps", type=int, default=None)
     ap.add_argument("--frames", type=int, nargs=2, default=None, help="rango de cuadros (por defecto, toda la llamada)")
     ap.add_argument("--still", type=int, nargs="*", default=None, help="renderiza solo estos cuadros")
+    ap.add_argument("--samples", type=int, default=8, help="muestras de EEVEE (luz real)")
     a = ap.parse_args(L.args_script())
 
     sc = bpy.context.scene
@@ -89,7 +116,9 @@ def main():
     sc.render.image_settings.compression = 30
     sc.render.use_file_extension = True
     sc.render.use_overwrite = True
-    if a.engine.upper().startswith("BLENDER_EEVEE"):
+    if a.engine.upper() == "EEVEE":
+        configurar_eevee_real(sc, a.samples)
+    elif a.engine.upper().startswith("BLENDER_EEVEE"):
         configurar_eevee(sc)
     else:
         configurar_workbench(sc)

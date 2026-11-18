@@ -1,0 +1,579 @@
+{
+ "fuente": "pruebas/cap01_animatic_v3/tiempos_montaje_v3.json (v1c, 70,5 s) + partición c02a/c02b de pistas_v3 (lectura/04_video_v3.md)",
+ "regla": "Kling: duration_s entero de 3 a 30 s = ceil(pedida). Colchón de 0,5 s al inicio con la acción ya en marcha. Cada plano ocupa [de_s, a_s) en la llamada; el último se alarga hasta duration_s con acción, nunca con quietud. El montaje usa solo [de_s, a_s).",
+ "mp4_como_referencia": "solo las llamadas con geografía o gente moviéndose (05 y regla del 9-nov); las demás van con su página de storyboard",
+ "llamadas": [
+  {
+   "call_id": "c00a",
+   "bloque": "0",
+   "lugar": "vagon2",
+   "luz": "ambar_bajo",
+   "pedida_s": 4.0,
+   "duration_s": 4,
+   "planos": [
+    {
+     "id": "b0_p1",
+     "de_s": 0.5,
+     "a_s": 1.7,
+     "dur_montaje_s": 1.2
+    },
+    {
+     "id": "b0_p2",
+     "de_s": 1.7,
+     "a_s": 3.5,
+     "dur_montaje_s": 1.8
+    }
+   ],
+   "mp4_ref": false
+  },
+  {
+   "call_id": "c00b",
+   "bloque": "0",
+   "lugar": "vagon2",
+   "luz": "ambar_bajo",
+   "pedida_s": 4.0,
+   "duration_s": 4,
+   "planos": [
+    {
+     "id": "b0_p3",
+     "de_s": 0.5,
+     "a_s": 2.0,
+     "dur_montaje_s": 1.5
+    },
+    {
+     "id": "b0_p4",
+     "de_s": 2.0,
+     "a_s": 3.5,
+     "dur_montaje_s": 1.5
+    }
+   ],
+   "mp4_ref": true
+  },
+  {
+   "call_id": "c01",
+   "bloque": "1",
+   "lugar": "vagon2 (puerta del fondo)",
+   "luz": "ambar_bajo",
+   "pedida_s": 3.5,
+   "duration_s": 4,
+   "planos": [
+    {
+     "id": "b1_p1",
+     "de_s": 0.5,
+     "a_s": 1.3,
+     "dur_montaje_s": 0.8
+    },
+    {
+     "id": "b1_p2",
+     "de_s": 1.3,
+     "a_s": 2.3,
+     "dur_montaje_s": 1.0
+    }
+   ],
+   "mp4_ref": false,
+   "nota": "Una sola acción continua con cámara fija (P1 y P2 son el mismo encuadre). El montaje usa el inicio (P1) y el final (P2); los flashes van entre medio. Ajustar de_s/a_s de P2 a donde abre los ojos."
+  },
+  {
+   "call_id": "c01f",
+   "bloque": "1",
+   "lugar": "cuarto del rapto",
+   "luz": "rapto",
+   "pedida_s": 2.5,
+   "duration_s": 3,
+   "planos": [
+    {
+     "id": "b1_f1",
+     "de_s": 0.5,
+     "a_s": 1.2,
+     "dur_montaje_s": 0.7
+    },
+    {
+     "id": "b1_f2",
+     "de_s": 1.2,
+     "a_s": 1.9,
+     "dur_montaje_s": 0.7
+    }
+   ],
+   "mp4_ref": false
+  },
+  {
+   "call_id": "c02a",
+   "bloque": "2",
+   "lugar": "vagon5",
+   "luz": "ambar",
+   "pedida_s": 5.2,
+   "duration_s": 6,
+   "planos": [
+    {
+     "id": "b2_p1",
+     "de_s": 0.5,
+     "a_s": 3.7,
+     "dur_montaje_s": 3.2
+    },
+    {
+     "id": "b2_p2",
+     "de_s": 3.7,
+     "a_s": 4.7,
+     "dur_montaje_s": 1.0
+    }
+   ],
+   "mp4_ref": false,
+   "pista": {
+    "pista": "pistas_v3/c02a.mp3",
+    "dur_s": 5.251,
+    "lineas": [
+     [
+      "Tomás",
+      "¿Dónde estabas?",
+      0.8,
+      1.84
+     ],
+     [
+      "Martina",
+      "En el baño.",
+      2.56,
+      3.2
+     ]
+    ]
+   }
+  },
+  {
+   "call_id": "c02b",
+   "bloque": "2",
+   "lugar": "vagon5",
+   "luz": "ambar",
+   "pedida_s": 7.7,
+   "duration_s": 8,
+   "planos": [
+    {
+     "id": "b2_p3",
+     "de_s": 0.5,
+     "a_s": 3.2,
+     "dur_montaje_s": 2.7
+    },
+    {
+     "id": "b2_p4",
+     "de_s": 3.2,
+     "a_s": 7.2,
+     "dur_montaje_s": 4.0
+    }
+   ],
+   "mp4_ref": false,
+   "pista": {
+    "pista": "pistas_v3/c02b.mp3",
+    "dur_s": 7.732,
+    "lineas": [
+     [
+      "Tomás",
+      "¿Tu papá sabe que vienes en este tren?",
+      0.71,
+      2.67
+     ],
+     [
+      "Martina",
+      "No.",
+      3.4,
+      3.68
+     ],
+     [
+      "Martina",
+      "Esa era la idea.",
+      5.23,
+      6.15
+     ]
+    ]
+   }
+  },
+  {
+   "call_id": "c03a",
+   "bloque": "3",
+   "lugar": "vagon2",
+   "luz": "ambar_bajo",
+   "pedida_s": 6.0,
+   "duration_s": 6,
+   "planos": [
+    {
+     "id": "b3_p1",
+     "de_s": 0.5,
+     "a_s": 1.8,
+     "dur_montaje_s": 1.3
+    },
+    {
+     "id": "b3_p2",
+     "de_s": 1.8,
+     "a_s": 3.3,
+     "dur_montaje_s": 1.5
+    },
+    {
+     "id": "b3_p3",
+     "de_s": 3.3,
+     "a_s": 5.5,
+     "dur_montaje_s": 2.2
+    }
+   ],
+   "mp4_ref": false
+  },
+  {
+   "call_id": "c03b",
+   "bloque": "3",
+   "lugar": "vagon2",
+   "luz": "ambar_bajo",
+   "pedida_s": 5.0,
+   "duration_s": 5,
+   "planos": [
+    {
+     "id": "b3_p4",
+     "de_s": 0.5,
+     "a_s": 2.0,
+     "dur_montaje_s": 1.5
+    },
+    {
+     "id": "b3_p5",
+     "de_s": 2.0,
+     "a_s": 3.0,
+     "dur_montaje_s": 1.0
+    },
+    {
+     "id": "b3_p6",
+     "de_s": 3.0,
+     "a_s": 4.5,
+     "dur_montaje_s": 1.5
+    }
+   ],
+   "mp4_ref": true
+  },
+  {
+   "call_id": "c04a",
+   "bloque": "4",
+   "lugar": "vagon5",
+   "luz": "ambar -> negro -> rojo (P3)",
+   "pedida_s": 5.5,
+   "duration_s": 6,
+   "planos": [
+    {
+     "id": "b4_p1",
+     "de_s": 0.5,
+     "a_s": 2.3,
+     "dur_montaje_s": 1.8
+    },
+    {
+     "id": "b4_p2",
+     "de_s": 2.3,
+     "a_s": 3.8,
+     "dur_montaje_s": 1.5
+    },
+    {
+     "id": "b4_p3",
+     "de_s": 3.8,
+     "a_s": 5.0,
+     "dur_montaje_s": 1.2
+    }
+   ],
+   "mp4_ref": true
+  },
+  {
+   "call_id": "c04b",
+   "bloque": "4",
+   "lugar": "vagon5",
+   "luz": "rojo",
+   "pedida_s": 7.5,
+   "duration_s": 8,
+   "planos": [
+    {
+     "id": "b4_p4",
+     "de_s": 0.5,
+     "a_s": 2.0,
+     "dur_montaje_s": 1.5
+    },
+    {
+     "id": "b4_p5",
+     "de_s": 2.0,
+     "a_s": 5.0,
+     "dur_montaje_s": 3.0
+    },
+    {
+     "id": "b4_p6",
+     "de_s": 5.0,
+     "a_s": 7.0,
+     "dur_montaje_s": 2.0
+    }
+   ],
+   "mp4_ref": true,
+   "pista": {
+    "pista": "pistas_v3/c04b.mp3",
+    "dur_s": 7.549,
+    "lineas": [
+     [
+      "Hugo",
+      "¡Al último vagón! ¡Rápido!",
+      2.63,
+      4.56
+     ]
+    ],
+    "pitazo_post_s": 2.1
+   }
+  },
+  {
+   "call_id": "c05a",
+   "bloque": "5",
+   "lugar": "fuelle",
+   "luz": "rojo",
+   "pedida_s": 4.8,
+   "duration_s": 5,
+   "planos": [
+    {
+     "id": "b5_p1",
+     "de_s": 0.5,
+     "a_s": 1.8,
+     "dur_montaje_s": 1.3
+    },
+    {
+     "id": "b5_p2",
+     "de_s": 1.8,
+     "a_s": 3.3,
+     "dur_montaje_s": 1.5
+    },
+    {
+     "id": "b5_p3",
+     "de_s": 3.3,
+     "a_s": 4.3,
+     "dur_montaje_s": 1.0
+    }
+   ],
+   "mp4_ref": true
+  },
+  {
+   "call_id": "c05b",
+   "bloque": "5",
+   "lugar": "fuelle -> último vagón (P7)",
+   "luz": "rojo",
+   "pedida_s": 5.2,
+   "duration_s": 6,
+   "planos": [
+    {
+     "id": "b5_p4",
+     "de_s": 0.5,
+     "a_s": 2.0,
+     "dur_montaje_s": 1.5
+    },
+    {
+     "id": "b5_p6",
+     "de_s": 2.0,
+     "a_s": 3.5,
+     "dur_montaje_s": 1.5
+    },
+    {
+     "id": "b5_p7",
+     "de_s": 3.5,
+     "a_s": 4.7,
+     "dur_montaje_s": 1.2
+    }
+   ],
+   "mp4_ref": true,
+   "nota": "El inserto b5_p5 (c05i) va entre b5_p4 y b5_p6 en el montaje."
+  },
+  {
+   "call_id": "c05i",
+   "bloque": "5",
+   "lugar": "fuelle",
+   "luz": "rojo",
+   "pedida_s": 2.0,
+   "duration_s": 3,
+   "planos": [
+    {
+     "id": "b5_p5",
+     "de_s": 0.5,
+     "a_s": 1.5,
+     "dur_montaje_s": 1.0
+    }
+   ],
+   "mp4_ref": false
+  },
+  {
+   "call_id": "c06a",
+   "bloque": "5-6",
+   "lugar": "último vagón",
+   "luz": "rojo",
+   "pedida_s": 5.3,
+   "duration_s": 6,
+   "planos": [
+    {
+     "id": "b5_p8",
+     "de_s": 0.5,
+     "a_s": 1.8,
+     "dur_montaje_s": 1.3
+    },
+    {
+     "id": "b5_p9",
+     "de_s": 1.8,
+     "a_s": 2.8,
+     "dur_montaje_s": 1.0
+    },
+    {
+     "id": "b6_p1",
+     "de_s": 2.8,
+     "a_s": 4.8,
+     "dur_montaje_s": 2.0
+    }
+   ],
+   "mp4_ref": true
+  },
+  {
+   "call_id": "c06b",
+   "bloque": "6",
+   "lugar": "último vagón",
+   "luz": "rojo",
+   "pedida_s": 4.5,
+   "duration_s": 5,
+   "planos": [
+    {
+     "id": "b6_p2",
+     "de_s": 0.5,
+     "a_s": 2.0,
+     "dur_montaje_s": 1.5
+    },
+    {
+     "id": "b6_p3",
+     "de_s": 2.0,
+     "a_s": 4.0,
+     "dur_montaje_s": 2.0
+    }
+   ],
+   "mp4_ref": false
+  },
+  {
+   "call_id": "c07a",
+   "bloque": "7",
+   "lugar": "último vagón",
+   "luz": "rojo",
+   "pedida_s": 8.15,
+   "duration_s": 9,
+   "planos": [
+    {
+     "id": "b7_p1",
+     "de_s": 0.5,
+     "a_s": 1.3,
+     "dur_montaje_s": 0.8
+    },
+    {
+     "id": "b7_p2",
+     "de_s": 1.3,
+     "a_s": 4.9,
+     "dur_montaje_s": 3.6
+    },
+    {
+     "id": "b7_p3",
+     "de_s": 4.9,
+     "a_s": 7.6,
+     "dur_montaje_s": 2.7
+    }
+   ],
+   "mp4_ref": true,
+   "pista": {
+    "pista": "pistas_v3/c07a_v2.mp3",
+    "dur_s": 8.15,
+    "lineas": [
+     [
+      "Diego",
+      "¡Martina! ¡Martina, ábreme!",
+      1.63,
+      3.95
+     ],
+     [
+      "Diego (off)",
+      "¡Te vi en el vagón 2!",
+      5.0,
+      7.06
+     ]
+    ]
+   }
+  },
+  {
+   "call_id": "c07b",
+   "bloque": "7",
+   "lugar": "último vagón",
+   "luz": "rojo",
+   "pedida_s": 6.7,
+   "duration_s": 7,
+   "planos": [
+    {
+     "id": "b7_p4",
+     "de_s": 0.5,
+     "a_s": 3.0,
+     "dur_montaje_s": 2.5
+    },
+    {
+     "id": "b7_p5",
+     "de_s": 3.0,
+     "a_s": 4.2,
+     "dur_montaje_s": 1.2
+    },
+    {
+     "id": "b7_p6",
+     "de_s": 4.2,
+     "a_s": 6.2,
+     "dur_montaje_s": 2.0
+    }
+   ],
+   "mp4_ref": false,
+   "pista": {
+    "pista": "pistas_v3/c07b_v2.mp3",
+    "dur_s": 6.74,
+    "lineas": [
+     [
+      "Tomás",
+      "¿No estabas en el baño?",
+      0.7,
+      2.52
+     ]
+    ]
+   }
+  }
+ ],
+ "orden_montaje": [
+  "b0_p1",
+  "b0_p2",
+  "b0_p3",
+  "b0_p4",
+  "b1_p1",
+  "b1_f1",
+  "b1_f2",
+  "b1_f3",
+  "b1_p2",
+  "b2_p1",
+  "b2_p2",
+  "b2_p3",
+  "b2_p4",
+  "b3_p1",
+  "b3_p2",
+  "b3_p3",
+  "b3_p4",
+  "b3_p5",
+  "b3_p6",
+  "b4_p1",
+  "b4_p2",
+  "b4_p3",
+  "b4_p4",
+  "b4_p5",
+  "b4_p6",
+  "b5_p1",
+  "b5_p2",
+  "b5_p3",
+  "b5_p4",
+  "b5_p5",
+  "b5_p6",
+  "b5_p7",
+  "b5_p8",
+  "b5_p9",
+  "b6_p1",
+  "b6_p2",
+  "b6_p3",
+  "b7_p1",
+  "b7_p2",
+  "b7_p3",
+  "b7_p4",
+  "b7_p5",
+  "b7_p6"
+ ],
+ "nota_F3": "b1_f3 (0,8 s) es una imagen fija en post (la pantalla); en el montaje gris va como cartón."
+}

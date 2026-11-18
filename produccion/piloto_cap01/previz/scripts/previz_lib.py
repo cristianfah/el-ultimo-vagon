@@ -40,6 +40,8 @@ GRISES_SET = {
     "SET_puerta": 0.46,
     "SET_detalle": 0.56,    # portaequipaje, rieles, costillas del fuelle
     "SET_cabina": 0.52,
+    "SET_concreto": 0.47,   # cuarto del rapto
+    "SET_silla": 0.30,      # silla metalica del rapto
 }
 # Tinte leve por estado de luz (multiplica los grises del set; no toca a los personajes).
 LUCES = {
@@ -47,25 +49,42 @@ LUCES = {
     "ambar":      {"tinte": (1.00, 0.90, 0.72), "nivel": 1.00, "tira": (0.40, 0.36, 0.30), "lampara": (1.00, 0.86, 0.55), "mundo": (0.02, 0.025, 0.04)},
     "ambar_bajo": {"tinte": (1.00, 0.88, 0.68), "nivel": 0.86, "tira": (0.32, 0.28, 0.22), "lampara": (1.00, 0.86, 0.55), "mundo": (0.015, 0.02, 0.035)},
     "rojo":       {"tinte": (1.00, 0.80, 0.78), "nivel": 0.92, "tira": (0.70, 0.10, 0.08), "lampara": (0.36, 0.30, 0.29), "mundo": (0.03, 0.012, 0.012)},
+    "negro":      {"tinte": (1.00, 1.00, 1.00), "nivel": 0.30, "tira": (0.20, 0.20, 0.20), "lampara": (0.30, 0.30, 0.30), "mundo": (0.0, 0.0, 0.0)},
+    "rapto":      {"tinte": (0.92, 0.96, 1.00), "nivel": 0.90, "tira": (0.40, 0.40, 0.40), "lampara": (0.36, 0.30, 0.29), "mundo": (0.01, 0.012, 0.015)},
 }
-# Mapa de colores del elenco (color plano y fijo por personaje).
+# Mapa de colores del elenco: UN color por personaje, tomado de su vestuario (fichas_personajes_v1.md) y fijo en todos
+# los planos (decision de Cristian, 17-nov-2026). Se eligieron para que ningun par que comparte plano se confunda:
+# Tomas y Hugo visten azul marino, asi que Hugo va en el bronce de sus botones; Ivan y Carmen llevan abrigo cafe,
+# asi que Carmen va en el celeste de su uniforme. La tabla va tambien en el log y en la leyenda de cada pagina.
 COLORES = {
-    "martina":      (0.86, 0.05, 0.05),   # rojo
-    "tomas":        (0.07, 0.20, 0.88),   # azul
-    "diego":        (0.96, 0.45, 0.04),   # naranja
-    "carmen":       (0.97, 0.86, 0.06),   # amarillo
-    "ivan":         (0.08, 0.60, 0.14),   # verde
-    "hugo":         (0.50, 0.14, 0.72),   # morado
-    "hombre_azul":  (0.04, 0.78, 0.88),   # cian (hombre de camisa azul)
-    "esposa":       (0.97, 0.50, 0.72),   # rosado
-    "infectado":    (0.12, 0.12, 0.13),   # gris oscuro
-    "extra":        (0.12, 0.12, 0.13),   # gris oscuro
+    "martina":      (0.90, 0.74, 0.42),   # avena: sueter de lana
+    "tomas":        (0.10, 0.20, 0.55),   # azul marino: chaqueta acolchada
+    "diego":        (0.74, 0.72, 0.62),   # piedra clara: chaqueta de lona
+    "carmen":       (0.45, 0.74, 0.90),   # celeste desteñido: uniforme clinico
+    "ivan":         (0.42, 0.25, 0.12),   # cafe oscuro: chaqueta de lona de obra
+    "hugo":         (0.72, 0.52, 0.14),   # bronce: botones del uniforme de revisor
+    "hombre_azul":  (0.05, 0.40, 1.00),   # azul fuerte y claro: su camisa (el unico azul fuerte del elenco)
+    "esposa":       (0.78, 0.55, 0.52),   # beige rosado: chaqueta de punto
+    "enmascarado":  (0.58, 0.58, 0.60),   # gris liso: la figura de la mascara (flash del rapto)
+    "infectado":    (0.10, 0.10, 0.11),   # casi negro
+    "extra":        (0.30, 0.30, 0.33),   # gris oscuro: pasajeros
+}
+NOMBRE_COLOR = {
+    "martina": "avena", "tomas": "azul marino", "diego": "piedra clara", "carmen": "celeste", "ivan": "cafe oscuro",
+    "hugo": "bronce", "hombre_azul": "azul fuerte", "esposa": "beige rosado", "enmascarado": "gris liso",
+    "infectado": "casi negro", "extra": "gris oscuro",
 }
 # Alturas en metros. SUPUESTAS: la biblia no las fija; ajustar aqui si las fichas dicen otra cosa.
 ALTURAS = {
     "martina": 1.65, "tomas": 1.76, "diego": 1.80, "carmen": 1.58, "ivan": 1.84, "hugo": 1.70,
-    "hombre_azul": 1.75, "esposa": 1.62, "infectado": 1.74, "extra": 1.70,
+    "hombre_azul": 1.75, "esposa": 1.62, "enmascarado": 1.80, "infectado": 1.74, "extra": 1.70,
 }
+# Cilindro con nariz (decision de Cristian, 17-nov-2026): el mismo diametro para todos (sin contextura), a la altura
+# real, y una nariz (cono) a la altura de los ojos que marca hacia donde mira. Nada mas: sin cara, brazos ni pose.
+CILINDRO = {"radio": 0.16, "segmentos": 32, "nariz_largo": 0.13, "nariz_radio": 0.045, "nariz_oscuro": 0.45,
+            "emision": 0.6, "difuso": 0.5}
+# emision: cuanto brilla el color propio (EEVEE) y difuso: cuanto recibe de la luz del set. Asi el color de cada
+# personaje se lee casi igual en ambar, en rojo o en el rapto, y el cilindro igual tiene volumen.
 PROPS_COLOR = {
     "PROP_oscuro": (0.045, 0.045, 0.05),   # cuerpo del maletin
     "PROP_metal": (0.80, 0.80, 0.82),      # esquinas y cierres del maletin
@@ -78,7 +97,9 @@ PROPS_COLOR = {
 }
 
 
-def material(nombre, rgb, alfa=1.0, es_set=False):
+def material(nombre, rgb, alfa=1.0, es_set=False, emision=0.0):
+    """Material mate. emision > 0: el color propio tambien emite (EEVEE), para que el elenco se lea igual con
+    cualquier luz. En Workbench solo cuenta diffuse_color."""
     mat = bpy.data.materials.get(nombre)
     if mat is None:
         mat = bpy.data.materials.new(nombre)
@@ -95,6 +116,14 @@ def material(nombre, rgb, alfa=1.0, es_set=False):
         bsdf.inputs["Roughness"].default_value = 1.0
         if "Alpha" in bsdf.inputs:
             bsdf.inputs["Alpha"].default_value = alfa
+        if emision > 0.0:
+            ec = bsdf.inputs.get("Emission Color") or bsdf.inputs.get("Emission")
+            if ec is not None:
+                ec.default_value = (rgb[0], rgb[1], rgb[2], 1.0)
+            es = bsdf.inputs.get("Emission Strength")
+            if es is not None:
+                es.default_value = emision
+    mat["emision"] = float(emision)
     return mat
 
 
@@ -103,8 +132,13 @@ def crear_materiales_set():
         material(nombre, (v, v, v), es_set=True)
     material("SET_tira", (0.45, 0.45, 0.45))
     material("SET_lampara_on", (1.0, 0.86, 0.55))
+    material("SET_tubo", (0.80, 0.86, 0.92))           # tubo frio del ultimo vagon (emite solo con EEVEE)
+    material("SET_rapto_lampara", (0.25, 0.25, 0.27))  # campana del foco del rapto
+    material("PROP_pantalla", (0.03, 0.03, 0.035))
     for nombre, rgb in PROPS_COLOR.items():
-        material(nombre, rgb, alfa=0.22 if nombre == "SET_vidrio" else 1.0)
+        # el metal del maletin y la placa de la cerradura brillan apenas, para que el prop se lea en la penumbra
+        em = 0.25 if nombre in ("PROP_metal", "PROP_placa") else 0.0
+        material(nombre, rgb, alfa=0.22 if nombre == "SET_vidrio" else 1.0, emision=em)
 
 
 def _poner_color(mat, rgb):
@@ -326,11 +360,56 @@ def crear_figura(nombre, altura, rgb, col, ancho=None, nariz=True):
     return raiz
 
 
+def crear_cilindro(nombre, altura, rgb, col):
+    """Personaje como cilindro con nariz (decision de Cristian, 17-nov-2026). Fija solo posicion, mirada y recorrido.
+
+    Jerarquia (la misma que la figura de tres bloques, para que las fichas JSON sirvan igual):
+      FIG_<n> (raiz en los pies: posicion y giro del cuerpo)
+        <n>_cuerpo   cilindro de alto 1 que nace en z=0; shot_from_json lo ubica y lo escala en Z por cuadro
+                     (de pie: del piso a la altura real; sentado: del cojin hacia arriba; agachado: mas bajo)
+        <n>_cadera -> <n>_cuello (pivote de la mirada) -> <n>_nariz (cono a la altura de los ojos, hacia +Y)
+    Sin inclinacion, sin brazos, sin cara y sin contextura: todos tienen el mismo diametro.
+    """
+    C = CILINDRO
+    d = dims_figura(altura)
+    mat = material("FIG_" + nombre, rgb, emision=C["emision"])
+    osc = [c * C["nariz_oscuro"] for c in rgb]
+    mat_n = material("FIG_" + nombre + "_nariz", osc, emision=C["emision"] * C["nariz_oscuro"])
+    for m, base in ((mat, rgb), (mat_n, osc)):       # EEVEE: menos difuso; Workbench sigue usando diffuse_color
+        bsdf = m.node_tree.nodes.get("Principled BSDF")
+        bsdf.inputs["Base Color"].default_value = tuple(c * C["difuso"] for c in base) + (1.0,)
+    raiz = vacio("FIG_" + nombre, col, (0, 0, 0), 0.3)
+    raiz.hide_render = False
+    raiz["altura"] = d["altura"]
+    raiz["ancho"] = d["ancho"]
+    raiz["es_figura"] = True
+    raiz["cilindro"] = True
+    bm = bmesh.new()
+    bmesh.ops.create_cone(bm, cap_ends=True, segments=C["segmentos"], radius1=C["radio"], radius2=C["radio"], depth=1.0)
+    bmesh.ops.translate(bm, verts=bm.verts, vec=(0, 0, 0.5))
+    cuerpo = objeto_bmesh(nombre + "_cuerpo", col, mat, bm, liso=True)
+    for p in cuerpo.data.polygons:            # tapas planas, costado liso
+        p.use_smooth = abs(p.normal.z) < 0.5
+    cuerpo.parent = raiz
+    cadera = vacio(nombre + "_cadera", col, (0, 0, d["piernas_h"]), 0.1)
+    cadera.parent = raiz
+    cuello = vacio(nombre + "_cuello", col, (0, 0, d["torso_h"]), 0.1)
+    cuello.parent = cadera
+    bm = bmesh.new()
+    bmesh.ops.create_cone(bm, cap_ends=True, segments=16, radius1=C["nariz_radio"], radius2=0.0, depth=C["nariz_largo"])
+    bmesh.ops.translate(bm, verts=bm.verts, vec=(0, 0, C["nariz_largo"] / 2.0))
+    bmesh.ops.rotate(bm, verts=bm.verts, cent=(0, 0, 0), matrix=Matrix.Rotation(-math.pi / 2, 3, "X"))   # punta hacia +Y
+    nar = objeto_bmesh(nombre + "_nariz", col, mat_n, bm, liso=False)
+    nar.parent = cuello
+    nar.location = (0, C["radio"] - 0.02, d["cuello"] + d["cabeza_r"])
+    return raiz
+
+
 def partes_figura(nombre):
-    """Nombres de todos los objetos visibles posibles de una figura."""
+    """Nombres de todos los objetos visibles posibles de una figura (de bloques o cilindro)."""
     return ["%s_%s" % (nombre, p) for p in
             ("piernas_pie", "piernas_sentado", "piernas_agachado", "torso", "cabeza", "nariz",
-             "brazo_R", "brazo_L", "bota", "cana")]
+             "brazo_R", "brazo_L", "bota", "cana", "cuerpo")]
 
 
 # ----------------------------------------------------------------------------------------- render

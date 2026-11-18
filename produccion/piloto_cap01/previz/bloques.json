@@ -1,0 +1,84 @@
+{
+ "0": {
+  "titulo": "El maletín",
+  "llamadas": [
+   "c00a",
+   "c00b"
+  ],
+  "layout": "(pendiente)"
+ },
+ "1": {
+  "titulo": "El recuerdo",
+  "llamadas": [
+   "c01",
+   "c01f"
+  ],
+  "layout": "(pendiente)"
+ },
+ "2": {
+  "titulo": "El regreso",
+  "llamadas": [
+   "c02a",
+   "c02b"
+  ],
+  "layout": "(pendiente)"
+ },
+ "3": {
+  "titulo": "El maletín se abre",
+  "llamadas": [
+   "c03a",
+   "c03b"
+  ],
+  "layout": "(pendiente)"
+ },
+ "4": {
+  "titulo": "El grito",
+  "llamadas": [
+   "c04a",
+   "c04b"
+  ],
+  "layout": "(pendiente)"
+ },
+ "5": {
+  "titulo": "La huida",
+  "llamadas": [
+   "c05a",
+   "c05b",
+   "c05i",
+   "c06a"
+  ],
+  "planos": [
+   "b5_p1",
+   "b5_p2",
+   "b5_p3",
+   "b5_p4",
+   "b5_p5",
+   "b5_p6",
+   "b5_p7",
+   "b5_p8",
+   "b5_p9"
+  ],
+  "layout": "(pendiente)"
+ },
+ "6": {
+  "titulo": "El encierro",
+  "llamadas": [
+   "c06a",
+   "c06b"
+  ],
+  "planos": [
+   "b6_p1",
+   "b6_p2",
+   "b6_p3"
+  ],
+  "layout": "(pendiente)"
+ },
+ "7": {
+  "titulo": "Diego",
+  "llamadas": [
+   "c07a",
+   "c07b"
+  ],
+  "layout": "(pendiente)"
+ }
+}

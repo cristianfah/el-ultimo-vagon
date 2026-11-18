@@ -173,14 +173,24 @@ def construir_vagon(nombre, y0, filas, P, anclas, tipo="pasajeros", lamparas_on=
             detalle.caja(s * x_pas, s * (x_pas + 0.035), Y(ys - 0.22), Y(ys - 0.18), cz, cz + 0.17)
             # lampara de lectura bajo el portaequipaje
             lado = "izq" if s < 0 else "der"
-            destino = lamp_on if (k, lado) in lamparas_on else detalle
-            destino.caja(s * (W2 - 0.40), s * (W2 - 0.30), Y(ys - 0.05), Y(ys + 0.05), P["rack_z"] - 0.035, P["rack_z"])
+            if (k, lado) in lamparas_on:
+                lamp = L.Malla().caja(s * (W2 - 0.40), s * (W2 - 0.30), Y(ys - 0.05), Y(ys + 0.05),
+                                      P["rack_z"] - 0.035, P["rack_z"])
+                lob = lamp.objeto("%s_lampara_%02d_%s" % (nombre, k, lado), col, "SET_lampara_on")
+                lob["es_lampara"] = True
+                # los apliques no son todos iguales (05): cada lampara encendida con su propia potencia
+                lob["factor"] = (1.0, 0.68, 0.45, 0.85)[list(lamparas_on).index((k, lado)) % 4]
+            else:
+                detalle.caja(s * (W2 - 0.40), s * (W2 - 0.30), Y(ys - 0.05), Y(ys + 0.05), P["rack_z"] - 0.035, P["rack_z"])
 
     if ultimo:
         y_cab = mt + P["paso_fila"]
         cabina.caja(x_pas, W2, Y(0), Y(y_cab), 0, H)                                   # volumen del piso al cielo
         detalle.caja(x_pas - 0.03, x_pas, Y(0.25), Y(0.95), 0, 1.95)                   # su puerta mira al pasillo
         detalle.caja(0.56, 0.66, Y(largo - 0.05), Y(largo), 1.45, 1.70)                # freno, a la derecha de la puerta
+        # tubo frio: solo en el ultimo vagon, sobre la puerta, por dentro (tabla del estado del mundo, bloques 6 y 7)
+        L.Malla().caja(-0.32, 0.32, Y(largo - 0.10), Y(largo - 0.04), P["puerta_h"] + 0.08, P["puerta_h"] + 0.12) \
+            .objeto("ultimo_tubo_frio", col, "SET_tubo")
 
     for malla, nom, mat in ((casco, "casco", "SET_casco"), (piso, "piso", "SET_piso"), (asientos, "asientos", "SET_asiento"),
                             (detalle, "detalle", "SET_detalle"), (noche, "ventanas", "SET_noche"), (tira, "tira", "SET_tira"),
@@ -228,6 +238,34 @@ def construir_fuelle(P, anclas):
     tira.objeto("fuelle_tira", col, "SET_tira")
     L.vacio("ANC_fuelle", anclas, (0, 0, 0), 0.3)
     L.vacio("ANC_fuelle_centro", anclas, (0, G / 2, 0), 0.2)
+
+
+def construir_rapto(anclas, x0=40.0):
+    """Cuarto del rapto (flashes del bloque 1): concreto, una silla metalica al centro, un foco duro y frio arriba.
+    Lejos del tren. ANC_rapto = piso al centro; la silla mira hacia +Y (hacia ANC_rapto_frente)."""
+    col = L.coleccion("SET_rapto", L.coleccion("SET"))
+    A, H = 3.6, 2.7
+    c, piso, silla, lamp = L.Malla(), L.Malla(), L.Malla(), L.Malla()
+    piso.caja(x0 - A / 2, x0 + A / 2, -A / 2, A / 2, -0.1, 0.0)
+    c.caja(x0 - A / 2, x0 + A / 2, -A / 2, A / 2, H, H + 0.1)
+    for s in (-1, 1):
+        c.caja(x0 + s * A / 2, x0 + s * (A / 2 + 0.1), -A / 2, A / 2, 0, H)
+        c.caja(x0 - A / 2, x0 + A / 2, s * A / 2, s * (A / 2 + 0.1), 0, H)
+    z = L.ALTURA_ASIENTO
+    silla.caja(x0 - 0.22, x0 + 0.22, -0.22, 0.22, z - 0.04, z)                 # asiento
+    silla.caja(x0 - 0.22, x0 + 0.22, -0.24, -0.20, z, z + 0.45)               # respaldo
+    for sx in (-1, 1):
+        for sy in (-1, 1):
+            silla.caja(x0 + sx * 0.20 - 0.015, x0 + sx * 0.20 + 0.015, sy * 0.20 - 0.015, sy * 0.20 + 0.015, 0, z - 0.04)
+    lamp.caja(x0 - 0.12, x0 + 0.12, -0.12, 0.12, H - 0.30, H - 0.22)          # campana del foco, sobre la silla
+    lamp.caja(x0 - 0.01, x0 + 0.01, -0.01, 0.01, H - 0.22, H)
+    c.objeto("rapto_casco", col, "SET_concreto")
+    piso.objeto("rapto_piso", col, "SET_concreto")
+    silla.objeto("rapto_silla", col, "SET_silla")
+    lamp.objeto("rapto_lampara", col, "SET_rapto_lampara")
+    L.vacio("ANC_rapto", anclas, (x0, 0, 0), 0.3)
+    L.vacio("ANC_rapto_silla", anclas, (x0, 0, z), 0.2)
+    L.vacio("ANC_rapto_frente", anclas, (x0, A / 2, 0), 0.2)
 
 
 def construir_props(anclas):
@@ -291,7 +329,8 @@ def main():
     info["vagones"].append(construir_vagon("vagon5", G + p, a.filas, P, anclas,
                                            lamparas_on=((4, "izq"), (11, "der"), (17, "izq"))))
     info["vagones"].append(construir_vagon("vagon2", G + p + 3 * paso_vagon, a.filas, P, anclas,
-                                           lamparas_on=((5, "izq"), (12, "der"), (17, "der"))))
+                                           lamparas_on=((12, "der"), (15, "izq"), (5, "der"))))   # pareja (fila 12 der), lectora (fila 15 izq)
+    construir_rapto(anclas)
     construir_props(anclas)
     L.aplicar_luz("neutro")
     bpy.context.view_layer.update()

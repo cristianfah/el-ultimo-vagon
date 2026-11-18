@@ -11,7 +11,12 @@ Motor de previz gris (headless, Blender 4.5 LTS + ffmpeg). Blender manda la cám
 | `encode.py` | python3 | PNG → `out/<id>_ref.mp4` (sin texto ni audio, duración exacta), `qa/<id>_qa.mp4`, `qa/<id>_hoja.jpg`, `qa/<id>_tira.jpg` |
 | `check_ref.py` | python3 | Tamaño, fps, duración exacta, sin audio, sin cuadros repetidos, límites de Kling |
 | `previz_llamada.py` | python3 | Encadena los cuatro pasos de una llamada |
-| `previz_lib.py`, `previz_tiempos.py` | (módulos) | Mallas, materiales, figuras, luz del set · tiempos → cuadros |
+| `previz_lib.py`, `previz_tiempos.py` | (módulos) | Mallas, materiales, figuras (cilindros con nariz y figuras de bloques), colores y alturas del elenco · tiempos → cuadros |
+| `previz_luz.py` | (módulo, Blender) | Luz solo de fuentes del set para EEVEE: lámparas ámbar distintas entre sí, rojo de emergencia, tubo frío del último vagón, foco del rapto. **El rojo se ajusta aquí** |
+| `storyboard.py` | python3 | `armar`, `stills` (A/B/C desde la cámara real + planta), `revisar` (tiempos, miradas al lente, lados, choques), `pagina` (3300×2550, paneles 9:16), `video` (cuadros + MP4 de referencia) |
+| `cenital.py` | Blender | Planta de un plano (ortográfica, corta sobre 1,85 m, solo las marcas de ese plano) |
+| `montaje_gris.py` | python3 | Película en gris: cada plano en su ventana de montaje, voces en su segundo, versión QA y tabla de ritmo |
+| `prueba4s.py` | python3 | Deja en borrador la prueba de 4 s de un plano difícil: video_1 de 4 s y hoja de storyboard (no llama a ningún motor) |
 
 ## Uso
 
@@ -36,6 +41,24 @@ python3 check_ref.py --ffmpeg "$FFMPEG" --json ../shots/c05a.json --ref "$TRABAJ
 # Probar una composición sin renderizar todo: solo algunos cuadros
 "$BLENDER" -b "$TRABAJO/render/c05a/c05a.blend" -P render_shot.py -- --out "<carpeta temporal>/prueba_" --still 0 43 84
 ```
+
+## Desde el 18-nov-2026: cilindros, luz real y storyboard (prompt 07)
+
+- **Personajes = cilindros con nariz** (decisión de Cristian, 17-nov): mismo diámetro para todos, altura real, nariz a la altura de los ojos. Solo cuentan `pos`, `yaw`, `head_yaw`, `head_pitch`, `pose` y `dz`; `lean`, `side`, `head_roll`, `arms` y `boot` no se dibujan (la acción de manos va al prompt). `build_cast.py --bloques` vuelve a las figuras del 10-nov.
+- **Luz real:** `render_shot.py --engine EEVEE --samples N`. Workbench sigue para iterar.
+- **Campos nuevos por plano:** `titulo`, `en_cuadro`, `stills` (`A/B/C` con `t`, `desc` y `lados` opcional), `camera.tag` (nombre `CAM_<plano>_<TAG>`), `camera.mira`, `camera.mov`. Por llamada: `light_keys` para cambiar de luz dentro de la llamada.
+- **Encargo para armar fichas:** `../BRIEF_fichas.md` (mapa fijo del set y reglas). **Tiempos:** `../llamadas_tiempos.json`. **Bloques y notas de layout:** `../bloques.json`.
+
+```bash
+export PREVIZ_TRABAJO=<carpeta de trabajo> BLENDER=<Blender> FFMPEG=<ffmpeg>
+python3 storyboard.py armar --set --json ../shots/c05a.json     # la primera vez: set + elenco + llamada
+python3 storyboard.py todo  --json ../shots/c05b.json --samples 12
+python3 storyboard.py pagina --bloque 5
+python3 storyboard.py video --json ../shots/c05b.json --samples 6
+python3 montaje_gris.py --version v1
+```
+
+Sin GPU (sesión en la nube): `apt-get install libegl1 libegl-mesa0 libgl1-mesa-dri` y Blender 4.5 LTS de `download.blender.org`.
 
 ## Ficha `shots/<id>.json`
 
