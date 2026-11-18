@@ -14,7 +14,7 @@
   "deg": 0.3,
   "hz": 0.45
  },
- "fuente_tiempos": "llamadas_tiempos.json: b7_p1 0.5-1.3, b7_p2 1.3-4.9, b7_p3 4.9-7.6 (pedida 8.15 s). Aquí 9 s enteros; b7_p3 se alarga de 7.6 a 9.0 con acción (Hugo se gira hacia ella, cámara en mano), sin quietud. Colchón 0-0.5 s: el viento y el chirrido de la puerta lateral del fuelle ya sonaron y las cabezas ya se mueven en el cuadro 0.",
+ "fuente_tiempos": "llamadas_tiempos.json: b7_p1 0.5-1.3, b7_p2 1.3-4.9, b7_p3 4.9-7.6 (pedida 8.15 s). Aquí 9 s enteros; b7_p3 se alarga de 7.6 a 9.0 con acción (Tomás baja apenas la mirada y vuelve a ella, Martina traga saliva, cámara en mano), sin quietud. Colchón 0-0.5 s: el viento y el chirrido de la puerta lateral del fuelle ya sonaron y las cabezas ya se mueven en el cuadro 0.",
  "pista": {
   "pista": "pistas_v3/c07a_v2.mp3",
   "dur_s": 8.15,
@@ -377,13 +377,13 @@
    },
    "titulo": "P2 · Diego en la ventanita",
    "descripcion": "La ventanita, desde adentro. El plano corta con la cara de Diego ya entrando desde la derecha del cuadro; IMPACTO contra el vidrio manchado en 1,375 s (cuadro 33) y rebota un poco. Mira a Martina (fuera de cuadro, a la izquierda y abajo). DIEGO 1,63-3,95 s: «¡Martina! ¡Martina, ábreme!» (sin aire, suplicando; la voz se le quiebra al final). Al terminar la línea (4,0 s) levanta el mentón y mira hacia atrás por encima del hombro izquierdo: al fondo del fuelle, a la derecha de su cabeza, se mueven sombras (infectados que vuelven). Detrás de él, solo el fuelle oscuro con la luz roja del techo: sin cielo, sin lluvia, sin puerta abierta, sin pasillo iluminado. Las manchas oscuras del vidrio (de 5·P9) siguen ahí.",
-   "motivo_camara": "Avance lento hacia el vidrio, porque su urgencia nos acerca: de 1,1 m a 0,75 m del vidrio en 3,6 s; arranca suave y no frena antes del corte. Baja, a la altura de la cerradura (1,27-1,31 m) y mirando un poco hacia arriba: Diego se nos viene encima y por el vidrio se ve el techo rojo del fuelle, no el fondo del vagón 5. Corrida 8 cm a la derecha del eje para que el cuadro no quede centrado. Acusa el golpe de la cara tres cuadros tarde.",
+   "motivo_camara": "Avance lento hacia el vidrio, porque su urgencia nos acerca: de 1,03 a 0,76 m de la puerta en 3,6 s; arranca suave y no frena antes del corte. Baja, a la altura de la cerradura (1,11-1,15 m), y corrida hacia las bisagras, mirando hacia arriba: Diego se nos viene encima, su mirada a Martina pasa a la izquierda y por encima del lente (25-30 grados) y por el vidrio se ve el techo rojo del fuelle, no el fondo del vagón 5. Mientras avanza se acerca al eje (de 25 a 13 cm a la derecha), para que al final quede, a la derecha de la cabeza de Diego, el hueco por donde se ven las sombras. Acusa el golpe de la cara tres cuadros tarde.",
    "camera": {
     "tag": "PUSH_IN",
     "lens_mm": 35,
     "mode": "handheld",
-    "mira": "a la ventanita de la puerta, un poco desde abajo",
-    "mov": "avance lento de 1,1 a 0,75 m del vidrio; en mano leve",
+    "mira": "a la ventanita de la puerta, desde abajo y desde el lado de las bisagras",
+    "mov": "avance lento de 1,03 a 0,76 m de la puerta, acercándose al eje; en mano leve",
     "handheld": {
      "rot_deg": 0.28,
      "pos_m": 0.004,
@@ -404,36 +404,36 @@
      {
       "t": 1.29,
       "pos": [
-       0.09,
-       -1.16,
-       1.27
+       0.25,
+       -1.07,
+       1.11
       ],
       "look_at": [
        0.0,
        -0.04,
-       1.56
+       1.55
       ]
      },
      {
       "t": 2.0,
       "pos": [
-       0.088,
-       -1.13,
-       1.274
+       0.247,
+       -1.05,
+       1.113
       ],
       "ease": "in"
      },
      {
       "t": 5.1,
       "pos": [
-       0.062,
-       -0.765,
-       1.312
+       0.122,
+       -0.783,
+       1.153
       ],
       "look_at": [
-       0.0,
+       0.03,
        -0.04,
-       1.58
+       1.55
       ],
       "ease": "linear"
      }
@@ -620,31 +620,31 @@
       {
        "t": 1.29,
        "pos": [
-        0.06,
-        2.8
+        0.46,
+        2.5
        ],
-       "yaw": 180,
+       "yaw": 186,
        "head_pitch": 4
       },
       {
        "t": 3.85,
        "pos": [
-        0.06,
-        2.79
+        0.46,
+        2.49
        ]
       },
       {
        "t": 4.55,
        "pos": [
         0.4,
-        2.56
+        2.42
        ]
       },
       {
        "t": 4.95,
        "pos": [
-        0.45,
-        2.44
+        0.36,
+        2.38
        ],
        "ease": "linear"
       }
@@ -660,23 +660,23 @@
       {
        "t": 1.29,
        "pos": [
-        -0.3,
-        2.72
+        0.3,
+        2.84
        ],
-       "yaw": 186
+       "yaw": 190
       },
       {
        "t": 4.0,
        "pos": [
-        -0.3,
-        2.71
+        0.3,
+        2.83
        ]
       },
       {
        "t": 4.95,
        "pos": [
-        0.0,
-        2.62
+        0.22,
+        2.8
        ]
       }
      ],
@@ -686,7 +686,7 @@
      }
     }
    },
-   "en_cuadro": "La hoja de la puerta en primer término alrededor del marco de la ventanita; arriba, al inicio, el tubo frío. En el vidrio, la cabeza de Diego (piedra clara) ocupa la mitad del ancho; por encima de él, el techo del fuelle con la tira roja; las sombras (casi negras) aparecen al final a la derecha de su cabeza.",
+   "en_cuadro": "La hoja de la puerta en primer término alrededor del marco de la ventanita, vista desde abajo; arriba, al inicio, el tubo frío. En el vidrio, la cabeza de Diego (piedra clara) a la derecha del centro, ocupa la mitad del ancho; a su izquierda, las costillas del fuelle; por encima de él, el techo del fuelle con la tira roja. Al final, a la derecha de su cabeza y en el borde de la ventanita, las sombras (casi negras) contra la luz de la puerta del vagón 5.",
    "stills": {
     "A": {
      "t": 1.375,
@@ -713,13 +713,13 @@
     "alargue_s": "7.6-9.0"
    },
    "titulo": "P3 · Todos la miran",
-   "descripcion": "Primer plano de Martina desde el lado de la puerta: ella en primer término, a la derecha del cuadro y enfocada, mirando la ventanita (a Diego), quieta. DIEGO (off, a través del vidrio) 5,0-7,06 s: «¡Te vi en el vagón 2!». Detrás de ella, desenfocados, las cabezas se giran hacia ella una por una: Tomás (5,55-5,95) en el borde izquierdo y Carmen (6,15-6,55) entre él y Martina; Iván (6,75-7,15) se gira fuera de cuadro, junto a la puerta (va en el prompt). Ella no se mueve; boca cerrada. En el alargue (7,6-9,0) Hugo también se gira hacia ella y la cámara sigue en mano.",
-   "motivo_camara": "En mano leve, desde el lado de la puerta, baja, a la altura de la cerradura (1,18 m): es la mirada de la puerta sobre ella. Corrida 12 cm hacia la cerradura para abrir el hueco entre Martina y Tomás, donde queda Carmen. Las miradas a la ventanita pasan por encima del lente: la de Martina a 20 grados y la de Carmen a 16.",
+   "descripcion": "Primer plano de Martina desde el lado de la puerta: ella en primer término, a la derecha del cuadro y enfocada, mirando la ventanita (a Diego), quieta. DIEGO (off, a través del vidrio) 5,0-7,06 s: «¡Te vi en el vagón 2!». Detrás de ella, desenfocados, se giran hacia ella uno por uno: Tomás (5,55-5,95), en el borde izquierdo, deja de mirar la puerta y la mira; Carmen (6,15-6,55), entre él y Martina, levanta la vista de la palma de su mano derecha y la mira. Ella no se mueve; boca cerrada. En el alargue (7,6-9,0) Tomás baja apenas la mirada y vuelve a ella, Martina traga saliva sin dejar de mirar la ventanita y la cámara sigue en mano.",
+   "motivo_camara": "En mano leve, desde el lado de la puerta y baja, a la altura de la manija (0,97 m), mirando hacia arriba: es la mirada de la puerta sobre ella. Corrida 12 cm hacia la cerradura para abrir el hueco entre Martina y Tomás, donde queda Carmen. Las miradas pasan lejos del lente: la de Martina a la ventanita, por encima (27-29 grados); la de Carmen, primero a su mano, abajo a su derecha (35), y después a Martina (28).",
    "camera": {
     "tag": "MANO_LEVE",
     "lens_mm": 40,
     "mode": "handheld",
-    "mira": "a Martina, desde el lado de la puerta, un poco desde abajo",
+    "mira": "a Martina, desde el lado de la puerta, desde abajo",
     "mov": "en mano leve, casi quieta",
     "handheld": {
      "rot_deg": 0.25,
@@ -733,7 +733,7 @@
       "pos": [
        -0.12,
        -0.3,
-       1.18
+       0.97
       ],
       "look_at": [
        -0.111,
@@ -746,7 +746,7 @@
       "pos": [
        -0.117,
        -0.315,
-       1.18
+       0.97
       ],
       "look_at": [
        -0.111,
@@ -817,10 +817,25 @@
        "ease": "out"
       },
       {
-       "t": 9.05,
+       "t": 7.7,
        "yaw": 30,
        "head_yaw": 68,
        "head_pitch": 11
+      },
+      {
+       "t": 8.2,
+       "head_yaw": 66,
+       "head_pitch": 17
+      },
+      {
+       "t": 8.7,
+       "head_yaw": 68,
+       "head_pitch": 12
+      },
+      {
+       "t": 9.05,
+       "head_yaw": 68,
+       "head_pitch": 12
       }
      ]
     },
@@ -833,24 +848,27 @@
         0.05,
         -2.2
        ],
-       "yaw": 0,
-       "head_yaw": 1,
-       "head_pitch": -7
+       "yaw": 10,
+       "head_yaw": -40,
+       "head_pitch": 22
       },
       {
        "t": 6.15,
-       "head_yaw": 1,
-       "head_pitch": -7
+       "head_yaw": -40,
+       "head_pitch": 21
       },
       {
-       "t": 6.33,
-       "yaw": 4,
-       "head_yaw": 6,
-       "head_pitch": -9
+       "t": 6.3,
+       "head_yaw": -30,
+       "head_pitch": -6
+      },
+      {
+       "t": 6.42,
+       "head_yaw": -5,
+       "head_pitch": -12
       },
       {
        "t": 6.55,
-       "yaw": 10,
        "head_yaw": 15,
        "head_pitch": -5,
        "ease": "out"
@@ -970,11 +988,11 @@
      }
     }
    },
-   "en_cuadro": "Martina (avena) a la derecha del cuadro, en primer término y enfocada, con aire sobre la cabeza. En el borde izquierdo, desenfocado, Tomás (azul marino); entre él y Martina, más atrás y más baja, Carmen (celeste), también desenfocada: los dos se giran hacia ella, en ese orden. Al fondo, la pared trasera con la ventana negra detrás de ella y la cabina del revisor a la izquierda del cuadro. Iván se gira fuera de cuadro.",
+   "en_cuadro": "Martina (avena) a la derecha del cuadro, en primer término y enfocada, con aire sobre la cabeza. En el borde izquierdo, desenfocado, Tomás (azul marino); entre él y Martina, más atrás y más baja, Carmen (celeste), también desenfocada, que primero se mira la mano: los dos se giran hacia Martina, en ese orden. Arriba, el techo oscuro con la tira roja hacia el fondo; al fondo, la pared trasera con la ventana negra detrás de ella y la cabina del revisor a la izquierda del cuadro.",
    "stills": {
     "A": {
      "t": 4.95,
-     "desc": "Martina quieta, mirando la ventanita; detrás, Tomás y Carmen todavía miran la puerta.",
+     "desc": "Martina quieta, mirando la ventanita; detrás, Tomás todavía mira la puerta y Carmen se mira la mano.",
      "lados": {
       "martina": "der",
       "tomas": "izq",
@@ -983,7 +1001,7 @@
     },
     "B": {
      "t": 6.3,
-     "desc": "«…vagón 2»: Tomás ya la mira y Carmen se está girando. Ella no se mueve.",
+     "desc": "«…vagón 2»: Tomás ya la mira y Carmen levanta la cabeza y se gira hacia ella. Ella no se mueve.",
      "lados": {
       "martina": "der",
       "tomas": "izq",
@@ -992,7 +1010,7 @@
     },
     "C": {
      "t": 7.5,
-     "desc": "Tomás y Carmen la miran (Iván también, fuera de cuadro); ella sigue mirando la ventanita.",
+     "desc": "Tomás y Carmen la miran; ella sigue mirando la ventanita.",
      "lados": {
       "martina": "der",
       "tomas": "izq",

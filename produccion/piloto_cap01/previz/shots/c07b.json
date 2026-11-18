@@ -29,7 +29,7 @@
   "nota": "Habla solo Tomás. Martina no contesta: boca cerrada."
  },
  "props_in_frame": [],
- "notes": "Último vagón, luz roja con el tubo frío sobre la puerta (por dentro); una sola puerta (y = -0.04), detrás de las cámaras de P4 y P6. Grupo en sus marcas: Martina -0.25/-1.55 a la izquierda de Tomás 0.25/-1.45; Carmen 0.05/-2.20 (marca nueva, 18-nov); Iván 0.50/-0.40; Hugo -0.62/-0.50 con la mano derecha en la manija (texto). Diego afuera (0.0/0.31). P4 y P6 desde el lado de la puerta (-Y): Tomás a la izquierda, Martina a la derecha, cabina del revisor a la izquierda, al fondo. P5 a la ventanita (+Y).",
+ "notes": "Último vagón, luz roja con el tubo frío sobre la puerta (por dentro); una sola puerta (y = -0.04), detrás de las cámaras de P4 y P6. Grupo en sus marcas: Martina -0.25/-1.55 a la izquierda de Tomás 0.25/-1.45; Carmen 0.05/-2.20 (marca nueva, 18-nov); Iván 0.50/-0.40; Hugo -0.62/-0.50 con la mano derecha en la manija (fuera de cuadro en los tres planos). Diego afuera (0.0/0.31). P4 y P6 desde el lado de la puerta (-Y): Tomás a la izquierda, Martina a la derecha, cabina del revisor a la izquierda, al fondo. P5 a la ventanita (+Y).",
  "set_anim": {
   "glass_break": [
    {
@@ -262,12 +262,12 @@
    },
    "titulo": "P5 · La palma en el vidrio",
    "descripcion": "La ventanita. IMPACTO en 3,21 s (cuadro 77): Diego golpea el vidrio con la palma IZQUIERDA abierta (la mano va en el prompt; la manga derecha rota y manchada no toca el vidrio). Después vuelve a mirar hacia atrás por encima del hombro izquierdo (3,5-3,85): al fondo del fuelle, a la derecha de su cabeza, las sombras están más cerca que en P2. Detrás de él, solo el fuelle oscuro con luz roja. Diego no habla.",
-   "motivo_camara": "En mano, en el mismo eje bajo de P2 y a la distancia en que terminó el avance (0,78 m del vidrio): acusa la palmada tres cuadros tarde. Más temblor que en P2.",
+   "motivo_camara": "En mano, en el mismo lugar donde terminó el avance de P2 (0,76 m de la puerta, 1,15 m de alto, 13 cm hacia las bisagras), mirando hacia arriba: la mirada de Diego a Martina pasa a la izquierda y por encima del lente (24-26 grados) y a la derecha de su cabeza queda el hueco de las sombras. Acusa la palmada tres cuadros tarde. Más temblor que en P2.",
    "camera": {
     "tag": "MANO",
     "lens_mm": 35,
     "mode": "handheld",
-    "mira": "a la ventanita, un poco desde abajo",
+    "mira": "a la ventanita, desde abajo y desde el lado de las bisagras",
     "mov": "en mano; acusa la palmada",
     "handheld": {
      "rot_deg": 0.42,
@@ -289,27 +289,27 @@
      {
       "t": 2.99,
       "pos": [
-       0.065,
+       0.13,
        -0.8,
-       1.31
+       1.15
       ],
       "look_at": [
-       0.0,
+       0.03,
        -0.04,
-       1.58
+       1.55
       ]
      },
      {
       "t": 4.25,
       "pos": [
-       0.06,
-       -0.78,
-       1.31
+       0.128,
+       -0.79,
+       1.15
       ],
       "look_at": [
-       0.0,
+       0.03,
        -0.04,
-       1.58
+       1.55
       ]
      }
     ]
@@ -460,7 +460,7 @@
       {
        "t": 2.99,
        "pos": [
-        0.4,
+        0.3,
         2.1
        ],
        "yaw": 184,
@@ -469,8 +469,8 @@
       {
        "t": 4.25,
        "pos": [
-        0.38,
-        1.82
+        0.28,
+        1.84
        ]
       }
      ],
@@ -509,7 +509,7 @@
       {
        "t": 2.99,
        "pos": [
-        0.2,
+        0.42,
         2.62
        ],
        "yaw": 176
@@ -517,8 +517,8 @@
       {
        "t": 4.25,
        "pos": [
-        0.22,
-        2.36
+        0.4,
+        2.38
        ]
       }
      ],
@@ -528,7 +528,7 @@
      }
     }
    },
-   "en_cuadro": "La ventanita casi llena el ancho; la cabeza de Diego (piedra clara) en el vidrio manchado. Por encima de él, el techo rojo del fuelle; a su derecha, más cerca que antes, las sombras (infectados, casi negros).",
+   "en_cuadro": "La ventanita casi llena el ancho, vista desde abajo; la cabeza de Diego (piedra clara) en el vidrio manchado, a la derecha del centro; a su izquierda, las costillas del fuelle. Por encima de él, el techo rojo del fuelle; a su derecha, en el borde de la ventanita y más cerca que en P2, las sombras (infectados, casi negros).",
    "stills": {
     "A": {
      "t": 3.04,
@@ -555,13 +555,13 @@
     "alargue_s": "6.2-7.0"
    },
    "titulo": "P6 · La manija",
-   "descripcion": "Primer plano final de Martina desde el lado de la puerta, a la derecha del cuadro. Termina de girar hacia la izquierda del cuadro y mira a Tomás (4,2-5,15). Después baja los ojos y los lleva a la manija de la puerta, abajo y a la derecha, junto a la cámara (5,2-6,15): CORTE justo cuando sus ojos llegan a la manija (6,2). En primer término, desenfocada, la mano derecha de Hugo apoyada en la manija, esperando su respuesta (va en el prompt: con las marcas fijas la manija queda junto a la cámara y fuera del cilindro de Hugo). Ella no contesta; boca cerrada. Los golpes siguen. En el alargue (6,2-7,0) la cabeza sigue bajando apenas.",
-   "motivo_camara": "Fija: la decisión no se mueve. Desde el lado de la puerta, a 1,40 m, junto a la manija y por encima de ella: su última mirada cae junto al lente (18 grados por debajo), no en él.",
+   "descripcion": "Primer plano final de Martina desde el lado de la puerta, a la derecha del cuadro. Termina de girar hacia la izquierda del cuadro y mira a Tomás, fuera de cuadro (4,2-5,15). Después baja los ojos hacia la manija de la puerta, fuera de cuadro, abajo a la derecha (5,2-6,15): CORTE justo cuando sus ojos llegan a la manija (6,2). Detrás de ella, a la izquierda y desenfocada, Carmen se mira la palma de la mano derecha. Ella no contesta; boca cerrada. Los golpes siguen. En el alargue (6,2-7,0) la cabeza de Martina sigue bajando apenas.",
+   "motivo_camara": "Fija: la decisión no se mueve. Desde el lado de la puerta y alta (1,70 m), un poco por encima de sus ojos y mirando hacia abajo: la decisión le pesa encima. Su última mirada baja a la manija, fuera de cuadro abajo a la derecha, lejos del lente (32 grados). La manija está detrás del plano de la cámara: no entra en cuadro.",
    "camera": {
     "tag": "FIJA",
     "lens_mm": 50,
     "mode": "locked",
-    "mira": "a Martina, desde el lado de la puerta, junto a la manija",
+    "mira": "a Martina, desde el lado de la puerta, un poco desde arriba",
     "mov": "fija; solo vibra con el tren",
     "sway_scale": 0.6,
     "vibration": {
@@ -575,12 +575,12 @@
       "pos": [
        -0.17,
        -0.3,
-       1.4
+       1.7
       ],
       "look_at": [
        -0.15,
        -1.55,
-       1.395
+       1.45
       ]
      }
     ]
@@ -622,13 +622,13 @@
       },
       {
        "t": 6.15,
-       "head_yaw": -2,
+       "head_yaw": 3,
        "head_pitch": 24,
        "ease": "out"
       },
       {
        "t": 7.05,
-       "head_yaw": 0,
+       "head_yaw": 4,
        "head_pitch": 26
       }
      ],
@@ -667,8 +667,13 @@
         -2.2
        ],
        "yaw": 10,
-       "head_yaw": 15,
-       "head_pitch": -5
+       "head_yaw": -40,
+       "head_pitch": 20
+      },
+      {
+       "t": 7.05,
+       "head_yaw": -38,
+       "head_pitch": 22
       }
      ]
     },
@@ -740,7 +745,7 @@
      }
     }
    },
-   "en_cuadro": "Martina (avena) a la derecha del cuadro, enfocada, con aire sobre la cabeza; mira primero fuera de cuadro a la izquierda (Tomás) y después abajo, junto a la cámara (la manija). A su izquierda, más atrás y desenfocada, Carmen (celeste) la mira. En primer término, abajo a la derecha y desenfocada, la mano derecha de Hugo en la manija (solo en el prompt). Al fondo, la pared trasera con la ventana negra y la cabina del revisor a la izquierda del cuadro. Una sola puerta: está detrás de la cámara.",
+   "en_cuadro": "Martina (avena) a la derecha del cuadro, enfocada, con aire sobre la cabeza; mira primero fuera de cuadro a la izquierda (Tomás) y después abajo, fuera de cuadro a la derecha (la manija). A su izquierda, más atrás y desenfocada, Carmen (celeste) se mira la mano. Al fondo, la pared trasera con la ventana negra y la cabina del revisor a la izquierda del cuadro. La puerta, la manija y Hugo quedan detrás de la cámara: no entran en cuadro.",
    "stills": {
     "A": {
      "t": 4.35,
@@ -752,7 +757,7 @@
     },
     "B": {
      "t": 5.6,
-     "desc": "Baja los ojos y los lleva hacia la manija.",
+     "desc": "Baja los ojos hacia la manija, fuera de cuadro abajo a la derecha; detrás, Carmen se mira la mano.",
      "lados": {
       "martina": "der",
       "tomas": "izq"
@@ -760,7 +765,7 @@
     },
     "C": {
      "t": 6.15,
-     "desc": "Sus ojos llegan a la manija, junto a la cámara: corte.",
+     "desc": "Sus ojos llegan a la manija, fuera de cuadro abajo a la derecha: corte.",
      "lados": {
       "martina": "der",
       "tomas": "izq"
