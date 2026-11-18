@@ -45,7 +45,7 @@
      ]
     ]
    },
-   "motivo_camara": "En mano, muy suave, a la altura de los ojos sentados (1,20 m) y a 1,5 m de ellos, la distancia de un asiento enfrentado. Con 35 mm entran los dos en 9:16. Acusa la caída de ella con un ajuste leve hacia abajo y después solo respira. Va un poco corrida hacia el pasillo (x = 0,78; el centro de la pareja está en 0,84) para que el cuadro no quede centrado. Solo se oculta el par de asientos de la fila 10 der (el «asiento salvaje», como en un set de rodaje); el resto del vagón y los pasajeros dormidos quedan.",
+   "motivo_camara": "En mano muy suave, desde el pasillo a la altura del asiento de enfrente (fila 9-10), en una diagonal leve: así el plano de dos entra completo en 9:16 (Tomás más cerca, Martina junto a la ventana). Acompaña la caída de ella con un ajuste leve hacia abajo y después solo respira. Se ocultan solo los pares de asientos de las filas 9 y 10 der, donde está la cámara (asiento salvaje). Cambio del director (18-nov): desde 1,45 m frontal los dos quedaban cortados en los bordes del cuadro.",
    "en_cuadro": "Martina a la izquierda, en el asiento de la ventana, con la ventana negra detrás; Tomás a la derecha, en el pasillo, con la cabeza girada hacia ella. Arriba a la izquierda, la lámpara de la fila 11 encendida sobre ellos. Al fondo, desenfocado, el vagón hacia la puerta trasera. Detrás de ellos, en las filas 12 a 14, pasajeros dormidos.",
    "stills": {
     "A": {
@@ -76,7 +76,7 @@
    "camera": {
     "lens_mm": 35,
     "tag": "MANO_LEVE",
-    "mira": "a la pareja, hacia la cola del tren (−Y)",
+    "mira": "a la pareja, desde el pasillo delante de ellos, en diagonal suave hacia la cola",
     "mov": "en mano, muy suave; acompaña la caída de ella con un ajuste leve hacia abajo y después solo respira",
     "mode": "handheld",
     "handheld": {
@@ -96,41 +96,41 @@
      {
       "t": 0.0,
       "pos": [
-       0.78,
-       1.45,
-       1.2
+       0.22,
+       1.72,
+       1.22
       ],
       "look_at": [
-       0.86,
+       0.84,
        -0.05,
-       1.2049999999999998
+       1.0
       ]
      },
      {
       "t": 0.66,
       "pos": [
-       0.78,
-       1.45,
-       1.2
+       0.22,
+       1.72,
+       1.21
       ],
       "look_at": [
-       0.85,
+       0.84,
        -0.05,
-       1.17
+       0.97
       ],
       "ease": "out"
      },
      {
       "t": 3.7,
       "pos": [
-       0.768,
-       1.45,
-       1.196
+       0.215,
+       1.72,
+       1.205
       ],
       "look_at": [
-       0.84,
+       0.83,
        -0.05,
-       1.17
+       0.97
       ]
      }
     ]
@@ -303,7 +303,8 @@
     }
    },
    "hide_set": [
-    "vagon5_asiento_10_der"
+    "vagon5_asiento_10_der",
+    "vagon5_asiento_09_der"
    ]
   },
   {

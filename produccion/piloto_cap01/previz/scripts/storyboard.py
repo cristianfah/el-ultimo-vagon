@@ -366,7 +366,16 @@ def envolver(d, txt, fuente, ancho):
     out = []
     for parrafo in txt.split("\n"):
         linea = ""
-        for pal in parrafo.split():
+        palabras = []
+        for pal in parrafo.split():            # una palabra mas ancha que la columna se parte por letras
+            while d.textlength(pal, font=fuente) > ancho and len(pal) > 1:
+                k = len(pal)
+                while k > 1 and d.textlength(pal[:k], font=fuente) > ancho:
+                    k -= 1
+                palabras.append(pal[:k])
+                pal = pal[k:]
+            palabras.append(pal)
+        for pal in palabras:
             prueba = (linea + " " + pal).strip()
             if d.textlength(prueba, font=fuente) <= ancho:
                 linea = prueba
@@ -431,6 +440,13 @@ def pagina(bloque, salida=None):
             d.text((M, y), ln, font=f_lay, fill=(40, 40, 44))
             y += 40
         y0 = y + 14
+        # los paneles se achican si la nota de layout es larga: las filas nunca pisan la leyenda del pie
+        filas_pag = (len(us) + 1) // 2
+        alto_disp = (PH - 175) - y0
+        PNH = min(560, int(alto_disp / max(1, filas_pag)) - 46 - ABAJO - 8)
+        PNW = int(round(PNH * 9 / 16))
+        TX = UW - 4 * PNW - 3 * 10 - 20
+        ROW_H = 46 + PNH + ABAJO + 8
         for i, (cid, pl, sh, ficha) in enumerate(us):
             col, fila = i % 2, i // 2
             ux, uy = M + col * (UW + GAP_U), y0 + fila * ROW_H
