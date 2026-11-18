@@ -471,7 +471,7 @@
     "usar_hasta_s": 3.5,
     "dur_montaje_s": 1.5
    },
-   "descripcion": "Plano cerrado de la cerradura, el mismo lugar de P1 un poco mas bajo. Hugo fuerza la llave dos veces mas y la llave gira: clac (cuadro 59). La saca con la mano derecha y se queda con ella en la mano (cuadros 63-70). Empuja la puerta con el hombro (cuadro 74): la puerta se abre hacia adentro del ultimo vagon y entra la luz roja de adentro con el tubo frio. Hugo se hace a un lado, hacia la cerradura, y se da vuelta hacia el grupo. Las manos van en el prompt.",
+   "descripcion": "Plano cerrado de la cerradura, el mismo lugar de P1 un poco mas bajo. Hugo fuerza la llave dos veces mas y la llave gira: clac (cuadro 59). La saca con la mano derecha y se queda con ella en la mano (cuadros 63-70). Empuja la puerta con el hombro (cuadro 74): la puerta se abre hacia adentro del ultimo vagon y entra la luz roja de adentro con el tubo frio. Hugo da un paso atras y a un lado (lado de la cerradura) y se da vuelta hacia el grupo para hacerlos pasar. Las manos van en el prompt.",
    "motivo_camara": "Rima con P1: misma camara del lado de la cerradura, ahora a la altura de la llave. En mano, cerca; se mete un poco con el clac y acusa el empujon del hombro tres cuadros despues.",
    "en_cuadro": "Hugo a la izquierda, en primer termino, mirando la cerradura; la llave a la derecha, en la bocallave; despues la llave en su mano derecha y la puerta que se abre hacia adentro a la derecha del cuadro.",
    "impacto": {
@@ -661,8 +661,8 @@
       {
        "t": 3.25,
        "pos": [
-        -0.15,
-        0.17
+        -0.22,
+        0.3
        ],
        "yaw": 230,
        "head_yaw": 40,
@@ -672,8 +672,8 @@
       {
        "t": 3.5,
        "pos": [
-        -0.2,
-        0.3
+        -0.45,
+        0.5
        ],
        "yaw": 270,
        "head_yaw": 75
@@ -826,9 +826,9 @@
     "dur_montaje_s": 1.2,
     "alargue_s": "4.7-6.0"
    },
-   "descripcion": "Desde dentro del ultimo vagon hacia la puerta, que se abre de par en par hacia adentro (la hoja queda a la derecha). Sobre la puerta, por dentro, el tubo frio. El grupo entra en tropel y tropieza: Tomas entra primero arrastrando a Martina de la mano y la mira a ella; Martina tropieza en el umbral (cuadro 101) mirando el piso; detras, Ivan empuja a Carmen por la espalda; Carmen tropieza (cuadro 103) con la mano derecha apretada contra el pecho. Pasan a los dos lados de la camara: Martina por la izquierda, Tomas y Carmen por la derecha. Hugo, afuera en el fuelle junto a la cerradura, con la llave en la mano derecha, los hace pasar y mira hacia el vagon 5; al final pisa el umbral para entrar ultimo (P8). Al fondo, por el vano, la puerta del vagon 5 con el vidrio reventado y los infectados detras. Nadie mira al lente.",
+   "descripcion": "Desde dentro del ultimo vagon hacia la puerta, que se abre de par en par hacia adentro (la hoja queda a la derecha). Sobre la puerta, por dentro, el tubo frio. El grupo entra en tropel y tropieza: Tomas entra primero arrastrando a Martina de la mano y la mira a ella; cruzan el vano en fila (el detras de Hugo, ella detras de el) y adentro se abren: Tomas hacia la derecha, Martina hacia la izquierda (asi quedan como en los bloques 6 y 7); Martina tropieza en el umbral (cuadro 101) mirando el piso; detras, Ivan empuja a Carmen por la espalda; Carmen tropieza (cuadro 103) con la mano derecha apretada contra el pecho. Pasan a los dos lados de la camara: Martina por la izquierda, Tomas y Carmen por la derecha. Hugo, afuera en el fuelle junto a la cerradura, con la llave en la mano derecha, los hace pasar y mira hacia el vagon 5; al final pisa el umbral para entrar ultimo (P8). Al fondo, por el vano, la puerta del vagon 5 con el vidrio reventado y los infectados detras. Nadie mira al lente.",
    "motivo_camara": "En mano, a la altura de los ojos, adentro: la camara esta en el camino del grupo y retrocede porque se le vienen encima. Arranca con dos cuadros de retraso y frena con peso.",
-   "en_cuadro": "La puerta del ultimo vagon al centro, abierta hacia adentro (hoja a la derecha) y el tubo frio encima; por el vano, el fuelle rojo y al fondo la puerta del vagon 5. Tomas entra por la derecha arrastrando a Martina, que entra por la izquierda; detras, Ivan empuja a Carmen; Hugo asoma a la izquierda del vano, afuera.",
+   "en_cuadro": "La puerta del ultimo vagon al centro, abierta hacia adentro (hoja a la derecha) y el tubo frio encima; por el vano, el fuelle rojo y al fondo la puerta del vagon 5. Tomas y Martina cruzan el vano en fila y se abren: Tomas hacia la derecha, Martina hacia la izquierda; detras, Ivan empuja a Carmen; Hugo asoma a la izquierda del vano, afuera.",
    "camera": {
     "lens_mm": 24,
     "tag": "HANDHELD_RETRO",
@@ -925,24 +925,24 @@
       {
        "t": 3.5,
        "pos": [
-        0.12,
+        0.03,
         0.42
        ],
-       "yaw": 190,
-       "head_yaw": -130,
+       "yaw": 185,
+       "head_yaw": -125,
        "head_pitch": 4
       },
       {
        "t": 3.68,
        "pos": [
-        0.1,
+        0.05,
         0.0
        ]
       },
       {
        "t": 3.95,
        "pos": [
-        0.2,
+        0.18,
         -0.45
        ],
        "yaw": 195,
@@ -995,8 +995,8 @@
       {
        "t": 3.5,
        "pos": [
-        -0.12,
-        0.82
+        -0.03,
+        0.86
        ],
        "yaw": 180,
        "head_yaw": 165,
@@ -1005,7 +1005,7 @@
       {
        "t": 3.8,
        "pos": [
-        -0.08,
+        -0.04,
         0.3
        ],
        "head_yaw": 120
@@ -1013,7 +1013,7 @@
       {
        "t": 4.02,
        "pos": [
-        -0.12,
+        -0.1,
         -0.12
        ],
        "yaw": 185,
@@ -1099,8 +1099,8 @@
       {
        "t": 4.15,
        "pos": [
-        0.1,
-        0.06
+        0.15,
+        0.08
        ],
        "yaw": 190,
        "head_yaw": 10,
@@ -1109,8 +1109,8 @@
       {
        "t": 4.3,
        "pos": [
-        0.12,
-        -0.22
+        0.16,
+        -0.2
        ],
        "head_yaw": 15,
        "head_pitch": 40,
@@ -1244,8 +1244,8 @@
       {
        "t": 3.5,
        "pos": [
-        -0.2,
-        0.3
+        -0.45,
+        0.5
        ],
        "yaw": 270,
        "head_yaw": 75,

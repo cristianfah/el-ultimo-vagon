@@ -82,7 +82,7 @@ ALTURAS = {
 # Cilindro con nariz (decision de Cristian, 17-nov-2026): el mismo diametro para todos (sin contextura), a la altura
 # real, y una nariz (cono) a la altura de los ojos que marca hacia donde mira. Nada mas: sin cara, brazos ni pose.
 CILINDRO = {"radio": 0.16, "segmentos": 32, "nariz_largo": 0.13, "nariz_radio": 0.045, "nariz_oscuro": 0.45,
-            "emision": 0.6, "difuso": 0.5}
+            "emision": 0.85, "difuso": 0.35}
 # emision: cuanto brilla el color propio (EEVEE) y difuso: cuanto recibe de la luz del set. Asi el color de cada
 # personaje se lee casi igual en ambar, en rojo o en el rapto, y el cilindro igual tiene volumen.
 PROPS_COLOR = {
@@ -360,6 +360,11 @@ def crear_figura(nombre, altura, rgb, col, ancho=None, nariz=True):
     return raiz
 
 
+def lineal(c):
+    """sRGB (como se ve en pantalla y en la leyenda) -> lineal (lo que Blender espera en los colores de material)."""
+    return c / 12.92 if c <= 0.04045 else ((c + 0.055) / 1.055) ** 2.4
+
+
 def crear_cilindro(nombre, altura, rgb, col):
     """Personaje como cilindro con nariz (decision de Cristian, 17-nov-2026). Fija solo posicion, mirada y recorrido.
 
@@ -372,6 +377,7 @@ def crear_cilindro(nombre, altura, rgb, col):
     """
     C = CILINDRO
     d = dims_figura(altura)
+    rgb = [lineal(c) for c in rgb]   # COLORES esta en sRGB: asi el color en pantalla es el de la leyenda
     mat = material("FIG_" + nombre, rgb, emision=C["emision"])
     osc = [c * C["nariz_oscuro"] for c in rgb]
     mat_n = material("FIG_" + nombre + "_nariz", osc, emision=C["emision"] * C["nariz_oscuro"])

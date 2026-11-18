@@ -248,6 +248,24 @@ def construir_fuelle(P, anclas):
     L.vacio("ANC_fuelle_centro", anclas, (0, G / 2, 0), 0.2)
 
 
+def construir_fuelle_simple(nombre, y0, y1, P):
+    """Fuelle corto y oscuro detras de una puerta que da al resto del tren (para que la ventanita y la puerta abierta
+    no muestren vacio). Con su tira de emergencia (se enciende en rojo) y una pared al fondo."""
+    col = L.coleccion("SET_" + nombre, L.coleccion("SET"))
+    w2, H = P["fuelle_ancho"] / 2, P["fuelle_alto"]
+    a, b = min(y0, y1), max(y0, y1)
+    m, tira = L.Malla(), L.Malla()
+    m.caja(-w2 - 0.05, w2 + 0.05, a, b, -0.10, 0)
+    m.caja(-w2 - 0.05, w2 + 0.05, a, b, H, H + 0.05)
+    for s in (-1, 1):
+        m.caja(s * w2, s * (w2 + 0.05), a, b, 0, H)
+    fondo = y1 + (0.05 if y1 > y0 else -0.05)
+    m.caja(-w2, w2, min(y1, fondo), max(y1, fondo), 0, H)
+    tira.caja(-0.05, 0.05, a + 0.15, b - 0.15, H - 0.03, H)
+    m.objeto(nombre + "_casco", col, "SET_casco")
+    tira.objeto(nombre + "_tira", col, "SET_tira")
+
+
 def construir_rapto(anclas, x0=40.0):
     """Cuarto del rapto (flashes del bloque 1): concreto, una silla metalica al centro, un foco duro y frio arriba.
     Lejos del tren. ANC_rapto = piso al centro; la silla mira hacia +Y (hacia ANC_rapto_frente)."""
@@ -338,6 +356,11 @@ def main():
                                            lamparas_on=((4, "izq"), (11, "der"), (17, "izq"))))
     info["vagones"].append(construir_vagon("vagon2", G + p + 3 * paso_vagon, a.filas, P, anclas,
                                            lamparas_on=((12, "der"), (15, "izq"), (19, "izq"))))   # pareja, lectora, puerta trasera (bloque 1)
+    # fuelles cortos detras de la puerta delantera del vagon 5 (infectados, bloque 4) y de la trasera del vagon 2 (bloque 1)
+    y5_del = G + p + largo_p + p
+    construir_fuelle_simple("fuelle_v5_del", y5_del, y5_del + G, P)
+    y2_tras = G + p + 3 * paso_vagon - p
+    construir_fuelle_simple("fuelle_v2_tras", y2_tras, y2_tras - G, P)
     construir_rapto(anclas)
     construir_props(anclas)
     L.aplicar_luz("neutro")

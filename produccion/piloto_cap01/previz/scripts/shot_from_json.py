@@ -397,7 +397,7 @@ def crear_marcas(ll, col):
             pares = [("A", ini)] + ([("C", fin)] if (fin - ini).length > 0.2 else [])
             for letra, q in pares:
                 base = nombre.rsplit("_", 1)[0] if nombre.startswith(("infectado_", "extra_")) else nombre
-                mat = L.material("MARCA_" + base, L.COLORES.get(base, (0.5, 0.5, 0.5)))
+                mat = L.material("MARCA_" + base, [L.lineal(c) for c in L.COLORES.get(base, (0.5, 0.5, 0.5))])
                 ob = L.cilindro("MARCA_%s_%s_%s" % (p["id"], nombre, letra), col, mat, L.CILINDRO["radio"] + 0.04,
                                 0.006, eje="Z", segmentos=24)
                 ob.location = (q.x, q.y, 0.002)

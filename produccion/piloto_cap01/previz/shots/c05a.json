@@ -144,8 +144,8 @@
     "carmen": {
      "pose": "de_pie",
      "keys": [
-      {"t": 1.79, "pos": [0.36, 2.62], "yaw": 172, "head_yaw": -97, "head_pitch": 0},
-      {"t": 2.3, "pos": [0.36, 2.5], "yaw": 170, "head_yaw": -60},
+      {"t": 1.79, "pos": [0.4, 2.62], "yaw": 172, "head_yaw": -97, "head_pitch": 0},
+      {"t": 2.3, "pos": [0.4, 2.5], "yaw": 170, "head_yaw": -60},
       {"t": 2.75, "pos": [0.3, 2.5], "yaw": 166, "head_yaw": -36, "ease": "out"},
       {"t": 3.3, "pos": [0.02, 2.5], "yaw": 180, "head_yaw": -35, "head_pitch": 12}
      ]
