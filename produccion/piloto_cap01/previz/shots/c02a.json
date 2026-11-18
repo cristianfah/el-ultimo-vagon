@@ -14,8 +14,8 @@
   "deg": 0.3,
   "hz": 0.45
  },
- "fuente_tiempos": "",
- "notes": "",
+ "fuente_tiempos": "llamadas_tiempos.json (c02a, pedida 5,2 s -> 6 s): b2_p1 0,5–3,7 y b2_p2 3,7–4,7. Pista pistas_v3/c02a.mp3 (5,25 s): Tomás «¿Dónde estabas?» 0,80–1,84 s; Martina «En el baño.» 2,56–3,20 s. Colchón 0–0,5 s: Martina ya se está dejando caer en el asiento en el cuadro 0. b2_p2 se alarga de 4,7 a 6,0 s con acción (alisa la manga sobre la muñeca), sin quietud.",
+ "notes": "Vagón 5, fila 11 lado derecho (+X): Martina en la ventana (1,12; 12,53), Tomás en el pasillo (0,56; 12,53), la lámpara de la fila 11 der encendida sobre ellos. Las dos cámaras están delante de la pareja y miran hacia la cola (−Y): Martina a la izquierda del cuadro y Tomás a la derecha. b2_p1 oculta los asientos del vagón 5 (pared móvil: el set no deja sacar solo la fila 10).",
  "shots": [
   {
    "id": "b2_p1",
@@ -27,13 +27,57 @@
     "usar_hasta_s": 3.7,
     "dur_montaje_s": 3.2
    },
-   "descripcion": "",
-   "motivo_camara": "",
+   "descripcion": "Plano de dos frontal, de las rodillas hacia arriba. En el primer cuadro Martina ya se está dejando caer en el asiento de la ventana, junto a Tomás (el cilindro baja 17 cm y se asienta a los 0,62 s). Tomás la mira desde antes de que se siente y no le quita los ojos de encima; curioso, con un dejo de sospecha: «¿Dónde estabas?» (0,80–1,84 s). Ella se acomoda el abrigo abierto con las dos manos, con la vista baja sobre el abrigo y la cabeza un poco hacia la ventana, y contesta sin mirarlo, demasiado casual: «En el baño.» (2,56–3,20 s). Quien no habla tiene la boca cerrada. Al acomodarse, la manga derecha se le sube (se ve en P2). Pared móvil: en rodaje este plano sale desde un asiento enfrentado; el set del gris no deja sacar solo el asiento de la fila 10, así que aquí se ocultan todos los asientos del vagón 5. En el plano real están sentados en su banca de dos, con el respaldo de su fila detrás.",
+   "dialogo": {
+    "nota": "segundos de la llamada (pista.lineas); quien no habla, boca cerrada",
+    "lineas": [
+     [
+      "Tomás",
+      "¿Dónde estabas?",
+      0.8,
+      1.84
+     ],
+     [
+      "Martina",
+      "En el baño.",
+      2.56,
+      3.2
+     ]
+    ]
+   },
+   "motivo_camara": "En mano, muy suave, a la altura de los ojos sentados (1,20 m) y a 1,5 m de ellos, la distancia de un asiento enfrentado. Con 35 mm entran los dos en 9:16. Acusa la caída de ella con un ajuste leve hacia abajo y después solo respira. Va un poco corrida hacia el pasillo (x = 0,78; el centro de la pareja está en 0,84) para que el cuadro no quede centrado.",
+   "en_cuadro": "Martina a la izquierda, en el asiento de la ventana, con la ventana negra detrás; Tomás a la derecha, en el pasillo, con la cabeza girada hacia ella. Arriba a la izquierda, la lámpara de la fila 11 encendida sobre ellos. Al fondo, desenfocado, el vagón hacia la puerta trasera.",
+   "stills": {
+    "A": {
+     "t": 0.55,
+     "desc": "Martina termina de caer en el asiento; Tomás ya la mira.",
+     "lados": {
+      "martina": "izq",
+      "tomas": "der"
+     }
+    },
+    "B": {
+     "t": 2.8,
+     "desc": "«En el baño.»: ella se acomoda el abrigo con la vista baja, sin mirarlo; él la mira.",
+     "lados": {
+      "martina": "izq",
+      "tomas": "der"
+     }
+    },
+    "C": {
+     "t": 3.6,
+     "desc": "Ella sigue con el abrigo; él no le quita los ojos de encima.",
+     "lados": {
+      "martina": "izq",
+      "tomas": "der"
+     }
+    }
+   },
    "camera": {
     "lens_mm": 35,
     "tag": "MANO_LEVE",
-    "mira": "",
-    "mov": "",
+    "mira": "a la pareja, hacia la cola del tren (−Y)",
+    "mov": "en mano, muy suave; acompaña la caída de ella con un ajuste leve hacia abajo y después solo respira",
     "mode": "handheld",
     "handheld": {
      "rot_deg": 0.22,
@@ -200,33 +244,7 @@
    },
    "hide_set": [
     "vagon5_asientos"
-   ],
-   "stills": {
-    "A": {
-     "t": 0.55,
-     "desc": "",
-     "lados": {
-      "martina": "izq",
-      "tomas": "der"
-     }
-    },
-    "B": {
-     "t": 2.8,
-     "desc": "",
-     "lados": {
-      "martina": "izq",
-      "tomas": "der"
-     }
-    },
-    "C": {
-     "t": 3.6,
-     "desc": "",
-     "lados": {
-      "martina": "izq",
-      "tomas": "der"
-     }
-    }
-   }
+   ]
   },
   {
    "id": "b2_p2",
@@ -239,13 +257,28 @@
     "dur_montaje_s": 1.0,
     "alargue_s": "4.7-6.0"
    },
-   "descripcion": "",
-   "motivo_camara": "",
+   "descripcion": "Inserto de la muñeca derecha de Martina sobre el regazo. Al acomodarse el abrigo, la manga del suéter y del abrigo se ha subido y deja ver la marca roja (una franja de roce, no una pulsera). Los dedos de la mano izquierda toman el puño y la bajan de un tirón (3,95–4,15 s). En el alargue (4,7–6,0 s) alisa la manga sobre la muñeca y deja la mano encima. Con cilindros solo se ve el cilindro de Martina a la altura del regazo, sobre el cojín: el encuadre fija la altura y la distancia; la acción va en el texto.",
+   "motivo_camara": "Fija y cerrada, a la altura del regazo (0,72 m) y a 40 cm de la muñeca, sin operador que lo subraye: lo que ella esconde. 50 mm y no 85 mm porque entre la pareja y el respaldo de la fila 10 hay menos de medio metro. Desde el mismo lado que P1 (delante de ella, mirando hacia la cola): la muñeca derecha queda a la izquierda del cuadro y la mano izquierda entra desde la derecha. Solo vibra con el tren.",
+   "en_cuadro": "El regazo de Martina a la izquierda (su muñeca derecha); por la derecha, desde el hueco hacia Tomás, entra su mano izquierda. Abajo, el cojín; detrás, el respaldo en penumbra ámbar.",
+   "stills": {
+    "A": {
+     "t": 3.75,
+     "desc": "La manga subida deja ver la marca roja de la muñeca derecha."
+    },
+    "B": {
+     "t": 4.05,
+     "desc": "Los dedos izquierdos bajan la manga de un tirón."
+    },
+    "C": {
+     "t": 4.65,
+     "desc": "La marca ya está tapada; la mano queda encima."
+    }
+   },
    "camera": {
     "lens_mm": 50,
     "tag": "FIJA_REGAZO",
-    "mira": "",
-    "mov": "",
+    "mira": "a la muñeca derecha de Martina, sobre el regazo",
+    "mov": "fija; solo vibra con el tren",
     "mode": "locked",
     "sway_scale": 0.6,
     "vibration": {
@@ -257,14 +290,14 @@
      {
       "t": 3.7,
       "pos": [
-       0.93,
+       0.92,
        0.55,
-       0.72
+       0.74
       ],
       "look_at": [
-       1.0,
+       0.975,
        0.16,
-       0.58
+       0.59
       ]
      }
     ]
@@ -324,20 +357,6 @@
        "head_pitch": 6
       }
      ]
-    }
-   },
-   "stills": {
-    "A": {
-     "t": 3.75,
-     "desc": ""
-    },
-    "B": {
-     "t": 4.05,
-     "desc": ""
-    },
-    "C": {
-     "t": 4.65,
-     "desc": ""
     }
    }
   }

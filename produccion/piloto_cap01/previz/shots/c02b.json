@@ -14,8 +14,8 @@
   "deg": 0.3,
   "hz": 0.45
  },
- "fuente_tiempos": "",
- "notes": "",
+ "fuente_tiempos": "llamadas_tiempos.json (c02b, pedida 7,7 s -> 8 s): b2_p3 0,5–3,2 y b2_p4 3,2–7,2. Pista pistas_v3/c02b.mp3 (7,73 s): Tomás «¿Tu papá sabe que vienes en este tren?» 0,71–2,67 s; Martina «No.» 3,40–3,68 s y «Esa era la idea.» 5,23–6,15 s. Colchón 0–0,5 s: Tomás ya la está mirando. b2_p4 se alarga de 7,2 a 8,0 s con acción (las manos siguen juntas, ella sigue mirando al frente), sin quietud.",
+ "notes": "Vagón 5, fila 11 lado derecho. Plano y contraplano sin cruzar el eje, las dos cámaras delante de la pareja: P3 desde delante de Martina, pegada al muro de la ventana, mirando hacia el pasillo y la cola (Tomás a la derecha, mira a la izquierda); P4 desde delante de Tomás, apenas sobre el respaldo de la fila 10, mirando hacia la ventana y la cola (Martina a la izquierda, mira hacia la cabeza del tren, fuera de cuadro por la izquierda). Pasajeros dormidos en las filas 12 a 14. Iván y Carmen (filas 7 y 8 izq) quedan detrás de las cámaras.",
  "shots": [
   {
    "id": "b2_p3",
@@ -27,13 +27,51 @@
     "usar_hasta_s": 3.2,
     "dur_montaje_s": 2.7
    },
-   "descripcion": "",
-   "motivo_camara": "",
+   "descripcion": "Primer plano de Tomás, de pecho hacia arriba, a la derecha del cuadro. Mira a Martina, hacia la izquierda del cuadro (la nariz apunta a ella); el hombro de Martina, con el suéter avena, asoma desenfocado en el borde izquierdo. Media sonrisa: decide no insistir. Suave, sincero: «¿Tu papá sabe que vienes en este tren?» (0,71–2,67 s). Martina, casi fuera de cuadro, tiene la vista baja en las manos y la boca cerrada; hacia el final del plano levanta un poco la cabeza. Detrás de Tomás, desenfocados, el pasillo y los asientos del otro lado, con un pasajero dormido. La ventana de Martina no se ve.",
+   "dialogo": {
+    "nota": "segundos de la llamada (pista.lineas); quien no habla, boca cerrada",
+    "lineas": [
+     [
+      "Tomás",
+      "¿Tu papá sabe que vienes en este tren?",
+      0.71,
+      2.67
+     ]
+    ]
+   },
+   "motivo_camara": "En mano, a la altura de sus ojos sentados (1,23 m), desde delante de Martina y pegada al muro de la ventana: el punto de vista de ella, a unos 29° de la línea de su mirada. Push-in lento y corto mientras él habla: entra 7 cm entre 0,55 y 2,95 s, arranca y frena. 40 mm a 0,8 m: con 50 mm habría que retroceder a través del muro.",
+   "en_cuadro": "Tomás a la derecha, girado hacia la izquierda; en el borde izquierdo, desenfocado, el hombro de Martina. Detrás de él, el pasillo y los asientos del otro lado con un pasajero dormido (arriba asoma una ventana del muro del pasillo; la de Martina nunca entra).",
+   "stills": {
+    "A": {
+     "t": 0.6,
+     "desc": "Tomás la mira y decide no insistir; está a punto de hablar.",
+     "lados": {
+      "martina": "izq",
+      "tomas": "der"
+     }
+    },
+    "B": {
+     "t": 1.7,
+     "desc": "«¿Tu papá sabe…?»: media sonrisa; la cámara entra despacio.",
+     "lados": {
+      "martina": "izq",
+      "tomas": "der"
+     }
+    },
+    "C": {
+     "t": 3.1,
+     "desc": "Termina la pregunta y espera; ella no lo mira.",
+     "lados": {
+      "martina": "izq",
+      "tomas": "der"
+     }
+    }
+   },
    "camera": {
     "lens_mm": 40,
     "tag": "PUSH_IN",
-    "mira": "",
-    "mov": "",
+    "mira": "a Tomás, hacia el pasillo y la cola (−X, −Y)",
+    "mov": "push-in de 7 cm mientras él habla (0,55–2,95 s), en mano suave",
     "mode": "handheld",
     "handheld": {
      "rot_deg": 0.2,
@@ -228,32 +266,6 @@
       }
      ]
     }
-   },
-   "stills": {
-    "A": {
-     "t": 0.6,
-     "desc": "",
-     "lados": {
-      "martina": "izq",
-      "tomas": "der"
-     }
-    },
-    "B": {
-     "t": 1.7,
-     "desc": "",
-     "lados": {
-      "martina": "izq",
-      "tomas": "der"
-     }
-    },
-    "C": {
-     "t": 3.1,
-     "desc": "",
-     "lados": {
-      "martina": "izq",
-      "tomas": "der"
-     }
-    }
    }
   },
   {
@@ -267,13 +279,57 @@
     "dur_montaje_s": 4.0,
     "alargue_s": "7.2-8.0"
    },
-   "descripcion": "",
-   "motivo_camara": "",
+   "descripcion": "Primer plano de Martina, de pecho hacia arriba, a la izquierda del cuadro. Mira al frente, hacia los vagones delanteros (fuera de cuadro por la izquierda), nunca a él. Plana: «No.» (3,40–3,68 s); pausa en la que se le aprieta la mandíbula; «Esa era la idea.» (5,23–6,15 s). Al terminar la línea, la mano derecha de Tomás entra por la derecha a la altura del regazo (6,2 s) y cubre la mano izquierda de ella (6,6 s); ella no lo mira y no la retira. Tomás, fuera de cuadro a la derecha, la mira y baja la vista hacia la mano al estirarla. En el alargue (7,2–8,0 s) las manos siguen juntas y ella sigue mirando al frente.",
+   "dialogo": {
+    "nota": "segundos de la llamada (pista.lineas); quien no habla, boca cerrada",
+    "lineas": [
+     [
+      "Martina",
+      "No.",
+      3.4,
+      3.68
+     ],
+     [
+      "Martina",
+      "Esa era la idea.",
+      5.23,
+      6.15
+     ]
+    ]
+   },
+   "motivo_camara": "En mano, quieta, desde delante de Tomás, con la cámara apenas sobre el respaldo de la fila 10, a la altura de sus ojos (1,24 m) y a 24° de su mirada: ella mira justo al lado del lente, hacia la izquierda. 35 mm a 0,8 m, porque el respaldo no deja retroceder más. Cuadro cargado a la izquierda: el aire queda a la derecha, por donde entra la mano de él.",
+   "en_cuadro": "Martina a la izquierda, mirando hacia la izquierda del cuadro; detrás de ella, la ventana negra con lluvia. A la derecha, aire: el respaldo de su fila y, al fondo, los asientos de atrás; abajo a la derecha entra la mano de Tomás.",
+   "stills": {
+    "A": {
+     "t": 3.45,
+     "desc": "«No.»: plana, la vista al frente.",
+     "lados": {
+      "martina": "izq",
+      "tomas": "der"
+     }
+    },
+    "B": {
+     "t": 5.6,
+     "desc": "«Esa era la idea.»: la mandíbula apretada; no lo mira.",
+     "lados": {
+      "martina": "izq",
+      "tomas": "der"
+     }
+    },
+    "C": {
+     "t": 7.1,
+     "desc": "La mano de Tomás cubre la suya, abajo a la derecha; ella no la retira.",
+     "lados": {
+      "martina": "izq",
+      "tomas": "der"
+     }
+    }
+   },
    "camera": {
     "lens_mm": 35,
     "tag": "MANO_QUIETA",
-    "mira": "",
-    "mov": "",
+    "mira": "a Martina, hacia la ventana y la cola (+X, −Y)",
+    "mov": "en mano, quieta; solo respira",
     "mode": "handheld",
     "handheld": {
      "rot_deg": 0.16,
@@ -451,32 +507,6 @@
        "head_pitch": 32
       }
      ]
-    }
-   },
-   "stills": {
-    "A": {
-     "t": 3.45,
-     "desc": "",
-     "lados": {
-      "martina": "izq",
-      "tomas": "der"
-     }
-    },
-    "B": {
-     "t": 5.6,
-     "desc": "",
-     "lados": {
-      "martina": "izq",
-      "tomas": "der"
-     }
-    },
-    "C": {
-     "t": 7.1,
-     "desc": "",
-     "lados": {
-      "martina": "izq",
-      "tomas": "der"
-     }
     }
    }
   }
