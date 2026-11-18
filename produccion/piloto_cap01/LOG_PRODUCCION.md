@@ -351,7 +351,7 @@ Una entrada por decisión, instrucción o llamada paga. Se escribe en el momento
 - Qué: el kit (`pistas_v3`) no está en esta máquina. c02a y c02b se derivan de `c02_v2.wav` del repo (recortes 0–5,251 s y 4,20–11,93 s) y se verifican las entradas contra `lectura/04_video_v3.md`: c02a 0,80 · 2,56 s; c02b 0,71 · 3,40 · 5,23 s. Calzan. Solo se usan para el montaje gris; para Kling vale la pista del kit.
 - Costo: 0
 
-### 2026-11-18 00:35 · voces · brief corto por personaje (07; hoy solo se escribe)
+### 2026-11-18 00:25 · voces · brief corto por personaje (07; hoy solo se escribe)
 - Tipo: decisión
 - Qué: el brief de voz de cada personaje, para el **AUDIO LOCK** de los prompts. Sale de `biblia/personajes.md` («Cómo habla») y de las voces aprobadas el 18-oct (`produccion/voces.md`). Acento: **chileno suave, de Santiago**; nunca mexicano, neutro ni de España. Las voces de ElevenLabs ya existen: el diálogo del cap. 1 entra como pista (`audio_1`); el brief sirve para que Kling no le invente otra voz en los planos sin pista (respiraciones, gritos) y para el plan B.
 
@@ -367,9 +367,20 @@ Una entrada por decisión, instrucción o llamada paga. Se escribe en el momento
 - Plan B si Kling Omni no sostiene la voz o el acento entre planos: grabar cada línea primero con su voz fija (ya está hecho para el diálogo) y reemplazar el audio en el montaje (`flujos/voces_doblaje_tts_primero/`). La guía de voces de PJ Ace (`NOMBRE_voice_v1` + VOICE LOCK) está hecha para Seedance: **no probada**.
 - Costo: 0
 
-### 2026-11-18 00:40 · después del piloto · anotado, no se hace ahora (07)
+### 2026-11-18 00:25 · después del piloto · anotado, no se hace ahora (07)
 - **Votación:** el bot de métricas propone votar por comentarios («Comenta A o B») y abrir el cap. 2 con «XX % ELIGIÓ…» en la edición, nunca dentro de la imagen, mirando a LINE 9 (serie de terror en un tren nocturno con votación; ~6,5 M de vistas en 8 días según posts de X, sin verificar). **Lo decide Cristián**; hoy la encuesta sigue siendo «Si fueras Martina, ¿lo dejas entrar?».
 - **Diferenciarse de LINE 9:** que en los primeros 2 s se vea lo nuestro: personajes con cara y voz.
 - **Guion:** gancho en 3 s, giro a los 30–45 s y cierre en pregunta; el cap. 2 abre en la consecuencia, sin recap (`flujos/guion_series_verticales_x/FLUJO.md`).
 - **Continuidad automática:** cinewright (plugin de Claude Code, 0 estrellas). No se instala sin que Cristián lo pida. El chequeo de `storyboard.py revisar` ya cubre lo medible (miradas al lente, lados, choques, tiempos).
 - **Midjourney:** fondos y refs de look en 9:16, no motor de video; su filtro puede bloquear las manchas.
+
+### 2026-11-18 00:27 · pruebas de 4 s · instrucción de Cristián: Seedance 2.5 draft también
+- Tipo: instrucción de Cristián
+- Qué: «Usemos seedance 2,5 draft en fal como motor de prueba también». Cambia lo que el 07 dejaba fuera («Seedance/Dreamina… no adoptamos»): Seedance 2.5 entra **como motor de prueba**, al lado de Kling, en las pruebas de 4 s. La ruta del capítulo sigue siendo la del 05 hasta que las pruebas digan otra cosa. Es el motor con el que Kiber Alla probó los cilindros de colores.
+- Verificado sin generar (schema y precio de fal, solo lectura):
+  - Endpoint: `bytedance/seedance-2.5/us/reference-to-video` con `draft: true` → sale a **480p** (pisa `resolution`) y devuelve un `draft_id`; ese borrador se puede completar a 1080p o 4K dentro de 7 días con `bytedance/seedance-2.5/us/draft/complete`, sin volver a tirar los dados.
+  - Entradas: `video_urls` (1,8–30,2 s cada uno; el gris de 4 s sirve), `image_urls` (hasta 30), `audio_urls` (1,8–30,2 s), `duration` de 4 a 30 s (la prueba de 4 s es justo el mínimo), `aspect_ratio: 9:16`, `seed`, `generate_audio`. En el prompt: `@Video1`, `@Image1`, `@Audio1`.
+  - Precio: 0,0214 USD por 1.000 tokens (el completado, igual). Estimado de una prueba de 4 s a 480p: **~0,8 USD** solo por la salida; puede acercarse a ~1,6 USD si fal cobra también los tokens del video de entrada (no lo dice el precio publicado). fal no devuelve el cobro por llamada: el real se lee en el panel.
+  - Lo ya medido en el piloto: en T1 Seedance siguió el previz de c05a igual que Kling, a 480p; en T0 rehízo la pista de voz y la atrasó (no sirve para diálogo con pista).
+- Efecto: cada prueba de 4 s se deja en borrador con dos motores (Kling Omni 720p y Seedance 2.5 draft 480p), cada uno con dos brazos (A: el gris como video de referencia; B: la hoja de storyboard como imagen). **No se corre nada sin el OK de Cristián.**
+- Costo: 0
