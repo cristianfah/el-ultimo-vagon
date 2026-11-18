@@ -1,0 +1,387 @@
+{
+ "call_id": "c01f",
+ "bloque": "1 · El recuerdo (flashes)",
+ "duration_s": 3,
+ "fps": 24,
+ "resolution": [
+  720,
+  1280
+ ],
+ "origin": "ANC_rapto",
+ "set_light": "rapto",
+ "train_sway": {
+  "m": 0.0,
+  "deg": 0.0,
+  "hz": 0.45
+ },
+ "fuente_tiempos": "llamadas_tiempos.json: c01f 3 s; b1_f1 0.5-1.2, b1_f2 1.2-1.9 (sin cambios). Colchon 0-0.5 s: Martina ya esta tirando de la cinta en el cuadro 0. F2 se alarga de 1.9 a 3.0 con accion (la figura retrocede mirandola; ella vuelve a mirarla). F3 (la pantalla) va en post y no se arma.",
+ "props_in_frame": [
+  "maletin"
+ ],
+ "notes": "Cuarto del rapto, origen en ANC_rapto (40; 0; 0), lejos del tren: sin vaiven. Martina sentada en la silla (pos 0;0, mirando a +Y). F1: corte por coincidencia con b1_p1: misma camara relativa a las munecas (50 mm, 1,48 m delante y 0,28 m por encima de ellas, corrida 0,21 m hacia -X), asi las munecas caen en el mismo lugar del cuadro (u 0,37, v 0,73) y Martina a la izquierda. F2: mas abierto (35 mm), camara contra la pared del frente: Martina a la izquierda, la figura con mascara de pie junto a su hombro izquierdo (lado -X) y medio paso detras, a la derecha del cuadro; el maletin baja de sus manos a las rodillas de ella.",
+ "shots": [
+  {
+   "id": "b1_f1",
+   "titulo": "F1 · Las mismas muñecas, con cinta",
+   "t0": 0.0,
+   "t1": 1.2,
+   "montaje": {
+    "usar_desde_s": 0.5,
+    "usar_hasta_s": 1.2,
+    "dur_montaje_s": 0.7
+   },
+   "descripcion": "Flash. Corte por coincidencia con b1_p1: las mismas munecas en el mismo lugar del cuadro (tercio inferior, un poco a la izquierda), ahora amarradas juntas con varias vueltas de cinta gris sobre los muslos. Martina sentada en la silla metalica sin apoyabrazos del cuarto del rapto, bajo un foco cenital duro y frio. Tira de las munecas con tirones secos (0.18, 0.62 y 1.06 s): la cinta se arruga y no cede. Mira hacia abajo, a la cinta. Misma ropa: abrigo gris carbon abierto, sueter avena con los punos sobre los nudillos.",
+   "motivo_camara": "Fija, el mismo lente (50 mm) y la misma posicion relativa a las munecas que b1_p1: 1,48 m delante, 0,28 m por encima, corrida 0,21 m hacia -X. Por eso queda a la altura del esternon de ella sentada (0,92 m) y el corte por coincidencia cae en las munecas. Sin vaiven: esto no es el tren.",
+   "camera": {
+    "tag": "FIJA_PECHO",
+    "mira": "hacia Martina sentada en la silla (hacia -Y)",
+    "mov": "fija; quieta del todo (fuera del tren)",
+    "lens_mm": 50,
+    "mode": "locked",
+    "sway": false,
+    "keys": [
+     {
+      "t": 0.0,
+      "pos": [
+       -0.21,
+       1.7,
+       0.92
+      ],
+      "look_at": [
+       -0.06,
+       0.02,
+       0.88
+      ]
+     }
+    ]
+   },
+   "en_cuadro": "Martina sentada, de frente, a la izquierda del cuadro; las munecas con cinta sobre los muslos en el tercio inferior, en el mismo lugar que en b1_p1. Detras, solo oscuridad y el concreto; el respaldo de la silla asoma a los lados de ella.",
+   "stills": {
+    "A": {
+     "t": 0.5,
+     "desc": "Ya tira de la cinta; mira las munecas.",
+     "lados": {
+      "martina": "izq"
+     }
+    },
+    "B": {
+     "t": 0.66,
+     "desc": "Tiron seco: la cinta no cede.",
+     "lados": {
+      "martina": "izq"
+     }
+    },
+    "C": {
+     "t": 1.15,
+     "desc": "Ultimo tiron, mas fuerte.",
+     "lados": {
+      "martina": "izq"
+     }
+    }
+   },
+   "actors": {
+    "martina": {
+     "pose": "sentado",
+     "tremor": {
+      "m": 0.003,
+      "hz": 7.0
+     },
+     "keys": [
+      {
+       "t": 0.0,
+       "pos": [
+        0.0,
+        0.0
+       ],
+       "yaw": 0,
+       "head_yaw": -6,
+       "head_pitch": 24,
+       "dz": 0.0
+      },
+      {
+       "t": 0.18,
+       "yaw": 3,
+       "head_pitch": 31,
+       "dz": -0.012,
+       "ease": "snap"
+      },
+      {
+       "t": 0.38,
+       "yaw": 0,
+       "head_pitch": 25,
+       "dz": 0.0,
+       "ease": "out"
+      },
+      {
+       "t": 0.62,
+       "yaw": -3,
+       "head_pitch": 32,
+       "dz": -0.014,
+       "ease": "snap"
+      },
+      {
+       "t": 0.84,
+       "yaw": 0,
+       "head_pitch": 25,
+       "dz": 0.0,
+       "ease": "out"
+      },
+      {
+       "t": 1.06,
+       "yaw": 3,
+       "head_pitch": 33,
+       "dz": -0.016,
+       "ease": "snap"
+      },
+      {
+       "t": 1.2,
+       "yaw": 2,
+       "head_pitch": 30,
+       "dz": -0.01
+      }
+     ]
+    }
+   },
+   "hide_set": []
+  },
+  {
+   "id": "b1_f2",
+   "titulo": "F2 · La figura con máscara le deja el maletín",
+   "t0": 1.2,
+   "t1": 3.0,
+   "montaje": {
+    "usar_desde_s": 1.2,
+    "usar_hasta_s": 1.9,
+    "dur_montaje_s": 0.7,
+    "alargue_s": "1.9-3.0"
+   },
+   "descripcion": "Flash, algo mas abierto. Una figura con una mascara lisa y gris, sin rasgos, de pie junto al hombro izquierdo de Martina, un poco detras de ella, le baja el maletin con las dos manos y se lo deja sobre las rodillas, encima de las munecas con cinta (el maletin toca a los 1.56 s). Ella mira la mascara mientras el maletin baja y, cuando le cae encima, baja la vista al maletin. La figura lo suelta, se endereza y retrocede hacia la oscuridad sin dejar de mirarla (1.85-3.0 s, alargue). Maletin: cuerpo oscuro, esquinas y dos cierres metalicos, acostado sobre sus muslos.",
+   "motivo_camara": "Fija, mas abierta (35 mm), apoyada contra la pared del frente y baja, un poco por debajo de los ojos de ella sentada (1,05 m): desde ahi la figura de pie la domina y la mascara queda arriba, contra la oscuridad, con aire sobre la cabeza. Martina sigue a la izquierda, como en F1, y el maletin cae en el tercio inferior, donde estaban las munecas.",
+   "camera": {
+    "tag": "FIJA_ABIERTA",
+    "mira": "hacia Martina y la figura con mascara (hacia -Y)",
+    "mov": "fija; quieta del todo (fuera del tren)",
+    "lens_mm": 35,
+    "mode": "locked",
+    "sway": false,
+    "keys": [
+     {
+      "t": 1.2,
+      "pos": [
+       0.02,
+       1.74,
+       1.05
+      ],
+      "look_at": [
+       -0.17,
+       0.0,
+       1.13
+      ]
+     }
+    ]
+   },
+   "en_cuadro": "Martina sentada a la izquierda del cuadro; la figura con mascara de pie a la derecha, junto a su hombro izquierdo y medio paso detras, con la mascara arriba contra la oscuridad; el maletin baja entre los dos y queda sobre las rodillas de ella, en el tercio inferior.",
+   "stills": {
+    "A": {
+     "t": 1.2,
+     "desc": "La figura le acerca el maletin; ella mira la mascara.",
+     "lados": {
+      "martina": "izq",
+      "enmascarado": "der"
+     }
+    },
+    "B": {
+     "t": 1.58,
+     "desc": "El maletin cae sobre sus rodillas.",
+     "lados": {
+      "martina": "izq",
+      "enmascarado": "der"
+     }
+    },
+    "C": {
+     "t": 1.88,
+     "desc": "La figura lo suelta y se endereza; ella mira el maletin.",
+     "lados": {
+      "martina": "izq",
+      "enmascarado": "der"
+     }
+    }
+   },
+   "actors": {
+    "martina": {
+     "pose": "sentado",
+     "tremor": {
+      "m": 0.002,
+      "hz": 6.0
+     },
+     "keys": [
+      {
+       "t": 1.2,
+       "pos": [
+        0.0,
+        0.0
+       ],
+       "yaw": 0,
+       "head_yaw": 70,
+       "head_pitch": -15,
+       "dz": 0.0
+      },
+      {
+       "t": 1.5,
+       "head_yaw": 55,
+       "head_pitch": -4
+      },
+      {
+       "t": 1.56,
+       "head_yaw": 40,
+       "head_pitch": 4,
+       "dz": -0.015,
+       "ease": "linear"
+      },
+      {
+       "t": 1.68,
+       "head_yaw": 6,
+       "head_pitch": 28,
+       "dz": -0.02,
+       "ease": "out"
+      },
+      {
+       "t": 2.3,
+       "head_yaw": 8,
+       "head_pitch": 28,
+       "dz": -0.02
+      },
+      {
+       "t": 2.7,
+       "head_yaw": 60,
+       "head_pitch": -8,
+       "dz": -0.015
+      },
+      {
+       "t": 3.0,
+       "head_yaw": 72,
+       "head_pitch": -10,
+       "dz": -0.015
+      }
+     ]
+    },
+    "enmascarado": {
+     "pose": "de_pie",
+     "keys": [
+      {
+       "t": 1.2,
+       "pos": [
+        -0.4,
+        -0.06
+       ],
+       "yaw": -55,
+       "head_yaw": 0,
+       "head_pitch": 16
+      },
+      {
+       "t": 1.5,
+       "pos": [
+        -0.38,
+        -0.05
+       ],
+       "head_pitch": 22
+      },
+      {
+       "t": 1.64,
+       "head_pitch": 22
+      },
+      {
+       "t": 1.88,
+       "pos": [
+        -0.42,
+        -0.07
+       ],
+       "head_pitch": 10
+      },
+      {
+       "t": 2.45,
+       "pos": [
+        -0.72,
+        -0.38
+       ],
+       "yaw": -50,
+       "head_pitch": 6,
+       "ease": "linear"
+      },
+      {
+       "t": 3.0,
+       "pos": [
+        -0.98,
+        -0.7
+       ],
+       "yaw": -45,
+       "head_pitch": 4,
+       "ease": "linear"
+      }
+     ]
+    }
+   },
+   "props": {
+    "maletin": {
+     "keys": [
+      {
+       "t": 1.2,
+       "pos": [
+        -0.14,
+        0.12,
+        0.98
+       ],
+       "rot": [
+        -90,
+        6,
+        8
+       ]
+      },
+      {
+       "t": 1.5,
+       "pos": [
+        -0.02,
+        0.11,
+        0.7
+       ],
+       "rot": [
+        -90,
+        2,
+        2
+       ],
+       "ease": "in"
+      },
+      {
+       "t": 1.56,
+       "pos": [
+        0.0,
+        0.11,
+        0.665
+       ],
+       "rot": [
+        -90,
+        0,
+        0
+       ],
+       "ease": "out"
+      },
+      {
+       "t": 3.0,
+       "pos": [
+        0.0,
+        0.11,
+        0.665
+       ],
+       "rot": [
+        -90,
+        0,
+        0
+       ]
+      }
+     ]
+    }
+   },
+   "hide_set": []
+  }
+ ]
+}

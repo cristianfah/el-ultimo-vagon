@@ -1,0 +1,374 @@
+{
+ "call_id": "c01",
+ "bloque": "1 · El recuerdo",
+ "duration_s": 4,
+ "fps": 24,
+ "resolution": [
+  720,
+  1280
+ ],
+ "origin": "ANC_vagon2_puerta_tras",
+ "set_light": "ambar_bajo",
+ "train_sway": {
+  "m": 0.006,
+  "deg": 0.3,
+  "hz": 0.45
+ },
+ "fuente_tiempos": "llamadas_tiempos.json: c01 4 s; b1_p1 0.5-1.3, b1_p2 1.3-2.3 (sin cambios). Una sola accion continua con camara fija: el montaje usa el inicio (P1) y el final (P2) y los flashes van entre medio. Colchon 0-0.5 s: Martina ya viene girando de espaldas hacia la puerta. Accion armada: espalda contra la puerta 0.58, ojos cerrados ~0.70-1.60, aprieta la muneca 0.80-1.60, abre los ojos 1.60, manga 1.85-2.10, gira 2.08-2.40, empuja 2.40-2.60, sale por la puerta 2.6-4.0 (alargue con accion). Propuesta (no aplicada): b1_p2 1.60-2.60.",
+ "props_in_frame": [],
+ "notes": "Vagon 2, origen en la puerta trasera (0; 72,56): Martina de espaldas contra la puerta, mirando hacia la cabeza del tren (+Y), un poco corrida hacia -X (x = -0,06). Camara fija en el pasillo, a 1,68 m de ella, mirando hacia la cola (-Y), corrida 0,20 m hacia -X: Martina a la izquierda del cuadro, la ventanita oscura de la puerta asoma a la izquierda de su cabeza, la manija junto a su cadera derecha (izquierda del cuadro) y la esquina del respaldo de la fila 20 izq en primer termino, abajo a la derecha. La puerta abre empujando hacia el fuelle (open_deg negativo).",
+ "set_anim": {
+  "doors": [
+   {
+    "object": "PUERTA_vagon2_tras",
+    "keys": [
+     {
+      "t": 0.0,
+      "open_deg": 0
+     },
+     {
+      "t": 2.42,
+      "open_deg": 0
+     },
+     {
+      "t": 2.6,
+      "open_deg": -12,
+      "ease": "in"
+     },
+     {
+      "t": 2.95,
+      "open_deg": -48,
+      "ease": "linear"
+     },
+     {
+      "t": 3.35,
+      "open_deg": -80,
+      "ease": "out"
+     },
+     {
+      "t": 4.0,
+      "open_deg": -76
+     }
+    ]
+   }
+  ]
+ },
+ "shots": [
+  {
+   "id": "b1_p1",
+   "titulo": "P1 · Contra la puerta, se aprieta la muñeca",
+   "t0": 0.0,
+   "t1": 1.3,
+   "montaje": {
+    "usar_desde_s": 0.5,
+    "usar_hasta_s": 1.3,
+    "dur_montaje_s": 0.8
+   },
+   "descripcion": "Primer plano fijo. Martina llega de espaldas a la puerta del fondo del vagon 2 y se deja caer contra ella (la espalda pega en la puerta a los 0.58 s); echa la cabeza atras hasta apoyarla en la puerta y cierra los ojos (~0.70 s). Con la mano izquierda se aprieta la muneca derecha, delante del cuerpo, a la altura de la cintura (la agarra a los 0.80 s y aprieta cada vez mas hasta el corte): nudillos blancos, el puno del sueter avena sobre la mano derecha. Las dos munecas quedan en el tercio inferior del cuadro. Es el corte por coincidencia hacia el flash b1_f1.",
+   "motivo_camara": "Fija y cerrada, a la altura del pecho (1,28 m), entre la cara y las manos: las dos cosas que cuentan el plano. 50 mm a 1,68 m, apenas corrida del eje del pasillo hacia -X para que no sea un frontal centrado; en primer termino, abajo a la derecha, la esquina del respaldo de la fila 20. Solo vibra con el tren. Es el mismo encuadre que P2 (una sola toma).",
+   "camera": {
+    "tag": "FIJA_PECHO",
+    "mira": "hacia la puerta trasera del vagon 2 (hacia la cola)",
+    "mov": "fija; solo vibra con el tren (mismo encuadre que P2)",
+    "lens_mm": 50,
+    "mode": "locked",
+    "sway_scale": 0.35,
+    "vibration": {
+     "deg": 0.04,
+     "hz": 10.0,
+     "m": 0.0005
+    },
+    "keys": [
+     {
+      "t": 0.0,
+      "pos": [
+       -0.27,
+       1.86,
+       1.28
+      ],
+      "look_at": [
+       -0.12,
+       0.18,
+       1.24
+      ]
+     }
+    ]
+   },
+   "en_cuadro": "Martina de frente, a la izquierda del cuadro, de espaldas contra la puerta; a la izquierda de su cabeza asoma la ventanita oscura de la puerta (solo el fuelle negro) y junto a su cadera derecha, la manija. Abajo a la derecha, en primer termino y desenfocada, la esquina del respaldo de la fila 20.",
+   "stills": {
+    "A": {
+     "t": 0.5,
+     "desc": "Termina de girar y va cayendo de espaldas contra la puerta.",
+     "lados": {
+      "martina": "izq"
+     }
+    },
+    "B": {
+     "t": 0.83,
+     "desc": "Cabeza atras contra la puerta, ojos cerrados; la mano izquierda agarra la muneca derecha.",
+     "lados": {
+      "martina": "izq"
+     }
+    },
+    "C": {
+     "t": 1.25,
+     "desc": "Aprieta la muneca con fuerza, ojos cerrados (corte por coincidencia a F1).",
+     "lados": {
+      "martina": "izq"
+     }
+    }
+   },
+   "actors": {
+    "martina": {
+     "pose": "de_pie",
+     "tremor": {
+      "m": 0.0015,
+      "hz": 5.0
+     },
+     "keys": [
+      {
+       "t": 0.0,
+       "pos": [
+        0.05,
+        0.52
+       ],
+       "yaw": -128,
+       "head_yaw": 0,
+       "head_pitch": 0,
+       "dz": 0.0
+      },
+      {
+       "t": 0.3,
+       "pos": [
+        -0.02,
+        0.33
+       ],
+       "yaw": -40,
+       "head_yaw": 0,
+       "head_pitch": 0,
+       "ease": "linear"
+      },
+      {
+       "t": 0.58,
+       "pos": [
+        -0.06,
+        0.175
+       ],
+       "yaw": 0,
+       "head_yaw": -6,
+       "head_pitch": -6,
+       "dz": -0.015,
+       "ease": "in"
+      },
+      {
+       "t": 0.66,
+       "pos": [
+        -0.06,
+        0.18
+       ],
+       "dz": -0.02,
+       "ease": "out"
+      },
+      {
+       "t": 0.78,
+       "head_yaw": -12,
+       "head_pitch": -16,
+       "ease": "out"
+      },
+      {
+       "t": 1.0,
+       "head_yaw": -12,
+       "head_pitch": -17,
+       "dz": -0.022
+      },
+      {
+       "t": 1.3,
+       "head_yaw": -13,
+       "head_pitch": -18,
+       "dz": -0.02
+      }
+     ]
+    }
+   },
+   "hide_set": []
+  },
+  {
+   "id": "b1_p2",
+   "titulo": "P2 · Abre los ojos, la manga, empuja la puerta",
+   "t0": 1.3,
+   "t1": 4.0,
+   "montaje": {
+    "usar_desde_s": 1.3,
+    "usar_hasta_s": 2.3,
+    "dur_montaje_s": 1.0,
+    "alargue_s": "2.3-4.0",
+    "propuesta_s": "1.60-2.60 (empieza donde abre los ojos; ver fuente_tiempos)"
+   },
+   "descripcion": "La misma toma que P1, sin corte de camara. Martina sigue con los ojos cerrados y la muneca apretada, en la misma posicion de P1, hasta los 1.60 s: ahi abre los ojos y despega la cabeza de la puerta. Mira hacia abajo, suelta la muneca (1.75 s) y con la mano izquierda se estira la manga del abrigo sobre la muneca derecha (1.85-2.10 s). Gira hacia su derecha, hacia la manija (2.08-2.40 s), apoya la mano en la puerta y la empuja (2.40-2.60 s): la puerta cede hacia el fuelle y ella sale por ahi (2.6-4.0 s, alargue). Detras de la puerta, solo el fuelle oscuro.",
+   "motivo_camara": "La misma camara fija de P1: el tren vuelve de golpe y el encuadre no cambia, la que cambia es ella. Al final la camara se queda quieta mirando la puerta que se abre.",
+   "camera": {
+    "tag": "FIJA_PECHO",
+    "mira": "hacia la puerta trasera del vagon 2 (hacia la cola)",
+    "mov": "fija; solo vibra con el tren (mismo encuadre que P1)",
+    "lens_mm": 50,
+    "mode": "locked",
+    "sway_scale": 0.35,
+    "vibration": {
+     "deg": 0.04,
+     "hz": 10.0,
+     "m": 0.0005
+    },
+    "keys": [
+     {
+      "t": 1.3,
+      "pos": [
+       -0.27,
+       1.86,
+       1.28
+      ],
+      "look_at": [
+       -0.12,
+       0.18,
+       1.24
+      ]
+     }
+    ]
+   },
+   "en_cuadro": "El mismo cuadro de P1: Martina a la izquierda, contra la puerta; al girar queda de perfil y despues de espaldas; la puerta se abre hacia el fondo y deja ver solo el fuelle oscuro. Abajo a la derecha, la esquina del respaldo de la fila 20.",
+   "stills": {
+    "A": {
+     "t": 1.3,
+     "desc": "Misma posicion del final de P1: ojos todavia cerrados, aprieta la muneca.",
+     "lados": {
+      "martina": "izq"
+     }
+    },
+    "B": {
+     "t": 1.62,
+     "desc": "Abre los ojos y despega la cabeza de la puerta.",
+     "lados": {
+      "martina": "izq"
+     }
+    },
+    "C": {
+     "t": 2.29,
+     "desc": "Ya se estiro la manga; gira hacia la manija para empujar la puerta.",
+     "lados": {
+      "martina": "izq"
+     }
+    }
+   },
+   "actors": {
+    "martina": {
+     "pose": "de_pie",
+     "tremor": {
+      "m": 0.0015,
+      "hz": 5.0
+     },
+     "keys": [
+      {
+       "t": 1.3,
+       "pos": [
+        -0.06,
+        0.18
+       ],
+       "yaw": 0,
+       "head_yaw": -13,
+       "head_pitch": -18,
+       "dz": -0.02
+      },
+      {
+       "t": 1.6,
+       "head_yaw": -13,
+       "head_pitch": -17,
+       "dz": -0.022
+      },
+      {
+       "t": 1.72,
+       "head_yaw": -7,
+       "head_pitch": -3,
+       "dz": -0.012,
+       "ease": "out"
+      },
+      {
+       "t": 1.86,
+       "head_yaw": -9,
+       "head_pitch": 32,
+       "dz": -0.01
+      },
+      {
+       "t": 2.08,
+       "pos": [
+        -0.06,
+        0.19
+       ],
+       "yaw": 0,
+       "head_yaw": -10,
+       "head_pitch": 28,
+       "dz": 0.0
+      },
+      {
+       "t": 2.22,
+       "pos": [
+        -0.04,
+        0.25
+       ],
+       "yaw": -80,
+       "head_yaw": -30,
+       "head_pitch": 8,
+       "ease": "in"
+      },
+      {
+       "t": 2.4,
+       "pos": [
+        -0.02,
+        0.24
+       ],
+       "yaw": -165,
+       "head_yaw": 0,
+       "head_pitch": 4,
+       "ease": "out"
+      },
+      {
+       "t": 2.6,
+       "pos": [
+        -0.01,
+        0.2
+       ],
+       "yaw": -172,
+       "head_pitch": 2
+      },
+      {
+       "t": 2.95,
+       "pos": [
+        0.0,
+        -0.08
+       ],
+       "yaw": -178,
+       "ease": "in"
+      },
+      {
+       "t": 3.5,
+       "pos": [
+        0.02,
+        -0.7
+       ],
+       "yaw": -180,
+       "ease": "linear"
+      },
+      {
+       "t": 4.0,
+       "pos": [
+        0.03,
+        -1.25
+       ],
+       "yaw": -180,
+       "ease": "linear"
+      }
+     ]
+    }
+   },
+   "hide_set": []
+  }
+ ]
+}
