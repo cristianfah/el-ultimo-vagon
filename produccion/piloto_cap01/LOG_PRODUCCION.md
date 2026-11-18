@@ -385,7 +385,7 @@ Una entrada por decisión, instrucción o llamada paga. Se escribe en el momento
 - Efecto: cada prueba de 4 s se deja en borrador con dos motores (Kling Omni 720p y Seedance 2.5 draft 480p), cada uno con dos brazos (A: el gris como video de referencia; B: la hoja de storyboard como imagen). **No se corre nada sin el OK de Cristián.**
 - Costo: 0
 
-### 2026-11-18 01:25 · P · fichas de las 17 llamadas: resultado de los siete agentes
+### 2026-11-18 01:23 · P · fichas de las 17 llamadas: resultado de los siete agentes
 - Tipo: revisión
 - Qué: las 17 fichas (`previz/shots/`) pasan el chequeo automático con **0 problemas**; los únicos avisos son buscados (la embestida de b3_p5–b3_p6: él cae sobre la esposa). c00a y c05a quedaron rehechas para cilindros conservando lo que funcionó el 10-nov (lentes, cámaras, cortes, tiempos).
 - Lo que los cilindros no muestran (manos, palma, llave en la mano, ojos blancos, niebla, manchas del vidrio, la mano de Hugo en la manija) va en la `descripcion` de cada plano y después al prompt.
@@ -400,7 +400,7 @@ Una entrada por decisión, instrucción o llamada paga. Se escribe en el momento
 - Quién decidió: agentes de fichas (encuadres) y director (correcciones de continuidad)
 - Costo: 0
 
-### 2026-11-18 01:25 · plano secuencia · no se propone
+### 2026-11-18 01:23 · plano secuencia · no se propone
 - Tipo: decisión
 - Qué: el guion no pide un plano secuencia. El bloque 5, el candidato natural, está escrito en planos de 1 a 1,5 s con cortes secos; P1 y P6 repiten el encuadre de la cerradura a propósito (la llave es el reloj) y P5 sale de un fotograma guía, así que necesitan cortes. b5_p7 ya es un solo plano corto con la cámara retrocediendo, con su recorrido dibujado en la planta. Un plano secuencia de ~11 s con cinco personas y dos espacios separados por una puerta es justo lo que más rompe el modelo. Por la regla de Cristián («plano secuencia solo si el guion lo pide»), se descarta.
 - Quién decidió: director, con la opinión del agente del bloque 5
