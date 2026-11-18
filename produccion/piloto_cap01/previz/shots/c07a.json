@@ -620,33 +620,31 @@
       {
        "t": 1.29,
        "pos": [
-        0.46,
-        2.5
+        0.3,
+        1.62
        ],
-       "yaw": 186,
-       "head_pitch": 4
+       "yaw": 180
       },
       {
        "t": 3.85,
        "pos": [
-        0.46,
-        2.49
+        0.3,
+        1.6
        ]
       },
       {
        "t": 4.55,
        "pos": [
-        0.4,
-        2.42
+        0.29,
+        1.52
        ]
       },
       {
        "t": 4.95,
        "pos": [
-        0.36,
-        2.38
-       ],
-       "ease": "linear"
+        0.28,
+        1.46
+       ]
       }
      ],
      "tremor": {
@@ -660,23 +658,23 @@
       {
        "t": 1.29,
        "pos": [
-        0.3,
-        2.84
+        0.44,
+        1.98
        ],
-       "yaw": 190
+       "yaw": 180
       },
       {
        "t": 4.0,
        "pos": [
-        0.3,
-        2.83
+        0.44,
+        1.96
        ]
       },
       {
        "t": 4.95,
        "pos": [
-        0.22,
-        2.8
+        0.4,
+        1.84
        ]
       }
      ],
@@ -686,7 +684,7 @@
      }
     }
    },
-   "en_cuadro": "La hoja de la puerta en primer término alrededor del marco de la ventanita, vista desde abajo; arriba, al inicio, el tubo frío. En el vidrio, la cabeza de Diego (piedra clara) a la derecha del centro, ocupa la mitad del ancho; a su izquierda, las costillas del fuelle; por encima de él, el techo del fuelle con la tira roja. Al final, a la derecha de su cabeza y en el borde de la ventanita, las sombras (casi negras) contra la luz de la puerta del vagón 5.",
+   "en_cuadro": "La hoja de la puerta en primer término alrededor del marco de la ventanita, vista desde abajo; arriba, al inicio, el tubo frío. En el vidrio, la cabeza de Diego (piedra clara) a la derecha del centro, ocupa la mitad del ancho; a su izquierda, las costillas del fuelle; por encima de él, el techo del fuelle con la tira roja. Al final, a la derecha de su cabeza y en el borde de la ventanita, las sombras (casi negras) recortadas contra la tira roja del techo del fuelle. Nunca una puerta abierta ni un pasillo iluminado detrás de Diego.",
    "stills": {
     "A": {
      "t": 1.375,
@@ -988,7 +986,7 @@
      }
     }
    },
-   "en_cuadro": "Martina (avena) a la derecha del cuadro, en primer término y enfocada, con aire sobre la cabeza. En el borde izquierdo, desenfocado, Tomás (azul marino); entre él y Martina, más atrás y más baja, Carmen (celeste), también desenfocada, que primero se mira la mano: los dos se giran hacia Martina, en ese orden. Arriba, el techo oscuro con la tira roja hacia el fondo; al fondo, la pared trasera con la ventana negra detrás de ella y la cabina del revisor a la izquierda del cuadro.",
+   "en_cuadro": "Martina (avena) a la derecha del cuadro, en primer término y enfocada, con aire sobre la cabeza. En el borde izquierdo, desenfocado, Tomás (azul marino); entre él y Martina, más atrás y más baja, Carmen (celeste), también desenfocada, que primero se mira la mano: los dos se giran hacia Martina, en ese orden. Arriba, el techo oscuro con la tira roja hacia el fondo.",
    "stills": {
     "A": {
      "t": 4.95,

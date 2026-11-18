@@ -91,7 +91,8 @@ PROPS_COLOR = {
     "PROP_hierro": (0.10, 0.10, 0.11),     # llave, manija
     "PROP_placa": (0.46, 0.34, 0.13),      # placa de la cerradura
     "PROP_negro": (0.01, 0.01, 0.01),      # bocallave
-    "SET_vidrio": (0.55, 0.62, 0.66),      # vidrio de las ventanitas (alfa bajo)
+    "SET_vidrio": (0.30, 0.33, 0.35),      # vidrio de las ventanitas: oscuro y casi transparente (18-nov: el anterior
+                                           # salia lechoso bajo el tubo frio y tapaba a Diego y a los infectados)
     "SET_noche": (0.035, 0.04, 0.06),      # planos oscuros detras de las ventanas laterales
     "FX_esquirla": (0.82, 0.86, 0.88),
 }
@@ -138,7 +139,7 @@ def crear_materiales_set():
     for nombre, rgb in PROPS_COLOR.items():
         # el metal del maletin y la placa de la cerradura brillan apenas, para que el prop se lea en la penumbra
         em = 0.25 if nombre in ("PROP_metal", "PROP_placa") else 0.0
-        material(nombre, rgb, alfa=0.22 if nombre == "SET_vidrio" else 1.0, emision=em)
+        material(nombre, rgb, alfa=0.07 if nombre == "SET_vidrio" else 1.0, emision=em)
 
 
 def _poner_color(mat, rgb):

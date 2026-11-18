@@ -421,3 +421,18 @@ Una entrada por decisión, instrucción o llamada paga. Se escribe en el momento
   - **b4_p3:** se mantiene la nota del montaje v1c: el medio segundo de negro va en post y el video parte ya en rojo.
 - Quién decidió: revisor (hallazgos) y director (correcciones)
 - Costo: 0
+
+### 2026-11-18 03:20 · P · correcciones y verificación independiente
+- Tipo: revisión · corrección
+- Qué: tres agentes corrigieron los hallazgos de la revisión y un verificador escéptico los midió con los datos (no con lo que decían los agentes). Resultado: **14 resueltos**, 1 parcial (el infectado de b5_p9) y 3 que no le tocaba medir. El raccord entre llamadas y los lados del guion quedaron bien en todos los pares y planos.
+- Lo que se corrigió después de la verificación (director):
+  - **Vidrio de las ventanitas:** salía lechoso bajo el tubo frío y tapaba a Diego y a los infectados (b5_p9). Ahora es oscuro y casi transparente.
+  - **b7_p2 y b7_p5:** las sombras (infectados) se acercan para recortarse contra la tira roja del techo del fuelle, y se saca del texto «contra la luz de la puerta del vagón 5», que invitaba a dibujar la puerta abierta y el pasillo iluminado que la tabla prohíbe.
+  - **b5_p9:** el infectado choca más al centro de la ventanita.
+  - **b2_p3:** el pasajero dormido que parecía salir de la cabeza de Tomás se corre de lugar.
+  - **b4_p5:** el pasajero de la fila 19 parte delante de su asiento, no dentro.
+  - **c05b:** Carmen sin el salto de 19 cm en el corte de b5_p3 a b5_p4.
+  - Textos: b7_p6 dice que Tomás asoma desenfocado en el borde izquierdo; b7_p4, que Martina queda cortada por el borde derecho y nunca mira a cámara; b7_p3 ya no promete la pared trasera (la cámara baja ve el techo).
+- Queda anotado, sin cambiar: la marca de Martina en el último vagón roza 10 cm la esquina del asiento de la fila 1 izq (se ve en b6_p1 y b7_p1); algunos infectados miran al lente (b5_p4, b5_p7, b6_p1): el chequeo no les aplica la regla de «nadie mira al lente».
+- Quién decidió: verificador (hallazgos) y director (correcciones)
+- Costo: 0

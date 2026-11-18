@@ -223,7 +223,7 @@
      ]
     }
    },
-   "en_cuadro": "Tomás (azul marino) a la izquierda del cuadro, de perfil hacia la derecha, con aire sobre la cabeza. En el borde derecho asoma Martina (avena), desenfocada; entre los dos, más atrás, Carmen (celeste) mira a Martina. Al fondo, la cabina del revisor a la izquierda del cuadro, detrás de él, y la pared trasera con la ventana negra hacia la derecha.",
+   "en_cuadro": "Tomás (azul marino) a la izquierda del cuadro, de perfil hacia la derecha, con aire sobre la cabeza. En el borde derecho asoma Martina (avena), desenfocada; entre los dos, más atrás, Carmen (celeste) mira a Martina. Al fondo, la cabina del revisor a la izquierda del cuadro, detrás de él, y la pared trasera con la ventana negra hacia la derecha. Martina queda cortada por el borde derecho: solo hombro y mejilla, nunca la mirada a cámara.",
    "stills": {
     "A": {
      "t": 0.55,
@@ -461,16 +461,15 @@
        "t": 2.99,
        "pos": [
         0.3,
-        2.1
+        1.5
        ],
-       "yaw": 184,
-       "head_pitch": 4
+       "yaw": 180
       },
       {
        "t": 4.25,
        "pos": [
         0.28,
-        1.84
+        1.28
        ]
       }
      ],
@@ -486,7 +485,7 @@
        "t": 2.99,
        "pos": [
         -0.1,
-        2.22
+        1.72
        ],
        "yaw": 180
       },
@@ -494,7 +493,7 @@
        "t": 4.25,
        "pos": [
         -0.08,
-        1.95
+        1.48
        ]
       }
      ],
@@ -509,16 +508,16 @@
       {
        "t": 2.99,
        "pos": [
-        0.42,
-        2.62
+        0.36,
+        1.92
        ],
-       "yaw": 176
+       "yaw": 180
       },
       {
        "t": 4.25,
        "pos": [
-        0.4,
-        2.38
+        0.34,
+        1.68
        ]
       }
      ],
@@ -528,7 +527,7 @@
      }
     }
    },
-   "en_cuadro": "La ventanita casi llena el ancho, vista desde abajo; la cabeza de Diego (piedra clara) en el vidrio manchado, a la derecha del centro; a su izquierda, las costillas del fuelle. Por encima de él, el techo rojo del fuelle; a su derecha, en el borde de la ventanita y más cerca que en P2, las sombras (infectados, casi negros).",
+   "en_cuadro": "La ventanita casi llena el ancho, vista desde abajo; la cabeza de Diego (piedra clara) en el vidrio manchado, a la derecha del centro; a su izquierda, las costillas del fuelle. Por encima de él, el techo rojo del fuelle; a su derecha, en el borde de la ventanita y más cerca que en P2, las sombras (infectados, casi negros). Las sombras se recortan contra la tira roja del techo del fuelle; nunca una puerta abierta ni un pasillo iluminado.",
    "stills": {
     "A": {
      "t": 3.04,
@@ -745,7 +744,7 @@
      }
     }
    },
-   "en_cuadro": "Martina (avena) a la derecha del cuadro, enfocada, con aire sobre la cabeza; mira primero fuera de cuadro a la izquierda (Tomás) y después abajo, fuera de cuadro a la derecha (la manija). A su izquierda, más atrás y desenfocada, Carmen (celeste) se mira la mano. Al fondo, la pared trasera con la ventana negra y la cabina del revisor a la izquierda del cuadro. La puerta, la manija y Hugo quedan detrás de la cámara: no entran en cuadro.",
+   "en_cuadro": "Martina (avena) a la derecha del cuadro, enfocada, con aire sobre la cabeza; mira primero fuera de cuadro a la izquierda (Tomás) y después abajo, fuera de cuadro a la derecha (la manija). A su izquierda, más atrás y desenfocada, Carmen (celeste) se mira la mano. Al fondo, la pared trasera con la ventana negra y la cabina del revisor a la izquierda del cuadro. La puerta, la manija y Hugo quedan detrás de la cámara: no entran en cuadro. En el borde izquierdo asoma, desenfocado, el perfil de Tomás.",
    "stills": {
     "A": {
      "t": 4.35,
