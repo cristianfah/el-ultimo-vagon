@@ -422,7 +422,7 @@ Una entrada por decisión, instrucción o llamada paga. Se escribe en el momento
 - Quién decidió: revisor (hallazgos) y director (correcciones)
 - Costo: 0
 
-### 2026-11-18 03:20 · P · correcciones y verificación independiente
+### 2026-11-18 03:29 · P · correcciones y verificación independiente
 - Tipo: revisión · corrección
 - Qué: tres agentes corrigieron los hallazgos de la revisión y un verificador escéptico los midió con los datos (no con lo que decían los agentes). Resultado: **14 resueltos**, 1 parcial (el infectado de b5_p9) y 3 que no le tocaba medir. El raccord entre llamadas y los lados del guion quedaron bien en todos los pares y planos.
 - Lo que se corrigió después de la verificación (director):
