@@ -406,7 +406,7 @@ Una entrada por decisión, instrucción o llamada paga. Se escribe en el momento
 - Quién decidió: director, con la opinión del agente del bloque 5
 - Costo: 0
 
-### 2026-11-18 01:58 · P · revisión independiente del gris
+### 2026-11-18 02:13 · P · revisión independiente del gris
 - Tipo: revisión
 - Qué: un revisor que no armó ninguna ficha revisó las 9 páginas proyectando cada cuadro desde los datos de Blender (no a ojo). El chequeo automático daba 0 problemas en las 17 llamadas, pero tenía puntos ciegos: lados solo en los stills, choques con el set, continuidad entre llamadas y miradas entre 14° y 25° del lente, que en cuadro se leen de frente.
 - Hallazgos graves: Diego casi mira al lente durante su línea (b7_p2, b7_p5: 15–17°); Martina y Carmen casi de frente en b7_p3 y b7_p6; la mano de Hugo en la manija de b7_p6 es imposible en esta geometría (la manija queda detrás de la cámara); Iván no puede girarse «detrás de ella» en b7_p3; una ventana detrás de Tomás en b2_p3 (la v10 dice nunca); cilindros que llenan el cuadro en el bloque 2.
