@@ -7,7 +7,7 @@ Carpeta del Drive: «piloto_cap01 · avance 2026-11-18 (gris con cilindros · PA
 ## Qué mirar, en este orden
 
 1. **Las páginas de storyboard** (`paginas/`, una o dos por bloque, 3300×2550). En cada plano hay tres cuadros de la cámara real (A inicio, B momento clave, C final), una planta vista desde arriba con la cámara y los recorridos, la cámara con nombre, lente, altura, hacia dónde mira y movimiento, y qué hay en cuadro. La luz es la del set: lámparas ámbar distintas entre sí, rojo de emergencia, tubo frío solo dentro del último vagón y el foco del rapto.
-2. **El montaje de ritmo** (`montaje/cap01_gris_v1_qa.mp4`, con el plano y el segundo sobreimpresos, y `cap01_gris_v1.mp4` limpio): todo el capítulo con las voces en su segundo. Va con luz plana para que se lea el blocking. La tabla de ritmo está en `montaje/ritmo_gris_v1.md`.
+2. **El montaje de ritmo** (`cap01_gris_v1_qa.mp4`, con el plano y el segundo sobreimpresos, y `cap01_gris_v1.mp4` limpio): todo el capítulo con las voces en su segundo, en luz plana para que se lea el blocking. **No está en el Drive todavía:** pesa 4,4–4,6 MB a 720p y desde esta sesión solo suben archivos de hasta ~3 MB (ver abajo). La tabla de ritmo está en el repo (`previz/ritmo_gris_v1.md`).
 3. **Los MP4 de referencia con luz real** (`refs/`) de las 8 llamadas de blocking y geografía. Son lo que va como video de referencia a Kling.
 4. **Las pruebas de 4 s en borrador** (`pruebas4s/`): el video de 4 s y la hoja de storyboard de cada una. Los prompts y payloads están en el repo.
 
@@ -32,6 +32,12 @@ Carpeta del Drive: «piloto_cap01 · avance 2026-11-18 (gris con cilindros · PA
 - **Look del rojo:** sigue pendiente. El rojo del gris se ajusta en una línea (`previz/scripts/previz_luz.py`).
 - **Bandolera de Martina:** sigue como está.
 - **b1_f1:** con el mismo lente de b1_p1 (corte por coincidencia), la cara de Martina queda en cuadro. La revisión T2 pedía cortar en el mentón.
+
+## Ritmo
+
+70,51 s más la encuesta. Todos los planos cumplen «acción + 0,5 s». Dos líneas entran más de 0,3 s después del corte, y no las toqué sin tu OK:
+- **b4_p5, Hugo: +0,63 s.** El guion pone el pitazo a los 0,1 s y la voz a los 0,5 s. Propuesta: correr las ventanas de c04b para que la voz quede a +0,50 s, como en el guion; b4_p4 sigue durando 1,5 s.
+- **b7_p2, Diego: +0,33 s.** Propuesta: cortar 0,03 s más tarde (b7_p1 pasa a 0,83 s).
 
 ## Lo que no se ve en el gris (va en el prompt)
 

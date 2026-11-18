@@ -128,6 +128,11 @@ def main():
     txt.append("drawtext=fontfile=%s:text='%%{pts\\:flt}':x=w-tw-18:y=20:fontsize=30:fontcolor=white:box=1:"
                "boxcolor=black@0.6:boxborderw=8" % FUENTE)
     correr([FFMPEG, "-y", "-hide_banner", "-i", base + ".mp4", "-vf", ",".join(txt), "-c:a", "copy"] + x264 + [base + "_qa.mp4"])
+    # versiones livianas para subir (540x960)
+    for suf in ("", "_qa"):
+        correr([FFMPEG, "-y", "-hide_banner", "-i", base + suf + ".mp4", "-vf", "scale=540:960:flags=lanczos", "-c:v", "libx264",
+                "-crf", "27", "-preset", "slow", "-pix_fmt", "yuv420p", "-c:a", "aac", "-b:a", "96k", "-movflags", "+faststart",
+                base + suf + "_540.mp4"])
     # --- ritmo
     lineas = []
     for c in tt["llamadas"]:
@@ -143,14 +148,18 @@ def main():
         ok = "sí" if ac is None or s["dur"] <= ac + 0.5 + 0.05 else "**no**"
         entra, dl = "", ""
         if "call" in s:
-            for cid, (quien, texto, t0, t1) in lineas:
-                if cid == s["call"] and s["de"] - 1e-6 <= t0 < s["a"]:
-                    d = t0 - s["de"]
-                    entra = "%s: «%s»" % (quien, texto)
-                    marca = "" if d <= 0.3 + 1e-6 else " **(> 0,3 s)**"
-                    dl = "%.2f s%s" % (d, marca)
-                    if d > 0.3 + 1e-6 and d < 1.0:
-                        fallas.append("%s: «%s» entra %.2f s después del corte (tope 0,3 s)" % (s["id"], texto, d))
+            dentro = sorted([(t0, quien, texto) for cid, (quien, texto, t0, t1) in lineas
+                             if cid == s["call"] and s["de"] - 1e-6 <= t0 < s["a"]])
+            if dentro:      # la regla mira la PRIMERA linea despues del corte; las demas van dentro del plano
+                t0, quien, texto = dentro[0]
+                d = t0 - s["de"]
+                entra = "%s: «%s»" % (quien, texto)
+                if len(dentro) > 1:
+                    entra += " (después: " + "; ".join("«%s» a %.2f s" % (x[2], x[0] - s["de"]) for x in dentro[1:]) + ")"
+                marca = "" if d <= 0.3 + 1e-6 else " **(> 0,3 s)**"
+                dl = "%.2f s%s" % (d, marca)
+                if d > 0.3 + 1e-6:
+                    fallas.append("%s: «%s» entra %.2f s después del corte (tope 0,3 s)" % (s["id"], texto, d))
         if ok != "sí":
             fallas.append("%s dura %.2f s y su acción %.2f s (+0,5 s)" % (s["id"], s["dur"], ac))
         filas.append("| %s | %s | %.2f s | %.2f s | %s | %s | %s | %s |" % (

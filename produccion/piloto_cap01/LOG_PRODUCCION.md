@@ -436,3 +436,14 @@ Una entrada por decisión, instrucción o llamada paga. Se escribe en el momento
 - Queda anotado, sin cambiar: la marca de Martina en el último vagón roza 10 cm la esquina del asiento de la fila 1 izq (se ve en b6_p1 y b7_p1); algunos infectados miran al lente (b5_p4, b5_p7, b6_p1): el chequeo no les aplica la regla de «nadie mira al lente».
 - Quién decidió: verificador (hallazgos) y director (correcciones)
 - Costo: 0
+
+### 2026-11-18 05:35 · P · ritmo del gris (05)
+- Tipo: revisión
+- Qué: el montaje de ritmo (`previz/scripts/montaje_gris.py`; tabla en `previz/ritmo_gris_v1.md`) dura **70,51 s** más la encuesta. Cada plano entra en su ventana de montaje con las voces en su segundo. Va con luz plana (Workbench) para leer el blocking; las referencias de video van con luz real.
+- **Todos los planos cumplen «acción + 0,5 s».** No se rellena nada.
+- **Líneas que entran más de 0,3 s después del corte (no se tocan sin tu OK):**
+  - **b4_p5, Hugo: +0,63 s.** El guion pone el pitazo a los 0,1 s y la voz a los 0,5 s del plano, así que el +0,3 no aplica entero. Propuesta: correr las ventanas de c04b a b4_p4 0,63–2,13 s, b4_p5 2,13–5,13 s y b4_p6 5,13–7,13 s. La voz queda a +0,50 s, como dice el guion, y b4_p4 sigue durando 1,5 s.
+  - **b7_p2, Diego: +0,33 s.** Propuesta: cortar de b7_p1 a b7_p2 en 1,33 s en vez de 1,30. b7_p1 pasa a 0,83 s (su acción más 0,5 da 1,1) y la voz queda a +0,30.
+- Las otras líneas entran a 0,10–0,30 s del corte. Las que caen dentro de un plano (Martina en b2_p1 y b2_p4) no son entradas después de corte.
+- Pendiente del gang: el test en silencio de Métricas sobre `cap01_gris_v1_qa.mp4`.
+- Costo: 0
