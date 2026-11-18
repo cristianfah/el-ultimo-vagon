@@ -134,14 +134,14 @@
       {
        "t": 2.0,
        "yaw": -2,
-       "head_yaw": 26,
-       "head_pitch": 4
+       "head_yaw": 30,
+       "head_pitch": 10
       },
       {
        "t": 5.0,
        "yaw": 0,
        "head_yaw": 28,
-       "head_pitch": 14
+       "head_pitch": 24
       }
      ]
     },
@@ -293,7 +293,7 @@
     "dur_montaje_s": 2.0,
     "alargue_s": "4.0-5.0"
    },
-   "descripcion": "Plano de dos desde el lado de la puerta, de frente a ellos. Tomás a la izquierda del cuadro, Martina a la derecha (en el vagón, Martina está a la izquierda de Tomás). Tomás tiene la mirada baja; a 2.1 s gira la cabeza hacia la derecha del cuadro y se queda mirando a Martina (2.82 s). Martina no lo mira: mira el piso, cada vez más encerrada. Entre los dos, más atras, Carmen en el pasillo. Al fondo, la pared trasera con la ventana trasera negra y la cabina del revisor a la izquierda del cuadro. Una sola puerta, detrás de la cámara. Alargue (4.0-5.0): el mismo estado, Tomás sigue mirándola y ella baja más la cabeza.",
+   "descripcion": "Plano de dos desde el lado de la puerta, de frente a ellos. Tomás a la izquierda del cuadro, Martina a la derecha (en el vagón, Martina está a la izquierda de Tomás). Tomás tiene la mirada baja; a 2.1 s gira la cabeza hacia la derecha del cuadro y se queda mirando a Martina (2.82 s). Martina no lo mira: mira el piso, cada vez más encerrada. Entre los dos, más atras, Carmen en el pasillo: mira de reojo hacia Martina y baja la vista a su mano escondida en el abrigo (nunca al lente). Al fondo, la pared trasera con la ventana trasera negra y la cabina del revisor a la izquierda del cuadro. Una sola puerta, detrás de la cámara. Alargue (4.0-5.0): el mismo estado, Tomás sigue mirándola y ella baja más la cabeza.",
    "motivo_camara": "Fija: el silencio. A la altura de los ojos de Tomás, pegada a la puerta (entre Iván y Hugo), con 32 mm porque el vestíbulo no da más distancia y así entran los dos, para que la mirada de Tomás cruce el cuadro de izquierda a derecha y la de Martina caiga al piso. El fondo (ventana negra, cabina a la izquierda) confirma que solo hay una puerta.",
    "camera": {
     "lens_mm": 32,
@@ -411,14 +411,26 @@
       {
        "t": 2.0,
        "yaw": -2,
-       "head_yaw": 26,
-       "head_pitch": 4
+       "head_yaw": 30,
+       "head_pitch": 10
+      },
+      {
+       "t": 2.6,
+       "yaw": -2,
+       "head_yaw": 27,
+       "head_pitch": 21
+      },
+      {
+       "t": 4.0,
+       "yaw": -1,
+       "head_yaw": 27,
+       "head_pitch": 22
       },
       {
        "t": 5.0,
        "yaw": 0,
        "head_yaw": 28,
-       "head_pitch": 14
+       "head_pitch": 24
       }
      ]
     },
@@ -559,5 +571,6 @@
     }
    }
   }
- ]
+ ],
+ "revision_18nov": "Revision independiente (18-nov): en b6_p3 Carmen ya no queda casi de frente al lente (21-25 grados): mira de reojo hacia Martina y baja la vista a su mano (head_yaw 27-30, head_pitch 10-24); el ultimo cuadro de b6_p2 (2.0 s) queda igual al primero de b6_p3."
 }

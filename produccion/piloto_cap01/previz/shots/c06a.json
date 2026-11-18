@@ -18,7 +18,7 @@
  "props_in_frame": [
   "llave"
  ],
- "notes": "Último vagón, luz roja con el tubo frío sobre la puerta (por dentro). Puerta en y=-0.04, bisagras a la derecha vista desde adentro (+X), abre hacia adentro; cerradura y ranura a la izquierda (x=-0.32). P8: cámara adentro, del lado de la cerradura, mirando la ranura de tres cuartos. P9: de frente a la ventanita. b6_p1: desde el pasillo entre las filas 3 y 4, hacia la puerta. El grupo termina en las marcas del brief (Martina -0.25/-1.55, Tomás 0.25/-1.45, Carmen 0.05/-2.20 en el pasillo detrás y entre los dos -cambio del director, 18-nov-, Iván 0.10/-0.32, Hugo -0.62/-0.50).",
+ "notes": "Último vagón, luz roja con el tubo frío sobre la puerta (por dentro). Puerta en y=-0.04, bisagras a la derecha vista desde adentro (+X), abre hacia adentro; cerradura y ranura a la izquierda (x=-0.32). La puerta del vagón 5 sigue reventada hacia el fuelle (-86 grados, como termina c05b): se cierra fuera de cuadro antes del bloque 7. P8: cámara adentro, del lado de la cerradura, mirando la ranura de tres cuartos. P9: contrapicado de la ventanita, de tres cuartos desde la derecha. b6_p1: desde el pasillo entre las filas 3 y 4, hacia la puerta. El grupo termina en las marcas del brief (Martina -0.25/-1.55, Tomás 0.25/-1.45, Carmen 0.05/-2.20 en el pasillo detrás y entre los dos -cambio del director, 18-nov-, Iván 0.10/-0.32, Hugo -0.62/-0.50). Carmen llega a su marca por el pasillo: pasa por detrás de Tomás sin bajar de y -1.40 hasta estar en x <= 0.14 (el asiento de pasillo derecho de la fila 1 ocupa x 0.30-0.82, y -2.07 a -1.59).",
  "set_anim": {
   "doors": [
    {
@@ -705,7 +705,7 @@
       {
        "t": 0.0,
        "pos": [
-        -0.3,
+        -0.13,
         2.4
        ],
        "yaw": 180
@@ -713,7 +713,7 @@
       {
        "t": 1.0,
        "pos": [
-        -0.3,
+        -0.17,
         2.05
        ],
        "yaw": 180
@@ -899,8 +899,8 @@
     "usar_hasta_s": 2.8,
     "dur_montaje_s": 1.0
    },
-   "descripcion": "La ventanita de la puerta del último vagón, desde adentro. Por el vidrio, el fuelle rojo y los infectados. Uno corre hacia la puerta y estrella la cara contra el vidrio (IMPACTO cuadro 49, 2.04 s); rebota, vuelve a pegarse y la cara resbala hacia abajo dejando una mancha oscura en el vidrio. Las manos golpean el vidrio. Nadie del grupo en cuadro.",
-   "motivo_camara": "Fija, un poco baja (1,40 m) y de frente: la cara llega desde arriba y desde el fondo hacia nosotros. El marco de la ventanita es el primer término. El impacto sacude el cuadro 3 cuadros después (cuadro 52) y la cámara vuelve a su lugar.",
+   "descripcion": "La ventanita de la puerta del último vagón, desde adentro y desde abajo. Por el vidrio, el fuelle rojo con la tira roja del techo y los infectados. Uno corre hacia la puerta y estrella la cara contra el vidrio (IMPACTO cuadro 49, 2.04 s): su cabeza recorta contra la tira roja; rebota, vuelve a pegarse y la cara resbala hacia abajo dejando una mancha oscura en el vidrio. Las manos golpean el vidrio. Nadie del grupo en cuadro.",
+   "motivo_camara": "Fija, baja (1,12 m) y en contrapicado, de tres cuartos desde la derecha: desde abajo, detrás de la cabeza que se estrella queda la tira roja del techo del fuelle, y la silueta oscura del infectado se lee contra ese rojo (casi negro contra el fuelle oscuro no se leía). El marco de la ventanita y el tubo frío encima son el primer término. El impacto sacude el cuadro 3 cuadros después (cuadro 52) y la cámara vuelve a su lugar.",
    "impacto": {
     "t": 2.04,
     "cuadro": 49,
@@ -909,7 +909,7 @@
    "camera": {
     "lens_mm": 30,
     "tag": "FIJA_VENTANITA",
-    "mira": "a la ventanita, de tres cuartos desde la izquierda, un poco desde abajo",
+    "mira": "a la ventanita, de tres cuartos desde la derecha, en contrapicado",
     "mov": "fija; vibra con el tren; sacudida al impacto",
     "vibration": {
      "deg": 0.05,
@@ -955,19 +955,19 @@
      }
     ]
    },
-   "en_cuadro": "El marco de la ventanita llena el centro del cuadro, con la hoja gris arriba y abajo; detrás del vidrio, el fuelle en rojo con siluetas de infectados; la cara se estrella en la mitad alta del vidrio.",
+   "en_cuadro": "El marco de la ventanita al centro, con la hoja gris alrededor y el tubo frío arriba, en primer término; detrás del vidrio, el fuelle en rojo y la tira roja del techo que baja por el centro; la cabeza del infectado se estrella en la mitad alta del vidrio, a la izquierda de la tira, y su borde la corta; detrás, otras siluetas que llegan.",
    "stills": {
     "A": {
      "t": 1.88,
-     "desc": "Por la ventanita, un infectado viene corriendo por el fuelle rojo."
+     "desc": "Por la ventanita, un infectado viene corriendo por el fuelle rojo, bajo la tira roja del techo."
     },
     "B": {
      "t": 2.1,
-     "desc": "La cara se estrella contra el vidrio; el cuadro se sacude."
+     "desc": "La cara se estrella contra el vidrio: la cabeza oscura corta la tira roja; el cuadro se sacude."
     },
     "C": {
      "t": 2.75,
-     "desc": "La cara resbala por el vidrio y deja la mancha oscura; otras manos golpean."
+     "desc": "La cara resbala por el vidrio y deja la mancha oscura; la tira roja asoma por encima de la cabeza; otras manos golpean."
     }
    },
    "actors": {
@@ -1334,7 +1334,7 @@
     "dur_montaje_s": 2.0,
     "alargue_s": "4.8-6.0"
    },
-   "descripcion": "Plano general del último vagón desde el fondo, hacia la puerta (la única puerta, con el tubo frío encima). Golpes violentos de muchas manos en la puerta y en la ventanita (de 2.95 a 3.92 s); la hoja tiembla contra la cerradura. El grupo retrocede hacia la cámara hasta sus marcas: Martina a la izquierda de Tomás; Carmen, la que más retrocede, hasta el pasillo, detrás y entre los dos. Iván cruza a la puerta, se da vuelta y apoya la espalda contra ella (3.32 s), con la cabeza gacha. Hugo junto a la puerta, del lado de la cerradura. A 3.95 s llega un grito lejano desde el vagón 5: los golpes paran de golpe, Iván levanta la cabeza, las siluetas se van de la ventanita (el vidrio queda manchado) y se oyen pasos que se alejan. Silencio: el tren y las respiraciones. Alargue (4.8-6.0): los infectados se alejan por el fuelle; Martina baja la mirada al piso y Carmen a su mano derecha.",
+   "descripcion": "Plano general del último vagón desde el fondo, hacia la puerta (la única puerta, con el tubo frío encima). Golpes violentos de muchas manos en la puerta y en la ventanita (de 2.95 a 3.92 s); la hoja tiembla contra la cerradura. El grupo retrocede hacia la cámara hasta sus marcas: Martina a la izquierda de Tomás; Carmen, la que más retrocede, ya en el pasillo (llegó por detrás de Tomás), hasta su marca detrás y entre los dos. Iván cruza a la puerta, se da vuelta y apoya la espalda contra ella (3.32 s), con la cabeza gacha. Hugo junto a la puerta, del lado de la cerradura. A 3.95 s llega un grito lejano desde el vagón 5: los golpes paran de golpe, Iván levanta la cabeza, las siluetas se van de la ventanita (el vidrio queda manchado) y se oyen pasos que se alejan. Silencio: el tren y las respiraciones. Alargue (4.8-6.0): los infectados se alejan por el fuelle hacia la puerta reventada del vagón 5; Martina baja la mirada al piso y Carmen a su mano derecha.",
    "motivo_camara": "Fija a propósito: el contraste con el caos del bloque 5 es la idea. Desde el pasillo entre las filas 3 y 4, un poco alta (1,9 m): Carmen, la que más retrocede, queda de espaldas en primer término y la cámara mira por encima de ella a Iván contra la puerta y a la ventanita; el grupo encerrado, visto desde arriba. Respaldos de las filas 2 y 3 a los lados. No acusa los golpes: solo vibra con el tren.",
    "camera": {
     "lens_mm": 24,
@@ -1828,8 +1828,8 @@
       {
        "t": 6.0,
        "pos": [
-        -0.36,
-        2.2
+        -0.15,
+        2.0
        ],
        "yaw": 0,
        "head_pitch": 6,
@@ -2038,8 +2038,8 @@
       {
        "t": 6.0,
        "pos": [
-        0.0,
-        2.65
+        0.08,
+        2.62
        ],
        "yaw": 0,
        "head_pitch": 0,
@@ -2363,8 +2363,8 @@
       {
        "t": 6.0,
        "pos": [
-        -0.3,
-        2.8
+        -0.11,
+        2.9
        ],
        "yaw": 0,
        "ease": "linear"
@@ -2534,5 +2534,6 @@
     }
    }
   }
- ]
+ ],
+ "revision_18nov": "Revisión independiente (18-nov): puerta del vagón 5 a -86 grados (antes cerrada); Carmen ya no atraviesa el asiento de la fila 1 der (b5_p8, b5_p9 y b6_p1: pasa detrás de Tomás, que queda 4 cm más adelante mientras ella pasa, y baja por el pasillo); b5_p9 en contrapicado para que la cabeza del infectado recorte contra la tira roja del techo del fuelle; los infectados que se alejan en el alargue de b6_p1 salen por el vano libre (la hoja abierta ocupa el lado izquierdo del fuelle)."
 }

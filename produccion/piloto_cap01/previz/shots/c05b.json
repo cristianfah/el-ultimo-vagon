@@ -18,7 +18,7 @@
  "props_in_frame": [
   "llave"
  ],
- "notes": "Fuelle (y=0 puerta del ultimo vagon, y=3.0 puerta del vagon 5) y ultimo vagon (y<0). P4 desde el lado del ultimo vagon, de frente a Carmen y un poco desde su derecha: la puerta rota del vagon 5 al fondo, Ivan entra por la derecha. P6 igual que P1 (desde el lado de la cerradura, pared izquierda oculta): Hugo a la izquierda, cerradura a la derecha. P7 desde dentro del ultimo vagon mirando a la puerta (la del tubo frio): Martina entra por la izquierda y Tomas por la derecha (el orden de b4_p6 y b5_p2); la hoja abierta queda a la derecha. Los infectados revientan la puerta del vagon 5 hacia el fuelle en 2.72 s (cuadro 65, fuera de cuadro en P6) y corren por el fuelle hacia el ultimo vagon; la puerta del vagon 5 queda abierta (-86 grados, hoja contra el lado izquierdo del fuelle).",
+ "notes": "Fuelle (y=0 puerta del ultimo vagon, y=3.0 puerta del vagon 5) y ultimo vagon (y<0). P4 desde el lado del ultimo vagon, de frente a Carmen y un poco desde su derecha: la puerta rota del vagon 5 al fondo, Ivan entra por la derecha. P6 igual que P1 (desde el lado de la cerradura, pared izquierda oculta): Hugo a la izquierda, cerradura a la derecha; al final la camara se asoma 0,27 m hacia el vano y panea a la derecha con la puerta que se abre, para que la cerradura (en la hoja) y la llave en la mano derecha de Hugo queden a la vista; Hugo se aparta hasta (-0.45, 0.68), contra el lado izquierdo del fuelle. P7 desde dentro del ultimo vagon mirando a la puerta (la del tubo frio): Martina entra por la izquierda y Tomas por la derecha (el orden de b4_p6 y b5_p2); la hoja abierta queda a la derecha. Los infectados revientan la puerta del vagon 5 hacia el fuelle en 2.72 s (cuadro 65, fuera de cuadro en P6) y corren por el fuelle hacia el ultimo vagon; la puerta del vagon 5 queda abierta (-86 grados, hoja contra el lado izquierdo del fuelle).",
  "set_anim": {
   "doors": [
    {
@@ -1710,5 +1710,6 @@
     }
    }
   }
- ]
+ ],
+ "revision_18nov": "Revision independiente (18-nov): en b5_p6 C Hugo tapaba la cerradura y la jamba la escondia al abrirse la puerta: la camara termina en (-0.86, 1.00) mirando la cerradura de la hoja que se abre, Hugo se aparta a (-0.45, 0.68) y la llave queda en su mano derecha a la altura de la cerradura; b5_p7 parte con Hugo en esa marca. Ivan sigue entrando por la derecha en b5_p4 (en b5_p2 termina en +X, detras de Tomas)."
 }
