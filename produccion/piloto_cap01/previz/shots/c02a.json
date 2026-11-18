@@ -45,8 +45,8 @@
      ]
     ]
    },
-   "motivo_camara": "En mano, muy suave, a la altura de los ojos sentados (1,20 m) y a 1,5 m de ellos, la distancia de un asiento enfrentado. Con 35 mm entran los dos en 9:16. Acusa la caída de ella con un ajuste leve hacia abajo y después solo respira. Va un poco corrida hacia el pasillo (x = 0,78; el centro de la pareja está en 0,84) para que el cuadro no quede centrado.",
-   "en_cuadro": "Martina a la izquierda, en el asiento de la ventana, con la ventana negra detrás; Tomás a la derecha, en el pasillo, con la cabeza girada hacia ella. Arriba a la izquierda, la lámpara de la fila 11 encendida sobre ellos. Al fondo, desenfocado, el vagón hacia la puerta trasera.",
+   "motivo_camara": "En mano, muy suave, a la altura de los ojos sentados (1,20 m) y a 1,5 m de ellos, la distancia de un asiento enfrentado. Con 35 mm entran los dos en 9:16. Acusa la caída de ella con un ajuste leve hacia abajo y después solo respira. Va un poco corrida hacia el pasillo (x = 0,78; el centro de la pareja está en 0,84) para que el cuadro no quede centrado. Solo se oculta el par de asientos de la fila 10 der (el «asiento salvaje», como en un set de rodaje); el resto del vagón y los pasajeros dormidos quedan.",
+   "en_cuadro": "Martina a la izquierda, en el asiento de la ventana, con la ventana negra detrás; Tomás a la derecha, en el pasillo, con la cabeza girada hacia ella. Arriba a la izquierda, la lámpara de la fila 11 encendida sobre ellos. Al fondo, desenfocado, el vagón hacia la puerta trasera. Detrás de ellos, en las filas 12 a 14, pasajeros dormidos.",
    "stills": {
     "A": {
      "t": 0.55,
@@ -240,10 +240,70 @@
        "head_pitch": 5
       }
      ]
+    },
+    "extra_1": {
+     "pose": "sentado",
+     "keys": [
+      {
+       "t": 0.0,
+       "pos": [
+        0.56,
+        -1.8
+       ],
+       "yaw": 0,
+       "head_yaw": 14,
+       "head_pitch": 34
+      }
+     ]
+    },
+    "extra_2": {
+     "pose": "sentado",
+     "keys": [
+      {
+       "t": 0.0,
+       "pos": [
+        -1.12,
+        -0.9
+       ],
+       "yaw": 0,
+       "head_yaw": -18,
+       "head_pitch": 30
+      }
+     ]
+    },
+    "extra_3": {
+     "pose": "sentado",
+     "keys": [
+      {
+       "t": 0.0,
+       "pos": [
+        -1.12,
+        -1.8
+       ],
+       "yaw": 0,
+       "head_yaw": 10,
+       "head_pitch": 36
+      }
+     ]
+    },
+    "extra_4": {
+     "pose": "sentado",
+     "keys": [
+      {
+       "t": 0.0,
+       "pos": [
+        1.12,
+        -2.7
+       ],
+       "yaw": 0,
+       "head_yaw": -20,
+       "head_pitch": 32
+      }
+     ]
     }
    },
    "hide_set": [
-    "vagon5_asientos"
+    "vagon5_asiento_10_der"
    ]
   },
   {

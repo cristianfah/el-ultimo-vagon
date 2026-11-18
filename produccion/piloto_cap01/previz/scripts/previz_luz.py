@@ -26,7 +26,7 @@ LUZ = {
     "ambar": {"color": (1.0, 0.58, 0.24), "w": 75.0, "radio": 0.03, "emision": 9.0},
     "ambar_bajo_factor": 0.62,
     "rojo": {"color": (1.0, 0.035, 0.02), "w_por_m": 3.2, "paso_m": 1.0, "emision": 1.4},
-    "tubo": {"color": (0.72, 0.86, 1.0), "w": 10.0, "emision": 2.5},
+    "tubo": {"color": (0.72, 0.86, 1.0), "w": 5.0, "emision": 2.0},
     "rapto": {"color": (0.86, 0.93, 1.0), "w": 700.0, "angulo_deg": 42.0, "emision": 12.0},
 }
 # Que grupo esta encendido en cada estado (factor sobre su potencia)

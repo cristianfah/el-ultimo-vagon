@@ -65,13 +65,13 @@
     },
     {
      "id": "b1_p2",
-     "de_s": 1.3,
-     "a_s": 2.3,
+     "de_s": 1.6,
+     "a_s": 2.6,
      "dur_montaje_s": 1.0
     }
    ],
    "mp4_ref": false,
-   "nota": "Una sola acción continua con cámara fija (P1 y P2 son el mismo encuadre). El montaje usa el inicio (P1) y el final (P2); los flashes van entre medio. Ajustar de_s/a_s de P2 a donde abre los ojos."
+   "nota": "Una sola acción continua con cámara fija (P1 y P2 son el mismo encuadre). El montaje usa el inicio (b1_p1, 0,5–1,3 s) y, después de los flashes, b1_p2 desde que abre los ojos (1,6–2,6 s; cambio del 18-nov). 1,3–1,6 s no se usa."
   },
   {
    "call_id": "c01f",
