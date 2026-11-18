@@ -620,7 +620,7 @@
    "descripcion": "Plano general del pasillo. Al otro lado, la lectora (la del bloque 0) se levanta de golpe y grita (3,0-3,25 s); el libro cae. Otros pasajeros despiertan: el joven de los audífonos se gira hacia la pareja (3,1 s) y el dormido de la fila 16 levanta la cabeza hacia ella (3,15 s). La niebla cubre el piso del pasillo (no se modela). La pareja, él encima de ella, queda fuera de cuadro a la izquierda tras el paneo.",
    "motivo_camara": "En mano, de pie en el pasillo (1,55 m, fila 10), 24 mm. Arranca todavía sobre la pareja y llega tarde al grito: el paneo (3,18-3,46 s; se pasa un poco y vuelve a los 3,62 s) encuentra a la lectora ya de pie. Después el operador da medio paso.",
    "camera": {
-    "tag": "HANDHELD_TARDE",
+    "tag": "MANO_TARDE",
     "mira": "por el pasillo hacia la cola, a la lectora",
     "mov": "en mano; paneo tardío de la pareja a la lectora (3,18-3,62 s)",
     "lens_mm": 24,

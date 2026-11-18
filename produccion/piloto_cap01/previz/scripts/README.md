@@ -44,7 +44,7 @@ python3 check_ref.py --ffmpeg "$FFMPEG" --json ../shots/c05a.json --ref "$TRABAJ
 
 ## Desde el 18-nov-2026: cilindros, luz real y storyboard (prompt 07)
 
-- **Personajes = cilindros con nariz** (decisión de Cristian, 17-nov): mismo diámetro para todos, altura real, nariz a la altura de los ojos. Solo cuentan `pos`, `yaw`, `head_yaw`, `head_pitch`, `pose` y `dz`; `lean`, `side`, `head_roll`, `arms` y `boot` no se dibujan (la acción de manos va al prompt). `build_cast.py --bloques` vuelve a las figuras del 10-nov.
+- **Personajes = cilindros con nariz** (decisión de Cristian, 17-nov): mismo diámetro para todos, altura real, nariz a la altura de los ojos. Solo cuentan `pos`, `yaw`, `head_yaw` (positivo = gira a la izquierda), `head_pitch` (**positivo = mira hacia abajo**), `pose` y `dz`; `lean`, `side`, `head_roll`, `arms` y `boot` no se dibujan (la acción de manos va al prompt). `build_cast.py --bloques` vuelve a las figuras del 10-nov.
 - **Luz real:** `render_shot.py --engine EEVEE --samples N`. Workbench sigue para iterar.
 - **Campos nuevos por plano:** `titulo`, `en_cuadro`, `stills` (`A/B/C` con `t`, `desc` y `lados` opcional), `camera.tag` (nombre `CAM_<plano>_<TAG>`), `camera.mira`, `camera.mov`. Por llamada: `light_keys` para cambiar de luz dentro de la llamada.
 - **Encargo para armar fichas:** `../BRIEF_fichas.md` (mapa fijo del set y reglas). **Tiempos:** `../llamadas_tiempos.json`. **Bloques y notas de layout:** `../bloques.json`.

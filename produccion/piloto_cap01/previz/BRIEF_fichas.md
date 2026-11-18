@@ -9,7 +9,7 @@ El capítulo entero dirigido en Blender: cámara, lente, encuadre, blocking y ti
 ## Personajes = cilindros con nariz (decisión de Cristian, 17-nov)
 
 - Un cilindro por personaje, a su altura real, todos del mismo diámetro (0,32 m), con una nariz (cono) a la altura de los ojos que marca hacia dónde mira. **Nada más:** sin cara, sin brazos, sin inclinación, sin contextura.
-- En la ficha valen: `pose` (`de_pie`, `sentado`, `agachado`), `pos`, `yaw` (giro del cuerpo), `head_yaw` y `head_pitch` (hacia dónde mira la nariz) y `dz` (sube o baja el cilindro, por ejemplo al agacharse). **`lean`, `side`, `head_roll`, `arms` y `boot` no se dibujan**: no los uses para contar la acción. La acción de manos (la llave, la palma en el vidrio, la mano en la manija) se escribe en `descripcion` y va al prompt.
+- En la ficha valen: `pose` (`de_pie`, `sentado`, `agachado`), `pos`, `yaw` (giro del cuerpo), `head_yaw` y `head_pitch` (hacia dónde mira la nariz; **`head_pitch` positivo = mira hacia abajo**; sobre ~25° la nariz se despega del cilindro) y `dz` (sube o baja el cilindro, por ejemplo al agacharse). **`lean`, `side`, `head_roll`, `arms` y `boot` no se dibujan**: no los uses para contar la acción. La acción de manos (la llave, la palma en el vidrio, la mano en la manija) se escribe en `descripcion` y va al prompt.
 - Los props sí se ven: `maletin` y `llave` (y las puertas y el vidrio que revienta, en `set_anim`).
 - Colores fijos (no se eligen): Martina avena · Tomás azul marino · Diego piedra clara · Carmen celeste · Iván café oscuro · Hugo bronce · Hombre de camisa azul azul fuerte · Esposa beige rosado · Figura con máscara gris liso · Pasajeros gris oscuro (`extra_N`) · Infectados casi negro (`infectado_N`). Hay 6 `extra_*` y 6 `infectado_*`.
 
@@ -77,7 +77,7 @@ Las anclas `ANC_*` están en `$PREVIZ_TRABAJO/set/set_info.json`. Asientos: todo
 **Fuelle** (bloque 5; `rojo`, sin tubo): de y = 0 (puerta del último vagón) a y = 3,0 (puerta del vagón 5), 1,25 m de ancho. Cerradura del último vagón en x = −0,32 (bocallave por fuera `ANC_bocallave_ext`). Paredes ocultables con `hide_set`: `fuelle_pared_izq`, `fuelle_costillas_izq`, `fuelle_pared_der`, `fuelle_costillas_der`.
 
 **Último vagón** (bloques 5 P7–P9, 6 y 7; `rojo` con el tubo frío sobre la puerta, por dentro). Puerta en y ≈ −0,04; por dentro, la cerradura queda a la **izquierda** de quien mira la puerta (x = −0,32; `ANC_bocallave_int`, `ANC_manija_int` (−0,25; −0,115; 0,95)). Vestíbulo libre entre la puerta y la fila 1 (y de −0,1 a −1,3, ancho completo). Marcas fijas del grupo **después de entrar** (bloques 6 y 7, mirando hacia la puerta; Martina a la izquierda de Tomás):
-- Martina (−0,25; −1,55) · Tomás (0,25; −1,45) · Carmen (0,80; −1,85)
+- Martina (−0,25; −1,55) · Tomás (0,25; −1,45) · Carmen (0,05; −2,20), en el pasillo detrás y entre los dos (cambio del 18-nov: la marca anterior, (0,80; −1,85), caía dentro del asiento de la fila 1 y dejaba a Carmen fuera de los planos cerrados del bloque 7)
 - Iván: espalda contra la puerta (0,10; −0,32) en 6·P1; «junto a la puerta» (0,50; −0,40) en el bloque 7
 - Hugo: junto a la puerta, del lado de la cerradura (−0,62; −0,50). En b7_p6 su mano derecha está en la manija (va en el texto).
 - Diego (bloque 7): afuera, en el fuelle, frente a la ventanita (0,0; 0,40), mirando hacia −Y. Ventanita centrada en x = 0, z = 1,5.
