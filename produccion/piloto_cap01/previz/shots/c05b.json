@@ -173,8 +173,8 @@
        "actor": "carmen",
        "part": "cabeza",
        "offset": [
-        -0.1,
-        0.38,
+        0.05,
+        0.3,
         -0.12
        ]
       },
@@ -191,8 +191,8 @@
        "actor": "carmen",
        "part": "cabeza",
        "offset": [
-        -0.1,
-        0.38,
+        0.05,
+        0.3,
         -0.12
        ]
       }
@@ -321,7 +321,7 @@
       {
        "t": 1.5,
        "pos": [
-        0.42,
+        0.4,
         1.98
        ],
        "yaw": 24,
@@ -331,8 +331,8 @@
       {
        "t": 2.05,
        "pos": [
-        0.42,
-        1.62
+        0.36,
+        1.66
        ],
        "yaw": 18,
        "head_pitch": 8
@@ -1132,8 +1132,8 @@
       {
        "t": 4.85,
        "pos": [
-        0.5,
-        -0.98
+        0.48,
+        -0.96
        ],
        "yaw": 215,
        "head_yaw": 0,
@@ -1142,8 +1142,8 @@
       {
        "t": 5.4,
        "pos": [
-        0.66,
-        -1.38
+        0.62,
+        -1.25
        ],
        "yaw": 250,
        "head_yaw": 20,
@@ -1152,8 +1152,8 @@
       {
        "t": 6.0,
        "pos": [
-        0.74,
-        -1.66
+        0.72,
+        -1.42
        ],
        "yaw": 320,
        "head_yaw": 20,
@@ -1438,7 +1438,7 @@
      ]
     }
    },
-   "nota_claves": "Termina con el grupo cerca de sus marcas del bloque 6 (Martina -0.25,-1.45; Tomas 0.25,-1.40; Carmen 0.74,-1.66 yendo a 0.80,-1.85; Ivan 0.12,-0.62 de cara a la puerta) y Hugo en el umbral (-0.26, 0.12) para entrar ultimo en c06a. La puerta queda abierta a 114 grados hacia adentro.",
+   "nota_claves": "Termina con el grupo cerca de sus marcas del bloque 6 (Martina -0.25,-1.45; Tomas 0.25,-1.40; Carmen 0.72,-1.42, justo delante del asiento de pasillo de la fila 1; Ivan 0.12,-0.62 de cara a la puerta) y Hugo en el umbral (-0.26, 0.12) para entrar ultimo en c06a. La puerta queda abierta a 114 grados hacia adentro (hoja contra el lado derecho del vestibulo).",
    "stills": {
     "A": {
      "t": 3.62,

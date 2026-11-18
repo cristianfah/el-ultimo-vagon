@@ -156,6 +156,9 @@ def construir_vagon(nombre, y0, filas, P, anclas, tipo="pasajeros", lamparas_on=
     x_pas = P["pasillo"] / 2
     x_asientos = (x_pas + cw / 2, W2 - 0.02 - cw / 2)        # centro del asiento de pasillo y del de ventana
     cab_fila = filas if ultimo else None                      # la cabina reemplaza el ultimo par del lado derecho
+    # asientos: un objeto por fila y lado (<vagon>_asiento_<fila>_<lado>, con su pedestal y apoyabrazos como hijo),
+    # todos hijos del vacio <vagon>_asientos. hide_set puede ocultar el vagon entero o un solo par ("asiento salvaje").
+    raiz_as = L.vacio("%s_asientos" % nombre, col, (0, 0, 0), 0.2)
     for k in range(1, filas + 1):
         yc = y_fila(k)
         ys = yc - P["asiento_atras"]
@@ -164,15 +167,20 @@ def construir_vagon(nombre, y0, filas, P, anclas, tipo="pasajeros", lamparas_on=
         for s in (-1, 1):
             if ultimo and k == cab_fila and s == 1:
                 continue
-            for xc in x_asientos:
-                asientos.caja(s * (xc - cw / 2), s * (xc + cw / 2), Y(ys - cf / 2), Y(ys + cf / 2), cz - ce, cz)
-                asientos.caja(s * (xc - cw / 2), s * (xc + cw / 2), Y(ys - cf / 2 - 0.08), Y(ys - cf / 2 + 0.02), cz, P["respaldo_z"])
-            xm = (x_asientos[0] + x_asientos[1]) / 2
-            detalle.caja(s * (xm - 0.04), s * (xm + 0.04), Y(ys - 0.20), Y(ys + 0.10), 0, cz - ce)       # pedestal
-            detalle.caja(s * x_pas, s * (x_pas + 0.035), Y(ys - 0.22), Y(ys + 0.20), cz + 0.17, cz + 0.21)  # apoyabrazos
-            detalle.caja(s * x_pas, s * (x_pas + 0.035), Y(ys - 0.22), Y(ys - 0.18), cz, cz + 0.17)
-            # lampara de lectura bajo el portaequipaje
             lado = "izq" if s < 0 else "der"
+            par, par_det = L.Malla(), L.Malla()
+            for xc in x_asientos:
+                par.caja(s * (xc - cw / 2), s * (xc + cw / 2), Y(ys - cf / 2), Y(ys + cf / 2), cz - ce, cz)
+                par.caja(s * (xc - cw / 2), s * (xc + cw / 2), Y(ys - cf / 2 - 0.08), Y(ys - cf / 2 + 0.02), cz, P["respaldo_z"])
+            xm = (x_asientos[0] + x_asientos[1]) / 2
+            par_det.caja(s * (xm - 0.04), s * (xm + 0.04), Y(ys - 0.20), Y(ys + 0.10), 0, cz - ce)       # pedestal
+            par_det.caja(s * x_pas, s * (x_pas + 0.035), Y(ys - 0.22), Y(ys + 0.20), cz + 0.17, cz + 0.21)  # apoyabrazos
+            par_det.caja(s * x_pas, s * (x_pas + 0.035), Y(ys - 0.22), Y(ys - 0.18), cz, cz + 0.17)
+            ob_par = par.objeto("%s_asiento_%02d_%s" % (nombre, k, lado), col, "SET_asiento")
+            ob_det = par_det.objeto("%s_asiento_%02d_%s_det" % (nombre, k, lado), col, "SET_detalle")
+            ob_par.parent = raiz_as
+            ob_det.parent = ob_par
+            # lampara de lectura bajo el portaequipaje
             if (k, lado) in lamparas_on:
                 lamp = L.Malla().caja(s * (W2 - 0.40), s * (W2 - 0.30), Y(ys - 0.05), Y(ys + 0.05),
                                       P["rack_z"] - 0.035, P["rack_z"])
@@ -329,7 +337,7 @@ def main():
     info["vagones"].append(construir_vagon("vagon5", G + p, a.filas, P, anclas,
                                            lamparas_on=((4, "izq"), (11, "der"), (17, "izq"))))
     info["vagones"].append(construir_vagon("vagon2", G + p + 3 * paso_vagon, a.filas, P, anclas,
-                                           lamparas_on=((12, "der"), (15, "izq"), (5, "der"))))   # pareja (fila 12 der), lectora (fila 15 izq)
+                                           lamparas_on=((12, "der"), (15, "izq"), (19, "izq"))))   # pareja, lectora, puerta trasera (bloque 1)
     construir_rapto(anclas)
     construir_props(anclas)
     L.aplicar_luz("neutro")

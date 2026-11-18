@@ -23,8 +23,8 @@
   "deg": 0.3,
   "hz": 0.45
  },
- "fuente_tiempos": "llamadas_tiempos.json c04a: b4_p1 0,5-2,3 · b4_p2 2,3-3,8 · b4_p3 3,8-5,0 (pedida 5,5 s -> 6 s). Colchon 0-0,5 s: el grito ya sono y la primera cabeza ya se levanta. El ultimo plano se alarga de 5,0 a 6,0 con accion. Luz: ambar hasta 3,8 y rojo desde 3,8 (nota del montaje v1c: el video de b4_p3 parte ya en rojo; el chasquido y el medio segundo de negro van en post).",
- "notes": "Vagon 5, coordenadas de mundo (origen ANC_fuelle = 0,0,0; filas: 11 en y=12,53, 7 en 16,13, 8 en 15,23, 1 en 21,53; puerta delantera y=23,08). Martina ventana der (1,12; 12,53) y Tomas pasillo der (0,56; 12,53), sentados; Ivan fila 7 izq pasillo; Carmen fila 8 izq ventana; pasajeros en filas 1, 3 y 4. P1 y P3 miran a la puerta delantera (+Y) desde el pasillo junto a la fila 11 (la pareja queda detras de la camara); P2 mira a la cola desde la fila 10 der: Martina a la izquierda del cuadro, Tomas al borde derecho.",
+ "fuente_tiempos": "llamadas_tiempos.json c04a: b4_p1 0,5-2,3 · b4_p2 2,3-3,8 · b4_p3 3,8-5,0 (pedida 5,5 s -> 6 s). Colchón 0-0,5 s: el grito ya sonó y la primera cabeza ya se levanta. El último plano se alarga de 5,0 a 6,0 con acción. Luz: ámbar hasta 3,8 y rojo desde 3,8 (nota del montaje v1c: el video de b4_p3 parte ya en rojo; el chasquido y el medio segundo de negro van en post).",
+ "notes": "Vagón 5, coordenadas de mundo (origen ANC_fuelle = 0,0,0; filas: 11 en y=12,53, 7 en 16,13, 8 en 15,23, 1 en 21,53; puerta delantera y=23,08). Martina ventana der (1,12; 12,53) y Tomás pasillo der (0,56; 12,53), sentados; Iván fila 7 izq pasillo; Carmen fila 8 izq ventana; pasajeros en filas 1, 3 y 4. P1 y P3 miran a la puerta delantera (+Y) desde el pasillo junto a la fila 11 (la pareja queda detrás de la cámara); P2 mira a la cola desde la fila 10 der: Martina a la izquierda del cuadro, Tomás al borde derecho.",
  "shots": [
   {
    "id": "b4_p1",
@@ -36,12 +36,12 @@
     "usar_hasta_s": 2.3,
     "dur_montaje_s": 1.8
    },
-   "descripcion": "Plano general hacia la puerta delantera, por encima de los respaldos. Un grito ahogado llega desde adelante (0,2 s). Las cabezas se levantan en ola, de la puerta hacia la camara: primero el pasajero de la fila 1 junto a la puerta (0,25-0,5 s), despues dos pasajeros de las filas 3 y 4 (0,5-0,9 s), despues Ivan, que se pone de pie en la fila 7 (1,0-1,55 s), y al final Carmen, que despierta en la fila 8 y lo mira (1,45-1,8 s). Martina y Tomas quedan detras de la camara. Nadie habla.",
-   "motivo_camara": "En mano leve, a la altura de los ojos de alguien sentado (1,24 m), en el pasillo junto a la fila 11: es la mirada de la pareja. El respaldo de la fila 10 izquierda entra en primer termino. La camara sube apenas, tarde, cuando Ivan se para.",
+   "descripcion": "Plano general hacia la puerta delantera, por encima de los respaldos. Un grito ahogado llega desde adelante (0,2 s). Las cabezas se levantan en ola, de la puerta hacia la cámara: primero el pasajero de la fila 1 junto a la puerta (0,25-0,5 s), después dos pasajeros de las filas 3 y 4 (0,5-0,9 s), después Iván, que se pone de pie en la fila 7 (1,0-1,55 s), y al final Carmen, que despierta en la fila 8 y lo mira (1,45-1,8 s). Martina y Tomás quedan detrás de la cámara. Nadie habla.",
+   "motivo_camara": "En mano leve, a la altura de los ojos de alguien sentado (1,3 m), en el pasillo junto a la fila 11: es la mirada de la pareja. El respaldo de la fila 10 izquierda entra en primer término. La cámara sube apenas, tarde, cuando Iván se para.",
    "camera": {
     "tag": "MANO_LEVE",
     "mira": "hacia la puerta delantera por encima de los respaldos",
-    "mov": "en mano leve; sube un poco, tarde, cuando Ivan se para",
+    "mov": "en mano leve; sube un poco, tarde, cuando Iván se para",
     "lens_mm": 28,
     "mode": "handheld",
     "handheld": {
@@ -105,19 +105,19 @@
      }
     ]
    },
-   "en_cuadro": "Primer termino a la izquierda: el respaldo de la fila 10, desenfocado. Las filas de respaldos corren hacia la puerta delantera, al fondo al centro. A la izquierda, Carmen sentada junto a la ventana y Ivan, mas adelante, que se pone de pie en el pasillo. Al fondo, a la derecha, las cabezas de los pasajeros de las filas 1 y 3; a la izquierda, el de la fila 4.",
+   "en_cuadro": "Primer término a la izquierda: el respaldo de la fila 10, desenfocado. Las filas de respaldos corren hacia la puerta delantera, al fondo al centro. A la izquierda, Carmen sentada junto a la ventana y Iván, más adelante, que se pone de pie en el pasillo. Al fondo, a la derecha, las cabezas de los pasajeros de las filas 1 y 3; a la izquierda, el de la fila 4.",
    "stills": {
     "A": {
      "t": 0.55,
-     "desc": "Grito ahogado: la cabeza del pasajero de la fila 1 ya se levanto y mira la puerta; el resto duerme."
+     "desc": "Grito ahogado: la cabeza del pasajero de la fila 1 ya se levantó y mira la puerta; el resto duerme."
     },
     "B": {
      "t": 1.3,
-     "desc": "Ivan a medio pararse; los pasajeros del fondo ya miran la puerta; Carmen todavia dormida."
+     "desc": "Iván a medio pararse; los pasajeros del fondo ya miran la puerta; Carmen todavía dormida."
     },
     "C": {
      "t": 2.25,
-     "desc": "Ivan de pie mirando la puerta; Carmen despierta y lo mira."
+     "desc": "Iván de pie mirando la puerta; Carmen despierta y lo mira."
     }
    },
    "actors": {
@@ -131,24 +131,24 @@
         21.53
        ],
        "yaw": 0,
-       "head_pitch": -26,
+       "head_pitch": 26,
        "head_yaw": -6
       },
       {
        "t": 0.22,
-       "head_pitch": -26,
+       "head_pitch": 26,
        "head_yaw": -6
       },
       {
        "t": 0.5,
-       "head_pitch": 4,
+       "head_pitch": -4,
        "head_yaw": 20,
        "dz": 0.03,
        "ease": "out"
       },
       {
        "t": 2.3,
-       "head_pitch": 2,
+       "head_pitch": -2,
        "head_yaw": 22,
        "dz": 0.03
       }
@@ -164,17 +164,17 @@
         19.73
        ],
        "yaw": 0,
-       "head_pitch": -24,
+       "head_pitch": 24,
        "head_yaw": 8
       },
       {
        "t": 0.45,
-       "head_pitch": -24,
+       "head_pitch": 24,
        "head_yaw": 8
       },
       {
        "t": 0.75,
-       "head_pitch": 2,
+       "head_pitch": -2,
        "head_yaw": 24,
        "dz": 0.03,
        "ease": "out"
@@ -197,17 +197,17 @@
         18.83
        ],
        "yaw": 0,
-       "head_pitch": -22,
+       "head_pitch": 22,
        "head_yaw": -4
       },
       {
        "t": 0.6,
-       "head_pitch": -22,
+       "head_pitch": 22,
        "head_yaw": -4
       },
       {
        "t": 0.92,
-       "head_pitch": 2,
+       "head_pitch": -2,
        "head_yaw": -16,
        "dz": 0.03,
        "ease": "out"
@@ -231,17 +231,17 @@
        ],
        "yaw": 0,
        "dz": -0.46,
-       "head_pitch": -10,
+       "head_pitch": 10,
        "head_yaw": 4
       },
       {
        "t": 0.8,
-       "head_pitch": -10,
+       "head_pitch": 10,
        "head_yaw": 4
       },
       {
        "t": 0.97,
-       "head_pitch": 2,
+       "head_pitch": -2,
        "head_yaw": -5,
        "ease": "out"
       },
@@ -284,24 +284,24 @@
         15.23
        ],
        "yaw": 0,
-       "head_pitch": -30,
+       "head_pitch": 30,
        "head_yaw": 10
       },
       {
        "t": 1.42,
-       "head_pitch": -30,
+       "head_pitch": 30,
        "head_yaw": 10
       },
       {
        "t": 1.8,
-       "head_pitch": 12,
+       "head_pitch": -12,
        "head_yaw": -28,
        "dz": 0.04,
        "ease": "out"
       },
       {
        "t": 2.3,
-       "head_pitch": 10,
+       "head_pitch": -10,
        "head_yaw": -26,
        "dz": 0.04
       }
@@ -361,8 +361,8 @@
     "usar_hasta_s": 3.8,
     "dur_montaje_s": 1.5
    },
-   "descripcion": "Primer plano de Martina, sentada en la ventana. Ella sabe: mira por el pasillo hacia adelante, hacia la puerta delantera, y no parpadea. Su mano IZQUIERDA se cierra sobre el brazo derecho de Tomas, que esta a su izquierda (2,45 s). Tomas, desenfocado en el borde derecho del cuadro, deja de mirar hacia adelante y gira la cabeza hacia ella (2,5-2,85 s). Boca cerrada; nadie habla.",
-   "motivo_camara": "En mano, desde el asiento de enfrente (fila 10 der, ventana, mirando a la cola), por encima del respaldo, a 1,5 m: el 50 mm comprime y deja a Tomas como borde desenfocado. La camara esta del lado de la ventana para que la mirada de Martina pase por el lado del pasillo, lejos del lente.",
+   "descripcion": "Primer plano de Martina, sentada en la ventana. Ella sabe: mira por el pasillo hacia adelante, hacia la puerta delantera, y no parpadea. Su mano IZQUIERDA se cierra sobre el brazo derecho de Tomás, que está a su izquierda (2,45 s). Tomás, desenfocado en el borde derecho del cuadro, deja de mirar hacia adelante y gira la cabeza hacia ella (2,5-2,85 s). Boca cerrada; nadie habla.",
+   "motivo_camara": "En mano, desde el asiento de enfrente (fila 10 der, ventana, mirando a la cola), por encima del respaldo, a 1,5 m: el 50 mm comprime y deja a Tomás como borde desenfocado. La cámara está del lado de la ventana para que la mirada de Martina pase por el lado del pasillo, lejos del lente.",
    "camera": {
     "tag": "MANO",
     "mira": "hacia la cola, a Martina en la ventana",
@@ -404,11 +404,11 @@
      }
     ]
    },
-   "en_cuadro": "Martina a la izquierda del cuadro, de pecho hacia arriba, con la ventana negra detras. En el borde derecho, desenfocado, el costado de Tomas: su nariz entra al cuadro cuando gira hacia ella. Abajo, en primer termino, el borde del respaldo de la fila 10.",
+   "en_cuadro": "Martina a la izquierda del cuadro, de pecho hacia arriba; detrás de ella, el vagón hacia la cola en penumbra y la puerta trasera a lo lejos. En el borde derecho, desenfocado, el costado de Tomás: su nariz entra al cuadro cuando gira hacia ella. Abajo, en primer término, el borde del respaldo de la fila 10.",
    "stills": {
     "A": {
      "t": 2.35,
-     "desc": "Martina mira por el pasillo hacia la puerta delantera; Tomas, al borde, todavia mira adelante.",
+     "desc": "Martina mira por el pasillo hacia la puerta delantera; Tomás, al borde, todavía mira adelante.",
      "lados": {
       "martina": "izq",
       "tomas": "der"
@@ -416,7 +416,7 @@
     },
     "B": {
      "t": 2.9,
-     "desc": "Su mano ya le aprieta el brazo; Tomas giro la cabeza hacia ella (la nariz entra por la derecha).",
+     "desc": "Su mano ya le aprieta el brazo; Tomás giró la cabeza hacia ella (la nariz entra por la derecha).",
      "lados": {
       "martina": "izq",
       "tomas": "der"
@@ -424,7 +424,7 @@
     },
     "C": {
      "t": 3.75,
-     "desc": "Ella sigue mirando adelante; el la mira.",
+     "desc": "Ella sigue mirando adelante; él la mira.",
      "lados": {
       "martina": "izq",
       "tomas": "der"
@@ -451,13 +451,13 @@
       },
       {
        "t": 2.6,
-       "head_pitch": -1,
+       "head_pitch": 1,
        "head_yaw": 25,
        "ease": "out"
       },
       {
        "t": 3.8,
-       "head_pitch": -1,
+       "head_pitch": 1,
        "head_yaw": 24
       }
      ]
@@ -481,13 +481,13 @@
       },
       {
        "t": 2.85,
-       "head_pitch": -3,
+       "head_pitch": 3,
        "head_yaw": -84,
        "ease": "out"
       },
       {
        "t": 3.8,
-       "head_pitch": -3,
+       "head_pitch": 3,
        "head_yaw": -86
       }
      ]
@@ -505,8 +505,8 @@
     "dur_montaje_s": 1.2,
     "alargue_s": "5.0-6.0"
    },
-   "descripcion": "Plano general fijo hacia la puerta delantera, ya en ROJO desde el primer cuadro (el chasquido electrico y el medio segundo de negro van en post, antes de este plano). La tira roja del techo corre hasta la puerta. Todos estan de pie y congelados: Ivan en el pasillo, Carmen frente a su asiento, los pasajeros del fondo; miran un instante la tira roja y vuelven a la puerta. El pasajero de la fila 1 retrocede despacio desde la puerta. Alargue 5,0-6,0: Carmen se acerca al pasillo, el pasajero sigue retrocediendo.",
-   "motivo_camara": "Fija, el mismo eje del P1 un poco mas alta: el mismo vagon, ahora en rojo. El contraste con la mano del P1 hace que el cambio de luz sea lo unico que se mueve.",
+   "descripcion": "Plano general fijo hacia la puerta delantera, ya en ROJO desde el primer cuadro (el chasquido eléctrico y el medio segundo de negro van en post, antes de este plano). La tira roja del techo corre hasta la puerta. Todos están de pie y congelados: Iván en el pasillo, Carmen frente a su asiento, los pasajeros del fondo; miran un instante la tira roja y vuelven a la puerta. El pasajero de la fila 1 retrocede despacio desde la puerta. Alargue 5,0-6,0: Carmen se acerca al pasillo, el pasajero sigue retrocediendo.",
+   "motivo_camara": "Fija, el mismo eje del P1 un poco más alta: el mismo vagón, ahora en rojo. El contraste con la mano del P1 hace que el cambio de luz sea lo único que se mueve.",
    "camera": {
     "tag": "FIJA",
     "mira": "hacia la puerta delantera, el mismo eje del P1",
@@ -535,7 +535,7 @@
      }
     ]
    },
-   "en_cuadro": "El mismo eje del P1, en rojo: la tira roja del techo en fuga hacia la puerta delantera, al fondo al centro. A la izquierda, Carmen de pie frente a su asiento e Ivan de pie en el pasillo, de espaldas. Al fondo, los pasajeros de pie; el de la fila 1 retrocede desde la puerta. Primer termino a la izquierda: el respaldo de la fila 10.",
+   "en_cuadro": "El mismo eje del P1, en rojo: la tira roja del techo en fuga hacia la puerta delantera, al fondo al centro. A la izquierda, Carmen de pie frente a su asiento e Iván de pie en el pasillo, de espaldas. Al fondo, los pasajeros de pie; el de la fila 1 retrocede desde la puerta. Primer término a la izquierda: el respaldo de la fila 10.",
    "stills": {
     "A": {
      "t": 3.85,
@@ -561,12 +561,12 @@
         16.52
        ],
        "yaw": 0,
-       "head_pitch": 16,
+       "head_pitch": -16,
        "head_yaw": -4
       },
       {
        "t": 4.2,
-       "head_pitch": 16
+       "head_pitch": -16
       },
       {
        "t": 4.5,
@@ -602,12 +602,12 @@
         15.64
        ],
        "yaw": 0,
-       "head_pitch": 14,
+       "head_pitch": -14,
        "head_yaw": -6
       },
       {
        "t": 4.25,
-       "head_pitch": 14
+       "head_pitch": -14
       },
       {
        "t": 4.55,
@@ -649,7 +649,7 @@
         22.25
        ],
        "yaw": 26,
-       "head_pitch": 6,
+       "head_pitch": -6,
        "head_yaw": 0
       },
       {
@@ -679,7 +679,7 @@
         20.14
        ],
        "yaw": 0,
-       "head_pitch": 18,
+       "head_pitch": -18,
        "head_yaw": 10
       },
       {
@@ -703,7 +703,7 @@
         19.24
        ],
        "yaw": 0,
-       "head_pitch": 14,
+       "head_pitch": -14,
        "head_yaw": -10
       },
       {

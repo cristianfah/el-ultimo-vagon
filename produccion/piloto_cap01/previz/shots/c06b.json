@@ -14,9 +14,9 @@
   "deg": 0.3,
   "hz": 0.45
  },
- "fuente_tiempos": "llamadas_tiempos.json: b6_p2 0.5-2.0, b6_p3 2.0-4.0 (pedida 4.5 s -> 5 s). Colchon 0-0.5 s: Carmen ya baja la mirada a la mano. b6_p3 se alarga de 4.0 a 5.0 con accion (Tomas la sigue mirando y ella baja mas la cabeza).",
+ "fuente_tiempos": "llamadas_tiempos.json: b6_p2 0.5-2.0, b6_p3 2.0-4.0 (pedida 4.5 s -> 5 s). Colchón 0-0.5 s: Carmen ya baja la mirada a la mano. b6_p3 se alarga de 4.0 a 5.0 con acción (Tomás la sigue mirando y ella baja más la cabeza).",
  "props_in_frame": [],
- "notes": "Ultimo vagon, luz roja con el tubo frio sobre la puerta. Todos en sus marcas del brief, mirando hacia la puerta: Martina -0.25/-1.55 a la izquierda de Tomas 0.25/-1.45; Carmen 0.80/-1.85; Ivan con la espalda contra la puerta 0.10/-0.32; Hugo junto a la cerradura -0.62/-0.50. Las dos camaras, del lado de la puerta mirando a -Y: ahi Martina queda a la derecha del cuadro y Tomas a la izquierda; al fondo, ventana trasera negra y cabina del revisor a la izquierda del cuadro.",
+ "notes": "Último vagón, luz roja con el tubo frío sobre la puerta. Todos en sus marcas del brief, mirando hacia la puerta: Martina -0.25/-1.55 a la izquierda de Tomás 0.25/-1.45; Carmen 0.80/-1.85; Iván con la espalda contra la puerta 0.10/-0.32; Hugo junto a la cerradura -0.62/-0.50. Las dos cámaras, del lado de la puerta mirando a -Y: ahí Martina queda a la derecha del cuadro y Tomás a la izquierda; al fondo, ventana trasera negra y cabina del revisor a la izquierda del cuadro.",
  "shots": [
   {
    "id": "b6_p2",
@@ -28,8 +28,8 @@
     "usar_hasta_s": 2.0,
     "dur_montaje_s": 1.5
    },
-   "descripcion": "Primer plano de Carmen, de tres cuartos, desde el lado de la puerta. Cuadro 0: ya tiene la mano derecha levantada delante del pecho y baja la mirada. Se mira la palma derecha: el corte fino con la mancha negra rojiza (ESTADO_carmen_palma). A 1.05 s cierra la mano en un puno y la mete dentro del abrigo, girando apenas el hombro para taparla. Levanta la cabeza y mira a los demas, uno por uno (primero hacia la puerta, a Ivan y a Hugo; despues a Tomas y Martina), para ver si alguien la vio. Nadie la mira. No habla; boca cerrada, respiracion contenida.",
-   "motivo_camara": "Fija a proposito: el silencio despues del caos. 50 mm a 1,2 m, a la altura del pecho, un poco por debajo de sus ojos, para tener en cuadro la cara y la mano; la camara no la persigue cuando mira a los demas.",
+   "descripcion": "Primer plano de Carmen, de tres cuartos, desde el lado de la puerta. Cuadro 0: ya tiene la mano derecha levantada delante del pecho y baja la mirada. Se mira la palma derecha: el corte fino con la mancha negra rojiza (ESTADO_carmen_palma). A 1.05 s cierra la mano en un puño y la mete dentro del abrigo, girando apenas el hombro para taparla. Levanta la cabeza y mira a los demás, uno por uno (primero hacia la puerta, a Iván y a Hugo; después a Tomás y Martina), para ver si alguien la vio. Nadie la mira. No habla; boca cerrada, respiración contenida.",
+   "motivo_camara": "Fija a propósito: el silencio después del caos. 50 mm a 1,6 m, desde junto a la puerta, casi a la altura de sus ojos, para tener en cuadro la cara, aire sobre la cabeza y la mano; la cámara no la persigue cuando mira a los demás.",
    "camera": {
     "lens_mm": 50,
     "tag": "FIJA",
@@ -44,19 +44,19 @@
      {
       "t": 0.0,
       "pos": [
-       1.04,
-       -0.72,
-       1.34
+       1.05,
+       -0.3,
+       1.44
       ],
       "look_at": [
        0.8,
        -1.85,
-       1.26
+       1.27
       ]
      }
     ]
    },
-   "en_cuadro": "Carmen (celeste) al centro, algo a la derecha, con aire sobre la cabeza; mira hacia abajo, a su mano (fuera del cilindro: va en el prompt). Detras, los asientos del lado derecho del vagon y, al fondo a la izquierda del cuadro, la cabina del revisor.",
+   "en_cuadro": "Carmen (celeste) al centro, algo a la derecha, con aire sobre la cabeza; mira hacia abajo, a su mano (fuera del cilindro: va en el prompt). Detrás, los asientos del lado derecho del vagón y, al fondo a la izquierda del cuadro, la cabina del revisor.",
    "stills": {
     "A": {
      "t": 0.6,
@@ -64,11 +64,11 @@
     },
     "B": {
      "t": 1.15,
-     "desc": "Cierra la mano en un puno y la mete dentro del abrigo."
+     "desc": "Cierra la mano en un puño y la mete dentro del abrigo."
     },
     "C": {
      "t": 1.9,
-     "desc": "Levanta la vista y mira a los demas (hacia la derecha del cuadro) por si alguien la vio."
+     "desc": "Levanta la vista y mira a los demás (hacia la derecha del cuadro) por si alguien la vio."
     }
    },
    "actors": {
@@ -87,61 +87,61 @@
        ],
        "yaw": 4,
        "head_yaw": -8,
-       "head_pitch": -30
+       "head_pitch": 30
       },
       {
        "t": 0.45,
        "head_yaw": -12,
-       "head_pitch": -42
+       "head_pitch": 42
       },
       {
        "t": 1.02,
        "head_yaw": -13,
-       "head_pitch": -43
+       "head_pitch": 43
       },
       {
        "t": 1.18,
        "yaw": 10,
        "head_yaw": -10,
-       "head_pitch": -48,
+       "head_pitch": 48,
        "ease": "out"
       },
       {
        "t": 1.32,
        "yaw": 10,
        "head_yaw": -6,
-       "head_pitch": -40
+       "head_pitch": 40
       },
       {
        "t": 1.47,
        "yaw": 8,
        "head_yaw": 24,
-       "head_pitch": -22,
+       "head_pitch": 22,
        "ease": "out"
       },
       {
        "t": 1.62,
        "yaw": 8,
        "head_yaw": 32,
-       "head_pitch": -6
+       "head_pitch": 6
       },
       {
        "t": 1.9,
        "yaw": 8,
        "head_yaw": 50,
-       "head_pitch": -4
+       "head_pitch": 4
       },
       {
        "t": 2.0,
        "yaw": 8,
        "head_yaw": 52,
-       "head_pitch": -4
+       "head_pitch": 4
       },
       {
        "t": 5.0,
        "yaw": 8,
        "head_yaw": 46,
-       "head_pitch": -14
+       "head_pitch": 14
       }
      ]
     },
@@ -156,44 +156,44 @@
        ],
        "yaw": 10,
        "head_yaw": -24,
-       "head_pitch": -16
+       "head_pitch": 16
       },
       {
        "t": 2.0,
        "yaw": 10,
        "head_yaw": -22,
-       "head_pitch": -18
+       "head_pitch": 18
       },
       {
        "t": 2.12,
        "yaw": 12,
        "head_yaw": -18,
-       "head_pitch": -18
+       "head_pitch": 24
       },
       {
        "t": 2.5,
        "yaw": 16,
        "head_yaw": 40,
-       "head_pitch": -14
+       "head_pitch": 20
       },
       {
        "t": 2.82,
        "yaw": 18,
        "head_yaw": 72,
-       "head_pitch": -7,
+       "head_pitch": 10,
        "ease": "out"
       },
       {
        "t": 4.0,
        "yaw": 18,
        "head_yaw": 75,
-       "head_pitch": -9
+       "head_pitch": 11
       },
       {
        "t": 5.0,
        "yaw": 20,
        "head_yaw": 78,
-       "head_pitch": -12
+       "head_pitch": 13
       }
      ]
     },
@@ -212,31 +212,31 @@
        ],
        "yaw": -4,
        "head_yaw": 12,
-       "head_pitch": -30
+       "head_pitch": 30
       },
       {
        "t": 2.0,
        "yaw": -4,
        "head_yaw": 12,
-       "head_pitch": -34
+       "head_pitch": 34
       },
       {
        "t": 3.0,
        "yaw": -4,
        "head_yaw": 14,
-       "head_pitch": -38
+       "head_pitch": 38
       },
       {
        "t": 4.0,
        "yaw": -4,
        "head_yaw": 16,
-       "head_pitch": -40
+       "head_pitch": 40
       },
       {
        "t": 5.0,
        "yaw": -6,
        "head_yaw": 20,
-       "head_pitch": -44
+       "head_pitch": 44
       }
      ]
     },
@@ -250,13 +250,13 @@
         -0.32
        ],
        "yaw": 180,
-       "head_yaw": -30,
-       "head_pitch": -26
+       "head_yaw": 40,
+       "head_pitch": 26
       },
       {
        "t": 5.0,
-       "head_yaw": -24,
-       "head_pitch": -30
+       "head_yaw": 32,
+       "head_pitch": 30
       }
      ]
     },
@@ -271,12 +271,12 @@
        ],
        "yaw": -36,
        "head_yaw": -26,
-       "head_pitch": -6
+       "head_pitch": 6
       },
       {
        "t": 5.0,
        "head_yaw": -20,
-       "head_pitch": -4
+       "head_pitch": 4
       }
      ]
     }
@@ -284,7 +284,7 @@
   },
   {
    "id": "b6_p3",
-   "titulo": "P3 · Tomas mira a Martina",
+   "titulo": "P3 · Tomás mira a Martina",
    "t0": 2.0,
    "t1": 5.0,
    "montaje": {
@@ -293,12 +293,12 @@
     "dur_montaje_s": 2.0,
     "alargue_s": "4.0-5.0"
    },
-   "descripcion": "Plano de dos desde el lado de la puerta, de frente a ellos. Tomas a la izquierda del cuadro, Martina a la derecha (en el vagon, Martina esta a la izquierda de Tomas). Tomas tiene la mirada baja; a 2.1 s gira la cabeza hacia la derecha del cuadro y se queda mirando a Martina (2.82 s). Martina no lo mira: mira el piso, cada vez mas encerrada. Al fondo, la pared trasera con la ventana trasera negra y la cabina del revisor a la izquierda del cuadro. Una sola puerta, detras de la camara. Alargue (4.0-5.0): el mismo estado, Tomas sigue mirandola y ella baja mas la cabeza.",
-   "motivo_camara": "Fija: el silencio. A la altura de los ojos de Tomas, desde junto a la puerta (entre Ivan y Hugo), para que la mirada de Tomas cruce el cuadro de izquierda a derecha y la de Martina caiga al piso. El fondo (ventana negra, cabina a la izquierda) confirma que solo hay una puerta.",
+   "descripcion": "Plano de dos desde el lado de la puerta, de frente a ellos. Tomás a la izquierda del cuadro, Martina a la derecha (en el vagón, Martina está a la izquierda de Tomás). Tomás tiene la mirada baja; a 2.1 s gira la cabeza hacia la derecha del cuadro y se queda mirando a Martina (2.82 s). Martina no lo mira: mira el piso, cada vez más encerrada. Al fondo, la pared trasera con la ventana trasera negra y la cabina del revisor a la izquierda del cuadro. Una sola puerta, detrás de la cámara. Alargue (4.0-5.0): el mismo estado, Tomás sigue mirándola y ella baja más la cabeza.",
+   "motivo_camara": "Fija: el silencio. A la altura de los ojos de Tomás, pegada a la puerta (entre Iván y Hugo), con 32 mm porque el vestíbulo no da más distancia y así entran los dos, para que la mirada de Tomás cruce el cuadro de izquierda a derecha y la de Martina caiga al piso. El fondo (ventana negra, cabina a la izquierda) confirma que solo hay una puerta.",
    "camera": {
-    "lens_mm": 35,
+    "lens_mm": 32,
     "tag": "FIJA",
-    "mira": "hacia el fondo del vagon, a Tomas y Martina",
+    "mira": "hacia el fondo del vagón, a Tomás y Martina",
     "mov": "fija; solo vibra con el tren",
     "vibration": {
      "deg": 0.03,
@@ -309,23 +309,23 @@
      {
       "t": 2.0,
       "pos": [
-       -0.1,
-       -0.44,
-       1.72
+       -0.12,
+       -0.24,
+       1.66
       ],
       "look_at": [
        0.0,
-       -1.52,
-       1.44
+       -1.5,
+       1.5
       ]
      }
     ]
    },
-   "en_cuadro": "Tomas (azul marino) a la izquierda, Martina (avena) a la derecha, de la cintura para arriba con aire sobre las cabezas; entre ellos y por encima, el fondo del vagon: la ventana trasera negra al centro y la cabina del revisor a la izquierda del cuadro.",
+   "en_cuadro": "Tomás (azul marino) a la izquierda, Martina (avena) a la derecha, de la cintura para arriba con aire sobre las cabezas; entre ellos y por encima, el fondo del vagón: la ventana trasera negra al centro y la cabina del revisor a la izquierda del cuadro.",
    "stills": {
     "A": {
      "t": 2.1,
-     "desc": "Los dos frente a la camara, con la mirada baja; Tomas empieza a girar la cabeza.",
+     "desc": "Los dos frente a la cámara, con la mirada baja; Tomás empieza a girar la cabeza.",
      "lados": {
       "tomas": "izq",
       "martina": "der"
@@ -333,7 +333,7 @@
     },
     "B": {
      "t": 2.9,
-     "desc": "Tomas mira a Martina (hacia la derecha del cuadro); ella mira el piso.",
+     "desc": "Tomás mira a Martina (hacia la derecha del cuadro); ella mira el piso.",
      "lados": {
       "tomas": "izq",
       "martina": "der"
@@ -364,61 +364,61 @@
        ],
        "yaw": 4,
        "head_yaw": -8,
-       "head_pitch": -30
+       "head_pitch": 30
       },
       {
        "t": 0.45,
        "head_yaw": -12,
-       "head_pitch": -42
+       "head_pitch": 42
       },
       {
        "t": 1.02,
        "head_yaw": -13,
-       "head_pitch": -43
+       "head_pitch": 43
       },
       {
        "t": 1.18,
        "yaw": 10,
        "head_yaw": -10,
-       "head_pitch": -48,
+       "head_pitch": 48,
        "ease": "out"
       },
       {
        "t": 1.32,
        "yaw": 10,
        "head_yaw": -6,
-       "head_pitch": -40
+       "head_pitch": 40
       },
       {
        "t": 1.47,
        "yaw": 8,
        "head_yaw": 24,
-       "head_pitch": -22,
+       "head_pitch": 22,
        "ease": "out"
       },
       {
        "t": 1.62,
        "yaw": 8,
        "head_yaw": 32,
-       "head_pitch": -6
+       "head_pitch": 6
       },
       {
        "t": 1.9,
        "yaw": 8,
        "head_yaw": 50,
-       "head_pitch": -4
+       "head_pitch": 4
       },
       {
        "t": 2.0,
        "yaw": 8,
        "head_yaw": 52,
-       "head_pitch": -4
+       "head_pitch": 4
       },
       {
        "t": 5.0,
        "yaw": 8,
        "head_yaw": 46,
-       "head_pitch": -14
+       "head_pitch": 14
       }
      ]
     },
@@ -433,44 +433,44 @@
        ],
        "yaw": 10,
        "head_yaw": -24,
-       "head_pitch": -16
+       "head_pitch": 16
       },
       {
        "t": 2.0,
        "yaw": 10,
        "head_yaw": -22,
-       "head_pitch": -18
+       "head_pitch": 18
       },
       {
        "t": 2.12,
        "yaw": 12,
        "head_yaw": -18,
-       "head_pitch": -18
+       "head_pitch": 24
       },
       {
        "t": 2.5,
        "yaw": 16,
        "head_yaw": 40,
-       "head_pitch": -14
+       "head_pitch": 20
       },
       {
        "t": 2.82,
        "yaw": 18,
        "head_yaw": 72,
-       "head_pitch": -7,
+       "head_pitch": 10,
        "ease": "out"
       },
       {
        "t": 4.0,
        "yaw": 18,
        "head_yaw": 75,
-       "head_pitch": -9
+       "head_pitch": 11
       },
       {
        "t": 5.0,
        "yaw": 20,
        "head_yaw": 78,
-       "head_pitch": -12
+       "head_pitch": 13
       }
      ]
     },
@@ -489,31 +489,31 @@
        ],
        "yaw": -4,
        "head_yaw": 12,
-       "head_pitch": -30
+       "head_pitch": 30
       },
       {
        "t": 2.0,
        "yaw": -4,
        "head_yaw": 12,
-       "head_pitch": -34
+       "head_pitch": 34
       },
       {
        "t": 3.0,
        "yaw": -4,
        "head_yaw": 14,
-       "head_pitch": -38
+       "head_pitch": 38
       },
       {
        "t": 4.0,
        "yaw": -4,
        "head_yaw": 16,
-       "head_pitch": -40
+       "head_pitch": 40
       },
       {
        "t": 5.0,
        "yaw": -6,
        "head_yaw": 20,
-       "head_pitch": -44
+       "head_pitch": 44
       }
      ]
     },
@@ -527,13 +527,13 @@
         -0.32
        ],
        "yaw": 180,
-       "head_yaw": -30,
-       "head_pitch": -26
+       "head_yaw": 40,
+       "head_pitch": 26
       },
       {
        "t": 5.0,
-       "head_yaw": -24,
-       "head_pitch": -30
+       "head_yaw": 32,
+       "head_pitch": 30
       }
      ]
     },
@@ -548,12 +548,12 @@
        ],
        "yaw": -36,
        "head_yaw": -26,
-       "head_pitch": -6
+       "head_pitch": 6
       },
       {
        "t": 5.0,
        "head_yaw": -20,
-       "head_pitch": -4
+       "head_pitch": 4
       }
      ]
     }

@@ -523,11 +523,15 @@ def main():
         h.visible(vid, False, fb)
         crear_esquirlas(col_fx, vid, g, ll.n, fps, fb, h)
 
-    # "pared movil": objetos del set que un plano oculta para poder poner la camara donde iria la pared
+    # "pared movil": objetos del set que un plano oculta para poder poner la camara donde iria la pared.
+    # Un nombre oculta tambien a todos sus hijos (p. ej. "vagon5_asientos" = todos los asientos del vagon 5;
+    # "vagon5_asiento_10_der" = solo ese par, el "asiento salvaje" de un plano de dos).
     ocultables = sorted({n for sh in ficha["shots"] for n in sh.get("hide_set", [])})
     for n in ocultables:
         if bpy.data.objects.get(n) is None:
             raise KeyError("hide_set: no existe el objeto %r en el set" % n)
+    oculta = {n: [o.name for o in [bpy.data.objects[n]] + list(bpy.data.objects[n].children_recursive)] for n in ocultables}
+    todos_ocultables = sorted({x for v in oculta.values() for x in v})
 
     grupos_luz = LZ.montar()
     LZ.hornear(grupos_luz, ficha, ll.n, fps)
@@ -605,8 +609,9 @@ def main():
                                          "up": list(cq @ Vector((0, 1, 0)))},
                                  "actores": cuadro_actores, "props": cuadro_props})
 
-        for n in ocultables:
-            h.visible(bpy.data.objects[n], n not in sh.get("hide_set", []), f)
+        ocultos = {x for n in sh.get("hide_set", []) for x in oculta[n]}
+        for n in todos_ocultables:
+            h.visible(bpy.data.objects[n], n not in ocultos, f)
         for n in figuras:
             for parte in L.partes_figura(n):
                 ob = bpy.data.objects.get(parte)

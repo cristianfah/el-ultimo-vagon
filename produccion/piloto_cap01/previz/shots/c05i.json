@@ -1,0 +1,328 @@
+{
+ "call_id": "c05i",
+ "bloque": "5 · La huida",
+ "duration_s": 3,
+ "fps": 24,
+ "resolution": [
+  720,
+  1280
+ ],
+ "origin": "ANC_fuelle",
+ "set_light": "rojo",
+ "train_sway": {
+  "m": 0.006,
+  "deg": 0.3,
+  "hz": 0.45
+ },
+ "fuente_tiempos": "llamadas_tiempos.json (c05i): b5_p5 0.5-1.5; pedida 2.0 s, duration_s 3. Sin MP4 de referencia (mp4_ref false): va con su pagina de storyboard y su fotograma guia. Se alarga de 1.5 a 3.0 con accion (Ivan la arranca y la mano deja los vidrios).",
+ "props_in_frame": [],
+ "notes": "Fuelle, contra la puerta del vagon 5 (y=3.0). Carmen de espaldas a la puerta en (0.18, 2.81), como en c05b P4; su palma derecha va en los vidrios que quedan en el borde inferior de la ventanita (x -0.04, z 1.28), a su derecha (izquierda del cuadro). Camara cerrada a la altura de la mano, desde la derecha de Carmen.",
+ "set_anim": {
+  "glass_break": [
+   {
+    "object": "VIDRIO_vagon5_tras",
+    "t": 0.0,
+    "n": 0,
+    "seed": 5,
+    "nota": "el vidrio ya esta reventado desde c05a P3: oculto desde el cuadro 0, sin esquirlas nuevas"
+   }
+  ]
+ },
+ "shots": [
+  {
+   "id": "b5_p5",
+   "titulo": "P5 · La palma en los vidrios",
+   "t0": 0.0,
+   "t1": 3.0,
+   "montaje": {
+    "usar_desde_s": 0.5,
+    "usar_hasta_s": 1.5,
+    "dur_montaje_s": 1.0,
+    "alargue_s": "1.5-3.0"
+   },
+   "descripcion": "Inserto. La palma DERECHA de Carmen apretada sobre los vidrios rotos que quedan en el borde inferior de la ventanita de la puerta del vagon 5: un corte fino y una mancha negra rojiza que viene del brazo infectado, no de ella. El infectado tira del abrigo desde el otro lado: dos tirones (0.6 y 1.12 s) sacuden la mano y el cuadro. Desde 1.6 s Ivan la arranca: la mano se despega de los vidrios y sale de cuadro por la derecha, y queda la mancha oscura en el vidrio. La mano va en el prompt y en el fotograma guia (el cilindro no tiene manos).",
+   "motivo_camara": "Inserto cerrado a la altura de la mano, casi fijo: solo el vaiven del tren y una sacudida leve con cada tiron del infectado. Desde la derecha de Carmen para ver la palma contra el marco y el borde de su cuerpo.",
+   "en_cuadro": "Al centro, el borde inferior de la ventanita reventada con los vidrios que quedan en el marco (ahi va la palma); a la derecha, el borde del cilindro de Carmen (su costado derecho); arriba, por la ventanita, lo oscuro del infectado; abajo, la hoja de la puerta.",
+   "camera": {
+    "lens_mm": 85,
+    "tag": "INSERTO",
+    "mira": "a la palma derecha de Carmen en los vidrios del marco de la ventanita",
+    "mov": "fija; vaiven del tren y sacudida leve con cada tiron (0.6 y 1.12 s); al final acusa el arranque",
+    "vibration": {
+     "deg": 0.06,
+     "hz": 9.0,
+     "m": 0.0008
+    },
+    "breath": {
+     "m": 0.002,
+     "hz": 0.35,
+     "deg": 0.05
+    },
+    "handheld": {
+     "rot_deg": 0.15,
+     "pos_m": 0.002,
+     "hz": 0.6,
+     "seed": 55,
+     "tremor": 0.1
+    },
+    "shakes": [
+     {
+      "impact_t": 0.6,
+      "delay_f": 2,
+      "deg": 0.5,
+      "m": 0.003,
+      "dur_s": 0.25,
+      "hz": 8.0
+     },
+     {
+      "impact_t": 1.12,
+      "delay_f": 2,
+      "deg": 0.6,
+      "m": 0.003,
+      "dur_s": 0.25,
+      "hz": 8.0
+     },
+     {
+      "impact_t": 1.62,
+      "delay_f": 2,
+      "deg": 0.9,
+      "m": 0.005,
+      "dur_s": 0.3,
+      "hz": 8.0
+     }
+    ],
+    "keys": [
+     {
+      "t": 0.0,
+      "pos": [
+       -0.335,
+       2.165,
+       1.35
+      ],
+      "look_at": [
+       0.05,
+       3.0,
+       1.3
+      ]
+     },
+     {
+      "t": 3.0,
+      "pos": [
+       -0.335,
+       2.16,
+       1.35
+      ],
+      "look_at": [
+       0.05,
+       3.0,
+       1.3
+      ]
+     }
+    ]
+   },
+   "actors": {
+    "carmen": {
+     "pose": "de_pie",
+     "tremor": {
+      "m": 0.006,
+      "hz": 5.0
+     },
+     "keys": [
+      {
+       "t": 0.0,
+       "pos": [
+        0.18,
+        2.81
+       ],
+       "yaw": 180,
+       "head_yaw": 30,
+       "head_pitch": -10
+      },
+      {
+       "t": 0.6,
+       "pos": [
+        0.18,
+        2.83
+       ],
+       "ease": "snap"
+      },
+      {
+       "t": 0.8,
+       "pos": [
+        0.18,
+        2.81
+       ],
+       "ease": "out"
+      },
+      {
+       "t": 1.12,
+       "pos": [
+        0.18,
+        2.83
+       ],
+       "ease": "snap"
+      },
+      {
+       "t": 1.32,
+       "pos": [
+        0.18,
+        2.81
+       ],
+       "ease": "out"
+      },
+      {
+       "t": 1.6,
+       "pos": [
+        0.19,
+        2.8
+       ],
+       "yaw": 190,
+       "head_yaw": 22
+      },
+      {
+       "t": 2.0,
+       "pos": [
+        0.2,
+        2.42
+       ],
+       "head_yaw": 95,
+       "head_pitch": 0,
+       "ease": "out"
+      },
+      {
+       "t": 2.4,
+       "pos": [
+        0.21,
+        2.2
+       ],
+       "head_yaw": 140
+      },
+      {
+       "t": 3.0,
+       "pos": [
+        0.22,
+        2.0
+       ],
+       "head_yaw": 150
+      }
+     ]
+    },
+    "infectado_1": {
+     "pose": "de_pie",
+     "tremor": {
+      "m": 0.012,
+      "hz": 4.0
+     },
+     "keys": [
+      {
+       "t": 0.0,
+       "pos": [
+        0.04,
+        3.4
+       ],
+       "yaw": 180
+      },
+      {
+       "t": 0.6,
+       "pos": [
+        0.04,
+        3.33
+       ],
+       "ease": "snap"
+      },
+      {
+       "t": 0.85,
+       "pos": [
+        0.04,
+        3.42
+       ],
+       "ease": "out"
+      },
+      {
+       "t": 1.12,
+       "pos": [
+        0.04,
+        3.33
+       ],
+       "ease": "snap"
+      },
+      {
+       "t": 1.4,
+       "pos": [
+        0.04,
+        3.4
+       ],
+       "ease": "out"
+      },
+      {
+       "t": 1.65,
+       "pos": [
+        0.04,
+        3.34
+       ]
+      },
+      {
+       "t": 2.0,
+       "pos": [
+        0.019999999999999997,
+        3.48
+       ],
+       "ease": "out"
+      },
+      {
+       "t": 3.0,
+       "pos": [
+        0.04,
+        3.38
+       ]
+      }
+     ]
+    },
+    "infectado_2": {
+     "pose": "de_pie",
+     "tremor": {
+      "m": 0.03,
+      "hz": 2.9
+     },
+     "keys": [
+      {
+       "t": 0.0,
+       "pos": [
+        -0.22,
+        3.88
+       ],
+       "yaw": 180
+      },
+      {
+       "t": 3.0,
+       "pos": [
+        -0.24,
+        3.78
+       ]
+      }
+     ]
+    }
+   },
+   "stills": {
+    "A": {
+     "t": 0.55,
+     "desc": "La palma derecha apretada en los vidrios del marco",
+     "lados": {
+      "carmen": "der"
+     }
+    },
+    "B": {
+     "t": 1.0,
+     "desc": "Despues del primer tiron: la mano tiembla sobre los vidrios; se ve la mancha negra rojiza",
+     "lados": {
+      "carmen": "der"
+     }
+    },
+    "C": {
+     "t": 1.45,
+     "desc": "Segundo tiron; la mano sigue en el marco (Ivan la arranca despues de 1.6 s)"
+    }
+   }
+  }
+ ]
+}

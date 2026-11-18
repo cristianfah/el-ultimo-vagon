@@ -18,7 +18,7 @@
  "props_in_frame": [
   "maletin"
  ],
- "notes": "Vagón 2, origen en ANC_vagon2_fila_12. Pareja del lado +X (hombre ventana 1,12; esposa pasillo 0,56); maletín en su marca (0,47; 0) bajo el asiento de la pareja. b3_p1 repite la cámara de b0_p2. Planos frontales mirando a la cola: el hombre a la izquierda y la esposa a la derecha del cuadro. La niebla no se modela.",
+ "notes": "Vagón 2, origen ANC_vagon2_fila_12; pareja del lado +X con el maletín en su marca (0,47; 0) bajo su asiento; cámaras mirando a la cola: el hombre a la izquierda y la esposa a la derecha del cuadro (b3_p1 repite la cámara de b0_p2).",
  "shots": [
   {
    "id": "b3_p1",
@@ -321,12 +321,12 @@
     "dur_montaje_s": 1.5
    },
    "descripcion": "Una niebla blanca y fina sale por la ranura del maletín, se arrastra por el piso entre los zapatos del hombre y le sube por las piernas. La niebla no se modela y los cilindros sentados no tienen piernas: el cuadro muestra el piso delante del asiento de la pareja (donde van los zapatos) y termina en el borde del cojín, a la altura de las rodillas.",
-   "motivo_camara": "Sube despacio con la niebla (de 0,10 a 0,46 m), desde el pasillo junto a la pierna de la esposa, mirando al piso del hombre; inclina hacia arriba mientras sube. No es en mano: es la niebla la que manda el ritmo.",
+   "motivo_camara": "Sube despacio con la niebla, de 0,10 a 0,50 m, y avanza por el pasillo desde la fila 11 hasta delante del asiento de la esposa: arranca a ras de piso con la ranura del maletín y el piso del hombre, termina a la altura de sus rodillas. No es en mano: es la niebla la que manda el ritmo.",
    "camera": {
     "tag": "SUBE_PISO",
     "mira": "al piso del hombre, de los zapatos a las rodillas",
-    "mov": "sube despacio 36 cm e inclina hacia arriba",
-    "lens_mm": 28,
+    "mov": "sube despacio 40 cm y avanza 60 cm con la niebla",
+    "lens_mm": 24,
     "mode": "locked",
     "vibration": {
      "deg": 0.04,
@@ -337,32 +337,32 @@
      {
       "t": 1.8,
       "pos": [
-       0.16,
-       0.64,
+       -0.18,
+       1.08,
        0.1
       ],
       "look_at": [
-       0.92,
-       0.22,
-       0.06
+       0.62,
+       0.15,
+       0.05
       ]
      },
      {
       "t": 3.3,
       "pos": [
-       0.18,
-       0.6,
-       0.46
+       0.08,
+       0.52,
+       0.5
       ],
       "look_at": [
-       1.02,
-       0.1,
-       0.52
+       1.08,
+       0.18,
+       0.5
       ]
      }
     ]
    },
-   "en_cuadro": "El piso delante del asiento de la pareja: al fondo, los zapatos del hombre contra el muro de la ventana; a la derecha, bajo el cojín, el maletín con la tapa entreabierta. Al subir, el borde de los dos cojines y la base de los cilindros.",
+   "en_cuadro": "Al inicio, a ras de piso: a la derecha, bajo el cojín, el maletín con la tapa entreabierta; a la izquierda, el piso del hombre junto al muro de la ventana (sus zapatos). Al final: el borde de los dos cojines, la base del cilindro del hombre al centro (rodillas) y la de la esposa a la derecha.",
    "stills": {
     "A": {
      "t": 1.85,
@@ -533,7 +533,7 @@
     "alargue_s": "5.5-6.0"
    },
    "descripcion": "Plano medio frontal del hombre y su esposa. Él despierta tosiendo, fuerte, doblado (accesos de tos en 3,42, 3,75, 4,12, 5,02 y 5,6 s); ella sigue dormida en su hombro, en el asiento del pasillo, a la derecha del cuadro. Él mira hacia abajo (4,3 s): la niebla le llega al pecho. Su mano derecha va al cuello (5,2 s; va en el prompt). Doblarse no se dibuja (el cilindro no se inclina): se marca con el cilindro que baja y la nariz hacia el pecho.",
-   "motivo_camara": "En mano leve, desde el pasillo a la altura de los ojos de alguien de pie (1,45 m), por encima de los respaldos de las filas 10 y 11 (primer término abajo a la izquierda). Acompaña apenas cuando él se dobla.",
+   "motivo_camara": "En mano leve, de frente, de pie en el espacio de piernas de la fila 11 (1,58 m, un poco desde arriba), por encima de su respaldo, que queda en primer término abajo. Acompaña apenas cuando él se dobla.",
    "camera": {
     "tag": "MANO_LEVE",
     "mira": "de frente a la pareja, hacia la cola",
@@ -550,45 +550,45 @@
      {
       "t": 3.3,
       "pos": [
-       0.2,
-       1.75,
-       1.45
+       0.8,
+       1.38,
+       1.58
       ],
       "look_at": [
-       0.8,
+       0.84,
        0.0,
-       1.02
+       1.1
       ]
      },
      {
       "t": 4.5,
       "pos": [
-       0.21,
-       1.72,
-       1.44
+       0.81,
+       1.36,
+       1.56
       ],
       "look_at": [
-       0.82,
+       0.86,
        0.0,
-       0.97
+       1.05
       ]
      },
      {
       "t": 6.0,
       "pos": [
-       0.21,
-       1.72,
-       1.44
+       0.81,
+       1.36,
+       1.56
       ],
       "look_at": [
-       0.82,
+       0.86,
        0.0,
-       0.98
+       1.06
       ]
      }
     ]
    },
-   "en_cuadro": "El hombre a la izquierda, doblado; la esposa a la derecha, dormida con la nariz hacia él. Abajo, los respaldos de las filas 10 y 11; detrás, el muro de la ventana con la noche y la lámpara encendida de la fila 12 der.",
+   "en_cuadro": "El hombre a la izquierda, doblado; la esposa a la derecha, dormida con la nariz hacia él. Abajo, en primer término, el respaldo de la fila 11; detrás de ellos, su respaldo, la ventana con la noche y la lámpara encendida de la fila 12 der.",
    "stills": {
     "A": {
      "t": 3.4,

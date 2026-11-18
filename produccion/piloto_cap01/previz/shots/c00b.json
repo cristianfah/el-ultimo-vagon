@@ -18,7 +18,7 @@
  "props_in_frame": [
   "maletin"
  ],
- "notes": "Vagón 2, origen en ANC_vagon2_fila_12. Pareja del lado +X (hombre ventana 1,12; esposa pasillo 0,56). Martina de pie en el pasillo junto a la esposa (0,04; -0,38) y luego camina hacia la cola (-Y). Las dos cámaras miran hacia la cola: la pareja a la izquierda del cuadro, la lectora (fila 15 izq) al fondo a la derecha. MP4 de referencia: sí.",
+ "notes": "Vagón 2, origen ANC_vagon2_fila_12; pareja del lado +X, Martina de pie en el pasillo junto a la esposa (0,04; -0,38) que se va hacia la cola (-Y); cámaras mirando a la cola: pareja a la izquierda, lectora (fila 15 izq) al fondo a la derecha.",
  "shots": [
   {
    "id": "b0_p3",

@@ -14,7 +14,7 @@
   "deg": 0.3,
   "hz": 0.45
  },
- "fuente_tiempos": "llamadas_tiempos.json: b7_p1 0.5-1.3, b7_p2 1.3-4.9, b7_p3 4.9-7.6 (pedida 8.15 s). Aqui 9 s enteros; b7_p3 se alarga de 7.6 a 9.0 con accion (Hugo e Ivan terminan de girar hacia ella, camara en mano), sin quietud. Colchon 0-0.5 s: el viento y el chirrido de la puerta lateral del fuelle ya sonaron y las cabezas ya se mueven en el cuadro 0.",
+ "fuente_tiempos": "llamadas_tiempos.json: b7_p1 0.5-1.3, b7_p2 1.3-4.9, b7_p3 4.9-7.6 (pedida 8.15 s). Aquí 9 s enteros; b7_p3 se alarga de 7.6 a 9.0 con acción (Hugo se gira hacia ella, cámara en mano), sin quietud. Colchón 0-0.5 s: el viento y el chirrido de la puerta lateral del fuelle ya sonaron y las cabezas ya se mueven en el cuadro 0.",
  "pista": {
   "pista": "pistas_v3/c07a_v2.mp3",
   "dur_s": 8.15,
@@ -32,10 +32,10 @@
     7.06
    ]
   ],
-  "nota": "Habla solo Diego. Todos los demas, boca cerrada."
+  "nota": "Habla solo Diego. Todos los demás, boca cerrada."
  },
  "props_in_frame": [],
- "notes": "Ultimo vagon, luz roja con el tubo frio sobre la puerta (por dentro); una sola puerta (y=-0.04). Grupo en sus marcas mirando la puerta: Martina -0.25/-1.55 a la izquierda de Tomas 0.25/-1.45; Carmen 0.80/-1.85; Ivan junto a la puerta 0.50/-0.40; Hugo junto a la cerradura -0.62/-0.50. Diego afuera, en el fuelle, frente a la ventanita (0.0/0.30, mirando a -Y). P1 por detras del grupo (mirando a +Y); P2 a la ventanita desde adentro (+Y); P3 desde el lado de la puerta (-Y): Martina a la derecha del cuadro, Tomas a la izquierda, cabina del revisor a la izquierda al fondo.",
+ "notes": "Último vagón, luz roja con el tubo frío sobre la puerta (por dentro); una sola puerta (y = -0.04). Grupo en sus marcas mirando la puerta: Martina -0.25/-1.55 a la izquierda de Tomás 0.25/-1.45; Carmen 0.80/-1.85; Iván junto a la puerta 0.50/-0.40; Hugo junto a la cerradura -0.62/-0.50. Diego afuera, en el fuelle, frente a la ventanita (0.0/0.30, mirando a -Y). P1 por detrás del grupo (mira a +Y); P2 a la ventanita desde adentro (+Y); P3 desde el lado de la puerta (-Y): Martina a la derecha del cuadro, Tomás a la izquierda, cabina del revisor a la izquierda, al fondo.",
  "set_anim": {
   "glass_break": [
    {
@@ -43,7 +43,7 @@
     "t": 0.0,
     "n": 0,
     "seed": 7,
-    "nota": "el vidrio de la puerta del vagon 5 sigue roto desde 5·P3 (sin esquirlas)"
+    "nota": "el vidrio de la puerta del vagón 5 sigue roto desde 5·P3 (sin esquirlas)"
    }
   ]
  },
@@ -58,13 +58,13 @@
     "dur_montaje_s": 0.8
    },
    "titulo": "P1 · Tres golpes",
-   "descripcion": "Plano medio del grupo de espaldas a la camara, mirando la puerta del ultimo vagon. Fuera de cuadro, en el colchon (0,1-0,4 s), el golpe de viento y el chirrido de la puerta lateral del fuelle. Tres golpes con ritmo de persona en la puerta: 0,55 / 0,77 / 0,99 s. Todos se congelan y levantan la cabeza hacia la puerta: Ivan, el mas cerca, gira primero (0,58); Martina deja de mirar el piso, Tomas deja de mirarla a ella, Carmen levanta la vista de su mano, Hugo levanta la cabeza desde la manija. Diego golpea del lado del fuelle, al costado de la ventanita: no se lo ve. Nadie habla; bocas cerradas.",
-   "motivo_camara": "En mano leve, detras del grupo y a la altura de los ojos de pie, desde el pasillo entre las filas 2 y 3: los respaldos en primer termino y la puerta al fondo, entre las espaldas de Martina y Tomas. Se arrima unos centimetros (respira con ellos) y acusa el primer golpe tres cuadros tarde.",
+   "descripcion": "Plano medio del grupo de espaldas a la cámara, mirando la puerta del último vagón. Fuera de cuadro, en el colchón (0,1-0,4 s), el golpe de viento y el chirrido de la puerta lateral del fuelle. Tres golpes con ritmo de persona en la puerta: 0,55 / 0,77 / 0,99 s. Todos se congelan y levantan la cabeza hacia la puerta: Iván, el más cercano, gira primero; Martina deja de mirar el piso, Tomás deja de mirarla a ella, Carmen levanta la vista de su mano, Hugo levanta la cabeza desde la manija. Diego golpea del lado del fuelle, al costado de la ventanita: no se lo ve. Nadie habla; bocas cerradas.",
+   "motivo_camara": "En mano leve, detrás del grupo, de pie a la altura de los ojos (1,70 m), desde el pasillo entre las filas 2 y 3: los respaldos en primer término y la puerta al fondo, entre las espaldas de Martina y Tomás. Se arrima unos centímetros (respira con ellos) y acusa el primer golpe tres cuadros tarde.",
    "camera": {
     "tag": "MANO_LEVE",
     "lens_mm": 32,
     "mode": "handheld",
-    "mira": "hacia la puerta del ultimo vagon, por detras del grupo",
+    "mira": "hacia la puerta del último vagón, por detrás del grupo",
     "mov": "en mano leve; se arrima 6 cm y acusa el primer golpe",
     "handheld": {
      "rot_deg": 0.32,
@@ -86,27 +86,27 @@
      {
       "t": 0.0,
       "pos": [
-       0.14,
-       -3.42,
-       1.62
+       -0.07,
+       -3.36,
+       1.7
       ],
       "look_at": [
+       -0.03,
        -0.04,
-       -0.04,
-       1.4
+       1.36
       ]
      },
      {
       "t": 1.35,
       "pos": [
-       0.135,
-       -3.36,
-       1.62
+       -0.072,
+       -3.3,
+       1.7
       ],
       "look_at": [
+       -0.03,
        -0.04,
-       -0.04,
-       1.41
+       1.37
       ]
      }
     ]
@@ -123,23 +123,23 @@
        ],
        "yaw": -4,
        "head_yaw": 14,
-       "head_pitch": -36
+       "head_pitch": 34
       },
       {
        "t": 0.36,
        "head_yaw": 10,
-       "head_pitch": -33
+       "head_pitch": 31
       },
       {
        "t": 0.64,
        "head_yaw": -8,
-       "head_pitch": 0,
+       "head_pitch": -2,
        "ease": "out"
       },
       {
        "t": 1.35,
        "head_yaw": -9,
-       "head_pitch": 1
+       "head_pitch": -3
       }
      ]
     },
@@ -154,12 +154,12 @@
        ],
        "yaw": 20,
        "head_yaw": 72,
-       "head_pitch": -12
+       "head_pitch": 12
       },
       {
        "t": 0.34,
        "head_yaw": 66,
-       "head_pitch": -10
+       "head_pitch": 10
       },
       {
        "t": 0.62,
@@ -171,7 +171,7 @@
       {
        "t": 1.35,
        "head_yaw": 2,
-       "head_pitch": 1
+       "head_pitch": -1
       }
      ]
     },
@@ -186,24 +186,24 @@
        ],
        "yaw": 8,
        "head_yaw": 36,
-       "head_pitch": -16
+       "head_pitch": 18
       },
       {
        "t": 0.3,
        "head_yaw": 30,
-       "head_pitch": -20
+       "head_pitch": 22
       },
       {
        "t": 0.66,
        "yaw": 20,
        "head_yaw": 4,
-       "head_pitch": 2,
+       "head_pitch": -3,
        "ease": "out"
       },
       {
        "t": 1.35,
        "head_yaw": 3,
-       "head_pitch": 2
+       "head_pitch": -3
       }
      ]
     },
@@ -218,24 +218,24 @@
        ],
        "yaw": 150,
        "head_yaw": -6,
-       "head_pitch": -24
+       "head_pitch": 24
       },
       {
        "t": 0.56,
-       "head_pitch": -22
+       "head_pitch": 22
       },
       {
        "t": 0.68,
        "yaw": 74,
        "head_yaw": -20,
-       "head_pitch": 3,
+       "head_pitch": 2,
        "ease": "out"
       },
       {
        "t": 1.35,
        "yaw": 72,
        "head_yaw": -18,
-       "head_pitch": 4
+       "head_pitch": 2
       }
      ]
     },
@@ -250,22 +250,22 @@
        ],
        "yaw": -36,
        "head_yaw": -20,
-       "head_pitch": -10
+       "head_pitch": 12
       },
       {
        "t": 0.6,
-       "head_pitch": -9
+       "head_pitch": 11
       },
       {
        "t": 0.72,
        "head_yaw": -18,
-       "head_pitch": 3,
+       "head_pitch": -1,
        "ease": "out"
       },
       {
        "t": 1.35,
        "head_yaw": -17,
-       "head_pitch": 3
+       "head_pitch": -1
       }
      ]
     },
@@ -279,8 +279,8 @@
         0.36
        ],
        "yaw": 180,
-       "head_yaw": -10,
-       "head_pitch": -6,
+       "head_yaw": -6,
+       "head_pitch": 24,
        "dz": -0.05
       },
       {
@@ -333,23 +333,28 @@
       {
        "t": 1.15,
        "pos": [
-        0.45,
-        0.36
+        0.42,
+        0.34
        ],
+       "head_pitch": 18,
        "ease": "out"
       }
      ]
     }
    },
-   "en_cuadro": "Primer termino abajo: los respaldos de la fila 1. Espaldas de Martina (avena) a la izquierda y de Tomas (azul marino) a la derecha; entre ellos, al fondo, la puerta con la ventanita manchada y el tubo frio encima. Hugo (bronce) a la izquierda, junto a la cerradura; Ivan (cafe) a la derecha, junto a la puerta. Carmen fuera de cuadro a la derecha (o en el borde).",
+   "en_cuadro": "Primer término abajo: los respaldos de la fila 1. Espaldas de Martina (avena) a la izquierda y de Tomás (azul marino) a la derecha; entre ellos, al fondo, la puerta con la ventanita manchada y el tubo frío encima. Hugo (bronce) a la izquierda, junto a la cerradura; Iván (café) a la derecha, junto a la puerta. Carmen queda fuera de cuadro, a la derecha.",
    "stills": {
     "A": {
      "t": 0.52,
-     "desc": "Antes del primer golpe: cabezas gachas; Tomas mira a Martina, ella mira el piso."
+     "desc": "Antes del primer golpe: cabezas gachas; Tomás mira a Martina, ella mira el piso.",
+     "lados": {
+      "martina": "izq",
+      "tomas": "der"
+     }
     },
     "B": {
      "t": 0.8,
-     "desc": "Segundo golpe: todos congelados, cabezas arriba, mirando la puerta.",
+     "desc": "Segundo golpe: todos congelados, con la cabeza arriba, mirando la puerta.",
      "lados": {
       "martina": "izq",
       "tomas": "der"
@@ -357,7 +362,7 @@
     },
     "C": {
      "t": 1.25,
-     "desc": "Tercer golpe ya dado: nadie se mueve; la ventanita todavia vacia."
+     "desc": "Tercer golpe ya dado: nadie se mueve; la ventanita todavía vacía."
     }
    }
   },
@@ -371,8 +376,8 @@
     "dur_montaje_s": 3.6
    },
    "titulo": "P2 · Diego en la ventanita",
-   "descripcion": "La ventanita, desde adentro. IMPACTO en 1,40 s (cuadro 34): la cara de Diego entra de golpe al vidrio manchado desde la derecha del cuadro y se pega al vidrio; rebota un poco. Mira a Martina (fuera de cuadro, a la izquierda y abajo). DIEGO 1,63-3,95 s: «¡Martina! ¡Martina, ábreme!» (sin aire, suplicando; la voz se le quiebra al final). Al terminar la linea (4,0 s) levanta el menton y mira hacia atras por encima del hombro izquierdo: al fondo del fuelle, a la derecha de su cabeza, se mueven sombras (infectados) que vuelven desde el vagon 5. Detras de el, solo el fuelle oscuro con la luz roja del techo: sin cielo, sin lluvia, sin puerta abierta, sin pasillo iluminado. Las manchas oscuras del vidrio (de 5·P9) siguen ahi.",
-   "motivo_camara": "Avance lento hacia el vidrio, porque su urgencia nos acerca: de 1,1 m a 0,75 m del vidrio en 3,6 s, arranca suave y no frena antes del corte. Baja, a la altura de la cerradura (1,27-1,31 m), mirando un poco hacia arriba: Diego se nos viene encima y por el vidrio se ve el techo rojo del fuelle, no su fondo. Desplazada 8 cm a la derecha del eje para que el cuadro no quede centrado. Acusa el golpe de la cara 3 cuadros tarde.",
+   "descripcion": "La ventanita, desde adentro. El plano corta con la cara de Diego ya entrando desde la derecha del cuadro; IMPACTO contra el vidrio manchado en 1,375 s (cuadro 33) y rebota un poco. Mira a Martina (fuera de cuadro, a la izquierda y abajo). DIEGO 1,63-3,95 s: «¡Martina! ¡Martina, ábreme!» (sin aire, suplicando; la voz se le quiebra al final). Al terminar la línea (4,0 s) levanta el mentón y mira hacia atrás por encima del hombro izquierdo: al fondo del fuelle, a la derecha de su cabeza, se mueven sombras (infectados que vuelven). Detrás de él, solo el fuelle oscuro con la luz roja del techo: sin cielo, sin lluvia, sin puerta abierta, sin pasillo iluminado. Las manchas oscuras del vidrio (de 5·P9) siguen ahí.",
+   "motivo_camara": "Avance lento hacia el vidrio, porque su urgencia nos acerca: de 1,1 m a 0,75 m del vidrio en 3,6 s; arranca suave y no frena antes del corte. Baja, a la altura de la cerradura (1,27-1,31 m) y mirando un poco hacia arriba: Diego se nos viene encima y por el vidrio se ve el techo rojo del fuelle, no el fondo del vagón 5. Corrida 8 cm a la derecha del eje para que el cuadro no quede centrado. Acusa el golpe de la cara tres cuadros tarde.",
    "camera": {
     "tag": "PUSH_IN",
     "lens_mm": 35,
@@ -387,7 +392,7 @@
     },
     "shakes": [
      {
-      "impact_t": 1.4,
+      "impact_t": 1.375,
       "delay_f": 3,
       "deg": 0.7,
       "m": 0.004,
@@ -446,7 +451,7 @@
        ],
        "yaw": 0,
        "head_yaw": -9,
-       "head_pitch": 2
+       "head_pitch": -3
       }
      ]
     },
@@ -461,7 +466,7 @@
        ],
        "yaw": 8,
        "head_yaw": 2,
-       "head_pitch": 1
+       "head_pitch": -1
       }
      ]
     },
@@ -475,8 +480,8 @@
         -1.85
        ],
        "yaw": 20,
-       "head_yaw": 4,
-       "head_pitch": 3
+       "head_yaw": 3,
+       "head_pitch": -3
       }
      ]
     },
@@ -491,7 +496,7 @@
        ],
        "yaw": 72,
        "head_yaw": -18,
-       "head_pitch": 4
+       "head_pitch": 2
       }
      ]
     },
@@ -506,7 +511,7 @@
        ],
        "yaw": -36,
        "head_yaw": -17,
-       "head_pitch": 3
+       "head_pitch": -1
       }
      ]
     },
@@ -516,32 +521,32 @@
       {
        "t": 1.29,
        "pos": [
-        0.44,
-        0.4
+        0.3,
+        0.33
        ],
        "yaw": 180,
-       "head_yaw": -4,
-       "head_pitch": -4,
+       "head_yaw": -22,
+       "head_pitch": 4,
        "dz": -0.05
       },
       {
-       "t": 1.4,
+       "t": 1.375,
        "pos": [
         0.02,
         0.24
        ],
        "head_yaw": -9,
-       "head_pitch": -1,
-       "ease": "snap"
+       "head_pitch": 3,
+       "ease": "in"
       },
       {
-       "t": 1.62,
+       "t": 1.6,
        "pos": [
         0.01,
         0.3
        ],
        "head_yaw": -8,
-       "head_pitch": -2,
+       "head_pitch": 3,
        "ease": "out"
       },
       {
@@ -551,7 +556,7 @@
         0.29
        ],
        "head_yaw": -11,
-       "head_pitch": -2
+       "head_pitch": 4
       },
       {
        "t": 2.85,
@@ -560,7 +565,7 @@
         0.27
        ],
        "head_yaw": -7,
-       "head_pitch": -1
+       "head_pitch": 2
       },
       {
        "t": 3.6,
@@ -569,22 +574,22 @@
         0.3
        ],
        "head_yaw": -9,
-       "head_pitch": -2
+       "head_pitch": 4
       },
       {
        "t": 3.98,
        "head_yaw": -9,
-       "head_pitch": -1
+       "head_pitch": 3
       },
       {
        "t": 4.1,
-       "head_yaw": -2,
-       "head_pitch": 6
+       "head_yaw": -3,
+       "head_pitch": -6
       },
       {
        "t": 4.24,
        "head_yaw": 45,
-       "head_pitch": 6,
+       "head_pitch": -6,
        "ease": "in"
       },
       {
@@ -595,13 +600,13 @@
        ],
        "yaw": 172,
        "head_yaw": 128,
-       "head_pitch": 3,
+       "head_pitch": -2,
        "ease": "out"
       },
       {
        "t": 4.95,
        "head_yaw": 134,
-       "head_pitch": 2
+       "head_pitch": -2
       }
      ],
      "tremor": {
@@ -615,26 +620,33 @@
       {
        "t": 1.29,
        "pos": [
-        0.42,
-        2.72
+        0.06,
+        2.8
        ],
        "yaw": 180,
-       "head_pitch": -4
+       "head_pitch": 4
       },
       {
-       "t": 4.0,
+       "t": 3.85,
        "pos": [
-        0.42,
-        2.7
+        0.06,
+        2.79
+       ]
+      },
+      {
+       "t": 4.55,
+       "pos": [
+        0.4,
+        2.56
        ]
       },
       {
        "t": 4.95,
        "pos": [
-        0.4,
-        2.45
+        0.45,
+        2.44
        ],
-       "ease": "in"
+       "ease": "linear"
       }
      ],
      "tremor": {
@@ -648,78 +660,45 @@
       {
        "t": 1.29,
        "pos": [
-        0.12,
-        2.78
+        -0.3,
+        2.72
        ],
        "yaw": 186
       },
       {
-       "t": 4.05,
+       "t": 4.0,
        "pos": [
-        0.12,
-        2.76
+        -0.3,
+        2.71
        ]
       },
       {
        "t": 4.95,
        "pos": [
-        0.16,
-        2.55
-       ],
-       "ease": "in"
+        0.0,
+        2.62
+       ]
       }
      ],
      "tremor": {
       "m": 0.02,
       "hz": 2.8
      }
-    },
-    "infectado_3": {
-     "pose": "de_pie",
-     "keys": [
-      {
-       "t": 1.29,
-       "pos": [
-        -0.32,
-        2.75
-       ],
-       "yaw": 176
-      },
-      {
-       "t": 4.1,
-       "pos": [
-        -0.32,
-        2.74
-       ]
-      },
-      {
-       "t": 4.95,
-       "pos": [
-        -0.28,
-        2.58
-       ],
-       "ease": "in"
-      }
-     ],
-     "tremor": {
-      "m": 0.02,
-      "hz": 2.2
-     }
     }
    },
-   "en_cuadro": "La hoja de la puerta en primer termino alrededor del marco de la ventanita, que queda algo a la izquierda del centro; arriba, al inicio, el tubo frio. En el vidrio, la cabeza de Diego (piedra clara) llena la mitad del ancho; por encima de el, el techo del fuelle con la tira roja; a su derecha, al fondo, las sombras.",
+   "en_cuadro": "La hoja de la puerta en primer término alrededor del marco de la ventanita; arriba, al inicio, el tubo frío. En el vidrio, la cabeza de Diego (piedra clara) ocupa la mitad del ancho; por encima de él, el techo del fuelle con la tira roja; las sombras (casi negras) aparecen al final a la derecha de su cabeza.",
    "stills": {
     "A": {
-     "t": 1.33,
-     "desc": "La ventanita manchada, vacia; el fuelle rojo detras. Un cuadro antes del golpe."
+     "t": 1.375,
+     "desc": "La cara de Diego se estrella contra el vidrio manchado; arriba, el tubo frío."
     },
     "B": {
      "t": 2.6,
-     "desc": "«¡Martina, ábreme!»: la cara pegada al vidrio, mirando a Martina (fuera de cuadro, izquierda)."
+     "desc": "«¡Martina, ábreme!»: pegado al vidrio, mira a Martina (fuera de cuadro, a la izquierda)."
     },
     "C": {
      "t": 4.75,
-     "desc": "Mira hacia atras por encima del hombro; al fondo del fuelle, a la derecha, se mueven sombras."
+     "desc": "Mira hacia atrás por encima del hombro; al fondo del fuelle, a la derecha, se mueven sombras."
     }
    }
   },
@@ -734,14 +713,14 @@
     "alargue_s": "7.6-9.0"
    },
    "titulo": "P3 · Todos la miran",
-   "descripcion": "Primer plano de Martina desde el lado de la puerta: ella en primer termino, a la derecha del cuadro y enfocada, mirando la ventanita (a Diego), quieta. DIEGO (off, a traves del vidrio) 5,0-7,06 s: «¡Te vi en el vagon 2!». Detras de ella, desenfocados, las cabezas se giran hacia ella una por una: Tomas (5,55-5,95), Carmen (6,15-6,55), Ivan (6,75-7,15). Ella no se mueve; boca cerrada. En el alargue (7,6-9,0) siguen mirandola y la camara sigue en mano.",
-   "motivo_camara": "En mano leve, desde el lado de la puerta y algo hacia la cerradura (x = -0,27), baja (1,30 m): es la mirada de la puerta sobre ella. Desde ese lado Tomas queda un poco mas lejos que Martina, a su izquierda en el cuadro, y su giro se ve en el borde. Su mirada a la ventanita pasa 17 grados por encima y a la derecha del lente.",
+   "descripcion": "Primer plano de Martina desde el lado de la puerta: ella en primer término, a la derecha del cuadro y enfocada, mirando la ventanita (a Diego), quieta. DIEGO (off, a través del vidrio) 5,0-7,06 s: «¡Te vi en el vagón 2!». Detrás de ella, desenfocados, las cabezas se giran hacia ella una por una: Tomás (5,55-5,95), Carmen (6,15-6,55), Iván (6,75-7,15). Ella no se mueve; boca cerrada. En el alargue (7,6-9,0) Hugo también se gira hacia ella y la cámara sigue en mano.",
+   "motivo_camara": "En mano leve, desde el lado de la puerta y corrida hacia la cerradura (x = -0,34), baja (1,30 m): es la mirada de la puerta sobre ella. Desde ese lado Tomás queda algo más lejos que Martina y a la izquierda del cuadro, y su giro se ve en el borde. La mirada de Martina a la ventanita pasa a 19 grados del lente, por encima y a la izquierda.",
    "camera": {
     "tag": "MANO_LEVE",
     "lens_mm": 40,
     "mode": "handheld",
     "mira": "a Martina, desde el lado de la puerta, un poco desde abajo",
-    "mov": "en mano leve; casi quieta",
+    "mov": "en mano leve, casi quieta",
     "handheld": {
      "rot_deg": 0.25,
      "pos_m": 0.003,
@@ -752,27 +731,27 @@
      {
       "t": 4.89,
       "pos": [
-       -0.27,
-       -0.28,
+       -0.34,
+       -0.3,
        1.3
       ],
       "look_at": [
-       -0.145,
+       -0.111,
        -1.55,
-       1.42
+       1.357
       ]
      },
      {
       "t": 9.05,
       "pos": [
-       -0.265,
-       -0.3,
+       -0.335,
+       -0.315,
        1.3
       ],
       "look_at": [
-       -0.145,
+       -0.111,
        -1.55,
-       1.42
+       1.357
       ]
      }
     ]
@@ -789,22 +768,22 @@
        ],
        "yaw": 0,
        "head_yaw": -9,
-       "head_pitch": 2
+       "head_pitch": -3
       },
       {
        "t": 6.2,
        "head_yaw": -9,
-       "head_pitch": 1.5
+       "head_pitch": -2.5
       },
       {
        "t": 7.1,
        "head_yaw": -8,
-       "head_pitch": 1
+       "head_pitch": -2
       },
       {
        "t": 9.05,
        "head_yaw": -8,
-       "head_pitch": 0
+       "head_pitch": -1
       }
      ],
      "tremor": {
@@ -823,25 +802,25 @@
        ],
        "yaw": 8,
        "head_yaw": 2,
-       "head_pitch": 1
+       "head_pitch": -1
       },
       {
        "t": 5.55,
        "head_yaw": 2,
-       "head_pitch": 1
+       "head_pitch": -1
       },
       {
        "t": 5.95,
        "yaw": 28,
        "head_yaw": 70,
-       "head_pitch": -4,
+       "head_pitch": 10,
        "ease": "out"
       },
       {
        "t": 9.05,
        "yaw": 30,
-       "head_yaw": 70,
-       "head_pitch": -6
+       "head_yaw": 68,
+       "head_pitch": 11
       }
      ]
     },
@@ -855,25 +834,25 @@
         -1.85
        ],
        "yaw": 20,
-       "head_yaw": 4,
-       "head_pitch": 3
+       "head_yaw": 3,
+       "head_pitch": -3
       },
       {
        "t": 6.15,
-       "head_yaw": 4,
-       "head_pitch": 3
+       "head_yaw": 3,
+       "head_pitch": -3
       },
       {
        "t": 6.55,
        "yaw": 48,
        "head_yaw": 26,
-       "head_pitch": -3,
+       "head_pitch": -2,
        "ease": "out"
       },
       {
        "t": 9.05,
-       "head_yaw": 27,
-       "head_pitch": -4
+       "head_yaw": 26,
+       "head_pitch": -3
       }
      ]
     },
@@ -888,24 +867,24 @@
        ],
        "yaw": 72,
        "head_yaw": -18,
-       "head_pitch": 4
+       "head_pitch": 2
       },
       {
        "t": 6.75,
        "head_yaw": -18,
-       "head_pitch": 4
+       "head_pitch": 2
       },
       {
        "t": 7.15,
        "yaw": 112,
        "head_yaw": 35,
-       "head_pitch": -4,
+       "head_pitch": 6,
        "ease": "out"
       },
       {
        "t": 9.05,
        "head_yaw": 35,
-       "head_pitch": -5
+       "head_pitch": 7
       }
      ]
     },
@@ -920,24 +899,24 @@
        ],
        "yaw": -36,
        "head_yaw": -17,
-       "head_pitch": 3
+       "head_pitch": -1
       },
       {
        "t": 7.3,
        "head_yaw": -17,
-       "head_pitch": 3
+       "head_pitch": -1
       },
       {
        "t": 7.8,
        "yaw": -110,
        "head_yaw": -48,
-       "head_pitch": -3,
+       "head_pitch": 2,
        "ease": "out"
       },
       {
        "t": 9.05,
        "head_yaw": -50,
-       "head_pitch": -4
+       "head_pitch": 2
       }
      ]
     },
@@ -947,44 +926,49 @@
       {
        "t": 4.89,
        "pos": [
-        0.0,
-        0.3
+        0.02,
+        0.32
        ],
        "yaw": 172,
-       "head_yaw": -1,
-       "head_pitch": 0,
+       "head_yaw": 134,
+       "head_pitch": -2,
        "dz": -0.05
       },
       {
-       "t": 5.1,
+       "t": 5.15,
        "yaw": 180,
        "head_yaw": -9,
-       "head_pitch": -1
+       "head_pitch": 3,
+       "ease": "out"
       },
       {
        "t": 7.2,
        "head_yaw": -9,
-       "head_pitch": -1
+       "head_pitch": 3
       },
       {
        "t": 7.6,
        "yaw": 174,
-       "head_yaw": 120,
-       "head_pitch": 2
+       "head_yaw": 124,
+       "head_pitch": -2
       },
       {
        "t": 9.05,
-       "head_yaw": 124,
-       "head_pitch": 2
+       "head_yaw": 128,
+       "head_pitch": -2
       }
-     ]
+     ],
+     "tremor": {
+      "m": 0.004,
+      "hz": 5.0
+     }
     }
    },
-   "en_cuadro": "Martina (avena) a la derecha del cuadro, en primer termino y enfocada, con aire sobre la cabeza. En el borde izquierdo, un poco mas atras y desenfocado, Tomas (azul marino): su giro hacia ella se ve en ese borde. Al fondo, la pared trasera con la ventana negra detras de ella y la cabina del revisor a la izquierda del cuadro. Carmen e Ivan giran fuera de cuadro (ver planta).",
+   "en_cuadro": "Martina (avena) a la derecha del cuadro, en primer término y enfocada, con aire sobre la cabeza. En el borde izquierdo, algo más atrás y desenfocado, Tomás (azul marino): su giro hacia ella se ve en ese borde. Al fondo, la pared trasera con la ventana negra detrás de ella y la cabina del revisor a la izquierda del cuadro. Carmen e Iván se giran fuera de cuadro (ver planta).",
    "stills": {
     "A": {
      "t": 4.95,
-     "desc": "Martina quieta, mirando la ventanita; Tomas, al borde izquierdo, todavia mira la puerta.",
+     "desc": "Martina quieta, mirando la ventanita; Tomás, en el borde izquierdo, todavía mira la puerta.",
      "lados": {
       "martina": "der",
       "tomas": "izq"
@@ -992,7 +976,7 @@
     },
     "B": {
      "t": 6.3,
-     "desc": "«...vagón 2»: Tomas ya la mira; Carmen gira (fuera de cuadro). Ella no se mueve.",
+     "desc": "«…vagón 2»: Tomás ya la mira; Carmen se gira (fuera de cuadro). Ella no se mueve.",
      "lados": {
       "martina": "der",
       "tomas": "izq"

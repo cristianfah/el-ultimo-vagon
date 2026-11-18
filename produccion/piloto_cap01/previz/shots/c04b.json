@@ -14,8 +14,8 @@
   "deg": 0.3,
   "hz": 0.45
  },
- "fuente_tiempos": "llamadas_tiempos.json c04b: b4_p4 0,5-2,0 · b4_p5 2,0-5,0 · b4_p6 5,0-7,0 (pedida 7,5 s -> 8 s). Pista c04b (7,549 s): pitazo en 2,1 s (0,1 s del P5) y HUGO «¡Al ultimo vagon! ¡Rapido!» de 2,63 a 4,56 s. Colchon 0-0,5 s: las siluetas ya corren hacia el vidrio. El ultimo plano se alarga de 7,0 a 8,0 con la carrera.",
- "notes": "Vagon 5 en rojo, coordenadas de mundo (origen ANC_fuelle = 0,0,0). Puerta delantera (infectados) en y=23,12 (+Y); puerta trasera (Hugo, hacia el fuelle) en y=3,04 (-Y); las dos abren hacia adentro del vagon 5. P4 mira la puerta delantera desde el pasillo (fila 1); P5 parte mirando a la puerta delantera desde la fila 16 izq y barre por la izquierda hasta la puerta trasera; P6 mira a la puerta delantera mientras retrocede por el pasillo hacia la cola, con el grupo corriendo hacia la camara: Martina a la izquierda del cuadro (-X), Tomas a la derecha (+X), igual que en las marcas del ultimo vagon.",
+ "fuente_tiempos": "llamadas_tiempos.json c04b: b4_p4 0,5-2,0 · b4_p5 2,0-5,0 · b4_p6 5,0-7,0 (pedida 7,5 s -> 8 s). Pista c04b (7,549 s): pitazo en 2,1 s (0,1 s del P5) y HUGO «¡Al último vagón! ¡Rápido!» de 2,63 a 4,56 s. Colchón 0-0,5 s: las siluetas ya corren hacia el vidrio. El último plano se alarga de 7,0 a 8,0 con la carrera.",
+ "notes": "Vagón 5 en rojo, coordenadas de mundo (origen ANC_fuelle = 0,0,0). Puerta delantera (infectados) en y=23,12 (+Y); puerta trasera (Hugo, hacia el fuelle) en y=3,04 (-Y); las dos abren hacia adentro del vagón 5. P4 mira la puerta delantera desde el pasillo (fila 1); P5 parte mirando a la puerta delantera desde la fila 16 izq y barre por la izquierda hasta la puerta trasera; P6 mira a la puerta delantera mientras retrocede por el pasillo hacia la cola, con el grupo corriendo hacia la cámara: Martina a la izquierda del cuadro (-X), Tomás a la derecha (+X), igual que en las marcas del último vagón.",
  "props_in_frame": [
   "llave"
  ],
@@ -179,12 +179,12 @@
     "usar_hasta_s": 2.0,
     "dur_montaje_s": 1.5
    },
-   "descripcion": "La ventanita de la puerta delantera, en rojo. Del otro lado, en el fuelle oscuro, dos siluetas infectadas corren hacia la camara y se estrellan contra el vidrio: la primera en el cuadro 24 (1,00 s), la segunda en el cuadro 34 (1,42 s); una tercera llega detras. Las palmas golpean el vidrio (texto). La puerta se sacude en su marco en cada golpe. Sus miradas pasan por el costado del lente, hacia los pasajeros.",
-   "motivo_camara": "En mano, a la altura del hombro (1,44 m), en el pasillo a unos 2 m de la puerta: el golpe la empuja hacia adelante, un avance corto y rapido de 0,45 m (cuadros 25-29) con la sacudida 2 cuadros despues de cada impacto. El 50 mm deja la puerta como marco de la ventanita.",
+   "descripcion": "La ventanita de la puerta delantera, en rojo. Del otro lado, en el fuelle oscuro, dos siluetas infectadas corren hacia la cámara y se estrellan contra el vidrio: la primera en el cuadro 24 (1,00 s), la segunda en el cuadro 34 (1,42 s); una tercera llega detrás. Las palmas golpean el vidrio (texto). La puerta se sacude en su marco en cada golpe. Sus miradas pasan por el costado del lente, hacia los pasajeros.",
+   "motivo_camara": "En mano, a la altura del hombro (1,44 m), en el pasillo a unos 2 m de la puerta: el golpe la empuja hacia adelante, un avance corto y rápido de 0,45 m (cuadros 25-29) con la sacudida 2 cuadros después de cada impacto. El 50 mm deja la puerta como marco de la ventanita.",
    "camera": {
     "tag": "AVANCE_GOLPE",
     "mira": "a la ventanita de la puerta delantera",
-    "mov": "en mano; avance corto y rapido hacia el vidrio con el primer golpe",
+    "mov": "en mano; avance corto y rápido hacia el vidrio con el primer golpe",
     "lens_mm": 50,
     "mode": "handheld",
     "handheld": {
@@ -267,7 +267,7 @@
      }
     ]
    },
-   "en_cuadro": "La puerta delantera llena casi todo el cuadro y hace de marco; la ventanita arriba del centro. Detras del vidrio, las siluetas: la primera a la derecha, la segunda a la izquierda, la tercera detras. Solo el fuelle oscuro con luz roja detras de ellas.",
+   "en_cuadro": "La puerta delantera llena casi todo el cuadro y hace de marco; la ventanita arriba del centro. Detrás del vidrio, las siluetas: la primera a la derecha, la segunda a la izquierda, la tercera detrás. Solo el fuelle oscuro con luz roja detrás de ellas.",
    "stills": {
     "A": {
      "t": 0.55,
@@ -275,11 +275,11 @@
     },
     "B": {
      "t": 1.08,
-     "desc": "Primer impacto: la silueta contra el vidrio, la puerta se sacude, la camara avanza."
+     "desc": "Primer impacto: la silueta contra el vidrio, la puerta se sacude, la cámara avanza."
     },
     "C": {
      "t": 1.95,
-     "desc": "Dos siluetas aplastadas contra el vidrio, la tercera detras; la puerta tiembla."
+     "desc": "Dos siluetas aplastadas contra el vidrio, la tercera detrás; la puerta tiembla."
     }
    },
    "actors": {
@@ -293,7 +293,7 @@
       {
        "t": 0.0,
        "pos": [
-        0.13,
+        0.15,
         27.2
        ],
        "yaw": 180,
@@ -303,7 +303,7 @@
       {
        "t": 1.0,
        "pos": [
-        0.13,
+        0.15,
         23.33
        ],
        "ease": "in"
@@ -311,7 +311,7 @@
       {
        "t": 1.12,
        "pos": [
-        0.13,
+        0.15,
         23.42
        ],
        "ease": "out"
@@ -319,7 +319,7 @@
       {
        "t": 1.35,
        "pos": [
-        0.13,
+        0.15,
         23.33
        ],
        "head_yaw": -16
@@ -327,7 +327,7 @@
       {
        "t": 2.0,
        "pos": [
-        0.13,
+        0.16,
         23.34
        ],
        "head_yaw": -14
@@ -344,7 +344,7 @@
       {
        "t": 0.0,
        "pos": [
-        -0.17,
+        -0.18,
         28.8
        ],
        "yaw": 180,
@@ -354,7 +354,7 @@
       {
        "t": 1.42,
        "pos": [
-        -0.17,
+        -0.18,
         23.33
        ],
        "ease": "in"
@@ -362,7 +362,7 @@
       {
        "t": 1.54,
        "pos": [
-        -0.17,
+        -0.18,
         23.41
        ],
        "ease": "out"
@@ -370,7 +370,7 @@
       {
        "t": 2.0,
        "pos": [
-        -0.17,
+        -0.19,
         23.34
        ],
        "head_yaw": 18
@@ -414,13 +414,13 @@
     "usar_hasta_s": 5.0,
     "dur_montaje_s": 3.0
    },
-   "descripcion": "Contraplano hacia el fondo del vagon. El plano abre en la puerta delantera, lejos; la puerta trasera se abre de golpe (2,0 s) y Hugo toca el silbato: pitazo corto a los 0,1 s del plano (2,1 s). Todos se dan vuelta; la camara barre con ellos (2,07-2,4 s) hasta Hugo, que entra un paso con la llave antigua en alto en la mano DERECHA y la mano izquierda en el canto de la puerta. HUGO (2,63-4,56 s, pista c04b): «¡Al ultimo vagon! ¡Rapido!», gritando, con autoridad de revisor; mira a los pasajeros del lado derecho del vagon, nunca al lente. Los pasajeros de las filas 17 a 19 se paran, se dan vuelta hacia el y, al final, empiezan a ir hacia la puerta. Hugo se corre a su derecha para dejarlos pasar (4,7-5,0 s). Solo Hugo habla; los demas, boca cerrada.",
-   "motivo_camara": "Barrido rapido porque todos se dan vuelta al oir la puerta: la camara es un pasajero de pie en la fila 16 izq (1,48 m) y gira por la izquierda (el muro de las ventanas hace de cortina) hasta Hugo, se pasa un poco y corrige. Despues en mano, mientras grita, y al final se deja llevar hacia el pasillo con la gente. Fuera del eje del pasillo para que Hugo mire a los pasajeros y no al lente.",
+   "descripcion": "Contraplano hacia el fondo del vagón. El plano abre en la puerta delantera, lejos; la puerta trasera se abre de golpe (2,0 s) y Hugo toca el silbato: pitazo corto a los 0,1 s del plano (2,1 s). Todos se dan vuelta; la cámara barre con ellos (2,07-2,4 s) hasta Hugo, que entra un paso con la llave antigua en alto en la mano DERECHA y la mano izquierda en el canto de la puerta. HUGO (2,63-4,56 s, pista c04b): «¡Al último vagón! ¡Rápido!», gritando, con autoridad de revisor; mira a los pasajeros del lado derecho del vagón, nunca al lente. Los pasajeros de las filas 17 a 19 se paran, se dan vuelta hacia él y, al final, empiezan a ir hacia la puerta. Hugo se corre a su derecha para dejarlos pasar (4,7-5,0 s). Solo Hugo habla; los demás, boca cerrada.",
+   "motivo_camara": "Barrido rápido porque todos se dan vuelta al oír la puerta: la cámara es un pasajero de pie en la fila 16 izq (1,48 m) y gira por la izquierda (el muro de las ventanas hace de cortina) hasta Hugo, se pasa un poco y corrige. Después en mano, mientras grita, y al final da medio paso hacia el pasillo con la gente. Fuera del eje del pasillo para que Hugo mire a los pasajeros y no al lente.",
    "camera": {
     "tag": "BARRIDO",
     "mira": "de la puerta delantera a la puerta trasera (Hugo)",
-    "mov": "barrido rapido de 190° por la izquierda en 0,33 s; despues en mano",
-    "lens_mm": 35,
+    "mov": "barrido rápido de 190° por la izquierda en 0,33 s; después en mano",
+    "lens_mm": 40,
     "mode": "handheld",
     "handheld": {
      "rot_deg": 0.55,
@@ -449,7 +449,7 @@
       "look_at": [
        -0.6,
        23.0,
-       1.5
+       1.42
       ]
      },
      {
@@ -462,7 +462,7 @@
       "look_at": [
        -0.6,
        23.0,
-       1.5
+       1.42
       ]
      },
      {
@@ -475,7 +475,7 @@
       "look_at": [
        -7.5,
        8.2,
-       1.45
+       1.42
       ],
       "ease": "in"
      },
@@ -487,9 +487,9 @@
        1.48
       ],
       "look_at": [
-       0.32,
+       0.3,
        3.3,
-       1.66
+       1.46
       ],
       "ease": "out"
      },
@@ -503,7 +503,7 @@
       "look_at": [
        0.08,
        3.5,
-       1.62
+       1.43
       ]
      },
      {
@@ -514,48 +514,48 @@
        1.48
       ],
       "look_at": [
-       0.06,
+       0.07,
        3.55,
-       1.6
+       1.42
       ]
      },
      {
       "t": 4.6,
       "pos": [
-       -0.86,
-       8.38,
+       -0.88,
+       8.4,
        1.48
       ],
       "look_at": [
-       0.12,
+       0.1,
        3.5,
-       1.58
+       1.42
       ]
      },
      {
       "t": 5.0,
       "pos": [
-       -0.72,
-       8.22,
+       -0.83,
+       8.33,
        1.47
       ],
       "look_at": [
-       0.24,
+       0.2,
        3.5,
-       1.56
+       1.4
       ]
      }
     ]
    },
-   "en_cuadro": "Abre en la puerta delantera, lejos, con Ivan y Carmen de espaldas. Despues del barrido: Hugo al fondo en la puerta trasera abierta, algo a la izquierda del centro, con la llave en alto; a su izquierda (nuestra) un pasajero que se para en la fila 19 der, a su derecha otro en la fila 19 izq; en primer termino, al borde derecho, el hombro del pasajero de la fila 17 izq. Detras de Hugo, solo el fuelle oscuro en rojo.",
+   "en_cuadro": "Abre en la puerta delantera, lejos, con Iván y Carmen de espaldas. Después del barrido: Hugo al fondo al centro, en la puerta trasera abierta (la hoja a su lado), con la llave en alto; a la izquierda del cuadro, un pasajero de la fila 19 der que se para y va hacia él; abajo, entre Hugo y nosotros, la cabeza de un pasajero sentado en la fila 18 izq que se da vuelta a mirarlo; al final entra por el borde derecho el hombro del pasajero de la fila 17 izq. Detrás de Hugo, solo el fuelle oscuro en rojo.",
    "stills": {
     "A": {
      "t": 2.02,
-     "desc": "Todavia mirando la puerta delantera, lejos; la puerta trasera acaba de abrirse fuera de cuadro."
+     "desc": "Todavía mirando la puerta delantera, lejos; la puerta trasera acaba de abrirse fuera de cuadro."
     },
     "B": {
      "t": 2.7,
-     "desc": "Hugo un paso adentro, la llave en alto, grita; los pasajeros se dan vuelta hacia el."
+     "desc": "Hugo un paso adentro, la llave en alto, grita; los pasajeros se dan vuelta hacia él."
     },
     "C": {
      "t": 4.9,
@@ -573,7 +573,7 @@
         2.62
        ],
        "yaw": 0,
-       "head_pitch": 4,
+       "head_pitch": -4,
        "head_yaw": -6
       },
       {
@@ -589,7 +589,7 @@
         0.04,
         3.5
        ],
-       "head_pitch": 6,
+       "head_pitch": -6,
        "head_yaw": -16,
        "ease": "out"
       },
@@ -639,7 +639,7 @@
        ],
        "yaw": 0,
        "dz": -0.46,
-       "head_pitch": -4,
+       "head_pitch": 4,
        "head_yaw": 0
       },
       {
@@ -675,7 +675,7 @@
       {
        "t": 4.55,
        "pos": [
-        -1.04,
+        -1.05,
         7.54
        ],
        "yaw": -160,
@@ -684,26 +684,25 @@
       {
        "t": 5.0,
        "pos": [
-        -0.72,
-        7.46
+        -0.98,
+        7.5
        ],
-       "yaw": -135,
-       "head_yaw": -30
+       "yaw": -150,
+       "head_yaw": -20
       }
      ]
     },
     "extra_3": {
-     "pose": "de_pie",
+     "pose": "sentado",
      "keys": [
       {
        "t": 2.0,
        "pos": [
         -0.56,
-        5.33
+        6.23
        ],
        "yaw": 0,
-       "dz": -0.46,
-       "head_pitch": -6,
+       "head_pitch": 6,
        "head_yaw": 4
       },
       {
@@ -711,48 +710,20 @@
        "head_yaw": 4
       },
       {
-       "t": 2.3,
+       "t": 2.32,
        "yaw": -70,
        "head_yaw": -95,
        "ease": "out"
       },
       {
-       "t": 2.85,
-       "pos": [
-        -0.56,
-        5.33
-       ],
-       "dz": -0.46,
+       "t": 3.0,
        "yaw": -90,
-       "head_yaw": -85
-      },
-      {
-       "t": 3.4,
-       "pos": [
-        -0.56,
-        5.74
-       ],
-       "dz": 0.0,
-       "yaw": -160,
-       "head_yaw": -10
-      },
-      {
-       "t": 4.6,
-       "pos": [
-        -0.5,
-        5.74
-       ],
-       "yaw": -165,
-       "head_yaw": -6
+       "head_yaw": -90
       },
       {
        "t": 5.0,
-       "pos": [
-        -0.2,
-        5.62
-       ],
-       "yaw": -170,
-       "head_yaw": -4
+       "yaw": -95,
+       "head_yaw": -88
       }
      ]
     },
@@ -767,7 +738,7 @@
        ],
        "yaw": 0,
        "dz": -0.46,
-       "head_pitch": -6,
+       "head_pitch": 6,
        "head_yaw": -4
       },
       {
@@ -776,8 +747,8 @@
       },
       {
        "t": 2.3,
-       "yaw": -80,
-       "head_yaw": -100,
+       "yaw": 80,
+       "head_yaw": 90,
        "ease": "out"
       },
       {
@@ -787,35 +758,35 @@
         5.33
        ],
        "dz": -0.46,
-       "yaw": -100,
-       "head_yaw": -90
+       "yaw": 100,
+       "head_yaw": 80
       },
       {
-       "t": 3.2,
+       "t": 3.25,
        "pos": [
-        0.56,
+        0.4,
         5.74
        ],
        "dz": 0.0,
-       "yaw": -190,
+       "yaw": 170,
        "head_yaw": 4
       },
       {
        "t": 4.5,
        "pos": [
-        0.52,
+        0.32,
         5.74
        ],
-       "yaw": -192,
+       "yaw": 172,
        "head_yaw": 2
       },
       {
        "t": 5.0,
        "pos": [
         0.24,
-        5.49
+        5.44
        ],
-       "yaw": -190,
+       "yaw": 175,
        "head_yaw": 0
       }
      ]
@@ -1023,7 +994,7 @@
       {
        "t": 2.0,
        "pos": [
-        0.13,
+        0.16,
         23.34
        ],
        "yaw": 180,
@@ -1032,7 +1003,7 @@
       {
        "t": 5.0,
        "pos": [
-        0.13,
+        0.16,
         23.34
        ]
       }
@@ -1048,7 +1019,7 @@
       {
        "t": 2.0,
        "pos": [
-        -0.17,
+        -0.19,
         23.34
        ],
        "yaw": 180,
@@ -1057,7 +1028,7 @@
       {
        "t": 5.0,
        "pos": [
-        -0.17,
+        -0.19,
         23.34
        ]
       }
@@ -1104,11 +1075,11 @@
     "dur_montaje_s": 2.0,
     "alargue_s": "7.0-8.0"
    },
-   "descripcion": "La estampida hacia Hugo por el pasillo, entre los asientos; chocan con los respaldos. Tomas, agachado, arrastra a Martina de la mano (la mano derecha de el, la izquierda de ella); detras, Carmen, e Ivan, ultimo del grupo, que la empuja y mira hacia atras. Atras de todos, el pasajero de la fila 1. Martina mira hacia atras un instante (6,1-6,5 s), justo cuando al fondo la puerta delantera revienta (6,04-6,16 s) y entran las primeras siluetas (desde 6,2 s). Nadie mira al lente: los que corren miran el piso delante de sus pies o hacia atras.",
-   "motivo_camara": "En mano, corre de espaldas con ellos por el pasillo, delante de Tomas (a 1,3 m), a la altura de la cabeza (1,74 m): asi se ve la puerta delantera por encima de las cabezas agachadas. Paso de carrera en el temblor (respira a 2,3 Hz) y dos topones contra los respaldos.",
+   "descripcion": "La estampida hacia Hugo por el pasillo, entre los asientos; chocan con los respaldos. Tomás, agachado, arrastra a Martina de la mano (la mano derecha de él, la izquierda de ella); detrás, Carmen, e Iván, último del grupo, que la empuja y mira hacia atrás. Atrás de todos, el pasajero de la fila 1. Martina mira hacia atrás un instante (6,1-6,5 s), justo cuando al fondo la puerta delantera revienta (6,04-6,16 s) y entran las primeras siluetas (desde 6,2 s). Nadie mira al lente: los que corren miran el piso delante de sus pies o hacia atrás.",
+   "motivo_camara": "En mano, corre de espaldas con ellos por el pasillo, delante de Tomás (a 1,3 m), a la altura de la cabeza (1,74 m): así se ve la puerta delantera por encima de las cabezas agachadas. Paso de carrera en el temblor (respira a 2,3 Hz) y dos topones contra los respaldos.",
    "camera": {
     "tag": "HANDHELD_RETRO",
-    "mira": "hacia la puerta delantera, por encima del grupo que corre hacia la camara",
+    "mira": "hacia la puerta delantera, por encima del grupo que corre hacia la cámara",
     "mov": "retrocede 3,9 m por el pasillo a la velocidad del grupo",
     "lens_mm": 28,
     "mode": "handheld",
@@ -1146,76 +1117,76 @@
      {
       "t": 5.0,
       "pos": [
-       -0.02,
+       -0.09,
        10.72,
        1.74
       ],
       "look_at": [
-       0.02,
-       22.0,
-       1.5
+       -0.12,
+       21.7,
+       0.5
       ]
      },
      {
       "t": 5.6,
       "pos": [
-       -0.03,
+       -0.1,
        9.95,
        1.74
       ],
       "look_at": [
-       0.02,
-       21.5,
-       1.5
+       -0.12,
+       20.95,
+       0.5
       ]
      },
      {
       "t": 6.4,
       "pos": [
-       -0.01,
+       -0.08,
        8.85,
        1.74
       ],
       "look_at": [
-       0.03,
-       20.8,
-       1.5
+       -0.1,
+       19.85,
+       0.52
       ]
      },
      {
       "t": 7.2,
       "pos": [
-       -0.03,
+       -0.1,
        7.72,
        1.73
       ],
       "look_at": [
-       0.02,
-       19.8,
-       1.48
+       -0.12,
+       18.7,
+       0.5
       ]
      },
      {
       "t": 8.0,
       "pos": [
-       -0.02,
+       -0.09,
        6.62,
        1.73
       ],
       "look_at": [
-       0.02,
-       18.8,
-       1.48
+       -0.12,
+       17.6,
+       0.5
       ],
       "ease": "linear"
      }
     ]
    },
-   "en_cuadro": "Tomas en primer termino a la derecha, agachado, tirando; Martina detras de el, a la izquierda; mas atras Carmen e Ivan. Al fondo al centro, por encima de las cabezas, la puerta delantera que revienta y las siluetas que entran por el pasillo. Los respaldos pasan por los dos bordes.",
+   "en_cuadro": "Tomás en primer término a la derecha, agachado, tirando; Martina detrás de él, a la izquierda; más atrás Carmen e Iván. Al fondo al centro, por encima de las cabezas, la puerta delantera que revienta y las siluetas que entran por el pasillo. Los respaldos pasan por los dos bordes.",
    "stills": {
     "A": {
      "t": 5.05,
-     "desc": "La estampida ya en marcha: Tomas tira de Martina; Carmen e Ivan detras.",
+     "desc": "La estampida ya en marcha: Tomás tira de Martina; Carmen e Iván detrás.",
      "lados": {
       "martina": "izq",
       "tomas": "der"
@@ -1223,7 +1194,7 @@
     },
     "B": {
      "t": 6.3,
-     "desc": "Martina mira hacia atras; al fondo la puerta delantera reventada y la primera silueta adentro.",
+     "desc": "Martina mira hacia atrás; al fondo la puerta delantera reventada y la primera silueta adentro.",
      "lados": {
       "martina": "izq",
       "tomas": "der"
@@ -1231,7 +1202,7 @@
     },
     "C": {
      "t": 6.95,
-     "desc": "Las siluetas corren por el pasillo detras del grupo.",
+     "desc": "Las siluetas corren por el pasillo detrás del grupo.",
      "lados": {
       "martina": "izq",
       "tomas": "der"
@@ -1250,7 +1221,7 @@
        ],
        "yaw": 180,
        "dz": -0.15,
-       "head_pitch": -16,
+       "head_pitch": 16,
        "head_yaw": -6
       },
       {
@@ -1282,7 +1253,7 @@
         0.12,
         10.17
        ],
-       "head_pitch": -18,
+       "head_pitch": 18,
        "head_yaw": -8
       },
       {
@@ -1291,7 +1262,7 @@
         0.1,
         9.05
        ],
-       "head_pitch": -16,
+       "head_pitch": 16,
        "head_yaw": -4
       },
       {
@@ -1315,7 +1286,7 @@
        ],
        "yaw": 180,
        "dz": -0.12,
-       "head_pitch": -22,
+       "head_pitch": 22,
        "head_yaw": 10
       },
       {
@@ -1332,7 +1303,7 @@
         -0.13,
         11.4
        ],
-       "head_pitch": -22,
+       "head_pitch": 22,
        "head_yaw": 10
       },
       {
@@ -1352,7 +1323,7 @@
       },
       {
        "t": 6.68,
-       "head_pitch": -22,
+       "head_pitch": 22,
        "head_yaw": 8,
        "ease": "out"
       },
@@ -1384,7 +1355,7 @@
        ],
        "yaw": 180,
        "dz": -0.08,
-       "head_pitch": -24,
+       "head_pitch": 24,
        "head_yaw": -8
       },
       {
@@ -1447,7 +1418,7 @@
        ],
        "yaw": 180,
        "dz": -0.2,
-       "head_pitch": -4,
+       "head_pitch": 4,
        "head_yaw": -150
       },
       {
@@ -1473,7 +1444,7 @@
         -0.06,
         13.85
        ],
-       "head_pitch": -20,
+       "head_pitch": 20,
        "head_yaw": -10
       },
       {
@@ -1512,7 +1483,7 @@
        ],
        "yaw": 180,
        "dz": -0.04,
-       "head_pitch": -6,
+       "head_pitch": 6,
        "head_yaw": 160
       },
       {
@@ -1537,7 +1508,7 @@
         0.06,
         16.2
        ],
-       "head_pitch": -26,
+       "head_pitch": 26,
        "head_yaw": -6
       },
       {
@@ -1568,7 +1539,7 @@
       {
        "t": 5.0,
        "pos": [
-        0.13,
+        0.16,
         23.34
        ],
        "yaw": 180,
@@ -1577,7 +1548,7 @@
       {
        "t": 6.04,
        "pos": [
-        0.13,
+        0.16,
         23.34
        ]
       },
@@ -1616,7 +1587,7 @@
       {
        "t": 5.0,
        "pos": [
-        -0.17,
+        -0.19,
         23.34
        ],
        "yaw": 180,
@@ -1625,7 +1596,7 @@
       {
        "t": 6.2,
        "pos": [
-        -0.17,
+        -0.19,
         23.34
        ]
       },

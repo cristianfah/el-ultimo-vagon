@@ -18,7 +18,7 @@
  "props_in_frame": [
   "maletin"
  ],
- "notes": "Vagón 2, origen en ANC_vagon2_fila_12. Pareja del lado +X; las cámaras miran hacia la cola: el hombre a la izquierda y la esposa a la derecha del cuadro; la embestida va hacia la derecha del cuadro. Lectora (extra_5) en la fila 15 izq, al otro lado del pasillo y más hacia la cola. MP4 de referencia: sí.",
+ "notes": "Vagón 2, origen ANC_vagon2_fila_12; pareja del lado +X y cámaras mirando a la cola (hombre a la izquierda, esposa a la derecha, la embestida hacia la derecha); lectora (extra_5) en la fila 15 izq, al otro lado del pasillo y más hacia la cola.",
  "shots": [
   {
    "id": "b3_p4",
@@ -54,14 +54,14 @@
      {
       "t": 0.0,
       "pos": [
-       0.82,
+       0.86,
        1.08,
        1.36
       ],
       "look_at": [
-       0.9,
+       0.97,
        -0.05,
-       1.07
+       1.08
       ]
      }
     ]
@@ -251,13 +251,13 @@
       },
       {
        "t": 1.95,
-       "head_yaw": 62,
-       "head_pitch": 10
+       "head_yaw": 84,
+       "head_pitch": 8
       },
       {
        "t": 2.2,
-       "head_yaw": 66,
-       "head_pitch": 10
+       "head_yaw": 86,
+       "head_pitch": 8
       }
      ]
     }
@@ -505,8 +505,8 @@
         0.0
        ],
        "yaw": 0,
-       "head_yaw": 64,
-       "head_pitch": 10,
+       "head_yaw": 86,
+       "head_pitch": 8,
        "dz": -0.03
       },
       {
@@ -516,7 +516,7 @@
         0.0
        ],
        "dz": -0.06,
-       "head_pitch": 14,
+       "head_pitch": 12,
        "ease": "in"
       },
       {
@@ -526,8 +526,8 @@
         0.05
        ],
        "dz": 0.1,
-       "head_yaw": 76,
-       "head_pitch": 28,
+       "head_yaw": 92,
+       "head_pitch": 30,
        "ease": "snap"
       },
       {
@@ -537,7 +537,7 @@
         0.04
        ],
        "dz": 0.06,
-       "head_pitch": 30
+       "head_pitch": 32
       }
      ]
     },
@@ -618,11 +618,11 @@
     "alargue_s": "4.5-5.0"
    },
    "descripcion": "Plano general del pasillo. Al otro lado, la lectora (la del bloque 0) se levanta de golpe y grita (3,0-3,25 s); el libro cae. Otros pasajeros despiertan: el joven de los audífonos se gira hacia la pareja (3,1 s) y el dormido de la fila 16 levanta la cabeza hacia ella (3,15 s). La niebla cubre el piso del pasillo (no se modela). La pareja, él encima de ella, queda fuera de cuadro a la izquierda tras el paneo.",
-   "motivo_camara": "En mano, de pie en el pasillo (1,55 m, fila 10), 24 mm. Arranca todavía sobre la pareja y llega tarde al grito: el paneo (3,18-3,50 s, se pasa un poco y vuelve) encuentra a la lectora ya de pie. Después el operador da medio paso.",
+   "motivo_camara": "En mano, de pie en el pasillo (1,55 m, fila 10), 24 mm. Arranca todavía sobre la pareja y llega tarde al grito: el paneo (3,18-3,46 s; se pasa un poco y vuelve a los 3,62 s) encuentra a la lectora ya de pie. Después el operador da medio paso.",
    "camera": {
     "tag": "HANDHELD_TARDE",
     "mira": "por el pasillo hacia la cola, a la lectora",
-    "mov": "en mano; paneo tardío de la pareja a la lectora (3,18-3,50 s)",
+    "mov": "en mano; paneo tardío de la pareja a la lectora (3,18-3,62 s)",
     "lens_mm": 24,
     "mode": "handheld",
     "handheld": {
@@ -659,18 +659,30 @@
       ]
      },
      {
-      "t": 3.5,
+      "t": 3.46,
       "pos": [
        0.12,
        1.89,
        1.55
       ],
       "look_at": [
+       -0.96,
+       -2.78,
+       1.33
+      ]
+     },
+     {
+      "t": 3.62,
+      "pos": [
+       0.12,
+       1.88,
+       1.55
+      ],
+      "look_at": [
        -0.8,
        -2.81,
        1.35
-      ],
-      "ease": "back"
+      ]
      },
      {
       "t": 4.2,
@@ -740,8 +752,8 @@
         0.04
        ],
        "yaw": 0,
-       "head_yaw": 76,
-       "head_pitch": 30,
+       "head_yaw": 92,
+       "head_pitch": 32,
        "dz": 0.06
       }
      ]
