@@ -1,0 +1,484 @@
+{
+ "call_id": "c02b",
+ "bloque": "2 · El regreso",
+ "duration_s": 8,
+ "fps": 24,
+ "resolution": [
+  720,
+  1280
+ ],
+ "origin": "ANC_vagon5_fila_11",
+ "set_light": "ambar",
+ "train_sway": {
+  "m": 0.006,
+  "deg": 0.3,
+  "hz": 0.45
+ },
+ "fuente_tiempos": "",
+ "notes": "",
+ "shots": [
+  {
+   "id": "b2_p3",
+   "titulo": "P3 · ¿Tu papá sabe?",
+   "t0": 0.0,
+   "t1": 3.2,
+   "montaje": {
+    "usar_desde_s": 0.5,
+    "usar_hasta_s": 3.2,
+    "dur_montaje_s": 2.7
+   },
+   "descripcion": "",
+   "motivo_camara": "",
+   "camera": {
+    "lens_mm": 40,
+    "tag": "PUSH_IN",
+    "mira": "",
+    "mov": "",
+    "mode": "handheld",
+    "handheld": {
+     "rot_deg": 0.2,
+     "pos_m": 0.003,
+     "hz": 0.55,
+     "seed": 23,
+     "tremor": 0.12
+    },
+    "breath": {
+     "m": 0.0025,
+     "hz": 0.3,
+     "deg": 0.04
+    },
+    "keys": [
+     {
+      "t": 0.0,
+      "pos": [
+       1.26,
+       0.34,
+       1.23
+      ],
+      "look_at": [
+       0.615,
+       -0.134,
+       1.1
+      ]
+     },
+     {
+      "t": 0.55,
+      "pos": [
+       1.26,
+       0.34,
+       1.23
+      ],
+      "look_at": [
+       0.615,
+       -0.134,
+       1.1
+      ]
+     },
+     {
+      "t": 2.95,
+      "pos": [
+       1.204,
+       0.29900000000000004,
+       1.226
+      ],
+      "look_at": [
+       0.5589999999999999,
+       -0.17500000000000002,
+       1.096
+      ]
+     },
+     {
+      "t": 3.2,
+      "pos": [
+       1.204,
+       0.29900000000000004,
+       1.226
+      ],
+      "look_at": [
+       0.5589999999999999,
+       -0.17500000000000002,
+       1.096
+      ]
+     }
+    ]
+   },
+   "actors": {
+    "tomas": {
+     "pose": "sentado",
+     "keys": [
+      {
+       "t": 0.0,
+       "pos": [
+        0.56,
+        0.0
+       ],
+       "yaw": 0,
+       "head_yaw": -86,
+       "head_pitch": 3
+      },
+      {
+       "t": 0.6,
+       "head_yaw": -90,
+       "head_pitch": 6
+      },
+      {
+       "t": 1.7,
+       "head_yaw": -92,
+       "head_pitch": 7
+      },
+      {
+       "t": 2.7,
+       "head_yaw": -88,
+       "head_pitch": 4
+      },
+      {
+       "t": 3.2,
+       "head_yaw": -90,
+       "head_pitch": 5
+      }
+     ]
+    },
+    "martina": {
+     "pose": "sentado",
+     "keys": [
+      {
+       "t": 0.0,
+       "pos": [
+        1.12,
+        0.0
+       ],
+       "yaw": 0,
+       "head_yaw": -10,
+       "head_pitch": 32
+      },
+      {
+       "t": 1.5,
+       "head_yaw": -8,
+       "head_pitch": 28
+      },
+      {
+       "t": 2.7,
+       "head_yaw": -4,
+       "head_pitch": 18
+      },
+      {
+       "t": 3.2,
+       "head_yaw": -2,
+       "head_pitch": 8
+      }
+     ]
+    },
+    "extra_1": {
+     "pose": "sentado",
+     "keys": [
+      {
+       "t": 0,
+       "pos": [
+        0.56,
+        -1.8
+       ],
+       "yaw": 0,
+       "head_yaw": 14,
+       "head_pitch": 34
+      }
+     ]
+    },
+    "extra_2": {
+     "pose": "sentado",
+     "keys": [
+      {
+       "t": 0,
+       "pos": [
+        -1.12,
+        -0.9
+       ],
+       "yaw": 0,
+       "head_yaw": -18,
+       "head_pitch": 30
+      }
+     ]
+    },
+    "extra_3": {
+     "pose": "sentado",
+     "keys": [
+      {
+       "t": 0,
+       "pos": [
+        -1.12,
+        -1.8
+       ],
+       "yaw": 0,
+       "head_yaw": 10,
+       "head_pitch": 36
+      }
+     ]
+    },
+    "extra_4": {
+     "pose": "sentado",
+     "keys": [
+      {
+       "t": 0,
+       "pos": [
+        1.12,
+        -2.7
+       ],
+       "yaw": 0,
+       "head_yaw": -20,
+       "head_pitch": 32
+      }
+     ]
+    }
+   },
+   "stills": {
+    "A": {
+     "t": 0.6,
+     "desc": "",
+     "lados": {
+      "martina": "izq",
+      "tomas": "der"
+     }
+    },
+    "B": {
+     "t": 1.7,
+     "desc": "",
+     "lados": {
+      "martina": "izq",
+      "tomas": "der"
+     }
+    },
+    "C": {
+     "t": 3.1,
+     "desc": "",
+     "lados": {
+      "martina": "izq",
+      "tomas": "der"
+     }
+    }
+   }
+  },
+  {
+   "id": "b2_p4",
+   "titulo": "P4 · Esa era la idea",
+   "t0": 3.2,
+   "t1": 8.0,
+   "montaje": {
+    "usar_desde_s": 3.2,
+    "usar_hasta_s": 7.2,
+    "dur_montaje_s": 4.0,
+    "alargue_s": "7.2-8.0"
+   },
+   "descripcion": "",
+   "motivo_camara": "",
+   "camera": {
+    "lens_mm": 35,
+    "tag": "MANO_QUIETA",
+    "mira": "",
+    "mov": "",
+    "mode": "handheld",
+    "handheld": {
+     "rot_deg": 0.16,
+     "pos_m": 0.0025,
+     "hz": 0.5,
+     "seed": 24,
+     "tremor": 0.1
+    },
+    "breath": {
+     "m": 0.0025,
+     "hz": 0.28,
+     "deg": 0.04
+    },
+    "keys": [
+     {
+      "t": 3.2,
+      "pos": [
+       0.804,
+       0.66,
+       1.24
+      ],
+      "look_at": [
+       1.087,
+       -0.088,
+       0.985
+      ]
+     },
+     {
+      "t": 8.0,
+      "pos": [
+       0.808,
+       0.66,
+       1.237
+      ],
+      "look_at": [
+       1.087,
+       -0.088,
+       0.985
+      ]
+     }
+    ]
+   },
+   "actors": {
+    "martina": {
+     "pose": "sentado",
+     "keys": [
+      {
+       "t": 3.2,
+       "pos": [
+        1.12,
+        0.0
+       ],
+       "yaw": 0,
+       "head_yaw": 0,
+       "head_pitch": 3
+      },
+      {
+       "t": 3.42,
+       "head_pitch": 7,
+       "ease": "out"
+      },
+      {
+       "t": 3.9,
+       "head_yaw": 2,
+       "head_pitch": 1
+      },
+      {
+       "t": 5.2,
+       "head_yaw": 3,
+       "head_pitch": -1
+      },
+      {
+       "t": 6.2,
+       "head_yaw": 2,
+       "head_pitch": 0
+      },
+      {
+       "t": 6.6,
+       "head_yaw": 1,
+       "head_pitch": 4
+      },
+      {
+       "t": 8.0,
+       "head_yaw": 2,
+       "head_pitch": 2
+      }
+     ]
+    },
+    "tomas": {
+     "pose": "sentado",
+     "keys": [
+      {
+       "t": 3.2,
+       "pos": [
+        0.56,
+        0.0
+       ],
+       "yaw": 0,
+       "head_yaw": -90,
+       "head_pitch": 5
+      },
+      {
+       "t": 5.9,
+       "head_yaw": -84,
+       "head_pitch": 22
+      },
+      {
+       "t": 6.7,
+       "head_yaw": -88,
+       "head_pitch": 6
+      },
+      {
+       "t": 8.0,
+       "head_yaw": -89,
+       "head_pitch": 5
+      }
+     ]
+    },
+    "extra_1": {
+     "pose": "sentado",
+     "keys": [
+      {
+       "t": 0,
+       "pos": [
+        0.56,
+        -1.8
+       ],
+       "yaw": 0,
+       "head_yaw": 14,
+       "head_pitch": 34
+      }
+     ]
+    },
+    "extra_2": {
+     "pose": "sentado",
+     "keys": [
+      {
+       "t": 0,
+       "pos": [
+        -1.12,
+        -0.9
+       ],
+       "yaw": 0,
+       "head_yaw": -18,
+       "head_pitch": 30
+      }
+     ]
+    },
+    "extra_3": {
+     "pose": "sentado",
+     "keys": [
+      {
+       "t": 0,
+       "pos": [
+        -1.12,
+        -1.8
+       ],
+       "yaw": 0,
+       "head_yaw": 10,
+       "head_pitch": 36
+      }
+     ]
+    },
+    "extra_4": {
+     "pose": "sentado",
+     "keys": [
+      {
+       "t": 0,
+       "pos": [
+        1.12,
+        -2.7
+       ],
+       "yaw": 0,
+       "head_yaw": -20,
+       "head_pitch": 32
+      }
+     ]
+    }
+   },
+   "stills": {
+    "A": {
+     "t": 3.45,
+     "desc": "",
+     "lados": {
+      "martina": "izq",
+      "tomas": "der"
+     }
+    },
+    "B": {
+     "t": 5.6,
+     "desc": "",
+     "lados": {
+      "martina": "izq",
+      "tomas": "der"
+     }
+    },
+    "C": {
+     "t": 7.1,
+     "desc": "",
+     "lados": {
+      "martina": "izq",
+      "tomas": "der"
+     }
+    }
+   }
+  }
+ ]
+}

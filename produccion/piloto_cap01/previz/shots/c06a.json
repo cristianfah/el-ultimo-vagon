@@ -1,0 +1,2529 @@
+{
+ "call_id": "c06a",
+ "bloque": "5-6 · La huida / El encierro",
+ "duration_s": 6,
+ "fps": 24,
+ "resolution": [
+  720,
+  1280
+ ],
+ "origin": "ANC_fuelle",
+ "set_light": "rojo",
+ "train_sway": {
+  "m": 0.006,
+  "deg": 0.3,
+  "hz": 0.45
+ },
+ "fuente_tiempos": "llamadas_tiempos.json: b5_p8 0.5-1.8, b5_p9 1.8-2.8, b6_p1 2.8-4.8 (pedida 5.3 s -> 6 s). Colchon 0-0.5 s: Hugo ya empuja la puerta. b6_p1 se alarga de 4.8 a 6.0 con accion (los infectados se alejan, las cabezas bajan), sin quietud.",
+ "props_in_frame": [
+  "llave"
+ ],
+ "notes": "Ultimo vagon, luz roja con el tubo frio sobre la puerta (por dentro). Puerta en y=-0.04, bisagras a la derecha vista desde adentro (+X), abre hacia adentro; cerradura y ranura a la izquierda (x=-0.32). P8: camara adentro, del lado de la cerradura, mirando la ranura de tres cuartos. P9: de frente a la ventanita. b6_p1: desde el pasillo entre las filas 3 y 4, hacia la puerta. El grupo termina en las marcas del brief (Martina -0.25/-1.55, Tomas 0.25/-1.45, Carmen 0.80/-1.85, Ivan 0.10/-0.32, Hugo -0.62/-0.50).",
+ "set_anim": {
+  "doors": [
+   {
+    "object": "PUERTA_ultimo",
+    "keys": [
+     {
+      "t": 0.0,
+      "open_deg": 36
+     },
+     {
+      "t": 0.4,
+      "open_deg": 10,
+      "ease": "out"
+     },
+     {
+      "t": 0.58,
+      "open_deg": 13,
+      "ease": "out"
+     },
+     {
+      "t": 0.78,
+      "open_deg": 4,
+      "ease": "in"
+     },
+     {
+      "t": 0.86,
+      "open_deg": 6.5,
+      "ease": "out"
+     },
+     {
+      "t": 0.98,
+      "open_deg": 0,
+      "ease": "snap"
+     },
+     {
+      "t": 2.9,
+      "open_deg": 0
+     },
+     {
+      "t": 2.95,
+      "open_deg": 0.45,
+      "ease": "snap"
+     },
+     {
+      "t": 3.02,
+      "open_deg": 0,
+      "ease": "out"
+     },
+     {
+      "t": 3.12,
+      "open_deg": 0.3,
+      "ease": "snap"
+     },
+     {
+      "t": 3.19,
+      "open_deg": 0,
+      "ease": "out"
+     },
+     {
+      "t": 3.3,
+      "open_deg": 0.45,
+      "ease": "snap"
+     },
+     {
+      "t": 3.37,
+      "open_deg": 0,
+      "ease": "out"
+     },
+     {
+      "t": 3.46,
+      "open_deg": 0.3,
+      "ease": "snap"
+     },
+     {
+      "t": 3.53,
+      "open_deg": 0,
+      "ease": "out"
+     },
+     {
+      "t": 3.63,
+      "open_deg": 0.45,
+      "ease": "snap"
+     },
+     {
+      "t": 3.7,
+      "open_deg": 0,
+      "ease": "out"
+     },
+     {
+      "t": 3.78,
+      "open_deg": 0.3,
+      "ease": "snap"
+     },
+     {
+      "t": 3.85,
+      "open_deg": 0,
+      "ease": "out"
+     },
+     {
+      "t": 3.92,
+      "open_deg": 0.45,
+      "ease": "snap"
+     },
+     {
+      "t": 3.99,
+      "open_deg": 0,
+      "ease": "out"
+     }
+    ]
+   },
+   {
+    "object": "PUERTA_vagon5_tras",
+    "keys": [
+     {
+      "t": 0.0,
+      "open_deg": 0
+     }
+    ]
+   }
+  ],
+  "glass_break": [
+   {
+    "object": "VIDRIO_vagon5_tras",
+    "t": 0.0,
+    "n": 0,
+    "seed": 5
+   }
+  ]
+ },
+ "shots": [
+  {
+   "id": "b5_p8",
+   "titulo": "P8 · La puerta, desde adentro",
+   "t0": 0.0,
+   "t1": 1.8,
+   "montaje": {
+    "usar_desde_s": 0.5,
+    "usar_hasta_s": 1.8,
+    "dur_montaje_s": 1.3
+   },
+   "descripcion": "La puerta del ultimo vagon desde adentro, del lado de la cerradura. Hugo, el ultimo en entrar, empuja la hoja con el hombro derecho y todo el peso del cuerpo (cuadro 0: abierta 36 grados, la accion ya en marcha). A 0.40 s una mano infectada se mete por la ranura entre el canto de la puerta y el marco, a la altura del pecho; la puerta se detiene en ella. Hugo carga el peso y la aplasta (0.78 s); la mano se retira y la puerta cierra de golpe (portazo, cuadro 24). Con la mano derecha mete la llave antigua en la cerradura por dentro, la gira (clac, cuadro 34), la saca y la baja hacia su bolsillo, fuera de cuadro. La puerta solo tiene cerradura y manija: no hay cerrojo ni pasador.",
+   "motivo_camara": "En mano, cerca, junto al marco del lado de la cerradura: la camara esta con la mano infectada y con la llave. Arranca un poco alta para leer el cuerpo de Hugo contra la hoja y la ranura, acusa el aplastamiento y el portazo 2 cuadros despues, y baja y se mete a la altura de la cerradura para la llave.",
+   "camera": {
+    "lens_mm": 35,
+    "tag": "MANO_CERRADURA",
+    "mode": "handheld",
+    "mira": "a la ranura y la cerradura, de tres cuartos",
+    "mov": "baja de 1,50 a 1,12 m y se acerca 0,2 m despues del portazo",
+    "handheld": {
+     "rot_deg": 0.6,
+     "pos_m": 0.01,
+     "hz": 1.0,
+     "seed": 81
+    },
+    "shakes": [
+     {
+      "impact_t": 0.78,
+      "delay_f": 2,
+      "deg": 0.7,
+      "m": 0.005,
+      "dur_s": 0.22,
+      "hz": 8.0
+     },
+     {
+      "impact_t": 0.98,
+      "delay_f": 2,
+      "deg": 1.4,
+      "m": 0.01,
+      "dur_s": 0.32,
+      "hz": 8.5,
+      "kick": [
+       -0.012,
+       -0.015,
+       0.0
+      ]
+     },
+     {
+      "impact_t": 1.4,
+      "delay_f": 2,
+      "deg": 0.35,
+      "m": 0.002,
+      "dur_s": 0.15,
+      "hz": 9.0
+     }
+    ],
+    "keys": [
+     {
+      "t": 0.0,
+      "pos": [
+       -1.08,
+       -0.7,
+       1.5
+      ],
+      "look_at": [
+       -0.28,
+       -0.18,
+       1.34
+      ]
+     },
+     {
+      "t": 0.62,
+      "pos": [
+       -1.06,
+       -0.68,
+       1.49
+      ],
+      "look_at": [
+       -0.31,
+       -0.13,
+       1.32
+      ]
+     },
+     {
+      "t": 1.0,
+      "pos": [
+       -1.01,
+       -0.63,
+       1.42
+      ],
+      "look_at": [
+       -0.32,
+       -0.1,
+       1.24
+      ]
+     },
+     {
+      "t": 1.32,
+      "pos": [
+       -0.86,
+       -0.47,
+       1.13
+      ],
+      "look_at": [
+       -0.31,
+       -0.08,
+       1.1
+      ],
+      "ease": "out"
+     },
+     {
+      "t": 1.8,
+      "pos": [
+       -0.84,
+       -0.45,
+       1.12
+      ],
+      "look_at": [
+       -0.3,
+       -0.08,
+       1.09
+      ]
+     }
+    ]
+   },
+   "en_cuadro": "A la izquierda, el marco de la puerta y la ranura por donde entra la mano; al centro, el canto de la hoja con la cerradura y la manija; a la derecha, el cuerpo de Hugo (bronce) apoyado en la hoja; por la ranura y por la ventanita, los infectados en el fuelle rojo.",
+   "stills": {
+    "A": {
+     "t": 0.62,
+     "desc": "La mano infectada en la ranura; Hugo empuja la hoja con el cuerpo."
+    },
+    "B": {
+     "t": 1.38,
+     "desc": "Puerta cerrada; la llave gira en la cerradura (clac), plano a la altura de la cerradura."
+    },
+    "C": {
+     "t": 1.75,
+     "desc": "La llave sale de la cerradura y baja fuera de cuadro; la puerta queda cerrada."
+    }
+   },
+   "actors": {
+    "hugo": {
+     "pose": "de_pie",
+     "keys": [
+      {
+       "t": 0.0,
+       "pos": [
+        0.028,
+        -0.582
+       ],
+       "yaw": 126,
+       "head_yaw": -58,
+       "head_pitch": 38
+      },
+      {
+       "t": 0.4,
+       "pos": [
+        -0.172,
+        -0.364
+       ],
+       "yaw": 100,
+       "head_yaw": -36,
+       "head_pitch": 46,
+       "ease": "out"
+      },
+      {
+       "t": 0.58,
+       "pos": [
+        -0.155,
+        -0.394
+       ],
+       "yaw": 103,
+       "head_yaw": -38,
+       "head_pitch": 46,
+       "ease": "out"
+      },
+      {
+       "t": 0.78,
+       "pos": [
+        -0.203,
+        -0.303
+       ],
+       "yaw": 94,
+       "head_yaw": -34,
+       "head_pitch": 48,
+       "ease": "in"
+      },
+      {
+       "t": 0.86,
+       "pos": [
+        -0.191,
+        -0.329
+       ],
+       "yaw": 96,
+       "head_yaw": -36,
+       "head_pitch": 46,
+       "ease": "out"
+      },
+      {
+       "t": 0.98,
+       "pos": [
+        -0.22,
+        -0.26
+       ],
+       "yaw": 88,
+       "head_yaw": -40,
+       "head_pitch": 42,
+       "ease": "snap"
+      },
+      {
+       "t": 1.12,
+       "pos": [
+        -0.2,
+        -0.29
+       ],
+       "yaw": 26,
+       "head_yaw": 4,
+       "head_pitch": 55,
+       "ease": "out"
+      },
+      {
+       "t": 1.5,
+       "pos": [
+        -0.21,
+        -0.3
+       ],
+       "yaw": 24,
+       "head_yaw": 2,
+       "head_pitch": 50
+      },
+      {
+       "t": 1.8,
+       "pos": [
+        -0.33,
+        -0.38
+       ],
+       "yaw": 8,
+       "head_yaw": -4,
+       "head_pitch": 12
+      }
+     ]
+    },
+    "martina": {
+     "pose": "de_pie",
+     "keys": [
+      {
+       "t": 0.0,
+       "pos": [
+        -0.35,
+        -0.95
+       ],
+       "yaw": 6,
+       "head_yaw": 10,
+       "head_pitch": -4
+      },
+      {
+       "t": 0.9,
+       "pos": [
+        -0.3,
+        -1.08
+       ],
+       "yaw": 4,
+       "head_yaw": 6,
+       "head_pitch": -2
+      },
+      {
+       "t": 2.06,
+       "pos": [
+        -0.22,
+        -1.22
+       ],
+       "yaw": 2,
+       "head_yaw": 0,
+       "head_pitch": -6,
+       "ease": "out"
+      }
+     ],
+     "tremor": {
+      "m": 0.003,
+      "hz": 5.0
+     }
+    },
+    "tomas": {
+     "pose": "de_pie",
+     "keys": [
+      {
+       "t": 0.0,
+       "pos": [
+        0.16,
+        -0.95
+       ],
+       "yaw": -6,
+       "head_yaw": -8,
+       "head_pitch": -2
+      },
+      {
+       "t": 0.9,
+       "pos": [
+        0.22,
+        -1.0
+       ],
+       "yaw": -4,
+       "head_yaw": -4,
+       "head_pitch": 0
+      },
+      {
+       "t": 2.06,
+       "pos": [
+        0.3,
+        -1.15
+       ],
+       "yaw": 0,
+       "head_yaw": 4,
+       "head_pitch": -6,
+       "ease": "out"
+      }
+     ]
+    },
+    "carmen": {
+     "pose": "de_pie",
+     "keys": [
+      {
+       "t": 0.0,
+       "pos": [
+        0.7,
+        -0.85
+       ],
+       "yaw": -10,
+       "head_yaw": -4,
+       "head_pitch": 4
+      },
+      {
+       "t": 0.9,
+       "pos": [
+        0.72,
+        -0.98
+       ],
+       "yaw": -8,
+       "head_yaw": 0,
+       "head_pitch": 0
+      },
+      {
+       "t": 2.06,
+       "pos": [
+        0.72,
+        -1.13
+       ],
+       "yaw": -6,
+       "head_yaw": 4,
+       "head_pitch": -6,
+       "ease": "out"
+      }
+     ],
+     "tremor": {
+      "m": 0.003,
+      "hz": 5.0
+     }
+    },
+    "ivan": {
+     "pose": "de_pie",
+     "keys": [
+      {
+       "t": 0.0,
+       "pos": [
+        0.4,
+        -0.55
+       ],
+       "yaw": 10,
+       "head_yaw": 4,
+       "head_pitch": 0
+      },
+      {
+       "t": 0.9,
+       "pos": [
+        0.45,
+        -0.68
+       ],
+       "yaw": 4,
+       "head_yaw": 0,
+       "head_pitch": 0
+      },
+      {
+       "t": 2.06,
+       "pos": [
+        0.46,
+        -0.76
+       ],
+       "yaw": 0,
+       "head_yaw": -6,
+       "head_pitch": -6,
+       "ease": "out"
+      }
+     ]
+    },
+    "infectado_1": {
+     "pose": "de_pie",
+     "tremor": {
+      "m": 0.012,
+      "hz": 4.5
+     },
+     "keys": [
+      {
+       "t": 0.0,
+       "pos": [
+        -0.2,
+        0.55
+       ],
+       "yaw": 184,
+       "head_pitch": 6
+      },
+      {
+       "t": 0.4,
+       "pos": [
+        -0.3,
+        0.25
+       ],
+       "yaw": 184,
+       "head_pitch": 6,
+       "ease": "in"
+      },
+      {
+       "t": 0.58,
+       "pos": [
+        -0.3,
+        0.22
+       ],
+       "yaw": 184,
+       "head_pitch": 6
+      },
+      {
+       "t": 0.78,
+       "pos": [
+        -0.31,
+        0.3
+       ],
+       "yaw": 184,
+       "head_pitch": 6,
+       "ease": "out"
+      },
+      {
+       "t": 1.0,
+       "pos": [
+        -0.34,
+        0.27
+       ],
+       "yaw": 184,
+       "head_pitch": 6
+      },
+      {
+       "t": 1.6,
+       "pos": [
+        -0.42,
+        0.25
+       ],
+       "yaw": 184,
+       "head_pitch": 6
+      },
+      {
+       "t": 2.8,
+       "pos": [
+        -0.42,
+        0.29
+       ],
+       "yaw": 184,
+       "head_pitch": 6
+      }
+     ]
+    },
+    "infectado_2": {
+     "pose": "de_pie",
+     "tremor": {
+      "m": 0.012,
+      "hz": 4.5
+     },
+     "keys": [
+      {
+       "t": 0.0,
+       "pos": [
+        0.12,
+        1.95
+       ],
+       "yaw": 180,
+       "head_pitch": 0
+      },
+      {
+       "t": 1.0,
+       "pos": [
+        0.1,
+        1.62
+       ],
+       "yaw": 180,
+       "head_pitch": 0
+      },
+      {
+       "t": 1.8,
+       "pos": [
+        0.06,
+        1.25
+       ],
+       "yaw": 180,
+       "head_pitch": 0
+      }
+     ]
+    },
+    "infectado_3": {
+     "pose": "de_pie",
+     "tremor": {
+      "m": 0.012,
+      "hz": 4.5
+     },
+     "keys": [
+      {
+       "t": 0.0,
+       "pos": [
+        0.4,
+        0.95
+       ],
+       "yaw": 176
+      },
+      {
+       "t": 1.0,
+       "pos": [
+        0.42,
+        0.45
+       ],
+       "yaw": 176
+      },
+      {
+       "t": 2.8,
+       "pos": [
+        0.42,
+        0.31
+       ],
+       "yaw": 176
+      }
+     ]
+    },
+    "infectado_4": {
+     "pose": "de_pie",
+     "tremor": {
+      "m": 0.012,
+      "hz": 4.5
+     },
+     "keys": [
+      {
+       "t": 0.0,
+       "pos": [
+        -0.3,
+        2.4
+       ],
+       "yaw": 180
+      },
+      {
+       "t": 1.0,
+       "pos": [
+        -0.3,
+        2.05
+       ],
+       "yaw": 180
+      },
+      {
+       "t": 1.8,
+       "pos": [
+        -0.3,
+        1.65
+       ],
+       "yaw": 180
+      }
+     ]
+    },
+    "infectado_5": {
+     "pose": "de_pie",
+     "tremor": {
+      "m": 0.012,
+      "hz": 4.5
+     },
+     "keys": [
+      {
+       "t": 0.0,
+       "pos": [
+        0.38,
+        2.6
+       ],
+       "yaw": 180
+      },
+      {
+       "t": 1.0,
+       "pos": [
+        0.38,
+        2.15
+       ],
+       "yaw": 180
+      },
+      {
+       "t": 1.8,
+       "pos": [
+        0.36,
+        1.75
+       ],
+       "yaw": 180
+      }
+     ]
+    }
+   },
+   "props": {
+    "llave": {
+     "tremor": {
+      "deg": 0.8,
+      "hz": 8.0,
+      "m": 0.001
+     },
+     "keys": [
+      {
+       "t": 0.0,
+       "pos": [
+        -0.06,
+        -0.36,
+        0.98
+       ],
+       "rot": [
+        0,
+        0,
+        200
+       ]
+      },
+      {
+       "t": 0.98,
+       "pos": [
+        -0.2,
+        -0.2,
+        1.02
+       ],
+       "rot": [
+        0,
+        0,
+        190
+       ]
+      },
+      {
+       "t": 1.06,
+       "pos": [
+        -0.32,
+        -0.149,
+        1.095
+       ],
+       "rot": [
+        0,
+        0,
+        182
+       ],
+       "ease": "out"
+      },
+      {
+       "t": 1.13,
+       "pos": [
+        -0.32,
+        -0.079,
+        1.1
+       ],
+       "rot": [
+        0,
+        0,
+        180
+       ],
+       "ease": "out"
+      },
+      {
+       "t": 1.24,
+       "rot": [
+        0,
+        18,
+        180
+       ]
+      },
+      {
+       "t": 1.4,
+       "rot": [
+        0,
+        90,
+        180
+       ],
+       "ease": "snap"
+      },
+      {
+       "t": 1.47,
+       "rot": [
+        0,
+        90,
+        180
+       ]
+      },
+      {
+       "t": 1.56,
+       "pos": [
+        -0.32,
+        -0.169,
+        1.09
+       ],
+       "rot": [
+        0,
+        90,
+        180
+       ],
+       "ease": "in"
+      },
+      {
+       "t": 1.76,
+       "pos": [
+        -0.06,
+        -0.42,
+        0.86
+       ],
+       "rot": [
+        20,
+        60,
+        160
+       ],
+       "ease": "out"
+      },
+      {
+       "t": 1.8,
+       "pos": [
+        -0.04,
+        -0.43,
+        0.84
+       ]
+      }
+     ]
+    }
+   }
+  },
+  {
+   "id": "b5_p9",
+   "titulo": "P9 · La ventanita",
+   "t0": 1.8,
+   "t1": 2.8,
+   "montaje": {
+    "usar_desde_s": 1.8,
+    "usar_hasta_s": 2.8,
+    "dur_montaje_s": 1.0
+   },
+   "descripcion": "La ventanita de la puerta del ultimo vagon, desde adentro. Por el vidrio, el fuelle rojo y los infectados. Uno corre hacia la puerta y estrella la cara contra el vidrio (IMPACTO cuadro 49, 2.04 s); rebota, vuelve a pegarse y la cara resbala hacia abajo dejando una mancha oscura en el vidrio. Las manos golpean el vidrio. Nadie del grupo en cuadro.",
+   "motivo_camara": "Fija, un poco baja (1,40 m) y de frente: la cara llega desde arriba y desde el fondo hacia nosotros. El marco de la ventanita es el primer termino. El impacto sacude el cuadro 3 cuadros despues (cuadro 52) y la camara vuelve a su lugar.",
+   "impacto": {
+    "t": 2.04,
+    "cuadro": 49,
+    "sacudida_desde_cuadro": 52
+   },
+   "camera": {
+    "lens_mm": 35,
+    "tag": "FIJA_VENTANITA",
+    "mira": "a la ventanita, de tres cuartos desde la izquierda, un poco desde abajo",
+    "mov": "fija; vibra con el tren; sacudida al impacto",
+    "vibration": {
+     "deg": 0.05,
+     "hz": 9.0,
+     "m": 0.0008
+    },
+    "shakes": [
+     {
+      "impact_t": 2.04,
+      "delay_f": 3,
+      "deg": 1.6,
+      "m": 0.008,
+      "dur_s": 0.4,
+      "hz": 8.5,
+      "kick": [
+       0.0,
+       -0.02,
+       0.0
+      ]
+     },
+     {
+      "impact_t": 2.38,
+      "delay_f": 3,
+      "deg": 0.6,
+      "m": 0.003,
+      "dur_s": 0.25,
+      "hz": 8.0
+     }
+    ],
+    "keys": [
+     {
+      "t": 1.8,
+      "pos": [
+       -0.18,
+       -0.86,
+       1.34
+      ],
+      "look_at": [
+       0.03,
+       -0.04,
+       1.5
+      ]
+     }
+    ]
+   },
+   "en_cuadro": "El marco de la ventanita llena el centro del cuadro, con la hoja gris arriba y abajo; detras del vidrio, el fuelle en rojo con siluetas de infectados; la cara se estrella en la mitad alta del vidrio.",
+   "stills": {
+    "A": {
+     "t": 1.88,
+     "desc": "Por la ventanita, un infectado viene corriendo por el fuelle rojo."
+    },
+    "B": {
+     "t": 2.1,
+     "desc": "La cara se estrella contra el vidrio; el cuadro se sacude."
+    },
+    "C": {
+     "t": 2.75,
+     "desc": "La cara resbala por el vidrio y deja la mancha oscura; otras manos golpean."
+    }
+   },
+   "actors": {
+    "hugo": {
+     "pose": "de_pie",
+     "keys": [
+      {
+       "t": 1.8,
+       "pos": [
+        -0.33,
+        -0.38
+       ],
+       "yaw": 8,
+       "head_yaw": -4,
+       "head_pitch": 12
+      },
+      {
+       "t": 2.06,
+       "pos": [
+        -0.45,
+        -0.43
+       ],
+       "yaw": -30,
+       "head_yaw": -14,
+       "head_pitch": 2,
+       "ease": "out"
+      },
+      {
+       "t": 2.8,
+       "pos": [
+        -0.47,
+        -0.44
+       ],
+       "yaw": -34,
+       "head_yaw": -12,
+       "head_pitch": 0
+      }
+     ]
+    },
+    "martina": {
+     "pose": "de_pie",
+     "keys": [
+      {
+       "t": 0.9,
+       "pos": [
+        -0.3,
+        -1.08
+       ],
+       "yaw": 4,
+       "head_yaw": 6,
+       "head_pitch": -2
+      },
+      {
+       "t": 2.06,
+       "pos": [
+        -0.22,
+        -1.22
+       ],
+       "yaw": 2,
+       "head_yaw": 0,
+       "head_pitch": -6,
+       "ease": "out"
+      },
+      {
+       "t": 2.8,
+       "pos": [
+        -0.22,
+        -1.27
+       ],
+       "yaw": 2,
+       "head_yaw": 0,
+       "head_pitch": -6
+      }
+     ],
+     "tremor": {
+      "m": 0.003,
+      "hz": 5.0
+     }
+    },
+    "tomas": {
+     "pose": "de_pie",
+     "keys": [
+      {
+       "t": 0.9,
+       "pos": [
+        0.22,
+        -1.0
+       ],
+       "yaw": -4,
+       "head_yaw": -4,
+       "head_pitch": 0
+      },
+      {
+       "t": 2.06,
+       "pos": [
+        0.3,
+        -1.15
+       ],
+       "yaw": 0,
+       "head_yaw": 4,
+       "head_pitch": -6,
+       "ease": "out"
+      },
+      {
+       "t": 2.8,
+       "pos": [
+        0.3,
+        -1.18
+       ],
+       "yaw": 0,
+       "head_yaw": 4,
+       "head_pitch": -6
+      }
+     ]
+    },
+    "carmen": {
+     "pose": "de_pie",
+     "keys": [
+      {
+       "t": 0.9,
+       "pos": [
+        0.72,
+        -0.98
+       ],
+       "yaw": -8,
+       "head_yaw": 0,
+       "head_pitch": 0
+      },
+      {
+       "t": 2.06,
+       "pos": [
+        0.72,
+        -1.13
+       ],
+       "yaw": -6,
+       "head_yaw": 4,
+       "head_pitch": -6,
+       "ease": "out"
+      },
+      {
+       "t": 2.8,
+       "pos": [
+        0.72,
+        -1.16
+       ],
+       "yaw": -6,
+       "head_yaw": 4,
+       "head_pitch": -6
+      }
+     ],
+     "tremor": {
+      "m": 0.003,
+      "hz": 5.0
+     }
+    },
+    "ivan": {
+     "pose": "de_pie",
+     "keys": [
+      {
+       "t": 0.9,
+       "pos": [
+        0.45,
+        -0.68
+       ],
+       "yaw": 4,
+       "head_yaw": 0,
+       "head_pitch": 0
+      },
+      {
+       "t": 2.06,
+       "pos": [
+        0.46,
+        -0.76
+       ],
+       "yaw": 0,
+       "head_yaw": -6,
+       "head_pitch": -6,
+       "ease": "out"
+      },
+      {
+       "t": 2.8,
+       "pos": [
+        0.46,
+        -0.77
+       ],
+       "yaw": 0,
+       "head_yaw": -6,
+       "head_pitch": -6
+      }
+     ]
+    },
+    "infectado_1": {
+     "pose": "de_pie",
+     "tremor": {
+      "m": 0.012,
+      "hz": 4.5
+     },
+     "keys": [
+      {
+       "t": 1.6,
+       "pos": [
+        -0.42,
+        0.25
+       ],
+       "yaw": 184,
+       "head_pitch": 6
+      },
+      {
+       "t": 2.8,
+       "pos": [
+        -0.42,
+        0.29
+       ],
+       "yaw": 184,
+       "head_pitch": 6
+      }
+     ]
+    },
+    "infectado_2": {
+     "pose": "de_pie",
+     "tremor": {
+      "m": 0.012,
+      "hz": 4.5
+     },
+     "keys": [
+      {
+       "t": 1.8,
+       "pos": [
+        0.06,
+        1.25
+       ],
+       "yaw": 180,
+       "head_pitch": 0
+      },
+      {
+       "t": 2.04,
+       "pos": [
+        0.02,
+        0.24
+       ],
+       "yaw": 180,
+       "head_pitch": 0,
+       "dz": -0.04,
+       "ease": "in"
+      },
+      {
+       "t": 2.2,
+       "pos": [
+        0.02,
+        0.33
+       ],
+       "yaw": 180,
+       "head_pitch": 0,
+       "dz": -0.05,
+       "ease": "out"
+      },
+      {
+       "t": 2.38,
+       "pos": [
+        0.01,
+        0.245
+       ],
+       "yaw": 180,
+       "head_pitch": 0,
+       "dz": -0.07,
+       "ease": "snap"
+      },
+      {
+       "t": 2.8,
+       "pos": [
+        0.0,
+        0.245
+       ],
+       "yaw": 180,
+       "head_pitch": 0,
+       "dz": -0.16
+      }
+     ]
+    },
+    "infectado_3": {
+     "pose": "de_pie",
+     "tremor": {
+      "m": 0.012,
+      "hz": 4.5
+     },
+     "keys": [
+      {
+       "t": 1.0,
+       "pos": [
+        0.42,
+        0.45
+       ],
+       "yaw": 176
+      },
+      {
+       "t": 2.8,
+       "pos": [
+        0.42,
+        0.31
+       ],
+       "yaw": 176
+      }
+     ]
+    },
+    "infectado_4": {
+     "pose": "de_pie",
+     "tremor": {
+      "m": 0.012,
+      "hz": 4.5
+     },
+     "keys": [
+      {
+       "t": 1.8,
+       "pos": [
+        -0.3,
+        1.65
+       ],
+       "yaw": 180
+      },
+      {
+       "t": 2.8,
+       "pos": [
+        -0.22,
+        0.68
+       ],
+       "yaw": 180
+      }
+     ]
+    },
+    "infectado_5": {
+     "pose": "de_pie",
+     "tremor": {
+      "m": 0.012,
+      "hz": 4.5
+     },
+     "keys": [
+      {
+       "t": 1.8,
+       "pos": [
+        0.36,
+        1.75
+       ],
+       "yaw": 180
+      },
+      {
+       "t": 2.8,
+       "pos": [
+        0.24,
+        0.7
+       ],
+       "yaw": 180
+      }
+     ]
+    }
+   }
+  },
+  {
+   "id": "b6_p1",
+   "titulo": "P1 · El encierro (general)",
+   "t0": 2.8,
+   "t1": 6.0,
+   "montaje": {
+    "usar_desde_s": 2.8,
+    "usar_hasta_s": 4.8,
+    "dur_montaje_s": 2.0,
+    "alargue_s": "4.8-6.0"
+   },
+   "descripcion": "Plano general del ultimo vagon desde el fondo, hacia la puerta (la unica puerta, con el tubo frio encima). Golpes violentos de muchas manos en la puerta y en la ventanita (de 2.95 a 3.92 s); la hoja tiembla contra la cerradura. El grupo retrocede hacia la camara hasta sus marcas: Martina a la izquierda de Tomas, Carmen a la derecha. Ivan cruza a la puerta, se da vuelta y apoya la espalda contra ella (3.32 s), con la cabeza gacha. Hugo junto a la puerta, del lado de la cerradura. A 3.95 s llega un grito lejano desde el vagon 5: los golpes paran de golpe, Ivan levanta la cabeza, las siluetas se van de la ventanita y se oyen pasos que se alejan. Silencio: el tren y las respiraciones. Alargue (4.8-6.0): los infectados se alejan por el fuelle; Martina baja la mirada al piso y Carmen a su mano derecha.",
+   "motivo_camara": "Fija a proposito: el contraste con el caos del bloque 5 es la idea. A la altura de los ojos de pie, desde el pasillo entre las filas 3 y 4, con los respaldos de las filas 2 y 3 como primer termino. No acusa los golpes: solo vibra con el tren.",
+   "camera": {
+    "lens_mm": 24,
+    "tag": "FIJA",
+    "mira": "hacia la puerta del ultimo vagon, desde el fondo",
+    "mov": "fija; solo vibra con el tren",
+    "vibration": {
+     "deg": 0.04,
+     "hz": 9.0,
+     "m": 0.0006
+    },
+    "keys": [
+     {
+      "t": 2.8,
+      "pos": [
+       0.05,
+       -4.1,
+       1.5
+      ],
+      "look_at": [
+       -0.02,
+       -0.6,
+       1.16
+      ]
+     }
+    ]
+   },
+   "en_cuadro": "Primer termino: respaldos de los asientos a los dos lados del pasillo. Al fondo, la puerta con la ventanita y el tubo frio encima; Ivan de espaldas contra la puerta, al centro; Hugo a la izquierda, junto a la cerradura; Martina a la izquierda de Tomas, al centro; Carmen a la derecha, junto a la fila 1.",
+   "stills": {
+    "A": {
+     "t": 2.85,
+     "desc": "Golpes en la puerta; el grupo frente a la puerta empieza a retroceder; Ivan va hacia ella."
+    },
+    "B": {
+     "t": 3.6,
+     "desc": "Ivan con la espalda contra la puerta; el grupo retrocedio; la ventanita llena de manos.",
+     "lados": {
+      "martina": "izq",
+      "tomas": "der"
+     }
+    },
+    "C": {
+     "t": 4.7,
+     "desc": "Silencio: los golpes pararon, las siluetas se van; todos quietos, escuchando."
+    }
+   },
+   "actors": {
+    "hugo": {
+     "pose": "de_pie",
+     "keys": [
+      {
+       "t": 2.8,
+       "pos": [
+        -0.47,
+        -0.44
+       ],
+       "yaw": -34,
+       "head_yaw": -12,
+       "head_pitch": 0
+      },
+      {
+       "t": 3.4,
+       "pos": [
+        -0.62,
+        -0.5
+       ],
+       "yaw": -40,
+       "head_yaw": -8,
+       "head_pitch": -2
+      },
+      {
+       "t": 3.95,
+       "pos": [
+        -0.62,
+        -0.5
+       ],
+       "yaw": -40,
+       "head_yaw": -4,
+       "head_pitch": -6
+      },
+      {
+       "t": 4.3,
+       "pos": [
+        -0.62,
+        -0.5
+       ],
+       "yaw": -38,
+       "head_yaw": -18,
+       "head_pitch": -4
+      },
+      {
+       "t": 6.0,
+       "pos": [
+        -0.62,
+        -0.5
+       ],
+       "yaw": -36,
+       "head_yaw": -28,
+       "head_pitch": 8
+      }
+     ]
+    },
+    "martina": {
+     "pose": "de_pie",
+     "keys": [
+      {
+       "t": 2.8,
+       "pos": [
+        -0.22,
+        -1.27
+       ],
+       "yaw": 2,
+       "head_yaw": 0,
+       "head_pitch": -6
+      },
+      {
+       "t": 3.75,
+       "pos": [
+        -0.25,
+        -1.55
+       ],
+       "yaw": 0,
+       "head_yaw": -4,
+       "head_pitch": -4
+      },
+      {
+       "t": 4.4,
+       "pos": [
+        -0.25,
+        -1.55
+       ],
+       "yaw": 0,
+       "head_yaw": -6,
+       "head_pitch": -8
+      },
+      {
+       "t": 6.0,
+       "pos": [
+        -0.25,
+        -1.55
+       ],
+       "yaw": -2,
+       "head_yaw": 4,
+       "head_pitch": 22
+      }
+     ],
+     "tremor": {
+      "m": 0.003,
+      "hz": 5.0
+     }
+    },
+    "tomas": {
+     "pose": "de_pie",
+     "keys": [
+      {
+       "t": 2.8,
+       "pos": [
+        0.3,
+        -1.18
+       ],
+       "yaw": 0,
+       "head_yaw": 4,
+       "head_pitch": -6
+      },
+      {
+       "t": 3.7,
+       "pos": [
+        0.25,
+        -1.45
+       ],
+       "yaw": 2,
+       "head_yaw": 2,
+       "head_pitch": -4
+      },
+      {
+       "t": 4.4,
+       "pos": [
+        0.25,
+        -1.45
+       ],
+       "yaw": 2,
+       "head_yaw": 0,
+       "head_pitch": -8
+      },
+      {
+       "t": 6.0,
+       "pos": [
+        0.25,
+        -1.45
+       ],
+       "yaw": 6,
+       "head_yaw": -10,
+       "head_pitch": 12
+      }
+     ]
+    },
+    "carmen": {
+     "pose": "de_pie",
+     "keys": [
+      {
+       "t": 2.8,
+       "pos": [
+        0.72,
+        -1.16
+       ],
+       "yaw": -6,
+       "head_yaw": 4,
+       "head_pitch": -6
+      },
+      {
+       "t": 3.8,
+       "pos": [
+        0.8,
+        -1.85
+       ],
+       "yaw": -4,
+       "head_yaw": 4,
+       "head_pitch": -4
+      },
+      {
+       "t": 4.4,
+       "pos": [
+        0.8,
+        -1.85
+       ],
+       "yaw": -4,
+       "head_yaw": 8,
+       "head_pitch": -8
+      },
+      {
+       "t": 6.0,
+       "pos": [
+        0.8,
+        -1.85
+       ],
+       "yaw": 0,
+       "head_yaw": -10,
+       "head_pitch": 34
+      }
+     ],
+     "tremor": {
+      "m": 0.003,
+      "hz": 5.0
+     }
+    },
+    "ivan": {
+     "pose": "de_pie",
+     "keys": [
+      {
+       "t": 2.8,
+       "pos": [
+        0.46,
+        -0.77
+       ],
+       "yaw": 0,
+       "head_yaw": -6,
+       "head_pitch": -6
+      },
+      {
+       "t": 3.05,
+       "pos": [
+        0.3,
+        -0.58
+       ],
+       "yaw": 70,
+       "head_yaw": 10,
+       "head_pitch": 10
+      },
+      {
+       "t": 3.32,
+       "pos": [
+        0.1,
+        -0.32
+       ],
+       "yaw": 180,
+       "head_yaw": 22,
+       "head_pitch": 22,
+       "ease": "out"
+      },
+      {
+       "t": 3.95,
+       "pos": [
+        0.1,
+        -0.32
+       ],
+       "yaw": 180,
+       "head_yaw": 26,
+       "head_pitch": 24
+      },
+      {
+       "t": 4.4,
+       "pos": [
+        0.1,
+        -0.32
+       ],
+       "yaw": 180,
+       "head_yaw": 62,
+       "head_pitch": -4
+      },
+      {
+       "t": 6.0,
+       "pos": [
+        0.1,
+        -0.32
+       ],
+       "yaw": 180,
+       "head_yaw": 44,
+       "head_pitch": 26
+      }
+     ]
+    },
+    "infectado_1": {
+     "pose": "de_pie",
+     "tremor": {
+      "m": 0.012,
+      "hz": 4.5
+     },
+     "keys": [
+      {
+       "t": 2.8,
+       "pos": [
+        -0.42,
+        0.29
+       ],
+       "yaw": 184,
+       "head_pitch": 6
+      },
+      {
+       "t": 2.89,
+       "pos": [
+        -0.42,
+        0.31
+       ],
+       "yaw": 184,
+       "head_pitch": 6
+      },
+      {
+       "t": 2.95,
+       "pos": [
+        -0.42,
+        0.25
+       ],
+       "yaw": 184,
+       "head_pitch": 6,
+       "ease": "snap"
+      },
+      {
+       "t": 3.06,
+       "pos": [
+        -0.42,
+        0.31
+       ],
+       "yaw": 184,
+       "head_pitch": 6
+      },
+      {
+       "t": 3.12,
+       "pos": [
+        -0.42,
+        0.25
+       ],
+       "yaw": 184,
+       "head_pitch": 6,
+       "ease": "snap"
+      },
+      {
+       "t": 3.24,
+       "pos": [
+        -0.42,
+        0.31
+       ],
+       "yaw": 184,
+       "head_pitch": 6
+      },
+      {
+       "t": 3.3,
+       "pos": [
+        -0.42,
+        0.25
+       ],
+       "yaw": 184,
+       "head_pitch": 6,
+       "ease": "snap"
+      },
+      {
+       "t": 3.4,
+       "pos": [
+        -0.42,
+        0.31
+       ],
+       "yaw": 184,
+       "head_pitch": 6
+      },
+      {
+       "t": 3.46,
+       "pos": [
+        -0.42,
+        0.25
+       ],
+       "yaw": 184,
+       "head_pitch": 6,
+       "ease": "snap"
+      },
+      {
+       "t": 3.57,
+       "pos": [
+        -0.42,
+        0.31
+       ],
+       "yaw": 184,
+       "head_pitch": 6
+      },
+      {
+       "t": 3.63,
+       "pos": [
+        -0.42,
+        0.25
+       ],
+       "yaw": 184,
+       "head_pitch": 6,
+       "ease": "snap"
+      },
+      {
+       "t": 3.72,
+       "pos": [
+        -0.42,
+        0.31
+       ],
+       "yaw": 184,
+       "head_pitch": 6
+      },
+      {
+       "t": 3.78,
+       "pos": [
+        -0.42,
+        0.25
+       ],
+       "yaw": 184,
+       "head_pitch": 6,
+       "ease": "snap"
+      },
+      {
+       "t": 3.86,
+       "pos": [
+        -0.42,
+        0.31
+       ],
+       "yaw": 184,
+       "head_pitch": 6
+      },
+      {
+       "t": 3.92,
+       "pos": [
+        -0.42,
+        0.25
+       ],
+       "yaw": 184,
+       "head_pitch": 6,
+       "ease": "snap"
+      },
+      {
+       "t": 4.05,
+       "pos": [
+        -0.42,
+        0.3
+       ],
+       "yaw": 184,
+       "head_pitch": 6,
+       "head_yaw": 0
+      },
+      {
+       "t": 4.25,
+       "pos": [
+        -0.4,
+        0.33
+       ],
+       "yaw": 184,
+       "head_pitch": 6,
+       "head_yaw": 150
+      },
+      {
+       "t": 4.6,
+       "pos": [
+        -0.33,
+        0.6
+       ],
+       "yaw": 0,
+       "head_pitch": 6,
+       "head_yaw": 0
+      },
+      {
+       "t": 6.0,
+       "pos": [
+        -0.36,
+        2.2
+       ],
+       "yaw": 0,
+       "head_pitch": 6,
+       "head_yaw": 0,
+       "ease": "linear"
+      }
+     ]
+    },
+    "infectado_2": {
+     "pose": "de_pie",
+     "tremor": {
+      "m": 0.012,
+      "hz": 4.5
+     },
+     "keys": [
+      {
+       "t": 2.8,
+       "pos": [
+        0.0,
+        0.245
+       ],
+       "yaw": 180,
+       "head_pitch": 0,
+       "dz": -0.16
+      },
+      {
+       "t": 2.93,
+       "pos": [
+        0.02,
+        0.31
+       ],
+       "yaw": 180,
+       "head_pitch": 0,
+       "dz": -0.16
+      },
+      {
+       "t": 2.99,
+       "pos": [
+        0.02,
+        0.25
+       ],
+       "yaw": 180,
+       "head_pitch": 0,
+       "dz": -0.16,
+       "ease": "snap"
+      },
+      {
+       "t": 3.1,
+       "pos": [
+        0.02,
+        0.31
+       ],
+       "yaw": 180,
+       "head_pitch": 0,
+       "dz": -0.16
+      },
+      {
+       "t": 3.16,
+       "pos": [
+        0.02,
+        0.25
+       ],
+       "yaw": 180,
+       "head_pitch": 0,
+       "dz": -0.16,
+       "ease": "snap"
+      },
+      {
+       "t": 3.28,
+       "pos": [
+        0.02,
+        0.31
+       ],
+       "yaw": 180,
+       "head_pitch": 0,
+       "dz": -0.16
+      },
+      {
+       "t": 3.34,
+       "pos": [
+        0.02,
+        0.25
+       ],
+       "yaw": 180,
+       "head_pitch": 0,
+       "dz": -0.16,
+       "ease": "snap"
+      },
+      {
+       "t": 3.44,
+       "pos": [
+        0.02,
+        0.31
+       ],
+       "yaw": 180,
+       "head_pitch": 0,
+       "dz": -0.16
+      },
+      {
+       "t": 3.5,
+       "pos": [
+        0.02,
+        0.25
+       ],
+       "yaw": 180,
+       "head_pitch": 0,
+       "dz": -0.16,
+       "ease": "snap"
+      },
+      {
+       "t": 3.61,
+       "pos": [
+        0.02,
+        0.31
+       ],
+       "yaw": 180,
+       "head_pitch": 0,
+       "dz": -0.16
+      },
+      {
+       "t": 3.67,
+       "pos": [
+        0.02,
+        0.25
+       ],
+       "yaw": 180,
+       "head_pitch": 0,
+       "dz": -0.16,
+       "ease": "snap"
+      },
+      {
+       "t": 3.76,
+       "pos": [
+        0.02,
+        0.31
+       ],
+       "yaw": 180,
+       "head_pitch": 0,
+       "dz": -0.16
+      },
+      {
+       "t": 3.82,
+       "pos": [
+        0.02,
+        0.25
+       ],
+       "yaw": 180,
+       "head_pitch": 0,
+       "dz": -0.16,
+       "ease": "snap"
+      },
+      {
+       "t": 3.9,
+       "pos": [
+        0.02,
+        0.31
+       ],
+       "yaw": 180,
+       "head_pitch": 0,
+       "dz": -0.16
+      },
+      {
+       "t": 3.96,
+       "pos": [
+        0.02,
+        0.25
+       ],
+       "yaw": 180,
+       "head_pitch": 0,
+       "dz": -0.16,
+       "ease": "snap"
+      },
+      {
+       "t": 4.05,
+       "pos": [
+        0.02,
+        0.27
+       ],
+       "yaw": 180,
+       "head_pitch": 0,
+       "dz": -0.1,
+       "head_yaw": 0
+      },
+      {
+       "t": 4.3,
+       "pos": [
+        0.04,
+        0.36
+       ],
+       "yaw": 180,
+       "head_pitch": 0,
+       "dz": -0.05,
+       "head_yaw": -150
+      },
+      {
+       "t": 4.7,
+       "pos": [
+        0.02,
+        0.75
+       ],
+       "yaw": 0,
+       "head_pitch": 0,
+       "dz": 0,
+       "head_yaw": 0
+      },
+      {
+       "t": 6.0,
+       "pos": [
+        0.0,
+        2.65
+       ],
+       "yaw": 0,
+       "head_pitch": 0,
+       "dz": 0,
+       "head_yaw": 0,
+       "ease": "linear"
+      }
+     ]
+    },
+    "infectado_3": {
+     "pose": "de_pie",
+     "tremor": {
+      "m": 0.012,
+      "hz": 4.5
+     },
+     "keys": [
+      {
+       "t": 2.8,
+       "pos": [
+        0.42,
+        0.31
+       ],
+       "yaw": 176
+      },
+      {
+       "t": 2.98,
+       "pos": [
+        0.42,
+        0.33
+       ],
+       "yaw": 176
+      },
+      {
+       "t": 3.04,
+       "pos": [
+        0.42,
+        0.27
+       ],
+       "yaw": 176,
+       "ease": "snap"
+      },
+      {
+       "t": 3.15,
+       "pos": [
+        0.42,
+        0.33
+       ],
+       "yaw": 176
+      },
+      {
+       "t": 3.21,
+       "pos": [
+        0.42,
+        0.27
+       ],
+       "yaw": 176,
+       "ease": "snap"
+      },
+      {
+       "t": 3.33,
+       "pos": [
+        0.42,
+        0.33
+       ],
+       "yaw": 176
+      },
+      {
+       "t": 3.39,
+       "pos": [
+        0.42,
+        0.27
+       ],
+       "yaw": 176,
+       "ease": "snap"
+      },
+      {
+       "t": 3.49,
+       "pos": [
+        0.42,
+        0.33
+       ],
+       "yaw": 176
+      },
+      {
+       "t": 3.55,
+       "pos": [
+        0.42,
+        0.27
+       ],
+       "yaw": 176,
+       "ease": "snap"
+      },
+      {
+       "t": 3.66,
+       "pos": [
+        0.42,
+        0.33
+       ],
+       "yaw": 176
+      },
+      {
+       "t": 3.72,
+       "pos": [
+        0.42,
+        0.27
+       ],
+       "yaw": 176,
+       "ease": "snap"
+      },
+      {
+       "t": 3.81,
+       "pos": [
+        0.42,
+        0.33
+       ],
+       "yaw": 176
+      },
+      {
+       "t": 3.87,
+       "pos": [
+        0.42,
+        0.27
+       ],
+       "yaw": 176,
+       "ease": "snap"
+      },
+      {
+       "t": 3.95,
+       "pos": [
+        0.42,
+        0.33
+       ],
+       "yaw": 176
+      },
+      {
+       "t": 4.01,
+       "pos": [
+        0.42,
+        0.27
+       ],
+       "yaw": 176,
+       "ease": "snap"
+      },
+      {
+       "t": 4.05,
+       "pos": [
+        0.42,
+        0.3
+       ],
+       "yaw": 176
+      },
+      {
+       "t": 4.4,
+       "pos": [
+        0.4,
+        0.5
+       ],
+       "yaw": 0
+      },
+      {
+       "t": 6.0,
+       "pos": [
+        0.35,
+        2.35
+       ],
+       "yaw": 0,
+       "ease": "linear"
+      }
+     ]
+    },
+    "infectado_4": {
+     "pose": "de_pie",
+     "tremor": {
+      "m": 0.012,
+      "hz": 4.5
+     },
+     "keys": [
+      {
+       "t": 2.8,
+       "pos": [
+        -0.22,
+        0.68
+       ],
+       "yaw": 180
+      },
+      {
+       "t": 2.95,
+       "pos": [
+        -0.22,
+        0.68
+       ],
+       "yaw": 180
+      },
+      {
+       "t": 3.01,
+       "pos": [
+        -0.22,
+        0.62
+       ],
+       "yaw": 180,
+       "ease": "snap"
+      },
+      {
+       "t": 3.12,
+       "pos": [
+        -0.22,
+        0.68
+       ],
+       "yaw": 180
+      },
+      {
+       "t": 3.18,
+       "pos": [
+        -0.22,
+        0.62
+       ],
+       "yaw": 180,
+       "ease": "snap"
+      },
+      {
+       "t": 3.3,
+       "pos": [
+        -0.22,
+        0.68
+       ],
+       "yaw": 180
+      },
+      {
+       "t": 3.36,
+       "pos": [
+        -0.22,
+        0.62
+       ],
+       "yaw": 180,
+       "ease": "snap"
+      },
+      {
+       "t": 3.46,
+       "pos": [
+        -0.22,
+        0.68
+       ],
+       "yaw": 180
+      },
+      {
+       "t": 3.52,
+       "pos": [
+        -0.22,
+        0.62
+       ],
+       "yaw": 180,
+       "ease": "snap"
+      },
+      {
+       "t": 3.63,
+       "pos": [
+        -0.22,
+        0.68
+       ],
+       "yaw": 180
+      },
+      {
+       "t": 3.69,
+       "pos": [
+        -0.22,
+        0.62
+       ],
+       "yaw": 180,
+       "ease": "snap"
+      },
+      {
+       "t": 3.78,
+       "pos": [
+        -0.22,
+        0.68
+       ],
+       "yaw": 180
+      },
+      {
+       "t": 3.84,
+       "pos": [
+        -0.22,
+        0.62
+       ],
+       "yaw": 180,
+       "ease": "snap"
+      },
+      {
+       "t": 3.92,
+       "pos": [
+        -0.22,
+        0.68
+       ],
+       "yaw": 180
+      },
+      {
+       "t": 3.98,
+       "pos": [
+        -0.22,
+        0.62
+       ],
+       "yaw": 180,
+       "ease": "snap"
+      },
+      {
+       "t": 4.05,
+       "pos": [
+        -0.22,
+        0.64
+       ],
+       "yaw": 180
+      },
+      {
+       "t": 4.35,
+       "pos": [
+        -0.25,
+        0.76
+       ],
+       "yaw": 0
+      },
+      {
+       "t": 6.0,
+       "pos": [
+        -0.3,
+        2.8
+       ],
+       "yaw": 0,
+       "ease": "linear"
+      }
+     ]
+    },
+    "infectado_5": {
+     "pose": "de_pie",
+     "tremor": {
+      "m": 0.012,
+      "hz": 4.5
+     },
+     "keys": [
+      {
+       "t": 2.8,
+       "pos": [
+        0.24,
+        0.7
+       ],
+       "yaw": 180
+      },
+      {
+       "t": 3.01,
+       "pos": [
+        0.24,
+        0.7
+       ],
+       "yaw": 180
+      },
+      {
+       "t": 3.07,
+       "pos": [
+        0.24,
+        0.64
+       ],
+       "yaw": 180,
+       "ease": "snap"
+      },
+      {
+       "t": 3.18,
+       "pos": [
+        0.24,
+        0.7
+       ],
+       "yaw": 180
+      },
+      {
+       "t": 3.24,
+       "pos": [
+        0.24,
+        0.64
+       ],
+       "yaw": 180,
+       "ease": "snap"
+      },
+      {
+       "t": 3.36,
+       "pos": [
+        0.24,
+        0.7
+       ],
+       "yaw": 180
+      },
+      {
+       "t": 3.42,
+       "pos": [
+        0.24,
+        0.64
+       ],
+       "yaw": 180,
+       "ease": "snap"
+      },
+      {
+       "t": 3.52,
+       "pos": [
+        0.24,
+        0.7
+       ],
+       "yaw": 180
+      },
+      {
+       "t": 3.58,
+       "pos": [
+        0.24,
+        0.64
+       ],
+       "yaw": 180,
+       "ease": "snap"
+      },
+      {
+       "t": 3.69,
+       "pos": [
+        0.24,
+        0.7
+       ],
+       "yaw": 180
+      },
+      {
+       "t": 3.75,
+       "pos": [
+        0.24,
+        0.64
+       ],
+       "yaw": 180,
+       "ease": "snap"
+      },
+      {
+       "t": 3.84,
+       "pos": [
+        0.24,
+        0.7
+       ],
+       "yaw": 180
+      },
+      {
+       "t": 3.9,
+       "pos": [
+        0.24,
+        0.64
+       ],
+       "yaw": 180,
+       "ease": "snap"
+      },
+      {
+       "t": 3.98,
+       "pos": [
+        0.24,
+        0.7
+       ],
+       "yaw": 180
+      },
+      {
+       "t": 4.04,
+       "pos": [
+        0.24,
+        0.64
+       ],
+       "yaw": 180,
+       "ease": "snap"
+      },
+      {
+       "t": 4.05,
+       "pos": [
+        0.24,
+        0.66
+       ],
+       "yaw": 180
+      },
+      {
+       "t": 4.32,
+       "pos": [
+        0.3,
+        0.88
+       ],
+       "yaw": 0
+      },
+      {
+       "t": 6.0,
+       "pos": [
+        0.38,
+        2.9
+       ],
+       "yaw": 0,
+       "ease": "linear"
+      }
+     ]
+    }
+   }
+  }
+ ]
+}

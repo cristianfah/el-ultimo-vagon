@@ -1,0 +1,984 @@
+{
+ "call_id": "c03b",
+ "bloque": "3 · El maletín se abre",
+ "duration_s": 5,
+ "fps": 24,
+ "resolution": [
+  720,
+  1280
+ ],
+ "origin": "ANC_vagon2_fila_12",
+ "set_light": "ambar_bajo",
+ "train_sway": {
+  "m": 0.006,
+  "deg": 0.3,
+  "hz": 0.45
+ },
+ "fuente_tiempos": "llamadas_tiempos.json (c03b): b3_p4 0,5-2,0, b3_p5 2,0-3,0 y b3_p6 3,0-4,5; duration_s 5. b3_p4 parte en 0 con la tos en marcha; b3_p6 se alarga de 4,5 a 5,0 con acción (pasajeros despertando, la cámara se acomoda).",
+ "props_in_frame": [
+  "maletin"
+ ],
+ "notes": "Vagón 2, origen en ANC_vagon2_fila_12. Pareja del lado +X; las cámaras miran hacia la cola: el hombre a la izquierda y la esposa a la derecha del cuadro; la embestida va hacia la derecha del cuadro. Lectora (extra_5) en la fila 15 izq, al otro lado del pasillo y más hacia la cola. MP4 de referencia: sí.",
+ "shots": [
+  {
+   "id": "b3_p4",
+   "titulo": "P4 · Ojos blancos",
+   "t0": 0.0,
+   "t1": 2.0,
+   "montaje": {
+    "usar_desde_s": 0.5,
+    "usar_hasta_s": 2.0,
+    "dur_montaje_s": 1.5
+   },
+   "descripcion": "Primer plano del hombre. Último acceso de tos (0,62 s) y deja de toser de golpe (0,72 s). Los ojos se le ponen blancos y las venas oscuras le suben por el cuello hasta la mandíbula (prompt; el cilindro no tiene cara). La cabeza gira despacio hacia la derecha del cuadro, hacia su esposa (1,0-1,95 s), cuya nariz asoma en el borde derecho.",
+   "motivo_camara": "En mano, quieta, muy cerca en sensación: 45 mm a 1,1 m, por encima del respaldo de la fila 11, de frente. La parte alta del cilindro con la nariz, aire arriba; la esposa entra por el borde derecho.",
+   "camera": {
+    "tag": "MANO_QUIETA",
+    "mira": "de frente al hombre, hacia la cola",
+    "mov": "en mano, quieta; solo respira",
+    "lens_mm": 45,
+    "mode": "handheld",
+    "handheld": {
+     "rot_deg": 0.18,
+     "pos_m": 0.003,
+     "hz": 0.6,
+     "seed": 34,
+     "tremor": 0.12
+    },
+    "breath": {
+     "m": 0.002,
+     "hz": 0.3,
+     "deg": 0.04
+    },
+    "keys": [
+     {
+      "t": 0.0,
+      "pos": [
+       0.82,
+       1.08,
+       1.36
+      ],
+      "look_at": [
+       0.9,
+       -0.05,
+       1.07
+      ]
+     }
+    ]
+   },
+   "en_cuadro": "El hombre (parte alta del cilindro) a la izquierda del centro, con aire arriba; en el borde derecho, el hombro y la nariz de la esposa dormida. Detrás, el respaldo de la fila 12 y la penumbra del vagón.",
+   "stills": {
+    "A": {
+     "t": 0.55,
+     "desc": "Último acceso de tos.",
+     "lados": {
+      "hombre_azul": "izq",
+      "esposa": "der"
+     }
+    },
+    "B": {
+     "t": 0.85,
+     "desc": "Deja de toser de golpe: ojos blancos, venas al cuello.",
+     "lados": {
+      "hombre_azul": "izq",
+      "esposa": "der"
+     }
+    },
+    "C": {
+     "t": 1.95,
+     "desc": "La cabeza giró hacia la esposa (derecha del cuadro).",
+     "lados": {
+      "hombre_azul": "izq",
+      "esposa": "der"
+     }
+    }
+   },
+   "actors": {
+    "esposa": {
+     "pose": "sentado",
+     "keys": [
+      {
+       "t": 0.0,
+       "pos": [
+        0.56,
+        0.0
+       ],
+       "yaw": 0,
+       "head_yaw": -55,
+       "head_pitch": 16
+      }
+     ],
+     "sway": 1.4
+    },
+    "extra_1": {
+     "pose": "sentado",
+     "keys": [
+      {
+       "t": 0.0,
+       "pos": [
+        -0.56,
+        0.9
+       ],
+       "yaw": 0,
+       "head_yaw": 6,
+       "head_pitch": 30
+      }
+     ]
+    },
+    "extra_2": {
+     "pose": "sentado",
+     "keys": [
+      {
+       "t": 0.0,
+       "pos": [
+        1.12,
+        2.7
+       ],
+       "yaw": 0,
+       "head_yaw": -30,
+       "head_pitch": 18
+      }
+     ]
+    },
+    "extra_3": {
+     "pose": "sentado",
+     "keys": [
+      {
+       "t": 0.0,
+       "pos": [
+        -1.12,
+        2.7
+       ],
+       "yaw": 0,
+       "head_yaw": 28,
+       "head_pitch": 18
+      }
+     ]
+    },
+    "extra_4": {
+     "pose": "sentado",
+     "keys": [
+      {
+       "t": 0.0,
+       "pos": [
+        0.56,
+        4.5
+       ],
+       "yaw": 0,
+       "head_yaw": -10,
+       "head_pitch": 26
+      }
+     ]
+    },
+    "extra_5": {
+     "pose": "sentado",
+     "keys": [
+      {
+       "t": 0.0,
+       "pos": [
+        -1.12,
+        -2.7
+       ],
+       "yaw": 0,
+       "head_yaw": 6,
+       "head_pitch": 34
+      }
+     ]
+    },
+    "extra_6": {
+     "pose": "sentado",
+     "keys": [
+      {
+       "t": 0.0,
+       "pos": [
+        0.56,
+        -3.6
+       ],
+       "yaw": 0,
+       "head_yaw": -20,
+       "head_pitch": 22
+      }
+     ]
+    },
+    "hombre_azul": {
+     "pose": "sentado",
+     "sway": 1.4,
+     "tremor": {
+      "m": 0.003,
+      "hz": 6.0
+     },
+     "keys": [
+      {
+       "t": 0.0,
+       "pos": [
+        1.12,
+        0.0
+       ],
+       "yaw": 0,
+       "head_yaw": -6,
+       "head_pitch": 36,
+       "dz": -0.07
+      },
+      {
+       "t": 0.2,
+       "dz": -0.1,
+       "head_pitch": 40,
+       "ease": "snap"
+      },
+      {
+       "t": 0.42,
+       "dz": -0.06,
+       "head_pitch": 34,
+       "ease": "out"
+      },
+      {
+       "t": 0.62,
+       "dz": -0.1,
+       "head_pitch": 40,
+       "ease": "snap"
+      },
+      {
+       "t": 0.72,
+       "dz": -0.03,
+       "head_pitch": 26,
+       "ease": "out"
+      },
+      {
+       "t": 1.0,
+       "dz": -0.03,
+       "head_pitch": 24,
+       "head_yaw": -6
+      },
+      {
+       "t": 1.95,
+       "head_yaw": 62,
+       "head_pitch": 10
+      },
+      {
+       "t": 2.2,
+       "head_yaw": 66,
+       "head_pitch": 10
+      }
+     ]
+    }
+   },
+   "props": {
+    "maletin": {
+     "keys": [
+      {
+       "t": 0.0,
+       "pos": [
+        0.47,
+        0.0,
+        0.0
+       ],
+       "rot": [
+        0,
+        0,
+        0
+       ]
+      }
+     ]
+    }
+   }
+  },
+  {
+   "id": "b3_p5",
+   "titulo": "P5 · La embestida",
+   "t0": 2.0,
+   "t1": 3.0,
+   "montaje": {
+    "usar_desde_s": 2.0,
+    "usar_hasta_s": 3.0,
+    "dur_montaje_s": 1.0
+   },
+   "descripcion": "Plano medio. Él la mira un instante, se recoge (2,32 s) y se lanza sobre ella, hacia la derecha del cuadro. IMPACTO en el cuadro 67 (2,79 s): los cilindros se tocan a propósito (él encima de ella). Corte en el impacto (la sacudida alcanza tres cuadros, 69-71). Ella despierta con el golpe. Nada de sangre en cuadro.",
+   "motivo_camara": "En mano, baja (1,02 m, a la altura del pecho de ellos), desde el pasillo justo detrás del respaldo de la fila 11, de tres cuartos: la embestida viene hacia la derecha del cuadro y un poco hacia la cámara. El operador se encoge al arranque (sacudida chica) y recibe el golpe 2 cuadros después del impacto; sigue el movimiento con retraso.",
+   "impacto": {
+    "t": 2.79,
+    "cuadro": 67,
+    "sacudida_desde_cuadro": 69
+   },
+   "camera": {
+    "tag": "MANO_SACUDIDA",
+    "mira": "a la pareja, de tres cuartos desde el pasillo",
+    "mov": "en mano; se encoge al arranque y lo sacude el impacto",
+    "lens_mm": 28,
+    "mode": "handheld",
+    "lag_s": 0.1,
+    "handheld": {
+     "rot_deg": 0.6,
+     "pos_m": 0.012,
+     "hz": 1.1,
+     "seed": 35
+    },
+    "shakes": [
+     {
+      "impact_t": 2.36,
+      "delay_f": 2,
+      "deg": 0.7,
+      "m": 0.006,
+      "dur_s": 0.3,
+      "hz": 7.0
+     },
+     {
+      "impact_t": 2.79,
+      "delay_f": 2,
+      "deg": 2.6,
+      "m": 0.022,
+      "dur_s": 0.4,
+      "hz": 8.5,
+      "kick": [
+       -0.03,
+       0.02,
+       0.0
+      ]
+     }
+    ],
+    "keys": [
+     {
+      "t": 2.0,
+      "pos": [
+       0.02,
+       0.72,
+       1.02
+      ],
+      "look_at": [
+       0.8,
+       -0.05,
+       1.0
+      ]
+     },
+     {
+      "t": 2.55,
+      "pos": [
+       0.02,
+       0.72,
+       1.02
+      ],
+      "look_at": [
+       0.8,
+       -0.05,
+       1.0
+      ]
+     },
+     {
+      "t": 2.95,
+      "pos": [
+       0.01,
+       0.74,
+       1.01
+      ],
+      "look_at": [
+       0.68,
+       -0.05,
+       1.02
+      ],
+      "ease": "out"
+     }
+    ]
+   },
+   "en_cuadro": "El hombre a la izquierda, ya girado hacia ella; la esposa a la derecha, dormida. Él cruza hacia la derecha y cae sobre ella. Detrás, el respaldo de la fila 12 y el muro de la ventana.",
+   "stills": {
+    "A": {
+     "t": 2.05,
+     "desc": "La mira; se recoge.",
+     "lados": {
+      "hombre_azul": "izq",
+      "esposa": "der"
+     }
+    },
+    "B": {
+     "t": 2.6,
+     "desc": "Se lanza sobre ella, hacia la derecha del cuadro.",
+     "lados": {
+      "esposa": "der"
+     }
+    },
+    "C": {
+     "t": 2.95,
+     "desc": "Impacto: la cámara se sacude. Corte.",
+     "lados": {
+      "esposa": "der"
+     }
+    }
+   },
+   "actors": {
+    "extra_1": {
+     "pose": "sentado",
+     "keys": [
+      {
+       "t": 2.0,
+       "pos": [
+        -0.56,
+        0.9
+       ],
+       "yaw": 0,
+       "head_yaw": 6,
+       "head_pitch": 30
+      }
+     ]
+    },
+    "extra_2": {
+     "pose": "sentado",
+     "keys": [
+      {
+       "t": 2.0,
+       "pos": [
+        1.12,
+        2.7
+       ],
+       "yaw": 0,
+       "head_yaw": -30,
+       "head_pitch": 18
+      }
+     ]
+    },
+    "extra_3": {
+     "pose": "sentado",
+     "keys": [
+      {
+       "t": 2.0,
+       "pos": [
+        -1.12,
+        2.7
+       ],
+       "yaw": 0,
+       "head_yaw": 28,
+       "head_pitch": 18
+      }
+     ]
+    },
+    "extra_4": {
+     "pose": "sentado",
+     "keys": [
+      {
+       "t": 2.0,
+       "pos": [
+        0.56,
+        4.5
+       ],
+       "yaw": 0,
+       "head_yaw": -10,
+       "head_pitch": 26
+      }
+     ]
+    },
+    "extra_5": {
+     "pose": "sentado",
+     "keys": [
+      {
+       "t": 2.0,
+       "pos": [
+        -1.12,
+        -2.7
+       ],
+       "yaw": 0,
+       "head_yaw": 6,
+       "head_pitch": 34
+      }
+     ]
+    },
+    "extra_6": {
+     "pose": "sentado",
+     "keys": [
+      {
+       "t": 2.0,
+       "pos": [
+        0.56,
+        -3.6
+       ],
+       "yaw": 0,
+       "head_yaw": -20,
+       "head_pitch": 22
+      }
+     ]
+    },
+    "hombre_azul": {
+     "pose": "sentado",
+     "sway": 1.4,
+     "keys": [
+      {
+       "t": 2.0,
+       "pos": [
+        1.12,
+        0.0
+       ],
+       "yaw": 0,
+       "head_yaw": 64,
+       "head_pitch": 10,
+       "dz": -0.03
+      },
+      {
+       "t": 2.32,
+       "pos": [
+        1.15,
+        0.0
+       ],
+       "dz": -0.06,
+       "head_pitch": 14,
+       "ease": "in"
+      },
+      {
+       "t": 2.79,
+       "pos": [
+        0.8,
+        0.05
+       ],
+       "dz": 0.1,
+       "head_yaw": 76,
+       "head_pitch": 28,
+       "ease": "snap"
+      },
+      {
+       "t": 3.1,
+       "pos": [
+        0.78,
+        0.04
+       ],
+       "dz": 0.06,
+       "head_pitch": 30
+      }
+     ]
+    },
+    "esposa": {
+     "pose": "sentado",
+     "sway": 1.4,
+     "keys": [
+      {
+       "t": 2.0,
+       "pos": [
+        0.56,
+        0.0
+       ],
+       "yaw": 0,
+       "head_yaw": -55,
+       "head_pitch": 16
+      },
+      {
+       "t": 2.79,
+       "pos": [
+        0.56,
+        0.0
+       ],
+       "head_yaw": -55,
+       "head_pitch": 16
+      },
+      {
+       "t": 2.9,
+       "pos": [
+        0.52,
+        -0.02
+       ],
+       "head_yaw": -20,
+       "head_pitch": -6,
+       "ease": "out"
+      },
+      {
+       "t": 3.1,
+       "pos": [
+        0.51,
+        -0.02
+       ],
+       "head_yaw": -18,
+       "head_pitch": -8
+      }
+     ]
+    }
+   },
+   "props": {
+    "maletin": {
+     "keys": [
+      {
+       "t": 2.0,
+       "pos": [
+        0.47,
+        0.0,
+        0.0
+       ],
+       "rot": [
+        0,
+        0,
+        0
+       ]
+      }
+     ]
+    }
+   }
+  },
+  {
+   "id": "b3_p6",
+   "titulo": "P6 · El grito",
+   "t0": 3.0,
+   "t1": 5.0,
+   "montaje": {
+    "usar_desde_s": 3.0,
+    "usar_hasta_s": 4.5,
+    "dur_montaje_s": 1.5,
+    "alargue_s": "4.5-5.0"
+   },
+   "descripcion": "Plano general del pasillo. Al otro lado, la lectora (la del bloque 0) se levanta de golpe y grita (3,0-3,25 s); el libro cae. Otros pasajeros despiertan: el joven de los audífonos se gira hacia la pareja (3,1 s) y el dormido de la fila 16 levanta la cabeza hacia ella (3,15 s). La niebla cubre el piso del pasillo (no se modela). La pareja, él encima de ella, queda fuera de cuadro a la izquierda tras el paneo.",
+   "motivo_camara": "En mano, de pie en el pasillo (1,55 m, fila 10), 24 mm. Arranca todavía sobre la pareja y llega tarde al grito: el paneo (3,18-3,50 s, se pasa un poco y vuelve) encuentra a la lectora ya de pie. Después el operador da medio paso.",
+   "camera": {
+    "tag": "HANDHELD_TARDE",
+    "mira": "por el pasillo hacia la cola, a la lectora",
+    "mov": "en mano; paneo tardío de la pareja a la lectora (3,18-3,50 s)",
+    "lens_mm": 24,
+    "mode": "handheld",
+    "handheld": {
+     "rot_deg": 0.7,
+     "pos_m": 0.012,
+     "hz": 1.0,
+     "seed": 36
+    },
+    "keys": [
+     {
+      "t": 3.0,
+      "pos": [
+       0.12,
+       1.9,
+       1.55
+      ],
+      "look_at": [
+       0.62,
+       0.0,
+       1.05
+      ]
+     },
+     {
+      "t": 3.18,
+      "pos": [
+       0.12,
+       1.9,
+       1.55
+      ],
+      "look_at": [
+       0.6,
+       0.0,
+       1.06
+      ]
+     },
+     {
+      "t": 3.5,
+      "pos": [
+       0.12,
+       1.89,
+       1.55
+      ],
+      "look_at": [
+       -0.8,
+       -2.81,
+       1.35
+      ],
+      "ease": "back"
+     },
+     {
+      "t": 4.2,
+      "pos": [
+       0.11,
+       1.8,
+       1.54
+      ],
+      "look_at": [
+       -0.78,
+       -2.85,
+       1.37
+      ]
+     },
+     {
+      "t": 5.0,
+      "pos": [
+       0.1,
+       1.74,
+       1.54
+      ],
+      "look_at": [
+       -0.72,
+       -2.85,
+       1.36
+      ]
+     }
+    ]
+   },
+   "en_cuadro": "Al inicio, la pareja a la izquierda (él encima de ella). Tras el paneo: el pasillo hacia la cola con la niebla en el piso; la lectora de pie, gritando, a la derecha del centro; el joven de los audífonos en el borde derecho, girado; al fondo a la izquierda, el pasajero de la fila 16 que despierta.",
+   "stills": {
+    "A": {
+     "t": 3.05,
+     "desc": "El grito empieza fuera de cuadro; la cámara sigue en la pareja.",
+     "lados": {
+      "extra_5": "der"
+     }
+    },
+    "B": {
+     "t": 3.6,
+     "desc": "La cámara llega tarde: la lectora ya está de pie, gritando.",
+     "lados": {
+      "extra_5": "der"
+     }
+    },
+    "C": {
+     "t": 4.45,
+     "desc": "Los otros pasajeros despiertan; la niebla cubre el pasillo.",
+     "lados": {
+      "extra_5": "der"
+     }
+    }
+   },
+   "actors": {
+    "hombre_azul": {
+     "pose": "sentado",
+     "sway": 1.4,
+     "tremor": {
+      "m": 0.012,
+      "hz": 5.0
+     },
+     "keys": [
+      {
+       "t": 3.0,
+       "pos": [
+        0.78,
+        0.04
+       ],
+       "yaw": 0,
+       "head_yaw": 76,
+       "head_pitch": 30,
+       "dz": 0.06
+      }
+     ]
+    },
+    "esposa": {
+     "pose": "sentado",
+     "sway": 1.4,
+     "tremor": {
+      "m": 0.01,
+      "hz": 4.0
+     },
+     "keys": [
+      {
+       "t": 3.0,
+       "pos": [
+        0.51,
+        -0.02
+       ],
+       "yaw": 0,
+       "head_yaw": -18,
+       "head_pitch": -8
+      }
+     ]
+    },
+    "extra_5": {
+     "pose": "de_pie",
+     "keys": [
+      {
+       "t": 3.0,
+       "pos": [
+        -1.12,
+        -2.7
+       ],
+       "yaw": 0,
+       "dz": -0.36,
+       "head_yaw": -30,
+       "head_pitch": 6
+      },
+      {
+       "t": 3.25,
+       "pos": [
+        -1.06,
+        -2.5
+       ],
+       "dz": 0.0,
+       "head_yaw": -42,
+       "head_pitch": -2,
+       "ease": "out"
+      },
+      {
+       "t": 3.6,
+       "pos": [
+        -1.04,
+        -2.46
+       ],
+       "head_yaw": -42,
+       "head_pitch": 0
+      },
+      {
+       "t": 4.3,
+       "pos": [
+        -1.09,
+        -2.56
+       ],
+       "head_yaw": -40,
+       "head_pitch": 0
+      },
+      {
+       "t": 5.0,
+       "pos": [
+        -1.1,
+        -2.58
+       ],
+       "head_yaw": -38
+      }
+     ]
+    },
+    "extra_6": {
+     "pose": "sentado",
+     "keys": [
+      {
+       "t": 3.0,
+       "pos": [
+        0.56,
+        -3.6
+       ],
+       "yaw": 0,
+       "head_yaw": -20,
+       "head_pitch": 22
+      },
+      {
+       "t": 3.15,
+       "head_yaw": -20,
+       "head_pitch": 22
+      },
+      {
+       "t": 3.4,
+       "head_yaw": 50,
+       "head_pitch": -4,
+       "ease": "out"
+      },
+      {
+       "t": 5.0,
+       "head_yaw": 54,
+       "head_pitch": -2
+      }
+     ]
+    },
+    "extra_1": {
+     "pose": "sentado",
+     "keys": [
+      {
+       "t": 3.0,
+       "pos": [
+        -0.56,
+        0.9
+       ],
+       "yaw": 0,
+       "head_yaw": 6,
+       "head_pitch": 30
+      },
+      {
+       "t": 3.1,
+       "head_yaw": 6,
+       "head_pitch": 30
+      },
+      {
+       "t": 3.32,
+       "head_yaw": -105,
+       "head_pitch": 0,
+       "ease": "out"
+      },
+      {
+       "t": 5.0,
+       "head_yaw": -110,
+       "head_pitch": 2
+      }
+     ]
+    },
+    "extra_2": {
+     "pose": "sentado",
+     "keys": [
+      {
+       "t": 3.0,
+       "pos": [
+        1.12,
+        2.7
+       ],
+       "yaw": 0,
+       "head_yaw": -30,
+       "head_pitch": 18
+      },
+      {
+       "t": 3.3,
+       "head_yaw": -30,
+       "head_pitch": 18
+      },
+      {
+       "t": 3.6,
+       "head_yaw": 95,
+       "head_pitch": 0,
+       "ease": "out"
+      }
+     ]
+    },
+    "extra_3": {
+     "pose": "sentado",
+     "keys": [
+      {
+       "t": 3.0,
+       "pos": [
+        -1.12,
+        2.7
+       ],
+       "yaw": 0,
+       "head_yaw": 28,
+       "head_pitch": 18
+      },
+      {
+       "t": 3.3,
+       "head_yaw": 28,
+       "head_pitch": 18
+      },
+      {
+       "t": 3.6,
+       "head_yaw": 95,
+       "head_pitch": 0,
+       "ease": "out"
+      }
+     ]
+    },
+    "extra_4": {
+     "pose": "sentado",
+     "keys": [
+      {
+       "t": 3.0,
+       "pos": [
+        0.56,
+        4.5
+       ],
+       "yaw": 0,
+       "head_yaw": -10,
+       "head_pitch": 26
+      },
+      {
+       "t": 3.3,
+       "head_yaw": -10,
+       "head_pitch": 26
+      },
+      {
+       "t": 3.6,
+       "head_yaw": -95,
+       "head_pitch": 0,
+       "ease": "out"
+      }
+     ]
+    }
+   },
+   "props": {
+    "maletin": {
+     "keys": [
+      {
+       "t": 3.0,
+       "pos": [
+        0.47,
+        0.0,
+        0.0
+       ],
+       "rot": [
+        0,
+        0,
+        0
+       ]
+      }
+     ]
+    }
+   }
+  }
+ ]
+}

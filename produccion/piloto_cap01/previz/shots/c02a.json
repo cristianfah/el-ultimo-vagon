@@ -1,0 +1,345 @@
+{
+ "call_id": "c02a",
+ "bloque": "2 · El regreso",
+ "duration_s": 6,
+ "fps": 24,
+ "resolution": [
+  720,
+  1280
+ ],
+ "origin": "ANC_vagon5_fila_11",
+ "set_light": "ambar",
+ "train_sway": {
+  "m": 0.006,
+  "deg": 0.3,
+  "hz": 0.45
+ },
+ "fuente_tiempos": "",
+ "notes": "",
+ "shots": [
+  {
+   "id": "b2_p1",
+   "titulo": "P1 · Vuelve al asiento",
+   "t0": 0.0,
+   "t1": 3.7,
+   "montaje": {
+    "usar_desde_s": 0.5,
+    "usar_hasta_s": 3.7,
+    "dur_montaje_s": 3.2
+   },
+   "descripcion": "",
+   "motivo_camara": "",
+   "camera": {
+    "lens_mm": 35,
+    "tag": "MANO_LEVE",
+    "mira": "",
+    "mov": "",
+    "mode": "handheld",
+    "handheld": {
+     "rot_deg": 0.22,
+     "pos_m": 0.004,
+     "hz": 0.55,
+     "seed": 21,
+     "tremor": 0.12
+    },
+    "breath": {
+     "m": 0.003,
+     "hz": 0.3,
+     "deg": 0.05
+    },
+    "lag_s": 0.0,
+    "keys": [
+     {
+      "t": 0.0,
+      "pos": [
+       0.78,
+       1.45,
+       1.2
+      ],
+      "look_at": [
+       0.86,
+       -0.05,
+       1.2049999999999998
+      ]
+     },
+     {
+      "t": 0.66,
+      "pos": [
+       0.78,
+       1.45,
+       1.2
+      ],
+      "look_at": [
+       0.85,
+       -0.05,
+       1.17
+      ],
+      "ease": "out"
+     },
+     {
+      "t": 3.7,
+      "pos": [
+       0.768,
+       1.45,
+       1.196
+      ],
+      "look_at": [
+       0.84,
+       -0.05,
+       1.17
+      ]
+     }
+    ]
+   },
+   "actors": {
+    "martina": {
+     "pose": "sentado",
+     "keys": [
+      {
+       "t": 0.0,
+       "pos": [
+        1.03,
+        0.08
+       ],
+       "yaw": 6,
+       "dz": 0.17,
+       "head_yaw": -8,
+       "head_pitch": 22
+      },
+      {
+       "t": 0.4,
+       "pos": [
+        1.11,
+        0.01
+       ],
+       "yaw": 2,
+       "dz": -0.025,
+       "head_pitch": 26,
+       "ease": "in"
+      },
+      {
+       "t": 0.62,
+       "pos": [
+        1.12,
+        0.0
+       ],
+       "yaw": 0,
+       "dz": 0.0,
+       "ease": "out"
+      },
+      {
+       "t": 1.2,
+       "head_yaw": -14,
+       "head_pitch": 30
+      },
+      {
+       "t": 1.65,
+       "dz": 0.02,
+       "head_yaw": -10,
+       "head_pitch": 28
+      },
+      {
+       "t": 1.95,
+       "dz": 0.0,
+       "head_yaw": -16,
+       "head_pitch": 26,
+       "ease": "out"
+      },
+      {
+       "t": 2.55,
+       "head_yaw": -22,
+       "head_pitch": 16
+      },
+      {
+       "t": 3.25,
+       "head_yaw": -18,
+       "head_pitch": 20
+      },
+      {
+       "t": 3.7,
+       "head_yaw": -12,
+       "head_pitch": 30
+      }
+     ]
+    },
+    "tomas": {
+     "pose": "sentado",
+     "keys": [
+      {
+       "t": 0.0,
+       "pos": [
+        0.56,
+        0.0
+       ],
+       "yaw": 0,
+       "head_yaw": -80,
+       "head_pitch": -8
+      },
+      {
+       "t": 0.6,
+       "head_yaw": -88,
+       "head_pitch": 2
+      },
+      {
+       "t": 1.9,
+       "head_yaw": -90,
+       "head_pitch": 4
+      },
+      {
+       "t": 2.6,
+       "head_yaw": -86,
+       "head_pitch": 3
+      },
+      {
+       "t": 3.7,
+       "head_yaw": -88,
+       "head_pitch": 5
+      }
+     ]
+    }
+   },
+   "hide_set": [
+    "vagon5_asientos"
+   ],
+   "stills": {
+    "A": {
+     "t": 0.55,
+     "desc": "",
+     "lados": {
+      "martina": "izq",
+      "tomas": "der"
+     }
+    },
+    "B": {
+     "t": 2.8,
+     "desc": "",
+     "lados": {
+      "martina": "izq",
+      "tomas": "der"
+     }
+    },
+    "C": {
+     "t": 3.6,
+     "desc": "",
+     "lados": {
+      "martina": "izq",
+      "tomas": "der"
+     }
+    }
+   }
+  },
+  {
+   "id": "b2_p2",
+   "titulo": "P2 · La marca de la muñeca",
+   "t0": 3.7,
+   "t1": 6.0,
+   "montaje": {
+    "usar_desde_s": 3.7,
+    "usar_hasta_s": 4.7,
+    "dur_montaje_s": 1.0,
+    "alargue_s": "4.7-6.0"
+   },
+   "descripcion": "",
+   "motivo_camara": "",
+   "camera": {
+    "lens_mm": 50,
+    "tag": "FIJA_REGAZO",
+    "mira": "",
+    "mov": "",
+    "mode": "locked",
+    "sway_scale": 0.6,
+    "vibration": {
+     "deg": 0.04,
+     "hz": 9.0,
+     "m": 0.0005
+    },
+    "keys": [
+     {
+      "t": 3.7,
+      "pos": [
+       0.93,
+       0.55,
+       0.72
+      ],
+      "look_at": [
+       1.0,
+       0.16,
+       0.58
+      ]
+     }
+    ]
+   },
+   "actors": {
+    "martina": {
+     "pose": "sentado",
+     "keys": [
+      {
+       "t": 3.7,
+       "pos": [
+        1.12,
+        0.0
+       ],
+       "yaw": 0,
+       "dz": 0.0,
+       "head_yaw": -12,
+       "head_pitch": 30
+      },
+      {
+       "t": 3.95,
+       "dz": 0.012,
+       "ease": "out"
+      },
+      {
+       "t": 4.12,
+       "dz": -0.006,
+       "ease": "snap"
+      },
+      {
+       "t": 4.45,
+       "dz": 0.0
+      },
+      {
+       "t": 5.3,
+       "dz": 0.008,
+       "head_pitch": 22
+      },
+      {
+       "t": 6.0,
+       "dz": 0.0,
+       "head_pitch": 18
+      }
+     ]
+    },
+    "tomas": {
+     "pose": "sentado",
+     "keys": [
+      {
+       "t": 3.7,
+       "pos": [
+        0.56,
+        0.0
+       ],
+       "yaw": 0,
+       "head_yaw": -88,
+       "head_pitch": 6
+      }
+     ]
+    }
+   },
+   "stills": {
+    "A": {
+     "t": 3.75,
+     "desc": ""
+    },
+    "B": {
+     "t": 4.05,
+     "desc": ""
+    },
+    "C": {
+     "t": 4.65,
+     "desc": ""
+    }
+   }
+  }
+ ]
+}

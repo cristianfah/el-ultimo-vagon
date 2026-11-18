@@ -1,6 +1,6 @@
 {
  "call_id": "c00a",
- "bloque": "0 · El maletin",
+ "bloque": "0 · El maletín",
  "duration_s": 4,
  "fps": 24,
  "resolution": [
@@ -14,20 +14,15 @@
   "deg": 0.3,
   "hz": 0.45
  },
- "fuente_tiempos": "tiempos_montaje_v3.json: b0_p1 0.5-1.7, b0_p2 1.7-3.5 (pedida 4.0 s). El ultimo plano se alarga de 3.5 a 4.0 con accion (Martina se endereza), sin quietud al inicio. Colchon 0-0.5 s: los ojos (la cabeza) ya van en movimiento en el cuadro 0.",
- "color_map": {
-  "martina": "rojo",
-  "hombre_azul": "cian",
-  "esposa": "rosado",
-  "extra_*": "gris oscuro"
- },
+ "fuente_tiempos": "llamadas_tiempos.json (c00a): b0_p1 0,5-1,7 y b0_p2 1,7-3,5; duration_s 4. b0_p1 parte en 0 con los ojos ya en movimiento (colchón de 0,5 s); b0_p2 se alarga de 3,5 a 4,0 con acción (Martina se endereza).",
  "props_in_frame": [
   "maletin"
  ],
- "notes": "Vagon 2, origen en el centro del pasillo a la altura del asiento de la fila 12. El hombre de camisa azul va en la ventana del lado izquierdo (-X) y su esposa en el asiento del pasillo. P2 mira hacia la puerta delantera (+Y): asiento a la izquierda del cuadro, Martina a la derecha. Lampara de lectura encendida: fila 12, lado derecho.",
+ "notes": "Vagón 2, origen en el centro del pasillo a la altura del asiento de la fila 12 (y = 81,11). La pareja va del lado +X: hombre en la ventana (1,12; 0), esposa en el pasillo (0,56; 0). Martina en el pasillo junto a ellos; las cámaras miran hacia la cola (-Y): el asiento de la pareja queda a la izquierda del cuadro. Lectora (extra_5) en la fila 15 izq.",
  "shots": [
   {
    "id": "b0_p1",
+   "titulo": "P1 · Los ojos de Martina",
    "t0": 0.0,
    "t1": 1.7,
    "montaje": {
@@ -35,14 +30,17 @@
     "usar_hasta_s": 1.7,
     "dur_montaje_s": 1.2
    },
-   "descripcion": "Primerisimo plano de la cara de Martina, tres cuartos de perfil mirando a la izquierda del cuadro. La cabeza casi no se mueve: gira unos grados hacia un extremo del pasillo, hacia el otro, y vuelve a los 0.9 s. Los ojos van en el prompt (la esfera no tiene cara).",
-   "motivo_camara": "En mano minima, a 56 cm de ella con 85 mm: respira con ella y la sigue con un par de cuadros de retraso. No hay avance ni paneo.",
+   "descripcion": "Primerísimo plano de los ojos de Martina, de perfil, mirando a la izquierda del cuadro (hacia el asiento de la pareja). Una lámpara de lectura (fila 12 der) le cruza la cara. Ya en el cuadro 0 sus ojos van hacia un extremo del pasillo (la cabeza del tren, 0,42 s), cruzan al otro (la cola, 1,0 s) y vuelven al asiento, bajando hacia el maletín (1,6 s). La cabeza casi no se mueve: lo que viaja son los ojos. Con cilindros solo se ve la nariz girando.",
+   "motivo_camara": "En mano mínima, con 85 mm a 3 m, desde el pasillo (fila 9) por encima de los respaldos: respira con ella y la sigue con dos cuadros de retraso. Encuadra la parte alta del cilindro con la nariz y aire sobre la cabeza; al fondo, el pasillo hacia la cola. No hay avance ni paneo.",
    "camera": {
+    "tag": "MANO_MINIMA",
+    "mira": "hacia la cola, de perfil a Martina",
+    "mov": "fija en mano; respira y la sigue 2 cuadros tarde",
     "lens_mm": 85,
     "mode": "handheld",
     "lag_s": 0.08,
     "handheld": {
-     "rot_deg": 0.16,
+     "rot_deg": 0.14,
      "pos_m": 0.003,
      "hz": 0.6,
      "seed": 11,
@@ -56,28 +54,161 @@
     "keys": [
      {
       "t": 0.0,
-      "pos": {
-       "actor": "martina",
-       "part": "cabeza",
-       "offset": [
-        -0.336,
-        -0.448,
-        0.015
-       ]
-      },
+      "pos": [
+       0.4,
+       2.72,
+       1.5
+      ],
       "look_at": {
        "actor": "martina",
        "part": "cabeza",
        "offset": [
-        -0.05,
-        0.037,
-        0.012
+        0.0,
+        0.0,
+        -0.27
        ]
       }
      }
     ]
    },
+   "en_cuadro": "Martina (la parte alta del cilindro) al centro, de perfil, la nariz hacia la izquierda; aire sobre la cabeza. Al fondo, desenfocado, el pasillo hacia la cola.",
+   "stills": {
+    "A": {
+     "t": 0.55,
+     "desc": "Mira hacia la cabeza del tren."
+    },
+    "B": {
+     "t": 1.1,
+     "desc": "Los ojos cruzan al otro extremo: la cola."
+    },
+    "C": {
+     "t": 1.65,
+     "desc": "Vuelven al asiento y bajan hacia el maletín."
+    }
+   },
    "actors": {
+    "hombre_azul": {
+     "pose": "sentado",
+     "keys": [
+      {
+       "t": 0.0,
+       "pos": [
+        1.12,
+        0.0
+       ],
+       "yaw": 0,
+       "head_yaw": -40,
+       "head_pitch": 14
+      }
+     ],
+     "sway": 1.4
+    },
+    "esposa": {
+     "pose": "sentado",
+     "keys": [
+      {
+       "t": 0.0,
+       "pos": [
+        0.56,
+        0.0
+       ],
+       "yaw": 0,
+       "head_yaw": -55,
+       "head_pitch": 16
+      }
+     ],
+     "sway": 1.4
+    },
+    "extra_1": {
+     "pose": "sentado",
+     "keys": [
+      {
+       "t": 0.0,
+       "pos": [
+        -0.56,
+        0.9
+       ],
+       "yaw": 0,
+       "head_yaw": 6,
+       "head_pitch": 30
+      }
+     ]
+    },
+    "extra_2": {
+     "pose": "sentado",
+     "keys": [
+      {
+       "t": 0.0,
+       "pos": [
+        1.12,
+        2.7
+       ],
+       "yaw": 0,
+       "head_yaw": -30,
+       "head_pitch": 18
+      }
+     ]
+    },
+    "extra_3": {
+     "pose": "sentado",
+     "keys": [
+      {
+       "t": 0.0,
+       "pos": [
+        -1.12,
+        2.7
+       ],
+       "yaw": 0,
+       "head_yaw": 28,
+       "head_pitch": 18
+      }
+     ]
+    },
+    "extra_4": {
+     "pose": "sentado",
+     "keys": [
+      {
+       "t": 0.0,
+       "pos": [
+        0.56,
+        4.5
+       ],
+       "yaw": 0,
+       "head_yaw": -10,
+       "head_pitch": 26
+      }
+     ]
+    },
+    "extra_5": {
+     "pose": "sentado",
+     "keys": [
+      {
+       "t": 0.0,
+       "pos": [
+        -1.12,
+        -2.7
+       ],
+       "yaw": 0,
+       "head_yaw": 6,
+       "head_pitch": 34
+      }
+     ]
+    },
+    "extra_6": {
+     "pose": "sentado",
+     "keys": [
+      {
+       "t": 0.0,
+       "pos": [
+        0.56,
+        -3.6
+       ],
+       "yaw": 0,
+       "head_yaw": -20,
+       "head_pitch": 22
+      }
+     ]
+    },
     "martina": {
      "pose": "de_pie",
      "tremor": {
@@ -88,131 +219,44 @@
       {
        "t": 0.0,
        "pos": [
-        0.1,
-        0.12
+        0.0,
+        -0.25
        ],
-       "yaw": 92,
-       "lean": 12,
-       "head_yaw": -7,
-       "head_pitch": 0
+       "yaw": -78,
+       "head_yaw": 18,
+       "head_pitch": 2
       },
       {
-       "t": 0.45,
-       "head_yaw": 6,
-       "head_pitch": 2,
-       "ease": "inout"
-      },
-      {
-       "t": 0.9,
-       "head_yaw": -5,
+       "t": 0.42,
+       "head_yaw": 40,
        "head_pitch": 0,
-       "ease": "inout"
+       "ease": "out"
       },
       {
-       "t": 1.4,
-       "head_yaw": -6,
-       "head_pitch": -1
+       "t": 0.62,
+       "head_yaw": 37,
+       "head_pitch": 1
       },
       {
-       "t": 1.7,
-       "head_yaw": -5,
+       "t": 1.02,
+       "head_yaw": -52,
        "head_pitch": 3
-      }
-     ]
-    },
-    "hombre_azul": {
-     "pose": "sentado",
-     "sway": 1.4,
-     "keys": [
+      },
       {
-       "t": 0,
-       "pos": [
-        -1.12,
-        0.0
-       ],
-       "yaw": 0,
-       "lean": -6,
-       "side": -10,
-       "head_roll": -18,
+       "t": 1.22,
+       "head_yaw": -50,
+       "head_pitch": 3
+      },
+      {
+       "t": 1.6,
+       "head_yaw": -8,
        "head_pitch": 8
-      }
-     ]
-    },
-    "esposa": {
-     "pose": "sentado",
-     "sway": 1.4,
-     "keys": [
+      },
       {
-       "t": 0,
-       "pos": [
-        -0.56,
-        0.0
-       ],
-       "yaw": 0,
-       "lean": -6,
-       "side": -9,
-       "head_roll": -22,
-       "head_pitch": 10
-      }
-     ]
-    },
-    "extra_1": {
-     "pose": "sentado",
-     "keys": [
-      {
-       "t": 0,
-       "pos": [
-        0.56,
-        0.9
-       ],
-       "yaw": 0,
-       "lean": 4,
-       "head_pitch": 28
-      }
-     ]
-    },
-    "extra_2": {
-     "pose": "sentado",
-     "keys": [
-      {
-       "t": 0,
-       "pos": [
-        -1.12,
-        2.7
-       ],
-       "yaw": 0,
-       "lean": -8,
-       "head_roll": -14
-      }
-     ]
-    },
-    "extra_3": {
-     "pose": "sentado",
-     "keys": [
-      {
-       "t": 0,
-       "pos": [
-        1.12,
-        2.7
-       ],
-       "yaw": 0,
-       "lean": -8,
-       "head_roll": 16
-      }
-     ]
-    },
-    "extra_4": {
-     "pose": "sentado",
-     "keys": [
-      {
-       "t": 0,
-       "pos": [
-        0.56,
-        4.5
-       ],
-       "yaw": 0,
-       "lean": 2,
-       "head_pitch": 30
+       "t": 1.75,
+       "head_yaw": -6,
+       "head_pitch": 12,
+       "ease": "in"
       }
      ]
     }
@@ -220,6 +264,7 @@
   },
   {
    "id": "b0_p2",
+   "titulo": "P2 · El maletín bajo el asiento",
    "t0": 1.7,
    "t1": 4.0,
    "montaje": {
@@ -228,9 +273,12 @@
     "dur_montaje_s": 1.8,
     "alargue_s": "3.5-4.0"
    },
-   "descripcion": "Inserto a ras de piso mirando a lo largo del pasillo. La mano derecha de Martina (barra roja) empuja el maletin bajo el asiento del lado del pasillo; a los 2.1 s se traba en el riel; a los 2.62 s entra la punta de su bota y lo termina de meter; desde los 3.0 s queda quieto, asomando 5 cm.",
-   "motivo_camara": "Fija, apoyada en el piso del pasillo: no hay operador, solo vibra con el tren. En primer termino, arriba a la izquierda, el borde del asiento de la fila de atras.",
+   "descripcion": "Inserto a ras de piso mirando hacia la cola. La mano derecha de Martina (manga del abrigo gris carbón, puño del suéter avena sobre los nudillos) empuja el maletín bajo el asiento de la pareja, desde el pasillo, hacia la izquierda del cuadro. A los 2,1 s se traba en el riel del asiento; la mano tiembla. A los 2,62 s entra la punta de su bota y lo termina de meter; desde los 3,0 s queda quieto, asomando la esquina metálica 5 cm al pasillo. En el alargue (3,5-4,0) ella se endereza. La mano y la bota van en el prompt: el cilindro no tiene brazos.",
+   "motivo_camara": "Fija, apoyada en el piso del pasillo: no hay operador, solo vibra con el tren. En primer término, arriba a la izquierda, el borde del asiento de la fila 11. Es el encuadre que se repite en b3_p1.",
    "camera": {
+    "tag": "FIJA_PISO",
+    "mira": "hacia la cola; asiento de la pareja a la izquierda",
+    "mov": "fija; solo vibra con el tren",
     "lens_mm": 35,
     "mode": "locked",
     "sway_scale": 0.5,
@@ -243,19 +291,167 @@
      {
       "t": 1.7,
       "pos": [
-       -0.08,
-       -1.27,
+       0.08,
+       1.27,
        0.085
       ],
       "look_at": [
-       -0.31,
+       0.31,
        0.0,
        0.27
       ]
      }
     ]
    },
+   "en_cuadro": "El maletín al centro-izquierda, entrando bajo el asiento de la pareja (izquierda del cuadro); arriba a la izquierda, el borde del asiento de la fila 11 y, sobre el cojín, la base del cilindro de la esposa. Martina agachada en el borde derecho. Al fondo, el pasillo hacia la cola.",
+   "stills": {
+    "A": {
+     "t": 1.75,
+     "desc": "La mano empuja el maletín bajo el asiento.",
+     "lados": {
+      "esposa": "izq",
+      "martina": "der"
+     }
+    },
+    "B": {
+     "t": 2.7,
+     "desc": "Se trabó en el riel: la punta de la bota lo termina de meter.",
+     "lados": {
+      "esposa": "izq",
+      "martina": "der"
+     }
+    },
+    "C": {
+     "t": 3.45,
+     "desc": "Quieto bajo el asiento; asoma la esquina metálica.",
+     "lados": {
+      "esposa": "izq"
+     }
+    }
+   },
    "actors": {
+    "hombre_azul": {
+     "pose": "sentado",
+     "keys": [
+      {
+       "t": 1.7,
+       "pos": [
+        1.12,
+        0.0
+       ],
+       "yaw": 0,
+       "head_yaw": -40,
+       "head_pitch": 14
+      }
+     ],
+     "sway": 1.4
+    },
+    "esposa": {
+     "pose": "sentado",
+     "keys": [
+      {
+       "t": 1.7,
+       "pos": [
+        0.56,
+        0.0
+       ],
+       "yaw": 0,
+       "head_yaw": -55,
+       "head_pitch": 16
+      }
+     ],
+     "sway": 1.4
+    },
+    "extra_1": {
+     "pose": "sentado",
+     "keys": [
+      {
+       "t": 1.7,
+       "pos": [
+        -0.56,
+        0.9
+       ],
+       "yaw": 0,
+       "head_yaw": 6,
+       "head_pitch": 30
+      }
+     ]
+    },
+    "extra_2": {
+     "pose": "sentado",
+     "keys": [
+      {
+       "t": 1.7,
+       "pos": [
+        1.12,
+        2.7
+       ],
+       "yaw": 0,
+       "head_yaw": -30,
+       "head_pitch": 18
+      }
+     ]
+    },
+    "extra_3": {
+     "pose": "sentado",
+     "keys": [
+      {
+       "t": 1.7,
+       "pos": [
+        -1.12,
+        2.7
+       ],
+       "yaw": 0,
+       "head_yaw": 28,
+       "head_pitch": 18
+      }
+     ]
+    },
+    "extra_4": {
+     "pose": "sentado",
+     "keys": [
+      {
+       "t": 1.7,
+       "pos": [
+        0.56,
+        4.5
+       ],
+       "yaw": 0,
+       "head_yaw": -10,
+       "head_pitch": 26
+      }
+     ]
+    },
+    "extra_5": {
+     "pose": "sentado",
+     "keys": [
+      {
+       "t": 1.7,
+       "pos": [
+        -1.12,
+        -2.7
+       ],
+       "yaw": 0,
+       "head_yaw": 6,
+       "head_pitch": 34
+      }
+     ]
+    },
+    "extra_6": {
+     "pose": "sentado",
+     "keys": [
+      {
+       "t": 1.7,
+       "pos": [
+        0.56,
+        -3.6
+       ],
+       "yaw": 0,
+       "head_yaw": -20,
+       "head_pitch": 22
+      }
+     ]
+    },
     "martina": {
      "pose": "agachado",
      "tremor": {
@@ -266,267 +462,73 @@
       {
        "t": 1.7,
        "pos": [
-        0.14,
-        0.42
+        -0.06,
+        -0.4
        ],
-       "yaw": 150,
-       "lean": 36,
-       "head_pitch": 25,
-       "dz": 0
+       "yaw": -50,
+       "head_yaw": 0,
+       "head_pitch": 34,
+       "dz": 0.0
       },
       {
        "t": 2.1,
        "pos": [
-        0.13,
-        0.41
+        -0.07,
+        -0.41
        ],
-       "lean": 41,
+       "head_pitch": 36,
        "ease": "in"
       },
       {
        "t": 2.28,
        "pos": [
-        0.14,
-        0.42
+        -0.06,
+        -0.4
        ],
-       "lean": 37,
+       "head_pitch": 34,
        "ease": "out"
       },
       {
        "t": 2.6,
        "pos": [
-        0.16,
-        0.44
+        -0.03,
+        -0.38
        ],
-       "lean": 24,
-       "dz": 0.06,
+       "dz": 0.05,
        "head_pitch": 30
       },
       {
        "t": 3.0,
        "pos": [
-        0.16,
-        0.44
+        -0.03,
+        -0.38
        ],
-       "lean": 22,
-       "dz": 0.07
+       "dz": 0.06
       },
       {
        "t": 3.3,
        "pos": [
-        0.19,
-        0.46
+        -0.01,
+        -0.38
        ],
-       "lean": 20,
        "dz": 0.08,
        "head_pitch": 10,
-       "head_yaw": -30
+       "head_yaw": -105
       },
       {
-       "t": 4.2,
-       "pos": [
-        0.33,
-        0.56
-       ],
-       "lean": 4,
-       "dz": 0.34,
-       "head_pitch": 0,
-       "head_yaw": 40
-      }
-     ],
-     "arms": {
-      "R": {
-       "tremor_m": 0.006,
-       "keys": [
-        {
-         "t": 1.7,
-         "to": {
-          "prop": "maletin",
-          "offset": [
-           0.225,
-           0.0,
-           0.24
-          ]
-         }
-        },
-        {
-         "t": 2.3,
-         "to": {
-          "prop": "maletin",
-          "offset": [
-           0.225,
-           0.0,
-           0.24
-          ]
-         }
-        },
-        {
-         "t": 2.55,
-         "to": [
-          0.06,
-          0.22,
-          0.46
-         ]
-        },
-        {
-         "t": 4.2,
-         "to": [
-          0.24,
-          0.36,
-          0.72
-         ]
-        }
-       ]
-      }
-     },
-     "boot": {
-      "from_t": 2.48,
-      "to_t": 3.3,
-      "keys": [
-       {
-        "t": 2.48,
-        "pos": [
-         0.24,
-         0.1,
-         0.04
-        ],
-        "yaw": 100
-       },
-       {
-        "t": 2.62,
-        "pos": [
-         0.05,
-         0.02,
-         0.02
-        ],
-        "yaw": 96,
-        "ease": "in"
-       },
-       {
-        "t": 2.72,
-        "pos": [
-         0.02,
-         0.01,
-         0.02
-        ],
-        "yaw": 95,
-        "ease": "linear"
-       },
-       {
-        "t": 3.0,
-        "pos": [
-         -0.06,
-         0.01,
-         0.02
-        ],
-        "yaw": 94,
-        "ease": "out"
-       },
-       {
-        "t": 3.26,
-        "pos": [
-         0.26,
-         0.12,
-         0.06
-        ],
-        "yaw": 100
-       }
-      ]
-     }
-    },
-    "hombre_azul": {
-     "pose": "sentado",
-     "sway": 1.4,
-     "keys": [
+       "t": 3.6,
+       "head_yaw": -100,
+       "dz": 0.14
+      },
       {
-       "t": 0,
+       "t": 4.25,
        "pos": [
-        -1.12,
-        0.0
+        0.03,
+        -0.38
        ],
-       "yaw": 0,
-       "lean": -6,
-       "side": -10,
-       "head_roll": -18,
-       "head_pitch": 8
-      }
-     ]
-    },
-    "esposa": {
-     "pose": "sentado",
-     "sway": 1.4,
-     "keys": [
-      {
-       "t": 0,
-       "pos": [
-        -0.56,
-        0.0
-       ],
-       "yaw": 0,
-       "lean": -6,
-       "side": -9,
-       "head_roll": -22,
-       "head_pitch": 10
-      }
-     ]
-    },
-    "extra_1": {
-     "pose": "sentado",
-     "keys": [
-      {
-       "t": 0,
-       "pos": [
-        0.56,
-        0.9
-       ],
-       "yaw": 0,
-       "lean": 4,
-       "head_pitch": 28
-      }
-     ]
-    },
-    "extra_2": {
-     "pose": "sentado",
-     "keys": [
-      {
-       "t": 0,
-       "pos": [
-        -1.12,
-        2.7
-       ],
-       "yaw": 0,
-       "lean": -8,
-       "head_roll": -14
-      }
-     ]
-    },
-    "extra_3": {
-     "pose": "sentado",
-     "keys": [
-      {
-       "t": 0,
-       "pos": [
-        1.12,
-        2.7
-       ],
-       "yaw": 0,
-       "lean": -8,
-       "head_roll": 16
-      }
-     ]
-    },
-    "extra_4": {
-     "pose": "sentado",
-     "keys": [
-      {
-       "t": 0,
-       "pos": [
-        0.56,
-        4.5
-       ],
-       "yaw": 0,
-       "lean": 2,
-       "head_pitch": 30
+       "dz": 0.42,
+       "head_pitch": 4,
+       "head_yaw": -22
       }
      ]
     }
@@ -537,7 +539,7 @@
       {
        "t": 1.5,
        "pos": [
-        -0.17,
+        0.17,
         0.0,
         0.0
        ],
@@ -550,16 +552,15 @@
       {
        "t": 1.9,
        "pos": [
-        -0.29,
+        0.29,
         0.0,
         0.0
-       ],
-       "ease": "inout"
+       ]
       },
       {
        "t": 2.1,
        "pos": [
-        -0.36,
+        0.36,
         0.0,
         0.0
        ],
@@ -573,13 +574,13 @@
       {
        "t": 2.14,
        "pos": [
-        -0.362,
+        0.362,
         0.0,
         0.004
        ],
        "rot": [
         0,
-        3,
+        -3,
         0
        ],
        "ease": "out"
@@ -587,7 +588,7 @@
       {
        "t": 2.24,
        "pos": [
-        -0.36,
+        0.36,
         0.0,
         0.0
        ],
@@ -600,7 +601,7 @@
       {
        "t": 2.62,
        "pos": [
-        -0.36,
+        0.36,
         0.0,
         0.0
        ],
@@ -613,13 +614,13 @@
       {
        "t": 2.74,
        "pos": [
-        -0.39,
+        0.39,
         0.0,
         0.014
        ],
        "rot": [
         0,
-        5,
+        -5,
         0
        ],
        "ease": "in"
@@ -627,7 +628,7 @@
       {
        "t": 3.0,
        "pos": [
-        -0.47,
+        0.47,
         0.0,
         0.0
        ],
@@ -641,7 +642,7 @@
      ]
     }
    },
-   "nota_claves": "La ultima clave de Martina cae despues del final (t=4.2): en el alargue 3.5-4.0 ella se endereza y sale por la derecha; el maletin ya no se mueve."
+   "nota_claves": "La ultima clave de Martina cae despues del final (t=4.25): en el alargue se endereza; el maletin ya no se mueve."
   }
  ]
 }

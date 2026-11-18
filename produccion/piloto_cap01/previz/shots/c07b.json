@@ -1,0 +1,767 @@
+{
+ "call_id": "c07b",
+ "bloque": "7 · Diego",
+ "duration_s": 7,
+ "fps": 24,
+ "resolution": [
+  720,
+  1280
+ ],
+ "origin": "ANC_fuelle",
+ "set_light": "rojo",
+ "train_sway": {
+  "m": 0.006,
+  "deg": 0.3,
+  "hz": 0.45
+ },
+ "fuente_tiempos": "llamadas_tiempos.json: b7_p4 0.5-3.0, b7_p5 3.0-4.2, b7_p6 4.2-6.2 (pedida 6.7 s). Aqui 7 s enteros; b7_p6 se alarga de 6.2 a 7.0 con accion (la cabeza de Martina sigue bajando, la camara vibra), sin quietud. Colchon 0-0.5 s: Tomas ya esta terminando de girar hacia Martina en el cuadro 0.",
+ "pista": {
+  "pista": "pistas_v3/c07b_v2.mp3",
+  "dur_s": 6.74,
+  "lineas": [
+   [
+    "Tomás",
+    "¿No estabas en el baño?",
+    0.7,
+    2.52
+   ]
+  ],
+  "nota": "Habla solo Tomas. Martina no contesta: boca cerrada."
+ },
+ "props_in_frame": [],
+ "notes": "Ultimo vagon, luz roja con el tubo frio sobre la puerta (por dentro); una sola puerta (y=-0.04), detras de las camaras de P4 y P6. Grupo en sus marcas: Martina -0.25/-1.55 a la izquierda de Tomas 0.25/-1.45; Carmen 0.80/-1.85; Ivan 0.50/-0.40; Hugo -0.62/-0.50 con la mano derecha en la manija (texto). Diego afuera (0.0/0.31). P4 y P6 desde el lado de la puerta (-Y): Tomas a la izquierda, Martina a la derecha, cabina del revisor a la izquierda al fondo. P5 a la ventanita (+Y).",
+ "set_anim": {
+  "glass_break": [
+   {
+    "object": "VIDRIO_vagon5_tras",
+    "t": 0.0,
+    "n": 0,
+    "seed": 7,
+    "nota": "el vidrio de la puerta del vagon 5 sigue roto desde 5·P3 (sin esquirlas)"
+   }
+  ]
+ },
+ "shots": [
+  {
+   "id": "b7_p4",
+   "t0": 0.0,
+   "t1": 3.0,
+   "montaje": {
+    "usar_desde_s": 0.5,
+    "usar_hasta_s": 3.0,
+    "dur_montaje_s": 2.5
+   },
+   "titulo": "P4 · «¿No estabas en el baño?»",
+   "descripcion": "Primer plano de Tomas desde el lado de la puerta, a la izquierda del cuadro, mirando hacia la derecha del cuadro, a Martina. TOMAS 0,7-2,52 s: «¿No estabas en el baño?» (confundido, lento, cayendo en cuenta): la mirada baja un poco a mitad de la frase y vuelve a ella. Los golpes de Diego siguen. Los demas, boca cerrada.",
+   "motivo_camara": "En mano, quieta, desde el lado de la puerta a la altura del pecho (1,42 m), un poco desde abajo, en el mismo eje que el primer plano de Martina pero del otro lado del pasillo: Tomas a la izquierda mirando a la derecha y el borde de Martina asomando a la derecha del cuadro.",
+   "camera": {
+    "tag": "MANO_QUIETA",
+    "lens_mm": 40,
+    "mode": "handheld",
+    "mira": "a Tomas, desde el lado de la puerta",
+    "mov": "en mano, quieta",
+    "handheld": {
+     "rot_deg": 0.18,
+     "pos_m": 0.0025,
+     "hz": 0.5,
+     "seed": 74
+    },
+    "keys": [
+     {
+      "t": 0.0,
+      "pos": [
+       0.1,
+       -0.25,
+       1.42
+      ],
+      "look_at": [
+       0.194,
+       -1.45,
+       1.535
+      ]
+     },
+     {
+      "t": 3.05,
+      "pos": [
+       0.1,
+       -0.26,
+       1.42
+      ],
+      "look_at": [
+       0.194,
+       -1.45,
+       1.535
+      ]
+     }
+    ]
+   },
+   "actors": {
+    "tomas": {
+     "pose": "de_pie",
+     "keys": [
+      {
+       "t": 0.0,
+       "pos": [
+        0.25,
+        -1.45
+       ],
+       "yaw": 30,
+       "head_yaw": 60,
+       "head_pitch": -2
+      },
+      {
+       "t": 0.45,
+       "head_yaw": 68,
+       "head_pitch": -4,
+       "ease": "out"
+      },
+      {
+       "t": 1.3,
+       "head_yaw": 67,
+       "head_pitch": -5
+      },
+      {
+       "t": 1.9,
+       "head_yaw": 64,
+       "head_pitch": -11
+      },
+      {
+       "t": 2.6,
+       "head_yaw": 68,
+       "head_pitch": -6
+      },
+      {
+       "t": 3.05,
+       "head_yaw": 68,
+       "head_pitch": -6
+      }
+     ]
+    },
+    "martina": {
+     "pose": "de_pie",
+     "keys": [
+      {
+       "t": 0.0,
+       "pos": [
+        -0.25,
+        -1.55
+       ],
+       "yaw": 0,
+       "head_yaw": -8,
+       "head_pitch": 0
+      },
+      {
+       "t": 3.05,
+       "head_yaw": -9,
+       "head_pitch": -2
+      }
+     ],
+     "tremor": {
+      "m": 0.002,
+      "hz": 3.0
+     }
+    },
+    "carmen": {
+     "pose": "de_pie",
+     "keys": [
+      {
+       "t": 0.0,
+       "pos": [
+        0.8,
+        -1.85
+       ],
+       "yaw": 48,
+       "head_yaw": 27,
+       "head_pitch": -4
+      }
+     ]
+    },
+    "ivan": {
+     "pose": "de_pie",
+     "keys": [
+      {
+       "t": 0.0,
+       "pos": [
+        0.5,
+        -0.4
+       ],
+       "yaw": 112,
+       "head_yaw": 35,
+       "head_pitch": -5
+      }
+     ]
+    },
+    "hugo": {
+     "pose": "de_pie",
+     "keys": [
+      {
+       "t": 0.0,
+       "pos": [
+        -0.62,
+        -0.5
+       ],
+       "yaw": -110,
+       "head_yaw": -50,
+       "head_pitch": -4
+      }
+     ]
+    },
+    "diego": {
+     "pose": "de_pie",
+     "keys": [
+      {
+       "t": 0.0,
+       "pos": [
+        0.0,
+        0.31
+       ],
+       "yaw": 180,
+       "head_yaw": -9,
+       "head_pitch": -1,
+       "dz": -0.05
+      }
+     ]
+    }
+   },
+   "en_cuadro": "Tomas (azul marino) a la izquierda del cuadro, de perfil hacia la derecha, con aire sobre la cabeza. En el borde derecho asoma el hombro de Martina (avena), desenfocado. Al fondo, la pared trasera con la ventana negra a la derecha de Tomas y la cabina del revisor a la izquierda del cuadro, detras de el.",
+   "stills": {
+    "A": {
+     "t": 0.55,
+     "desc": "Tomas la mira; todavia no habla.",
+     "lados": {
+      "tomas": "izq",
+      "martina": "der"
+     }
+    },
+    "B": {
+     "t": 1.7,
+     "desc": "«¿No estabas...»: la mirada baja un poco, cayendo en cuenta.",
+     "lados": {
+      "tomas": "izq",
+      "martina": "der"
+     }
+    },
+    "C": {
+     "t": 2.9,
+     "desc": "«...en el baño?»: vuelve a mirarla y espera.",
+     "lados": {
+      "tomas": "izq",
+      "martina": "der"
+     }
+    }
+   }
+  },
+  {
+   "id": "b7_p5",
+   "t0": 3.0,
+   "t1": 4.2,
+   "montaje": {
+    "usar_desde_s": 3.0,
+    "usar_hasta_s": 4.2,
+    "dur_montaje_s": 1.2
+   },
+   "titulo": "P5 · La palma en el vidrio",
+   "descripcion": "La ventanita. IMPACTO en 3,21 s (cuadro 77): Diego golpea el vidrio con la palma IZQUIERDA abierta (la mano va en el prompt; la manga derecha rota y manchada no toca el vidrio). Despues vuelve a mirar hacia atras por encima del hombro izquierdo (3,45-3,8): al fondo del fuelle, a la derecha de su cabeza, las sombras estan mas cerca que en P2. Detras de el, solo el fuelle oscuro con luz roja. Diego no habla.",
+   "motivo_camara": "En mano, el mismo eje bajo de P2 a la distancia en que termino el avance (0,76 m del vidrio): acusa la palmada 3 cuadros tarde. Mas temblor que en P2.",
+   "camera": {
+    "tag": "MANO",
+    "lens_mm": 35,
+    "mode": "handheld",
+    "mira": "a la ventanita, un poco desde abajo",
+    "mov": "en mano; acusa la palmada",
+    "handheld": {
+     "rot_deg": 0.42,
+     "pos_m": 0.006,
+     "hz": 0.9,
+     "seed": 75
+    },
+    "shakes": [
+     {
+      "impact_t": 3.21,
+      "delay_f": 3,
+      "deg": 0.8,
+      "m": 0.005,
+      "dur_s": 0.35,
+      "hz": 7.5
+     }
+    ],
+    "keys": [
+     {
+      "t": 2.99,
+      "pos": [
+       0.065,
+       -0.8,
+       1.31
+      ],
+      "look_at": [
+       0.0,
+       -0.04,
+       1.58
+      ]
+     },
+     {
+      "t": 4.25,
+      "pos": [
+       0.06,
+       -0.78,
+       1.31
+      ],
+      "look_at": [
+       0.0,
+       -0.04,
+       1.58
+      ]
+     }
+    ]
+   },
+   "actors": {
+    "martina": {
+     "pose": "de_pie",
+     "keys": [
+      {
+       "t": 2.99,
+       "pos": [
+        -0.25,
+        -1.55
+       ],
+       "yaw": 0,
+       "head_yaw": -9,
+       "head_pitch": -2
+      }
+     ]
+    },
+    "tomas": {
+     "pose": "de_pie",
+     "keys": [
+      {
+       "t": 2.99,
+       "pos": [
+        0.25,
+        -1.45
+       ],
+       "yaw": 30,
+       "head_yaw": 68,
+       "head_pitch": -6
+      }
+     ]
+    },
+    "carmen": {
+     "pose": "de_pie",
+     "keys": [
+      {
+       "t": 2.99,
+       "pos": [
+        0.8,
+        -1.85
+       ],
+       "yaw": 48,
+       "head_yaw": 27,
+       "head_pitch": -4
+      }
+     ]
+    },
+    "ivan": {
+     "pose": "de_pie",
+     "keys": [
+      {
+       "t": 2.99,
+       "pos": [
+        0.5,
+        -0.4
+       ],
+       "yaw": 112,
+       "head_yaw": 35,
+       "head_pitch": -5
+      }
+     ]
+    },
+    "hugo": {
+     "pose": "de_pie",
+     "keys": [
+      {
+       "t": 2.99,
+       "pos": [
+        -0.62,
+        -0.5
+       ],
+       "yaw": -110,
+       "head_yaw": -50,
+       "head_pitch": -4
+      }
+     ]
+    },
+    "diego": {
+     "pose": "de_pie",
+     "keys": [
+      {
+       "t": 2.99,
+       "pos": [
+        0.01,
+        0.32
+       ],
+       "yaw": 180,
+       "head_yaw": -8,
+       "head_pitch": -1,
+       "dz": -0.05
+      },
+      {
+       "t": 3.21,
+       "pos": [
+        0.0,
+        0.25
+       ],
+       "head_pitch": -2,
+       "ease": "snap"
+      },
+      {
+       "t": 3.42,
+       "pos": [
+        0.01,
+        0.29
+       ],
+       "ease": "out"
+      },
+      {
+       "t": 3.5,
+       "head_yaw": -3,
+       "head_pitch": 6
+      },
+      {
+       "t": 3.62,
+       "head_yaw": 40,
+       "head_pitch": 6,
+       "ease": "in"
+      },
+      {
+       "t": 3.84,
+       "pos": [
+        0.02,
+        0.31
+       ],
+       "yaw": 172,
+       "head_yaw": 130,
+       "head_pitch": 3,
+       "ease": "out"
+      },
+      {
+       "t": 4.25,
+       "head_yaw": 136,
+       "head_pitch": 2
+      }
+     ],
+     "tremor": {
+      "m": 0.004,
+      "hz": 5.0
+     }
+    },
+    "infectado_1": {
+     "pose": "de_pie",
+     "keys": [
+      {
+       "t": 2.99,
+       "pos": [
+        0.4,
+        2.05
+       ],
+       "yaw": 180,
+       "head_pitch": -4
+      },
+      {
+       "t": 4.25,
+       "pos": [
+        0.38,
+        1.78
+       ]
+      }
+     ],
+     "tremor": {
+      "m": 0.02,
+      "hz": 2.4
+     }
+    },
+    "infectado_2": {
+     "pose": "de_pie",
+     "keys": [
+      {
+       "t": 2.99,
+       "pos": [
+        0.14,
+        2.25
+       ],
+       "yaw": 184
+      },
+      {
+       "t": 4.25,
+       "pos": [
+        0.14,
+        2.0
+       ]
+      }
+     ],
+     "tremor": {
+      "m": 0.02,
+      "hz": 2.8
+     }
+    },
+    "infectado_3": {
+     "pose": "de_pie",
+     "keys": [
+      {
+       "t": 2.99,
+       "pos": [
+        -0.3,
+        2.18
+       ],
+       "yaw": 176
+      },
+      {
+       "t": 4.25,
+       "pos": [
+        -0.28,
+        1.92
+       ]
+      }
+     ],
+     "tremor": {
+      "m": 0.02,
+      "hz": 2.2
+     }
+    }
+   },
+   "en_cuadro": "La ventanita casi llena el ancho; la cabeza de Diego (piedra clara) en el vidrio manchado. Por encima de el, el techo rojo del fuelle; a su derecha, mas cerca que antes, las sombras (infectados, casi negros).",
+   "stills": {
+    "A": {
+     "t": 3.04,
+     "desc": "Diego toma impulso; mira a Martina por el vidrio."
+    },
+    "B": {
+     "t": 3.3,
+     "desc": "La palma izquierda contra el vidrio; la camara acusa el golpe."
+    },
+    "C": {
+     "t": 4.1,
+     "desc": "Mira hacia atras: las sombras, mas cerca, a la derecha de su cabeza."
+    }
+   }
+  },
+  {
+   "id": "b7_p6",
+   "t0": 4.2,
+   "t1": 7.0,
+   "montaje": {
+    "usar_desde_s": 4.2,
+    "usar_hasta_s": 6.2,
+    "dur_montaje_s": 2.0,
+    "alargue_s": "6.2-7.0"
+   },
+   "titulo": "P6 · La manija",
+   "descripcion": "Primer plano final de Martina desde el lado de la puerta, a la derecha del cuadro. Termina de girar hacia la izquierda del cuadro y mira a Tomas (4,2-5,15). Despues baja los ojos y los lleva a la manija de la puerta, abajo y a la derecha de la camara, junto a ella (5,2-6,15): CORTE justo cuando sus ojos llegan a la manija (6,2). En primer termino, desenfocada, la mano derecha de Hugo apoyada en la manija, esperando su respuesta (va en el prompt: con las marcas fijas la manija queda junto a la camara, fuera del cilindro de Hugo). Ella no contesta; boca cerrada. Los golpes siguen. En el alargue (6,2-7,0) la cabeza sigue bajando apenas.",
+   "motivo_camara": "Fija: la decision no se mueve. Desde el lado de la puerta, a 1,40 m, junto a la manija y por encima de ella: su ultima mirada cae junto al lente (18 grados por debajo), no en el.",
+   "camera": {
+    "tag": "FIJA",
+    "lens_mm": 50,
+    "mode": "locked",
+    "mira": "a Martina, desde el lado de la puerta, junto a la manija",
+    "mov": "fija; solo vibra con el tren",
+    "sway_scale": 0.6,
+    "vibration": {
+     "deg": 0.04,
+     "hz": 10.0,
+     "m": 0.0005
+    },
+    "keys": [
+     {
+      "t": 4.2,
+      "pos": [
+       -0.17,
+       -0.3,
+       1.4
+      ],
+      "look_at": [
+       -0.16,
+       -1.55,
+       1.45
+      ]
+     }
+    ]
+   },
+   "actors": {
+    "martina": {
+     "pose": "de_pie",
+     "keys": [
+      {
+       "t": 4.19,
+       "pos": [
+        -0.25,
+        -1.55
+       ],
+       "yaw": 0,
+       "head_yaw": -50,
+       "head_pitch": 3
+      },
+      {
+       "t": 4.45,
+       "head_yaw": -74,
+       "head_pitch": 6,
+       "ease": "out"
+      },
+      {
+       "t": 5.15,
+       "head_yaw": -72,
+       "head_pitch": 5
+      },
+      {
+       "t": 5.45,
+       "head_yaw": -64,
+       "head_pitch": -14
+      },
+      {
+       "t": 5.85,
+       "head_yaw": -26,
+       "head_pitch": -23
+      },
+      {
+       "t": 6.15,
+       "head_yaw": -2,
+       "head_pitch": -24,
+       "ease": "out"
+      },
+      {
+       "t": 7.05,
+       "head_yaw": 0,
+       "head_pitch": -26
+      }
+     ],
+     "tremor": {
+      "m": 0.002,
+      "hz": 3.0
+     }
+    },
+    "tomas": {
+     "pose": "de_pie",
+     "keys": [
+      {
+       "t": 4.19,
+       "pos": [
+        0.25,
+        -1.45
+       ],
+       "yaw": 30,
+       "head_yaw": 68,
+       "head_pitch": -6
+      },
+      {
+       "t": 7.05,
+       "head_yaw": 70,
+       "head_pitch": -7
+      }
+     ]
+    },
+    "carmen": {
+     "pose": "de_pie",
+     "keys": [
+      {
+       "t": 4.19,
+       "pos": [
+        0.8,
+        -1.85
+       ],
+       "yaw": 48,
+       "head_yaw": 27,
+       "head_pitch": -4
+      }
+     ]
+    },
+    "ivan": {
+     "pose": "de_pie",
+     "keys": [
+      {
+       "t": 4.19,
+       "pos": [
+        0.5,
+        -0.4
+       ],
+       "yaw": 112,
+       "head_yaw": 35,
+       "head_pitch": -5
+      }
+     ]
+    },
+    "hugo": {
+     "pose": "de_pie",
+     "keys": [
+      {
+       "t": 4.19,
+       "pos": [
+        -0.62,
+        -0.5
+       ],
+       "yaw": -110,
+       "head_yaw": -50,
+       "head_pitch": -4
+      },
+      {
+       "t": 7.05,
+       "head_yaw": -52,
+       "head_pitch": -5
+      }
+     ]
+    },
+    "diego": {
+     "pose": "de_pie",
+     "keys": [
+      {
+       "t": 4.19,
+       "pos": [
+        0.01,
+        0.31
+       ],
+       "yaw": 172,
+       "head_yaw": -1,
+       "head_pitch": 0,
+       "dz": -0.05
+      },
+      {
+       "t": 4.6,
+       "yaw": 180,
+       "head_yaw": -9,
+       "head_pitch": -1
+      },
+      {
+       "t": 7.05,
+       "head_yaw": -9,
+       "head_pitch": -1
+      }
+     ]
+    }
+   },
+   "en_cuadro": "Martina (avena) a la derecha del cuadro, enfocada, con aire sobre la cabeza; mira primero fuera de cuadro a la izquierda (Tomas) y despues abajo, junto a la camara (la manija). En primer termino abajo a la derecha, desenfocada, la mano derecha de Hugo en la manija (solo en el prompt). Al fondo, la pared trasera con la ventana negra y la cabina del revisor a la izquierda del cuadro. Una sola puerta: esta detras de la camara.",
+   "stills": {
+    "A": {
+     "t": 4.35,
+     "desc": "Termina de girar y mira a Tomas, fuera de cuadro a la izquierda.",
+     "lados": {
+      "martina": "der",
+      "tomas": "izq"
+     }
+    },
+    "B": {
+     "t": 5.6,
+     "desc": "Baja los ojos y los lleva hacia la manija.",
+     "lados": {
+      "martina": "der",
+      "tomas": "izq"
+     }
+    },
+    "C": {
+     "t": 6.15,
+     "desc": "Sus ojos llegan a la manija, junto a la camara: corte.",
+     "lados": {
+      "martina": "der",
+      "tomas": "izq"
+     }
+    }
+   }
+  }
+ ]
+}

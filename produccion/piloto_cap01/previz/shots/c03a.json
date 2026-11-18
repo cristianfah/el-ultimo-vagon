@@ -1,0 +1,873 @@
+{
+ "call_id": "c03a",
+ "bloque": "3 · El maletín se abre",
+ "duration_s": 6,
+ "fps": 24,
+ "resolution": [
+  720,
+  1280
+ ],
+ "origin": "ANC_vagon2_fila_12",
+ "set_light": "ambar_bajo",
+ "train_sway": {
+  "m": 0.006,
+  "deg": 0.3,
+  "hz": 0.45
+ },
+ "fuente_tiempos": "llamadas_tiempos.json (c03a): b3_p1 0,5-1,8, b3_p2 1,8-3,3 y b3_p3 3,3-5,5; duration_s 6. b3_p1 parte en 0 (el primer clic cae en 0,72 s, dentro del montaje); b3_p3 se alarga de 5,5 a 6,0 con acción (sigue tosiendo).",
+ "props_in_frame": [
+  "maletin"
+ ],
+ "notes": "Vagón 2, origen en ANC_vagon2_fila_12. Pareja del lado +X (hombre ventana 1,12; esposa pasillo 0,56); maletín en su marca (0,47; 0) bajo el asiento de la pareja. b3_p1 repite la cámara de b0_p2. Planos frontales mirando a la cola: el hombre a la izquierda y la esposa a la derecha del cuadro. La niebla no se modela.",
+ "shots": [
+  {
+   "id": "b3_p1",
+   "titulo": "P1 · Los cierres saltan",
+   "t0": 0.0,
+   "t1": 1.8,
+   "montaje": {
+    "usar_desde_s": 0.5,
+    "usar_hasta_s": 1.8,
+    "dur_montaje_s": 1.3
+   },
+   "descripcion": "Detalle a ras de piso bajo el asiento del hombre: el mismo lugar y el mismo encuadre que b0_p2 (misma cámara, mismo maletín en su marca). Los dos cierres saltan solos, clic (0,72 s) y clic (0,95 s): el maletín da un respingo de milímetros en cada uno. Después la tapa se levanta un dedo (1,1-1,5 s; no se modela, va en el prompt). Nadie lo toca.",
+   "motivo_camara": "Fija, igual que b0_p2: el público reconoce el lugar antes de que pase algo. Solo vibra con el tren.",
+   "camera": {
+    "tag": "FIJA_PISO",
+    "mira": "hacia la cola; asiento de la pareja a la izquierda",
+    "mov": "fija; solo vibra con el tren",
+    "lens_mm": 35,
+    "mode": "locked",
+    "sway_scale": 0.5,
+    "vibration": {
+     "deg": 0.05,
+     "hz": 10.0,
+     "m": 0.0006
+    },
+    "keys": [
+     {
+      "t": 0.0,
+      "pos": [
+       0.08,
+       1.27,
+       0.085
+      ],
+      "look_at": [
+       0.31,
+       0.0,
+       0.27
+      ]
+     }
+    ]
+   },
+   "en_cuadro": "El maletín bajo el asiento de la pareja, a la izquierda del centro, con la esquina metálica asomando al pasillo; arriba a la izquierda, el borde del asiento de la fila 11 y la base del cilindro de la esposa sobre el cojín; a la derecha, el pasillo vacío hacia la cola.",
+   "stills": {
+    "A": {
+     "t": 0.55,
+     "desc": "Quieto, como lo dejó Martina.",
+     "lados": {
+      "esposa": "izq"
+     }
+    },
+    "B": {
+     "t": 0.96,
+     "desc": "Clic-clic: saltan los dos cierres.",
+     "lados": {
+      "esposa": "izq"
+     }
+    },
+    "C": {
+     "t": 1.75,
+     "desc": "La tapa se levantó un dedo.",
+     "lados": {
+      "esposa": "izq"
+     }
+    }
+   },
+   "actors": {
+    "hombre_azul": {
+     "pose": "sentado",
+     "keys": [
+      {
+       "t": 0.0,
+       "pos": [
+        1.12,
+        0.0
+       ],
+       "yaw": 0,
+       "head_yaw": -40,
+       "head_pitch": 14
+      }
+     ],
+     "sway": 1.4
+    },
+    "esposa": {
+     "pose": "sentado",
+     "keys": [
+      {
+       "t": 0.0,
+       "pos": [
+        0.56,
+        0.0
+       ],
+       "yaw": 0,
+       "head_yaw": -55,
+       "head_pitch": 16
+      }
+     ],
+     "sway": 1.4
+    },
+    "extra_1": {
+     "pose": "sentado",
+     "keys": [
+      {
+       "t": 0.0,
+       "pos": [
+        -0.56,
+        0.9
+       ],
+       "yaw": 0,
+       "head_yaw": 6,
+       "head_pitch": 30
+      }
+     ]
+    },
+    "extra_2": {
+     "pose": "sentado",
+     "keys": [
+      {
+       "t": 0.0,
+       "pos": [
+        1.12,
+        2.7
+       ],
+       "yaw": 0,
+       "head_yaw": -30,
+       "head_pitch": 18
+      }
+     ]
+    },
+    "extra_3": {
+     "pose": "sentado",
+     "keys": [
+      {
+       "t": 0.0,
+       "pos": [
+        -1.12,
+        2.7
+       ],
+       "yaw": 0,
+       "head_yaw": 28,
+       "head_pitch": 18
+      }
+     ]
+    },
+    "extra_4": {
+     "pose": "sentado",
+     "keys": [
+      {
+       "t": 0.0,
+       "pos": [
+        0.56,
+        4.5
+       ],
+       "yaw": 0,
+       "head_yaw": -10,
+       "head_pitch": 26
+      }
+     ]
+    },
+    "extra_5": {
+     "pose": "sentado",
+     "keys": [
+      {
+       "t": 0.0,
+       "pos": [
+        -1.12,
+        -2.7
+       ],
+       "yaw": 0,
+       "head_yaw": 6,
+       "head_pitch": 34
+      }
+     ]
+    },
+    "extra_6": {
+     "pose": "sentado",
+     "keys": [
+      {
+       "t": 0.0,
+       "pos": [
+        0.56,
+        -3.6
+       ],
+       "yaw": 0,
+       "head_yaw": -20,
+       "head_pitch": 22
+      }
+     ]
+    }
+   },
+   "props": {
+    "maletin": {
+     "keys": [
+      {
+       "t": 0.0,
+       "pos": [
+        0.47,
+        0.0,
+        0.0
+       ],
+       "rot": [
+        0,
+        0,
+        0
+       ]
+      },
+      {
+       "t": 0.7,
+       "pos": [
+        0.47,
+        0.0,
+        0.0
+       ],
+       "rot": [
+        0,
+        0,
+        0
+       ]
+      },
+      {
+       "t": 0.73,
+       "pos": [
+        0.47,
+        0.0,
+        0.006
+       ],
+       "rot": [
+        0,
+        0,
+        0.7
+       ],
+       "ease": "out"
+      },
+      {
+       "t": 0.8,
+       "pos": [
+        0.47,
+        0.0,
+        0.0
+       ],
+       "rot": [
+        0,
+        0,
+        0
+       ],
+       "ease": "in"
+      },
+      {
+       "t": 0.93,
+       "pos": [
+        0.47,
+        0.0,
+        0.0
+       ],
+       "rot": [
+        0,
+        0,
+        0
+       ]
+      },
+      {
+       "t": 0.96,
+       "pos": [
+        0.47,
+        0.0,
+        0.005
+       ],
+       "rot": [
+        0,
+        0,
+        -0.6
+       ],
+       "ease": "out"
+      },
+      {
+       "t": 1.03,
+       "pos": [
+        0.47,
+        0.0,
+        0.0
+       ],
+       "rot": [
+        0,
+        0,
+        0
+       ],
+       "ease": "in"
+      }
+     ]
+    }
+   }
+  },
+  {
+   "id": "b3_p2",
+   "titulo": "P2 · La niebla",
+   "t0": 1.8,
+   "t1": 3.3,
+   "montaje": {
+    "usar_desde_s": 1.8,
+    "usar_hasta_s": 3.3,
+    "dur_montaje_s": 1.5
+   },
+   "descripcion": "Una niebla blanca y fina sale por la ranura del maletín, se arrastra por el piso entre los zapatos del hombre y le sube por las piernas. La niebla no se modela y los cilindros sentados no tienen piernas: el cuadro muestra el piso delante del asiento de la pareja (donde van los zapatos) y termina en el borde del cojín, a la altura de las rodillas.",
+   "motivo_camara": "Sube despacio con la niebla (de 0,10 a 0,46 m), desde el pasillo junto a la pierna de la esposa, mirando al piso del hombre; inclina hacia arriba mientras sube. No es en mano: es la niebla la que manda el ritmo.",
+   "camera": {
+    "tag": "SUBE_PISO",
+    "mira": "al piso del hombre, de los zapatos a las rodillas",
+    "mov": "sube despacio 36 cm e inclina hacia arriba",
+    "lens_mm": 28,
+    "mode": "locked",
+    "vibration": {
+     "deg": 0.04,
+     "hz": 9.0,
+     "m": 0.0005
+    },
+    "keys": [
+     {
+      "t": 1.8,
+      "pos": [
+       0.16,
+       0.64,
+       0.1
+      ],
+      "look_at": [
+       0.92,
+       0.22,
+       0.06
+      ]
+     },
+     {
+      "t": 3.3,
+      "pos": [
+       0.18,
+       0.6,
+       0.46
+      ],
+      "look_at": [
+       1.02,
+       0.1,
+       0.52
+      ]
+     }
+    ]
+   },
+   "en_cuadro": "El piso delante del asiento de la pareja: al fondo, los zapatos del hombre contra el muro de la ventana; a la derecha, bajo el cojín, el maletín con la tapa entreabierta. Al subir, el borde de los dos cojines y la base de los cilindros.",
+   "stills": {
+    "A": {
+     "t": 1.85,
+     "desc": "La niebla sale por la ranura y se arrastra hacia los zapatos."
+    },
+    "B": {
+     "t": 2.55,
+     "desc": "Entre los zapatos del hombre; la cámara sube."
+    },
+    "C": {
+     "t": 3.25,
+     "desc": "A la altura de las rodillas: la niebla le sube por las piernas."
+    }
+   },
+   "actors": {
+    "hombre_azul": {
+     "pose": "sentado",
+     "keys": [
+      {
+       "t": 1.8,
+       "pos": [
+        1.12,
+        0.0
+       ],
+       "yaw": 0,
+       "head_yaw": -40,
+       "head_pitch": 14
+      }
+     ],
+     "sway": 1.4
+    },
+    "esposa": {
+     "pose": "sentado",
+     "keys": [
+      {
+       "t": 1.8,
+       "pos": [
+        0.56,
+        0.0
+       ],
+       "yaw": 0,
+       "head_yaw": -55,
+       "head_pitch": 16
+      }
+     ],
+     "sway": 1.4
+    },
+    "extra_1": {
+     "pose": "sentado",
+     "keys": [
+      {
+       "t": 1.8,
+       "pos": [
+        -0.56,
+        0.9
+       ],
+       "yaw": 0,
+       "head_yaw": 6,
+       "head_pitch": 30
+      }
+     ]
+    },
+    "extra_2": {
+     "pose": "sentado",
+     "keys": [
+      {
+       "t": 1.8,
+       "pos": [
+        1.12,
+        2.7
+       ],
+       "yaw": 0,
+       "head_yaw": -30,
+       "head_pitch": 18
+      }
+     ]
+    },
+    "extra_3": {
+     "pose": "sentado",
+     "keys": [
+      {
+       "t": 1.8,
+       "pos": [
+        -1.12,
+        2.7
+       ],
+       "yaw": 0,
+       "head_yaw": 28,
+       "head_pitch": 18
+      }
+     ]
+    },
+    "extra_4": {
+     "pose": "sentado",
+     "keys": [
+      {
+       "t": 1.8,
+       "pos": [
+        0.56,
+        4.5
+       ],
+       "yaw": 0,
+       "head_yaw": -10,
+       "head_pitch": 26
+      }
+     ]
+    },
+    "extra_5": {
+     "pose": "sentado",
+     "keys": [
+      {
+       "t": 1.8,
+       "pos": [
+        -1.12,
+        -2.7
+       ],
+       "yaw": 0,
+       "head_yaw": 6,
+       "head_pitch": 34
+      }
+     ]
+    },
+    "extra_6": {
+     "pose": "sentado",
+     "keys": [
+      {
+       "t": 1.8,
+       "pos": [
+        0.56,
+        -3.6
+       ],
+       "yaw": 0,
+       "head_yaw": -20,
+       "head_pitch": 22
+      }
+     ]
+    }
+   },
+   "props": {
+    "maletin": {
+     "keys": [
+      {
+       "t": 1.8,
+       "pos": [
+        0.47,
+        0.0,
+        0.0
+       ],
+       "rot": [
+        0,
+        0,
+        0
+       ]
+      }
+     ]
+    }
+   }
+  },
+  {
+   "id": "b3_p3",
+   "titulo": "P3 · Despierta tosiendo",
+   "t0": 3.3,
+   "t1": 6.0,
+   "montaje": {
+    "usar_desde_s": 3.3,
+    "usar_hasta_s": 5.5,
+    "dur_montaje_s": 2.2,
+    "alargue_s": "5.5-6.0"
+   },
+   "descripcion": "Plano medio frontal del hombre y su esposa. Él despierta tosiendo, fuerte, doblado (accesos de tos en 3,42, 3,75, 4,12, 5,02 y 5,6 s); ella sigue dormida en su hombro, en el asiento del pasillo, a la derecha del cuadro. Él mira hacia abajo (4,3 s): la niebla le llega al pecho. Su mano derecha va al cuello (5,2 s; va en el prompt). Doblarse no se dibuja (el cilindro no se inclina): se marca con el cilindro que baja y la nariz hacia el pecho.",
+   "motivo_camara": "En mano leve, desde el pasillo a la altura de los ojos de alguien de pie (1,45 m), por encima de los respaldos de las filas 10 y 11 (primer término abajo a la izquierda). Acompaña apenas cuando él se dobla.",
+   "camera": {
+    "tag": "MANO_LEVE",
+    "mira": "de frente a la pareja, hacia la cola",
+    "mov": "en mano leve; acompaña cuando él se dobla",
+    "lens_mm": 35,
+    "mode": "handheld",
+    "handheld": {
+     "rot_deg": 0.35,
+     "pos_m": 0.006,
+     "hz": 0.9,
+     "seed": 33
+    },
+    "keys": [
+     {
+      "t": 3.3,
+      "pos": [
+       0.2,
+       1.75,
+       1.45
+      ],
+      "look_at": [
+       0.8,
+       0.0,
+       1.02
+      ]
+     },
+     {
+      "t": 4.5,
+      "pos": [
+       0.21,
+       1.72,
+       1.44
+      ],
+      "look_at": [
+       0.82,
+       0.0,
+       0.97
+      ]
+     },
+     {
+      "t": 6.0,
+      "pos": [
+       0.21,
+       1.72,
+       1.44
+      ],
+      "look_at": [
+       0.82,
+       0.0,
+       0.98
+      ]
+     }
+    ]
+   },
+   "en_cuadro": "El hombre a la izquierda, doblado; la esposa a la derecha, dormida con la nariz hacia él. Abajo, los respaldos de las filas 10 y 11; detrás, el muro de la ventana con la noche y la lámpara encendida de la fila 12 der.",
+   "stills": {
+    "A": {
+     "t": 3.4,
+     "desc": "Despierta tosiendo, doblado.",
+     "lados": {
+      "hombre_azul": "izq",
+      "esposa": "der"
+     }
+    },
+    "B": {
+     "t": 4.4,
+     "desc": "Mira hacia abajo: la niebla le llega al pecho.",
+     "lados": {
+      "hombre_azul": "izq",
+      "esposa": "der"
+     }
+    },
+    "C": {
+     "t": 5.4,
+     "desc": "La mano derecha al cuello; ella sigue dormida.",
+     "lados": {
+      "hombre_azul": "izq",
+      "esposa": "der"
+     }
+    }
+   },
+   "actors": {
+    "extra_1": {
+     "pose": "sentado",
+     "keys": [
+      {
+       "t": 3.3,
+       "pos": [
+        -0.56,
+        0.9
+       ],
+       "yaw": 0,
+       "head_yaw": 6,
+       "head_pitch": 30
+      }
+     ]
+    },
+    "extra_2": {
+     "pose": "sentado",
+     "keys": [
+      {
+       "t": 3.3,
+       "pos": [
+        1.12,
+        2.7
+       ],
+       "yaw": 0,
+       "head_yaw": -30,
+       "head_pitch": 18
+      }
+     ]
+    },
+    "extra_3": {
+     "pose": "sentado",
+     "keys": [
+      {
+       "t": 3.3,
+       "pos": [
+        -1.12,
+        2.7
+       ],
+       "yaw": 0,
+       "head_yaw": 28,
+       "head_pitch": 18
+      }
+     ]
+    },
+    "extra_4": {
+     "pose": "sentado",
+     "keys": [
+      {
+       "t": 3.3,
+       "pos": [
+        0.56,
+        4.5
+       ],
+       "yaw": 0,
+       "head_yaw": -10,
+       "head_pitch": 26
+      }
+     ]
+    },
+    "extra_5": {
+     "pose": "sentado",
+     "keys": [
+      {
+       "t": 3.3,
+       "pos": [
+        -1.12,
+        -2.7
+       ],
+       "yaw": 0,
+       "head_yaw": 6,
+       "head_pitch": 34
+      }
+     ]
+    },
+    "extra_6": {
+     "pose": "sentado",
+     "keys": [
+      {
+       "t": 3.3,
+       "pos": [
+        0.56,
+        -3.6
+       ],
+       "yaw": 0,
+       "head_yaw": -20,
+       "head_pitch": 22
+      }
+     ]
+    },
+    "hombre_azul": {
+     "pose": "sentado",
+     "sway": 1.4,
+     "tremor": {
+      "m": 0.004,
+      "hz": 6.0
+     },
+     "keys": [
+      {
+       "t": 3.3,
+       "pos": [
+        1.12,
+        0.0
+       ],
+       "yaw": 0,
+       "head_yaw": -8,
+       "head_pitch": 30,
+       "dz": -0.05
+      },
+      {
+       "t": 3.42,
+       "dz": -0.09,
+       "head_pitch": 38,
+       "ease": "snap"
+      },
+      {
+       "t": 3.58,
+       "dz": -0.05,
+       "head_pitch": 30,
+       "ease": "out"
+      },
+      {
+       "t": 3.75,
+       "dz": -0.1,
+       "head_pitch": 40,
+       "ease": "snap"
+      },
+      {
+       "t": 3.92,
+       "dz": -0.06,
+       "head_pitch": 32,
+       "ease": "out"
+      },
+      {
+       "t": 4.12,
+       "dz": -0.11,
+       "head_pitch": 42,
+       "ease": "snap"
+      },
+      {
+       "t": 4.32,
+       "dz": -0.07,
+       "head_pitch": 46,
+       "ease": "out"
+      },
+      {
+       "t": 4.85,
+       "dz": -0.07,
+       "head_pitch": 50,
+       "head_yaw": -2
+      },
+      {
+       "t": 5.02,
+       "dz": -0.1,
+       "head_pitch": 44,
+       "ease": "snap"
+      },
+      {
+       "t": 5.22,
+       "dz": -0.06,
+       "head_pitch": 38,
+       "head_yaw": -8,
+       "ease": "out"
+      },
+      {
+       "t": 5.6,
+       "dz": -0.1,
+       "head_pitch": 42,
+       "ease": "snap"
+      },
+      {
+       "t": 5.8,
+       "dz": -0.07,
+       "head_pitch": 38,
+       "ease": "out"
+      },
+      {
+       "t": 6.15,
+       "dz": -0.1,
+       "head_pitch": 41,
+       "ease": "snap"
+      }
+     ]
+    },
+    "esposa": {
+     "pose": "sentado",
+     "sway": 1.4,
+     "keys": [
+      {
+       "t": 3.3,
+       "pos": [
+        0.56,
+        0.0
+       ],
+       "yaw": 0,
+       "head_yaw": -55,
+       "head_pitch": 16
+      },
+      {
+       "t": 3.75,
+       "pos": [
+        0.565,
+        0.0
+       ],
+       "head_yaw": -52
+      },
+      {
+       "t": 4.12,
+       "pos": [
+        0.56,
+        0.0
+       ],
+       "head_yaw": -56
+      },
+      {
+       "t": 5.02,
+       "pos": [
+        0.565,
+        0.0
+       ],
+       "head_yaw": -53
+      },
+      {
+       "t": 5.6,
+       "pos": [
+        0.56,
+        0.0
+       ],
+       "head_yaw": -56
+      }
+     ]
+    }
+   },
+   "props": {
+    "maletin": {
+     "keys": [
+      {
+       "t": 3.3,
+       "pos": [
+        0.47,
+        0.0,
+        0.0
+       ],
+       "rot": [
+        0,
+        0,
+        0
+       ]
+      }
+     ]
+    }
+   }
+  }
+ ]
+}
