@@ -455,3 +455,13 @@ Una entrada por decisión, instrucción o llamada paga. Se escribe en el momento
 - Se para aquí (05: «PARADA 1: sube el gris y muéstraselo a Cristián para que corrija cámara y dirección de arte. No sigas hasta que responda»). No se corrió la prueba de b5_p7 ni nada pagado.
 - **Gasto de la sesión: 0 USD y 0 créditos.** Acumulado del piloto: 318 créditos de Kling (saldo 2.858, sin cambios) y ~21 USD de fal estimados (sin cambios).
 - Siguiente paso: las respuestas de Cristián a la página 2. Con el OK, la prueba de b5_p7 en GPT Image 2.6 (máx. 2 tiradas, tope 1 USD) desde su cuadro gris; después la PARADA 2.
+
+### 2026-11-25 · pruebas 4s · c05b_2.0-6.0 · formato ORIGINS (borrador)
+- Tipo: instrucción de Cristián · decisión
+- Qué: prueba pequeña con el formato de prompt de ORIGINS EP. 01: ZARA (Higgsfield Selected, 23-nov): CRITICAL al principio, secciones STYLE/CAMERA/TEXTURE/SOUND/SCRIPT/ASSETS y RECAP al final. Plano: b5_p7, dentro de la ventana c05b 2,0–6,0, con un corte duro en 1,5 s. Las entradas y la semilla son las mismas del brazo A de Seedance. Archivos en `previz/pruebas4s/c05b_2.0-6.0/origins/`.
+- Por qué: aislar el efecto del formato contra el brazo A ya escrito.
+- No verificado: los prompts de ORIGINS. El hilo de X no se pudo leer y la ficha de Higgsfield no los muestra sin login: el formato sale de la descripción de Cristián.
+- Quién decidió: Cristián (encargo) · agente (plano y redacción)
+- Modelo / endpoint / setting propuesto: fal `bytedance/seedance-2.5/us/reference-to-video`, 480p, 9:16, 4 s, 1 toma, seed 1019
+- Costo: 0 en esta entrada. Propuesto: ~0,98–1,03 USD (precio público de fal leído el 25-nov), tope 1,10 USD. **Sin correr: se espera el OK.**
+- Repetible: sí; el payload queda con marcadores `<subir: …>`.
