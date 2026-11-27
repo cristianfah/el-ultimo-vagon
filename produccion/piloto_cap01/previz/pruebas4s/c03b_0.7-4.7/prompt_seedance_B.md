@@ -15,7 +15,7 @@
 | @Image3 | `image_urls[2]` | `F08_v2_ambar_bajo.png` | `REPO/produccion/pruebas/cap01_animatic_v3/assets/F08_v2_ambar_bajo.png` |
 | @Image4 | `image_urls[3]` | `hoja_storyboard.jpg` | `$PREVIZ_TRABAJO/pruebas4s/c03b_0.7-4.7/hoja_storyboard.jpg` |
 
-**Prompt** (6955 caracteres, completo y listo para pegar):
+**Prompt** (8023 caracteres, completo y listo para pegar):
 
 ```text
 [EUV CAP01 - BLOQUE 3 - INT. CARRIAGE 2 - NOCHE - HANDHELD STILL, 45MM / HANDHELD SHAKEN, 28MM / HANDHELD LATE PAN, 24MM - 4s - 3 CUTS - REAL TIME 24 FPS, NO SLOW MOTION - 9:16 - prueba4s v1]
@@ -50,8 +50,22 @@ Real time at 24 fps: no slow motion, no speed ramp. The man's body has weight: h
 LIGHTING
 Only practical sources, no fill: only two or three warm amber reading lamps are lit - one over the couple's row, one over the woman reading across the aisle, one far back - with darkness between them. Faces half in shadow; blacks fall to black. The side windows are deep night with rain on the outside of the glass.
 
+
+DIRECTION RULES (27-nov)
+LAYOUT: Carriage 2 never changes: two rows of paired blue seats with a central aisle; side windows on both walls; front door at one end, rear door at the other; the blue-shirt man's bench by the window wall, the briefcase under it at the aisle end; the woman reading across the aisle.
+LIGHT SOURCE: Warm amber reading lamps from above, one over the couple's row; the rest dark. Half of each face in shadow.
+AXIS: every screen direction in SIDES LOCK holds for the whole clip; nobody crosses the axis.
+BREATH: before any key line or key action, one directed breath or blink, never more.
+TIMING: the action is already under way in the first frame; no dead air after it ends.
+MARKS:
+- CUT 1 (b3_p4): the man's head turns toward frame right, toward his wife.
+- CUT 2 (b3_p5): he lunges toward frame right; she stays on frame right.
+- CUT 3 (b3_p6): the woman reading drops her book. Sound before the cut: a distant scream starts over the last 0.5s.
+END DIRECTION RULES
+
 AUDIO
 Continuous rail rhythm, rain on the windows, a faint hiss of the mist. 0.0s: his last cough cuts off dead; then only a rasping breath. 1.62s: the seat creaks as he gathers. 2.09s: a heavy thud as he lands on her. 2.3s: the woman reading screams; her book hits the floor. From 2.4s: the rustle of passengers waking. Nobody speaks. AUDIO LOCK, no words: the man in the blue shirt, heavyset, late 40s - only a rasping breath after the cough; the woman reading - one raw, sharp scream of an adult woman.
+AUDIO LOCK (produccion/voces.md, never Mexican, neutral or Spain Spanish): 
 
 CUTS
 CUT 1 (0 to 1.3s) - Close-up of the man, frontal, from just above the seat back in front of him, about 1.1 m away, framed from the top of his chest up with air above his head, 45mm. The man left of center; at the right edge, his wife's shoulder and face, asleep against him. Behind: their seat back and the dark carriage. Camera: handheld, still, only breathing; no push-in. At 0.0s his last cough cuts off dead; by 0.1s his eyes are milky white and dark veins are climbing his neck to his jaw. From 0.3s to 1.25s his head turns slowly toward frame right, toward his wife; his eyes arrive first. - HARD CUT AT 1.3s

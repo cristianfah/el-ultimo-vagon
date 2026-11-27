@@ -50,7 +50,7 @@ La mayor parte de la serie ocurre en el último vagón. Algunos capítulos salen
 
 ## Formato de capítulo
 
-- Duran 75–90 s, en 9:16 y en español neutro. Subtítulos y tarjetas se ponen en edición.
+- Duran 75–90 s, en 9:16 y en español con acento chileno suave de Santiago (manda `produccion/voces.md`; nunca neutro ni de España). Subtítulos y tarjetas se ponen en edición.
 - Cuentan su premisa en los primeros segundos y cortan en la mejor parte. Reglas completas de escritura en `.cursor/rules/10-guion.mdc`.
 - Cada capítulo termina con una encuesta «Si fueras ___, ¿qué harías?». En la temporada 1 las encuestas no cambian la historia (ver `biblia/votaciones.md`).
 - El nombre «El Último Vagón» es interno; no aparece en los reels.

@@ -210,7 +210,7 @@ Los sets, las hojas de personaje, la llave y el resto de los props del tren ya e
 
 ## Voces
 
-Las voces se generan en ElevenLabs antes del video final y entran como referencia de audio de su bloque. Cada personaje tiene una sola voz para toda la temporada. Idioma: español neutro. En el animatic, las voces aprobadas (`produccion/voces.md`, MP3 en `produccion/pruebas/cap01_animatic/voces/`) reemplazan en el montaje la voz que genera el modelo; el ambiente del modelo se conserva bajo.
+Las voces se generan en ElevenLabs antes del video final y entran como referencia de audio de su bloque. Cada personaje tiene una sola voz para toda la temporada. Idioma: español con acento chileno suave de Santiago (manda `produccion/voces.md`); nunca neutro ni de España. En el animatic, las voces aprobadas (`produccion/voces.md`, MP3 en `produccion/pruebas/cap01_animatic/voces/`) reemplazan en el montaje la voz que genera el modelo; el ambiente del modelo se conserva bajo.
 
 | Bloque | Personaje | Línea | Indicación |
 | --- | --- | --- | --- |

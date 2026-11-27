@@ -455,3 +455,14 @@ Una entrada por decisión, instrucción o llamada paga. Se escribe en el momento
 - Se para aquí (05: «PARADA 1: sube el gris y muéstraselo a Cristián para que corrija cámara y dirección de arte. No sigas hasta que responda»). No se corrió la prueba de b5_p7 ni nada pagado.
 - **Gasto de la sesión: 0 USD y 0 créditos.** Acumulado del piloto: 318 créditos de Kling (saldo 2.858, sin cambios) y ~21 USD de fal estimados (sin cambios).
 - Siguiente paso: las respuestas de Cristián a la página 2. Con el OK, la prueba de b5_p7 en GPT Image 2.6 (máx. 2 tiradas, tope 1 USD) desde su cuadro gris; después la PARADA 2.
+
+### 2026-11-27 19:39 · 07 actualizado · dirección y voces en los prompts
+- Tipo: instrucción de Cristián
+- Qué: Cristián actualizó el 07 (mismo link): manda `produccion/voces.md`; P5 va con MP4 del gris; en F3 el único texto es «VAGÓN 2», grande; checklist de 6 reglas de dirección; marcas plano por plano del guionista (`cap01_v10_marcas_direccion.md`, Drive). Sin gasto.
+- Hecho:
+  - **Los 28 prompts de las pruebas de 4 s** (7 pruebas × Kling/Seedance × brazos A/B) llevan ahora un bloque `DIRECTION RULES (27-nov)` antes de AUDIO: la planta del vagón que no cambia, la fuente de luz nombrada, el eje, una respiración o parpadeo dirigido, la acción ya en marcha, la forma de caminar de cada personaje (siempre las mismas palabras) y las marcas del guionista de los planos que entran en la ventana. Y una línea `AUDIO LOCK` con la descripción de cada voz copiada de `voces.md` (Carmen e Iván con la misma regla de acento, sin voz aprobada todavía). Los 14 payloads JSON quedaron sincronizados con los `.md`. Lo hace `scripts/direccion_prompts.py` (idempotente).
+  - **«Español neutro» corregido** a chileno suave de Santiago en `guion/cap01/cap01_v9.md`, `biblia/premisa.md` y `produccion/shotlists/cap01.yaml`.
+  - **F3:** `guion/cap01/cap01_v10.md` y la ficha `c01f.json` dicen ahora que la pantalla llena el cuadro y el único texto es «VAGÓN 2», grande, en post. No se generó nada.
+  - **P5:** c04b ya tenía MP4 de referencia (`c04b_ref.mp4`, una de las 8 llamadas de blocking). Quedó escrito en su ficha que P5 nunca va con stills. La prueba de 4 s de c04b empieza después del barrido, así que su brazo B (hoja de storyboard) no choca con la regla.
+- **Riesgo para Cristián:** con el bloque nuevo, los prompts miden entre 7.400 y 13.100 caracteres. Kling en fal admite hasta 26.000; el límite del MCP no está publicado. Los flujos de terceros dicen que sobre ~6.500 se pierden la cámara en mano y los cortes. Propuesta: medirlo en la misma prueba de 4 s; si falla, recortar ACTION y SCENE CONTEXT, no las marcas.
+- Costo: 0. Sigue la PARADA 1: esperando las respuestas a la página 2.

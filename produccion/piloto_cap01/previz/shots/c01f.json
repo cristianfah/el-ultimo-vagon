@@ -14,7 +14,7 @@
   "deg": 0.0,
   "hz": 0.45
  },
- "fuente_tiempos": "llamadas_tiempos.json: c01f 3 s; b1_f1 0.5-1.2, b1_f2 1.2-1.9 (sin cambios). Colchon 0-0.5 s: Martina ya esta tirando de la cinta en el cuadro 0. F2 se alarga de 1.9 a 3.0 con accion (la figura retrocede mirandola; ella vuelve a mirarla). F3 (la pantalla) va en post y no se arma.",
+ "fuente_tiempos": "llamadas_tiempos.json: c01f 3 s; b1_f1 0.5-1.2, b1_f2 1.2-1.9 (sin cambios). Colchon 0-0.5 s: Martina ya esta tirando de la cinta en el cuadro 0. F2 se alarga de 1.9 a 3.0 con accion (la figura retrocede mirandola; ella vuelve a mirarla). F3 (la pantalla) va en post y no se arma. F3 (07, 27-nov): la pantalla llena el cuadro y el único texto es «VAGÓN 2», grande, puesto en post; si se quiere textura de cámara de vigilancia, chica y en gris.",
  "props_in_frame": [
   "maletin"
  ],

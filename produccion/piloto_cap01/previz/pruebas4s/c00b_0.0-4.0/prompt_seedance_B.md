@@ -16,7 +16,7 @@
 | @Image4 | `image_urls[3]` | `F08_v2_ambar_bajo.png` | `REPO/produccion/pruebas/cap01_animatic_v3/assets/F08_v2_ambar_bajo.png` |
 | @Image5 | `image_urls[4]` | `hoja_storyboard.jpg` | `$PREVIZ_TRABAJO/pruebas4s/c00b_0.0-4.0/hoja_storyboard.jpg` |
 
-**Prompt** (7088 caracteres, completo y listo para pegar):
+**Prompt** (8457 caracteres, completo y listo para pegar):
 
 ```text
 [EUV CAP01 - BLOQUE 0 - INT. CARRIAGE 2 - NOCHE - HANDHELD WITH SHORT PAN, 35MM / LOCKED OFF, 24MM - 4s - 2 CUTS - REAL TIME 24 FPS, NO SLOW MOTION - 9:16 - prueba4s v1]
@@ -52,8 +52,22 @@ Real time at 24 fps: no slow motion. The whole carriage sways gently with the ra
 LIGHTING
 Only practical sources, no fill: only two or three warm amber reading lamps are lit - one over the couple's row, one over the woman reading across the aisle, one far back near the rear door - with darkness between them. Faces half in shadow; blacks fall to black. The side windows are deep night with rain streaks on the outside of the glass and faint reflections.
 
+
+DIRECTION RULES (27-nov)
+LAYOUT: Carriage 2 never changes: two rows of paired blue seats with a central aisle; side windows on both walls; front door at one end, rear door at the other; the blue-shirt man's bench by the window wall, the briefcase under it at the aisle end; the woman reading across the aisle.
+LIGHT SOURCE: Warm amber reading lamps from above: one over the couple's row, one over the woman reading, one far back; the rest is dark. Half of each face in shadow.
+AXIS: every screen direction in SIDES LOCK holds for the whole clip; nobody crosses the axis.
+BREATH: before any key line or key action, one directed breath or blink, never more.
+TIMING: the action is already under way in the first frame; no dead air after it ends.
+GAIT: Martina: quick, small steps, head down.
+MARKS:
+- CUT 1 (b0_p3): Martina's hand grips the seat back; her breath stops when the man stirs. The man's head slides down the window glass toward frame left.
+- CUT 2 (b0_p4): the woman reading far back turns one page - the only movement in the background - and never looks at Martina. Sound before the cut: a low hum starts in the last 0.3s.
+END DIRECTION RULES
+
 AUDIO
 Continuous rail rhythm and a soft carriage rattle; rain ticking on the windows. 0.55s: one short snore. From 0.75s to 1.05s: the faint squeak of his head sliding on the glass. Martina's held breath. From 2.0s: her quick, soft footsteps on the carriage floor. Nobody speaks. AUDIO LOCK, no words: the man in the blue shirt, a heavyset man in his late 40s - one short, low snore; Martina, 29, low husky voice - only a held breath through the nose.
+AUDIO LOCK (produccion/voces.md, never Mexican, neutral or Spain Spanish): Martina: Chilean woman, 29, soft Santiago accent; low, warm, tired, slightly husky voice, almost a whisper; answers too fast when she lies
 
 CUTS
 CUT 1 (0 to 2.0s) - Medium shot from seated eye height (about 1.25 m), from the aisle just in front of the couple's row, looking toward the rear of the carriage, 35mm; the edge of the seat back in front sits low on frame left. Frame left: the man asleep with his head against the window; frame right: his wife asleep on his shoulder in the aisle seat. Camera: handheld, small and slow; between 0.98s and 1.28s a quick short pan (about 22 degrees) from him to Martina, because she is the one watching him; it overshoots a little and settles back at 1.44s. At 0.0s the man is already stirring; at 0.55s one short snore; from 0.75s to 1.05s his head slides down the window glass. Martina stands in the aisle just behind the wife's seat, already turning toward the rear; at 0.62s she freezes with her eyes on him, her right hand on the back of the couple's seat, holding her breath. After the pan: the wife on frame left, Martina standing on frame right, frozen. - HARD CUT AT 2.0s

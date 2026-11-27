@@ -21,7 +21,7 @@
 | @Image9 | `image_urls[8]` | `F03_rojo_puerta_desde_dentro_0-45.png` | `$TRABAJO/refs/set__F03_rojo_puerta_desde_dentro_0-45.png` |
 | @Image10 | `image_urls[9]` | `hoja_storyboard.jpg` | `$PREVIZ_TRABAJO/pruebas4s/c05b_2.0-6.0/hoja_storyboard.jpg` |
 
-**Prompt** (11114 caracteres, completo y listo para pegar):
+**Prompt** (13143 caracteres, completo y listo para pegar):
 
 ```text
 [EUV CAP01 - BLOQUE 5 - INT. GANGWAY / LAST CARRIAGE - NOCHE - HANDHELD CLOSE, 50MM / HANDHELD RETREATING, 24MM - 4s - 2 CUTS - REAL TIME 24 FPS, NO SLOW MOTION - 9:16 - prueba4s v1]
@@ -65,8 +65,22 @@ Real time at 24 fps: no slow motion, no speed ramp. The jammed key resists, slip
 LIGHTING
 Only the set's own sources, no fill. Gangway: the red emergency strip on its ceiling, from above; half of Hugo's face in shadow. Last carriage: red emergency light from above plus one cold white tube over the door on the inside, which rims heads and shoulders and does not light the carriage; faces half in shadow; blacks fall to black. When the door swings open, red light and the cold edge of the tube spill out of the doorway onto Hugo.
 
+
+DIRECTION RULES (27-nov)
+LAYOUT: The last carriage never changes: six rows of 2+2 seats facing the door; one single door with a small mesh window, the cold tube above it on the inside, the brass lock plate with keyhole above and handle below; the red emergency handle right of the door; at the far end the back wall with the black rear window and the conductor's cabin on its left. There is no second door.
+LIGHT SOURCE: Gangway: red strip from above. Last carriage: red emergency light from above plus the cold tube over the door on the inside, rimming heads and shoulders only. Half of each face in shadow.
+AXIS: every screen direction in SIDES LOCK holds for the whole clip; nobody crosses the axis.
+BREATH: before any key line or key action, one directed breath or blink, never more.
+TIMING: the action is already under way in the first frame; no dead air after it ends.
+GAIT: Martina: quick, small steps, head down; Tomás: long, careful strides; Carmen: short, heavy, steady steps; Iván: heavy, square, pushing forward; Hugo: stiff, slightly stooped.
+MARKS:
+- CUT 1 (b5_p6): Hugo's two hands on the key; he keeps the key in his hand when it comes out.
+- CUT 2 (b5_p7): the group stumbles in; Tomás drags Martina; Iván pushes Carmen. Carmen's whimper is heard before the cut.
+END DIRECTION RULES
+
 AUDIO
 Continuous heavy rail rhythm and the rattle of the gangway plates. 0.15s and 0.3s: the key grinding in the lock. 0.45s: a hard metallic clack as it turns. 0.72s: off-screen, behind the camera, the crash of the carriage 5 door bursting into the gangway, then running feet and snarls getting closer. 1.08s: a shoulder thud and groaning hinges. From 1.5s: scrambling feet, a toe knocking the threshold at 2.2s and 2.3s, ragged breathing. Nobody speaks; no dialogue audio in this test. AUDIO LOCK, breaths and effort only, no words, soft Santiago Chilean voices: Hugo, 62, low worn voice - one strained grunt on the shoulder blow; Iván, 45, deep dry voice - heavy breathing through his teeth; Carmen, 54, warm firm voice - one short choked gasp when she stumbles; Martina, 29, low husky voice - a sharp intake of breath when she stumbles; Tomás, 31, calm mid-low voice - fast breathing.
+AUDIO LOCK (produccion/voces.md, never Mexican, neutral or Spain Spanish): Martina: Chilean woman, 29, soft Santiago accent; low, warm, tired, slightly husky voice, almost a whisper; answers too fast when she lies | Tomás: Chilean man, 31, soft Santiago accent; mid-low voice, calm and polite; when he doubts he lowers his voice and turns cold | Carmen: Chilean woman, 54, soft Santiago accent; warm but firm nurse's voice (no approved ElevenLabs voice yet) | Iván: Chilean man, 45, soft Santiago accent; deep, dry voice, short phrases (no approved ElevenLabs voice yet) | Hugo: Chilean man, 62, soft Santiago accent; deep, worn, unhurried voice with a conductor's quiet authority; when he shouts his voice cracks but commands
 
 CUTS
 CUT 1 (0 to 1.5s) - Close shot of the lock of the last carriage's door, seen from the gangway on the lock side, at key height (about 1.2 m), 50mm. Frame left, in the foreground: Hugo in profile, facing the door, eyes on the lock. Frame right: the lock with the antique key in the keyhole. Above center: the door's small window, dim red behind it. Camera: handheld, close, small and slow; it moves in 3 cm with the clack because the sound pulls it, and jolts 3 frames after the off-screen crash and 3 frames after the shoulder blow. At 0.0s Hugo is already throwing his weight on the key with both hands; at 0.15s he wrenches it again and it slips back; at 0.45s it turns with a snap. From 0.6s to 0.9s his right hand pulls the key out and closes around it. At 0.72s his shoulders flinch at the crash behind him; he does not turn. At 1.08s he rams the door with his shoulder: it swings inward, away from the camera, on the right of the frame. By 1.5s he is stepping back to the lock side and turning his head over his left shoulder toward the gangway behind him, away from the lens. - HARD CUT AT 1.5s

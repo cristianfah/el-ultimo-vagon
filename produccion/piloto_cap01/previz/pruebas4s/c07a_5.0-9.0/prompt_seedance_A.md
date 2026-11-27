@@ -16,7 +16,7 @@
 | @Image3 | `image_urls[2]` | `HOJA_carmen.png` | `$TRABAJO/refs/personajes__HOJA_carmen.png` |
 | @Image4 | `image_urls[3]` | `F02_rojo_ultimo_vagon_hacia_fondo_cabina.png` | `$TRABAJO/refs/set__F02_rojo_ultimo_vagon_hacia_fondo_cabina.png` |
 
-**Prompt** (5706 caracteres, completo y listo para pegar):
+**Prompt** (7409 caracteres, completo y listo para pegar):
 
 ```text
 [EUV CAP01 - BLOQUE 7 - INT. LAST CARRIAGE - NOCHE - HANDHELD, ALMOST STILL, 40MM - 4s - 1 CUT - REAL TIME 24 FPS, NO SLOW MOTION - 9:16 - prueba4s v1]
@@ -52,8 +52,21 @@ Real time at 24 fps: no slow motion. The train sways and the three bodies sway w
 LIGHTING
 Only the set's own sources, no fill: red emergency light from above; the single cold tube is above the door, above and behind the camera, and puts only a thin cold edge on the tops of their heads and shoulders; it does not light the carriage. Faces half in shadow; blacks fall to black; the rear window is black.
 
+
+DIRECTION RULES (27-nov)
+LAYOUT: The last carriage never changes: six rows of 2+2 seats facing the door; one single door with a small mesh window, the cold tube above it on the inside, the brass lock plate with keyhole above and handle below; the red emergency handle right of the door; at the far end the back wall with the black rear window and the conductor's cabin on its left. There is no second door.
+LIGHT SOURCE: Red emergency light from above; the cold tube above the door, behind the camera, puts only a thin cold edge on heads and shoulders. Half of each face in shadow.
+AXIS: every screen direction in SIDES LOCK holds for the whole clip; nobody crosses the axis.
+BREATH: before any key line or key action, one directed breath or blink, never more.
+TIMING: the action is already under way in the first frame; no dead air after it ends.
+GAIT: Martina: quick, small steps, head down; Tomás: long, careful strides; Carmen: short, heavy, steady steps.
+MARKS:
+- b7_p3: Martina on frame right, facing us, eyes just above the lens. She inhales once through the nose before Diego's second line. Her only new gesture after «¡Te vi en el vagón 2!» is one single blink, nothing else. Behind her the heads turn one by one.
+END DIRECTION RULES
+
 AUDIO
 Continuous low rail rhythm. Martina's short breaths through the nose; one swallow around 3.0s. No dialogue audio in this test: the shouted line exists in the story but not in this clip. AUDIO LOCK, no words: Martina, 29, low husky voice - breath only; Tomás and Carmen silent.
+AUDIO LOCK (produccion/voces.md, never Mexican, neutral or Spain Spanish): Martina: Chilean woman, 29, soft Santiago accent; low, warm, tired, slightly husky voice, almost a whisper; answers too fast when she lies | Tomás: Chilean man, 31, soft Santiago accent; mid-low voice, calm and polite; when he doubts he lowers his voice and turns cold | Carmen: Chilean woman, 54, soft Santiago accent; warm but firm nurse's voice (no approved ElevenLabs voice yet)
 
 CUTS
 CUT 1 (0 to 4.0s) - Close-up of Martina from the door side, low (about 1.18 m, at lock height), looking slightly up at her, 40mm, shallow focus. Martina in the foreground on frame right, in focus, framed from mid-chest up with air above her head. Behind her, out of focus: Tomás at the left edge and, between him and Martina, further back and lower, Carmen. Background: the back wall with the black rear window behind her and the conductor's cabin on frame left. Camera: handheld, slight, almost still, set a little toward the lock side to open the gap between Martina and Tomás where Carmen stands; no push-in. From 0.0s Martina stares at the door's small window, just above the lens and slightly to frame left, and does not move; lips closed. From 0.0s to 2.06s she is hearing the accusation through the door (no dialogue audio in this test). From 0.55s to 0.95s Tomás turns his head toward frame right, to her; from 1.15s to 1.55s Carmen turns to her too. From 2.6s to 4.0s they hold: Tomás and Carmen keep looking at her, she keeps looking at the window; one swallow, her breathing. - END OF CLIP AT 4.0s

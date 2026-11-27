@@ -21,7 +21,7 @@
 | @Image8 | `image_urls[7]` | `F01_rojo_ultimo_vagon_hacia_puerta.png` | `$TRABAJO/refs/set__F01_rojo_ultimo_vagon_hacia_puerta.png` |
 | @Image9 | `image_urls[8]` | `F03_rojo_puerta_desde_dentro_0-45.png` | `$TRABAJO/refs/set__F03_rojo_puerta_desde_dentro_0-45.png` |
 
-**Prompt** (10244 caracteres, completo y listo para pegar):
+**Prompt** (12233 caracteres, completo y listo para pegar):
 
 ```text
 [EUV CAP01 - BLOQUE 5-6 - INT. LAST CARRIAGE - NOCHE - HANDHELD CLOSE, 35MM / LOCKED OFF, 35MM / LOCKED OFF HIGH, 24MM - 4s - 3 CUTS - REAL TIME 24 FPS, NO SLOW MOTION - 9:16 - prueba4s v1]
@@ -66,8 +66,22 @@ Real time at 24 fps: no slow motion, no speed ramp. The door is heavy steel: the
 LIGHTING
 Only the set's own sources, no fill: red emergency light from above; one cold white tube above the door on the inside, which rims heads and shoulders and does not light the carriage. Faces half in shadow; blacks fall to black. Through the gap and the small window, the red gangway.
 
+
+DIRECTION RULES (27-nov)
+LAYOUT: The last carriage never changes: six rows of 2+2 seats facing the door; one single door with a small mesh window, the cold tube above it on the inside, the brass lock plate with keyhole above and handle below; the red emergency handle right of the door; at the far end the back wall with the black rear window and the conductor's cabin on its left. There is no second door.
+LIGHT SOURCE: Red emergency light from above; the cold tube above the door on the inside rims heads and shoulders only. Half of each face in shadow.
+AXIS: every screen direction in SIDES LOCK holds for the whole clip; nobody crosses the axis.
+BREATH: before any key line or key action, one directed breath or blink, never more.
+TIMING: the action is already under way in the first frame; no dead air after it ends.
+GAIT: Martina: quick, small steps, head down; Tomás: long, careful strides; Carmen: short, heavy, steady steps; Iván: heavy, square, pushing forward; Hugo: stiff, slightly stooped.
+MARKS:
+- CUT 1 (b5_p8): Hugo crushes the hand with the door and turns the key. Sound before the cut: the clack of the lock lands over the cut.
+- CUT 3 (start of b6_p1): a distant scream from carriage 5 is heard before the banging stops.
+END DIRECTION RULES
+
 AUDIO
 Continuous rail rhythm. 0.0s: snarls at the gap. 0.38s: a crunching thud as the door crushes the hand, and a howl outside. 0.58s: the slam. 1.0s: the clack of the key turning. 1.64s and 1.98s: the dull smack of a face on the glass. From 2.55s to 3.52s: violent pounding of many hands on the door and its window. 3.55s: a distant scream from carriage 5 and the pounding stops dead; footsteps running away; then only the train and their breathing. Nobody speaks; no dialogue audio in this test. AUDIO LOCK, no words, soft Santiago Chilean voices: Hugo, 62, low worn voice - one strained grunt on the push; Iván, 45, deep dry voice - heavy breathing; Carmen, 54, warm firm voice - a shaky exhale; Martina, 29, and Tomás, 31 - fast breathing that slows in the silence.
+AUDIO LOCK (produccion/voces.md, never Mexican, neutral or Spain Spanish): Martina: Chilean woman, 29, soft Santiago accent; low, warm, tired, slightly husky voice, almost a whisper; answers too fast when she lies | Tomás: Chilean man, 31, soft Santiago accent; mid-low voice, calm and polite; when he doubts he lowers his voice and turns cold | Carmen: Chilean woman, 54, soft Santiago accent; warm but firm nurse's voice (no approved ElevenLabs voice yet) | Iván: Chilean man, 45, soft Santiago accent; deep, dry voice, short phrases (no approved ElevenLabs voice yet) | Hugo: Chilean man, 62, soft Santiago accent; deep, worn, unhurried voice with a conductor's quiet authority; when he shouts his voice cracks but commands
 
 CUTS
 CUT 1 (0 to 1.4s) - Inside the last carriage, close beside the door frame on the lock side, three-quarter on the gap and the lock, 35mm. Frame left: the door frame and the gap; center: the edge of the door with the lock and the handle; frame right: Hugo's body leaning into the door. Camera: handheld, close; it starts a little high (about 1.5 m) to read Hugo's body against the door and the gap, jolts 2 frames after the crush and 2 frames after the slam, then drops to lock height (about 1.1 m) and moves in 0.2 m for the key. At 0.0s Hugo, the last one in, is driving the door shut with his right shoulder and all his weight, and a grey infected hand with short, broken, dirty nails pushes into the gap between the door's edge and the frame at chest height; the door stops on it. At 0.38s Hugo throws his weight and crushes it; the hand pulls back; at 0.58s the door slams shut. With his right hand he puts the antique key into the lock from inside and turns it: at 1.0s the clack; he pulls the key out and lowers it out of frame, toward his pocket, by 1.35s. Through the gap, and then through the small window, the infected in the red gangway. - HARD CUT AT 1.4s

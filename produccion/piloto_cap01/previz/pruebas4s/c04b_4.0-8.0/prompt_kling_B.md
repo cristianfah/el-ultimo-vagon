@@ -20,7 +20,7 @@
 | 图片8 | `image_8` | `F10_rojo_pasajeros_hacia_puerta.png` | `$TRABAJO/refs/set__F10_rojo_pasajeros_hacia_puerta.png` |
 | 图片9 | `image_9` | `hoja_storyboard.jpg` | `$PREVIZ_TRABAJO/pruebas4s/c04b_4.0-8.0/hoja_storyboard.jpg` |
 
-**Prompt** (8844 caracteres, completo y listo para pegar):
+**Prompt** (10748 caracteres, completo y listo para pegar):
 
 ```text
 [EUV CAP01 - BLOQUE 4 - INT. CARRIAGE 5 - NOCHE - HANDHELD, 40MM / HANDHELD RUNNING BACKWARD, 28MM - 4s - 2 CUTS - REAL TIME 24 FPS, NO SLOW MOTION - 9:16 - prueba4s v1]
@@ -63,8 +63,22 @@ Real time at 24 fps: no slow motion, no speed ramp. Runners lean forward, collid
 LIGHTING
 Only the set's own sources, no fill: the red emergency strip along the ceiling, from above; the amber reading lamps are off. Faces half in shadow; blacks fall to black. Behind Hugo, the gangway is dark red.
 
+
+DIRECTION RULES (27-nov)
+LAYOUT: Carriage 5 never changes: two rows of paired blue seats with a central aisle; side windows on both walls; the front door (where the infected come in) at one end; the rear door (Hugo's door, to the gangway) at the other; Martina's seat on the window side.
+LIGHT SOURCE: Red emergency strip on the ceiling, from above; amber lamps off; Hugo's doorway backed by the dark red gangway. Half of each face in shadow.
+AXIS: every screen direction in SIDES LOCK holds for the whole clip; nobody crosses the axis.
+BREATH: before any key line or key action, one directed breath or blink, never more.
+TIMING: the action is already under way in the first frame; no dead air after it ends.
+GAIT: Martina: quick, small steps, head down; Tomás: long, careful strides; Carmen: short, heavy, steady steps; Iván: heavy, square, pushing forward; Hugo: stiff, slightly stooped.
+MARKS:
+- CUT 1 (end of b4_p5): Hugo keeps the key high in his right hand; the whistle has already blown (it was his breath).
+- CUT 2 (b4_p6): Tomás drags Martina by the hand; each passenger dodges a different seat back; Martina on frame left, Tomás on frame right.
+END DIRECTION RULES
+
 AUDIO
 Continuous rail rhythm. From 0.0s to 0.56s Hugo's mouth finishes the shouted order, with no voice: no dialogue audio in this test. From 1.0s: running feet, bodies hitting seat backs at 1.7s and 2.85s, ragged breathing. 2.04s: the front door bursts open with a crash; from 2.2s snarls and running feet behind the group. AUDIO LOCK, breaths only, no words, soft Santiago Chilean voices: Tomás, 31, calm mid-low voice - fast breathing; Martina, 29, low husky voice - short breaths; Carmen, 54, warm firm voice - short gasps; Iván, 45, deep dry voice - heavy breathing. Hugo makes no sound in this test.
+AUDIO LOCK (produccion/voces.md, never Mexican, neutral or Spain Spanish): Martina: Chilean woman, 29, soft Santiago accent; low, warm, tired, slightly husky voice, almost a whisper; answers too fast when she lies | Tomás: Chilean man, 31, soft Santiago accent; mid-low voice, calm and polite; when he doubts he lowers his voice and turns cold | Carmen: Chilean woman, 54, soft Santiago accent; warm but firm nurse's voice (no approved ElevenLabs voice yet) | Iván: Chilean man, 45, soft Santiago accent; deep, dry voice, short phrases (no approved ElevenLabs voice yet) | Hugo: Chilean man, 62, soft Santiago accent; deep, worn, unhurried voice with a conductor's quiet authority; when he shouts his voice cracks but commands
 
 CUTS
 CUT 1 (0 to 1.0s) - Looking down carriage 5 toward its rear door, from a standing passenger's eye height at row 16, left side (about 1.48 m), 40mm. Hugo at the far end, center, in the open rear door with the door leaf beside him; behind him only the dark red gangway. Frame left: a passenger standing up and heading toward him; low center: the head of a seated passenger turned toward him; at the end, the shoulder of another passenger enters from the right edge. Camera: handheld, just settled after a fast pan; at the end it takes half a step toward the aisle with the people. At 0.0s Hugo is finishing his shouted order: mouth wide on the last word, the antique key raised high in his right hand, his left hand on the edge of the door, his eyes on the passengers on the right side of the carriage, never on the lens; no dialogue audio in this test. From 0.7s he steps to his right to clear the doorway. - HARD CUT AT 1.0s

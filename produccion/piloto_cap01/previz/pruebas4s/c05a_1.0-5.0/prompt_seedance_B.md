@@ -21,7 +21,7 @@
 | @Image9 | `image_urls[8]` | `F04_rojo_puerta_desde_fuelle.png` | `$TRABAJO/refs/set__F04_rojo_puerta_desde_fuelle.png` |
 | @Image10 | `image_urls[9]` | `hoja_storyboard.jpg` | `$PREVIZ_TRABAJO/pruebas4s/c05a_1.0-5.0/hoja_storyboard.jpg` |
 
-**Prompt** (9899 caracteres, completo y listo para pegar):
+**Prompt** (11672 caracteres, completo y listo para pegar):
 
 ```text
 [EUV CAP01 - BLOQUE 5 - INT. GANGWAY - NOCHE - HANDHELD CLOSE, 50MM / HANDHELD RETREATING, 28MM / HANDHELD LOW, 35MM - 4s - 3 CUTS - REAL TIME 24 FPS, NO SLOW MOTION - 9:16 - prueba4s v1]
@@ -65,8 +65,23 @@ Real time at 24 fps: no slow motion, no speed ramp. The key resists and springs 
 LIGHTING
 Only the set's own sources, no fill: the red emergency strip on the gangway ceiling, from above. No white light anywhere in the gangway. Faces half in shadow; blacks fall to black. Through the carriage 5 door's glass, the red-lit carriage beyond; through the small window of the last carriage's door, dim red.
 
+
+DIRECTION RULES (27-nov)
+LAYOUT: The gangway never changes: a short narrow metal corridor with no windows; the carriage 5 door with its small window at one end, the last carriage's door with its key lock and handle at the other.
+LIGHT SOURCE: Red emergency strip on the gangway ceiling, from above; no white light. Half of each face in shadow.
+AXIS: every screen direction in SIDES LOCK holds for the whole clip; nobody crosses the axis.
+BREATH: before any key line or key action, one directed breath or blink, never more.
+TIMING: the action is already under way in the first frame; no dead air after it ends.
+GAIT: Martina: quick, small steps, head down; Tomás: long, careful strides; Carmen: short, heavy, steady steps; Iván: heavy, square, pushing forward; Hugo: stiff, slightly stooped.
+MARKS:
+- CUT 1 (b5_p1): both of Hugo's hands force the key.
+- CUT 2 (b5_p2): Iván slams the carriage 5 door and pushes the group on.
+- CUT 3 (b5_p3): the arm comes through the glass; Carmen's reach goes toward the group, frame left.
+END DIRECTION RULES
+
 AUDIO
 Continuous heavy rail rhythm and the rattle of the gangway plates. From 0.0s to 0.8s the jammed key grinding, a metal scrape at 0.3s. 1.0s: Iván slams the carriage 5 door, a heavy bang. Running feet and snarls behind the glass, getting closer. 2.5s: the glass bursts. From 2.6s: Carmen's choked scream and the door banging with each yank. Nobody speaks; no dialogue audio in this test. AUDIO LOCK, no words, soft Santiago Chilean voices: Hugo, 62, low worn voice - effort grunts on each wrench; Iván, 45, deep dry voice - a grunt on the slam and heavy breathing; Carmen, 54, warm firm voice - a choked scream; Martina, 29, and Tomás, 31 - fast breathing.
+AUDIO LOCK (produccion/voces.md, never Mexican, neutral or Spain Spanish): Martina: Chilean woman, 29, soft Santiago accent; low, warm, tired, slightly husky voice, almost a whisper; answers too fast when she lies | Tomás: Chilean man, 31, soft Santiago accent; mid-low voice, calm and polite; when he doubts he lowers his voice and turns cold | Carmen: Chilean woman, 54, soft Santiago accent; warm but firm nurse's voice (no approved ElevenLabs voice yet) | Iván: Chilean man, 45, soft Santiago accent; deep, dry voice, short phrases (no approved ElevenLabs voice yet) | Hugo: Chilean man, 62, soft Santiago accent; deep, worn, unhurried voice with a conductor's quiet authority; when he shouts his voice cracks but commands
 
 CUTS
 CUT 1 (0 to 0.8s) - Close shot of the lock of the last carriage's door, seen from the gangway on the lock side, at lock height (about 1.3 m), 50mm. Frame left, in the foreground: Hugo in profile, facing the door, eyes on the lock; frame right and low: the lock with the antique key in it; center: the door's small window with the red interior. Camera: handheld, close; it moves in 2 to 5 cm each time Hugo throws his weight, two frames late, and comes back. At 0.0s Hugo is already forcing the key with both hands; at 0.3s he wrenches it a third time: it gives a few degrees and springs back; at 0.56s he throws his weight on it again. The key does not turn. - HARD CUT AT 0.8s
